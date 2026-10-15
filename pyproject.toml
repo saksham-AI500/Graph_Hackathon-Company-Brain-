@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repobrain"
+version = "0.1.0"
+description = "Evidence-Gated PR Brief for engineering teams targeting Track 03 Company Brain"
+requires-python = ">=3.10"
+dependencies = [
+    "falkordb>=1.8.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.14.1",
+    "streamlit>=1.30.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
