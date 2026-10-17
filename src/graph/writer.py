@@ -351,7 +351,7 @@ class GraphWriter:
                     f"Prohibited property '{k}' for node label '{label}'. Allowed properties: {sorted(allowed)}"
                 )
             # Ensure timestamps are real nulls, not empty strings
-            if "at" in k or k.endswith("_from") or k.endswith("_to"):
+            if k.endswith("_at") or k.endswith("_from") or k.endswith("_to"):
                 if v == "" or v is None:
                     clean_props[k] = None
                 else:
@@ -371,7 +371,7 @@ class GraphWriter:
                 raise ValidationError(
                     f"Prohibited property '{k}' for relationship '{rel_type}'. Allowed properties: {sorted(allowed)}"
                 )
-            if "at" in k or k.endswith("_from") or k.endswith("_to"):
+            if k.endswith("_at") or k.endswith("_from") or k.endswith("_to"):
                 if v == "" or v is None:
                     clean_props[k] = None
                 else:
