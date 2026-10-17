@@ -535,7 +535,85 @@ class AgentExecutionLoop:
                     claim_type="PR_INVESTIGATION",
                     source_ids=["S1"],
                 ))
-                ans_text = f"Pull Request #{pr_num} titled '{title}' is verified in repo_kg [S1]."
+                ans_parts = [f"Pull Request #{pr_num} titled '{title}' is verified in repo_kg [S1]."]
+
+                # If asking about reviewers:
+                if "review" in lower_q:
+                    human_revs = [r for r in brief.get("historical_reviewers", []) if not r.get("is_bot")]
+                    if human_revs:
+                        rev_logins = [r["login"] for r in human_revs]
+                        for idx, r in enumerate(human_revs[:3], start=2):
+                            s_id = f"S{idx}"
+                            sources.append(SourceItem(
+                                id=s_id,
+                                entity_type="Person",
+                                identifier=r["login"],
+                                url=r.get("url") or f"https://github.com/{r['login']}",
+                                title_or_desc=f"Reviewer {r['login']}",
+                            ))
+                            claims.append(Claim(
+                                claim_id=f"C{idx}",
+                                text=f"Reviewer {r['login']} had {r.get('prior_touches', 0)} prior touches on files touched by PR #{pr_num}.",
+                                claim_type="PR_INVESTIGATION",
+                                source_ids=[s_id],
+                            ))
+                        ans_parts.append(
+                            f"Historical human reviewers prior to PR creation: {', '.join(rev_logins)} [S2]."
+                        )
+                    else:
+                        ans_parts.append(f"No prior human reviewer touches were found for PR #{pr_num}.")
+
+                # If asking about issues or resolved bugs/errors/fixes:
+                if "issue" in lower_q or "resolved" in lower_q or "bug" in lower_q or "fix" in lower_q or "error" in lower_q:
+                    linked_issues = brief.get("linked_issues", [])
+                    if linked_issues:
+                        for idx, iss in enumerate(linked_issues, start=len(sources) + 1):
+                            s_id = f"S{idx}"
+                            iss_num = iss.get("number")
+                            iss_title = iss.get("title") or ""
+                            sources.append(SourceItem(
+                                id=s_id,
+                                entity_type="Issue",
+                                identifier=iss_num,
+                                url=iss.get("url") or f"https://github.com/FalkorDB/FalkorDB/issues/{iss_num}",
+                                title_or_desc=f"Issue #{iss_num}: {iss_title}",
+                            ))
+                            claims.append(Claim(
+                                claim_id=f"C{idx}",
+                                text=f"PR #{pr_num} resolves Issue #{iss_num} ('{iss_title}').",
+                                claim_type="PR_INVESTIGATION",
+                                source_ids=[s_id],
+                            ))
+                            ans_parts.append(
+                                f"Explicitly resolves Issue #{iss_num} ('{iss_title}') [{s_id}]."
+                            )
+                    else:
+                        ans_parts.append(f"No resolved GitHub issues are linked to PR #{pr_num}.")
+
+                # If asking about co-changes:
+                if "co-change" in lower_q or "co-modifi" in lower_q:
+                    co_changes = brief.get("co_change_signals", [])
+                    if co_changes:
+                        top_co = co_changes[0]
+                        co_file = top_co.get("co_changed_file")
+                        co_url = (top_co.get("evidence_pr_urls") or ["https://github.com/FalkorDB/FalkorDB"])[0]
+                        s_id = f"S{len(sources) + 1}"
+                        sources.append(SourceItem(
+                            id=s_id,
+                            entity_type="File",
+                            identifier=co_file,
+                            url=co_url,
+                            title_or_desc=f"Co-changed file {co_file}",
+                        ))
+                        claims.append(Claim(
+                            claim_id=f"C{len(claims) + 1}",
+                            text=f"File {co_file} was historically co-changed with files in PR #{pr_num}.",
+                            claim_type="PR_INVESTIGATION",
+                            source_ids=[s_id],
+                        ))
+                        ans_parts.append(f"Identified historical co-changed file: `{co_file}` [{s_id}].")
+
+                ans_text = "\n".join(ans_parts)
                 return AgentAnswer(
                     answer=ans_text,
                     claims=claims,

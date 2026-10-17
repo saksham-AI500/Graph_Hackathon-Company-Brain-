@@ -1,0 +1,100 @@
+{
+  "manifest_version": "v2.0.0",
+  "created_at": "2026-10-17T16:50:00Z",
+  "code_revision": "1deb13b3d5775bb839b70d68058798711f30f0d0",
+  "question_set": {
+    "canonical_path": "src/evaluation/benchmark.py",
+    "sha256": "0146f14a18ff86524af1a53eda1922bb9e5f368b076ab63e80ee55e7227593c0",
+    "total_questions": 20
+  },
+  "split_membership": {
+    "development": {
+      "count": 12,
+      "question_ids": [
+        "BENCH-01",
+        "BENCH-02",
+        "BENCH-03",
+        "BENCH-04",
+        "BENCH-05",
+        "BENCH-06",
+        "BENCH-07",
+        "BENCH-08",
+        "BENCH-09",
+        "BENCH-10",
+        "BENCH-11",
+        "BENCH-12"
+      ],
+      "tuning_permitted": true
+    },
+    "sealed": {
+      "count": 8,
+      "question_ids": [
+        "BENCH-13",
+        "BENCH-14",
+        "BENCH-15",
+        "BENCH-16",
+        "BENCH-17",
+        "BENCH-18",
+        "BENCH-19",
+        "BENCH-20"
+      ],
+      "tuning_permitted": false,
+      "execution_rule": "Final evaluation gate only, once development configuration is frozen."
+    }
+  },
+  "split_integrity_disclosure": {
+    "audit_status": "HISTORICAL_CONTAMINATION_IDENTIFIED",
+    "prior_exposure": "All 20 questions in benchmark.py were evaluated during historical Phase 6 runs and recorded in project_context/evaluation_raw_results.json and project_context/baselines/. The 8 sealed questions have historical exposure; no claim of a pristine holdout is made.",
+    "isolation_policy": "Sealed questions are excluded from development tuning, agent prompt engineering, and intermediate iterative score reports."
+  },
+  "architectures": {
+    "graph_on": {
+      "name": "Graph ON (Company Brain Agent)",
+      "description": "Verifier-gated Company Brain agent equipped with 14 typed FalkorDB read-only tools and deterministic evidence verifier.",
+      "tools_allowed": true,
+      "graph_context": true,
+      "corpus_retrieval": false,
+      "verifier_gated": true
+    },
+    "plain_retrieval": {
+      "name": "Plain Retrieval (TF-IDF Vector Baseline)",
+      "description": "TF-IDF lexical retrieval over repository text corpus with identical temporal cutoff filtering, without graph topology or graph tools.",
+      "tools_allowed": false,
+      "graph_context": false,
+      "corpus_retrieval": true,
+      "verifier_gated": false
+    },
+    "graph_off": {
+      "name": "Graph OFF (Direct Model Alone)",
+      "description": "Direct model execution without repository graph context, without corpus retrieval, and without graph tools.",
+      "tools_allowed": false,
+      "graph_context": false,
+      "corpus_retrieval": false,
+      "verifier_gated": false
+    }
+  },
+  "execution_settings": {
+    "model_identifier": "anthropic/claude-3.5-sonnet",
+    "temperature": 0.0,
+    "repetitions_per_question": 3,
+    "timeout_seconds": 60,
+    "fallback_mode": "DETERMINISTIC_GROUNDED"
+  },
+  "graph_state": {
+    "database": "FalkorDB 1.8.0 / 42201",
+    "graph_name": "repo_kg",
+    "nodes": 300,
+    "edges": 531,
+    "connection": "localhost:6379"
+  },
+  "scoring_rubric": {
+    "answer_correctness": "Binary (True/False). Output must contain expected ground-truth keywords for answerable queries, or explicitly articulate refusal/evidence absence for unanswerable/fabricated queries.",
+    "citation_support": "Binary (True/False). All cited GitHub URLs must resolve to authentic graph entities and directly support the claims they attach to.",
+    "unsupported_claim_count": "Integer count of factual assertions unsupported by cited evidence paths.",
+    "unsupported_claim_rate": "Ratio of questions with at least one unsupported claim to total questions evaluated.",
+    "refusal_correctness": "Binary (True/False). Evaluates whether the system appropriately refuses unanswerable/fabricated queries and answers legitimate queries.",
+    "as_of_validity": "Binary (True/False). Confirms that no entities or edges with timestamp > historical_cutoff were leaked into evidence or answer.",
+    "latency_ms": "Numeric wall-clock execution duration in milliseconds.",
+    "usage_and_cost": "Token usage and cost recorded directly from provider API response headers/objects. If unavailable or deterministic fallback is used, fields are explicitly null."
+  }
+}
