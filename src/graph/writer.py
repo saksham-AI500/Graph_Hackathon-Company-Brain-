@@ -640,7 +640,14 @@ class GraphWriter:
             raw_props = properties or {}
             src_url = raw_props.get("source_url") or raw_props.get("url") or f"https://github.com/FalkorDB/FalkorDB/{label}/{identity_value}"
             rid = run_id or self.run_id
-            provenance = ProvenanceMetadata(source_url=src_url, run_id=rid)
+            prov_kwargs: Dict[str, Any] = {"source_url": src_url, "run_id": rid}
+            if raw_props.get("observed_at"):
+                prov_kwargs["observed_at"] = raw_props["observed_at"]
+            if raw_props.get("valid_from"):
+                prov_kwargs["valid_from"] = raw_props["valid_from"]
+            if raw_props.get("valid_to"):
+                prov_kwargs["valid_to"] = raw_props["valid_to"]
+            provenance = ProvenanceMetadata(**prov_kwargs)
 
         self._validate_label(label)
         if identity_value is None or identity_value == "":
@@ -663,10 +670,14 @@ class GraphWriter:
         # Prepare Provenance
         if provenance is None:
             source_url = clean_props.get("source_url") or clean_props.get("url") or "https://github.com/FalkorDB/falkordb-py"
-            provenance = ProvenanceMetadata(
-                source_url=source_url,
-                run_id=self.run_id,
-            )
+            prov_kwargs: Dict[str, Any] = {"source_url": source_url, "run_id": self.run_id}
+            if clean_props.get("observed_at"):
+                prov_kwargs["observed_at"] = clean_props["observed_at"]
+            if clean_props.get("valid_from"):
+                prov_kwargs["valid_from"] = clean_props["valid_from"]
+            if clean_props.get("valid_to"):
+                prov_kwargs["valid_to"] = clean_props["valid_to"]
+            provenance = ProvenanceMetadata(**prov_kwargs)
 
         prov_dict = {
             "source_url": provenance.source_url,
@@ -808,7 +819,14 @@ class GraphWriter:
                     f"ProvenanceMetadata is required when upserting edge '[:{rel_type}]' to ensure evidence grounding."
                 )
             rid = run_id or self.run_id
-            provenance = ProvenanceMetadata(source_url=src_url, run_id=rid)
+            prov_kwargs: Dict[str, Any] = {"source_url": src_url, "run_id": rid}
+            if raw_props.get("observed_at"):
+                prov_kwargs["observed_at"] = raw_props["observed_at"]
+            if raw_props.get("valid_from"):
+                prov_kwargs["valid_from"] = raw_props["valid_from"]
+            if raw_props.get("valid_to"):
+                prov_kwargs["valid_to"] = raw_props["valid_to"]
+            provenance = ProvenanceMetadata(**prov_kwargs)
 
         clean_props = self._validate_rel_properties(rel_type, properties or {})
 
