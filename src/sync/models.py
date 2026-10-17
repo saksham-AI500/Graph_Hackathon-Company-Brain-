@@ -44,6 +44,12 @@ class EventType(str, Enum):
     DOCUMENT_EDITED = "document_edited"
     DOCUMENT_DELETED = "document_deleted"
 
+    # Team Membership (evidence-grounded)
+    TEAM_MEMBER_ADDED = "team_member_added"
+
+    # Decision Extraction
+    DECISION_EXTRACTED = "decision_extracted"
+
 
 class GitHubChangeEvent(BaseModel):
     """Normalized GitHub change event representing a discrete repository event."""

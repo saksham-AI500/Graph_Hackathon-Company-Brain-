@@ -1,14 +1,17 @@
-"""Event reconciliation engine translating GitHub events into GraphWriter mutations."""
-
+import hashlib
 import logging
+import re
 from typing import Any, Dict, List, Optional, Tuple
 
+from src.decision.extractor import RuleBasedDecisionExtractor
+from src.decision.verifier import DecisionVerifier
 from src.graph.writer import (
     GraphWriter,
     ProvenanceMetadata,
     current_utc_iso,
     EntityNotFoundError,
 )
+from src.knowledge.references import extract_explicit_references
 from src.sync.models import (
     EventType,
     GitHubChangeEvent,
@@ -428,6 +431,12 @@ class EventReconciler:
         # 5. Comments
         elif etype == EventType.COMMENT_CREATED:
             actor = event.actor or d.get("author_login")
+            cid = str(d.get("comment_id", d.get("id", f"comment_{event.event_id}")))
+            body = d.get("body", "")
+            url = d.get("url", event.source_url)
+            parent_type = d.get("parent_type", "pull_request" if "pr_number" in d else "issue")
+            parent_id = int(d.get("parent_id", d.get("pr_number", d.get("issue_number", 0))))
+
             if actor:
                 actions.append(PlannedAction(
                     op="upsert_node",
@@ -436,11 +445,159 @@ class EventReconciler:
                     details={"label": "Person", "identity": actor, "properties": {"url": f"https://github.com/{actor}"}},
                 ))
 
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Comment",
+                target_id=cid,
+                details={
+                    "label": "Comment",
+                    "identity": cid,
+                    "properties": {
+                        "id": cid,
+                        "body": body,
+                        "url": url,
+                        "created_at": d.get("created_at", event.timestamp),
+                        "author_login": actor,
+                        "parent_type": parent_type,
+                        "parent_id": parent_id,
+                        "source_url": event.source_url,
+                    },
+                },
+            ))
+
+            if parent_id:
+                target_label = "PullRequest" if ("pr" in parent_type.lower() or "pull" in parent_type.lower()) else "Issue"
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="ON",
+                    target_id=f"{cid}->{parent_id}",
+                    details={
+                        "rel_type": "ON",
+                        "source_label": "Comment",
+                        "source_identity": cid,
+                        "target_label": target_label,
+                        "target_identity": parent_id,
+                    },
+                ))
+
+            if actor:
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="AUTHORED",
+                    target_id=f"{actor}->{cid}",
+                    details={
+                        "rel_type": "AUTHORED",
+                        "source_label": "Person",
+                        "source_identity": actor,
+                        "target_label": "Comment",
+                        "target_identity": cid,
+                    },
+                ))
+
+            # Explicit references
+            refs = extract_explicit_references(body)
+            for ref in refs:
+                if ref.reference_type == "issue_or_pr":
+                    t_num = int(ref.target_id)
+                    actions.append(PlannedAction(
+                        op="upsert_edge",
+                        entity_or_rel="REFERENCES",
+                        target_id=f"{cid}->{t_num}",
+                        details={
+                            "rel_type": "REFERENCES",
+                            "source_label": "Comment",
+                            "source_identity": cid,
+                            "target_label": "Issue",
+                            "target_identity": t_num,
+                            "properties": {"reference_text": ref.raw_text, "reference_type": "issue"},
+                        },
+                    ))
+                elif ref.reference_type == "document_path":
+                    actions.append(PlannedAction(
+                        op="upsert_edge",
+                        entity_or_rel="REFERENCES",
+                        target_id=f"{cid}->{ref.target_id}",
+                        details={
+                            "rel_type": "REFERENCES",
+                            "source_label": "Comment",
+                            "source_identity": cid,
+                            "target_label": "Document",
+                            "target_identity": ref.target_id,
+                            "properties": {"reference_text": ref.raw_text, "reference_type": "document"},
+                        },
+                    ))
+
+            # Grounded decision extraction
+            decisions = RuleBasedDecisionExtractor.extract_decisions(
+                source_text=body,
+                source_id=f"comment_{cid}",
+                source_type="comment",
+                source_url=event.source_url,
+            )
+            for dec in decisions:
+                ver = DecisionVerifier.verify_decision(dec)
+                if ver.is_valid:
+                    actions.append(PlannedAction(
+                        op="upsert_node",
+                        entity_or_rel="Decision",
+                        target_id=dec.id,
+                        details={
+                            "label": "Decision",
+                            "identity": dec.id,
+                            "properties": {
+                                "id": dec.id,
+                                "pattern": dec.pattern,
+                                "quote": dec.quote,
+                                "quote_start": dec.quote_start,
+                                "quote_end": dec.quote_end,
+                                "source_text": dec.source_text,
+                                "source_id": dec.source_id,
+                                "source_type": dec.source_type,
+                                "status_state": dec.status_state,
+                                "source_url": dec.source_url,
+                            },
+                        },
+                    ))
+                    actions.append(PlannedAction(
+                        op="upsert_edge",
+                        entity_or_rel="DECIDED_IN",
+                        target_id=f"{dec.id}->{cid}",
+                        details={
+                            "rel_type": "DECIDED_IN",
+                            "source_label": "Decision",
+                            "source_identity": dec.id,
+                            "target_label": "Comment",
+                            "target_identity": cid,
+                            "properties": {
+                                "quote": dec.quote,
+                                "quote_start": dec.quote_start,
+                                "quote_end": dec.quote_end,
+                            },
+                        },
+                    ))
+                    if dec.affects_target:
+                        target_val = dec.affects_target.strip("#")
+                        target_label = "File" if "/" in target_val else "Issue"
+                        target_ident = target_val if target_label == "File" else int(target_val)
+                        actions.append(PlannedAction(
+                            op="upsert_edge",
+                            entity_or_rel="AFFECTS",
+                            target_id=f"{dec.id}->{target_ident}",
+                            details={
+                                "rel_type": "AFFECTS",
+                                "source_label": "Decision",
+                                "source_identity": dec.id,
+                                "target_label": target_label,
+                                "target_identity": target_ident,
+                            },
+                        ))
+
         # 6. CODEOWNERS
         elif etype == EventType.CODEOWNERS_RULE_ADDED:
             pattern = d["pattern"]
             line = int(d.get("line_number", 1))
             owners = d.get("owners", [])
+            covered_files = d.get("covered_files", [])
 
             actions.append(PlannedAction(
                 op="upsert_node",
@@ -493,11 +650,42 @@ class EventReconciler:
                         },
                     ))
 
+            for cov_file in covered_files:
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="COVERS",
+                    target_id=f"{pattern}->{cov_file}",
+                    details={
+                        "rel_type": "COVERS",
+                        "source_label": "OwnershipRule",
+                        "source_identity": pattern,
+                        "target_label": "File",
+                        "target_identity": cov_file,
+                    },
+                ))
+                for owner in owners:
+                    if owner.startswith("@") and "/" in owner:
+                        actions.append(PlannedAction(
+                            op="upsert_edge",
+                            entity_or_rel="OWNS",
+                            target_id=f"{owner}->{cov_file}",
+                            details={
+                                "rel_type": "OWNS",
+                                "source_label": "Team",
+                                "source_identity": owner,
+                                "target_label": "File",
+                                "target_identity": cov_file,
+                                "properties": {"rule_pattern": pattern},
+                            },
+                        ))
+
         elif etype == EventType.CODEOWNERS_OWNER_REMOVED:
             pattern = d["pattern"]
             owner_name = d["owner_name"]
             owner_type = "Team" if (owner_name.startswith("@") and "/" in owner_name) else "Person"
             ident = owner_name if owner_type == "Team" else owner_name.lstrip("@")
+            covered_files = d.get("covered_files", [])
+
             actions.append(PlannedAction(
                 op="close_edge",
                 entity_or_rel="DECLARES_OWNER",
@@ -511,6 +699,21 @@ class EventReconciler:
                     "closed_at": event.timestamp,
                 },
             ))
+            if owner_type == "Team":
+                for cov_file in covered_files:
+                    actions.append(PlannedAction(
+                        op="close_edge",
+                        entity_or_rel="OWNS",
+                        target_id=f"{owner_name}->{cov_file}",
+                        details={
+                            "rel_type": "OWNS",
+                            "source_label": "Team",
+                            "source_identity": owner_name,
+                            "target_label": "File",
+                            "target_identity": cov_file,
+                            "closed_at": event.timestamp,
+                        },
+                    ))
 
         elif etype == EventType.CODEOWNERS_RULE_REMOVED:
             pattern = d["pattern"]
@@ -529,12 +732,124 @@ class EventReconciler:
         elif etype in (EventType.DOCUMENT_ADDED, EventType.DOCUMENT_EDITED):
             doc_path = d["path"]
             doc_url = d.get("url", f"{event.source_url}#{doc_path}")
+            content = d.get("content", "")
+            title = d.get("title", "")
+            if not title and content:
+                title_match = re.search(r"^\s*#\s+(.+)$", content, re.MULTILINE)
+                title = title_match.group(1).strip() if title_match else doc_path
+            content_hash = d.get("content_hash", "")
+            if not content_hash and content:
+                content_hash = hashlib.sha256(content.encode("utf-8")).hexdigest()
+            file_type = "adr" if ("adr" in doc_path.lower() or "decision" in doc_path.lower()) else "documentation"
+
             actions.append(PlannedAction(
                 op="upsert_node",
                 entity_or_rel="File",
                 target_id=doc_path,
-                details={"label": "File", "identity": doc_path, "properties": {"url": doc_url}},
+                details={"label": "File", "identity": doc_path, "properties": {"url": doc_url, "file_type": file_type}},
             ))
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Document",
+                target_id=doc_path,
+                details={
+                    "label": "Document",
+                    "identity": doc_path,
+                    "properties": {
+                        "path": doc_path,
+                        "title": title or doc_path,
+                        "content_hash": content_hash,
+                        "file_type": file_type,
+                        "url": doc_url,
+                        "source_url": event.source_url,
+                    },
+                },
+            ))
+
+            # References in document
+            if content:
+                refs = extract_explicit_references(content)
+                for ref in refs:
+                    if ref.reference_type == "issue_or_pr":
+                        t_num = int(ref.target_id)
+                        actions.append(PlannedAction(
+                            op="upsert_edge",
+                            entity_or_rel="REFERENCES",
+                            target_id=f"{doc_path}->{t_num}",
+                            details={
+                                "rel_type": "REFERENCES",
+                                "source_label": "Document",
+                                "source_identity": doc_path,
+                                "target_label": "Issue",
+                                "target_identity": t_num,
+                                "properties": {"reference_text": ref.raw_text, "reference_type": "issue"},
+                            },
+                        ))
+
+                # Decision extraction from markdown content
+                decisions = RuleBasedDecisionExtractor.extract_decisions(
+                    source_text=content,
+                    source_id=doc_path,
+                    source_type="document",
+                    source_url=event.source_url,
+                )
+                for dec in decisions:
+                    ver = DecisionVerifier.verify_decision(dec)
+                    if ver.is_valid:
+                        actions.append(PlannedAction(
+                            op="upsert_node",
+                            entity_or_rel="Decision",
+                            target_id=dec.id,
+                            details={
+                                "label": "Decision",
+                                "identity": dec.id,
+                                "properties": {
+                                    "id": dec.id,
+                                    "pattern": dec.pattern,
+                                    "quote": dec.quote,
+                                    "quote_start": dec.quote_start,
+                                    "quote_end": dec.quote_end,
+                                    "source_text": dec.source_text,
+                                    "source_id": dec.source_id,
+                                    "source_type": dec.source_type,
+                                    "status_state": dec.status_state,
+                                    "source_url": dec.source_url,
+                                },
+                            },
+                        ))
+                        actions.append(PlannedAction(
+                            op="upsert_edge",
+                            entity_or_rel="DECIDED_IN",
+                            target_id=f"{dec.id}->{doc_path}",
+                            details={
+                                "rel_type": "DECIDED_IN",
+                                "source_label": "Decision",
+                                "source_identity": dec.id,
+                                "target_label": "Document",
+                                "target_identity": doc_path,
+                                "properties": {
+                                    "quote": dec.quote,
+                                    "quote_start": dec.quote_start,
+                                    "quote_end": dec.quote_end,
+                                },
+                            },
+                        ))
+                        if dec.affects_target:
+                            target_val = dec.affects_target.strip("#")
+                            target_label = "File" if "/" in target_val else "Issue"
+                            target_ident = target_val if target_label == "File" else int(target_val)
+                            actions.append(PlannedAction(
+                                op="upsert_edge",
+                                entity_or_rel="AFFECTS",
+                                target_id=f"{dec.id}->{target_ident}",
+                                details={
+                                    "rel_type": "AFFECTS",
+                                    "source_label": "Decision",
+                                    "source_identity": dec.id,
+                                    "target_label": target_label,
+                                    "target_identity": target_ident,
+                                },
+                            ))
 
         elif etype == EventType.DOCUMENT_DELETED:
             doc_path = d["path"]
@@ -551,5 +866,121 @@ class EventReconciler:
                 target_id=doc_path,
                 details={"label": "File", "identity": doc_path, "tombstoned_at": event.timestamp},
             ))
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Document",
+                target_id=doc_path,
+                details={"label": "Document", "identity": doc_path, "properties": {"url": doc_url}},
+            ))
+            actions.append(PlannedAction(
+                op="tombstone_node",
+                entity_or_rel="Document",
+                target_id=doc_path,
+                details={"label": "Document", "identity": doc_path, "tombstoned_at": event.timestamp},
+            ))
+
+        # 8. Team Membership (evidence-grounded)
+        elif etype == EventType.TEAM_MEMBER_ADDED:
+            team_name = d["team_name"]
+            member = d["member_login"]
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Team",
+                target_id=team_name,
+                details={"label": "Team", "identity": team_name, "properties": {"name": team_name}},
+            ))
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Person",
+                target_id=member,
+                details={"label": "Person", "identity": member, "properties": {"url": f"https://github.com/{member}"}},
+            ))
+            actions.append(PlannedAction(
+                op="upsert_edge",
+                entity_or_rel="HAS_MEMBER",
+                target_id=f"{team_name}->{member}",
+                details={
+                    "rel_type": "HAS_MEMBER",
+                    "source_label": "Team",
+                    "source_identity": team_name,
+                    "target_label": "Person",
+                    "target_identity": member,
+                },
+            ))
+
+        # 9. Explicit Decision
+        elif etype == EventType.DECISION_EXTRACTED:
+            dec_id = d["id"]
+            source_label = d.get("source_label", "Document")
+            source_id = d.get("source_id", "")
+            actions.append(PlannedAction(
+                op="upsert_node",
+                entity_or_rel="Decision",
+                target_id=dec_id,
+                details={
+                    "label": "Decision",
+                    "identity": dec_id,
+                    "properties": {
+                        "id": dec_id,
+                        "pattern": d.get("pattern", "decision:"),
+                        "quote": d.get("quote", ""),
+                        "quote_start": d.get("quote_start", 0),
+                        "quote_end": d.get("quote_end", 0),
+                        "source_text": d.get("source_text", ""),
+                        "source_id": str(source_id),
+                        "source_type": d.get("source_type", "document"),
+                        "status_state": d.get("status_state", "decided"),
+                        "source_url": event.source_url,
+                    },
+                },
+            ))
+            if source_id:
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="DECIDED_IN",
+                    target_id=f"{dec_id}->{source_id}",
+                    details={
+                        "rel_type": "DECIDED_IN",
+                        "source_label": "Decision",
+                        "source_identity": dec_id,
+                        "target_label": source_label,
+                        "target_identity": source_id,
+                        "properties": {
+                            "quote": d.get("quote", ""),
+                            "quote_start": d.get("quote_start", 0),
+                            "quote_end": d.get("quote_end", 0),
+                        },
+                    },
+                ))
+            if d.get("affects_target"):
+                target_val = d["affects_target"]
+                target_label = "File" if "/" in str(target_val) else "Issue"
+                target_ident = target_val if target_label == "File" else int(str(target_val).strip("#"))
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="AFFECTS",
+                    target_id=f"{dec_id}->{target_ident}",
+                    details={
+                        "rel_type": "AFFECTS",
+                        "source_label": "Decision",
+                        "source_identity": dec_id,
+                        "target_label": target_label,
+                        "target_identity": target_ident,
+                    },
+                ))
+            if d.get("supersedes_id"):
+                super_val = d["supersedes_id"]
+                actions.append(PlannedAction(
+                    op="upsert_edge",
+                    entity_or_rel="SUPERSEDES",
+                    target_id=f"{dec_id}->{super_val}",
+                    details={
+                        "rel_type": "SUPERSEDES",
+                        "source_label": "Decision",
+                        "source_identity": dec_id,
+                        "target_label": "Decision",
+                        "target_identity": super_val,
+                    },
+                ))
 
         return actions
