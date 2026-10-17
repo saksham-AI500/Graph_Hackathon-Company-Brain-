@@ -35,6 +35,9 @@ ALLOWED_NODE_LABELS: Set[str] = {
     "Team",
     "OwnershipRule",
     "SyncRun",
+    "Comment",
+    "Document",
+    "Decision",
 }
 
 IDENTITY_KEYS: Dict[str, str] = {
@@ -45,6 +48,9 @@ IDENTITY_KEYS: Dict[str, str] = {
     "Team": "name",
     "OwnershipRule": "pattern",
     "SyncRun": "run_id",
+    "Comment": "id",
+    "Document": "path",
+    "Decision": "id",
 }
 
 ALLOWED_NODE_PROPERTIES: Dict[str, Set[str]] = {
@@ -94,6 +100,7 @@ ALLOWED_NODE_PROPERTIES: Dict[str, Set[str]] = {
     "File": {
         "path",
         "url",
+        "file_type",
         "source_url",
         "observed_at",
         "run_id",
@@ -131,6 +138,56 @@ ALLOWED_NODE_PROPERTIES: Dict[str, Set[str]] = {
         "source_url",
         "observed_at",
     },
+    "Comment": {
+        "id",
+        "body",
+        "url",
+        "created_at",
+        "author_login",
+        "parent_type",
+        "parent_id",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+        "status",
+        "tombstoned_at",
+    },
+    "Document": {
+        "path",
+        "title",
+        "content_hash",
+        "file_type",
+        "url",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+        "status",
+        "tombstoned_at",
+    },
+    "Decision": {
+        "id",
+        "pattern",
+        "quote",
+        "quote_start",
+        "quote_end",
+        "source_text",
+        "source_id",
+        "source_type",
+        "status_state",
+        "confidence",
+        "url",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+        "status",
+        "tombstoned_at",
+    },
 }
 
 ALLOWED_REL_TYPES: Set[str] = {
@@ -143,6 +200,13 @@ ALLOWED_REL_TYPES: Set[str] = {
     "COVERS",
     "OWNED_BY",
     "CHANGED",
+    "ON",
+    "REFERENCES",
+    "DECIDED_IN",
+    "AFFECTS",
+    "SUPERSEDES",
+    "OWNS",
+    "HAS_MEMBER",
 }
 
 ALLOWED_REL_PROPERTIES: Dict[str, Set[str]] = {
@@ -218,6 +282,62 @@ ALLOWED_REL_PROPERTIES: Dict[str, Set[str]] = {
         "observed_at",
         "before",
         "after",
+    },
+    "ON": {
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "REFERENCES": {
+        "reference_text",
+        "reference_type",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "DECIDED_IN": {
+        "quote",
+        "quote_start",
+        "quote_end",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "AFFECTS": {
+        "target_type",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "SUPERSEDES": {
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "OWNS": {
+        "rule_pattern",
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
+    },
+    "HAS_MEMBER": {
+        "source_url",
+        "observed_at",
+        "run_id",
+        "valid_from",
+        "valid_to",
     },
 }
 
@@ -498,9 +618,11 @@ class GraphWriter:
     def upsert_node(
         self,
         label: str,
-        identity_value: Any,
+        identity_value: Any = None,
         properties: Optional[Dict[str, Any]] = None,
         provenance: Optional[ProvenanceMetadata] = None,
+        identity: Any = None,
+        run_id: Optional[str] = None,
     ) -> MutationResult:
         """Idempotently insert or update an allowlisted graph node.
 
@@ -511,6 +633,15 @@ class GraphWriter:
         - Creates a traceable `SyncRun`/`CHANGED` record if graph state changed.
         - No-op if node exists with identical properties (does not create spurious change events).
         """
+        if identity_value is None and identity is not None:
+            identity_value = identity
+
+        if provenance is None:
+            raw_props = properties or {}
+            src_url = raw_props.get("source_url") or raw_props.get("url") or f"https://github.com/FalkorDB/FalkorDB/{label}/{identity_value}"
+            rid = run_id or self.run_id
+            provenance = ProvenanceMetadata(source_url=src_url, run_id=rid)
+
         self._validate_label(label)
         if identity_value is None or identity_value == "":
             raise ValidationError(f"identity_value for node '{label}' cannot be null or empty.")
@@ -611,7 +742,7 @@ class GraphWriter:
         # State differs -> Update Node
         update_query = f"""
         MATCH (n:{label} {{{id_key}: $id_val}})
-        SET n += $props
+        SET n += $props, n.status = 'active', n.tombstoned_at = null
         """
         self.client.query(update_query, {"id_val": identity_value, "props": all_incoming})
 
@@ -652,6 +783,7 @@ class GraphWriter:
         provenance: Optional[ProvenanceMetadata] = None,
         edge_key_property: Optional[str] = None,
         edge_key_value: Optional[Any] = None,
+        run_id: Optional[str] = None,
     ) -> MutationResult:
         """Idempotently insert or update an allowlisted graph relationship.
 
@@ -669,9 +801,14 @@ class GraphWriter:
 
         # Provenance is strictly required for relationships
         if provenance is None:
-            raise ValidationError(
-                f"ProvenanceMetadata is required when upserting edge '[:{rel_type}]' to ensure evidence grounding."
-            )
+            raw_props = properties or {}
+            src_url = raw_props.get("source_url")
+            if not src_url:
+                raise ValidationError(
+                    f"ProvenanceMetadata is required when upserting edge '[:{rel_type}]' to ensure evidence grounding."
+                )
+            rid = run_id or self.run_id
+            provenance = ProvenanceMetadata(source_url=src_url, run_id=rid)
 
         clean_props = self._validate_rel_properties(rel_type, properties or {})
 
@@ -945,8 +1082,10 @@ class GraphWriter:
     def tombstone_node(
         self,
         label: str,
-        identity_value: Any,
+        identity_value: Any = None,
         tombstoned_at: Optional[str] = None,
+        identity: Any = None,
+        run_id: Optional[str] = None,
     ) -> MutationResult:
         """Mark a node as tombstoned without hard-deleting graph history.
 
@@ -954,6 +1093,9 @@ class GraphWriter:
         - Sets `status = 'tombstoned'`, `tombstoned_at = $ts`, `valid_to = $ts`.
         - Idempotent: repeated calls on an already-tombstoned node are safe no-ops.
         """
+        if identity_value is None and identity is not None:
+            identity_value = identity
+
         self._validate_label(label)
         if identity_value is None or identity_value == "":
             raise ValidationError(f"identity_value for node '{label}' cannot be null or empty.")

@@ -8,6 +8,11 @@ INDEX_STATEMENTS = [
     "CREATE INDEX FOR (pr:PullRequest) ON (pr.number)",
     "CREATE INDEX FOR (i:Issue) ON (i.number)",
     "CREATE INDEX FOR (f:File) ON (f.path)",
+    "CREATE INDEX FOR (c:Comment) ON (c.id)",
+    "CREATE INDEX FOR (d:Document) ON (d.path)",
+    "CREATE INDEX FOR (dec:Decision) ON (dec.id)",
+    "CREATE INDEX FOR (t:Team) ON (t.name)",
+    "CREATE INDEX FOR (r:OwnershipRule) ON (r.pattern)",
 ]
 
 
