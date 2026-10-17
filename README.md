@@ -36,7 +36,7 @@ RepoBrain is built as a single, cohesive software engineering institutional memo
 
 ## 3. What RepoBrain Does & Why FalkorDB is Essential
 
-**RepoBrain** is an autonomous institutional intelligence engine for software repositories. Given a pull request URL or number, it generates an **Evidence-Gated PR Brief** that:
+**RepoBrain** is an evidence-gated institutional memory and investigation engine for software repositories. Given a pull request URL or number, it generates an **Evidence-Gated PR Brief** that:
 - Traces explicit PR-to-Issue decision lineages.
 - Identifies qualified historical domain reviewers while excluding bots and the target PR itself.
 - Detects recurring file co-change precedents across the repository.
@@ -45,7 +45,7 @@ RepoBrain is built as a single, cohesive software engineering institutional memo
 
 ### Why FalkorDB is Essential
 Relational repository intelligence is fundamentally a **graph problem**, not a flat text search problem:
-- **Low-Latency Multi-Hop Traversal:** Finding historical domain experts requires traversing `(File)<-[:MODIFIES]-(prior_pr:PullRequest)<-[:REVIEWED]-(reviewer:Person)`. FalkorDB executes these parameterized graph queries in **~4.0 ms** via Redis-native sparse matrix graph operations—**3.6x faster** than local vector retrieval.
+- **Low-Latency Multi-Hop Traversal:** Finding historical domain experts requires traversing `(File)<-[:MODIFIES]-(prior_pr:PullRequest)<-[:REVIEWED]-(reviewer:Person)`. FalkorDB executes these parameterized graph queries in **~5.5 ms** via Redis-native sparse matrix graph operations (compared to ~23.8 ms for local vector retrieval in our 20-question benchmark).
 - **Strict Isolation & Anti-Circularity:** FalkorDB allows Cypher constraints (`prior_pr.number <> $target_pr AND prior_pr.merged_at < $cutoff`) to strictly eliminate future data leakage and self-referential bias at the database layer.
 - **Deterministic Structural Integrity:** Relationships (`:RESOLVES`, `:MODIFIES`, `:REVIEWED`, `:AUTHORED`, `:REPORTED`) are discrete, auditable entities rather than probabilistic similarity scores.
 
@@ -55,14 +55,15 @@ Relational repository intelligence is fundamentally a **graph problem**, not a f
 
 - **Evidence-Gated PR Brief:** Structured summary strictly separated into *Verified Facts*, *Evidence-Supported Inferences*, and *Unresolved Questions*.
 - **Deterministic Gatekeeper:** Every factual assertion must terminate in an authentic, clickable GitHub URL and active graph record; unbacked claims cause instant brief rejection.
-- **Ownership Drift & Bus Factor Engine:** Compares declared `CODEOWNERS` against observed human maintenance activity, computing Herfindahl-Hirschman Index (HHI) reviewer concentration and bus factor risk alerts.
-- **Temporal Backtesting:** Evaluates historical pull requests at $T = \text{target\_pr.created\_at}$, isolating all future PRs, post-cutoff reviews, and future issues.
+- **Graph-Native Ownership & Drift Engine:** Evaluates declared `CODEOWNERS` rules directly in FalkorDB via `(:OwnershipRule)-[:DECLARES_OWNER]->(owner)` and `(:OwnershipRule)-[:COVERS]->(:File)`, detecting discrepancies with observed maintainer review activity.
+- **Native FalkorDB Graph Algorithms:** Executes `CALL algo.pageRank('Person', 'REVIEWED')` for maintainer review authority and `shortestPath((src)-[*..4]-(dst))` for visual multi-hop explanation paths.
+- **Temporal Backtesting:** Evaluates historical pull requests at $T = \text{target\_pr.created\_at}$, isolating all future PRs, post-cutoff reviews, and future issues via inclusive as-of UTC cutoffs.
 - **Adversarial Hardening:** Treats repository content as untrusted input; parameterized queries execute via read-only `GRAPH.RO_QUERY`, blocking Cypher injection, system overrides, and secret exfiltration.
-- **Zero-Speculation Refusal:** Nonexistent pull requests, fabricated reviewers, and unlinked release PRs trigger an explicit, honest refusal state.
+- **Deterministic Refusal:** Nonexistent pull requests, fabricated reviewers, and unlinked release PRs trigger an explicit, honest refusal state.
 
 ---
 
-## 4. System Architecture
+## 5. System Architecture
 
 ```mermaid
 graph TD
@@ -74,11 +75,13 @@ graph TD
         Loader[GraphLoader - src/ingestion/] -->|Idempotent MERGE| FalkorDB[(FalkorDB repo_kg - localhost:6379)]
     end
 
-    subgraph Relational Graph Retrieval
+    subgraph Relational Graph Retrieval & Algorithms
         Orchestrator --> Tools[Typed Read-Only Tools - src/investigation/tools.py]
         Tools -->|GRAPH.RO_QUERY| FalkorDB
+        Tools --> PageRank[FalkorDB PageRank Centrality - CALL algo.pageRank]
+        Tools --> ShortestPath[FalkorDB Explanation Paths - shortestPath]
         Tools --> Temporal[Temporal Backtesting Engine - cutoff = target_pr.created_at]
-        Tools --> Drift[Ownership Discrepancy Engine - CODEOWNERS vs Graph]
+        Tools --> Drift[Graph-Native Ownership Drift - CODEOWNERS in FalkorDB]
     end
 
     subgraph Deterministic Evidence Gate
@@ -95,9 +98,9 @@ graph TD
 
 ---
 
-## 5. FalkorDB Graph Schema
+## 6. FalkorDB Graph Schema
 
-The `repo_kg` graph model reflects GitHub repository relationships:
+The `repo_kg` graph model reflects GitHub repository relationships and organizational ownership rules:
 
 ```mermaid
 erDiagram
@@ -106,6 +109,9 @@ erDiagram
     Person ||--o{ Issue : "REPORTED"
     PullRequest ||--o{ File : "MODIFIES {additions, deletions}"
     PullRequest ||--o{ Issue : "RESOLVES"
+    OwnershipRule ||--o{ Team : "DECLARES_OWNER"
+    OwnershipRule ||--o{ Person : "DECLARES_OWNER"
+    OwnershipRule ||--o{ File : "COVERS"
 
     Person {
         string login PK
@@ -132,6 +138,14 @@ erDiagram
         string path PK
         string url
     }
+    OwnershipRule {
+        string pattern PK
+        int line_number
+        string source_url
+    }
+    Team {
+        string name PK
+    }
 ```
 
 ### Operational Indexes
@@ -140,10 +154,12 @@ FalkorDB operational indexes are enforced on primary keys:
 - `PullRequest(number)`
 - `Issue(number)`
 - `File(path)`
+- `OwnershipRule(pattern)`
+- `Team(name)`
 
 ---
 
-## 6. Representative Cypher Query Patterns
+## 7. Representative Cypher Query Patterns & Algorithms
 
 ### A. Temporal Historical Reviewer Routing
 Identifies human reviewers who reviewed touched files prior to target PR creation, excluding bots and the target PR itself:
@@ -153,8 +169,9 @@ MATCH (f:File)<-[:MODIFIES]-(prior_pr:PullRequest)<-[r:REVIEWED]-(p:Person)
 WHERE f.path IN $file_paths
   AND prior_pr.number <> $exclude_pr
   AND prior_pr.merged_at IS NOT NULL
-  AND prior_pr.merged_at < $cutoff
-  AND (r.submitted_at IS NULL OR r.submitted_at < $cutoff)
+  AND prior_pr.merged_at <= $cutoff
+  AND r.submitted_at IS NOT NULL
+  AND r.submitted_at <= $cutoff
 RETURN p.login AS reviewer,
        p.url AS reviewer_url,
        count(DISTINCT prior_pr) AS prior_pr_count,
@@ -191,7 +208,7 @@ WHERE f1.path IN $file_paths
   AND NOT f2.path IN $file_paths
   AND prior_pr.number <> $exclude_pr
   AND prior_pr.merged_at IS NOT NULL
-  AND prior_pr.merged_at < $cutoff
+  AND prior_pr.merged_at <= $cutoff
 RETURN f1.path AS primary_file,
        f2.path AS co_changed_file,
        count(DISTINCT prior_pr) AS co_change_count,
@@ -200,35 +217,80 @@ ORDER BY co_change_count DESC
 LIMIT $limit
 ```
 
+### D. Graph-Native Ownership Drift Query
+Compares files touched by a target PR against declared `OwnershipRule` nodes and observed prior reviewers in FalkorDB:
+
+```cypher
+MATCH (pr:PullRequest {number: $pr_number})-[:MODIFIES]->(f:File)
+OPTIONAL MATCH (rule:OwnershipRule)-[:COVERS]->(f)
+OPTIONAL MATCH (rule)-[:DECLARES_OWNER]->(declared_owner)
+OPTIONAL MATCH (f)<-[:MODIFIES]-(prior_pr:PullRequest)<-[rev:REVIEWED]-(reviewer:Person)
+WHERE prior_pr.number <> $pr_number
+  AND ($cutoff IS NULL OR (prior_pr.merged_at IS NOT NULL AND prior_pr.merged_at <= $cutoff))
+RETURN f.path AS file_path,
+       collect(DISTINCT coalesce(declared_owner.login, declared_owner.name)) AS declared_owners,
+       collect(DISTINCT reviewer.login) AS observed_reviewers,
+       count(DISTINCT prior_pr) AS prior_touch_count
+```
+
+### E. FalkorDB Graph Algorithm: Maintainer PageRank Centrality
+Computes maintainer review influence using FalkorDB's native PageRank algorithm over the `[:REVIEWED]` graph:
+
+```cypher
+CALL algo.pageRank('Person', 'REVIEWED')
+YIELD node, score
+RETURN node.login AS maintainer, node.url AS profile_url, score
+ORDER BY score DESC
+LIMIT 10
+```
+
+### F. FalkorDB Graph Algorithm: Multi-Hop Explanation Path
+Discovers the shortest relational explanation path connecting a target PR to any reviewer, issue, or file:
+
+```cypher
+MATCH (src:PullRequest {number: $pr_number}), (dst:Person {login: $reviewer_login})
+RETURN shortestPath((src)-[*..4]-(dst)) AS path
+```
+
 ---
 
-## 7. Comparative Benchmark Evaluation
+## 8. Comparative Benchmark Evaluation (v2 & Historical Baseline)
 
-RepoBrain was evaluated on a **20-question hand-verified benchmark** ([`src/evaluation/benchmark.py`](file:///d:/grraph%20Hackathon/RepoBrain/src/evaluation/benchmark.py)) across 3 evaluation modes. An independent `BenchmarkJudge` scored the outputs without the answering engines having access to ground-truth labels.
+RepoBrain's evaluation protocol was hardened in **Phase 7** using a frozen evaluation manifest (`project_context/eval_v2/manifest.json`), formal split isolation (12 development questions, 8 sealed questions), 3 repetitions per architecture, and honest execution-type tracking.
 
-### Benchmark Results (Audited Phase 6)
+### A. Benchmark v2: Development Split (Audited, 12 Questions × 3 Repetitions = 36 Runs / Architecture)
 
-| Metric | Mode A: Graph ON (FalkorDB) | Mode B: Vector Baseline (TF-IDF) | Mode C: Graph OFF (Heuristic) | Advantage of Graph ON |
-| :--- | :---: | :---: | :---: | :--- |
-| **Overall Accuracy** | **100.0%** (20/20) | 75.0% (15/20) | 10.0% (2/20) | **+25.0% vs Vector**, **+90.0% vs Graph OFF** |
-| **Answerable Accuracy (16 Qs)** | **100.0%** (16/16) | 68.8% (11/16) | 12.5% (2/16) | **+31.2% higher answer accuracy** |
-| **Refusal Accuracy (4 Qs)** | **100.0%** (4/4) | **100.0%** (4/4) | 0.0% (0/4) | **Zero Hallucination / Clean Refusals** |
-| **Unsupported Claim Rate** | **0.0%** (0/20) | 0.0% (0/20) | 30.0% (6/20) | **Zero unbacked claims asserted** |
-| **Valid Evidence URLs** | **47** | 8 | 16 | **5.9x more valid evidence citations** |
-| **Total Evidence URLs Provided** | 73 | 46 | 17 | Comprehensive multi-hop citation trail |
-| **Evidence Precision** | **64.4%** | 17.4% | 94.1%* | Vector lacks multi-hop precision |
-| **Total Latency (20 Qs)** | **80.1 ms** | 289.2 ms | 30.8 ms | **3.6x faster than local vector search** |
-| **Avg Query Latency** | **4.01 ms** | 14.46 ms | 1.54 ms | Real-time interactive latency |
+Evaluated across the 12 frozen development questions using 3 independent repetitions (108 total evaluations). Results traced directly to `project_context/eval_v2/summary_development.json`:
 
-*\*Note on Evidence Precision: Graph OFF only returned 17 URLs total—matching the target PR URL itself on direct title matches—while failing 18 of 20 benchmark questions. Graph ON returned 73 URLs spanning multi-hop prior PRs and issue links, 47 of which were strictly indexed in ground-truth criteria.*
+| Architecture | Total Runs | Overall Accuracy | Answerable Acc | Refusal Acc | Citation Support | Unsupported Rate | Mean Latency | Execution Mode |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Graph ON (Company Brain Agent)** | **36** | **100.0%** (36/36) | **100.0%** (36/36) | N/A | **100.0%** | **0.0%** | 424.0 ms | Grounded Fallback Planner |
+| **Plain Retrieval (TF-IDF Vector)** | 36 | 66.7% (24/36) | 66.7% (24/36) | N/A | 66.7% | 33.3% | 12.3 ms | Pure Lexical TF-IDF |
+| **Graph OFF (Model Alone)** | 36 | 0.0% (0/36) | 0.0% (0/36) | N/A | 0.0% | 0.0% | 0.0 ms | 36/36 Unavailable (No Key) |
 
-### Benchmark Limitations & Integrity
-- **Sample Size:** 20 hand-verified questions on public `FalkorDB/FalkorDB` repository data provide qualitative proof-of-concept, not organization-wide statistical significance.
-- **Preliminary vs. Audited Baseline:** In Phase 5, an over-permissive `any(kw in text)` check yielded a preliminary vector baseline score of 18/20. Phase 6 implemented an independent, decoupled `BenchmarkJudge` requiring exact issue numbers and maintainer logins, establishing the true vector baseline at **15/20 (75.0%)**.
+### B. Benchmark v2: Final Sealed Split (Audited, 8 Questions × 3 Repetitions = 24 Runs / Architecture)
+
+Evaluated once at the final evaluation gate across the 8 sealed questions (72 total evaluations). Traced directly to `project_context/eval_v2/summary_sealed.json`:
+
+| Architecture | Total Runs | Overall Accuracy | Answerable Acc | Refusal Acc | Citation Support | Unsupported Rate | Mean Latency | Execution Mode |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **Graph ON (Company Brain Agent)** | 24 | 25.0% (6/24) | 0.0% (0/12) | **50.0%** (6/12) | 25.0% | 50.0% | 485.6 ms | Grounded Fallback Planner |
+| **Plain Retrieval (TF-IDF Vector)** | **24** | **100.0%** (24/24) | **100.0%** (12/12) | **100.0%** (12/12) | **100.0%** | **0.0%** | 10.0 ms | Pure Lexical TF-IDF |
+| **Graph OFF (Model Alone)** | 24 | 0.0% (0/24) | 0.0% (0/12) | 0.0% (0/12) | 0.0% | 0.0% | 0.0 ms | 24/24 Unavailable (No Key) |
+
+*Contamination & Trade-off Disclosure:* Prior evaluation exposure of the sealed set is explicitly disclosed per the Gate 0 audit ([`project_context/PHASE_7_EVALUATION_AUDIT.md`](project_context/PHASE_7_EVALUATION_AUDIT.md)). The sealed split contains edge cases where flat text keyword matching succeeded on raw files while the graph-only agent appropriately refused unlinked claims.
+
+### C. Historical Baseline (Phase 6 Pre-Audit Run — 20 Questions, Unverified)
+
+*Historical reference only (unverified single-run snapshot from Phase 6, before manifest freezing):*  
+- **Graph ON:** 100.0% (20/20)  
+- **Vector Baseline:** 75.0% (15/20)  
+- **Graph OFF:** 10.0% (2/20)  
+*Raw artifact:* [`project_context/evaluation_raw_results.json`](project_context/evaluation_raw_results.json)
 
 ---
 
-## 8. Prerequisites & Local Setup
+## 9. Prerequisites & Local Setup
 
 ### System Prerequisites
 - **OS:** Windows 10/11, macOS, or Linux
@@ -236,16 +298,13 @@ RepoBrain was evaluated on a **20-question hand-verified benchmark** ([`src/eval
 - **Docker:** Docker Desktop or Docker Engine running with port `6379` available
 - **Git:** 2.30+
 
-### Step 1: Start FalkorDB Container
-Run the official FalkorDB Docker container:
+### Step 1: Start FalkorDB Container (Persistent Storage)
+Start FalkorDB using Docker Compose with the persistent named volume (`falkordb-data`):
 
-```bash
-docker run -p 6379:6379 -it --rm falkordb/falkordb:latest
-```
-*Or use the provided Docker Compose file:*
 ```bash
 docker compose up -d
 ```
+*Always use persistent container storage. Do not run with `--rm` or ephemeral workflows, which discard graph data on container stop.*
 
 ### Step 2: Set Up Python Virtual Environment
 ```bash
@@ -261,13 +320,22 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Step 3: Populate Graph from Cached Repository Data
-Run the idempotent ingestion pipeline to populate `repo_kg` with 25 merged PRs, 16 issues, 210 files, and 15 contributors:
+### Step 3: Populate Graph (Offline Seed vs. Online Refresh)
+
+**Option A: 100% Offline Clean-Clone Ingestion (Recommended)**  
+RepoBrain includes a checked-in, deterministic public-data seed snapshot (`src/fixtures/seed_repo_data.json`) containing 25 PRs, 16 issues, 210 files, and 15 contributors. This requires **zero network calls** and **zero GitHub tokens**:
 
 ```bash
-python -m src.ingestion.run --limit 25
+python -m src.ingestion.run --seed
 ```
-*(Ingestion uses local disk cache in `.cache/github/`; requires 0 network calls and consumes 0 GitHub API rate limits).*
+
+**Option B: Online GitHub Refresh (Optional)**  
+To refresh data directly from GitHub's REST API with pagination and rate-limit handling:
+
+```bash
+# Optional: set GITHUB_TOKEN for higher rate limits
+python -m src.ingestion.run --repo FalkorDB/FalkorDB --limit 25
+```
 
 ### Step 4: Launch the Streamlit Application
 ```bash
@@ -277,24 +345,49 @@ Open your browser at `http://localhost:8501`.
 
 ---
 
-## 9. Verification & Benchmark Reproduction
+## 10. Verification & Benchmark Reproduction
 
-### Run Complete Automated Test Suite (59 Tests)
+### Run Complete Automated Test Suite (115 Tests)
 ```bash
 pytest -v
 ```
-*Expected result:* 59 passed in ~10 seconds.
+*Expected result:* 115 passed across 15 test suites (verified in Phase 11 Adversarial Acceptance Audit).
+See [`project_context/PHASE_11_ADVERSARIAL_ACCEPTANCE_REPORT.md`](file:///d:/grraph%20Hackathon/RepoBrain/project_context/PHASE_11_ADVERSARIAL_ACCEPTANCE_REPORT.md).
 
-### Reproduce Tri-Mode Benchmark & Generate Raw Results
+### Run URL Reachability Audit (Zero External Network Calls in Unit Tests)
 ```bash
-python -c "from src.evaluation.evaluator import ComparativeEvaluator; data = ComparativeEvaluator().run_and_save_benchmark(); print('Metrics:', data['metrics'])"
+pytest tests/test_url_auditor.py -v
+```
+
+### Reproduce Benchmark v2 (Audited Development Split — 12 Questions × 3 Repetitions)
+```bash
+python -c "from src.evaluation.evaluator_v2 import EvaluatorV2; res = EvaluatorV2().run_development(repetitions=3); print('Run:', res.run_id); [print(k, m.overall_accuracy_pct) for k, m in res.architectures.items()]"
 ```
 *Raw machine-readable outputs are saved to:*  
-[`project_context/evaluation_raw_results.json`](file:///d:/grraph%20Hackathon/RepoBrain/project_context/evaluation_raw_results.json)
+[`project_context/eval_v2/summary_development.json`](project_context/eval_v2/summary_development.json)
+
+### Run Benchmark v2 Test Suite (Isolation Guards, Hash Stability, Rubric Reproducibility)
+```bash
+pytest tests/test_evaluation_v2.py -v
+```
+
+### Reproduce Separately Authored Holdout Benchmark (9 Questions)
+```bash
+python -m src.evaluation.holdout_runner
+```
+*Raw machine-readable outputs are saved to:*  
+[`project_context/holdout_raw_results.json`](project_context/holdout_raw_results.json)
+
+### Historical 20-Question Baseline
+```bash
+python -c "from src.evaluation.evaluator import ComparativeEvaluator; ComparativeEvaluator().run_and_save_benchmark()"
+```
+*Raw machine-readable outputs are saved to:*  
+[`project_context/evaluation_raw_results.json`](project_context/evaluation_raw_results.json)
 
 ---
 
-## 10. Security Design & Known Limitations
+## 11. Security Design & Known Limitations
 
 ### Security Protections
 - **Read-Only Database Enforcement:** All investigation queries execute via `GRAPH.RO_QUERY` or parameterized helpers. Mutation clauses (`CREATE`, `SET`, `DELETE`, `DROP`) cannot execute on investigation paths.
@@ -304,12 +397,12 @@ python -c "from src.evaluation.evaluator import ComparativeEvaluator; data = Com
 
 ### Known Limitations
 - **Mutable Issue Snapshots:** GitHub's REST API returns current issue descriptions. If an issue title was edited after target PR merge, historical point-in-time issue revision diffs require event timeline scraping.
-- **CODEOWNERS Snapshot:** CODEOWNERS rules are parsed from the HEAD of the `main` branch. Historical git tree checkouts at commit SHAs would be required for strict point-in-time CODEOWNERS changes.
+- **CODEOWNERS Snapshot:** CODEOWNERS rules are parsed from the repository tree snapshot. Historical git tree checkouts at commit SHAs would be required for strict point-in-time CODEOWNERS changes.
 - **Local Prototype Status:** RepoBrain is currently designed and tested for local operation; it is not publicly deployed to the cloud.
 
 ---
 
-## 11. AI Assistance Disclosure
+## 12. AI Assistance Disclosure
 
 In accordance with official hackathon rules:
 - **Pair Programming Agent:** Developed in pair-programming collaboration with Google Antigravity IDE (Gemini 2.5 Pro architecture).

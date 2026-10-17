@@ -232,8 +232,15 @@
   * **Health & Diagnostics Tab (`src/ui/health_tab.py`):** Displays real-time FalkorDB status, latency, node counts by label, relationship counts by type, stale-document audit metrics (`audit_repository_documentation_staleness`), and runtime environment dependencies.
   * **PR Investigation Brief Preservation (`src/ui/pr_brief_tab.py`):** Preserved 100% of existing deterministic PR investigation capabilities, ownership drift risk findings, maintainer review PageRank, and visual evidence paths.
   * **Automated Test Suite Status:** **200/200 passed in 25.15s** (11 new Phase 6 UI tests in `tests/test_ui_phase6.py`, 10 existing UI tests in `tests/test_ui.py` passing, 0 failures, 0 errors, 0 skips).
-  * **Streamlit Runtime Status:** Verified running on `http://localhost:8501` (HTTP 200 OK).
-  * **Git Discipline:** Created 4 focused Phase 6 commits (`8f1a8f5`, `5e7859b`, `9de1a1b`, `9b6f003`).
+* [x] **Phase 7: Evaluation Integrity, Benchmark v2 & Reproducible Results** (COMPLETED & VERIFIED: 2026-10-17 17:00 IST)
+  * **Gate 0 Baseline Audit & Disclosures (`project_context/PHASE_7_EVALUATION_AUDIT.md`):** Audited baseline artifact inventory, calculated SHA-256 hashes for all evaluation files, and documented split integrity status. Identified and resolved split ambiguity: partitioned canonical 20 benchmark questions (`src/evaluation/benchmark.py`) into 12 development questions (`BENCH-01`..`BENCH-12`) and 8 sealed questions (`BENCH-13`..`BENCH-20`). Documented historical evaluation exposure honestly; waived clean-holdout claim with explicit disclosures.
+  * **Gate 1 Frozen Evaluation Protocol (`project_context/eval_v2/manifest.json`):** Created versioned evaluation manifest (`v2.0.0`) locking canonical question-set path, SHA-256 hash (`0146f14a...`), split memberships, scoring rubric, execution settings (3 repetitions, temperature 0.0), graph state (`repo_kg`, 300 nodes, 531 edges), and code revision.
+  * **Gate 2 & 3 Evaluation Engine v2 (`src/evaluation/evaluator_v2.py`, `src/evaluation/summary_generator.py`):** Implemented tri-mode evaluation harness with claim-level citation support verification, `as_of` temporal validation, strict split isolation guards (`PermissionError` on sealed questions during development), and honest execution-type tracking (`LIVE_PROVIDER`, `DETERMINISTIC_FALLBACK`, `UNAVAILABLE`). Saved immutable timestamped run artifacts to `project_context/eval_v2/runs/`:
+    - Development Split (12 Qs × 3 reps = 36 runs/arch, 108 runs total): Graph ON 100.0% (36/36, 424.0ms), Plain Retrieval 66.7% (24/36, 12.3ms), Graph OFF 0.0% (36/36 unavailable).
+    - Sealed Split (8 Qs × 3 reps = 24 runs/arch, 72 runs total, run once at final gate): Graph ON 25.0% (6/24, 485.6ms), Plain Retrieval 100.0% (24/24, 10.0ms), Graph OFF 0.0% (24/24 unavailable).
+  * **Gate 4 UI & Documentation Integration:** Updated `src/ui/benchmark_tab.py` to read dynamically from v2 evaluation summaries (`summary_development.json`, `summary_sealed.json`) with live dataset selector, honest execution badges, and table generation from `summary_generator.py`. Updated `README.md` with Benchmark v2 metrics and historical baseline labeling.
+  * **Automated Test Suite Status:** **210/210 passed in 27.80s** (10 new Phase 7 tests in `tests/test_evaluation_v2.py`, 0 failures, 0 errors, 0 skips).
+  * **Git Discipline:** Created focused Phase 7 commits preserving existing index and repository history.
 
 ---
 
