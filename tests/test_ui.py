@@ -42,7 +42,10 @@ def test_ui_investigate_pr_with_linked_issue():
     # Success card rendered
     assert any("[VERIFIED]" in s.value for s in at.success)
     # 4 tabs rendered (Executive Brief, Ownership Drift, Reviewers & Co-Changes, Auditable Evidence Paths)
-    assert len(at.tabs) == 4
+    assert any(t.label == "Executive Brief" for t in at.tabs)
+    assert any(t.label == "Ownership Drift" for t in at.tabs)
+    assert any(t.label == "Reviewers & Co-Changes" for t in at.tabs)
+    assert any(t.label == "Auditable Evidence Paths" for t in at.tabs)
 
     # Check that issue #3338 is referenced in markdown content
     markdown_texts = [m.value for m in at.markdown]
@@ -114,3 +117,45 @@ def test_ui_database_unavailability_handling(monkeypatch):
     assert len(at.error) >= 1
     combined_err = " ".join([e.value for e in at.error])
     assert "Database Connection Failed" in combined_err or "OFFLINE" in combined_err
+
+
+def test_ui_get_orchestrator_reuses_client(client):
+    """Verify get_orchestrator properly binds and reuses provided client."""
+    import streamlit as st
+    from src.ui.app import get_orchestrator
+    st.cache_resource.clear()
+    orch = get_orchestrator(_client=client)
+    assert orch is not None
+    assert orch.client is client
+
+
+def test_ui_investigate_pr_with_hash_prefix():
+    """Verify UI handles PR target entered with leading '#' (e.g. '#3339')."""
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+
+    at.text_input[0].input("#3339")
+    at.form_submit_button[0].click().run()
+
+    assert len(at.exception) == 0
+    assert len(at.success) >= 1
+    assert any("[VERIFIED]" in s.value for s in at.success)
+
+
+def test_ui_renders_visual_evidence_paths_and_pagerank():
+    """Verify UI renders FalkorDB visual evidence paths and PageRank maintainers."""
+    at = AppTest.from_file(APP_PATH, default_timeout=30)
+    at.run()
+    at.text_input[0].input("3339")
+    at.form_submit_button[0].click().run()
+
+    assert len(at.exception) == 0
+    subheaders = [s.value for s in at.subheader]
+    assert "FalkorDB Visual Evidence Paths" in subheaders
+    assert "FalkorDB Graph Algorithm: Maintainer Review Centrality" in subheaders
+    md_text = " ".join([m.value for m in at.markdown])
+    assert "PageRank Score" in md_text
+    assert "&rarr;" in md_text
+
+
+
