@@ -222,7 +222,18 @@
   * **10 Scripted Questions Benchmark:** Evaluated all 10 canonical benchmark questions; every case produced verified answers or justified evidence-backed refusals.
   * **Automated Test Suite Status:** **189/189 passed in 23.45s** (16 new Phase 5 integration tests in `tests/test_agent.py`, 0 failures, 0 errors, 0 skips).
   * **Graph Health & Data Preservation:** Active graph `repo_kg` verified healthy with 296 nodes and 531 edges. Zero data loss; pre-existing staged files preserved.
-  * **Git Discipline:** Created 5 focused Phase 5 commits (`449a4fd`, `3416d31`, `c3f87d4`, `c9bba06`, `a88ed9c`).
+* [x] **Phase 6: Company Brain UI, Graph Explorer & Live Evidence Dashboard** (COMPLETED & VERIFIED: 2026-10-17 16:30 IST)
+  * **Sidebar & Configuration (`src/ui/sidebar.py`):** Implemented masked OpenRouter API key field stored only in ephemeral session state (`type="password"`), model selector with custom slug support, central Graph ON/OFF/Plain-Retrieval demo switch, historical `as_of` date/time selector with UTC ISO serialization, live incremental sync button (`SyncEngine.run_once`), and live FalkorDB/Sync connection telemetry.
+  * **Ask the Brain Primary Chat Tab (`src/ui/chat_tab.py`):** Built interactive conversation UI powered by `AgentExecutionLoop`. Displays verified structured answers with `[S1]`, `[S2]` citation markers, clickable GitHub URLs, claim categorization (Facts, Inferences, Unresolved items), expandable multi-hop evidence graph paths, and step-by-step tool execution traces without secret leakage.
+  * **Knowledge Graph Explorer Tab (`src/ui/explorer_tab.py`):** Integrated interactive Vis.js Network canvas rendering local entity neighborhoods up to 2 hops. Visualizes color-coded entity types (`Person`, `PullRequest`, `Issue`, `File`, `Team`, `Document`, `Decision`), distinguishes active vs closed/tombstoned entities, and includes a tabular property inspector.
+  * **Live Change Feed Tab (`src/ui/feed_tab.py`):** Queries `(:SyncRun)` and `(:SyncRun)-[:CHANGED]->(target)` records from FalkorDB. Displays run status, duration, repository scope, event counts, operation breakdowns (`upsert_node`, `upsert_edge`, `close_edge`, `tombstone_node`), before/after audit states, and real vs dry-run distinction.
+  * **Fair 3-Way Architecture Comparison Tab (`src/ui/compare_tab.py`):** Implements side-by-side evaluation across Graph ON (Company Brain Agent), Plain Retrieval (TF-IDF Vector Baseline via `LocalVectorBaseline`), and Graph OFF (direct LLM). Reports latency (ms), source support, refusal discipline, and honest engine labeling (Live LLM vs Deterministic Fallback).
+  * **Benchmark Tab (`src/ui/benchmark_tab.py`):** Surfaces audited evaluation results from `project_context/evaluation_raw_results.json` (Graph ON 100% vs Vector 75% vs OFF 10%), historical question cards, and an interactive live 10-question test runner executing against active `repo_kg`.
+  * **Health & Diagnostics Tab (`src/ui/health_tab.py`):** Displays real-time FalkorDB status, latency, node counts by label, relationship counts by type, stale-document audit metrics (`audit_repository_documentation_staleness`), and runtime environment dependencies.
+  * **PR Investigation Brief Preservation (`src/ui/pr_brief_tab.py`):** Preserved 100% of existing deterministic PR investigation capabilities, ownership drift risk findings, maintainer review PageRank, and visual evidence paths.
+  * **Automated Test Suite Status:** **200/200 passed in 25.15s** (11 new Phase 6 UI tests in `tests/test_ui_phase6.py`, 10 existing UI tests in `tests/test_ui.py` passing, 0 failures, 0 errors, 0 skips).
+  * **Streamlit Runtime Status:** Verified running on `http://localhost:8501` (HTTP 200 OK).
+  * **Git Discipline:** Created 4 focused Phase 6 commits (`8f1a8f5`, `5e7859b`, `9de1a1b`, `9b6f003`).
 
 ---
 
