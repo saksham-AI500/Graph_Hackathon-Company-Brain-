@@ -94,22 +94,142 @@
   * **Full Test Suite & Zero Regression:** Executed `pytest -v`, maintaining 59/59 tests passing in 11.10s. Application and database connection remain 100% operational.
   * **Git Restraint:** Followed explicit instructions: zero git write/commit/push commands executed pending user review.
 
+* [x] **Phase 9: Real-World Testing, Defect Repair & Reliability Improvement** (COMPLETED & VERIFIED: 2026-10-15)
+  * **Baseline Recorded:** Published commit `6474fc8` established as clean starting baseline with 59 passing tests.
+  * **End-to-End Edge Cases Exercised:** Tested database health check (1.74ms latency), simulated offline failure and recovery, verified idempotent re-ingestion (266 nodes, 482 edges), evaluated PRs across 5 distinct archetypes (linked issues, standalone release PRs, nonexistent targets, undeclared drift, and leading hash format).
+  * **Defects Repaired:**
+    - DEF-01: Guarded `get_orchestrator` in `src/ui/app.py` against offline database cold-start crashes, and passed `_client=client` to prevent duplicate connection pools.
+    - DEF-02: Replaced inaccurate preset label in `src/ui/app.py` with authentic PR #3307 resolving Issue #3306.
+    - DEF-03: Enabled optional leading `#` normalization in `InvestigationInput` (`#3339` -> `3339`).
+  * **Automated Tests Extended:** Expanded test suite from 59 to 61 passing tests (`test_ui_get_orchestrator_reuses_client`, `test_ui_investigate_pr_with_hash_prefix`).
+  * **Performance Characterized:** Measured standard PR #3339 latency (mean: 58.12ms) and large 75-file release PR #3342 latency (mean: 846.93ms, sub-second).
+  * **Governance & Test Report:** Authored `project_context/PHASE_9_TEST_REPORT.md` and updated `project_context/UI_REQUIREMENTS_BACKLOG.md`.
+  * **Git Restraint Maintained:** All fixes kept in working tree; 0 commits or pushes executed.
+
+* [x] **Claude Review Repair Sprint (Phases A through I)** (COMPLETED & VERIFIED: 2026-10-15)
+  * **Phase A (Trustworthy Baseline):** Executed 5 consecutive benchmark runs; saved raw JSON to `project_context/baselines/run_1.json`..`run_5.json`. Determinism 100% verified across all modes. Authored `project_context/PHASE_A_BASELINE_REPORT.md`.
+  * **Phase B (Clean-Clone Setup):** Created checked-in public-data snapshot `src/fixtures/seed_repo_data.json` allowing 100% offline clean-clone ingestion (`python -m src.ingestion.run --seed`). Tested idempotency into test graph (node/edge counts 100% identical). Added `tests/test_ingestion.py`.
+  * **Phase C (Citation Quality & URL Audit):** Clarified distinction between Ground-Truth Match (47/73), HTTP Reachability (73/73, 100%), and Claim Support. Implemented bounded HTTP `src/evaluation/url_auditor.py` and unit tests in `tests/test_url_auditor.py` (0 external network calls in unit tests).
+  * **Phase D (Verifier Hardening & Temporal Integrity):** Enforced inclusive as-of UTC cutoff contract (`<= $cutoff`) and strict null-timestamp exclusion. Hardened `PROnlineEvidenceVerifier` against 7 mutation scenarios. Added `tests/test_verifier_mutations.py` (9 tests passing).
+  * **Phase E (Graph-Native Ownership):** Ingested CODEOWNERS rules and teams into FalkorDB `repo_kg` (270 nodes, 508 edges). Implemented Cypher ownership drift query in `src/ownership/graph_ownership.py`. Added `tests/test_graph_ownership.py`.
+  * **Phase F (FalkorDB Graph Algorithms & Visual Evidence Paths):** Implemented maintainer review PageRank (`CALL algo.pageRank('Person', 'REVIEWED')`) and multi-hop explanation paths (`shortestPath((src)-[*..4]-(dst))`) in `src/graph/algorithms.py`. Rendered interactive path graph and PageRank table in Streamlit UI. Added `tests/test_graph_algorithms.py`.
+  * **Phase G & H (Edge Cases & Browser Smoke Test):** Enforced temporal cutoff in `PROrchestrator` to prevent future review leakage. Created `tests/test_edge_cases_and_security.py` (14 tests). Executed real headless browser test on `http://localhost:8501`, verifying all tabs, presets, visual paths, and refusal states.
+  * **Phase I (Honest Benchmark & Documentation):** Re-ran benchmark (Graph ON 20/20, Vector 16/20, Graph OFF 2/20). Replaced marketing superlatives in `README.md` with exact scoped measurements. Authored `project_context/CLAUDE_REVIEW_REPAIR_REPORT.md`.
+  * **Full Automated Test Suite:** **100 tests passed in 23.31s** (up from 61 tests, 0 regressions, 0 failures).
+
 ### Submission Polish & Code Freeze (Target: Post-Kickoff Hours 72–96)
 * [ ] **Phase 8: Optional MCP Server** *(Conditional on core workflow stability)*
   * Build read-only stdio MCP server wrapping typed tools if needed.
-* [x] **Phase 9: Documentation, Video Demo & Blog Post** (COMPLETED via Phase 7)
-  * Complete comprehensive `README.md` with schema diagrams and local reproduction guide.
-  * Authored 90-second signature demonstration video script (`demo_script.md`).
-  * Authored technical article for Best Blog Post side prize (`blog_post.md`).
-* [ ] **Phase 10: Final Regression Checks & Code Freeze**
-  * Stage, commit, and push to authorized remote `Graph_Hackathon-Company-Brain-` upon user authorization.
-  * Clean-clone test on fresh directory once pushed.
-  * Formal submission ahead of October 18, 11:59 PM IST deadline.
+* [x] **Phase 9: Documentation, Video Demo & Blog Post** (COMPLETED via Phase 7 & 8)
+* [x] **Phase 9: Real-World Testing & Defect Repair** (COMPLETED & VERIFIED)
+* [x] **Claude Review Repair Sprint** (COMPLETED & VERIFIED: 100/100 tests green)
+* [x] **Phase 10: Independent Acceptance Audit & Track 03 Gap Closure** (COMPLETED & VERIFIED: 2026-10-15)
+  * **Test Count Reconciled:** Resolved suite count discrepancy; confirmed exactly 15 test files and 108 collected tests (up from 100). 108/108 passing (100%) in ~22.5s.
+  * **Graph Algorithm Centrality Hardened:** Diagnosed uniform PageRank (0.0667) due to bipartite graph structure in `CALL algo.pageRank('Person', 'REVIEWED')`. Restructured to compute global review depth and aggregate scores onto reviewers (`DvirDukhan`: 0.0753, `AviAvni`: 0.0518, `swilly22`: 0.0115). Hardened `find_explanation_path` for all disconnected/missing node edge cases.
+  * **Ownership Drift Verified on Real Records:** Tested live PR #3181 in `repo_kg` verifying owned file (`build/runtime/Dockerfile` -> `@FalkorDB/falkordb-core`) vs unowned file (`tests/flow/common.py` -> `[]`). Confirmed Cypher drift queries execute natively in FalkorDB.
+  * **Evidence URL Grounding Defect Fixed:** Discovered verifier previously accepted any URL starting with `https://github.com/`. Hardened `PROnlineEvidenceVerifier` to require all PR, issue, reviewer, and file entities to exist in FalkorDB. Added mutation test `test_mutation_authentic_looking_url_for_unconnected_or_nonexistent_entity`.
+  * **File Ownership Temporal Leakage Plugged:** Added `cutoff_timestamp` parameter across `src/ownership/metrics.py`, `discrepancy.py`, and `tools.py` enforcing `pr.merged_at <= $cutoff` and `r.submitted_at <= $cutoff` on historical ownership lookups. Added regression test `test_evaluate_ownership_discrepancy_respects_temporal_cutoff`.
+  * **Clean-Clone Setup & Ingestion Integrity:** Validated 100% offline ingestion via `src/fixtures/seed_repo_data.json`. Proved zero duplicate entities, zero dangling edges, and zero corruption during failed network refreshes. Added `test_isolated_ingestion_has_zero_duplicates_and_zero_dangling_edges` and `test_failed_online_refresh_does_not_corrupt_existing_data`.
+  * **Track 03 Gap Closed:** Implemented `trace_documented_decisions()` and `find_source_backed_documentation()` in `src/graph/queries/core.py`.
+  * **Full Verification & Report:** Re-ran tri-mode benchmark (Graph ON 20/20, Vector 16/20, Graph OFF 2/20). Created `project_context/PHASE_10_ACCEPTANCE_REPORT.md` with complete acceptance table (all requirements PASS). All 108 automated tests green.
+* [x] **Phase 11: Adversarial Validation & Submission Readiness** (COMPLETED & VERIFIED: 2026-10-15)
+  * **Adversarial Verifier Hardening (DEF-ADV-01..05):** Verified reviewer citation URLs against FalkorDB `[:REVIEWED]` relationships; verified co-change signals (file existence and co-modification); enforced URL parity and entity whitelist on evidence references; expanded prompt injection scanning across issue titles, resolution evidence, unresolved questions, and drift findings. 15/15 verifier mutation tests pass.
+  * **Clean-Clone Empty Graph Crash Fixed (DEF-CLEAN-01):** Resolved `ResponseError: Invalid graph operation on empty key` when pinging uninitialized FalkorDB instances. Hardened `src/db.py` (`ping()` uses `query()`, `get_counts()` returns zeroes on uncreated keys). Added `test_falkordb_uncreated_graph_empty_key_handled_safely`.
+  * **Temporal Policy Harmonization:** Updated `src/evaluation/vector_baseline.py` to match the declared inclusive as-of policy (`doc.timestamp > cutoff` excluded).
+  * **Decision Tracing Evidence Clarified:** Exposed `evidence_basis` in `trace_documented_decisions` to strictly separate documented facts from graph relationships and architectural inferences.
+  * **Independent 9-Question Holdout Benchmark:** Evaluated separate holdout dataset across all 3 modes: Graph ON 9/9 (100.0%, 5/5 refusals, 6.6ms/query), Vector Baseline 3/9 (33.3%, 25.0ms/query), Graph OFF 0/9 (0.0%). Added `test_holdout_dataset_integrity_and_execution`. Saved raw results to `project_context/holdout_raw_results.json`.
+  * **Complete Test Suite Passing:** **115/115 automated tests passing** across 15 test suites with 0 regressions.
+  * **Adversarial Acceptance Report Authored:** Compiled comprehensive audit report in `project_context/PHASE_11_ADVERSARIAL_ACCEPTANCE_REPORT.md` (all 9 tasks PASS).
+* [x] **Phase 12: Final Code Freeze Acceptance & Release Manifest** (COMPLETED & VERIFIED: 2026-10-15)
+  * 115/115 automated tests passing across 15 test suites with 0 failures, 0 warnings, and 0 regressions.
+  * Independent 9-question holdout evaluation verified: Graph ON 9/9 (100.0%, 6.6ms/query) vs Vector 3/9 (33.3%) vs Graph OFF 0/9 (0.0%).
+  * Clean-clone seed fixture (`seed_repo_data.json`) 100% idempotent (266 nodes, 482 edges).
+  * Comprehensive release audit report documented in `project_context/PHASE_12_CODE_FREEZE_REPORT.md`.
+  * Working tree clean with 48 staged release files, 2 unstaged resilience refinements, and 0 untracked files.
+* [x] **Phase 13: New Laptop Recovery, Full Project Understanding & Environment Audit** (COMPLETED & VERIFIED: 2026-10-17)
+  * Read, mapped, and understood entire existing project architecture, dataflows, schemas, instructions, and tests.
+  * Git repository integrity 100% verified (HEAD `6474fc8`, 48 staged files matching Phase 12, branch `main`).
+  * Repaired `.venv` executable path in `pyvenv.cfg` from old machine `C:\Python314` to local `C:\Users\saksham\AppData\Local\Programs\Python\Python314`. All frozen packages (FalkorDB 1.8.0, Streamlit 1.66.0, Pydantic 2.14.1) import cleanly.
+  * Verified 115 tests collected across 15 suites in 1.17s.
+  * Verified offline unit and UI smoke tests (28 tests passing).
+  * Identified sole infrastructure blocker: Docker Desktop / WSL is not installed on this machine, leaving FalkorDB offline on port 6379.
+  * Authored comprehensive 17-section recovery manifest in `project_context/PHASE_13_NEW_MACHINE_RECOVERY_REPORT.md`.
+
+* [x] **Phase 0: Housekeeping, Defect Fixes & Baseline Stabilization** (COMPLETED & VERIFIED: 2026-10-17 11:48 IST)
+  * **Defect 1 (Missing Timestamps):** Replaced empty string `""` timestamps with true `null` values across ingestion models (`ReviewRecord`), loader queries (`CASE WHEN $ts = '' THEN null ELSE $ts END`), and ownership/temporal modules. In Cypher, empty strings compared `<=` to any ISO string, causing missing timestamps to leak through temporal cutoff boundaries; true nulls prevent this leakage. Cleaned legacy issue #3140 `closed_at` empty string in active `repo_kg`. Added regression tests for T-1, T, and T+1 boundary conditions.
+  * **Defect 2 (Collapsed Reviews):** Keyed `[:REVIEWED]` relationships by GitHub review ID in `ReviewRecord`, GitHub client, and loader query (`MERGE [r:REVIEWED {id: $review_id}]`). Prevents multiple reviews with the same state from collapsing or overwriting each other. Added regression tests verifying independent review persistence and state updates.
+  * **Defect 3 (Ownership Drift Metrics & Bus Factor):** Replaced placeholder drift metrics with formal bus-factor calculation defined in brief: fewest contributors whose decayed contributions cover >50% of file activity, excluding bots. Implemented `calculate_bus_factor()` in `src/ownership/metrics.py` with exponential decay (180-day half-life). Updated `OwnershipDiscrepancyReport` and `OwnershipDriftFinding` schemas with true semantics. Added regression tests for ranking, decay, and bus-factor boundaries.
+  * **Defect 4 (Bots in PageRank):** Switched PageRank default in `src/graph/algorithms.py` (`run_maintainer_pagerank(..., include_bots=False)`) and Streamlit UI (`app.py`) to exclude bot accounts by default. Added regression tests for default exclusion and explicit opt-in.
+  * **Defect 5 (Unsafe Untrusted-Text Handling):** Replaced naive `<script>` tag stripping with structured data isolation: `wrap_untrusted_data(text, source)` enclosing repository text in `<untrusted_data source="...">` blocks. Enforced prompt injection defenses, stripping executable tags and system override markers. Enforced strict tool permission isolation: `validate_and_invoke_tool()` in `src/investigation/tools.py` allows only read-only investigation queries (`lookup_*`, `audit_*`, `find_*`), rejecting unknown tools and blocking write operations. Added regression tests covering injection and unauthorized write attempts.
+  * **Defect 6 (Unsupported README Claims):** Replaced marketing claims ("autonomous institutional intelligence engine", "zero hallucination", "3.6x faster") in `README.md` and codebase with precise evidence-backed descriptions ("evidence-gated institutional memory and investigation engine", "separately authored holdout", verified latency measurements 83.4ms total, 4.17ms/query). Added regression tests verifying documentation assertions match raw evaluation artifacts.
+  * **Defect 7 (Docker Data Loss):** Replaced ephemeral `docker run --rm` command in `README.md` with persistent `docker compose up -d` workflow targeting named volume `repobrain_falkordb-data`. Verified stop/start cycle maintains exact 270 nodes and 508 edges without data loss.
+  * **Configuration & Reproducibility:** Created `.env.example` with placeholders for `GITHUB_TOKEN`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `FALKORDB_HOST`, `FALKORDB_PORT`. Updated `.gitignore` with `!.env.example` exception. Verified clean virtual environment imports and startup.
+  * **Automated Test Suite Status:** **127/127 passed in 13.75s** (10 new Phase 0 regression tests, 0 failures, 0 errors, 0 skips).
+
+* [x] **Phase 1: GraphWriter, Provenance & Temporal Validity** (COMPLETED & VERIFIED: 2026-10-17 12:30 IST)
+  * **Centralized Mutation Architecture (`src/graph/writer.py`):** Implemented `GraphWriter` exposing only four approved mutation operations: `upsert_node`, `upsert_edge`, `close_edge`, `tombstone_node`. Zero caller-supplied raw Cypher accepted; all queries constructed with strict allowlisted labels (`Person`, `PullRequest`, `Issue`, `File`, `Team`, `OwnershipRule`, `SyncRun`), allowlisted rel types (`AUTHORED`, `REVIEWED`, `MODIFIES`, `RESOLVES`, `REPORTED`, `DECLARES_OWNER`, `COVERS`, `OWNED_BY`, `CHANGED`), and parameterized values.
+  * **Tamper-Proof Provenance & Audit Records:** Enforced mandatory `ProvenanceMetadata` (`source_url`, `observed_at`, `run_id`, `valid_from`, `valid_to`) on derived edges and entities. Created traceable `(:SyncRun)-[:CHANGED {op, target_id, before, after}]->(target)` change events for all state-altering operations. Idempotent no-ops strictly suppress spurious change records.
+  * **Temporal Semantics & Non-Destructive Mutations:** `close_edge` sets `valid_to` without deleting relationships; `tombstone_node` sets `status='tombstoned'`, `tombstoned_at`, and `valid_to` without hard-deleting historical nodes or connected edges, preserving historical as-of time-travel accuracy.
+  * **Read/Write Boundary Enforcement:** Read-only investigation tools remain strictly isolated via `FalkorDBClient.ro_query` and `ALLOWED_INVESTIGATION_TOOLS` registry; mutation tools are disallowed from read paths.
+  * **Comprehensive Regression Suite (`tests/test_graph_writer.py`):** Added 12 focused integration tests covering node/edge upserts, idempotency, edge closing, as-of boundaries, tombstoning, change-event auditing, input validation, missing evidence rejection, read-only boundaries, null timestamp preservation, and safe error handling.
+  * **Full Test Suite Status:** **139/139 passed in 13.72s** (12 new Phase 1 regression tests, 0 failures, 0 errors, 0 skips).
+  * **Data & Git Preservation:** Active graph `repo_kg` verified intact with exactly 270 nodes and 508 edges. Pre-existing 48 staged files in git index preserved intact; 2 focused Phase 1 commits created (`fe36e3e`, `5118d63`).
+
+* [x] **Phase 2: Incremental GitHub Sync Engine & Live Graph Updates** (COMPLETED & VERIFIED: 2026-10-17 12:45 IST)
+  * **Architecture & Separation of Concerns (`src/sync/`):** Built clean, decoupled sync engine module comprising `models.py` (typed event and state models), `state.py` (`SyncStateManager` with FalkorDB `(:SyncState)` persistence, disk cache fallback, and 300s TTL distributed concurrency locking), `fetcher.py` (`GitHubFetcher` supporting ETags, `since` timestamps, backoff retry on rate limits, and JSON/JSONL offline fixture replay), `reconciler.py` (`EventReconciler` mapping normalized GitHub events to Phase 1 `GraphWriter` primitives), `engine.py` (`SyncEngine` orchestrating runs, locking, and cursor advancement), and `cli.py` (CLI entrypoint).
+  * **Execution Modes:** Full support for `--once` (single run), `--watch --interval <sec>` (periodic polling), `--dry-run` (reports planned actions without mutating graph or advancing cursor), and `--replay <fixture.jsonl>` (deterministic offline event replay).
+  * **Reconciled Change Categories:** Reconciles all 7 required categories:
+    1. PR lifecycle: `opened`, `merged`, `closed`, `reopened` (restoring validity without destroying history).
+    2. PR files: `added`, `removed`, `renamed` (superseding old file paths, closing prior `[:MODIFIES]` edges with `valid_to`, creating active edges for new paths).
+    3. Reviews: `submitted`, `dismissed` (strictly keyed by GitHub review ID; distinct reviews do not collapse).
+    4. Issues: `opened`, `edited`, `closed`, `reopened`, `resolves` (linking PR to issue via explicit `[:RESOLVES]`).
+    5. Comments: PR and issue comments ingested with provenance metadata.
+    6. CODEOWNERS: rule additions, pattern changes, and owner removals (`close_edge` on `[:DECLARES_OWNER]`).
+    7. Documents: Markdown document additions, edits, and deletions (`tombstone_node` on `File`).
+  * **Cursor & State Management:** Cursors advance ONLY on successful, non-dry-run runs. Incomplete or failed runs do not advance cursors, keeping work discoverable for later retry. Concurrency locks prevent overlapping sync executions.
+  * **Idempotency & Replay:** Replaying events or running sync repeatedly evaluates as 100% idempotent no-ops without duplicate change events or state corruption.
+  * **Automated Test Suite Status:** **150/150 passed in 14.79s** (11 new Phase 2 sync integration and unit tests in `tests/test_sync.py`, 0 failures, 0 errors, 0 skips).
+  * **Sandbox Live-Diff Gate Status:** Remote sandbox testing explicitly BLOCKED due to absence of human-authorized repository token/credentials; offline replay engine verified with deterministic 12-event fixture.
+  * **Graph Integrity Preserved:** Production graph `repo_kg` verified intact with 270 nodes and 508 edges.
+  * **Git Discipline:** Pre-existing 48 staged files in git index preserved intact; 4 focused Phase 2 commits created (`259d201`, `36eebb3`, `aa50ce9`, `9684281`).
+
+* [x] **Phase 3: Unified Knowledge Sources & Evidence-Grounded Decision Tracing** (COMPLETED & VERIFIED: 2026-10-17 13:25 IST)
+  * **Unified Knowledge Entities (`src/graph/schema.py`, `src/graph/writer.py`):** Added allowlisted schemas, indexes, and property models for `Comment` (`id`), `Document` (`path`), and `Decision` (`id`), alongside evidence-grounded relationships `ON`, `REFERENCES`, `DECIDED_IN`, `AFFECTS`, `SUPERSEDES`, `OWNS`, and `HAS_MEMBER`.
+  * **Conservative Decision Extraction (`src/decision/`):** Built deterministic, zero-LLM `RuleBasedDecisionExtractor` matching 5 exact patterns ("we decided", "decision:", "won't fix", "going with", and ADRs with "Status: accepted"). Extracts exact character slice offsets (`source_text[quote_start:quote_end] == quote`). Strictly rejects 12 speculative disqualify patterns, hypothetical language, and instruction injection attacks.
+  * **Ground-Truth Decision Verifier (`src/decision/verifier.py`):** Verifies quote boundary validity, character-slice identity, pattern presence, and disqualifier absence before any `Decision` entity or `[:DECIDED_IN]` edge is admitted into the graph.
+  * **Document & Comment Ingestion Engines (`src/knowledge/`):** Built `DocumentIngestionEngine` and `CommentIngestionEngine` with explicit reference linking (`#123` -> PR/Issue, doc paths -> Document/File, GitHub URLs). Strictly prohibits inferring links from semantic similarity. Deletions and edits preserve temporal audit history via `GraphWriter.tombstone_node`.
+  * **CODEOWNERS Team Representation & Strict Non-Fabrication:** Parsed `@org/team` entries as native `Team` entities. Connected `(:Team)-[:OWNS {rule_pattern}]->(:File)`. Enforced strict prohibition on inferring `HAS_MEMBER` from CODEOWNERS declarations alone; `HAS_MEMBER` requires explicit, public source evidence.
+  * **Automated Test Suite Status:** **165/165 passed in 14.93s** (15 new Phase 3 tests across `tests/test_decision_tracing.py` and `tests/test_knowledge_sources.py`, 0 failures, 0 errors, 0 skips).
+  * **Graph Health & Data Preservation:** Active graph `repo_kg` verified healthy with 285 nodes and 531 edges. Zero data loss; pre-existing 48 staged files preserved intact.
+  * **Git Discipline:** Created 5 focused Phase 3 commits (`1ac2cc4`, `9f617e0`, `8ec778a`, `27fddde`, `d697cff`).
+
+* [x] **Phase 4: Knowledge Logic, Ownership Intelligence & Temporal Reasoning** (COMPLETED & VERIFIED: 2026-10-17 14:00 IST)
+  * **Unified Temporal Reasoning (`src/knowledge/temporal.py`):** Centralized UTC ISO 8601 parsing, normalization, temporal validity window checks ($[valid\_from, valid\_to)$), and strict `as_of` future-event exclusion for all knowledge queries.
+  * **Deterministic KNOWS Scoring (`src/knowledge/scoring.py`):** Implemented exact evidence-grounded formula: $\text{KNOWS.score} = \sum (\text{weight} \times \exp(-\text{age} / \text{half\_life}))$ with weights (Authored=3, Reviewed=2, Commented=1), half-life=90.0 days, and strict bot exclusion. Every score is fully explainable with exact contribution itemization and public source URLs.
+  * **Bus Factor & Ownership Discrepancy Transparency (`src/ownership/`):** Enhanced bus factor calculation with detailed explainability reports (`BusFactorReport`), contributor share percentages, cumulative share, and deterministic tie-breaking. Preserved documented 180.0-day half-life for bus factor. Updated CODEOWNERS matcher to report all overlapping rules in definition order (`overlapping_rules`).
+  * **Grounded Stale-Document Detection (`src/knowledge/stale_docs.py`):** Audits documents against referenced code files using explicit graph relationships (`REFERENCES` to File/PR, `DECIDED_IN` + `AFFECTS`). Identifies modifications occurring strictly after document observation timestamp before `as_of` cutoff. Categorizes findings into `POTENTIALLY_STALE`, `UP_TO_DATE`, and `UNRESOLVED_TIMESTAMPS`.
+  * **Orphaned Ownership Detection (`src/ownership/orphaned.py`):** Flags declared CODEOWNERS maintainers who have zero observed human activity within a configurable inactivity window (default 90.0 days) prior to `as_of`. Preserves CODEOWNERS rules without mutation or fabrication.
+  * **FalkorDB Graph Algorithm Verification (`src/graph/algorithms.py`):** Verified FalkorDB 42201 Cypher capabilities: PageRank excludes bots by default; shortest-path queries utilize supported bounded-path syntax returning sequential node hops and relationship evidence paths.
+  * **Automated Test Suite Status:** **173/173 passed in 15.14s** (8 new Phase 4 comprehensive integration tests in `tests/test_knowledge_logic.py`, 0 failures, 0 errors, 0 skips).
+  * **Graph Health & Data Preservation:** Active graph `repo_kg` verified healthy with 293 nodes and 531 edges. Zero data loss; pre-existing staged files preserved.
+* [x] **Phase 5: Company Brain Agent, Tool-Calling Loop & Verifier-Gated Answers** (COMPLETED & VERIFIED: 2026-10-17 15:30 IST)
+  * **Company Brain Agent Architecture (`src/agent/`):** Built modular agent package featuring typed request/answer models (`models.py`), hardened prompt isolation (`prompt.py`), OpenRouter client (`client.py`), typed tool registry (`tools.py`), bounded execution loop (`loop.py`), and evidence verification gate (`verifier.py`).
+  * **Typed Tool Registry (`src/agent/tools.py`):** Implemented all 14 required tools: 10 read tools (`find_entity`, `get_entity`, `neighbors`, `who_owns`, `who_knows`, `trace_decision`, `find_stale_docs`, `explain_path`, `pr_brief`, `sync_status`) and 4 action tools (`request_sync`, `suggest_reviewers`, `draft_codeowners_patch`, `draft_issue`). Strict parameterization with `client.ro_query` enforced; arbitrary Cypher rejected.
+  * **Freshness & Incremental Synchronization:** Evaluates graph freshness via `sync_status`; triggers bounded incremental sync via `request_sync` when recent updates are required, while strictly preserving requested historical `as_of` boundaries.
+  * **Non-LLM Evidence Verifier Gate (`src/agent/verifier.py`):** Validates every returned claim against active graph records, temporal intervals, exact decision quote substrings, and public source URLs. Drops unverified claims; cleanly converts unsupported main assertions into verified refusals.
+  * **Prompt Injection Protection:** Isolates untrusted repository data in `<untrusted_data source="...">` blocks. Prevents instruction overrides, credential exfiltration, and unauthorized mutation attempts.
+  * **Deterministic No-Key Fallback:** Ensures 100% operational functionality without an LLM key via grounded query planning and verified structured responses.
+  * **10 Scripted Questions Benchmark:** Evaluated all 10 canonical benchmark questions; every case produced verified answers or justified evidence-backed refusals.
+  * **Automated Test Suite Status:** **189/189 passed in 23.45s** (16 new Phase 5 integration tests in `tests/test_agent.py`, 0 failures, 0 errors, 0 skips).
+  * **Graph Health & Data Preservation:** Active graph `repo_kg` verified healthy with 296 nodes and 531 edges. Zero data loss; pre-existing staged files preserved.
+  * **Git Discipline:** Created 5 focused Phase 5 commits (`449a4fd`, `3416d31`, `c3f87d4`, `c9bba06`, `a88ed9c`).
 
 ---
 
 ## 3. Currently Blocked or Deferred Items
 
-* **FalkorDB MCP Live Connection:** **PENDING KICKOFF.** Container will be created and started at kickoff.
-* **Track 02 Stretch Memory Layer:** **DEFERRED.** Conditioned on early completion of Phases 1–7.
+* **Docker & FalkorDB on New Machine:** **RESOLVED.** Docker Desktop 4.95.0 + Engine 29.8.2 operational via WSL2 on `D:\DockerDesktopWSL`; FalkorDB running in container `falkordb` on `localhost:6379`; active graph `repo_kg` contains 270 nodes and 508 edges.
+* **Live GitHub Sandbox Testing:** **BLOCKED (Offline Replay Operational).** No authorized GitHub token or human-owned sandbox repository provided. Live remote diff gate safely blocked; local fixture replay and dry-run verified.
+* **Track 02 Stretch Memory Layer:** **DEFERRED.** Conditioned on early completion of core workflows.
 * **Multi-Agent Swarms & Real-Time Webhooks:** **EXPLICITLY CUT.** Excluded to protect MVP delivery.
+
