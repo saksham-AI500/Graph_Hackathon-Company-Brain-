@@ -30,6 +30,7 @@ class CodeownersMatch:
     source_url: str = DEFAULT_CODEOWNERS_URL
     is_team: bool = False
     ambiguity: Optional[str] = None
+    overlapping_rules: List[CodeownersRule] = field(default_factory=list)
 
 
 class CodeownersParser:
@@ -57,10 +58,24 @@ class CodeownersParser:
 
     @classmethod
     def from_cache_or_default(cls, cache_dir: Path = Path(".cache/github")) -> "CodeownersParser":
-        """Load from cache if present; otherwise use bundled official FalkorDB/FalkorDB CODEOWNERS."""
+        """Load from cache if present, then seed fixture, then bundled fallback."""
         cached_file = cache_dir / "CODEOWNERS"
         if cached_file.exists():
             return cls.from_file(cached_file)
+        
+        # Check checked-in seed fixture (for fresh clones without cache)
+        seed_path = Path(__file__).resolve().parent.parent / "fixtures" / "seed_repo_data.json"
+        if seed_path.exists():
+            try:
+                import json
+                with open(seed_path, "r", encoding="utf-8") as f:
+                    seed_data = json.load(f)
+                co_text = seed_data.get("codeowners")
+                if co_text:
+                    return cls(content=co_text)
+            except Exception:
+                pass
+
         # Bundled official fallback content from FalkorDB/FalkorDB main branch
         bundled = """
 /build/          @FalkorDB/falkordb-core
@@ -127,25 +142,28 @@ class CodeownersParser:
         # Pattern with relative subpath
         return fnmatch.fnmatch(norm_path, pattern) or fnmatch.fnmatch(norm_path, f"*/{pattern}")
 
-    def match(self, file_path: str) -> CodeownersMatch:
-        """Determine declared ownership for a file. Last matching rule wins."""
+    def match_all(self, file_path: str) -> List[CodeownersRule]:
+        """Find all matching rules for a file in definition order, exposing overlapping rules."""
         norm_path = file_path.replace("\\", "/").strip("/")
-        last_match: Optional[CodeownersRule] = None
+        return [rule for rule in self.rules if self._matches_pattern(norm_path, rule.pattern)]
 
-        for rule in self.rules:
-            if self._matches_pattern(norm_path, rule.pattern):
-                last_match = rule
+    def match(self, file_path: str) -> CodeownersMatch:
+        """Determine declared ownership for a file. Last matching rule wins per GitHub specification."""
+        norm_path = file_path.replace("\\", "/").strip("/")
+        matching_rules = self.match_all(norm_path)
 
-        if last_match is not None:
+        if matching_rules:
+            winning_rule = matching_rules[-1]
             return CodeownersMatch(
                 file_path=norm_path,
                 matched=True,
-                owners=last_match.owners,
-                rule_pattern=last_match.pattern,
-                line_number=last_match.line_number,
+                owners=winning_rule.owners,
+                rule_pattern=winning_rule.pattern,
+                line_number=winning_rule.line_number,
                 source_url=self.source_url,
-                is_team=last_match.is_team,
+                is_team=winning_rule.is_team,
                 ambiguity=None,
+                overlapping_rules=matching_rules,
             )
 
         return CodeownersMatch(
@@ -157,4 +175,5 @@ class CodeownersParser:
             source_url=self.source_url,
             is_team=False,
             ambiguity="File does not match any declared pattern in CODEOWNERS (unowned/open)",
+            overlapping_rules=[],
         )
