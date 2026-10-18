@@ -20,6 +20,13 @@ htmlcov/
 !.env.example
 *.pem
 *.key
+*.p12
+*.secret
+
+# Node / Frontend build artifacts
+node_modules/
+dist/
+dist-ssr/
 
 # Temporary files, caches and scratch scripts
 *.log
