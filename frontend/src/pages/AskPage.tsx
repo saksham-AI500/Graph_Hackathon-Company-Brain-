@@ -3,8 +3,6 @@ import {
   Send,
   CheckCircle,
   AlertTriangle,
-  HelpCircle,
-  XCircle,
   ChevronDown,
   ChevronUp,
   Cpu,
@@ -191,10 +189,7 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
                 className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-hover text-white text-sm font-medium disabled:opacity-50 transition-all cursor-pointer shrink-0"
               >
                 {askMutation.isPending ? (
-                  <>
-                    <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>Thinking...</span>
-                  </>
+                  <span>Investigating...</span>
                 ) : (
                   <>
                     <Send size={15} />
@@ -203,6 +198,11 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
                 )}
               </button>
             </div>
+            {askMutation.isPending && (
+              <div className="h-1 w-full bg-surface-container-highest rounded-full overflow-hidden mt-2.5">
+                <div className="h-full bg-primary animate-progress w-1/3 rounded-full" />
+              </div>
+            )}
           </form>
 
           {/* Error Message */}
@@ -221,12 +221,21 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
           {/* Empty Right Side Starter Cards & Mode Description */}
           {!response && !askMutation.isPending && (
             <div className="flex flex-col gap-5">
-              <div className="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-center gap-3 text-xs text-on-surface-variant shadow-xs">
+              <div>
+                <h2 className="text-base font-semibold text-on-surface tracking-tight">
+                  Repository Knowledge Engine
+                </h2>
+                <p className="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                  Query architectural decisions, ownership boundaries, and pull requests with verified source grounding.
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-center gap-3 text-xs text-on-surface-variant shadow-xs">
                 <span className="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-mono text-[10px] font-bold uppercase shrink-0">
                   Modes
                 </span>
                 <p className="leading-relaxed">
-                  <strong className="text-on-surface">Graph On</strong> queries the FalkorDB knowledge graph with automated verifier validation; <strong className="text-on-surface">Graph Off</strong> runs the model standalone with zero repository graph tools.
+                  <strong className="text-on-surface">Graph On</strong>: answers from the company graph, with sources · <strong className="text-on-surface">Graph Off</strong>: model only, no company data.
                 </p>
               </div>
 
@@ -256,8 +265,50 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
             </div>
           )}
 
-          {/* Answer Card */}
-          {response && (
+          {/* Refusal Card (Amber, reason + missing, no source chips) */}
+          {response && isRefusal && (
+            <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/30 flex flex-col gap-4 shadow-md text-amber-200 answer-fade-in">
+              <div className="flex items-center justify-between pb-3 border-b border-amber-500/20">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-mono text-xs font-bold uppercase tracking-wider">
+                  <AlertTriangle size={14} />
+                  <span>REFUSED</span>
+                </div>
+                <div className="font-mono text-xs text-amber-400/80">
+                  {response.as_of ? `As of ${response.as_of}` : response.context || 'As of live data'}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-xs text-amber-300 font-mono uppercase tracking-wider mb-2">
+                  Refusal Reason
+                </h3>
+                <p className="text-sm md:text-base leading-relaxed text-amber-100 font-sans">
+                  {response.answer.replace(/\[S\d+\]/g, '')}
+                </p>
+              </div>
+
+              {/* What is missing */}
+              <div className="p-3.5 rounded-lg bg-amber-500/15 border border-amber-500/25 flex flex-col gap-1.5 text-xs">
+                <span className="font-mono font-semibold uppercase tracking-wider text-amber-300">
+                  Missing Information / Evidence Gap
+                </span>
+                {response.unresolved && response.unresolved.length > 0 ? (
+                  <ul className="list-disc list-inside space-y-1 text-amber-200">
+                    {response.unresolved.map((gap, i) => (
+                      <li key={i}>{gap}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-amber-200">
+                    The requested on-call or operational roster is not declared in repository codeowners, active PRs, or architecture decisions.
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Answer Card (Verified / Answered) */}
+          {response && !isRefusal && (
             <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/30 flex flex-col gap-5 shadow-md answer-fade-in">
               {/* 1. Status Badge & As-of Line */}
               <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-outline-variant/20">
@@ -269,22 +320,10 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
                       <span>VERIFIED</span>
                     </div>
                   )}
-                  {response.status === 'PARTIALLY_VERIFIED' && (
+                  {['PARTIALLY_VERIFIED', 'ANSWERED_UNCERTAIN'].includes(response.status) && (
                     <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold uppercase tracking-wider">
                       <AlertTriangle size={14} />
-                      <span>PARTIALLY VERIFIED</span>
-                    </div>
-                  )}
-                  {response.status === 'ANSWERED_UNCERTAIN' && (
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 font-mono text-xs font-bold uppercase tracking-wider">
-                      <HelpCircle size={14} />
-                      <span>ANSWERED UNCERTAIN</span>
-                    </div>
-                  )}
-                  {response.status === 'REFUSED' && (
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 font-mono text-xs font-bold uppercase tracking-wider">
-                      <XCircle size={14} />
-                      <span>REFUSED</span>
+                      <span>{response.status.replace('_', ' ')}</span>
                     </div>
                   )}
                   {!['VERIFIED', 'PARTIALLY_VERIFIED', 'ANSWERED_UNCERTAIN', 'REFUSED'].includes(response.status) && (
@@ -408,9 +447,10 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
               )}
 
               {/* 6. Verifier Counters (CountUp animated) */}
+              {/* 6. Three Verifier Counters (CountUp animated) */}
               {response.verifier && (
                 <div className="pt-3 border-t border-outline-variant/20">
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div className="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 flex flex-col">
                       <span className="text-[11px] font-mono text-on-surface-variant uppercase">Claims Passed</span>
                       <span className="font-mono text-lg font-bold text-primary mt-1">
@@ -432,71 +472,36 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
                         <CountUp value={response.verifier.sentences_total} />
                       </span>
                     </div>
-                    <div className="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/20 flex flex-col">
-                      <span className="text-[11px] font-mono text-on-surface-variant uppercase">Post-Hoc Citations</span>
-                      <span className="font-mono text-lg font-bold text-on-surface-variant mt-1">
-                        <CountUp value={response.verifier.post_hoc_citations} />
-                      </span>
-                    </div>
                   </div>
                 </div>
               )}
 
-              {/* 7. Collapsible Details (Claims, Tool Calls, Model) */}
+              {/* 7. Collapsible Details (Tool Calls, Source List, Claims) */}
               <div className="pt-2">
                 <button
                   type="button"
                   id="toggle-details-btn"
                   onClick={() => setDetailsOpen(!detailsOpen)}
-                  className="flex items-center justify-between w-full p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/20 text-xs font-mono text-on-surface-variant hover:text-on-surface transition-colors"
+                  className="flex items-center justify-between w-full p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-outline-variant/20 text-xs font-mono text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
                 >
                   <div className="flex items-center gap-2">
                     <ShieldCheck size={14} className="text-primary" />
-                    <span>Audit Details ({response.claims.length} claims, {response.tool_calls.length} tool calls)</span>
+                    <span>
+                      Details &amp; Audit ({response.tool_calls.length} tool calls, {response.sources?.length || 0} sources)
+                    </span>
                   </div>
                   {detailsOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                 </button>
 
                 {detailsOpen && (
                   <div className="mt-3 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 space-y-4 text-xs font-mono">
-                    <div>
-                      <span className="text-on-surface-variant font-semibold uppercase tracking-wider block mb-2">
+                    <div className="flex items-center justify-between py-1 border-b border-outline-variant/10">
+                      <span className="text-on-surface-variant font-semibold uppercase tracking-wider">
                         Active Model
                       </span>
-                      <span className="p-1.5 px-2 rounded bg-surface-container-high text-on-surface">
+                      <span className="p-1 px-2 rounded bg-surface-container-high text-on-surface text-[11px]">
                         {response.model}
                       </span>
-                    </div>
-
-                    {/* Claims */}
-                    <div>
-                      <span className="text-on-surface-variant font-semibold uppercase tracking-wider block mb-2">
-                        Evaluated Claims ({response.claims.length})
-                      </span>
-                      <div className="space-y-2">
-                        {response.claims.map((claim) => (
-                          <div
-                            key={claim.id}
-                            className="p-2.5 rounded-lg bg-surface-container border border-outline-variant/15 flex flex-col gap-1"
-                          >
-                            <div className="flex items-center justify-between">
-                              <span className="text-primary font-bold">{claim.id}</span>
-                              <span
-                                className={`px-2 py-0.5 rounded text-[10px] font-semibold uppercase ${
-                                  claim.verified ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'
-                                }`}
-                              >
-                                {claim.verified ? 'VERIFIED' : 'UNVERIFIED'}
-                              </span>
-                            </div>
-                            <p className="text-on-surface">{claim.text}</p>
-                            <div className="flex items-center justify-between text-[11px] text-on-surface-variant pt-1">
-                              <span>Path: {claim.verification_path}</span>
-                              <span>Sources: {claim.source_ids.join(', ') || 'None'}</span>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
                     </div>
 
                     {/* Tool Calls */}
@@ -522,43 +527,76 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
                         </div>
                       </div>
                     )}
+
+                    {/* Source List */}
+                    {response.sources && response.sources.length > 0 && (
+                      <div className="pt-2 border-t border-outline-variant/10">
+                        <span className="text-on-surface-variant font-semibold uppercase tracking-wider block mb-2">
+                          Source List ({response.sources.length})
+                        </span>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                          {response.sources.map((s) => (
+                            <button
+                              key={s.id}
+                              type="button"
+                              onClick={() => setActiveSource(s)}
+                              className={`text-left p-2.5 rounded-lg border transition-all flex items-start gap-2 cursor-pointer ${
+                                activeSource?.id === s.id
+                                  ? 'bg-surface-container-high border-primary text-primary shadow-xs'
+                                  : 'bg-surface-container border-outline-variant/20 hover:border-outline-variant/50 text-on-surface'
+                              }`}
+                            >
+                              <FileCode size={14} className="text-primary shrink-0 mt-0.5" />
+                              <div className="min-w-0 flex-1">
+                                <div className="flex items-center justify-between gap-1">
+                                  <span className="font-mono text-xs font-bold">[{s.id}]</span>
+                                  <span className="font-mono text-[10px] text-on-surface-variant uppercase">
+                                    {s.entity_type}
+                                  </span>
+                                </div>
+                                <p className="font-mono text-xs text-on-surface-variant truncate">{s.entity}</p>
+                              </div>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Evaluated Claims */}
+                    {response.claims.length > 0 && (
+                      <div className="pt-2 border-t border-outline-variant/10">
+                        <span className="text-on-surface-variant font-semibold uppercase tracking-wider block mb-2">
+                          Evaluated Claims ({response.claims.length})
+                        </span>
+                        <div className="space-y-2">
+                          {response.claims.map((claim) => (
+                            <div
+                              key={claim.id}
+                              className="p-2.5 rounded-lg bg-surface-container border border-outline-variant/15 flex flex-col gap-1"
+                            >
+                              <div className="flex items-center justify-between">
+                                <span className="text-primary font-bold">{claim.id}</span>
+                                <span
+                                  className={`px-2 py-0.5 rounded text-[10px] font-semibold uppercase ${
+                                    claim.verified ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'
+                                  }`}
+                                >
+                                  {claim.verified ? 'VERIFIED' : 'UNVERIFIED'}
+                                </span>
+                              </div>
+                              <p className="text-on-surface">{claim.text}</p>
+                              <div className="flex items-center justify-between text-[11px] text-on-surface-variant pt-1">
+                                <span>Path: {claim.verification_path}</span>
+                                <span>Sources: {claim.source_ids.join(', ') || 'None'}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
-
-              {/* Refusal Variant: no sources rendered */}
-              {!isRefusal && response.sources && response.sources.length > 0 && (
-                <div className="pt-2 border-t border-outline-variant/20">
-                  <span className="font-mono text-xs uppercase tracking-wider text-on-surface-variant font-semibold block mb-2">
-                    Evidence Sources ({response.sources.length})
-                  </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {response.sources.map((s) => (
-                      <button
-                        key={s.id}
-                        type="button"
-                        onClick={() => setActiveSource(s)}
-                        className={`text-left p-2.5 rounded-lg border transition-all flex items-start gap-2 ${
-                          activeSource?.id === s.id
-                            ? 'bg-surface-container-high border-primary text-primary shadow-xs'
-                            : 'bg-surface-container border-outline-variant/20 hover:border-outline-variant/50 text-on-surface'
-                        }`}
-                      >
-                        <FileCode size={14} className="text-primary shrink-0 mt-0.5" />
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center justify-between gap-1">
-                            <span className="font-mono text-xs font-bold">[{s.id}]</span>
-                            <span className="font-mono text-[10px] text-on-surface-variant uppercase">
-                              {s.entity_type}
-                            </span>
-                          </div>
-                          <p className="font-mono text-xs text-on-surface-variant truncate">{s.entity}</p>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           )}
 

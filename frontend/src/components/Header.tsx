@@ -66,6 +66,18 @@ export function Header() {
             >
               Graph
             </NavLink>
+            <NavLink
+              to="/evaluation"
+              className={({ isActive }) =>
+                `relative px-3.5 py-1.5 rounded-md text-xs md:text-sm font-medium transition-all ${
+                  isActive
+                    ? 'bg-surface-container-high text-primary font-semibold after:absolute after:bottom-0 after:left-2.5 after:right-2.5 after:h-[2px] after:bg-primary after:rounded-full'
+                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container'
+                }`
+              }
+            >
+              Evaluation
+            </NavLink>
           </nav>
 
           {/* Status Pill & Controls */}

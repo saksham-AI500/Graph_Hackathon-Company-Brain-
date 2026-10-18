@@ -66,6 +66,33 @@ button:not(:disabled):active {
   animation: answerFadeIn 350ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+@keyframes indeterminateProgress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.animate-progress {
+  animation: indeterminateProgress 1.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  button:not(:disabled):hover,
+  button:not(:disabled):active {
+    transform: none !important;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
+

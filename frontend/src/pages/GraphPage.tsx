@@ -93,6 +93,16 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
     return data.edges.filter((e) => nodeIdsSet.has(e.source) && nodeIdsSet.has(e.target));
   }, [data, nodeIdsSet]);
 
+  // Calculate node degree (connection count) for node sizing
+  const degreeMap = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const e of edgesRaw) {
+      map.set(e.source, (map.get(e.source) || 0) + 1);
+      map.set(e.target, (map.get(e.target) || 0) + 1);
+    }
+    return map;
+  }, [edgesRaw]);
+
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
   const [simLinks, setSimLinks] = useState<SimLink[]>([]);
 
@@ -447,12 +457,16 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
             )}
 
             {/* Nodes */}
+            {/* Nodes */}
             <g className="nodes">
               {simNodes.map((node) => {
                 if (node.x === undefined || node.y === undefined) return null;
                 const isSelected = selectedNode?.id === node.id;
                 const isNeighbor = neighborIds.has(node.id);
                 const isDimmed = selectedNode && !isNeighbor;
+                const deg = degreeMap.get(node.id) || 1;
+                const baseR = Math.max(9, Math.min(8 + deg * 2, 20));
+                const r = isSelected ? baseR + 5 : isNeighbor ? baseR + 2 : baseR;
                 const displayLabel =
                   (node.properties?.login && typeof node.properties.login === 'string')
                     ? `@${node.properties.login}`
@@ -476,19 +490,19 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                     }}
                     opacity={isDimmed ? 0.25 : 1}
                   >
-                    {/* Outer ring on selected (no continuous spin animation) */}
+                    {/* Outer ring on selected */}
                     {isSelected && (
                       <circle
-                        r="22"
+                        r={r + 6}
                         fill="none"
                         stroke={node.color}
                         strokeWidth="2"
                         strokeDasharray="4 2"
                       />
                     )}
-                    {/* Node circle */}
+                    {/* Node circle sized by degree */}
                     <circle
-                      r={isSelected ? 16 : isNeighbor ? 14 : 11}
+                      r={r}
                       fill={node.color}
                       stroke="var(--color-surface-container-lowest)"
                       strokeWidth="2"
@@ -499,7 +513,7 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                     />
                     {/* Label text */}
                     <text
-                      y={isSelected ? 26 : 22}
+                      y={r + 11}
                       textAnchor="middle"
                       fill="var(--color-on-surface)"
                       fontSize="9"
@@ -514,6 +528,23 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
               })}
             </g>
           </svg>
+        )}
+
+        {/* Floating Entity Types Legend */}
+        {!isEmpty && (
+          <div className="absolute top-3 right-3 z-20 p-2.5 rounded-xl bg-surface-container/90 backdrop-blur-md border border-outline-variant/30 shadow-lg text-[10px] font-mono flex flex-col gap-1.5 pointer-events-auto">
+            <span className="text-on-surface-variant uppercase tracking-wider font-semibold text-[9px]">
+              Entity Types
+            </span>
+            <div className="grid grid-cols-2 gap-x-3 gap-y-1">
+              {Object.entries(ENTITY_COLORS).map(([type, color]) => (
+                <div key={type} className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: color }} />
+                  <span className="text-on-surface">{type}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
 
         {/* Selected Node Inspector Card (using fields from response ONLY) */}
@@ -540,7 +571,7 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                   setSelectedNode(null);
                   setShowPath(false);
                 }}
-                className="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high"
+                className="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high cursor-pointer"
                 title="Dismiss"
               >
                 <X size={14} />
@@ -584,7 +615,7 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                 type="button"
                 id="show-path-btn"
                 onClick={() => setShowPath(!showPath)}
-                className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+                className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
                   showPath
                     ? 'bg-primary-container text-on-primary-container shadow-sm'
                     : 'bg-surface-container-high hover:bg-surface-bright text-on-surface'
@@ -595,14 +626,16 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
               </button>
               <button
                 type="button"
+                id="expand-node-btn"
                 onClick={() => {
                   setActiveEntity(selectedNode.id);
                   setSearchEntity(selectedNode.id);
                 }}
-                className="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface"
-                title="Expand entity neighborhood"
+                className="py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                title="Expand 2-hop neighborhood"
               >
                 <Share2 size={13} />
+                <span>Expand</span>
               </button>
             </div>
           </div>

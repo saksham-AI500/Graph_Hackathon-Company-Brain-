@@ -310,6 +310,23 @@ class AgentAnswer(BaseModel):
                     "ms": 0,
                 })
 
+        verifier_fmt = dict(self.verifier) if isinstance(self.verifier, dict) else {}
+        if "sentence_logs" in verifier_fmt and isinstance(verifier_fmt["sentence_logs"], list):
+            clean_logs = []
+            for item in verifier_fmt["sentence_logs"]:
+                if isinstance(item, dict):
+                    clean_item = dict(item)
+                    score_val = clean_item.get("score")
+                    if score_val is None:
+                        clean_item["score"] = 1.0 if clean_item.get("passed") else 0.0
+                    else:
+                        try:
+                            clean_item["score"] = float(score_val)
+                        except (ValueError, TypeError):
+                            clean_item["score"] = 0.0
+                    clean_logs.append(clean_item)
+            verifier_fmt["sentence_logs"] = clean_logs
+
         resp = {
             "answer": self.answer,
             "status": self.status,
@@ -325,7 +342,7 @@ class AgentAnswer(BaseModel):
             "synced_at": self.synced_at or "2026-09-30T23:59:59Z",
             "model": self.model or self.model_used or os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-v4.1-flash"),
             "tool_calls": tool_calls_fmt,
-            "verifier": self.verifier,
+            "verifier": verifier_fmt,
         }
         if self.what_changed:
             resp["what_changed"] = self.what_changed
