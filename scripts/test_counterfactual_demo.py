@@ -1,13 +1,14 @@
-"""Demonstration of P4 Counterfactual Behavior (3 Exact Cases).
+"""Demonstration of FIX 4 Counterfactual Behavior (3 Exact Dev Fixtures).
 
-Case 1: True claim with wrong citation (supported by a span elsewhere in the source set).
-        - Emits citation_correction naming the supporting span.
-        - Marks original citation post_hoc = True.
-        - Keeps claim VERIFIED under the corrected citation.
-Case 2: No span anywhere supports the claim.
-        - Refuses the claim.
-Case 3: Essential valid citation (claim supported by its cited source S1).
-        - Accepts citation (post_hoc = False, verified = True).
+Explicitly labeled as dev fixtures, not validation:
+- Dev Fixture Case 1 (dev fixture, not validation): Claim supported by span elsewhere in source set
+  - Emits citation_correction naming the supporting span.
+  - Rewrites answer text to visibly show the correction: [S1 corrected to S2].
+  - Reports post-hoc citations as a separate count, excluded from claims_fully_supported.
+- Dev Fixture Case 2 (dev fixture, not validation): No span anywhere supports the claim
+  - Refuses the claim.
+- Dev Fixture Case 3 (dev fixture, not validation): Removing the only cited source leaves claim unsupported
+  - Accepts citation (post_hoc = False, verified = True).
 """
 
 import sys
@@ -21,7 +22,7 @@ def main():
     verifier = AgentEvidenceVerifier()
 
     print("=" * 80)
-    print("CASE 1: Claim supported by span elsewhere in source set (Citation Correction)")
+    print("Dev Fixture Case 1 (dev fixture, not validation): Claim supported elsewhere")
     print("=" * 80)
     ans1 = AgentAnswer(
         answer="Database timeout issues were resolved by refactoring the connection pool [S1].",
@@ -52,7 +53,12 @@ def main():
     )
     v1 = verifier.verify_answer(ans1)
     print(f"Status: {v1.status}")
-    print(f"Verified Claims Count: {len(v1.claims)}")
+    print(f"Original Answer Text: {ans1.answer}")
+    print(f"Visible Answer Text:   {v1.answer}")
+    print(f"Claims Total: {v1.verifier.get('claims_total')}")
+    print(f"Claims Passed: {v1.verifier.get('claims_passed')}")
+    print(f"Claims Fully Supported (excluding post-hoc): {v1.verifier.get('claims_fully_supported')}")
+    print(f"Post-Hoc Citations Count (reported separately): {v1.verifier.get('post_hoc_citations')}")
     if v1.claims:
         c1 = v1.claims[0]
         print(f"Claim ID: {c1.claim_id}")
@@ -63,7 +69,7 @@ def main():
         print(f"Supporting Span: {c1.supporting_span}")
 
     print("\n" + "=" * 80)
-    print("CASE 2: No span supports the claim (Refusal)")
+    print("Dev Fixture Case 2 (dev fixture, not validation): No span supports claim")
     print("=" * 80)
     ans2 = AgentAnswer(
         answer="Elena Rostova secretly deployed unapproved database sharding code yesterday [S1].",
@@ -99,7 +105,7 @@ def main():
     print(f"Unresolved Notes: {v2.unresolved}")
 
     print("\n" + "=" * 80)
-    print("CASE 3: Removing the only cited source leaves claim unsupported (Citation Accepted)")
+    print("Dev Fixture Case 3 (dev fixture, not validation): Essential single citation accepted")
     print("=" * 80)
     ans3 = AgentAnswer(
         answer="Database timeout issues were resolved by refactoring the connection pool [S1].",
@@ -123,7 +129,9 @@ def main():
     )
     v3 = verifier.verify_answer(ans3)
     print(f"Status: {v3.status}")
-    print(f"Verified Claims Count: {len(v3.claims)}")
+    print(f"Visible Answer Text: {v3.answer}")
+    print(f"Claims Fully Supported: {v3.verifier.get('claims_fully_supported')}")
+    print(f"Post-Hoc Citations Count: {v3.verifier.get('post_hoc_citations')}")
     if v3.claims:
         c3 = v3.claims[0]
         print(f"Claim ID: {c3.claim_id}")

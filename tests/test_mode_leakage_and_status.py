@@ -1,14 +1,17 @@
-"""Tests for P5: graph_off fairness, status, and mode/architecture leakage.
+"""Tests for FIX 5: graph_off fairness, status, extended leakage, and fabricated citation harness.
 
 Ensures:
-1. The answer text does not leak mode or architecture terms:
-   Fails if the answer text contains "graph_off", "graph_on", "mode", or "tools".
+1. The answer text, unresolved list, and refusal_reason do not leak forbidden terms:
+   Fails if any field contains:
+   "graph_on", "graph_off", "mode", "tools", "tool", "baseline", "disabled", "unavailable in", "graph".
 2. A zero-claim answer NEVER gets status VERIFIED.
    Uses ANSWERED_UNCERTAIN for answers with stated uncertainty.
    Uses REFUSED for refusals.
    Uses VERIFIED only when all claims pass.
 3. System prompt parity: Prompt strings for graph_on and graph_off are identical.
 4. Model string is recorded on answer object.
+5. Harness check: Fabricated citations count is recorded in answer.verifier["fabricated_citations"].
+   If fabricated_citations > 0, status must NEVER be ANSWERED_UNCERTAIN.
 """
 
 import pytest
@@ -16,6 +19,18 @@ from src.agent.loop import AgentExecutionLoop, AgentRequest
 from src.agent.models import AgentAnswer, Claim, SourceItem
 from src.agent.prompt import build_agent_system_prompt
 from src.agent.verifier import AgentEvidenceVerifier
+
+FORBIDDEN_LEAKAGE_TOKENS = [
+    "graph_on",
+    "graph_off",
+    "mode",
+    "tools",
+    "tool",
+    "baseline",
+    "disabled",
+    "unavailable in",
+    "graph",
+]
 
 
 def test_system_prompt_parity_between_modes():
@@ -52,32 +67,55 @@ def test_zero_claim_answer_never_verified():
     assert v_refusal.status == "REFUSED"
 
 
-def test_graph_off_answers_free_of_mode_and_architecture_leakage():
-    """Verify that graph_off answers contain no mode or architecture leakage."""
+def test_graph_off_extended_leakage_and_harness_check():
+    """Verify that graph_off answers, unresolved notes, and refusal reasons are strictly leakage-free."""
     loop = AgentExecutionLoop()
 
-    # Question 1: Factual question in graph_off
+    # Question 1: Exact original wording for factual question
     req1 = AgentRequest(
-        question="Which team owns the payments/ module?",
+        question="Which team owns the payments/ module, as far as you know?",
         mode="graph_off",
     )
     ans1 = loop.run(req1)
-    text1_lower = ans1.answer.lower()
-    for forbidden in ["graph_off", "graph_on", "mode", "tools"]:
-        assert forbidden not in text1_lower, f"graph_off answer 1 leaks forbidden token '{forbidden}': {ans1.answer}"
+    
+    # Check all fields for forbidden leakage tokens
+    fields_to_check_1 = [
+        ("answer", ans1.answer.lower()),
+        ("refusal_reason", (ans1.refusal_reason or "").lower()),
+    ] + [("unresolved", u.lower()) for u in ans1.unresolved]
+
+    for field_name, text in fields_to_check_1:
+        for forbidden in FORBIDDEN_LEAKAGE_TOKENS:
+            assert forbidden not in text, (
+                f"graph_off answer 1 field '{field_name}' leaks forbidden token '{forbidden}': '{text}'"
+            )
+
     assert ans1.status in ("ANSWERED_UNCERTAIN", "REFUSED")
     assert ans1.status != "VERIFIED"
     assert ans1.model_used is not None
+    assert "fabricated_citations" in ans1.verifier
+    if ans1.verifier["fabricated_citations"] > 0:
+        assert ans1.status != "ANSWERED_UNCERTAIN", "Fabricated repository claims must NOT be ANSWERED_UNCERTAIN"
 
-    # Question 2: Unanswerable private operational question in graph_off
+    # Question 2: Exact original wording for unanswerable question
     req2 = AgentRequest(
-        question="Who is on call next week for payments?",
+        question="Who is on call next week at Acme Platform?",
         mode="graph_off",
     )
     ans2 = loop.run(req2)
-    text2_lower = ans2.answer.lower()
-    for forbidden in ["graph_off", "graph_on", "mode", "tools"]:
-        assert forbidden not in text2_lower, f"graph_off answer 2 leaks forbidden token '{forbidden}': {ans2.answer}"
+    
+    fields_to_check_2 = [
+        ("answer", ans2.answer.lower()),
+        ("refusal_reason", (ans2.refusal_reason or "").lower()),
+    ] + [("unresolved", u.lower()) for u in ans2.unresolved]
+
+    for field_name, text in fields_to_check_2:
+        for forbidden in FORBIDDEN_LEAKAGE_TOKENS:
+            assert forbidden not in text, (
+                f"graph_off answer 2 field '{field_name}' leaks forbidden token '{forbidden}': '{text}'"
+            )
+
     assert ans2.status == "REFUSED"
     assert ans2.status != "VERIFIED"
     assert ans2.model_used is not None
+    assert "fabricated_citations" in ans2.verifier

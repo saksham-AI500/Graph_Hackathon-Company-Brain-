@@ -51,8 +51,8 @@ def split_into_sentences(text: str) -> List[str]:
             clean_paragraphs.append(cleaned_line)
 
     joined_text = " ".join(clean_paragraphs)
-    # Split on sentence boundary punctuation (. ! ?) followed by whitespace or end of string
-    raw_sentences = re.split(r"(?<=[.!?])\s+", joined_text)
+    # Split on sentence boundary punctuation (. ! ?) followed by whitespace (unless immediately followed by citation [S#])
+    raw_sentences = re.split(r"(?<=[.!?])\s+(?!\[S\d+)", joined_text)
     sentences = [s.strip() for s in raw_sentences if len(s.strip()) > 3]
     return sentences
 
@@ -184,9 +184,16 @@ class AgentEvidenceVerifier:
                 verified_claims.append(claim)
 
         # ---------------------------------------------------------------------
-        # 3. Sentence-Level Verification (A1 & A7)
+        # 3. Sentence-Level Verification (A1 & A7) with visible citation corrections
         # ---------------------------------------------------------------------
-        sentences = split_into_sentences(answer.answer)
+        answer_text = answer.answer
+        for c in verified_claims:
+            if c.citation_correction:
+                corr_id = c.citation_correction["corrected_source_id"]
+                for orig_sid in c.citation_correction["original_source_ids"]:
+                    answer_text = re.sub(rf"\[{orig_sid}\]", f"[{orig_sid} corrected to {corr_id}]", answer_text)
+
+        sentences = split_into_sentences(answer_text)
         sentence_logs: List[Dict[str, Any]] = []
         sentences_passed = 0
         sentences_factual_total = 0
@@ -196,8 +203,9 @@ class AgentEvidenceVerifier:
                 continue
 
             sentences_factual_total += 1
-            # Extract cited source IDs in the sentence: [S1], [S2]
-            cited_sids = re.findall(r"\[(S\d+)\]", sent)
+            # Extract cited source IDs in the sentence: [S1], [S2], [S1 corrected to S2]
+            raw_pairs = re.findall(r"\[(S\d+)(?:\s+corrected\s+to\s+(S\d+))?\]", sent)
+            cited_sids = [sid for pair in raw_pairs for sid in pair if sid]
 
             # Map sentence to verified claims (including citation-corrected claims)
             mapped_claims = [
@@ -245,6 +253,7 @@ class AgentEvidenceVerifier:
         verifier_stats = {
             "claims_total": len(answer.claims),
             "claims_passed": len(verified_claims),
+            "claims_fully_supported": len(verified_claims) - post_hoc_citations_count,
             "sources_valid": len(verified_sources),
             "sources_total": len(answer.sources),
             "sentences_total": sentences_factual_total,
@@ -291,7 +300,7 @@ class AgentEvidenceVerifier:
             final_status = "ANSWERED_UNCERTAIN" if answer.status == "ANSWERED_UNCERTAIN" else "REFUSED"
 
         return AgentAnswer(
-            answer=answer.answer,
+            answer=answer_text,
             claims=verified_claims,
             sources=verified_sources,
             unresolved=unresolved_notes,
