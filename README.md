@@ -369,7 +369,7 @@ See complete specifications in [`docs/API_CONTRACT.md`](docs/API_CONTRACT.md).
 In accordance with Graph Hacks Track 03 integrity rules, all 8 sealed holdout questions (**Q2, Q4, Q6, Q8, Q10, Q12, Q16, Q20**) are strictly isolated. They are never opened, evaluated, or referenced during development or test suite runs.
 
 ### Active Model Route
-- **Active Model**: `nvidia/nemotron-3.5-lightning:free` via OpenRouter (selected for zero pricing and native tool-calling / tool_choice support).
+- **Active Model**: `liquid/lfm-2.5-2.6b:free` via OpenRouter (selected for zero pricing and multi-turn tool-calling support).
 - Decision rationale and audit trail recorded in [`project_context/VERIFIER_SPEC.md`](project_context/VERIFIER_SPEC.md).
 
 ### Dataset SHA-256 Hashes
@@ -388,12 +388,12 @@ In accordance with Graph Hacks Track 03 integrity rules, all 8 sealed holdout qu
 
 ## 10. Verification & Benchmark Reproduction
 
-### Run Complete Automated Test Suite (318 Tests)
+### Run Complete Automated Test Suite (319 Tests)
 ```bash
 pytest tests/ -q
 ```
-*Expected result:* 318 passed in ~30s (0 failures, 0 errors).
-Verified in Pytest log `project_context/test_runs/20261018_123600Z/pytest.log` (SHA-256: `eb38150080cb24c66a710218f03ba43cca2ec3bd97e312a16dc04474b0e42631`).
+*Expected result:* 319 passed in ~34s (0 failures, 0 errors).
+Verified in Pytest log `project_context/test_runs/20261018_183818Z/pytest.log` (SHA-256: `19e8cc8fa712f56bb3f1bd27675d4605633dc8fb42058313e094a69a76525696`).
 
 ### Run URL Reachability Audit (Zero External Network Calls in Unit Tests)
 ```bash
@@ -439,13 +439,16 @@ python -c "from src.evaluation.evaluator import ComparativeEvaluator; Comparativ
 ### Known Limitations
 - **Mutable Issue Snapshots:** GitHub's REST API returns current issue descriptions. If an issue title was edited after target PR merge, historical point-in-time issue revision diffs require event timeline scraping.
 - **CODEOWNERS Snapshot:** CODEOWNERS rules are parsed from the repository tree snapshot. Historical git tree checkouts at commit SHAs would be required for strict point-in-time CODEOWNERS changes.
-- **Local Prototype Status:** RepoBrain is currently designed and tested for local operation; it is not publicly deployed to the cloud.
+- **Live Demo Deployment:** RepoBrain provides a live public demo URL powered by Cloudflare Tunnel: [https://bidder-architectural-stopping-thats.trycloudflare.com](https://bidder-architectural-stopping-thats.trycloudflare.com). When self-hosting or testing locally, see [DEPLOY.md](DEPLOY.md).
 
 ---
 
 ## 12. AI Assistance Disclosure
 
-In accordance with official hackathon rules:
-- **Pair Programming Agent:** Developed in pair-programming collaboration with Google Antigravity IDE (Gemini 2.5 Pro architecture).
-- **Tooling Used:** Python virtual environments, FalkorDB MCP server, ripgrep, pytest, Streamlit.
-- **Ground Truth Integrity:** All 20 benchmark questions, relationships, and acceptance criteria were hand-verified against public `FalkorDB/FalkorDB` GitHub records. Model generation was strictly decoupled from ground-truth verification.
+In accordance with official Graph Hacks 2026 hackathon guidelines, all AI tools and their roles are comprehensively disclosed in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md):
+- **Pair Programming Agent:** Google Antigravity IDE (Gemini 2.5 Pro architecture) for implementation and automated testing.
+- **UI Design:** Google Stitch for dark-theme component styling and layout.
+- **Research:** Claude (Anthropic) for provenance verification research.
+- **Product Inference:** LiquidAI LFM-2.5-2.6B (`liquid/lfm-2.5-2.6b:free`) via OpenRouter.
+- **Verification Scoring:** Local ONNX Cross-Encoder MiniLM2 (`cross-encoder/nli-MiniLM2-L6-H768`).
+- **Human Review:** All code, schemas, and test suites were reviewed and validated by humans. Ground truth rubrics were verified against authentic records and frozen prior to evaluation.
