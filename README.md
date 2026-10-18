@@ -462,6 +462,18 @@ pytest tests/test_verifier_adversarial.py -v
 ```
 *Result:* **14/14 adversarial boundary tests** and **20/20 control equivalence tests passed**.
 
+### H. Reproduce Separately Authored Holdout Benchmark (9 Questions)
+```bash
+python -m src.evaluation.holdout_runner
+```
+*Raw machine-readable outputs are saved to:* [`project_context/holdout_raw_results.json`](project_context/holdout_raw_results.json)
+
+### I. Reproduce Benchmark v2 (Audited Development Split — 12 Questions × 3 Repetitions)
+```bash
+python -c "from src.evaluation.evaluator_v2 import EvaluatorV2; res = EvaluatorV2().run_development(repetitions=3); print('Run:', res.run_id); [print(k, m.overall_accuracy_pct) for k, m in res.architectures.items()]"
+```
+*Raw machine-readable outputs are saved to:* [`project_context/eval_v2/summary_development.json`](project_context/eval_v2/summary_development.json)
+
 *For the complete audit trail, see [`VERIFICATION_REPORT.md`](VERIFICATION_REPORT.md).*
 
 ---
