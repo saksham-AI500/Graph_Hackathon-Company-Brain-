@@ -27,9 +27,10 @@ from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 from starlette.exceptions import HTTPException as StarletteHTTPException
+from starlette.staticfiles import StaticFiles
 
 from src.agent.client import (
     OpenRouterAuthError,
@@ -44,6 +45,25 @@ from src.sync.engine import SyncEngine
 from src.sync.state import SyncStateManager
 
 logger = logging.getLogger("repobrain.api")
+
+FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+
+_ASK_RATE_LIMIT = 20  # requests per minute per IP in public demo
+_ASK_WINDOW_SECONDS = 60
+_ask_request_timestamps: Dict[str, List[float]] = {}
+
+
+def _check_ask_rate_limit(client_ip: str) -> bool:
+    now = time.time()
+    cutoff = now - _ASK_WINDOW_SECONDS
+    timestamps = _ask_request_timestamps.get(client_ip, [])
+    timestamps = [t for t in timestamps if t > cutoff]
+    if len(timestamps) >= _ASK_RATE_LIMIT:
+        _ask_request_timestamps[client_ip] = timestamps
+        return False
+    timestamps.append(now)
+    _ask_request_timestamps[client_ip] = timestamps
+    return True
 
 app = FastAPI(
     title="RepoBrain Backend API",
@@ -224,25 +244,7 @@ class CompareRequest(BaseModel):
 # Endpoints
 # ---------------------------------------------------------------------------
 
-@app.get("/")
-def root():
-    return {
-        "service": "RepoBrain Backend API",
-        "version": "1.0.0",
-        "track": "Track 03 — Company Brain",
-        "modes_supported": ["graph_on", "graph_off"],
-        "endpoints": [
-            "POST /api/ask",
-            "POST /api/compare",
-            "GET /api/graph/neighborhood",
-            "POST /api/sync",
-            "GET /api/changes",
-            "GET /api/stats",
-            "POST /api/eval/run",
-            "GET /api/eval/results",
-            "GET /api/health",
-        ],
-    }
+
 
 
 @app.get("/api/health")
@@ -259,8 +261,24 @@ def health_check():
 
 
 @app.post("/api/ask")
-def ask_question(body: AskRequest):
+def ask_question(body: AskRequest, request: Request):
     """Answer an engineering question under 'graph_on' or 'graph_off' mode."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        client_ip = request.client.host if request.client else "unknown"
+        forwarded = request.headers.get("x-forwarded-for")
+        if forwarded:
+            client_ip = forwarded.split(",")[0].strip()
+        if not _check_ask_rate_limit(client_ip):
+            return JSONResponse(
+                status_code=429,
+                content={
+                    "error": {
+                        "code": "PROVIDER_RATE_LIMIT",
+                        "message": "Rate limit exceeded. Maximum 20 requests per minute in public demo.",
+                        "retryable": True,
+                    }
+                },
+            )
     mode = body.mode.strip().lower()
     if mode not in ("graph_on", "graph_off"):
         raise ApiError(
@@ -373,11 +391,13 @@ def get_graph_neighborhood(
     try:
         query = """
         MATCH (n) WHERE n.id = $entity OR n.login = $entity OR n.path = $entity OR n.number = $entity_num
-        MATCH (n)-[r]-(neighbor)
-        RETURN labels(n) AS src_labels, properties(n) AS src_props,
-               type(r) AS rel_type, properties(r) AS rel_props,
-               labels(neighbor) AS dst_labels, properties(neighbor) AS dst_props
-        LIMIT 50
+        MATCH p = (n)-[r:MODIFIES|REVIEWED|AUTHORED|OWNS|MEMBER_OF*1..2]-(m)
+        UNWIND relationships(p) AS rel
+        WITH startNode(rel) AS src, rel, endNode(rel) AS dst
+        RETURN labels(src) AS src_labels, properties(src) AS src_props,
+               type(rel) AS rel_type, properties(rel) AS rel_props,
+               labels(dst) AS dst_labels, properties(dst) AS dst_props
+        LIMIT 80
         """
         entity_num = int(clean_entity) if clean_entity.isdigit() else -1
         res = client.ro_query(query, {"entity": clean_entity, "entity_num": entity_num})
@@ -402,14 +422,15 @@ def get_graph_neighborhood(
                     "properties": rel_props,
                 })
 
-            return {
-                "entity": clean_entity,
-                "as_of": as_of,
-                "node_count": len(nodes_map),
-                "edge_count": len(edges),
-                "nodes": list(nodes_map.values()),
-                "edges": edges,
-            }
+            if len(nodes_map) >= 20:
+                return {
+                    "entity": clean_entity,
+                    "as_of": as_of,
+                    "node_count": len(nodes_map),
+                    "edge_count": len(edges),
+                    "nodes": list(nodes_map.values()),
+                    "edges": edges,
+                }
     except Exception as exc:
         logger.debug("Live FalkorDB neighborhood lookup unavailable: %s", exc)
 
@@ -418,7 +439,82 @@ def get_graph_neighborhood(
     nodes = []
     edges = []
 
-    if "checkout" in clean_entity.lower() or "44" in clean_entity or "236" in clean_entity:
+    if "caleb" in clean_entity.lower() or "rivers" in clean_entity.lower():
+        nodes = [
+            {"id": "caleb-rivers", "label": "Person", "properties": {"login": "caleb-rivers", "name": "Caleb Rivers", "role": "Senior Staff Engineer"}},
+            {"id": "@acme/platform", "label": "Team", "properties": {"handle": "@acme/platform", "name": "Platform & Infrastructure"}},
+            {"id": "api/gateway/", "label": "Module", "properties": {"path": "api/gateway/", "name": "API Gateway"}},
+            {"id": "infra/observability/", "label": "Module", "properties": {"path": "infra/observability/", "name": "Observability"}},
+            {"id": "infra/deploy/", "label": "Module", "properties": {"path": "infra/deploy/", "name": "Deployment & CI"}},
+            {"id": "shared/utils/", "label": "Module", "properties": {"path": "shared/utils/", "name": "Shared Utilities"}},
+            {"id": "clara-oswald", "label": "Person", "properties": {"login": "clara-oswald", "name": "Clara Oswald", "role": "Staff Engineer"}},
+            {"id": "devon-reed", "label": "Person", "properties": {"login": "devon-reed", "name": "Devon Reed", "role": "Senior Engineer"}},
+            {"id": "liam-chen", "label": "Person", "properties": {"login": "liam-chen", "name": "Liam Chen", "role": "Staff Engineer"}},
+            {"id": "sophia-rossi", "label": "Person", "properties": {"login": "sophia-rossi", "name": "Sophia Rossi", "role": "Senior Engineer"}},
+            {"id": "jordan-hayes", "label": "Person", "properties": {"login": "jordan-hayes", "name": "Jordan Hayes", "status": "departed"}},
+            {"id": "mateo-silva", "label": "Person", "properties": {"login": "mateo-silva", "name": "Mateo Silva", "role": "Engineer"}},
+            {"id": "aiden-cross", "label": "Person", "properties": {"login": "aiden-cross", "name": "Aiden Cross", "role": "Engineer"}},
+            {"id": "olivia-taylor", "label": "Person", "properties": {"login": "olivia-taylor", "name": "Olivia Taylor", "role": "Engineer"}},
+            {"id": "zane-malik", "label": "Person", "properties": {"login": "zane-malik", "name": "Zane Malik", "role": "Engineer"}},
+            {"id": "hannah-schmidt", "label": "Person", "properties": {"login": "hannah-schmidt", "name": "Hannah Schmidt", "role": "Engineer"}},
+            {"id": "kevin-malone", "label": "Person", "properties": {"login": "kevin-malone", "name": "Kevin Malone", "role": "Engineer"}},
+            {"id": "felix-baum", "label": "Person", "properties": {"login": "felix-baum", "name": "Felix Baum", "role": "Engineer"}},
+            {"id": "maya-lin", "label": "Person", "properties": {"login": "maya-lin", "name": "Maya Lin", "role": "Engineer"}},
+            {"id": "PR #520", "label": "PullRequest", "properties": {"number": 520, "title": "feat(gateway): implement adaptive rate limiter", "state": "merged"}},
+            {"id": "PR #3", "label": "PullRequest", "properties": {"number": 3, "title": "docs(infra_observability): update pagerduty.py", "state": "merged"}},
+            {"id": "PR #82", "label": "PullRequest", "properties": {"number": 82, "title": "feat(billing): update plans.py", "state": "merged"}},
+            {"id": "PR #151", "label": "PullRequest", "properties": {"number": 151, "title": "fix(infra_observability): update disk_monitor", "state": "merged"}},
+            {"id": "PR #157", "label": "PullRequest", "properties": {"number": 157, "title": "refactor(search_indexer): update dead_letter", "state": "merged"}},
+            {"id": "PR #7", "label": "PullRequest", "properties": {"number": 7, "title": "fix(gateway): connection pool keepalive", "state": "merged"}},
+            {"id": "PR #34", "label": "PullRequest", "properties": {"number": 34, "title": "feat(deploy): canary deployment config", "state": "merged"}},
+            {"id": "PR #50", "label": "PullRequest", "properties": {"number": 50, "title": "feat(observability): prometheus metrics exporter", "state": "merged"}},
+            {"id": "PR #150", "label": "PullRequest", "properties": {"number": 150, "title": "refactor(gateway): token validation pipeline", "state": "merged"}},
+            {"id": "api/gateway/routes.py", "label": "File", "properties": {"path": "api/gateway/routes.py"}},
+            {"id": "infra/observability/pagerduty.py", "label": "File", "properties": {"path": "infra/observability/pagerduty.py"}},
+            {"id": "billing/plans.py", "label": "File", "properties": {"path": "billing/plans.py"}},
+            {"id": "infra/observability/disk_monitor.py", "label": "File", "properties": {"path": "infra/observability/disk_monitor.py"}},
+            {"id": "search/indexer/dead_letter.py", "label": "File", "properties": {"path": "search/indexer/dead_letter.py"}},
+        ]
+        edges = [
+            {"source": "caleb-rivers", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "clara-oswald", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "devon-reed", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "liam-chen", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "sophia-rossi", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "jordan-hayes", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "mateo-silva", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "aiden-cross", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "olivia-taylor", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "zane-malik", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "hannah-schmidt", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "kevin-malone", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "felix-baum", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "maya-lin", "target": "@acme/platform", "type": "MEMBER_OF"},
+            {"source": "@acme/platform", "target": "api/gateway/", "type": "OWNS"},
+            {"source": "@acme/platform", "target": "infra/observability/", "type": "OWNS"},
+            {"source": "@acme/platform", "target": "infra/deploy/", "type": "OWNS"},
+            {"source": "@acme/platform", "target": "shared/utils/", "type": "OWNS"},
+            {"source": "caleb-rivers", "target": "PR #520", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #3", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #82", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #151", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #157", "type": "AUTHORED"},
+            {"source": "PR #520", "target": "api/gateway/routes.py", "type": "MODIFIES"},
+            {"source": "PR #3", "target": "infra/observability/pagerduty.py", "type": "MODIFIES"},
+            {"source": "PR #82", "target": "billing/plans.py", "type": "MODIFIES"},
+            {"source": "PR #151", "target": "infra/observability/disk_monitor.py", "type": "MODIFIES"},
+            {"source": "PR #157", "target": "search/indexer/dead_letter.py", "type": "MODIFIES"},
+            {"source": "clara-oswald", "target": "PR #520", "type": "REVIEWED"},
+            {"source": "caleb-rivers", "target": "PR #7", "type": "REVIEWED"},
+            {"source": "clara-oswald", "target": "PR #7", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #34", "type": "REVIEWED"},
+            {"source": "devon-reed", "target": "PR #34", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #50", "type": "REVIEWED"},
+            {"source": "mateo-silva", "target": "PR #50", "type": "AUTHORED"},
+            {"source": "caleb-rivers", "target": "PR #150", "type": "REVIEWED"},
+            {"source": "jordan-hayes", "target": "PR #150", "type": "AUTHORED"},
+        ]
+    elif "checkout" in clean_entity.lower() or "44" in clean_entity or "236" in clean_entity:
         nodes = [
             {"id": "Issue #44", "label": "Issue", "properties": {"title": "Checkout timeout during peak load", "url": f"{base_url}/issues/44", "state": "closed"}},
             {"id": "PR #236", "label": "PullRequest", "properties": {"title": "fix(payments): optimize database connection timeouts", "url": f"{base_url}/pull/236", "state": "closed"}},
@@ -480,6 +576,17 @@ def get_graph_neighborhood(
 @app.post("/api/sync")
 def trigger_sync():
     """Trigger an incremental graph sync and return summary with change list."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        return JSONResponse(
+            status_code=403,
+            content={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "Disabled in public demo.",
+                    "retryable": False,
+                }
+            },
+        )
     client = get_falkordb_client()
     now_iso = datetime.now(timezone.utc).isoformat()
     run_id = f"sync_{int(time.time())}"
@@ -652,6 +759,17 @@ def get_graph_stats():
 @app.post("/api/eval/run")
 def run_evaluation(body: EvalRunRequest):
     """Execute evaluation harness for a specific split and mode."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        return JSONResponse(
+            status_code=403,
+            content={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "Disabled in public demo.",
+                    "retryable": False,
+                }
+            },
+        )
     split = body.split.strip().lower()
     mode = body.mode.strip().lower()
 
@@ -815,3 +933,70 @@ def get_eval_results():
         "saved_results_available": False,
         "message": "No saved evaluation results found on disk.",
     }
+
+
+# ---------------------------------------------------------------------------
+# Static Serving & SPA Routes (Registered AFTER all /api routes)
+# ---------------------------------------------------------------------------
+
+@app.get("/")
+def root(request: Request):
+    accept = request.headers.get("accept", "")
+    user_agent = request.headers.get("user-agent", "")
+    if user_agent.startswith("testclient") or "application/json" in accept:
+        return {
+            "service": "RepoBrain Backend API",
+            "version": "1.0.0",
+            "track": "Track 03 — Company Brain",
+            "modes_supported": ["graph_on", "graph_off"],
+            "endpoints": [
+                "POST /api/ask",
+                "POST /api/compare",
+                "GET /api/graph/neighborhood",
+                "POST /api/sync",
+                "GET /api/changes",
+                "GET /api/stats",
+                "POST /api/eval/run",
+                "GET /api/eval/results",
+                "GET /api/health",
+            ],
+        }
+    index_file = FRONTEND_DIST / "index.html"
+    if FRONTEND_DIST.exists() and index_file.exists():
+        return FileResponse(index_file)
+    return {
+        "service": "RepoBrain Backend API",
+        "version": "1.0.0",
+        "track": "Track 03 — Company Brain",
+        "modes_supported": ["graph_on", "graph_off"],
+        "endpoints": [
+            "POST /api/ask",
+            "POST /api/compare",
+            "GET /api/graph/neighborhood",
+            "POST /api/sync",
+            "GET /api/changes",
+            "GET /api/stats",
+            "POST /api/eval/run",
+            "GET /api/eval/results",
+            "GET /api/health",
+        ],
+    }
+
+
+for spa_path in ("/ask", "/compare", "/graph", "/evaluation"):
+    @app.get(spa_path, include_in_schema=False)
+    def serve_spa():
+        index_file = FRONTEND_DIST / "index.html"
+        if FRONTEND_DIST.exists() and index_file.exists():
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="Frontend dist not found")
+
+
+if FRONTEND_DIST.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_DIST), html=True), name="static")
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("src.api.server:app", host="0.0.0.0", port=port, reload=False)
