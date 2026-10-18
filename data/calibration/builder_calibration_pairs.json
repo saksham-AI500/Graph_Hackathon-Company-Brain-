@@ -1,0 +1,252 @@
+[
+  {
+    "id": "E01",
+    "category": "entailed",
+    "premise": "Elena Rostova merged PR #142 to enable Redis clustering in production.",
+    "hypothesis": "Redis clustering was enabled in production when Elena Rostova merged PR #142."
+  },
+  {
+    "id": "E02",
+    "category": "entailed",
+    "premise": "Marcus Vance refactored the database connection pool in PR #236 to fix timeout errors.",
+    "hypothesis": "Database connection pool was refactored in PR #236 by Marcus Vance to resolve timeout issues."
+  },
+  {
+    "id": "E03",
+    "category": "entailed",
+    "premise": "We decided in ADR-002 that all internal microservice communication must use gRPC with mTLS.",
+    "hypothesis": "ADR-002 specifies that microservices communicate using gRPC and mTLS."
+  },
+  {
+    "id": "E04",
+    "category": "entailed",
+    "premise": "CODEOWNERS declares that the auth/ module is owned by @acme/identity.",
+    "hypothesis": "The auth/ directory is maintained by @acme/identity according to CODEOWNERS."
+  },
+  {
+    "id": "E05",
+    "category": "entailed",
+    "premise": "Issue #44 describes checkout timeouts occurring when concurrency exceeds 200 requests per second.",
+    "hypothesis": "Checkout timeouts were reported during high concurrency load in Issue #44."
+  },
+  {
+    "id": "E06",
+    "category": "entailed",
+    "premise": "The search cluster migration was completed on 2026-08-15 without data loss.",
+    "hypothesis": "Search cluster migration finished on 2026-08-15."
+  },
+  {
+    "id": "E07",
+    "category": "entailed",
+    "premise": "ADR-005 mandates that PostgreSQL connection pool size should be capped at 50 connections per pod.",
+    "hypothesis": "PostgreSQL connections per pod are limited to 50 under ADR-005."
+  },
+  {
+    "id": "E08",
+    "category": "entailed",
+    "premise": "Gabriel Santos reviewed and approved PR #305 regarding token refresh rotation.",
+    "hypothesis": "PR #305 on token refresh rotation received an approving review from Gabriel Santos."
+  },
+  {
+    "id": "E09",
+    "category": "entailed",
+    "premise": "The notifications service uses RabbitMQ dead-letter exchanges for failed push deliveries.",
+    "hypothesis": "Failed push deliveries in notifications service are routed to dead-letter exchanges."
+  },
+  {
+    "id": "E10",
+    "category": "entailed",
+    "premise": "PR #42 updated the circuit breaker thresholds for third-party billing webhooks.",
+    "hypothesis": "Circuit breaker thresholds for billing webhooks were adjusted in PR #42."
+  },
+  {
+    "id": "E11",
+    "category": "entailed",
+    "premise": "Sarah Chen deployed the distributed tracing collector to Kubernetes staging namespace.",
+    "hypothesis": "Distributed tracing collector was deployed to staging by Sarah Chen."
+  },
+  {
+    "id": "E12",
+    "category": "entailed",
+    "premise": "Issue #89 tracks memory leaks in the WebSocket push gateway during long-lived connections.",
+    "hypothesis": "WebSocket push gateway memory leaks are documented in Issue #89."
+  },
+  {
+    "id": "E13",
+    "category": "entailed",
+    "premise": "ADR-007 requires AES-256 encryption at rest for all customer payment tokens.",
+    "hypothesis": "Customer payment tokens must be encrypted at rest with AES-256 per ADR-007."
+  },
+  {
+    "id": "E14",
+    "category": "entailed",
+    "premise": "Dmitri Volkov optimized the inverted index compression algorithm in PR #210.",
+    "hypothesis": "Inverted index compression was improved by Dmitri Volkov in PR #210."
+  },
+  {
+    "id": "E15",
+    "category": "entailed",
+    "premise": "CODEOWNERS assigns frontend/dashboard to the @acme/frontend engineering team.",
+    "hypothesis": "The @acme/frontend team is designated as code owner for frontend/dashboard."
+  },
+  {
+    "id": "C01",
+    "category": "contradicted",
+    "premise": "Elena Rostova merged PR #142 to enable Redis clustering in production.",
+    "hypothesis": "PR #142 was rejected and Redis clustering was never deployed to production."
+  },
+  {
+    "id": "C02",
+    "category": "contradicted",
+    "premise": "Marcus Vance refactored the database connection pool in PR #236 to fix timeout errors.",
+    "hypothesis": "Marcus Vance closed PR #236 without modifying any database connection pool settings."
+  },
+  {
+    "id": "C03",
+    "category": "contradicted",
+    "premise": "We decided in ADR-002 that all internal microservice communication must use gRPC with mTLS.",
+    "hypothesis": "ADR-002 strictly forbids gRPC and mandates plain REST over unencrypted HTTP."
+  },
+  {
+    "id": "C04",
+    "category": "contradicted",
+    "premise": "CODEOWNERS declares that the auth/ module is owned by @acme/identity.",
+    "hypothesis": "The auth/ module has no code owners and is completely unowned in CODEOWNERS."
+  },
+  {
+    "id": "C05",
+    "category": "contradicted",
+    "premise": "Issue #44 describes checkout timeouts occurring when concurrency exceeds 200 requests per second.",
+    "hypothesis": "Issue #44 reports that checkout latency remains zero under 50,000 requests per second."
+  },
+  {
+    "id": "C06",
+    "category": "contradicted",
+    "premise": "The search cluster migration was completed on 2026-08-15 without data loss.",
+    "hypothesis": "The search cluster migration was permanently aborted after catastrophic data corruption."
+  },
+  {
+    "id": "C07",
+    "category": "contradicted",
+    "premise": "ADR-005 mandates that PostgreSQL connection pool size should be capped at 50 connections per pod.",
+    "hypothesis": "PostgreSQL connections per pod are completely unlimited and uncapped under ADR-005."
+  },
+  {
+    "id": "C08",
+    "category": "contradicted",
+    "premise": "Gabriel Santos reviewed and approved PR #305 regarding token refresh rotation.",
+    "hypothesis": "Gabriel Santos submitted a blocking rejection on PR #305 and refused approval."
+  },
+  {
+    "id": "C09",
+    "category": "contradicted",
+    "premise": "The notifications service uses RabbitMQ dead-letter exchanges for failed push deliveries.",
+    "hypothesis": "The notifications service discards all failed push deliveries with no queueing."
+  },
+  {
+    "id": "C10",
+    "category": "contradicted",
+    "premise": "PR #42 updated the circuit breaker thresholds for third-party billing webhooks.",
+    "hypothesis": "PR #42 deleted all circuit breaker logic and disabled webhook monitoring."
+  },
+  {
+    "id": "C11",
+    "category": "contradicted",
+    "premise": "Sarah Chen deployed the distributed tracing collector to Kubernetes staging namespace.",
+    "hypothesis": "Sarah Chen uninstalled distributed tracing and banned OpenTelemetry."
+  },
+  {
+    "id": "C12",
+    "category": "contradicted",
+    "premise": "Issue #89 tracks memory leaks in the WebSocket push gateway during long-lived connections.",
+    "hypothesis": "Issue #89 confirms zero memory usage in the WebSocket push gateway."
+  },
+  {
+    "id": "C13",
+    "category": "contradicted",
+    "premise": "ADR-007 requires AES-256 encryption at rest for all customer payment tokens.",
+    "hypothesis": "ADR-007 permits plaintext unencrypted storage of customer payment tokens in log files."
+  },
+  {
+    "id": "C14",
+    "category": "contradicted",
+    "premise": "Dmitri Volkov optimized the inverted index compression algorithm in PR #210.",
+    "hypothesis": "Dmitri Volkov reverted the inverted index compression and disabled indexing in PR #210."
+  },
+  {
+    "id": "C15",
+    "category": "contradicted",
+    "premise": "CODEOWNERS assigns frontend/dashboard to the @acme/frontend engineering team.",
+    "hypothesis": "CODEOWNERS assigns frontend/dashboard exclusively to external guest contractors."
+  },
+  {
+    "id": "HN01",
+    "category": "hard_negative",
+    "fact_diff": "wrong_number",
+    "premise": "The background sync retry policy specifies 5 attempts before dead-letter routing.",
+    "hypothesis": "The background sync retry policy specifies 3 attempts before dead-letter routing."
+  },
+  {
+    "id": "HN02",
+    "category": "hard_negative",
+    "fact_diff": "wrong_number",
+    "premise": "PostgreSQL connection pool max size is set to 50 connections in production config.",
+    "hypothesis": "PostgreSQL connection pool max size is set to 25 connections in production config."
+  },
+  {
+    "id": "HN03",
+    "category": "hard_negative",
+    "fact_diff": "wrong_date",
+    "premise": "PR #1 merged on 2025-10-04 after notifications refactoring.",
+    "hypothesis": "PR #1 merged on 2025-10-05 after notifications refactoring."
+  },
+  {
+    "id": "HN04",
+    "category": "hard_negative",
+    "fact_diff": "wrong_date",
+    "premise": "ADR-004 was ratified by architecture review on 2026-04-12.",
+    "hypothesis": "ADR-004 was ratified by architecture review on 2026-04-13."
+  },
+  {
+    "id": "HN05",
+    "category": "hard_negative",
+    "fact_diff": "negation",
+    "premise": "PR #42 was approved by Gabriel Santos after security review.",
+    "hypothesis": "PR #42 was not approved by Gabriel Santos after security review."
+  },
+  {
+    "id": "HN06",
+    "category": "hard_negative",
+    "fact_diff": "negation",
+    "premise": "The payment gateway supports partial refund transactions.",
+    "hypothesis": "The payment gateway does not support partial refund transactions."
+  },
+  {
+    "id": "HN07",
+    "category": "hard_negative",
+    "fact_diff": "wrong_entity",
+    "premise": "Marcus Vance refactored the auth token validation service in PR #55.",
+    "hypothesis": "Gabriel Santos refactored the auth token validation service in PR #55."
+  },
+  {
+    "id": "HN08",
+    "category": "hard_negative",
+    "fact_diff": "wrong_entity",
+    "premise": "The payments/ module is owned by @acme/payments in CODEOWNERS.",
+    "hypothesis": "The payments/ module is owned by @acme/growth in CODEOWNERS."
+  },
+  {
+    "id": "HN09",
+    "category": "hard_negative",
+    "fact_diff": "wrong_scope",
+    "premise": "The new rate limiter applies strictly to payments/ API endpoints.",
+    "hypothesis": "The new rate limiter applies strictly to payments/refunds/ API endpoints."
+  },
+  {
+    "id": "HN10",
+    "category": "hard_negative",
+    "fact_diff": "wrong_scope",
+    "premise": "ADR-008 mandates mutual TLS for internal services in the backend/ cluster.",
+    "hypothesis": "ADR-008 mandates mutual TLS for internal services in the backend/billing/ cluster."
+  }
+]
