@@ -15,8 +15,8 @@
 | **Repository URL** | `https://github.com/saksham-AI500/Graph_Hackathon-Company-Brain-` | YES |
 | **Visibility** | `PUBLIC` | YES |
 | **Default Branch** | `main` | YES |
-| **Local HEAD SHA** | `69e24c5caf678d7683fc759193d13faa532bbf0b` | YES |
-| **Remote HEAD SHA** | `69e24c5caf678d7683fc759193d13faa532bbf0b` | YES |
+| **Local HEAD SHA** | `d49c68666871a8ed5de5a71b98df015f571266b0` | YES |
+| **Remote HEAD SHA** | `d49c68666871a8ed5de5a71b98df015f571266b0` | YES |
 | **Working Tree Status** | Clean (0 uncommitted changes, 0 untracked files) | YES |
 
 ---
@@ -24,6 +24,8 @@
 ## B. Commits Published in this Session
 
 ```
+d49c686 docs: enhance README with live public demo, Stitch UI screenshots, 344 automated test metrics, and single-origin serving
+ef1ce30 docs: publish final end-to-end verification report
 69e24c5 merge: integrate deploy-demo single-origin serving, dockerfile, and deployment guides into main
 aef037a docs: update verified screenshots, stitch reference assets, and verification scripts
 0ce1999 feat(frontend): implement Stitch Ask screen 2 layout, Compare aggregate counters, and Playwright verification
