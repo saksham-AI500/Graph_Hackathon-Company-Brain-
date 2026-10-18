@@ -33,9 +33,9 @@ export function Header() {
             <NavLink
               to="/ask"
               className={({ isActive }) =>
-                `px-3 py-1 rounded text-xs md:text-sm font-medium transition-colors ${
+                `relative px-3.5 py-1.5 rounded-md text-xs md:text-sm font-medium transition-all ${
                   isActive
-                    ? 'bg-surface-container-high text-primary border border-outline-variant/40 shadow-xs'
+                    ? 'bg-surface-container-high text-primary font-semibold after:absolute after:bottom-0 after:left-2.5 after:right-2.5 after:h-[2px] after:bg-primary after:rounded-full'
                     : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container'
                 }`
               }
@@ -45,9 +45,9 @@ export function Header() {
             <NavLink
               to="/compare"
               className={({ isActive }) =>
-                `px-3 py-1 rounded text-xs md:text-sm font-medium transition-colors ${
+                `relative px-3.5 py-1.5 rounded-md text-xs md:text-sm font-medium transition-all ${
                   isActive
-                    ? 'bg-surface-container-high text-primary border border-outline-variant/40 shadow-xs'
+                    ? 'bg-surface-container-high text-primary font-semibold after:absolute after:bottom-0 after:left-2.5 after:right-2.5 after:h-[2px] after:bg-primary after:rounded-full'
                     : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container'
                 }`
               }
@@ -57,26 +57,14 @@ export function Header() {
             <NavLink
               to="/graph"
               className={({ isActive }) =>
-                `px-3 py-1 rounded text-xs md:text-sm font-medium transition-colors ${
+                `relative px-3.5 py-1.5 rounded-md text-xs md:text-sm font-medium transition-all ${
                   isActive
-                    ? 'bg-surface-container-high text-primary border border-outline-variant/40 shadow-xs'
+                    ? 'bg-surface-container-high text-primary font-semibold after:absolute after:bottom-0 after:left-2.5 after:right-2.5 after:h-[2px] after:bg-primary after:rounded-full'
                     : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container'
                 }`
               }
             >
               Graph
-            </NavLink>
-            <NavLink
-              to="/evaluation"
-              className={({ isActive }) =>
-                `px-3 py-1 rounded text-xs md:text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'bg-surface-container-high text-primary border border-outline-variant/40 shadow-xs'
-                    : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container'
-                }`
-              }
-            >
-              Evaluation
             </NavLink>
           </nav>
 
@@ -87,7 +75,7 @@ export function Header() {
               className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-[11px] font-mono tracking-wider uppercase font-semibold ${
                 isLoading
                   ? 'bg-surface-container-lowest border-outline-variant/30 text-on-surface-variant'
-                  : isError
+                  : isError || health?.status !== 'healthy'
                   ? 'bg-red-500/10 border-red-500/30 text-red-400'
                   : 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
               }`}
@@ -96,16 +84,13 @@ export function Header() {
                 className={`w-2 h-2 rounded-full ${
                   isLoading
                     ? 'bg-zinc-400 animate-pulse'
-                    : isError
+                    : isError || health?.status !== 'healthy'
                     ? 'bg-red-500'
-                    : 'bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]'
+                    : 'bg-secondary shadow-[0_0_8px_#4edea3]'
                 }`}
               />
-              <span className="hidden sm:inline">
-                {isLoading ? 'Checking...' : isError ? 'Backend offline' : health?.database === 'connected' ? 'Connected' : 'Healthy'}
-              </span>
-              <span className="sm:hidden">
-                {isLoading ? '...' : isError ? 'Offline' : 'Live'}
+              <span className="font-label-code text-label-code">
+                {isLoading ? 'Checking...' : isError || health?.status !== 'healthy' ? 'Offline' : 'Connected'}
               </span>
             </div>
 

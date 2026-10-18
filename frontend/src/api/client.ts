@@ -17,7 +17,7 @@ import {
   type EvalResultsResponse,
 } from './schema';
 
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || (typeof window !== 'undefined' ? '' : 'http://localhost:8000');
 
 export class ApiError extends Error {
   code: string;
@@ -34,17 +34,17 @@ export class ApiError extends Error {
 export function formatErrorMessage(code: string, fallbackMessage?: string): string {
   switch (code) {
     case 'MISSING_KEY':
-      return 'Authentication failed: Missing or invalid API key. Configure credentials in backend.';
+      return 'The server has no model key configured.';
     case 'PROVIDER_CREDITS':
-      return 'Provider credits exhausted: Upstream model credit limit reached. Add funds to continue.';
+      return 'The model provider has no available credits.';
     case 'PROVIDER_RATE_LIMIT':
-      return 'Rate limit throttled: Upstream model provider rate limit reached. Retryable.';
+      return 'The model provider rate limit was reached. Try again shortly.';
     case 'BACKEND_UNAVAILABLE':
-      return 'Backend offline: Server is unavailable or unreachable at ' + API_BASE_URL + '.';
+      return 'The backend is unavailable.';
     case 'INVALID_REQUEST':
-      return fallbackMessage || 'Invalid request: Check question format and required parameters.';
+      return 'The request could not be processed.';
     default:
-      return fallbackMessage || `API Error (${code})`;
+      return fallbackMessage || 'The request could not be processed.';
   }
 }
 
@@ -68,7 +68,7 @@ async function request<T>(
   } catch {
     throw new ApiError(
       'BACKEND_UNAVAILABLE',
-      'Backend offline: Unable to reach ' + url + '. Please check that the server is running.',
+      'The backend is unavailable.',
       true,
     );
   }
@@ -79,7 +79,7 @@ async function request<T>(
   } catch {
     throw new ApiError(
       'BACKEND_UNAVAILABLE',
-      `Server returned status ${response.status} with non-JSON response.`,
+      'The backend is unavailable.',
       false,
     );
   }
@@ -90,12 +90,10 @@ async function request<T>(
       const err = errorParsed.data.error;
       throw new ApiError(err.code, formatErrorMessage(err.code, err.message), err.retryable);
     }
-    // Fallback if error shape is slightly different
     const rawError = data as { error?: { code?: string; message?: string; retryable?: boolean } };
     const code = rawError?.error?.code || 'INVALID_REQUEST';
-    const message = rawError?.error?.message || `Request failed with status ${response.status}`;
     const retryable = rawError?.error?.retryable ?? false;
-    throw new ApiError(code, formatErrorMessage(code, message), retryable);
+    throw new ApiError(code, formatErrorMessage(code), retryable);
   }
 
   const parsed = schema.safeParse(data);
@@ -103,7 +101,7 @@ async function request<T>(
     console.error(`Contract parse error on ${endpoint}:`, parsed.error);
     throw new ApiError(
       'INVALID_REQUEST',
-      `Response schema validation failed: ${parsed.error.errors.map((e: { path: (string | number)[]; message: string }) => `${e.path.join('.')}: ${e.message}`).join(', ')}`,
+      'The request could not be processed.',
       false,
     );
   }

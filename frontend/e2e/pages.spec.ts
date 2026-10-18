@@ -85,17 +85,17 @@ test.describe('RepoBrain E2E Suite', () => {
 
     await page.goto('/compare');
 
-    const runBtn = page.locator('#compare-run-btn');
+    const runBtn = page.locator('#run-compare-btn');
     await expect(runBtn).toBeVisible();
     await runBtn.click();
 
     // Verify two columns appear: Graph Off left, Graph On right
-    await expect(page.getByText('Graph Off')).toBeVisible();
-    await expect(page.getByText('Graph On')).toBeVisible();
+    await expect(page.getByText('Graph Off', { exact: true })).toBeVisible();
+    await expect(page.getByText('Graph On', { exact: true })).toBeVisible();
 
-    // Verify comparative counters appear
-    await expect(page.getByText('Comparative Analysis Counters')).toBeVisible();
-    await expect(page.getByText('Claims Difference (On - Off)')).toBeVisible();
+    // Verify difference sections appear
+    await expect(page.getByText('Question Status')).toBeVisible();
+    await expect(page.getByText('Benchmark Differential')).toBeVisible();
   });
 
   test('/graph renders canvas and controls', async ({ page }) => {
