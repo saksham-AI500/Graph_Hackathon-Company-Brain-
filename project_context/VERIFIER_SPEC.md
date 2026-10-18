@@ -126,14 +126,18 @@ If verification fails:
 
 ## 6. Model Route Decision: Free Tier Selection
 
-- **Date:** 2026-10-18T17:15:00Z
-- **Decision:** Selected `nvidia/nemotron-3.5-lightning:free` as the active LLM provider route.
+- **Date:** 2026-10-18T22:05:00Z
+- **Decision:** Selected `liquid/lfm-2.5-2.6b:free` (LiquidAI: LFM2.5-2.6B (free)) as the active LLM provider route (with `nvidia/nemotron-3.5-lightning:free` as verified alternate route).
 - **Evaluation Order & Findings:**
-  1. `thinkingmachines/inkling:free` / `thinkingmachines/inkling-small:free`: Rejected. `tool_choice` is absent from `supported_parameters`, and direct API requests are blocked with `HTTP 403 Forbidden` (`Gate Free Endpoints by Agentic Harness`).
+  1. `liquid/lfm-2.5-2.6b:free` (LiquidAI: LFM2.5-2.6B (free)): **Accepted**. Fully verified on OpenRouter API:
+     - `pricing.prompt = "0"`, `pricing.completion = "0"`
+     - `supported_parameters` includes both `"tools"` and `"tool_choice"`
+     - Native reasoning tokens, 65k context length, verified tool calling and grounded graph execution.
   2. `nvidia/nemotron-3.5-lightning:free`: **Accepted**. Fully verified on OpenRouter API:
      - `pricing.prompt = "0"`, `pricing.completion = "0"`
      - `supported_parameters` includes both `"tools"` and `"tool_choice"`
-     - Live call with production payload (temperature 0.0, max_tokens 1500, full system prompt, Q1, tools on) succeeded with `HTTP 200`, cost `0`, and returned valid native function calls (`finish_reason: "tool_calls"`).
-  3. `moonshotai/kimi-k2.6:free`: Not found in OpenRouter catalog with `:free` tag.
-  4. `deepseek/deepseek-v4-flash:free`: Not found in OpenRouter catalog with `:free` tag.
+     - Live call with production payload (temperature 0.0, max_tokens 1500, full system prompt, Q1, tools on) succeeded with `HTTP 200`, cost `0`.
+  3. `thinkingmachines/inkling:free` / `thinkingmachines/inkling-small:free`: Rejected (`tool_choice` absent).
+  4. `moonshotai/kimi-k2.6:free`: Not found in OpenRouter catalog with `:free` tag.
+  5. `deepseek/deepseek-v4-flash:free`: Not found in OpenRouter catalog with `:free` tag.
 

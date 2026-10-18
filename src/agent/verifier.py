@@ -118,7 +118,10 @@ class AgentEvidenceVerifier:
                 as_of=norm_as_of,
             )
             claim.verification_path = v_path
-            claim.score = v_score
+            if v_score is not None:
+                claim.score = float(v_score)
+            else:
+                claim.score = 1.0 if is_valid else 0.0
             claim.supporting_span = supp_span
 
             if not is_valid:
@@ -184,18 +187,22 @@ class AgentEvidenceVerifier:
                     "claim_ids": [c.claim_id for c in mapped_claims],
                     "cited_sources": cited_sids,
                     "verification_path": "sentence_check",
-                    "score": None,
+                    "score": 0.0,
                     "passed": False,
                     "reason": "Factual sentence missing mapped verified claim or valid source citation.",
                 })
             else:
                 top_claim = mapped_claims[0]
+                if top_claim.score is not None:
+                    c_score = float(top_claim.score)
+                else:
+                    c_score = 1.0 if top_claim.verified else 0.0
                 sentence_logs.append({
                     "sentence": sent,
                     "claim_ids": [c.claim_id for c in mapped_claims],
                     "cited_sources": effective_sids,
                     "verification_path": top_claim.verification_path or "exact_lookup",
-                    "score": top_claim.score,
+                    "score": c_score,
                     "passed": True,
                     "reason": None,
                 })
@@ -357,11 +364,11 @@ class AgentEvidenceVerifier:
     ) -> Tuple[bool, str, Optional[float], Optional[str], Optional[str]]:
         """Verify factual support for a specific claim using exact lookup, normalization, or NLI prose scoring."""
         if not claim.source_ids:
-            return False, "none", None, "Claim cites no source identifiers.", None
+            return False, "none", 0.0, "Claim cites no source identifiers.", None
 
         for sid in claim.source_ids:
             if sid not in source_id_map:
-                return False, "none", None, f"Cited source '{sid}' is not a verified graph source.", None
+                return False, "none", 0.0, f"Cited source '{sid}' is not a verified graph source.", None
 
         # ---------------------------------------------------------------------
         # Path 1: Exact Decision Quote Lookup
@@ -377,7 +384,7 @@ class AgentEvidenceVerifier:
                     stored_quote = src.span_text or src.snippet or ""
                 if stored_quote and (stored_quote in claim.text or claim.text in stored_quote):
                     return True, CompatiblePath("structured"), 1.0, None, stored_quote
-            return False, CompatiblePath("structured"), None, "Decision quote does not match exact stored quote.", None
+            return False, CompatiblePath("structured"), 0.0, "Decision quote does not match exact stored quote.", None
 
         # ---------------------------------------------------------------------
         # Path 2: Exact CODEOWNERS Lookup
@@ -410,13 +417,13 @@ class AgentEvidenceVerifier:
                 if claimed_teams:
                     for ct in claimed_teams:
                         if ct not in owners_lower:
-                            return False, CompatiblePath("exact_lookup"), None, f"Claimed owner '{ct}' is not declared in CODEOWNERS for '{ident_str}'.", None
+                            return False, CompatiblePath("exact_lookup"), 0.0, f"Claimed owner '{ct}' is not declared in CODEOWNERS for '{ident_str}'.", None
                     return True, CompatiblePath("exact_lookup"), 1.0, None, ", ".join(combined_owners)
 
                 if any(o in claim.text.lower() or o.replace("-", " ") in claim.text.lower() for o in owners_lower):
                     return True, CompatiblePath("exact_lookup"), 1.0, None, ", ".join(combined_owners)
 
-            return False, CompatiblePath("exact_lookup"), None, "Claimed owner does not match CODEOWNERS declaration.", None
+            return False, CompatiblePath("exact_lookup"), 0.0, "Claimed owner does not match CODEOWNERS declaration.", None
 
         # ---------------------------------------------------------------------
         # Path 3: Exact Entity Lookup for PR / Issue Author & Reviewers
@@ -468,18 +475,18 @@ class AgentEvidenceVerifier:
                     txt = claim.text.lower()
                     if "author" in txt:
                         if author_login in txt or author_name in txt or author_login.replace("-", " ") in txt:
-                            return True, "exact_lookup", None, None, f"PR #{pr_num} author {author_login}"
+                            return True, "exact_lookup", 1.0, None, f"PR #{pr_num} author {author_login}"
                         else:
-                            return False, "exact_lookup", None, f"Claimed author does not match PR #{pr_num} author record ({author_login}).", None
+                            return False, "exact_lookup", 0.0, f"Claimed author does not match PR #{pr_num} author record ({author_login}).", None
                     elif "review" in txt or "approv" in txt:
                         if any(rev in txt or rev.replace("-", " ") in txt for rev in reviewers):
-                            return True, "exact_lookup", None, None, f"PR #{pr_num} reviewer in {reviewers}"
+                            return True, "exact_lookup", 1.0, None, f"PR #{pr_num} reviewer in {reviewers}"
                         else:
-                            return False, "exact_lookup", None, f"Claimed reviewer does not match PR #{pr_num} reviews.", None
+                            return False, "exact_lookup", 0.0, f"Claimed reviewer does not match PR #{pr_num} reviews.", None
                     else:
                         if author_login in txt or (author_name and author_name in txt) or any(r in txt for r in reviewers) or f"#{pr_num}" in txt or f"pr {pr_num}" in txt:
-                            return True, "exact_lookup", None, None, f"PR #{pr_num} entity verified"
-                        return False, "exact_lookup", None, f"Entity not verified in PR #{pr_num} record.", None
+                            return True, "exact_lookup", 1.0, None, f"PR #{pr_num} entity verified"
+                        return False, "exact_lookup", 0.0, f"Entity not verified in PR #{pr_num} record.", None
 
                 elif src.entity_type == "Issue" or "issues" in str(src.url):
                     m_issue = re.search(r"(?:issues?/|Issue\s*#?)(\d+)", f"{src.url} {src.identifier}")
@@ -509,10 +516,10 @@ class AgentEvidenceVerifier:
                             continue
                     txt = claim.text.lower()
                     if author_login in txt or author_login.replace("-", " ") in txt or f"#{issue_num}" in txt or f"issue {issue_num}" in txt:
-                        return True, "exact_lookup", None, None, f"Issue #{issue_num} author {author_login}"
-                    return False, "exact_lookup", None, f"Claimed author does not match Issue #{issue_num} author record.", None
+                        return True, "exact_lookup", 1.0, None, f"Issue #{issue_num} author {author_login}"
+                    return False, "exact_lookup", 0.0, f"Claimed author does not match Issue #{issue_num} author record.", None
 
-            return False, "exact_lookup", None, "Entity claim could not be verified against fixtures.", None
+            return False, "exact_lookup", 0.0, "Entity claim could not be verified against fixtures.", None
 
         # ---------------------------------------------------------------------
         # Path 4: Date Verification with Timezone Normalization
@@ -539,10 +546,10 @@ class AgentEvidenceVerifier:
                 if date_match and norm_date:
                     claimed_date = date_match.group(1)
                     if claimed_date == norm_date:
-                        return True, "normalization", None, None, raw_ts
+                        return True, "normalization", 1.0, None, raw_ts
                     else:
-                        return False, "normalization", None, f"Claimed date '{claimed_date}' does not match normalized fixture date ({norm_date}).", None
-            return False, "normalization", None, "Date verification failed against fixture timestamp.", None
+                        return False, "normalization", 0.0, f"Claimed date '{claimed_date}' does not match normalized fixture date ({norm_date}).", None
+            return False, "normalization", 0.0, "Date verification failed against fixture timestamp.", None
 
         # ---------------------------------------------------------------------
         # Path 5: Numeric & Unit Normalization
@@ -554,10 +561,10 @@ class AgentEvidenceVerifier:
                 is_app, is_match, reason = check_unit_and_number_normalization(span, claim.text)
                 if is_app:
                     if is_match:
-                        return True, "normalization", None, None, span
+                        return True, "normalization", 1.0, None, span
                     else:
-                        return False, "normalization", None, reason, None
-            return False, "normalization", None, "Numeric unit normalization failed.", None
+                        return False, "normalization", 0.0, reason, None
+            return False, "normalization", 0.0, "Numeric unit normalization failed.", None
 
         # ---------------------------------------------------------------------
         # Path 6: Legacy PR_INVESTIGATION
@@ -575,8 +582,8 @@ class AgentEvidenceVerifier:
                 src = source_id_map[sid]
                 ident_str = str(src.identifier).lower()
                 if ident_str in claim.text.lower() or any(w.lower() in claim.text.lower() for w in ident_str.split("/")):
-                    return True, "exact_lookup", None, None, src.span_text or src.snippet or ident_str
-            return False, "exact_lookup", None, "Entity not found in cited source.", None
+                    return True, "exact_lookup", 1.0, None, src.span_text or src.snippet or ident_str
+            return False, "exact_lookup", 0.0, "Entity not found in cited source.", None
 
         # ---------------------------------------------------------------------
         # Path 7: Free-Text Prose Claims (NLI)
@@ -599,9 +606,9 @@ class AgentEvidenceVerifier:
             is_app, is_match, reason = check_unit_and_number_normalization(span, claim.text)
             if is_app:
                 if is_match:
-                    return True, "normalization", None, None, span
+                    return True, "normalization", 1.0, None, span
                 else:
-                    return False, "normalization", None, reason, None
+                    return False, "normalization", 0.0, reason, None
 
         # Genuine semantic free-text scoring via local ONNX model
         is_supported, path, best_score, best_span = self.nli_verifier.verify_claim_against_spans(
@@ -609,10 +616,11 @@ class AgentEvidenceVerifier:
             spans=spans,
         )
 
+        score_val = float(best_score) if best_score is not None else (1.0 if is_supported else 0.0)
         if is_supported:
-            return True, CompatiblePath("nli_prose"), best_score, None, best_span
+            return True, CompatiblePath("nli_prose"), score_val, None, best_span
         else:
-            return False, CompatiblePath("nli_prose"), best_score, f"NLI entailment score ({best_score:.3f}) below threshold ({self.nli_threshold:.2f}).", None
+            return False, CompatiblePath("nli_prose"), score_val, f"NLI entailment score ({score_val:.3f}) below threshold ({self.nli_threshold:.2f}).", None
 
     def _run_counterfactual_test(
         self,

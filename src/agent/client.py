@@ -1,8 +1,10 @@
 """OpenRouter API client with OpenAI-compatible tool-calling and credentials safety."""
 
+import ast
 import json
 import logging
 import os
+import re
 import time
 from typing import Any, Dict, List, Optional
 import httpx
@@ -12,8 +14,10 @@ from src.agent.models import ToolCall
 logger = logging.getLogger(__name__)
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-DEFAULT_MODEL = "nvidia/nemotron-3.5-lightning:free"
+DEFAULT_MODEL = "liquid/lfm-2.5-2.6b:free"
 ALLOWED_DEEPSEEK_MODELS = [
+    "liquid/lfm-2.5-2.6b:free",
+    "deepseek/deepseek-v4.1-flash",
     "nvidia/nemotron-3.5-lightning:free",
 ]
 MAX_TOKENS_CONSTANT: int = 1500
@@ -151,6 +155,8 @@ class OpenRouterClient:
                     if resp.status_code == 402:
                         raise OpenRouterClientError(f"OpenRouter API call failed (HTTP 402): {safe_text}")
                     elif resp.status_code == 429 and attempt < max_retries:
+                        if "free-models-per-day" in safe_text or "free_tier_daily" in safe_text:
+                            raise OpenRouterRateLimitError(f"OpenRouter rate limit reached (HTTP 429): {safe_text}")
                         retry_after = 5.0 * (attempt + 1)
                         if "Retry-After" in resp.headers:
                             try:
@@ -218,6 +224,35 @@ class OpenRouterClient:
                 args = raw_args
 
             tool_calls.append(ToolCall(name=fname, arguments=args, call_id=call_id))
+
+        # If native tool_calls is empty, parse text-based tool calls from content (e.g. LiquidAI / LFM models)
+        if not tool_calls:
+            content = message.get("content") or ""
+            snippets = re.findall(r"<\|tool_call_start\|>(.*?)<\|tool_call_end\|>", content, re.DOTALL)
+            if not snippets:
+                snippets = re.findall(r"<tool_call>(.*?)</tool_call>", content, re.DOTALL)
+
+            for snippet in snippets:
+                snippet = snippet.strip()
+                try:
+                    parsed = ast.parse(snippet, mode="eval")
+                    nodes = []
+                    if isinstance(parsed.body, ast.List):
+                        nodes = parsed.body.elts
+                    elif isinstance(parsed.body, ast.Call):
+                        nodes = [parsed.body]
+                    for n in nodes:
+                        if isinstance(n, ast.Call):
+                            fname = n.func.id if isinstance(n.func, ast.Name) else str(n.func)
+                            args = {}
+                            for kw in n.keywords:
+                                try:
+                                    args[kw.arg] = ast.literal_eval(kw.value)
+                                except Exception:
+                                    args[kw.arg] = str(kw.value)
+                            tool_calls.append(ToolCall(name=fname, arguments=args, call_id=f"call_{len(tool_calls)+1}"))
+                except Exception as ex:
+                    logger.debug(f"AST tool call parsing failed on snippet: {ex}")
 
         return tool_calls
 

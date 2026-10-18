@@ -184,16 +184,16 @@ class LocalNLIVerifier:
             where path is "normalization" (score=None) or "nli" (score=float).
         """
         if not spans:
-            return False, "none", None, None
+            return False, "none", 0.0, None
 
         # Check normalization first (units, numeric counts)
         for span in spans:
             is_app, is_match, reason = check_unit_and_number_normalization(span, claim_text)
             if is_app:
                 if is_match:
-                    return True, "normalization", None, span
+                    return True, "normalization", 1.0, span
                 else:
-                    return False, "normalization", None, None
+                    return False, "normalization", 0.0, None
 
         # Fallback to authentic local NLI cross-encoder model scoring
         best_score = 0.0
