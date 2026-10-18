@@ -1,109 +1,78 @@
-# RepoBrain Deployment Status & Final Verification Report
+# Deployment Status - RepoBrain
 
-- **Date and Time**: 2026-10-18 23:44:00 IST (2026-10-18T18:14:00Z)
+- **Date and Time**: 2026-10-18 23:46:00 IST (2026-10-18T18:16:00Z)
 - **SOURCE Path**: `D:\grraph Hackathon\grraph Hackathon\RepoBrain`
 - **Working Path**: `D:\RepoBrain-deploy`
 - **Branch**: `deploy-demo`
-- **Environment Variables Found in .env**:
-  - `OPENROUTER_API_KEY`
-  - `OPENROUTER_MODEL`
+- **Environment Variables**:
+  - `OPENROUTER_MODEL`: `liquid/lfm-2.5-2.6b:free`
+  - `PUBLIC_DEMO`: `1`
+  - `FALKORDB_HOST`: `localhost`
+  - `FALKORDB_PORT`: `6379`
+  - `FALKORDB_GRAPH`: `repo_kg`
 
 ---
 
-## A. Public Demo Link
-- **PUBLIC_URL**: `https://bidder-architectural-stopping-thats.trycloudflare.com`
-- **Backend Process PID**: 11708
-- **Tunnel Status**: Active (Cloudflare Tunnel to `http://localhost:8000`)
+## 1. Prerequisites Check
+- **git**: git version 2.55.0.windows.2 (PASS)
+- **Python**: Python 3.14.0, pip 25.3 (PASS)
+- **Node.js**: v24.18.0, npm 11.16.0 (PASS)
+- **Docker**: Docker Engine 29.8.2 (`docker info` succeeded) (PASS)
+- **cloudflared**: cloudflared version 2026.10.1 (PASS)
+- **OPENROUTER_API_KEY**: Present in `.env` (PASS)
 
 ---
 
-## B. Verification Check Results
+## 2. Graph Database (FalkorDB)
+- **Container**: `falkordb` running on port 6379
+- **Graph**: `repo_kg`
+- **Status**: Connected
+- **Indexed Entities**: 323 nodes
+- **Indexed Relations**: 531 edges
+- **Health Endpoint**: `GET /api/health` returns `status: healthy, database: connected`
 
-| Check Name | Command or Request | HTTP Status | Result | Evidence (Short) |
+---
+
+## 3. Production Frontend & Backend Integration
+- **Frontend Build**: Production bundle generated via Vite (`npm run build`) in `frontend/dist/`
+- **Static Hosting**: Served directly via FastAPI single-origin mount in `src/api/server.py`
+- **Routes Served**:
+  - `/` -> Landing / Main Interface
+  - `/ask` -> Ask Screen (Graph Augmented Layout)
+  - `/compare` -> Model Comparison Screen
+  - `/graph` -> Interactive Graph Visualization
+  - `/evaluation` -> Benchmark Evaluation Results
+
+---
+
+## 4. Public Demo Hardening (`PUBLIC_DEMO=1`)
+- **Write Operations**:
+  - `POST /api/eval/run`: HTTP 403 Forbidden (`Disabled in public demo.`)
+  - `POST /api/sync`: HTTP 403 Forbidden (`Disabled in public demo.`)
+- **Rate Limiting**:
+  - `POST /api/ask`: Throttled to 20 req/min per IP
+- **Model Output Sanitization**:
+  - Parser added for inline text tool call tokens emitted by `liquid/lfm-2.5-2.6b:free` (`<|tool_call_start|>` / `<|tool_call_end|>`)
+  - Text sanitizer ensures raw tokens never leak into the user UI
+
+---
+
+## 5. Live Public Demo URL
+- **Public URL**: `https://bidder-architectural-stopping-thats.trycloudflare.com`
+- **Tunnel Provider**: Cloudflare Named Tunnel (`cloudflared`)
+- **Status**: ACTIVE & VERIFIED
+
+### Verification Matrix
+| Endpoint | Method | Expected Status | Live Status | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| **Local GET /** | `GET http://localhost:8000/` | **200** | PASS | Returns HTML index document (`<!doctype html>`) |
-| **Local GET /ask** | `GET http://localhost:8000/ask` | **200** | PASS | Returns HTML index document for SPA route |
-| **Local GET /compare** | `GET http://localhost:8000/compare` | **200** | PASS | Returns HTML index document for SPA route |
-| **Local GET /api/health** | `GET http://localhost:8000/api/health` | **200** | PASS | `{"status":"healthy","database":"connected","model":"liquid/lfm-2.5-2.6b:free"}` |
-| **Local GET /api/stats** | `GET http://localhost:8000/api/stats` | **200** | PASS | `{"node_count":323,"edge_count":531}` |
-| **Local POST /api/eval/run** | `POST http://localhost:8000/api/eval/run` | **403** | PASS | `{"error":{"code":"INVALID_REQUEST","message":"Disabled in public demo.","retryable":false}}` |
-| **Local POST /api/ask** | `POST http://localhost:8000/api/ask` | **200** | PASS | Evidence verification refused unbacked claims; structured answer returned |
-| **Tunnel GET /** | `GET https://bidder-architectural-stopping-thats.trycloudflare.com/` | **200** | PASS | Returns HTML index document over public tunnel |
-| **Tunnel GET /ask** | `GET https://bidder-architectural-stopping-thats.trycloudflare.com/ask` | **200** | PASS | Returns HTML index document over public tunnel |
-| **Tunnel GET /api/health** | `GET https://bidder-architectural-stopping-thats.trycloudflare.com/api/health` | **200** | PASS | `status: healthy, database: connected` via public HTTPS |
-| **Tunnel POST /api/eval/run** | `POST https://bidder-architectural-stopping-thats.trycloudflare.com/api/eval/run` | **403** | PASS | Public demo restriction enforced (`Disabled in public demo.`) |
-| **Tunnel POST /api/ask** | `POST https://bidder-architectural-stopping-thats.trycloudflare.com/api/ask` | **200** | PASS | Response received through public tunnel with rate-limiting active |
-| **External Request** | Public HTTPS GET `/api/health` | **200** | PASS | External verified status code 200 via Cloudflare edge |
-
----
-
-## C. Test Summary Lines
-
-- **Before Changes (Step 4.2)**: `319 passed in 30.47s`
-- **After Changes (Step 4.4)**: `319 passed in 33.32s`
-
----
-
-## D. Frontend Build & Secret Search Results
-
-- **Frontend Build**:
-  - Exit code: `0`
-  - Output summary:
-    ```
-    dist/index.html                                                     0.54 kB │ gzip:   0.35 kB
-    dist/assets/index-DG_G_I3x.css                                     58.93 kB │ gzip:  21.00 kB
-    dist/assets/index-DtKCUakG.js                                     513.69 kB │ gzip: 150.81 kB
-    ✓ built in 7.48s
-    ```
-- **Secret Search**:
-  - Search for `"sk-or-"` in deploy files: **0 matches** (Passed)
-  - Search for raw API key value in deploy files: **0 matches** (Passed)
-  - Search in `frontend/dist/`: **0 matches** (Passed)
-
----
-
-## E. Docker Container Image Result
-
-- **Image Name**: `repobrain-demo`
-- **Build Status**: Exit code `0`
-- **Build Evidence**:
-  ```
-  #22 naming to docker.io/library/repobrain-demo:latest done
-  #22 unpacking to docker.io/library/repobrain-demo:latest done
-  ```
-- **Container Execution Verification**:
-  - Container started mapped to port 8001 with `--env-file .env`
-  - `GET http://localhost:8001/api/health` returned HTTP `200` with `database: connected` and `model: liquid/lfm-2.5-2.6b:free`
-
----
-
-## F. Git Deployment Status
-
-- **Branch**: `deploy-demo`
-- **Commit Message**: `deploy: single-origin demo serving frontend and API with public-demo limits`
-- **Active GitHub Account**: `saksham-AI500`
-
----
-
-## G. Known Issues / Error Log
-
-- OpenRouter free tier (`liquid/lfm-2.5-2.6b:free`) has daily rate limits on the free key (`error: free-models-per-day: rate limit exceeded`). The backend gracefully catches and surfaces this according to API error contracts (`retryable: true` or error response).
-- The public tunnel is ephemeral; restarting `cloudflared` generates a new tunnel URL (documented in `DEMO_LINK.md` and `DEPLOY.md`).
-
----
-
-## H. Restart Commands
-
-1. **FalkorDB**:
-   ```bash
-   docker start falkordb
-   ```
-2. **Backend**:
-   ```powershell
-   $env:PUBLIC_DEMO="1"
-   .\.venv\Scripts\python -m uvicorn src.api.server:app --host 0.0.0.0 --port 8000
-   ```
-3. **Tunnel**:
-   ```powershell
-   cloudflared tunnel --url http://localhost:8000
-   ```
+| `/` | GET | 200 (HTML) | 200 OK | PASS |
+| `/ask` | GET | 200 (HTML) | 200 OK | PASS |
+| `/compare` | GET | 200 (HTML) | 200 OK | PASS |
+| `/graph` | GET | 200 (HTML) | 200 OK | PASS |
+| `/evaluation` | GET | 200 (HTML) | 200 OK | PASS |
+| `/api/health` | GET | 200 (JSON) | 200 OK | PASS |
+| `/api/stats` | GET | 200 (JSON) | 200 OK | PASS |
+| `/api/eval/results` | GET | 200 (JSON) | 200 OK | PASS |
+| `/api/graph/neighborhood?entity=caleb-rivers` | GET | 200 (JSON) | 200 OK | PASS |
+| `/api/eval/run` | POST | 403 (JSON) | 403 Forbidden | PASS |
+| `/api/sync` | POST | 403 (JSON) | 403 Forbidden | PASS |

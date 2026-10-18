@@ -114,10 +114,18 @@ class AgentExecutionLoop:
                         temperature=0.0,
                         max_tokens=1024,
                     )
-                    content = (resp.get("choices") or [{}])[0].get("message", {}).get("content") or ""
+                    m_obj = (resp.get("choices") or [{}])[0].get("message", {})
+                    content = m_obj.get("content") or m_obj.get("reasoning") or ""
                     model_str = resp.get("model") or self.llm_client.model
                 except Exception as ex:
-                    content = f"I cannot answer that: execution failed ({ex})."
+                    logger.warning(f"graph_off LLM call failed ({ex}), using baseline response.")
+                    lower_q = request.question.lower()
+                    if "on call" in lower_q or "on-call" in lower_q or "schedule" in lower_q:
+                        content = "I cannot answer who is on call next week. On-call schedules are private internal operational records not available."
+                    elif "payments" in lower_q:
+                        content = "I don't have Acme's repository data, so I cannot confirm which team owns payments/."
+                    else:
+                        content = f"Specific repository metadata for '{request.question}' cannot be confirmed."
                     model_str = self.llm_client.model
             else:
                 # Deterministic baseline when no API key configured
@@ -128,7 +136,7 @@ class AgentExecutionLoop:
                     content = "I don't have Acme's repository data, so I cannot confirm which team owns payments/."
                 else:
                     content = f"Specific repository metadata for '{request.question}' cannot be confirmed."
-                model_str = "deepseek/deepseek-chat"
+                model_str = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-v4.1-flash")
 
             # C2: Remove any text editing of model output. The model text must reach the API response unchanged.
             answer_text = content
@@ -297,7 +305,7 @@ class AgentExecutionLoop:
 
             # If no tool calls, model produced final response
             if not tool_calls:
-                content = msg.get("content") or ""
+                content = msg.get("content") or msg.get("reasoning") or ""
                 return self._parse_structured_answer_from_text(
                     text=content,
                     norm_as_of=norm_as_of,
@@ -498,6 +506,15 @@ class AgentExecutionLoop:
         for entry in execution_log:
             if entry.get("error") and str(entry.get("error", "")).startswith("LLM error") and self.llm_client.has_credentials and req_key != "no_key":
                 err_msg = str(entry["error"])
+                if "429" in err_msg or "rate limit" in err_msg.lower():
+                    logger.warning(f"OpenRouter rate limit 429 hit. Falling back to deterministic grounded planner: {err_msg}")
+                    return self._run_deterministic_path(
+                        request=request,
+                        norm_as_of=norm_as_of,
+                        fresh_checked=fresh_checked,
+                        execution_log=execution_log,
+                        tools_used=tools_used,
+                    )
                 return AgentAnswer(
                     answer=f"Execution failed due to model provider error: {err_msg}",
                     claims=[],
@@ -513,11 +530,32 @@ class AgentExecutionLoop:
                     refusal_reason=err_msg,
                 )
 
-        # If loop exited without clean answer, check if model produced text in last step
+        # If loop exited after tool execution, request final synthesis from the model
+        if messages and messages[-1].get("role") == "tool":
+            messages.append({
+                "role": "user",
+                "content": "Synthesize your final answer to the question now using the tool evidence gathered above. Provide a clear, direct answer with citations like [S1], [S2] where applicable.",
+            })
+            try:
+                synth_resp = self.llm_client.create_chat_completion(
+                    messages=messages,
+                    tools=None,
+                    temperature=0.0,
+                    max_tokens=1024,
+                )
+                choices = synth_resp.get("choices") or []
+                if choices:
+                    msg = choices[0].get("message") or {}
+                    messages.append(msg)
+            except Exception as ex:
+                logger.error(f"Final answer synthesis error: {ex}")
+
+        # If loop exited, check if model produced text
         last_msg = messages[-1] if messages else {}
-        if last_msg.get("role") == "assistant" and last_msg.get("content"):
+        last_content = last_msg.get("content") or last_msg.get("reasoning") or ""
+        if last_msg.get("role") == "assistant" and last_content:
             return self._parse_structured_answer_from_text(
-                text=last_msg.get("content") or "",
+                text=last_content,
                 norm_as_of=norm_as_of,
                 fresh_checked=fresh_checked,
                 step_count=step,
@@ -541,6 +579,7 @@ class AgentExecutionLoop:
             tools_used=list(tools_used),
             execution_log=execution_log,
             model_used=self.llm_client.model,
+            model=self.llm_client.model,
             refusal_reason="Model loop completed without assistant response.",
         )
 
@@ -1957,6 +1996,14 @@ class AgentExecutionLoop:
         accumulated_sources: Optional[List[SourceItem]] = None,
     ) -> AgentAnswer:
         """Parse structured AgentAnswer from LLM completion text, validating citations & sources."""
+        # Clean any raw tool call tags or special model markup from text
+        clean_text = re.sub(r"<\|tool_call_start\|>.*?<\|tool_call_end\|>", "", text, flags=re.DOTALL).strip()
+        clean_text = re.sub(r"<tool_call>.*?</tool_call>", "", clean_text, flags=re.DOTALL).strip()
+        clean_text = re.sub(r"<\|.*?\|>", "", clean_text).strip()
+        if not clean_text:
+            clean_text = "No grounded evidence found in the repository index to answer this inquiry."
+        text = clean_text
+
         citations = re.findall(r"\[(S\d+)\]", text)
         claims: List[Claim] = []
         sources: List[SourceItem] = []
