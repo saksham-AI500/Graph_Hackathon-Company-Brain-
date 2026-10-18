@@ -19,7 +19,6 @@ export function CountUp({ value, duration = 500, className = '', suffix = '', pr
       return;
     }
 
-    let start = 0;
     const startTime = performance.now();
 
     const step = (now: number) => {

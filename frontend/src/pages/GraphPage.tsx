@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   forceSimulation,
   forceLink,
@@ -19,7 +19,7 @@ import {
   Navigation,
 } from 'lucide-react';
 import { useNeighborhood, useSync, formatErrorMessage } from '../api/client';
-import type { GraphNode, GraphEdge, NeighborhoodResponse } from '../api/schema';
+import type { GraphNode, NeighborhoodResponse } from '../api/schema';
 import { DitheredOrb } from '../components/DitheredOrb';
 import { useTheme } from '../context/ThemeContext';
 
@@ -332,6 +332,7 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
         {/* Graph Canvas SVG */}
         {!isEmpty && (
           <svg
+            id="neighborhood-canvas-svg"
             className="w-full h-full"
             style={{
               transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,

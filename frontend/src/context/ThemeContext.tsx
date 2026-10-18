@@ -14,15 +14,21 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>(() => {
-    const saved = localStorage.getItem('repobrain-theme');
+    const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('repobrain-theme') : null;
     if (saved === 'light' || saved === 'dark') return saved;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark'; // default dark per Stitch
+    if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
+    }
+    return 'dark';
   });
 
   const [reducedMotion, setReducedMotionState] = useState<boolean>(() => {
-    const saved = localStorage.getItem('repobrain-reduced-motion');
+    const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('repobrain-reduced-motion') : null;
     if (saved !== null) return saved === 'true';
-    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+      return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+    return false;
   });
 
   useEffect(() => {
@@ -58,6 +64,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {

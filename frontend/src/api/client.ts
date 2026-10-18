@@ -65,7 +65,7 @@ async function request<T>(
         ...(options.headers || {}),
       },
     });
-  } catch (err: unknown) {
+  } catch {
     throw new ApiError(
       'BACKEND_UNAVAILABLE',
       'Backend offline: Unable to reach ' + url + '. Please check that the server is running.',
