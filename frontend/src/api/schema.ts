@@ -81,6 +81,7 @@ export const SourceSchema = z.object({
   url: z.string(),
   date: z.string(),
   quote: z.string(),
+  title: z.string().optional(),
 });
 export type Source = z.infer<typeof SourceSchema>;
 
@@ -259,7 +260,12 @@ export const EvalOutcomeSchema = z.object({
   sources_count: z.number().optional(),
   correct: z.boolean().optional(),
   supported: z.boolean().optional(),
-  latency_ms: z.number().optional(),
+  latency_ms: z.number().nullable().optional(),
+  score: z.record(z.string(), z.unknown()).optional(),
+  citations: z.array(z.string()).optional(),
+  execution_type: z.string().optional(),
+  model_identifier: z.string().optional(),
+  error: z.unknown().optional(),
 });
 export type EvalOutcome = z.infer<typeof EvalOutcomeSchema>;
 

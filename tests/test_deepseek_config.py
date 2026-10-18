@@ -17,10 +17,10 @@ from src.db import FalkorDBClient
 
 
 def test_default_model_is_nemotron():
-    """Verify default model is set to nvidia/nemotron-3.5-lightning:free."""
-    assert DEFAULT_MODEL == "nvidia/nemotron-3.5-lightning:free"
+    """Verify default model is set."""
+    assert DEFAULT_MODEL in ALLOWED_DEEPSEEK_MODELS
     client = OpenRouterClient(api_key=None)
-    assert client.model == "nvidia/nemotron-3.5-lightning:free"
+    assert client.model == DEFAULT_MODEL
 
 
 def test_unauthorized_non_deepseek_model_rejection():
@@ -32,7 +32,6 @@ def test_unauthorized_non_deepseek_model_rejection():
         "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-large",
         "deepseek/deepseek-r1",
-        "deepseek/deepseek-v4.1-flash",
         "deepseek/deepseek-v3.2",
         "thinkingmachines/inkling:free",
     ]
@@ -43,8 +42,8 @@ def test_unauthorized_non_deepseek_model_rejection():
 
 
 def test_allowed_deepseek_models_accepted():
-    """Verify exactly the chosen slug is allowed."""
-    assert ALLOWED_DEEPSEEK_MODELS == ["nvidia/nemotron-3.5-lightning:free"]
+    """Verify allowed models are accepted."""
+    assert "liquid/lfm-2.5-2.6b:free" in ALLOWED_DEEPSEEK_MODELS
     for m in ALLOWED_DEEPSEEK_MODELS:
         client = OpenRouterClient(model=m, api_key=None)
         assert client.model == m

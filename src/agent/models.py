@@ -1,5 +1,6 @@
 """Pydantic and data models for the RepoBrain Company Brain agent."""
 
+import os
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Union
 from pydantic import BaseModel, Field, field_validator
@@ -218,7 +219,7 @@ class AgentAnswer(BaseModel):
     excluded: List[Union[ExcludedItem, Dict[str, Any]]] = Field(default_factory=list)
     mode: str = "graph_on"
     synced_at: Optional[str] = None
-    model: str = "deepseek/deepseek-chat"
+    model: Optional[str] = None
     verifier: Dict[str, Any] = Field(default_factory=lambda: {"claims_total": 0, "claims_passed": 0, "sources_valid": 0, "sources_total": 0})
     what_changed: Optional[Dict[str, Any]] = None
 
@@ -229,6 +230,11 @@ class AgentAnswer(BaseModel):
             self.tool_calls = self.execution_log
         elif not self.execution_log and self.tool_calls:
             self.execution_log = self.tool_calls
+        if not self.model or self.model == "deepseek/deepseek-chat":
+            if self.model_used and self.model_used != "deterministic_fallback":
+                self.model = self.model_used
+            else:
+                self.model = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-v4.1-flash")
         if self.refusal_reason is None and self.status == "REFUSED":
             if self.unresolved:
                 self.refusal_reason = "; ".join(self.unresolved)
@@ -304,6 +310,23 @@ class AgentAnswer(BaseModel):
                     "ms": 0,
                 })
 
+        verifier_fmt = dict(self.verifier) if isinstance(self.verifier, dict) else {}
+        if "sentence_logs" in verifier_fmt and isinstance(verifier_fmt["sentence_logs"], list):
+            clean_logs = []
+            for item in verifier_fmt["sentence_logs"]:
+                if isinstance(item, dict):
+                    clean_item = dict(item)
+                    score_val = clean_item.get("score")
+                    if score_val is None:
+                        clean_item["score"] = 1.0 if clean_item.get("passed") else 0.0
+                    else:
+                        try:
+                            clean_item["score"] = float(score_val)
+                        except (ValueError, TypeError):
+                            clean_item["score"] = 0.0
+                    clean_logs.append(clean_item)
+            verifier_fmt["sentence_logs"] = clean_logs
+
         resp = {
             "answer": self.answer,
             "status": self.status,
@@ -317,9 +340,9 @@ class AgentAnswer(BaseModel):
             "mode": self.mode,
             "as_of": self.as_of,
             "synced_at": self.synced_at or "2026-09-30T23:59:59Z",
-            "model": self.model or self.model_used or "deepseek/deepseek-chat",
+            "model": self.model or self.model_used or os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-v4.1-flash"),
             "tool_calls": tool_calls_fmt,
-            "verifier": self.verifier,
+            "verifier": verifier_fmt,
         }
         if self.what_changed:
             resp["what_changed"] = self.what_changed

@@ -218,9 +218,47 @@ export function AskPage({ initialSample }: { initialSample?: AskResponse }) {
             </div>
           )}
 
+          {/* Empty Right Side Starter Cards & Mode Description */}
+          {!response && !askMutation.isPending && (
+            <div className="flex flex-col gap-5">
+              <div className="p-4 rounded-xl bg-surface-container-low border border-outline-variant/30 flex items-center gap-3 text-xs text-on-surface-variant shadow-xs">
+                <span className="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-mono text-[10px] font-bold uppercase shrink-0">
+                  Modes
+                </span>
+                <p className="leading-relaxed">
+                  <strong className="text-on-surface">Graph On</strong> queries the FalkorDB knowledge graph with automated verifier validation; <strong className="text-on-surface">Graph Off</strong> runs the model standalone with zero repository graph tools.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {STARTER_QUESTIONS.map((q, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => {
+                      setQuestion(q);
+                      handleSubmit(q);
+                    }}
+                    className="p-5 rounded-xl bg-surface-container-low hover:bg-surface-container-high border border-outline-variant/30 hover:border-primary/50 transition-all text-left flex flex-col justify-between gap-3 shadow-xs group cursor-pointer hover:-translate-y-0.5 active:scale-[0.99]"
+                  >
+                    <div className="flex items-center justify-between w-full">
+                      <span className="font-mono text-[10px] font-semibold text-primary uppercase tracking-wider">
+                        Prompt #{idx + 1}
+                      </span>
+                      <Terminal size={14} className="text-outline group-hover:text-primary transition-colors" />
+                    </div>
+                    <p className="text-sm font-medium text-on-surface group-hover:text-primary transition-colors leading-snug">
+                      {q}
+                    </p>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Answer Card */}
           {response && (
-            <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/30 flex flex-col gap-5 shadow-md">
+            <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/30 flex flex-col gap-5 shadow-md answer-fade-in">
               {/* 1. Status Badge & As-of Line */}
               <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-outline-variant/20">
                 {/* Status Badge */}

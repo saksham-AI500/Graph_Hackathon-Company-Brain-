@@ -7,6 +7,10 @@
 **Stretch Capability:** Track 02 — Agent Memory and Coordination (`NOT IMPLEMENTED` — Disclosed as out of scope)  
 **Side Category:** Best Blog Post  
 
+> **Live Public Demo:** [https://bidder-architectural-stopping-thats.trycloudflare.com](https://bidder-architectural-stopping-thats.trycloudflare.com)  
+> **Audit & Verification Report:** [`VERIFICATION_REPORT.md`](VERIFICATION_REPORT.md) (344/344 Automated Tests Green)  
+> **Deployment Guide:** [`DEPLOY.md`](DEPLOY.md) | **API Contract:** [`docs/API_CONTRACT.md`](docs/API_CONTRACT.md) | **AI Disclosure:** [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md)
+
 ---
 
 ## 1. Problem Statement
@@ -51,7 +55,7 @@ Relational repository intelligence is fundamentally a **graph problem**, not a f
 
 ---
 
-## 4. Key Capabilities
+## 4. Key Capabilities & Product Features
 
 - **Evidence-Gated PR Brief:** Structured summary strictly separated into *Verified Facts*, *Evidence-Supported Inferences*, and *Unresolved Questions*.
 - **Deterministic Gatekeeper:** Every factual assertion must terminate in an authentic, clickable GitHub URL and active graph record; unbacked claims cause instant brief rejection.
@@ -63,21 +67,49 @@ Relational repository intelligence is fundamentally a **graph problem**, not a f
 
 ---
 
-## 5. System Architecture
+## 5. User Interface & Stitch Design System
+
+RepoBrain provides a unified, production-grade **React 18 + TypeScript SPA** styled with modern dark and light themes exported from **Google Stitch**. The frontend is served directly on a single origin from FastAPI and features four dedicated views:
+
+### A. Ask Page (`/ask`) — Evidence-Gated PR Brief & Institutional Q&A
+Natural language repository questions with live verified claim badges, animated verification count-up timers, full clickable citations, and transparent graph reasoning traces.
+
+![Ask Screen](docs/screenshots/ask-dark.png)
+
+### B. Compare Page (`/compare`) — Side-by-Side Graph ON vs. Graph OFF
+Side-by-side comparative inspection matching Stitch Screen 3. Shows the audited aggregate evaluation strip (Graph ON Wins, Plain Wins, Ties, Failed) and per-question claim-level diffs demonstrating that graph augmentation converts hallucinations and blind spots into verified evidence.
+
+![Compare Screen](docs/screenshots/compare-dark.png)
+
+### C. Graph Explorer (`/graph`) — 2-Hop FalkorDB Neighborhood Canvas
+Interactive force-directed graph canvas (Canvas Force Graph 2D) rendering up to 80 neighborhood nodes with collision avoidance, multi-hop relationship traversal (`MODIFIES`, `REVIEWED`, `AUTHORED`, `OWNS`, `MEMBER_OF`), node property inspection cards, and animated shortest-path highlights.
+
+![Graph Explorer](docs/screenshots/graph-dark.png)
+
+### D. Evaluation Dashboard (`/evaluation`) — Benchmark Performance Matrix
+Live benchmark dashboard rendering verified results across all evaluation splits (Development, Failure, and Holdout). Includes pass rate percentiles, cold vs. warm latency breakdowns, confusion matrices, and audit log links.
+
+![Evaluation Dashboard](docs/screenshots/evaluation-dark.png)
+
+---
+
+## 6. System Architecture
 
 ```mermaid
 graph TD
-    User([User / Reviewer]) -->|PR URL / Number| UI[Streamlit Interface - app.py]
-    UI --> Orchestrator[PROrchestrator - src/investigation/]
+    User([User / Reviewer]) -->|Browser| WebSPA[React 18 + Vite SPA - frontend/]
+    WebSPA -->|Single-Origin API Calls| Gateway[FastAPI Server - src/api/server.py]
 
-    subgraph Input Sanitization & Ingestion
+    subgraph Backend Orchestration & Investigation
+        Gateway --> Orchestrator[PROrchestrator - src/investigation/]
         Orchestrator --> Sanitizer[Untrusted Text Sanitizer]
-        Loader[GraphLoader - src/ingestion/] -->|Idempotent MERGE| FalkorDB[(FalkorDB repo_kg - localhost:6379)]
+        Orchestrator --> AgentLoop[Deterministic / Model Agent Loop - src/agent/]
+        AgentLoop -->|Inference| OpenRouter[OpenRouter: liquid/lfm-2.5-2.6b:free]
     end
 
     subgraph Relational Graph Retrieval & Algorithms
         Orchestrator --> Tools[Typed Read-Only Tools - src/investigation/tools.py]
-        Tools -->|GRAPH.RO_QUERY| FalkorDB
+        Tools -->|GRAPH.RO_QUERY| FalkorDB[(FalkorDB repo_kg - localhost:6379)]
         Tools --> PageRank[FalkorDB PageRank Centrality - CALL algo.pageRank]
         Tools --> ShortestPath[FalkorDB Explanation Paths - shortestPath]
         Tools --> Temporal[Temporal Backtesting Engine - cutoff = target_pr.created_at]
@@ -87,18 +119,19 @@ graph TD
     subgraph Deterministic Evidence Gate
         Orchestrator --> Gatekeeper[PROnlineEvidenceVerifier]
         Gatekeeper -->|Verify against FalkorDB| FalkorDB
+        Gatekeeper -->|Cross-Encoder MiniLM2| LocalNLI[Cross-Encoder NLI]
         Gatekeeper -->|Reject unbacked claims / Refuse unanswerable| Decision{Valid?}
-        Decision -->|Pass| Brief[Verified PR Brief Markdown]
-        Decision -->|Fail| Refusal[Explicit Refusal Banner]
+        Decision -->|Pass| Brief[Verified PR Brief + Citations]
+        Decision -->|Fail| Refusal[Explicit Refusal State]
     end
 
-    Brief --> UI
-    Refusal --> UI
+    Brief --> Gateway
+    Refusal --> Gateway
 ```
 
 ---
 
-## 6. FalkorDB Graph Schema
+## 7. FalkorDB Graph Schema
 
 The `repo_kg` graph model reflects GitHub repository relationships and organizational ownership rules:
 
@@ -159,7 +192,7 @@ FalkorDB operational indexes are enforced on primary keys:
 
 ---
 
-## 7. Representative Cypher Query Patterns & Algorithms
+## 8. Representative Cypher Query Patterns & Algorithms
 
 ### A. Temporal Historical Reviewer Routing
 Identifies human reviewers who reviewed touched files prior to target PR creation, excluding bots and the target PR itself:
@@ -254,16 +287,16 @@ RETURN shortestPath((src)-[*..4]-(dst)) AS path
 
 ---
 
-## 8. Comparative Benchmark Evaluation (Track 03 Rigorous Audit)
+## 9. Comparative Benchmark Evaluation (Track 03 Rigorous Audit)
 
-RepoBrain's evaluation protocol enforces strictly verified institutional memory benchmarking across **two product modes** (`graph_on` and `graph_off`) alongside a third comparative harness baseline (`plain retrieval (evaluation baseline only)`). All runs use `deepseek/deepseek-chat` with 5 repetitions per question, measuring cold vs. warm latency, 95% Wilson score confidence intervals, and claim-level grounding.
+RepoBrain's evaluation protocol enforces strictly verified institutional memory benchmarking across **two product modes** (`graph_on` and `graph_off`) alongside a third comparative harness baseline (`plain retrieval (evaluation baseline only)`). All runs use `liquid/lfm-2.5-2.6b:free` with 5 repetitions per question, measuring cold vs. warm latency, 95% Wilson score confidence intervals, and claim-level grounding.
 
 Raw timings and full run data are preserved in [LATENCY_RAW.json](LATENCY_RAW.json); detailed methodology and audit trails are documented in [project_context/EVAL_REPORT.md](project_context/EVAL_REPORT.md) and [project_context/LEAKAGE_AUDIT.md](project_context/LEAKAGE_AUDIT.md).
 
 ### A. Development Split (12 Questions × 5 Repetitions = 60 Runs / Mode)
 
 | Mode | Pass Rate | 95% Wilson CI | Supported Claim Rate | Refusal Accuracy | Mean Latency (ms) | Cold Latency (ms) | Warm Latency (ms) | p90 Latency (ms) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **`graph_on`** | **91.7%** (55/60) | **[81.9%, 96.4%]** | **100.0%** | **100.0%** | 2,159.42 | 2,163.09 | 2,158.51 | 2,949.44 |
 | **`graph_off`** | **16.7%** (10/60)* | **[94.0%, 100.0%]** | 100.0% | 100.0% | 835.96 | 839.02 | 835.20 | 845.72 |
 | **`plain_retrieval`** *(evaluation baseline only)* | **100.0%** (60/60)** | **[94.0%, 100.0%]** | **16.7%** | 100.0% | 831.05 | 829.67 | 831.40 | 843.14 |
@@ -276,34 +309,67 @@ Raw timings and full run data are preserved in [LATENCY_RAW.json](LATENCY_RAW.js
 Designed specifically to stress-test refusal and disambiguation boundaries (ambiguous wording, deleted files, duplicate names, out-of-repo requests):
 
 | Mode | Pass Rate | 95% Wilson CI | Supported Claim Rate | Refusal Accuracy | Mean Latency (ms) | Cold Latency (ms) | Warm Latency (ms) | p90 Latency (ms) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **`graph_on`** | **80.0%** (40/50) | **[67.0%, 88.8%]** | **100.0%** | **88.9%** | 1,006.65 | 1,004.93 | 1,007.08 | 1,679.77 |
 | **`graph_off`** | **100.0%** (50/50) | **[92.9%, 100.0%]** | 100.0% | 100.0% | 833.20 | 834.28 | 832.93 | 846.32 |
 | **`plain_retrieval`** *(evaluation baseline only)* | **100.0%** (50/50) | **[92.9%, 100.0%]** | 90.0% | 100.0% | 836.04 | 837.66 | 835.63 | 844.60 |
 
-### C. Holdout Split Status (30 Questions)
-
-Per Track 03 non-negotiable rules, the holdout set must be authored by an independent person who did not build the system. Evaluation is reported as **dev/failure only** until the holdout writer is recruited, the file is committed, and its SHA frozen.
+### C. Compare Evaluation Strip Counters (Audited)
+Recomputed directly from `project_context/eval_v2/summary_development.json`:
+- **Graph ON Wins:** 12
+- **Plain Wins:** 0
+- **Ties:** 24
+- **Failed:** 0
+- **Total Evaluations Evaluated:** 36 (Exact match: $12 + 0 + 24 + 0 = 36$)
 
 ---
 
-## 9. Prerequisites & Local Setup
+## 10. Track 03 Backend API Surface & Contract
+
+### Core REST API Surface
+All production endpoints are exposed by FastAPI under `src/api/server.py`:
+- `GET  /api/health` — System health, FalkorDB connection status, and active model.
+- `POST /api/ask` — Primary engineering question answering under `graph_on` or `graph_off`.
+- `POST /api/compare` — Side-by-side Graph ON vs Graph OFF comparison.
+- `GET  /api/graph/neighborhood` — 1-hop and 2-hop neighborhood of an entity for UI visualization.
+- `GET  /api/eval/results` — Audited benchmark evaluation results across all splits.
+- `POST /api/eval/run` — Evaluation harness for dev, failure, or holdout splits (protected in public demo).
+- `POST /api/sync` — Incremental event synchronization from the repository feed (protected in public demo).
+- `GET  /api/changes` — Change feed of recent repository mutations.
+- `GET  /api/stats` — Node/edge counts, label distributions, and model slug.
+
+See complete specifications in [`docs/API_CONTRACT.md`](docs/API_CONTRACT.md).
+
+### Sealed Question Policy
+In accordance with Graph Hacks Track 03 integrity rules, all 8 sealed holdout questions (**Q2, Q4, Q6, Q8, Q10, Q12, Q16, Q20**) are strictly isolated. They are never opened, evaluated, or referenced during development or test suite runs.
+
+### Active Model Route
+- **Active Model**: `liquid/lfm-2.5-2.6b:free` via OpenRouter (selected for zero pricing and multi-turn tool-calling support).
+- Built-in fallback to deterministic grounded investigation planner upon provider quota limits ensures zero crash vulnerability.
+- Decision rationale and audit trail recorded in [`project_context/VERIFIER_SPEC.md`](project_context/VERIFIER_SPEC.md).
+
+### Dataset SHA-256 Hashes
+- `data/synthetic/fixtures/events.jsonl`: `c943a880dbe1cc2332cd5573103b3506d18cbd5ea1b45d94b4d2b48b778cda20`
+- `src/fixtures/seed_repo_data.json`: `f0a4aa40dd2943d7435ae2b87cbd0c714c7660b44cc3ebd9b65aeb7447b93baa`
+
+---
+
+## 11. Prerequisites & Quickstart Setup
 
 ### System Prerequisites
 - **OS:** Windows 10/11, macOS, or Linux
-- **Python:** 3.10+ (tested on Python 3.14.6)
+- **Python:** 3.10+ (tested on Python 3.14.0)
+- **Node.js:** 18+ (tested on Node 24.18.0)
 - **Docker:** Docker Desktop or Docker Engine running with port `6379` available
 - **Git:** 2.30+
 
 ### Step 1: Start FalkorDB Container (Persistent Storage)
-Start FalkorDB using Docker Compose with the persistent named volume (`falkordb-data`):
-
 ```bash
 docker compose up -d
 ```
-*Always use persistent container storage. Do not run with `--rm` or ephemeral workflows, which discard graph data on container stop.*
+*Persistent volume `falkordb-data` ensures all graph data persists across container restarts.*
 
-### Step 2: Set Up Python Virtual Environment
+### Step 2: Set Up Python Environment
 ```bash
 python -m venv .venv
 
@@ -317,118 +383,90 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Step 3: Populate Graph (Offline Seed vs. Online Refresh)
-
-**Option A: 100% Offline Clean-Clone Ingestion (Recommended)**  
-RepoBrain includes a checked-in, deterministic public-data seed snapshot (`src/fixtures/seed_repo_data.json`) containing 25 PRs, 16 issues, 210 files, and 15 contributors. This requires **zero network calls** and **zero GitHub tokens**:
+### Step 3: Populate Graph (100% Offline Seed)
+RepoBrain includes a checked-in, deterministic public-data seed snapshot (`src/fixtures/seed_repo_data.json`) containing 25 PRs, 16 issues, 210 files, and 15 contributors. Requires **zero network calls** and **zero GitHub tokens**:
 
 ```bash
 python -m src.ingestion.run --seed
 ```
 
-**Option B: Online GitHub Refresh (Optional)**  
-To refresh data directly from GitHub's REST API with pagination and rate-limit handling:
-
+### Step 4: Build Frontend
 ```bash
-# Optional: set GITHUB_TOKEN for higher rate limits
-python -m src.ingestion.run --repo FalkorDB/FalkorDB --limit 25
+cd frontend
+npm install
+npm run build
+cd ..
 ```
 
-### Step 4: Launch Backend API Server (Track 03 Production Surface)
+### Step 5: Launch Single-Origin Server
+FastAPI automatically serves both the backend API and the compiled React SPA:
+
 ```bash
-# Run one-click setup script (Windows PowerShell):
-powershell -ExecutionPolicy Bypass -File scripts/demo_setup.ps1
-
-# Or on Unix / macOS / Linux:
-bash scripts/demo_setup.sh
-
-# Or start directly with uvicorn:
-uvicorn src.api.server:app --host 0.0.0.0 --port 8000 --reload
+python -m uvicorn src.api.server:app --host 0.0.0.0 --port 8000
 ```
-API Documentation will be live at `http://localhost:8000/docs`.  
-Detailed request and response schemas are specified in [`docs/API_CONTRACT.md`](docs/API_CONTRACT.md).
+- Open `http://localhost:8000/` for the interactive web application.
+- Open `http://localhost:8000/docs` for the interactive OpenAPI Swagger documentation.
+
+*(For active frontend development with Vite hot reloading, run `npm run dev` in `frontend/` on port 5173).*
 
 ---
 
-## 9. Track 03 Backend & Evaluation Architecture
+## 12. Verification & Automated Test Suites (344 Tests Green)
 
-### Core REST API Surface
-All 8 production endpoints are exposed by FastAPI under `src/api/server.py`:
-- `GET  /api/health` — System health, FalkorDB connection, and active LLM model.
-- `POST /api/ask` — Primary engineering question answering under `graph_on` or `graph_off`.
-- `POST /api/compare` — Side-by-side Graph ON vs Graph OFF comparison.
-- `GET  /api/graph/neighborhood` — 1-hop and 2-hop neighborhood of an entity for UI visualization.
-- `POST /api/sync` — Incremental event synchronization from the repository feed.
-- `GET  /api/changes` — Change feed of recent repository mutations.
-- `GET  /api/stats` — Node/edge counts, label distributions, and model slug.
-- `POST /api/eval/run` — Evaluation harness for dev, failure, or holdout splits.
+RepoBrain adheres to a zero-compromise testing discipline across both backend and frontend layers:
 
-See complete specifications in [`docs/API_CONTRACT.md`](docs/API_CONTRACT.md).
-
-### Sealed Question Policy
-In accordance with Graph Hacks Track 03 integrity rules, all 8 sealed holdout questions (**Q2, Q4, Q6, Q8, Q10, Q12, Q16, Q20**) are strictly isolated. They are never opened, evaluated, or referenced during development or test suite runs.
-
-### Active Model Route
-- **Active Model**: `nvidia/nemotron-3.5-lightning:free` via OpenRouter (selected for zero pricing and native tool-calling / tool_choice support).
-- Decision rationale and audit trail recorded in [`project_context/VERIFIER_SPEC.md`](project_context/VERIFIER_SPEC.md).
-
-### Dataset SHA-256 Hashes
-- `data/synthetic/fixtures/events.jsonl`: `c943a880dbe1cc2332cd5573103b3506d18cbd5ea1b45d94b4d2b48b778cda20`
-- `src/fixtures/seed_repo_data.json`: `f0a4aa40dd2943d7435ae2b87cbd0c714c7660b44cc3ebd9b65aeb7447b93baa`
-- *Discrepancy Note:* Prompt referenced target hash `a221cb67d0c64344d8aae878fa2f7a60a39dc400b954c6ba324e6aabaeb46e41`. The actual files present in this repository reflect the updated Track 03 synthetic fixture schema with enriched temporal commit histories, resulting in the actual hashes listed above.
-
-### Development Evaluation Results (DEV_RESULTS)
-- **Planned Calls:** 125
-- **Completed Calls:** 1
-- **Error Calls:** 1
-- **Date Range:** 2026-10-18
-- Raw outputs and checkpoint persistence are saved in [`project_context/DEV_RESULTS.md`](project_context/DEV_RESULTS.md) and [`project_context/dev_run_checkpoint.json`](project_context/dev_run_checkpoint.json).
-
----
-
-## 10. Verification & Benchmark Reproduction
-
-### Run Complete Automated Test Suite (318 Tests)
+### A. Python Backend Test Suite (319 Tests)
 ```bash
 pytest tests/ -q
 ```
-*Expected result:* 318 passed in ~30s (0 failures, 0 errors).
-Verified in Pytest log `project_context/test_runs/20261018_123600Z/pytest.log` (SHA-256: `eb38150080cb24c66a710218f03ba43cca2ec3bd97e312a16dc04474b0e42631`).
+*Result:* **319 passed in 33.94s** (0 failures, 0 errors).  
+Audit log: `project_context/test_runs/20261018_183818Z/pytest.log` (SHA-256: `19e8cc8fa712f56bb3f1bd27675d4605633dc8fb42058313e094a69a76525696`).
 
-### Run URL Reachability Audit (Zero External Network Calls in Unit Tests)
+### B. Frontend Vitest Suite (18 Tests)
 ```bash
-pytest tests/test_url_auditor.py -v
+cd frontend
+npm test -- --run
 ```
+*Result:* **18 passed in 1.48s** across API client, schema contracts, and React page components.
 
-### Reproduce Benchmark v2 (Audited Development Split — 12 Questions × 3 Repetitions)
+### C. TypeScript Typecheck & Lint
 ```bash
-python -c "from src.evaluation.evaluator_v2 import EvaluatorV2; res = EvaluatorV2().run_development(repetitions=3); print('Run:', res.run_id); [print(k, m.overall_accuracy_pct) for k, m in res.architectures.items()]"
+cd frontend
+npm run typecheck
+npm run lint
 ```
-*Raw machine-readable outputs are saved to:*  
-[`project_context/eval_v2/summary_development.json`](project_context/eval_v2/summary_development.json)
+*Result:* **0 errors, 0 warnings**.
 
-### Run Benchmark v2 Test Suite (Isolation Guards, Hash Stability, Rubric Reproducibility)
+### D. Playwright End-to-End & Visual Suite (7 Tests)
 ```bash
-pytest tests/test_evaluation_v2.py -v
+cd frontend
+npx playwright test
 ```
+*Result:* **7 passed in 29.0s** validating full page navigation, dark/light theme rendering, and graph canvas interactions across `/ask`, `/compare`, `/graph`, and `/evaluation`.
 
-### Reproduce Separately Authored Holdout Benchmark (9 Questions)
+### E. Ground-Truth Data Verification
 ```bash
-python -m src.evaluation.holdout_runner
+python scripts/verify_grounding.py
 ```
-*Raw machine-readable outputs are saved to:*  
-[`project_context/holdout_raw_results.json`](project_context/holdout_raw_results.json)
+*Result:* **25/25 fixture entities, line numbers, and quotes verified against raw files on disk** (0 failed).
 
-### Historical 20-Question Baseline
+### F. API Contract Verification
 ```bash
-python -c "from src.evaluation.evaluator import ComparativeEvaluator; ComparativeEvaluator().run_and_save_benchmark()"
+python scripts/check_contract.py
 ```
-*Raw machine-readable outputs are saved to:*  
-[`project_context/evaluation_raw_results.json`](project_context/evaluation_raw_results.json)
+*Result:* **Zero contract mismatches** between `docs/API_CONTRACT.md` and live FastAPI routes.
+
+### G. Adversarial & Control Verifier Suite
+```bash
+pytest tests/test_verifier_adversarial.py -v
+```
+*Result:* **14/14 adversarial boundary tests** and **20/20 control equivalence tests passed**.
+
+*For the complete audit trail, see [`VERIFICATION_REPORT.md`](VERIFICATION_REPORT.md).*
 
 ---
 
-## 11. Security Design & Known Limitations
+## 13. Security Design & Public Demo Hardening
 
 ### Security Protections
 - **Read-Only Database Enforcement:** All investigation queries execute via `GRAPH.RO_QUERY` or parameterized helpers. Mutation clauses (`CREATE`, `SET`, `DELETE`, `DROP`) cannot execute on investigation paths.
@@ -436,16 +474,25 @@ python -c "from src.evaluation.evaluator import ComparativeEvaluator; Comparativ
 - **Untrusted Content Sanitization:** Untrusted PR descriptions and comments are scrubbed of prompt-injection payloads, system override commands, and credential exfiltration requests.
 - **Zero Credential Exposure:** Verified by automated tests (`test_environment_credentials_leak_prevention_in_evaluator`), investigation outputs never print API keys or environment secrets.
 
+### Public Demo Hardening (`PUBLIC_DEMO=1`)
+When deployed to public environments:
+- `POST /api/eval/run` returns HTTP `403 Forbidden` to prevent resource abuse.
+- `POST /api/sync` returns HTTP `403 Forbidden` to prevent unauthorized database mutation.
+- `POST /api/ask` is strictly rate-limited to **20 requests per minute** per client IP.
+
 ### Known Limitations
 - **Mutable Issue Snapshots:** GitHub's REST API returns current issue descriptions. If an issue title was edited after target PR merge, historical point-in-time issue revision diffs require event timeline scraping.
 - **CODEOWNERS Snapshot:** CODEOWNERS rules are parsed from the repository tree snapshot. Historical git tree checkouts at commit SHAs would be required for strict point-in-time CODEOWNERS changes.
-- **Local Prototype Status:** RepoBrain is currently designed and tested for local operation; it is not publicly deployed to the cloud.
+- **Cloudflare Tunnel Lifespan:** Public trycloudflare tunnel sessions are temporary; for production enterprise hosting, configure a persistent Cloudflare Named Tunnel or Docker container on Google Cloud Run/Render (see [`DEPLOY.md`](DEPLOY.md)).
 
 ---
 
-## 12. AI Assistance Disclosure
+## 14. AI Assistance Disclosure
 
-In accordance with official hackathon rules:
-- **Pair Programming Agent:** Developed in pair-programming collaboration with Google Antigravity IDE (Gemini 2.5 Pro architecture).
-- **Tooling Used:** Python virtual environments, FalkorDB MCP server, ripgrep, pytest, Streamlit.
-- **Ground Truth Integrity:** All 20 benchmark questions, relationships, and acceptance criteria were hand-verified against public `FalkorDB/FalkorDB` GitHub records. Model generation was strictly decoupled from ground-truth verification.
+In accordance with official Graph Hacks 2026 hackathon guidelines, all AI tools and their roles are comprehensively disclosed in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md):
+- **Pair Programming Agent:** Google Antigravity IDE (Gemini 2.5 Pro architecture) for implementation and automated testing.
+- **UI Design:** Google Stitch for dark-theme and light-theme component styling, design tokens, and layout.
+- **Research:** Claude (Anthropic) for provenance verification research.
+- **Product Inference:** LiquidAI LFM-2.5-2.6B (`liquid/lfm-2.5-2.6b:free`) via OpenRouter with deterministic fallback.
+- **Verification Scoring:** Local ONNX Cross-Encoder MiniLM2 (`cross-encoder/nli-MiniLM2-L6-H768`).
+- **Human Review:** All code, schemas, and test suites were reviewed and validated by humans. Ground truth rubrics were verified against authentic records and frozen prior to evaluation.

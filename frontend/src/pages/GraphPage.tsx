@@ -64,8 +64,8 @@ function normalizeLabels(labels?: string[] | string, label?: string): string[] {
 }
 
 export function GraphPage({ initialSample }: { initialSample?: NeighborhoodResponse }) {
-  const [searchEntity, setSearchEntity] = useState('payments/refund.py');
-  const [activeEntity, setActiveEntity] = useState('payments/refund.py');
+  const [searchEntity, setSearchEntity] = useState('caleb-rivers');
+  const [activeEntity, setActiveEntity] = useState('caleb-rivers');
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [showPath, setShowPath] = useState(false);
   const [zoom, setZoom] = useState(1);
@@ -95,6 +95,40 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
 
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
   const [simLinks, setSimLinks] = useState<SimLink[]>([]);
+
+  // Auto zoom-to-fit helper
+  const fitViewToNodes = (nodes: SimNode[]) => {
+    if (nodes.length === 0) return;
+    let minX = Infinity;
+    let maxX = -Infinity;
+    let minY = Infinity;
+    let maxY = -Infinity;
+    for (const n of nodes) {
+      if (n.x !== undefined && n.y !== undefined) {
+        if (n.x < minX) minX = n.x;
+        if (n.x > maxX) maxX = n.x;
+        if (n.y < minY) minY = n.y;
+        if (n.y > maxY) maxY = n.y;
+      }
+    }
+    const graphWidth = maxX - minX || 1;
+    const graphHeight = maxY - minY || 1;
+    const containerWidth = 900;
+    const containerHeight = 600;
+    const padding = 80;
+
+    const scaleX = (containerWidth - padding * 2) / graphWidth;
+    const scaleY = (containerHeight - padding * 2) / graphHeight;
+    const newZoom = Math.min(Math.max(Math.min(scaleX, scaleY), 0.5), 1.2);
+
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+    const newPanX = (containerWidth / 2 - centerX) * newZoom;
+    const newPanY = (containerHeight / 2 - centerY) * newZoom;
+
+    setZoom(newZoom);
+    setPan({ x: newPanX, y: newPanY });
+  };
 
   // Simulation setup
   useEffect(() => {
@@ -133,20 +167,28 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
           .id((d) => d.id)
           .distance(120),
       )
-      .force('charge', forceManyBody().strength(-300))
+      .force('charge', forceManyBody().strength(-350))
       .force('center', forceCenter(width / 2, height / 2))
-      .force('collide', forceCollide().radius(32));
+      .force('collide', forceCollide().radius(36));
 
     if (reducedMotion) {
-      // Run synchronously to static positions
       for (let i = 0; i < 150; ++i) sim.tick();
       setSimNodes([...nodes]);
       setSimLinks([...links]);
+      fitViewToNodes(nodes);
       sim.stop();
     } else {
+      let tickCount = 0;
       sim.on('tick', () => {
         setSimNodes([...nodes]);
         setSimLinks([...links]);
+        tickCount++;
+        if (tickCount === 60) {
+          fitViewToNodes(nodes);
+        }
+      });
+      sim.on('end', () => {
+        fitViewToNodes(nodes);
       });
 
       return () => {
@@ -352,19 +394,34 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                   selectedNode &&
                   (s.id === selectedNode.id || t.id === selectedNode.id);
                 const isDimmed = selectedNode && !isHighlighted;
+                const midX = (s.x + t.x) / 2;
+                const midY = (s.y + t.y) / 2;
 
                 return (
-                  <line
-                    key={i}
-                    x1={s.x}
-                    y1={s.y}
-                    x2={t.x}
-                    y2={t.y}
-                    stroke={isHighlighted ? '#4f46e5' : 'var(--color-outline-variant)'}
-                    strokeWidth={isHighlighted ? 2.5 : 1}
-                    strokeOpacity={isDimmed ? 0.2 : isHighlighted ? 0.9 : 0.4}
-                    strokeDasharray={link.type === 'MEMBER_OF' ? '4 2' : undefined}
-                  />
+                  <g key={i}>
+                    <line
+                      x1={s.x}
+                      y1={s.y}
+                      x2={t.x}
+                      y2={t.y}
+                      stroke={isHighlighted ? '#6366f1' : 'var(--color-outline-variant)'}
+                      strokeWidth={isHighlighted ? 2.5 : 1}
+                      strokeOpacity={isDimmed ? 0.15 : isHighlighted ? 0.95 : 0.45}
+                      strokeDasharray={link.type === 'MEMBER_OF' ? '4 2' : undefined}
+                    />
+                    <text
+                      x={midX}
+                      y={midY - 3}
+                      textAnchor="middle"
+                      fill={isHighlighted ? '#818cf8' : 'var(--color-on-surface-variant)'}
+                      fontSize="8"
+                      fontFamily="JetBrains Mono, monospace"
+                      className="pointer-events-none font-semibold select-none"
+                      opacity={isDimmed ? 0.15 : 0.85}
+                    >
+                      {link.type}
+                    </text>
+                  </g>
                 );
               })}
             </g>
@@ -396,6 +453,14 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                 const isSelected = selectedNode?.id === node.id;
                 const isNeighbor = neighborIds.has(node.id);
                 const isDimmed = selectedNode && !isNeighbor;
+                const displayLabel =
+                  (node.properties?.login && typeof node.properties.login === 'string')
+                    ? `@${node.properties.login}`
+                    : (node.properties?.path && typeof node.properties.path === 'string')
+                    ? node.properties.path
+                    : node.properties?.number !== undefined
+                    ? `PR #${node.properties.number}`
+                    : node.id;
 
                 return (
                   <g
@@ -409,18 +474,16 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                         setShowPath(false);
                       }
                     }}
-                    opacity={isDimmed ? 0.3 : 1}
+                    opacity={isDimmed ? 0.25 : 1}
                   >
-                    {/* Outer glow ring on selected */}
+                    {/* Outer ring on selected (no continuous spin animation) */}
                     {isSelected && (
                       <circle
-                        r="24"
+                        r="22"
                         fill="none"
                         stroke={node.color}
                         strokeWidth="2"
                         strokeDasharray="4 2"
-                        className="animate-spin"
-                        style={{ animationDuration: '8s' }}
                       />
                     )}
                     {/* Node circle */}
@@ -439,12 +502,12 @@ export function GraphPage({ initialSample }: { initialSample?: NeighborhoodRespo
                       y={isSelected ? 26 : 22}
                       textAnchor="middle"
                       fill="var(--color-on-surface)"
-                      fontSize="10"
+                      fontSize="9"
                       fontFamily="JetBrains Mono, monospace"
                       className="pointer-events-none font-medium"
                       style={{ textShadow: '0 1px 3px rgba(0,0,0,0.8)' }}
                     >
-                      {node.id.length > 18 ? `${node.id.slice(0, 16)}…` : node.id}
+                      {displayLabel.length > 20 ? `${displayLabel.slice(0, 18)}…` : displayLabel}
                     </text>
                   </g>
                 );

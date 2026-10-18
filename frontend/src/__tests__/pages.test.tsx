@@ -132,10 +132,9 @@ describe('Frontend Pages Rendering Tests', () => {
     expect(screen.getByText('Graph Off')).toBeInTheDocument();
     expect(screen.getByText('Graph On')).toBeInTheDocument();
 
-    // Check comparative counters section
-    expect(screen.getByText(/Comparative Analysis Counters/i)).toBeInTheDocument();
-    expect(screen.getByText(/Claims Difference/i)).toBeInTheDocument();
-    expect(screen.getByText(/Sources Difference/i)).toBeInTheDocument();
+    // Check difference and benchmark differential sections
+    expect(screen.getByText(/Question Status/i)).toBeInTheDocument();
+    expect(screen.getByText(/Benchmark Differential/i)).toBeInTheDocument();
   });
 
   it('GraphPage renders neighborhood canvas and controls', () => {
