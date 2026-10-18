@@ -135,6 +135,40 @@ class Claim(BaseModel):
         }
 
 
+class RankingItem(BaseModel):
+    """Reviewer recommendation candidate ranking entry."""
+    rank: int = Field(description="1-based rank position")
+    login: str = Field(description="GitHub username / login")
+    score: float = Field(description="Composite expertise score")
+    reasons: List[str] = Field(default_factory=list, description="Evidence-backed reasons for recommendation")
+    source_ids: List[str] = Field(default_factory=list, description="Citing source identifiers, e.g. ['S1']")
+    tied: bool = Field(default=False, description="Whether candidate shares identical score with adjacent rank")
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "rank": self.rank,
+            "login": self.login,
+            "score": round(self.score, 3),
+            "reasons": self.reasons,
+            "source_ids": self.source_ids,
+            "tied": self.tied,
+        }
+
+
+class ExcludedItem(BaseModel):
+    """Excluded reviewer candidate record."""
+    login: str = Field(description="Candidate username / login")
+    reason: str = Field(description="Exclusion reason, e.g. departed employee, bot account")
+    end_date: Optional[str] = Field(default=None, description="Departure or inactive cutoff date if applicable")
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "login": self.login,
+            "reason": self.reason,
+            "end_date": self.end_date,
+        }
+
+
 class AgentRequest(BaseModel):
     """Validated input question and parameters for the Company Brain agent."""
     question: str
@@ -179,9 +213,9 @@ class AgentAnswer(BaseModel):
     model_used: str = "deterministic_fallback"
 
     context: str = ""
-    ranking: List[Dict[str, Any]] = Field(default_factory=list)
+    ranking: List[Union[RankingItem, Dict[str, Any]]] = Field(default_factory=list)
     reasoning: str = ""
-    excluded: List[Dict[str, Any]] = Field(default_factory=list)
+    excluded: List[Union[ExcludedItem, Dict[str, Any]]] = Field(default_factory=list)
     mode: str = "graph_on"
     synced_at: Optional[str] = None
     model: str = "deepseek/deepseek-chat"
@@ -213,16 +247,46 @@ class AgentAnswer(BaseModel):
                 "text": c.text,
                 "type": ctype,
                 "source_ids": c.source_ids,
+                "verified": bool(c.verified),
+                "verification_path": c.verification_path or "exact_lookup",
             })
+
         sources_fmt = []
         for s in self.sources:
             sources_fmt.append({
                 "id": s.id,
                 "entity": str(s.identifier),
+                "entity_type": s.entity_type or "Entity",
                 "url": s.url,
                 "date": s.valid_from or "",
                 "quote": s.snippet or "",
             })
+
+        ranking_fmt = []
+        for r in self.ranking:
+            if isinstance(r, RankingItem):
+                ranking_fmt.append(r.to_dict())
+            elif isinstance(r, dict):
+                ranking_fmt.append({
+                    "rank": int(r.get("rank", len(ranking_fmt) + 1)),
+                    "login": str(r.get("login", "")),
+                    "score": round(float(r.get("score") if r.get("score") is not None else r.get("total_score", 0.0)), 3),
+                    "reasons": list(r.get("reasons") or r.get("evidence") or []),
+                    "source_ids": list(r.get("source_ids", [])),
+                    "tied": bool(r.get("tied", False)),
+                })
+
+        excluded_fmt = []
+        for e in self.excluded:
+            if isinstance(e, ExcludedItem):
+                excluded_fmt.append(e.to_dict())
+            elif isinstance(e, dict):
+                excluded_fmt.append({
+                    "login": str(e.get("login", "")),
+                    "reason": str(e.get("reason", "")),
+                    "end_date": e.get("end_date") or None,
+                })
+
         tool_calls_fmt = []
         for tc in (self.tool_calls or self.execution_log or []):
             if isinstance(tc, dict) and "tool" in tc:
@@ -242,11 +306,12 @@ class AgentAnswer(BaseModel):
 
         resp = {
             "answer": self.answer,
+            "status": self.status,
             "context": self.context or (f"As of {self.as_of}" if self.as_of else "As of latest synchronized data"),
-            "ranking": self.ranking,
+            "ranking": ranking_fmt,
             "reasoning": self.reasoning,
             "claims": claims_fmt,
-            "excluded": self.excluded,
+            "excluded": excluded_fmt,
             "unresolved": self.unresolved,
             "sources": sources_fmt,
             "mode": self.mode,
@@ -262,7 +327,6 @@ class AgentAnswer(BaseModel):
 
     def to_dict(self) -> Dict[str, Any]:
         d = self.to_api_response()
-        d["status"] = self.status
         d["step_count"] = self.step_count
         d["tools_used"] = self.tools_used
         d["execution_log"] = self.execution_log

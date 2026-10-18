@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#e3e1ec", "primary": "#3525cd", "on-secondary-fixed-variant": "#005049", "on-tertiary-container": "#e4d4ff", "on-background": "#1a1b22", "on-secondary-fixed": "#00201d", "surface-container-low": "#f4f2fd", "secondary-container": "#86f2e4", "surface-dim": "#dad9e3", "inverse-on-surface": "#f1effa", "tertiary-fixed-dim": "#d2bbff", "on-tertiary-fixed-variant": "#5a00c6", "on-secondary-container": "#006f66", "primary-fixed-dim": "#c3c0ff", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface": "#fbf8ff", "on-surface-variant": "#464555", "on-primary-fixed": "#0f0069", "secondary": "#006a61", "tertiary-fixed": "#eaddff", "error": "#ba1a1a", "on-tertiary-fixed": "#25005a", "tertiary": "#5c00ca", "primary-container": "#4f46e5", "surface-container-lowest": "#ffffff", "on-surface": "#1a1b22", "on-error": "#ffffff", "primary-fixed": "#e2dfff", "tertiary-container": "#7531e6", "background": "#fbf8ff", "on-primary-fixed-variant": "#3323cc", "surface-container": "#eeedf7", "surface-tint": "#4d44e3", "surface-container-high": "#e8e7f1", "secondary-fixed": "#89f5e7", "inverse-primary": "#c3c0ff", "surface-container-highest": "#e3e1ec", "outline-variant": "#c7c4d8", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "on-error-container": "#93000a", "inverse-surface": "#2f3038", "surface-bright": "#fbf8ff", "on-primary": "#ffffff", "outline": "#777587", "on-primary-container": "#dad7ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-xl": "1.5rem", "space-sm": "0.5rem", "gutter-compact": "0.75rem", "margin": "1.5rem", "margin-mobile": "1rem", "gutter": "1rem", "space-2xl": "2rem", "space-lg": "1rem", "space-md": "0.75rem" }, "fontFamily": { "headline-lg": [ "Inter" ], "headline-md": [ "Inter" ], "title-sm": [ "Inter" ], "body-compact": [ "Inter" ], "caption-mono": [ "JetBrains Mono" ], "headline-xl": [ "Inter" ], "body-medium": [ "Inter" ], "mono-default": [ "JetBrains Mono" ], "caption": [ "Inter" ], "mono-compact": [ "JetBrains Mono" ], "mono-medium": [ "JetBrains Mono" ], "body-default": [ "Inter" ] }, "fontSize": { "headline-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "title-sm": [ "15px", { "lineHeight": "22px", "fontWeight": "600" } ], "body-compact": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "caption-mono": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-medium": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "mono-default": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "caption": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "mono-compact": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "mono-medium": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "body-default": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><header class="fixed top-0 w-full z-40 bg-surface-container-lowest border-b border-outline-variant"><div class="h-14 w-full px-5 flex items-center justify-between"><div class="flex items-center gap-6 h-full"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">hub</span></div><span class="font-headline-md text-headline-md text-on-surface tracking-tight">RepoBrain</span><span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Company Brain</span></div><div class="h-4 w-px bg-outline-variant"></div><nav class="flex items-center gap-1 h-full" data-active-classes="border-primary-container text-on-surface font-title-sm text-title-sm"><a class="h-full inline-flex items-center px-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-body-medium text-body-medium transition-colors" data-path="agent" href="#">Agent</a><a aria-current="page" class="h-full inline-flex items-center px-3 transition-colors border-primary-container text-on-surface font-title-sm text-title-sm" data-path="knowledge-graph" href="#">Graph</a><a class="h-full inline-flex items-center px-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-body-medium text-body-medium transition-colors" data-path="architecture-drift" href="#">Drift Analysis</a><a class="h-full inline-flex items-center px-3 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface font-body-medium text-body-medium transition-colors" data-path="code-provenance" href="#">Provenance</a></nav></div><div class="flex items-center gap-3"><div class="bg-surface-container-low text-secondary border border-outline-variant font-mono-compact text-mono-compact px-2.5 py-1 rounded-full flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>Connected · 311 nodes · 531 edges</span></div><div class="hidden xl:flex items-center gap-1.5 font-caption text-caption text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">schedule</span><span>Last synced 2 min ago</span></div><button class="p-1.5 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" title="Trigger repository re-index" type="button"><span class="material-symbols-outlined text-[18px]">refresh</span></button><button class="p-1.5 rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors flex items-center justify-center" title="Settings (Drawer)" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-14 bg-background min-h-screen flex flex-col"><div class="flex flex-col w-full h-[calc(100vh-3.5rem)] overflow-hidden bg-surface relative select-none">
+<!-- Interactive Viewport Layout: Filter Rail | Canvas | Right Drawer -->
+<div class="flex flex-1 w-full h-[calc(100%-3rem)] overflow-hidden relative">
+<!-- LEFT FILTER RAIL (240px) -->
+<aside class="w-60 flex-shrink-0 bg-surface-container-lowest shadow-sm flex flex-col h-full z-20 overflow-hidden">
+<!-- Rail Header -->
+<div class="px-4 py-3 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">filter_alt</span>
+<span class="font-title-sm text-title-sm text-on-surface">Topology Filter</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">311 Nodes</span>
+</div>
+<div class="flex-1 overflow-y-auto px-4 py-3 flex flex-col gap-4 text-xs">
+<!-- Node Types Filter -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-caption-mono text-caption-mono text-on-surface-variant tracking-wider uppercase font-semibold">Node Entities</span>
+<button class="text-primary hover:text-primary-container font-caption text-caption transition-colors" id="reset-types">Select all</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- Person -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#2563EB]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Person</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">24</span>
+</label>
+<!-- Team -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#7C3AED]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Team</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">6</span>
+</label>
+<!-- Module -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#0D9488]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Module</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">18</span>
+</label>
+<!-- File -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#64748B]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">File</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">142</span>
+</label>
+<!-- PullRequest -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#4F46E5]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">PullRequest</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">88</span>
+</label>
+<!-- Issue -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#EA580C]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Issue</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">45</span>
+</label>
+<!-- Document -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#B45309]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Document</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">12</span>
+</label>
+<!-- Decision -->
+<label class="flex items-center justify-between p-1.5 rounded-lg hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-primary h-3.5 w-3.5 border-outline-variant" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-[#DB2777]"></span>
+<span class="font-body-compact text-body-compact text-on-surface group-hover:text-primary transition-colors">Decision</span>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant bg-surface-container px-1.5 py-0.2 rounded">8</span>
+</label>
+</div>
+</div>
+<!-- Toggle Stale / Deleted -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-body-compact text-body-compact text-on-surface font-medium">Show Stale / Departed</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-stale" type="checkbox"/>
+<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Includes orphaned files and past staff references</span>
+</div>
+<!-- "Who knows what" mini-list -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<span class="font-caption-mono text-caption-mono text-on-surface-variant uppercase tracking-wider font-semibold">Domain Authority</span>
+<span class="font-mono-compact text-mono-compact text-primary bg-primary-fixed px-1.5 py-0.5 rounded">api/gateway/</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<!-- 1. Caleb -->
+<div class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-compact text-body-compact font-medium text-on-surface">@caleb-rivers</span>
+<span class="font-caption-mono text-caption-mono text-secondary font-semibold">94%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 overflow-hidden mb-1">
+<div class="bg-secondary h-full rounded-full" style="width: 94%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">28 PRs · Primary author</span>
+</div>
+<!-- 2. Clara -->
+<div class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-compact text-body-compact font-medium text-on-surface">@clara-oswald</span>
+<span class="font-caption-mono text-caption-mono text-primary font-semibold">82%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 82%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">19 PRs · Key reviewer</span>
+</div>
+<!-- 3. Marcus -->
+<div class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-compact text-body-compact font-medium text-on-surface">@marcus-vance</span>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant font-semibold">61%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 overflow-hidden mb-1">
+<div class="bg-outline h-full rounded-full" style="width: 61%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">11 PRs · Auth logic</span>
+</div>
+<!-- 4. Elena -->
+<div class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-compact text-body-compact font-medium text-on-surface">@elena-rostova</span>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant font-semibold">48%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 overflow-hidden mb-1">
+<div class="bg-outline h-full rounded-full" style="width: 48%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">7 PRs · Metrics &amp; tracing</span>
+</div>
+<!-- 5. Devin -->
+<div class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-compact text-body-compact font-medium text-on-surface">@devin-cho</span>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant font-semibold">33%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1 overflow-hidden mb-1">
+<div class="bg-outline-variant h-full rounded-full" style="width: 33%"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">4 PRs · Config updates</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- CENTER CANVAS (React Flow Visual Interactive Simulation) -->
+<main class="flex-1 relative h-full bg-[#f8f7fc] overflow-hidden">
+<!-- Grid Dot Background Pattern (SVG) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="canvas-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#777587" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#canvas-grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- FLOATING TOP BAR: Search & Controls -->
+<div class="absolute top-4 left-6 right-6 z-30 flex items-center justify-between pointer-events-none">
+<!-- Search omnibar -->
+<div class="pointer-events-auto flex items-center gap-3">
+<div class="relative flex items-center bg-surface-container-lowest shadow-md rounded-xl px-3 py-2 w-80">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-compact text-body-compact text-on-surface outline-none placeholder:text-outline" placeholder="Search nodes, files, owners... (/)" type="text"/>
+<kbd class="font-caption-mono text-caption-mono bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded ml-2">⌘K</kbd>
+</div>
+<!-- Active Evidence Path Pill -->
+<div class="flex items-center gap-2 bg-primary-fixed text-on-primary-fixed px-3 py-1.5 rounded-full shadow-sm text-xs font-mono" id="evidence-banner">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-medium">Evidence Path Active: PR #520 Reviewers</span>
+<button class="ml-1 p-0.5 hover:bg-primary-fixed-dim rounded-full transition-colors flex items-center justify-center" id="clear-path-btn">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+</div>
+<!-- Zoom & View Tools -->
+<div class="pointer-events-auto flex items-center gap-1.5 bg-surface-container-lowest shadow-md rounded-xl p-1">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" id="zoom-out" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-caption-mono text-caption-mono text-on-surface px-2" id="zoom-level">100%</span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" id="zoom-in" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="w-px h-4 bg-outline-variant mx-1"></div>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" id="fit-view" title="Fit to View">
+<span class="material-symbols-outlined text-[18px]">crop_free</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" id="re-layout" title="Auto Align Layout">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+</button>
+</div>
+</div>
+<!-- INTERACTIVE GRAPH CANVAS WRAPPER -->
+<div class="w-full h-full relative cursor-grab active:cursor-grabbing transition-transform duration-200" id="graph-viewport">
+<!-- SVG Connections and Edges -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10" id="edges-layer" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Highlight Marker -->
+<marker id="arrow-active" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#3525cd"></path>
+</marker>
+<!-- Normal Marker -->
+<marker id="arrow-dimmed" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#c7c4d8"></path>
+</marker>
+<!-- Stale Marker -->
+<marker id="arrow-stale" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#ba1a1a"></path>
+</marker>
+</defs>
+<!-- DIMMED BACKGROUND EDGES -->
+<g class="transition-opacity duration-300 opacity-25" id="dimmed-edges">
+<!-- Node background connections -->
+<line marker-end="url(#arrow-dimmed)" stroke="#777587" stroke-dasharray="3 3" stroke-width="1.5" x1="160" x2="280" y1="120" y2="180"></line>
+<line marker-end="url(#arrow-dimmed)" stroke="#777587" stroke-width="1.5" x1="280" x2="210" y1="180" y2="340"></line>
+<line marker-end="url(#arrow-dimmed)" stroke="#777587" stroke-width="1.5" x1="580" x2="720" y1="140" y2="200"></line>
+<line marker-end="url(#arrow-dimmed)" stroke="#777587" stroke-width="1.5" x1="720" x2="680" y1="200" y2="370"></line>
+<line marker-end="url(#arrow-dimmed)" stroke="#777587" stroke-width="1.5" x1="320" x2="480" y1="520" y2="470"></line>
+</g>
+<!-- ACTIVE EVIDENCE PATH EDGES -->
+<g id="active-path-edges">
+<!-- Edge 1: Module 'api/gateway/' -> Team '@acme/platform' -->
+<path class="filter drop-shadow" d="M 230 260 C 290 260, 310 190, 370 190" fill="none" marker-end="url(#arrow-active)" stroke="#3525cd" stroke-width="2.5"></path>
+<text class="font-caption-mono text-[10px] font-bold bg-white" fill="#3525cd" text-anchor="middle" x="290" y="215">OWNS</text>
+<!-- Edge 2: Team '@acme/platform' -> Person '@caleb-rivers' -->
+<path d="M 490 190 C 530 190, 530 280, 570 280" fill="none" marker-end="url(#arrow-active)" stroke="#3525cd" stroke-width="2.5"></path>
+<text class="font-caption-mono text-[10px] font-bold" fill="#3525cd" text-anchor="middle" x="530" y="228">MEMBER</text>
+<!-- Edge 3: File 'routes.py' -> PR '#520' -->
+<path d="M 230 420 C 310 420, 310 350, 390 350" fill="none" marker-end="url(#arrow-active)" stroke="#4F46E5" stroke-width="2.5"></path>
+<text class="font-caption-mono text-[10px] font-bold" fill="#4F46E5" text-anchor="middle" x="310" y="375">MODIFIES</text>
+<!-- Edge 4: PR '#520' -> Person '@caleb-rivers' (Author) -->
+<path d="M 490 350 C 530 350, 540 300, 570 285" fill="none" marker-end="url(#arrow-active)" stroke="#3525cd" stroke-dasharray="4 2" stroke-width="2"></path>
+<text class="font-caption-mono text-[10px] font-bold" fill="#3525cd" text-anchor="middle" x="525" y="325">AUTHORED</text>
+<!-- Edge 5: Person '@clara-oswald' -> PR '#520' -->
+<path d="M 570 430 C 530 430, 520 370, 490 360" fill="none" marker-end="url(#arrow-active)" stroke="#2563EB" stroke-width="2.5"></path>
+<text class="font-caption-mono text-[10px] font-bold" fill="#2563EB" text-anchor="middle" x="540" y="405">REVIEWED</text>
+<!-- Edge 6 (Stale): Departed Jordan Hayes -> routes.py -->
+<path d="M 390 530 C 300 530, 260 480, 230 440" fill="none" id="stale-edge" marker-end="url(#arrow-stale)" opacity="0.6" stroke="#ba1a1a" stroke-dasharray="4 3" stroke-width="1.5"></path>
+<text class="font-caption-mono text-[9px] font-medium" fill="#ba1a1a" id="stale-edge-text" text-anchor="middle" x="305" y="495">EX-AUTHOR</text>
+</g>
+</svg>
+<!-- CANVAS NODES (Placed at matching coordinates) -->
+<!-- DIMMED BACKGROUND NODES -->
+<div class="absolute left-20 top-20 opacity-25 pointer-events-none">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#EA580C]"></span>
+<span class="font-caption-mono text-caption-mono text-on-surface">Issue #419</span>
+</div>
+</div>
+<div class="absolute left-60 top-36 opacity-25 pointer-events-none">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#DB2777]"></span>
+<span class="font-caption-mono text-caption-mono text-on-surface">ADR-004: JWT Standard</span>
+</div>
+</div>
+<div class="absolute left-[620px] top-24 opacity-25 pointer-events-none">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#64748B]"></span>
+<span class="font-caption-mono text-caption-mono text-on-surface">telemetry.ts</span>
+</div>
+</div>
+<div class="absolute left-[700px] top-[320px] opacity-25 pointer-events-none">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#B45309]"></span>
+<span class="font-caption-mono text-caption-mono text-on-surface">rfc-gateway-v2.md</span>
+</div>
+</div>
+<!-- ACTIVE EVIDENCE PATH NODES (INTERACTIVE) -->
+<!-- 1. MODULE NODE: api/gateway/ -->
+<div class="absolute left-14 top-56 z-20 transition-all hover:scale-105 cursor-pointer" data-node="module-gateway">
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container-lowest shadow-md flex items-center gap-2.5 ring-2 ring-[#0D9488]">
+<div class="w-7 h-7 rounded-lg bg-teal-50 flex items-center justify-center text-[#0D9488]">
+<span class="material-symbols-outlined text-[18px]">folder_copy</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-caption-mono text-[10px] text-[#0D9488] font-bold tracking-wider">MODULE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#0D9488]"></span>
+</div>
+<p class="font-mono-compact text-mono-compact font-bold text-on-surface">api/gateway/</p>
+</div>
+</div>
+</div>
+<!-- 2. TEAM NODE: @acme/platform -->
+<div class="absolute left-[360px] top-36 z-20 transition-all hover:scale-105 cursor-pointer" data-node="team-platform">
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container-lowest shadow-md flex items-center gap-2.5 ring-2 ring-[#7C3AED]">
+<div class="w-7 h-7 rounded-lg bg-purple-50 flex items-center justify-center text-[#7C3AED]">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-caption-mono text-[10px] text-[#7C3AED] font-bold tracking-wider">TEAM</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED]"></span>
+</div>
+<p class="font-mono-compact text-mono-compact font-bold text-on-surface">@acme/platform</p>
+</div>
+</div>
+</div>
+<!-- 3. FILE NODE: routes.py -->
+<div class="absolute left-14 top-96 z-20 transition-all hover:scale-105 cursor-pointer" data-node="file-routes">
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container-lowest shadow-md flex items-center gap-2.5 ring-2 ring-[#64748B]">
+<div class="w-7 h-7 rounded-lg bg-slate-50 flex items-center justify-center text-[#64748B]">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-caption-mono text-[10px] text-[#64748B] font-bold tracking-wider">FILE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-[#64748B]"></span>
+</div>
+<p class="font-mono-compact text-mono-compact font-bold text-on-surface">routes.py</p>
+</div>
+</div>
+</div>
+<!-- 4. PULL REQUEST NODE: PR #520 -->
+<div class="absolute left-[370px] top-80 z-20 transition-all hover:scale-105 cursor-pointer" data-node="pr-520">
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container-lowest shadow-md flex items-center gap-2.5 ring-2 ring-[#4F46E5]">
+<div class="w-7 h-7 rounded-lg bg-indigo-50 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">merge</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-caption-mono text-[10px] text-primary-container font-bold tracking-wider">PULL REQUEST</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<p class="font-mono-compact text-mono-compact font-bold text-on-surface">PR #520: Rate limiter fix</p>
+</div>
+</div>
+</div>
+<!-- 5. PERSON NODE (FOCUSED): @caleb-rivers -->
+<div class="absolute left-[560px] top-60 z-30 transition-all hover:scale-110 cursor-pointer" data-node="person-caleb" id="node-caleb">
+<div class="relative flex flex-col items-center">
+<!-- Glowing Pulsing Ring -->
+<div class="absolute -inset-2 rounded-full bg-primary/20 animate-pulse pointer-events-none"></div>
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest shadow-lg flex items-center justify-center ring-4 ring-primary relative z-10">
+<span class="font-headline-md text-headline-md font-bold text-primary">CR</span>
+<!-- Online/Verified Green Ring badge -->
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-secondary ring-2 ring-white" title="Active Core Maintainer"></span>
+</div>
+<div class="mt-1.5 px-2.5 py-0.5 rounded-md bg-surface-container-lowest shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2563EB]"></span>
+<span class="font-caption-mono text-caption-mono font-bold text-on-surface">@caleb-rivers</span>
+</div>
+</div>
+</div>
+<!-- 6. PERSON NODE: @clara-oswald -->
+<div class="absolute left-[560px] top-[390px] z-20 transition-all hover:scale-105 cursor-pointer" data-node="person-clara">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center ring-2 ring-[#2563EB]">
+<span class="font-title-sm text-title-sm font-semibold text-[#2563EB]">CO</span>
+</div>
+<div class="mt-1 px-2 py-0.5 rounded-md bg-surface-container-lowest shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2563EB]"></span>
+<span class="font-caption-mono text-caption-mono text-on-surface">@clara-oswald</span>
+</div>
+</div>
+</div>
+<!-- 7. STALE / DEPARTED PERSON NODE: @jordan-hayes -->
+<div class="absolute left-[370px] top-[490px] z-20 transition-opacity duration-300 cursor-pointer" id="stale-node">
+<div class="px-3 py-2 rounded-xl bg-surface-container-low shadow-sm flex items-center gap-2 ring-2 ring-dashed ring-error opacity-60">
+<div class="w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-caption-mono font-bold text-[10px]">
+              JH
+            </div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-caption-mono text-[9px] text-error font-semibold uppercase">DEPARTED STAFF</span>
+</div>
+<p class="font-mono-compact text-mono-compact text-on-surface-variant line-through">@jordan-hayes</p>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM-RIGHT MINI-MAP THUMBNAIL -->
+<div class="absolute bottom-4 right-4 z-30 w-44 h-32 rounded-xl bg-surface-container-lowest/90 backdrop-blur shadow-md p-2 flex flex-col justify-between pointer-events-none">
+<div class="flex items-center justify-between">
+<span class="font-caption-mono text-[10px] text-on-surface-variant font-bold tracking-wider">NETWORK MAP</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+</div>
+<!-- Stylized Thumbnail Canvas -->
+<div class="w-full h-20 bg-surface-container-low rounded-lg relative overflow-hidden flex items-center justify-center">
+<!-- Dots simulation -->
+<div class="absolute w-1.5 h-1.5 rounded-full bg-teal-600 top-4 left-6"></div>
+<div class="absolute w-2 h-2 rounded-full bg-purple-600 top-3 left-16"></div>
+<div class="absolute w-2.5 h-2.5 rounded-full bg-primary top-8 left-28 ring-2 ring-primary/40"></div>
+<div class="absolute w-1.5 h-1.5 rounded-full bg-indigo-600 bottom-5 left-16"></div>
+<div class="absolute w-1.5 h-1.5 rounded-full bg-blue-600 bottom-3 left-28"></div>
+<div class="absolute w-1 h-1 rounded-full bg-slate-400 bottom-3 left-6"></div>
+<div class="absolute w-1 h-1 rounded-full bg-red-400 bottom-2 left-20"></div>
+<!-- Viewport indicator rectangle -->
+<div class="absolute inset-1 border-2 border-primary/40 rounded bg-primary/5"></div>
+</div>
+</div>
+</main>
+<!-- RIGHT PANEL (Collapsible Drawer / Detail & Feed - 320px) -->
+<aside class="w-80 flex-shrink-0 bg-surface-container-lowest shadow-sm flex flex-col h-full z-20 overflow-hidden">
+<!-- Right Header Tabs -->
+<div class="p-2 bg-surface-container-low flex gap-1 rounded-t-none">
+<button class="flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-semibold transition-all bg-surface text-primary shadow-sm flex items-center justify-center gap-1.5" id="tab-btn-detail">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Node Detail</span>
+</button>
+<button class="flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-medium transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-btn-feed">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Feed (3)</span>
+</button>
+</div>
+<!-- TAB CONTENT: NODE DETAIL (Active by default) -->
+<div class="flex-1 overflow-y-auto p-4 flex flex-col gap-4" id="content-detail">
+<!-- Selected Node Profile Card -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm font-bold shadow-sm">
+                CR
+              </div>
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface">Caleb Rivers</h3>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant">@caleb-rivers</span>
+</div>
+</div>
+<!-- Entity Type Badge -->
+<span class="font-caption-mono text-caption-mono bg-blue-100 text-[#2563EB] px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2563EB]"></span>
+              Person
+            </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Staff Platform Engineer · Core Systems</span>
+</div>
+<!-- Key Metadata Fields -->
+<div class="flex flex-col gap-2.5">
+<span class="font-caption-mono text-caption-mono uppercase tracking-wider text-on-surface-variant font-bold">Metadata &amp; Provenance</span>
+<div class="grid grid-cols-1 gap-2 text-xs">
+<!-- Field 1: Team -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<span class="font-body-compact text-body-compact text-on-surface-variant">Primary Team</span>
+<span class="font-mono-compact text-mono-compact font-semibold text-[#7C3AED] bg-purple-50 px-2 py-0.5 rounded">@acme/platform</span>
+</div>
+<!-- Field 2: Top Modules -->
+<div class="flex flex-col gap-1 p-2 rounded-lg bg-surface-container">
+<span class="font-body-compact text-body-compact text-on-surface-variant">Top Modules</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="font-caption-mono text-caption-mono bg-[#0D9488]/10 text-[#0D9488] px-1.5 py-0.5 rounded font-medium">api/gateway/ (primary)</span>
+<span class="font-caption-mono text-caption-mono bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded">auth/middleware/</span>
+</div>
+</div>
+<!-- Field 3: Ownership Score -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<span class="font-body-compact text-body-compact text-on-surface-variant">Ownership Score</span>
+<span class="font-mono-compact text-mono-compact font-bold text-secondary">0.835 (High Confidence)</span>
+</div>
+<!-- Field 4: Recent Activity -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<span class="font-body-compact text-body-compact text-on-surface-variant">Past 30 Days</span>
+<span class="font-mono-compact text-mono-compact font-medium text-on-surface">42 commits · 14 PR reviews</span>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex flex-col gap-2 pt-2 mt-auto">
+<button class="w-full py-2 px-3 rounded-lg bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim transition-colors font-title-sm text-title-sm font-medium flex items-center justify-center gap-2" id="show-full-evidence">
+<span class="material-symbols-outlined text-[18px]">polyline</span>
+<span>Show full evidence path</span>
+</button>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-title-sm text-title-sm font-medium flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">smart_toy</span>
+<span>Query Agent about Caleb</span>
+</button>
+</div>
+</div>
+<!-- TAB CONTENT: SYNC & RECENT CHANGES FEED -->
+<div class="hidden flex-1 overflow-y-auto p-4 flex flex-col gap-4" id="content-feed">
+<!-- Sync Status Widget -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<div>
+<p class="font-body-compact text-body-compact font-medium text-on-surface">Live Graph Sync</p>
+<span class="font-caption text-caption text-on-surface-variant">Synced 2m ago · 3 changes applied</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Force Sync">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+<!-- Changes Feed Timeline -->
+<div class="flex flex-col gap-3">
+<span class="font-caption-mono text-caption-mono uppercase tracking-wider text-on-surface-variant font-bold">Latest Changes</span>
+<!-- Item 1: Ownership Shift -->
+<div class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex gap-2.5">
+<div class="w-6 h-6 rounded-full bg-teal-100 text-[#0D9488] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+</div>
+<div class="flex flex-col gap-0.5 text-xs">
+<p class="font-body-compact text-body-compact text-on-surface font-medium leading-tight">
+                Owner of <span class="font-mono-compact text-primary">search/</span> changed from <span class="font-mono-compact text-on-surface-variant">@acme/growth</span> to <span class="font-mono-compact text-[#7C3AED]">@acme/platform</span>
+</p>
+<span class="font-caption text-caption text-on-surface-variant">14m ago · Codeowners Bot</span>
+</div>
+</div>
+<!-- Item 2: PR Merged -->
+<div class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex gap-2.5">
+<div class="w-6 h-6 rounded-full bg-indigo-100 text-primary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">call_merge</span>
+</div>
+<div class="flex flex-col gap-0.5 text-xs">
+<p class="font-body-compact text-body-compact text-on-surface font-medium leading-tight">
+<span class="font-mono-compact font-bold text-primary-container">PR #520</span> merged into <span class="font-mono-compact">main</span> by <span class="font-mono-compact text-on-surface">@caleb-rivers</span>
+</p>
+<span class="font-caption text-caption text-on-surface-variant">2h ago · GitHub Webhook</span>
+</div>
+</div>
+<!-- Item 3: User Departed -->
+<div class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex gap-2.5">
+<div class="w-6 h-6 rounded-full bg-error-container text-error flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">person_remove</span>
+</div>
+<div class="flex flex-col gap-0.5 text-xs">
+<p class="font-body-compact text-body-compact text-on-surface font-medium leading-tight">
+                User <span class="font-mono-compact text-error line-through">@jordan-hayes</span> removed from CODEOWNERS
+              </p>
+<span class="font-caption text-caption text-on-surface-variant">Yesterday · Okta De-provision</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- BOTTOM BAR: Horizontal Date Timeline Slider for "As of" Time Travel (Height 48px / 3rem) -->
+<footer class="h-12 w-full bg-surface-container-lowest/95 backdrop-blur shadow-md px-6 flex items-center justify-between text-xs font-mono z-30 select-none">
+<!-- Playback Controls & Scrubber Mode -->
+<div class="flex items-center gap-3">
+<button class="w-7 h-7 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" id="play-pause-btn" title="Play temporal changes">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="font-caption-mono text-caption-mono text-on-surface-variant uppercase tracking-wider font-semibold">Time Travel</span>
+<span class="font-caption-mono text-caption-mono text-primary bg-primary-fixed px-1.5 py-0.2 rounded font-bold" id="current-date-badge">2026-08-14 (PR #520 Merged)</span>
+</div>
+</div>
+<!-- Timeline Scrubber Track -->
+<div class="flex items-center gap-4 flex-1 max-w-xl mx-8">
+<span class="font-caption-mono text-caption-mono text-on-surface-variant text-[11px]">2026-06</span>
+<div class="relative w-full flex items-center">
+<!-- Range input track -->
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="timeline-slider" max="4" min="1" step="1" type="range" value="3"/>
+<!-- Tick Labels -->
+<div class="absolute -bottom-4 w-full flex justify-between pointer-events-none px-0.5">
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary ring-2 ring-primary/30"></span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+</div>
+</div>
+<span class="font-caption-mono text-caption-mono text-on-surface-variant text-[11px]">Live Head</span>
+</div>
+<!-- State Indicator & Reset Button -->
+<div class="flex items-center gap-3">
+<div class="hidden lg:flex items-center gap-1.5 text-on-surface-variant font-caption text-[11px]" title="Temporal state">
+<span class="material-symbols-outlined text-[14px]">history_toggle_off</span>
+<span>Nodes dimmed prior to creation date</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-caption-mono text-caption-mono font-medium transition-colors flex items-center gap-1" id="reset-head-btn">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Reset to Live Head (Now)</span>
+</button>
+</div>
+</footer>
+</div>
+<script>
+  (function () {
+    // 1. Tab switching between 'Node Detail' and 'Feed'
+    const tabDetail = document.getElementById('tab-btn-detail');
+    const tabFeed = document.getElementById('tab-btn-feed');
+    const contentDetail = document.getElementById('content-detail');
+    const contentFeed = document.getElementById('content-feed');
+
+    if (tabDetail && tabFeed && contentDetail && contentFeed) {
+      tabDetail.addEventListener('click', () => {
+        tabDetail.className = 'flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-semibold transition-all bg-surface text-primary shadow-sm flex items-center justify-center gap-1.5';
+        tabFeed.className = 'flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-medium transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5';
+        contentDetail.classList.remove('hidden');
+        contentFeed.classList.add('hidden');
+      });
+
+      tabFeed.addEventListener('click', () => {
+        tabFeed.className = 'flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-semibold transition-all bg-surface text-primary shadow-sm flex items-center justify-center gap-1.5';
+        tabDetail.className = 'flex-1 py-1.5 px-3 rounded-lg font-caption-mono text-caption-mono font-medium transition-all text-on-surface-variant hover:text-on-surface flex items-center justify-center gap-1.5';
+        contentFeed.classList.remove('hidden');
+        contentDetail.classList.add('hidden');
+      });
+    }
+
+    // 2. Toggle Stale / Deleted node & edge visibility
+    const toggleStale = document.getElementById('toggle-stale');
+    const staleNode = document.getElementById('stale-node');
+    const staleEdge = document.getElementById('stale-edge');
+    const staleEdgeText = document.getElementById('stale-edge-text');
+
+    if (toggleStale) {
+      toggleStale.addEventListener('change', (e) => {
+        const isVisible = e.target.checked;
+        if (staleNode) staleNode.style.display = isVisible ? 'block' : 'none';
+        if (staleEdge) staleEdge.style.display = isVisible ? 'block' : 'none';
+        if (staleEdgeText) staleEdgeText.style.display = isVisible ? 'block' : 'none';
+      });
+    }
+
+    // 3. Zoom controls simulation
+    const zoomLevelEl = document.getElementById('zoom-level');
+    const viewport = document.getElementById('graph-viewport');
+    let currentZoom = 100;
+
+    const zoomInBtn = document.getElementById('zoom-in');
+    const zoomOutBtn = document.getElementById('zoom-out');
+    const fitViewBtn = document.getElementById('fit-view');
+
+    if (zoomInBtn && zoomOutBtn && fitViewBtn && zoomLevelEl && viewport) {
+      zoomInBtn.addEventListener('click', () => {
+        if (currentZoom < 160) {
+          currentZoom += 15;
+          applyZoom();
+        }
+      });
+
+      zoomOutBtn.addEventListener('click', () => {
+        if (currentZoom > 60) {
+          currentZoom -= 15;
+          applyZoom();
+        }
+      });
+
+      fitViewBtn.addEventListener('click', () => {
+        currentZoom = 100;
+        applyZoom();
+      });
+
+      function applyZoom() {
+        zoomLevelEl.textContent = currentZoom + '%';
+        viewport.style.transform = `scale(${currentZoom / 100})`;
+        viewport.style.transformOrigin = 'center center';
+      }
+    }
+
+    // 4. Time travel slider scrubber
+    const slider = document.getElementById('timeline-slider');
+    const dateBadge = document.getElementById('current-date-badge');
+    const resetHeadBtn = document.getElementById('reset-head-btn');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+
+    const timelineStates = {
+      '1': '2026-06-01 (Architecture RFC)',
+      '2': '2026-07-15 (Refactor Started)',
+      '3': '2026-08-14 (PR #520 Merged)',
+      '4': 'Live Head (Current Main)'
+    };
+
+    if (slider && dateBadge) {
+      slider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        dateBadge.textContent = timelineStates[val] || '2026-08-14';
+      });
+    }
+
+    if (resetHeadBtn && slider && dateBadge) {
+      resetHeadBtn.addEventListener('click', () => {
+        slider.value = '4';
+        dateBadge.textContent = timelineStates['4'];
+      });
+    }
+
+    let isPlaying = false;
+    let timer = null;
+    if (playPauseBtn && slider && dateBadge) {
+      playPauseBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        const icon = playPauseBtn.querySelector('.material-symbols-outlined');
+        if (isPlaying) {
+          icon.textContent = 'pause';
+          timer = setInterval(() => {
+            let nextVal = parseInt(slider.value, 10) + 1;
+            if (nextVal > 4) nextVal = 1;
+            slider.value = nextVal.toString();
+            dateBadge.textContent = timelineStates[nextVal];
+          }, 1500);
+        } else {
+          icon.textContent = 'play_arrow';
+          clearInterval(timer);
+        }
+      });
+    }
+
+    // 5. Clear Evidence Path button
+    const clearPathBtn = document.getElementById('clear-path-btn');
+    const evidenceBanner = document.getElementById('evidence-banner');
+    const activeEdges = document.getElementById('active-path-edges');
+    const dimmedEdges = document.getElementById('dimmed-edges');
+
+    if (clearPathBtn && evidenceBanner) {
+      clearPathBtn.addEventListener('click', () => {
+        evidenceBanner.style.opacity = '0.4';
+        if (activeEdges) activeEdges.style.opacity = '0.5';
+        if (dimmedEdges) dimmedEdges.classList.remove('opacity-25');
+      });
+    }
+  })();
+</script></main></body></html>

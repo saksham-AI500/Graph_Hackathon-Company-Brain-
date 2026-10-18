@@ -1,0 +1,70 @@
+{
+  "entity": "marcus-vance",
+  "as_of": null,
+  "node_count": 5,
+  "edge_count": 4,
+  "nodes": [
+    {
+      "id": "marcus-vance",
+      "label": "Person",
+      "properties": {
+        "name": "Marcus Vance",
+        "login": "marcus-vance",
+        "team": "team-payments"
+      }
+    },
+    {
+      "id": "team-payments",
+      "label": "Team",
+      "properties": {
+        "name": "Payments Core"
+      }
+    },
+    {
+      "id": "payments/checkout.py",
+      "label": "File",
+      "properties": {
+        "path": "payments/checkout.py"
+      }
+    },
+    {
+      "id": "payments/refunds/",
+      "label": "OwnershipRule",
+      "properties": {
+        "pattern": "payments/refunds/"
+      }
+    },
+    {
+      "id": "PR #236",
+      "label": "PullRequest",
+      "properties": {
+        "number": 236
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "marcus-vance",
+      "target": "team-payments",
+      "type": "MEMBER_OF"
+    },
+    {
+      "source": "marcus-vance",
+      "target": "payments/checkout.py",
+      "type": "KNOWS",
+      "properties": {
+        "score": 0.835
+      }
+    },
+    {
+      "source": "marcus-vance",
+      "target": "PR #236",
+      "type": "AUTHORED"
+    },
+    {
+      "source": "marcus-vance",
+      "target": "payments/refunds/",
+      "type": "DECLARED_OWNER"
+    }
+  ]
+}

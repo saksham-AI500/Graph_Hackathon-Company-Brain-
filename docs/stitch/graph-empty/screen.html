@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RepoBrain - Knowledge Graph</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #0A0A0E;
+        color: #e5e1e4;
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+      }
+    }
+    
+    /* Frosted glass utilities */
+    .glass-nav {
+      background: rgba(18, 18, 24, 0.65);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .glass-card {
+      background: rgba(18, 18, 26, 0.72);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 20px 48px -8px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    }
+
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    }
+
+    .glass-pill:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Ambient Orb Animation */
+    @keyframes morph {
+      0%, 100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; transform: rotate(0deg) scale(1); }
+      50% { border-radius: 60% 40% 30% 70% / 55% 65% 35% 45%; transform: rotate(180deg) scale(1.08); }
+    }
+
+    .dither-orb {
+      background: radial-gradient(circle at 35% 30%, #38bdf8 0%, #a855f7 50%, #ec4899 90%);
+      animation: morph 8s ease-in-out infinite;
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Custom range slider thumb */
+    input[type=range]::-webkit-slider-thumb {
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 9999px;
+      background: #38bdf8;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 12px #38bdf8;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="w-screen h-screen relative select-none antialiased bg-[#0A0A0E]">
+<!-- BACKGROUND GLOWS & GRADIENT AURAS -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+<!-- Top-left magenta / purple glow -->
+<div class="absolute -top-[12%] -left-[10%] w-[680px] h-[680px] rounded-full bg-gradient-to-br from-purple-600/25 via-pink-600/18 to-transparent blur-[140px]"></div>
+<!-- Top-right electric cyan / blue / indigo glow -->
+<div class="absolute -top-[15%] right-[0%] w-[750px] h-[750px] rounded-full bg-gradient-to-bl from-cyan-400/25 via-indigo-600/20 to-transparent blur-[150px]"></div>
+<!-- Bottom-center warm amber / orange glow -->
+<div class="absolute -bottom-[20%] left-[28%] w-[600px] h-[600px] rounded-full bg-gradient-to-t from-amber-500/12 via-orange-600/08 to-transparent blur-[160px]"></div>
+<!-- Subtle 16px Dot Grid Overlay -->
+<div class="absolute inset-0 opacity-[0.07]" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 16px 16px;"></div>
+</div>
+<!-- TOP BAR (Fixed 56px height) -->
+<header class="fixed top-0 left-0 right-0 h-14 z-50 glass-nav flex items-center justify-between px-6">
+<!-- Left: Logo & Context Pill -->
+<div class="flex items-center gap-3.5">
+<div class="w-8 h-8 rounded-full dither-orb shrink-0 flex items-center justify-center relative">
+<div class="w-2.5 h-2.5 bg-white/80 rounded-full blur-[1px]"></div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-white font-semibold text-[15px] tracking-tight">RepoBrain</span>
+<span class="px-2 py-0.5 rounded-full bg-white/[0.06] border border-white/10 text-white/60 font-mono text-[11px] tracking-wide">
+          Company Brain
+        </span>
+</div>
+</div>
+<!-- Center: Main Navigation Tabs -->
+<nav class="flex items-center gap-8 h-full">
+<a class="h-full inline-flex items-center text-sm font-medium text-white/55 hover:text-white transition-colors duration-150 px-1" href="#">
+        Ask
+      </a>
+<a aria-current="page" class="h-full inline-flex items-center text-sm font-medium text-cyan-300 relative px-1 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2.5px] after:bg-gradient-to-r after:from-cyan-400 after:to-blue-500 after:shadow-[0_0_12px_rgba(56,189,248,0.8)]" href="#">
+        Graph
+      </a>
+</nav>
+<!-- Right: Status Badge & Utilities -->
+<div class="flex items-center gap-3">
+<!-- Live Indicator Pill -->
+<div class="glass-pill px-2.5 py-1 rounded-full flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]"></span>
+<span class="font-mono text-[11px] font-semibold text-emerald-400 tracking-wider uppercase">Live</span>
+</div>
+<button aria-label="Toggle Theme" class="w-8 h-8 rounded-lg glass-pill flex items-center justify-center text-white/70 hover:text-white transition-all">
+<span class="material-symbols-outlined text-[17px]">dark_mode</span>
+</button>
+<button aria-label="Open Settings" class="w-8 h-8 rounded-lg glass-pill flex items-center justify-center text-white/70 hover:text-white transition-all">
+<span class="material-symbols-outlined text-[17px]">settings</span>
+</button>
+<!-- User Avatar Pill -->
+<div class="w-8 h-8 rounded-full glass-pill p-0.5 flex items-center justify-center cursor-pointer ring-1 ring-white/20">
+<div class="w-full h-full rounded-full bg-gradient-to-tr from-cyan-500 to-purple-600 flex items-center justify-center text-[11px] font-semibold text-white">
+          CR
+        </div>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS AREA -->
+<main class="w-full h-full pt-14 relative z-10 flex">
+<!-- TOP FLOATING CANVAS CONTROLS (Overlay) -->
+<div class="absolute top-20 left-6 right-6 z-30 flex items-center justify-between pointer-events-none">
+<!-- Left Controls Group -->
+<div class="flex items-center gap-3 pointer-events-auto">
+<!-- Search Filter Pill with Autocomplete Trigger -->
+<div class="glass-pill rounded-xl px-3.5 py-1.5 flex items-center gap-2.5 shadow-lg min-w-[280px]">
+<span class="material-symbols-outlined text-white/40 text-[18px]">search</span>
+<input class="bg-transparent text-sm font-mono text-cyan-300 placeholder:text-white/35 focus:outline-none w-full" id="node-search-input" placeholder="Search graph... (empty)" type="text" value=""/>
+<kbd class="px-1.5 py-0.5 rounded bg-white/10 text-white/60 font-mono text-[10px] tracking-wide border border-white/10">⌘K</kbd>
+</div>
+<!-- Legend Popover Pill -->
+<div class="relative group">
+<button class="glass-pill px-3 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-mono font-medium text-white/80 hover:text-white transition-all">
+<span class="material-symbols-outlined text-[16px] text-cyan-400">category</span>
+<span>Legend</span>
+<span class="material-symbols-outlined text-[14px] text-white/40">expand_more</span>
+</button>
+<!-- Hoverable Legend Card -->
+<div class="hidden group-hover:block absolute top-full left-0 mt-2 w-64 glass-card rounded-xl p-3.5 shadow-2xl z-50">
+<div class="text-[11px] font-mono uppercase text-white/40 tracking-wider mb-2.5">Entity Categories</div>
+<div class="grid grid-cols-2 gap-y-2 text-xs font-mono text-white/80">
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#38BDF8]"></span><span>Person</span></div>
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#A855F7]"></span><span>Team</span></div>
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#14B8A6]"></span><span>Module</span></div>
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#6366F1]"></span><span>Pull Request</span></div>
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></span><span>Document</span></div>
+<div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></span><span>Former Staff</span></div>
+</div>
+<div class="mt-3 pt-2.5 border-t border-white/10 flex justify-between text-[11px] font-mono text-white/40">
+<span>Indexed: 1,428 nodes</span>
+<span class="text-emerald-400">99.8%</span>
+</div>
+</div>
+</div>
+<!-- Toggle Empty State Pill -->
+<button class="glass-pill px-3 py-1.5 rounded-xl flex items-center gap-1.5 text-xs font-mono text-white/70 hover:text-white transition-all" onclick="toggleEmptyState()">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Toggle Empty State</span>
+</button>
+</div>
+<!-- Right Controls Group -->
+<div class="pointer-events-auto">
+<button class="glass-pill px-3.5 py-1.5 rounded-xl flex items-center gap-2 text-xs font-mono text-white/85 hover:text-white transition-all shadow-lg" onclick="toggleSettingsDrawer()">
+<span class="material-symbols-outlined text-[17px] text-cyan-400">tune</span>
+<span class="font-medium">Graph Settings</span>
+</button>
+</div>
+</div>
+<!-- GRAPH CANVAS SVG VISUALIZATION -->
+<div class="w-full h-full relative cursor-grab active:cursor-grabbing overflow-hidden flex items-center justify-center"><div class="flex flex-col items-center justify-center text-center px-4 max-w-lg z-20 pointer-events-auto select-none"><div class="relative mb-8 flex items-center justify-center"><div class="absolute w-44 h-44 rounded-full bg-gradient-to-tr from-cyan-500/30 via-purple-500/25 to-pink-500/20 blur-[40px] animate-pulse"></div><div class="w-32 h-32 rounded-full relative dither-orb flex items-center justify-center shadow-[0_0_50px_rgba(56,189,248,0.45)] ring-1 ring-white/30"><div class="w-24 h-24 rounded-full bg-white/[0.04] backdrop-blur-xs flex items-center justify-center relative overflow-hidden"><svg class="w-full h-full opacity-60" viewbox="0 0 96 96"><pattern height="8" id="bayer-pattern" patternunits="userSpaceOnUse" width="8"><circle cx="2" cy="2" fill="#ffffff" opacity="0.9" r="1"></circle><circle cx="6" cy="2" fill="#38bdf8" opacity="0.6" r="0.75"></circle><circle cx="4" cy="4" fill="#ec4899" opacity="0.75" r="1.2"></circle><circle cx="2" cy="6" fill="#38bdf8" opacity="0.5" r="0.75"></circle><circle cx="6" cy="6" fill="#ffffff" opacity="0.85" r="1"></circle></pattern><rect fill="url(#bayer-pattern)" height="96" width="96"></rect></svg><div class="absolute w-8 h-8 rounded-full bg-white/70 blur-[4px]"></div></div></div></div><h2 class="text-white text-2xl font-semibold tracking-tight mb-2">No graph loaded yet.</h2><p class="text-white/60 text-sm mb-7 leading-relaxed font-normal max-w-md">Run sync or connect a repository to build the company knowledge graph.</p><div class="flex flex-col items-center gap-5 w-full"><button class="glass-pill px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-medium text-sm transition-all shadow-[0_0_24px_rgba(56,189,248,0.25),inset_0_1px_0_rgba(255,255,255,0.35)] border border-cyan-400/40 flex items-center gap-2 group"><span class="material-symbols-outlined text-[18px] text-cyan-400 group-hover:rotate-180 transition-transform duration-500">sync</span><span>Run sync</span></button><div class="flex flex-wrap items-center justify-center gap-2 pt-1"><button class="glass-pill px-3 py-1.5 rounded-lg text-xs font-mono text-white/70 hover:text-white transition-all flex items-center gap-1.5 border border-white/10"><span class="material-symbols-outlined text-[14px] text-purple-400">fork_right</span><span>Connect GitHub repository</span></button><button class="glass-pill px-3 py-1.5 rounded-lg text-xs font-mono text-white/70 hover:text-white transition-all flex items-center gap-1.5 border border-white/10"><span class="material-symbols-outlined text-[14px] text-cyan-400">group</span><span>Import CODEOWNERS</span></button><button class="glass-pill px-3 py-1.5 rounded-lg text-xs font-mono text-white/70 hover:text-white transition-all flex items-center gap-1.5 border border-white/10"><span class="material-symbols-outlined text-[14px] text-emerald-400">play_circle</span><span>Load sample demo repo</span></button></div></div></div></div>
+<!-- BOTTOM-LEFT FLOATING NODE INSPECTOR CARD -->
+<div class="absolute bottom-6 left-6 z-40 w-80 glass-card rounded-2xl p-5 shadow-2xl transition-all duration-300 hidden" id="floating-node-card">
+<!-- Card Header -->
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-500 border border-white/20 flex items-center justify-center font-mono font-bold text-white text-sm shadow-[0_0_16px_rgba(56,189,248,0.4)]">
+            CR
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="text-white font-medium text-sm tracking-tight">caleb-rivers</h2>
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+</div>
+<p class="text-white/50 text-xs mt-0.5">Staff Platform Engineer</p>
+</div>
+</div>
+<button class="w-6 h-6 rounded-lg glass-pill flex items-center justify-center text-white/50 hover:text-white transition-colors" onclick="clearSelection()" title="Dismiss card">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+<!-- Compact Technical Fields -->
+<div class="space-y-2.5 mb-5 font-mono text-xs">
+<div class="flex items-center justify-between py-1.5 px-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+<span class="text-white/45">Primary Module</span>
+<span class="text-cyan-400 font-semibold">api/gateway/</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+<span class="text-white/45">Ownership Score</span>
+<div class="flex items-center gap-1.5">
+<span class="text-emerald-400 font-semibold">0.835</span>
+<span class="text-white/40 text-[10px]">(Top 1%)</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-1.5 px-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+<span class="text-white/45">Graph Centrality</span>
+<span class="text-white/90">24 In / 18 Out</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-xl bg-white/90 hover:bg-white text-[#0A0A0E] text-xs font-semibold tracking-tight transition-all flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(255,255,255,0.35),inset_0_1px_0_rgba(255,255,255,1)]">
+<span class="material-symbols-outlined text-[16px]">alt_route</span>
+<span>Show path</span>
+</button>
+<button class="p-2 rounded-xl glass-pill text-white/70 hover:text-white transition-all" title="Inspect commit history velocity">
+<span class="material-symbols-outlined text-[17px]">history</span>
+</button>
+</div>
+</div>
+<!-- BOTTOM-CENTER FLOATING TIMELINE SCRUBBER -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 w-full max-w-xl px-4 pointer-events-none hidden">
+<div class="glass-card rounded-2xl px-5 py-3 shadow-2xl pointer-events-auto">
+<!-- Scrubber Header -->
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2 text-white/70 text-xs font-medium">
+<span class="material-symbols-outlined text-[16px] text-cyan-400">history_toggle_off</span>
+<span>Historical Knowledge Scrubber</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-[11px]">
+<span class="text-white font-medium" id="scrubber-timestamp">Current (Live Repo Head)</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-[10px] uppercase font-bold tracking-wider">
+              Now
+            </span>
+</div>
+</div>
+<!-- Range Slider -->
+<div class="relative py-1">
+<input class="w-full h-1.5 rounded-lg appearance-none bg-white/15 cursor-pointer accent-cyan-400" id="time-slider" max="100" min="0" oninput="handleTimeScrub(this.value)" type="range" value="100"/>
+</div>
+<!-- Milestones Row -->
+<div class="flex items-center justify-between text-[11px] font-mono text-white/40 mt-1">
+<span>6 Months ago</span>
+<span>90 Days</span>
+<span>30 Days</span>
+<span class="text-cyan-400 font-semibold">Today (NOW)</span>
+</div>
+</div>
+</div>
+<!-- BOTTOM-RIGHT FLOATING CONTROLS & MINI-MAP -->
+<div class="absolute bottom-6 right-6 z-30 flex flex-col items-end gap-3 pointer-events-none">
+<!-- Mini-Map Glass Card -->
+<div class="glass-card rounded-xl p-2.5 shadow-2xl pointer-events-auto w-36 h-24 relative overflow-hidden">
+<!-- Subtle mini-map dots representing the network -->
+<div class="absolute inset-0 opacity-80">
+<div class="absolute w-1.5 h-1.5 rounded-full bg-purple-400 top-4 left-6"></div>
+<div class="absolute w-2 h-2 rounded-full bg-cyan-400 top-11 left-16 ring-2 ring-cyan-400/40 animate-pulse"></div>
+<div class="absolute w-1.5 h-1.5 rounded-full bg-indigo-400 top-8 left-24"></div>
+<div class="absolute w-1.5 h-1.5 rounded-full bg-teal-400 top-16 left-18"></div>
+<div class="absolute w-1 h-1 rounded-full bg-white/30 top-18 left-8"></div>
+<div class="absolute w-1 h-1 rounded-full bg-white/30 top-5 left-28"></div>
+<div class="absolute w-1 h-1 rounded-full bg-amber-400 top-17 left-12"></div>
+</div>
+<!-- Active Viewfinder Rect -->
+<div class="absolute inset-2 border border-cyan-400/40 rounded bg-cyan-400/[0.04]"></div>
+</div>
+<!-- Zoom & Fit Controls Pill -->
+<div class="glass-pill rounded-xl p-1 flex items-center shadow-lg pointer-events-auto">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-colors" onclick="handleZoom('in')" title="Zoom In">
+<span class="material-symbols-outlined text-[17px]">add</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-colors" onclick="handleZoom('out')" title="Zoom Out">
+<span class="material-symbols-outlined text-[17px]">remove</span>
+</button>
+<div class="w-[1px] h-4 bg-white/15 my-auto mx-0.5"></div>
+<button class="px-2.5 h-8 rounded-lg flex items-center gap-1.5 text-white/70 hover:text-white hover:bg-white/10 text-xs font-mono transition-colors" onclick="handleZoom('fit')" title="Fit to Viewport">
+<span class="material-symbols-outlined text-[15px]">crop_free</span>
+<span>Fit</span>
+</button>
+</div>
+</div>
+<!-- EMPTY STATE MODAL (Hidden by default, triggered via simulator button) -->
+<div class="hidden absolute inset-0 z-50 bg-[#0A0A0E]/85 backdrop-blur-xl flex flex-col items-center justify-center p-6 text-center" id="empty-state-layer">
+<div class="w-16 h-16 rounded-2xl glass-card flex items-center justify-center mb-4 text-cyan-400 shadow-[0_0_30px_rgba(56,189,248,0.3)]">
+<span class="material-symbols-outlined text-[32px]">hub</span>
+</div>
+<h2 class="text-white text-xl font-semibold mb-2">No graph loaded yet</h2>
+<p class="text-white/60 text-sm max-w-sm mb-6 leading-relaxed">
+        The knowledge graph indexer hasn't synchronized this repository branch yet.
+      </p>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-[#0A0A0E] font-semibold text-xs transition-all shadow-lg shadow-cyan-500/25 flex items-center gap-2" onclick="toggleEmptyState()">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Run sync</span>
+</button>
+<button class="px-4 py-2 rounded-xl glass-pill text-white/80 hover:text-white text-xs font-medium transition-all" onclick="toggleEmptyState()">
+          Dismiss
+        </button>
+</div>
+</div>
+<!-- SETTINGS DRAWER (Flyout modal) -->
+<div class="fixed top-14 right-0 bottom-0 w-80 glass-card border-l border-white/15 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col" id="settings-drawer">
+<div class="p-5 border-b border-white/10 flex items-center justify-between">
+<div class="flex items-center gap-2 text-white font-medium text-sm">
+<span class="material-symbols-outlined text-cyan-400 text-[18px]">tune</span>
+<span>Graph Settings</span>
+</div>
+<button class="w-7 h-7 rounded-lg glass-pill flex items-center justify-center text-white/50 hover:text-white transition-colors" onclick="toggleSettingsDrawer()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<div class="p-5 space-y-6 flex-1 overflow-y-auto">
+<!-- API Key Section -->
+<div class="space-y-2">
+<label class="block text-[11px] font-mono uppercase tracking-wider text-white/50">Sync API Key</label>
+<div class="relative">
+<input class="w-full bg-white/[0.04] border border-white/10 rounded-xl px-3 py-2 text-xs font-mono text-white/90 pr-9 focus:outline-none" id="api-key-input" readonly="" type="password" value="rb_live_99f2b184a0c83e18a992bc44e1"/>
+<button class="absolute right-2.5 top-2 text-white/40 hover:text-white transition-colors" onclick="toggleApiKeyVisibility()" type="button">
+<span class="material-symbols-outlined text-[16px]" id="api-key-icon">visibility</span>
+</button>
+</div>
+<p class="text-[11px] text-white/40">Read permissions for architecture metadata.</p>
+</div>
+<!-- Visual Theme Appearance -->
+<div class="space-y-2">
+<label class="block text-[11px] font-mono uppercase tracking-wider text-white/50">Appearance</label>
+<div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-white/[0.04] border border-white/10">
+<button class="py-1.5 rounded-lg bg-white/15 text-white text-xs font-medium flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">dark_mode</span>
+<span>Dark</span>
+</button>
+<button class="py-1.5 rounded-lg text-white/50 hover:text-white text-xs font-medium flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">light_mode</span>
+<span>Light</span>
+</button>
+<button class="py-1.5 rounded-lg text-white/50 hover:text-white text-xs font-medium flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">settings_brightness</span>
+<span>Auto</span>
+</button>
+</div>
+</div>
+<!-- Physics Rigidity Slider -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-mono">
+<span class="text-white/60">Clustering Force</span>
+<span class="text-cyan-400">0.68</span>
+</div>
+<input class="w-full h-1.5 rounded-lg appearance-none bg-white/15 cursor-pointer accent-cyan-400" max="100" min="0" type="range" value="68"/>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-white/40">
+<span>RepoBrain Engine v4.12</span>
+<button class="text-cyan-400 hover:underline" onclick="toggleSettingsDrawer()">Done</button>
+</div>
+</div>
+</main>
+<!-- SCRIPT LOGIC -->
+<script>
+    function toggleSettingsDrawer() {
+      const drawer = document.getElementById('settings-drawer');
+      drawer.classList.toggle('translate-x-full');
+    }
+
+    function toggleEmptyState() {
+      const empty = document.getElementById('empty-state-layer');
+      empty.classList.toggle('hidden');
+    }
+
+    function toggleApiKeyVisibility() {
+      const input = document.getElementById('api-key-input');
+      const icon = document.getElementById('api-key-icon');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function selectNode(type) {
+      const card = document.getElementById('floating-node-card');
+      card.classList.remove('opacity-0', 'translate-y-8');
+      
+      const searchInput = document.getElementById('node-search-input');
+      if (type === 'team') searchInput.value = '@acme/platform';
+      if (type === 'pr520') searchInput.value = 'PR #520';
+      if (type === 'gateway') searchInput.value = 'api/gateway/routes.py';
+    }
+
+    function clearSelection() {
+      const card = document.getElementById('floating-node-card');
+      card.classList.add('opacity-0', 'translate-y-8');
+    }
+
+    function handleTimeScrub(val) {
+      const label = document.getElementById('scrubber-timestamp');
+      if (val > 80) {
+        label.textContent = "Current (Live Repo Head)";
+      } else if (val > 40) {
+        label.textContent = "Scrubbed: 45 Days ago (Sprint 32)";
+      } else {
+        label.textContent = "Scrubbed: 180 Days ago (Pre-Gateway Rewrite)";
+      }
+    }
+
+    let zoomLevel = 1;
+    function handleZoom(mode) {
+      const svg = document.getElementById('graph-svg');
+      if (mode === 'in') zoomLevel = Math.min(zoomLevel + 0.15, 1.8);
+      if (mode === 'out') zoomLevel = Math.max(zoomLevel - 0.15, 0.6);
+      if (mode === 'fit') zoomLevel = 1;
+      svg.style.transform = `scale(${zoomLevel})`;
+      svg.style.transformOrigin = 'center center';
+      svg.style.transition = 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)';
+    }
+  </script>
+</body></html>

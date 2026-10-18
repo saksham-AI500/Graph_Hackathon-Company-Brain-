@@ -1,0 +1,7 @@
+{
+  "status": "healthy",
+  "service": "RepoBrain Backend API",
+  "timestamp": "2026-10-18T13:36:27.133132+00:00",
+  "database": "connected",
+  "model": "nvidia/nemotron-3.5-lightning:free"
+}

@@ -1,0 +1,28 @@
+{
+  "answer": "I don't have Acme's repository data, so I cannot confirm which team owns payments/.",
+  "status": "ANSWERED_UNCERTAIN",
+  "context": "As of latest synchronized data",
+  "ranking": [],
+  "reasoning": "",
+  "claims": [],
+  "excluded": [],
+  "unresolved": [],
+  "sources": [],
+  "mode": "graph_off",
+  "as_of": null,
+  "synced_at": "2026-09-30T23:59:59Z",
+  "model": "deepseek/deepseek-chat",
+  "tool_calls": [],
+  "verifier": {
+    "claims_total": 0,
+    "claims_passed": 0,
+    "claims_fully_supported": 0,
+    "sources_valid": 0,
+    "sources_total": 0,
+    "sentences_total": 0,
+    "sentences_passed": 0,
+    "post_hoc_citations": 0,
+    "fabricated_citations": 0,
+    "sentence_logs": []
+  }
+}

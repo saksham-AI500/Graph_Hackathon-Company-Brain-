@@ -16,7 +16,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from src.db import FalkorDBClient
 from src.evaluation.temporal import normalize_utc_timestamp
 from src.agent.client import OpenRouterClient
-from src.agent.models import AgentAnswer, AgentRequest, Claim, SourceItem, ToolCall, ToolResult
+from src.agent.models import AgentAnswer, AgentRequest, Claim, ExcludedItem, RankingItem, SourceItem, ToolCall, ToolResult
 from src.agent.prompt import build_agent_system_prompt, format_untrusted_context
 from src.agent.tools import ToolRegistry, get_default_tool_registry
 from src.agent.verifier import AgentEvidenceVerifier
@@ -1769,6 +1769,7 @@ class AgentExecutionLoop:
                     metadata = {
                         "scoring_formula": fix_res.get("formula", ""),
                         "bots_excluded": [e["login"] for e in fix_res.get("excluded_people", []) if "bot" in e.get("reason", "").lower()],
+                        "excluded_people": fix_res.get("excluded_people", []),
                     }
 
             execution_log.append({
@@ -1827,11 +1828,40 @@ class AgentExecutionLoop:
                         source_ids=["S2"] if len(sources) >= 2 else ["S1"],
                     ))
 
+                ranking_items = []
+                for i, r in enumerate(ranked, start=1):
+                    sid = f"S{i}" if i <= len(sources) else "S1"
+                    ranking_items.append(RankingItem(
+                        rank=int(r.get("rank", i)),
+                        login=str(r.get("login", "")),
+                        score=float(r.get("total_score") or r.get("score") or 0.0),
+                        reasons=list(r.get("evidence") or r.get("reasons") or []),
+                        source_ids=[sid],
+                        tied=False,
+                    ))
+
+                excluded_items = []
+                for b in metadata.get("bots_excluded", []):
+                    excluded_items.append(ExcludedItem(
+                        login=str(b),
+                        reason="Automated bot account excluded",
+                        end_date=None,
+                    ))
+                for ex in metadata.get("excluded_people", []):
+                    if isinstance(ex, dict):
+                        excluded_items.append(ExcludedItem(
+                            login=str(ex.get("login", "")),
+                            reason=str(ex.get("reason", "Excluded candidate")),
+                            end_date=ex.get("end_date") or None,
+                        ))
+
                 return AgentAnswer(
                     answer=ans_text,
                     claims=claims,
                     sources=sources,
                     unresolved=unresolved,
+                    ranking=ranking_items,
+                    excluded=excluded_items,
                     as_of=norm_as_of,
                     fresh_checked=fresh_checked,
                     status="VERIFIED",

@@ -1,0 +1,74 @@
+{
+  "answer": "File or module `payments/refund.py` is declared in CODEOWNERS under rule `payments/` with owner(s): @acme/payments [S1].\nTeam status: ACTIVE.",
+  "status": "VERIFIED",
+  "context": "As of latest synchronized data",
+  "ranking": [],
+  "reasoning": "",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "File or module payments/refund.py is owned by @acme/payments according to CODEOWNERS rule payments/.",
+      "type": "fact",
+      "source_ids": [
+        "S1"
+      ],
+      "verified": true,
+      "verification_path": "exact_lookup"
+    }
+  ],
+  "excluded": [],
+  "unresolved": [],
+  "sources": [
+    {
+      "id": "S1",
+      "entity": "payments/refund.py",
+      "entity_type": "File",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L10",
+      "date": "",
+      "quote": ""
+    }
+  ],
+  "mode": "graph_on",
+  "as_of": null,
+  "synced_at": "2026-09-30T23:59:59Z",
+  "model": "deepseek/deepseek-chat",
+  "tool_calls": [
+    {
+      "tool": "freshness_check",
+      "args": {},
+      "result_count": 1,
+      "ms": 0
+    },
+    {
+      "tool": "intent_classification",
+      "args": {},
+      "result_count": 1,
+      "ms": 0
+    }
+  ],
+  "verifier": {
+    "claims_total": 1,
+    "claims_passed": 1,
+    "claims_fully_supported": 1,
+    "sources_valid": 1,
+    "sources_total": 1,
+    "sentences_total": 1,
+    "sentences_passed": 1,
+    "post_hoc_citations": 0,
+    "sentence_logs": [
+      {
+        "sentence": "File or module payments/refund.py is declared in CODEOWNERS under rule payments/ with owner(s): @acme/payments [S1].",
+        "claim_ids": [
+          "C1"
+        ],
+        "cited_sources": [
+          "S1"
+        ],
+        "verification_path": "exact_lookup",
+        "score": 1.0,
+        "passed": true,
+        "reason": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "split": "failure",
+  "mode": "graph_on",
+  "total_questions": 1,
+  "correct_count": 1,
+  "accuracy": 1.0,
+  "supported_count": 1,
+  "refusal_correct_count": 1,
+  "mean_latency_ms": 820.89,
+  "results": [
+    {
+      "id": "FAIL-01",
+      "question": "Who owns the stuff with that thing?",
+      "mode": "graph_on",
+      "status": "REFUSED",
+      "is_refusal": true,
+      "refusal_correct": true,
+      "correct": true,
+      "supported": true,
+      "latency_ms": 820.89,
+      "claims_count": 0,
+      "sources_count": 0,
+      "answer_preview": "I cannot answer this question because the query is ambiguous and refers to unspecified components ('stuff with that thin..."
+    }
+  ]
+}

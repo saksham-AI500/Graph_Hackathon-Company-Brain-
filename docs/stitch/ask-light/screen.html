@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>RepoBrain: Company Brain</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-bright": "#39393b",
+        "tertiary-container": "#ffbc67",
+        "surface-variant": "#353437",
+        "on-tertiary-fixed-variant": "#653e00",
+        "outline": "#899298",
+        "on-secondary-fixed": "#002113",
+        "primary-container": "#7dd3fc",
+        "outline-variant": "#3f484e",
+        "primary-fixed": "#c0e8ff",
+        "primary": "#c5eaff",
+        "on-secondary-container": "#00311f",
+        "on-surface": "#e5e1e4",
+        "on-tertiary-fixed": "#2a1700",
+        "inverse-on-surface": "#303032",
+        "surface-tint": "#7bd1fa",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-primary-fixed": "#001e2b",
+        "error": "#ffb4ab",
+        "on-background": "#e5e1e4",
+        "background": "#131315",
+        "on-tertiary-container": "#774a00",
+        "on-primary": "#003547",
+        "surface-container-lowest": "#0e0e10",
+        "on-error-container": "#ffdad6",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#4edea3",
+        "inverse-surface": "#e5e1e4",
+        "surface-container-highest": "#353437",
+        "secondary": "#4edea3",
+        "on-primary-container": "#005b78",
+        "error-container": "#93000a",
+        "surface-container-low": "#1b1b1d",
+        "tertiary-fixed": "#ffddb8",
+        "on-secondary-fixed-variant": "#005236",
+        "secondary-container": "#00a572",
+        "surface-container-high": "#2a2a2c",
+        "primary-fixed-dim": "#7bd1fa",
+        "on-secondary": "#003824",
+        "secondary-fixed": "#6ffbbe",
+        "surface-dim": "#131315",
+        "tertiary": "#ffe0be",
+        "on-tertiary": "#472a00",
+        "surface-container": "#201f21",
+        "surface": "#131315",
+        "on-surface-variant": "#bec8ce",
+        "on-primary-fixed-variant": "#004d66",
+        "inverse-primary": "#006686"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1rem",
+        "space-xl": "1.5rem",
+        "space-xs": "0.25rem",
+        "gutter-desktop": "1.5rem",
+        "margin-desktop": "2rem",
+        "space-sm": "0.5rem",
+        "gutter": "1rem",
+        "margin": "1rem",
+        "space-md": "0.75rem"
+      },
+      "fontFamily": {
+        "code-lg": ["JetBrains Mono"],
+        "title-md": ["Inter"],
+        "display-lg": ["Inter"],
+        "headline-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "code-md": ["JetBrains Mono"],
+        "headline-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-code": ["JetBrains Mono"],
+        "display-lg-mobile": ["Inter"]
+      },
+      "fontSize": {
+        "code-lg": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "title-md": ["1rem", {"lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "display-lg": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600"}],
+        "headline-sm": ["1.25rem", {"lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "body-md": ["0.875rem", {"lineHeight": "1.375rem", "fontWeight": "400"}],
+        "code-md": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400"}],
+        "headline-md": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "body-sm": ["0.75rem", {"lineHeight": "1.125rem", "fontWeight": "400"}],
+        "label-code": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.02em", "fontWeight": "500"}],
+        "display-lg-mobile": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.45)]"><div class="h-14 w-full px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="relative flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high border border-outline-variant/50 overflow-hidden shadow-inner"><div class="w-5 h-5 rounded-full bg-gradient-to-tr from-[#7dd3fc] via-[#c084fc] to-[#f43f5e] opacity-90 blur-[0.5px]"></div><div class="absolute inset-0 bg-[radial-gradient(#131315_1px,transparent_1px)] [background-size:3px_3px] opacity-70 mix-blend-overlay"></div></div><div class="flex items-center gap-space-sm"><span class="font-title-md text-title-md tracking-tight font-semibold text-on-surface">RepoBrain</span><span class="px-2 py-0.5 rounded-full bg-surface-container-high border border-outline-variant/40 text-on-surface-variant font-label-code text-label-code tracking-wide uppercase">Company Brain</span></div></div><nav class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-lg border border-outline-variant/20" data-active-classes="bg-surface-container-high text-primary border-outline-variant/60 shadow-sm"><a aria-current="page" class="px-space-md py-1 rounded transition-colors font-body-sm font-medium bg-surface-container-high text-primary border-outline-variant/60 shadow-sm" data-path="ask" href="#">Ask</a><a class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm font-medium" data-path="compare" href="#">Compare</a><a class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm font-medium" data-path="graph" href="#">Graph</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest border border-outline-variant/30"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4edea3]"></span><span class="font-label-code text-label-code text-on-surface-variant uppercase tracking-wider font-medium">Connected</span></div><div class="flex items-center gap-space-xs"><button aria-label="Toggle Theme" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent hover:border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button aria-label="Settings" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent hover:border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">settings</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full flex-1 pt-14 bg-surface max-w-[1440px] mx-auto px-margin-desktop"><div class="flex flex-col w-full text-on-surface py-space-xl">
+<!-- Top Utility Context / Telemetry Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-xl bg-surface-container-low px-space-xl py-space-md rounded-xl">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-code text-label-code text-primary uppercase tracking-widest font-semibold">Graph Augmented</span>
+</div>
+<div class="h-3.5 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
+<span class="font-code-md text-code-md text-on-surface-variant truncate">Context cluster: <span class="text-on-surface font-medium">@acme/platform</span> &amp; <span class="text-on-surface font-medium">@acme/payments</span></span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">database</span>
+        Indexed: 142k commits
+      </span>
+<span class="opacity-40">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">schedule</span>
+        Sync: 12m ago
+      </span>
+</div>
+</div>
+<!-- Main 12-Column Analysis Grid -->
+<div class="grid grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Rail: Control Plane & Starters (Col 1-4) -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Graph Mode Toggle & Model Switcher -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code uppercase tracking-wider text-on-surface-variant font-medium">Runtime Modes</span>
+<span class="material-symbols-outlined text-outline text-[18px]">tune</span>
+</div>
+<!-- Mode Toggle -->
+<div class="grid grid-cols-2 p-1 rounded-lg bg-surface-container-lowest gap-1">
+<button class="py-1.5 px-space-sm rounded font-label-code text-label-code font-semibold tracking-wide bg-primary text-on-primary transition-all flex items-center justify-center gap-1.5 shadow-sm" id="toggle-graph-on" type="button">
+<span class="material-symbols-outlined text-[14px]">account_tree</span>
+            Graph On
+          </button>
+<button class="py-1.5 px-space-sm rounded font-label-code text-label-code font-medium tracking-wide text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center gap-1.5" id="toggle-graph-off" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+            Graph Off
+          </button>
+</div>
+<!-- Model Pill -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">neurology</span>
+<span class="font-code-md text-code-md text-on-surface truncate">anthropic/claude-3-5-sonnet</span>
+</div>
+<span class="font-label-code text-label-code text-secondary uppercase font-semibold">Ready</span>
+</div>
+</div>
+<!-- Starter Prompts Section -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code uppercase tracking-wider text-on-surface-variant font-medium">Domain Starter Prompts</span>
+<span class="font-label-code text-label-code text-outline">4 loaded</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-all group flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5 group-hover:translate-x-0.5 transition-transform">help</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">Who should review changes to auth and payments?</span>
+<span class="font-label-code text-label-code text-on-surface-variant mt-0.5">Telemetry • Ownership • Cross-repo</span>
+</div>
+</button>
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-all group flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5 group-hover:text-primary transition-colors">commit</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">Why was checkout idempotency rewritten in Q3?</span>
+<span class="font-label-code text-label-code text-on-surface-variant mt-0.5">Postmortem #409 • PR #1142</span>
+</div>
+</button>
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-all group flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5 group-hover:text-primary transition-colors">hub</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">Identify single-point-of-failure owners in billing</span>
+<span class="font-label-code text-label-code text-on-surface-variant mt-0.5">Knowledge Concentration Index</span>
+</div>
+</button>
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-all group flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5 group-hover:text-primary transition-colors">verified_user</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">Are all Stripe webhook signatures strictly validated?</span>
+<span class="font-label-code text-label-code text-on-surface-variant mt-0.5">Security Rule #8 • @acme/payments</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Quick Graph Visual Context Mini-Widget -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-code text-label-code uppercase tracking-wider text-on-surface-variant font-medium">Knowledge Graph Heatmap</span>
+<span class="font-label-code text-label-code text-primary font-semibold">L2 Subgraph</span>
+</div>
+<div class="h-28 w-full bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-full h-full text-outline-variant" fill="none" viewbox="0 0 280 90" xmlns="http://www.w3.org/2000/svg">
+<path d="M 40 45 L 110 25 M 40 45 L 110 65 M 110 25 L 190 25 M 110 65 L 190 65 M 190 25 L 250 45 M 190 65 L 250 45" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<circle class="fill-surface-container-high" cx="40" cy="45" r="8"></circle>
+<circle class="fill-primary" cx="40" cy="45" r="4"></circle>
+<circle class="fill-surface-container-high" cx="110" cy="25" r="10"></circle>
+<circle class="fill-secondary" cx="110" cy="25" r="5"></circle>
+<circle class="fill-surface-container-high" cx="110" cy="65" r="10"></circle>
+<circle class="fill-tertiary-container" cx="110" cy="65" r="5"></circle>
+<circle class="fill-surface-container-high" cx="190" cy="25" r="9"></circle>
+<circle class="fill-secondary" cx="190" cy="25" r="4"></circle>
+<circle class="fill-surface-container-high" cx="190" cy="65" r="8"></circle>
+<circle class="fill-outline" cx="190" cy="65" r="4"></circle>
+<circle class="fill-surface-container-high" cx="250" cy="45" r="11"></circle>
+<circle class="fill-primary" cx="250" cy="45" r="6"></circle>
+</svg>
+<div class="absolute bottom-1 right-2 font-label-code text-label-code text-on-surface-variant">
+            Nodes: 82 • Edges: 219
+          </div>
+</div>
+</div>
+</aside>
+<!-- Center Conversation Engine (Col 5-12) -->
+<section class="col-span-12 lg:col-span-8 flex flex-col gap-space-xl">
+<!-- User Query Bubble -->
+<div class="flex items-start gap-space-md justify-end pl-space-xl">
+<div class="bg-surface-container-high text-on-surface rounded-xl rounded-tr-none px-space-xl py-space-md max-w-2xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="font-label-code text-label-code text-primary font-medium uppercase">Engineering Staff Query</span>
+<span class="font-label-code text-label-code text-on-surface-variant">14:28:02 UTC</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Who should review changes to auth and payments?
+          </p>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">person</span>
+</div>
+</div>
+<!-- Synthesized Brain Response Card -->
+<article class="bg-surface-container-low rounded-xl p-space-xl shadow-md flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Header & Verification Status Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm bg-surface-container-lowest -mx-space-xl -mt-space-xl px-space-xl py-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary/15 text-secondary flex items-center gap-1.5 font-label-code text-label-code font-semibold tracking-wider uppercase">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+              VERIFIED
+            </span>
+<span class="font-label-code text-label-code text-on-surface-variant">Deterministic Graph Traversal</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-code text-label-code">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>As of 2025-02-24 • Synced 12m ago</span>
+</div>
+</div>
+<!-- Synthesized Narrative -->
+<div class="flex flex-col gap-space-sm pt-2">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Based on CODEOWNERS files and the past 90 days of git commit graph telemetry, code reviews for intersectional authentication and payment flows require dual sign-off 
+            <button class="inline-flex items-center px-1.5 py-0.2 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-primary font-code-md text-code-md align-baseline transition-colors">[S1]</button>. 
+            The primary blast radius is concentrated in <code class="font-code-md text-code-md text-primary bg-surface-container px-1.5 py-0.5 rounded">api/gateway/</code> and <code class="font-code-md text-code-md text-primary bg-surface-container px-1.5 py-0.5 rounded">services/payments-core/</code>
+<button class="inline-flex items-center px-1.5 py-0.2 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-primary font-code-md text-code-md align-baseline transition-colors">[S2]</button>.
+          </p>
+</div>
+<!-- Ranked Candidate Reviewers List -->
+<div class="flex flex-col gap-space-md">
+<span class="font-label-code text-label-code uppercase tracking-wider text-on-surface-variant font-medium">Ranked Recommended Reviewers</span>
+<!-- Reviewer 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary font-code-lg text-code-lg flex items-center justify-center font-bold">1</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-lg text-code-lg text-on-surface font-semibold hover:text-primary cursor-pointer transition-colors">@caleb-rivers</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">Staff Engineer</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Authored 8 PRs touching api/gateway/ in past 90 days</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end">
+<div class="w-32 bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 84%"></div>
+</div>
+<span class="font-code-md text-code-md font-semibold text-primary">84% Match</span>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">merge</span>
+                PR #520
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified</span>
+                CODEOWNERS L14
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-outline">
+                Domain: Gateway • Auth Token Validator
+              </span>
+</div>
+</div>
+<!-- Reviewer 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary font-code-lg text-code-lg flex items-center justify-center font-bold">2</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-lg text-code-lg text-on-surface font-semibold hover:text-primary cursor-pointer transition-colors">@clara-oswald</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-code text-label-code">Principal Architect</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary reviewer on payments service and fallback owner</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm sm:self-center self-end">
+<div class="w-32 bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 72%"></div>
+</div>
+<span class="font-code-md text-code-md font-semibold text-primary">72% Match</span>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">merge</span>
+                PR #488
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-md text-code-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified</span>
+                CODEOWNERS L9
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-outline">
+                Domain: Payments Core • Ledger
+              </span>
+</div>
+</div>
+</div>
+<!-- Excluded Person Callout (Amber Notice) -->
+<div class="rounded-xl p-space-md bg-tertiary-container/10 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary-container text-[20px] shrink-0 mt-0.5">person_off</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-tertiary-fixed-dim font-medium">
+              Excluded: <span class="font-code-md text-code-md">@jordan-hayes</span> (left company 2024-11-15).
+            </span>
+<span class="font-label-code text-label-code text-on-surface-variant">
+              Removed from active routing table. Automatic reassignment applied to @clara-oswald via team succession tree.
+            </span>
+</div>
+</div>
+<!-- Unresolved Boundary Callout -->
+<div class="rounded-xl p-space-md bg-surface-container-lowest flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary-container text-[20px] shrink-0 mt-0.5">pending_actions</span>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim font-medium">
+              Unresolved: Payment webhooks service ownership transition pending RFC-42.
+            </p>
+<span class="font-label-code text-label-code text-on-surface-variant">
+              Cross-cutting boundaries currently default to secondary approver quorum (2 of 3 team leads).
+            </span>
+</div>
+</div>
+<!-- Verifier Statistics Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">fact_check</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface leading-tight">4</span>
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Claims Verified</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[22px]">link</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface leading-tight">4</span>
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Sources Valid</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">spellcheck</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface leading-tight">3</span>
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Sentences Checked</span>
+</div>
+</div>
+</div>
+<!-- Collapsible Details Toggle & Drawer -->
+<div class="pt-space-sm">
+<button class="w-full flex items-center justify-between p-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface" id="toggle-details-btn" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">account_tree</span>
+<span class="font-label-code text-label-code font-semibold tracking-wider uppercase">Verification Details &amp; Graph Citations</span>
+</div>
+<div class="flex items-center gap-1 font-label-code text-label-code text-on-surface-variant">
+<span id="details-status-text">Show Graph Trace</span>
+<span class="material-symbols-outlined text-[18px] transition-transform" id="details-arrow">expand_more</span>
+</div>
+</button>
+<div class="hidden flex-col gap-space-sm p-space-md bg-surface-container-lowest rounded-b-lg mt-0.5 font-code-md text-code-md text-on-surface-variant" id="details-drawer">
+<div class="flex items-start gap-space-sm">
+<span class="text-secondary font-bold shrink-0">[S1]</span>
+<span><span class="text-on-surface">CODEOWNERS:L14</span> - Pattern <code class="text-primary font-semibold">/api/gateway/**</code> explicitly assigned to @acme/platform-leads and @caleb-rivers.</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="text-secondary font-bold shrink-0">[S2]</span>
+<span><span class="text-on-surface">CODEOWNERS:L9</span> - Pattern <code class="text-primary font-semibold">/services/payments-core/**</code> mapped to @acme/payments-leads and @clara-oswald.</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="text-secondary font-bold shrink-0">[S3]</span>
+<span><span class="text-on-surface">Workday Org sync:</span> @jordan-hayes marked inactive • Offboarded 2024-11-15.</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="text-secondary font-bold shrink-0">[S4]</span>
+<span><span class="text-on-surface">RFC Tracker:</span> RFC-42 (Webhook Decoupling) status: <span class="text-tertiary-container">Under Review</span>. Target release: Q2 2025.</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Bottom Composer Query Input -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest rounded-lg px-space-md py-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">psychology</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none" placeholder="Ask a deterministic repository query or type / for slash commands..." type="text" value="Who should review changes to auth and payments?"/>
+<div class="flex items-center gap-space-xs shrink-0">
+<kbd class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-outline hidden sm:inline-block">Cmd + K</kbd>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm px-1">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-code text-label-code">
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+              Depth: Strict (2 Hops)
+            </span>
+<span class="opacity-30">•</span>
+<span class="flex items-center gap-1 hover:text-on-surface cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+              Include RFC History
+            </span>
+</div>
+<div class="font-label-code text-label-code text-outline">
+            Tokens: 418 in / 612 out
+          </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interaction for Details Drawer
+  const toggleBtn = document.getElementById('toggle-details-btn');
+  const detailsDrawer = document.getElementById('details-drawer');
+  const detailsArrow = document.getElementById('details-arrow');
+  const detailsText = document.getElementById('details-status-text');
+
+  if (toggleBtn && detailsDrawer && detailsArrow && detailsText) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = detailsDrawer.classList.contains('hidden');
+      if (isHidden) {
+        detailsDrawer.classList.remove('hidden');
+        detailsDrawer.classList.add('flex');
+        detailsArrow.classList.add('rotate-180');
+        detailsText.textContent = 'Hide Graph Trace';
+      } else {
+        detailsDrawer.classList.add('hidden');
+        detailsDrawer.classList.remove('flex');
+        detailsArrow.classList.remove('rotate-180');
+        detailsText.textContent = 'Show Graph Trace';
+      }
+    });
+  }
+
+  // Toggle modes active state representation
+  const graphOn = document.getElementById('toggle-graph-on');
+  const graphOff = document.getElementById('toggle-graph-off');
+
+  if (graphOn && graphOff) {
+    graphOn.addEventListener('click', () => {
+      graphOn.className = 'py-1.5 px-space-sm rounded font-label-code text-label-code font-semibold tracking-wide bg-primary text-on-primary transition-all flex items-center justify-center gap-1.5 shadow-sm';
+      graphOff.className = 'py-1.5 px-space-sm rounded font-label-code text-label-code font-medium tracking-wide text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center gap-1.5';
+    });
+
+    graphOff.addEventListener('click', () => {
+      graphOff.className = 'py-1.5 px-space-sm rounded font-label-code text-label-code font-semibold tracking-wide bg-primary text-on-primary transition-all flex items-center justify-center gap-1.5 shadow-sm';
+      graphOn.className = 'py-1.5 px-space-sm rounded font-label-code text-label-code font-medium tracking-wide text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center justify-center gap-1.5';
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-md"><div class="w-full max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between font-label-code text-label-code text-on-surface-variant"><span class="tracking-wide">Synthetic data: Acme Platform Inc.</span><span class="opacity-50">RepoBrain Core v2.4</span></div></footer></body></html>

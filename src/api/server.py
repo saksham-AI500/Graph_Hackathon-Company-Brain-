@@ -24,11 +24,19 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from src.agent.client import OpenRouterClient
+from src.agent.client import (
+    OpenRouterAuthError,
+    OpenRouterClient,
+    OpenRouterClientError,
+    OpenRouterRateLimitError,
+)
 from src.agent.loop import AgentExecutionLoop
 from src.agent.models import AgentAnswer, AgentRequest
 from src.db import FalkorDBClient
@@ -42,6 +50,122 @@ app = FastAPI(
     description="Company Brain for Graph Hacks 2026, Track 03 backend service",
     version="1.0.0",
 )
+
+
+class ApiError(HTTPException):
+    """Standardized API Error adhering to error response contract."""
+    def __init__(
+        self,
+        code: str,
+        message: str,
+        status_code: int = 400,
+        retryable: Optional[bool] = None,
+    ):
+        if retryable is None:
+            retryable = code in ("PROVIDER_RATE_LIMIT", "BACKEND_UNAVAILABLE")
+        self.code = code
+        self.message = message
+        self.retryable = retryable
+        super().__init__(
+            status_code=status_code,
+            detail={"code": code, "message": message, "retryable": retryable},
+        )
+
+
+@app.exception_handler(ApiError)
+async def api_error_handler(request: Request, exc: ApiError):
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={
+            "error": {
+                "code": exc.code,
+                "message": exc.message,
+                "retryable": exc.retryable,
+            }
+        },
+    )
+
+
+@app.exception_handler(RequestValidationError)
+async def validation_error_handler(request: Request, exc: RequestValidationError):
+    return JSONResponse(
+        status_code=400,
+        content={
+            "error": {
+                "code": "INVALID_REQUEST",
+                "message": str(exc),
+                "retryable": False,
+            }
+        },
+    )
+
+
+@app.exception_handler(OpenRouterRateLimitError)
+async def ratelimit_error_handler(request: Request, exc: OpenRouterRateLimitError):
+    return JSONResponse(
+        status_code=429,
+        content={
+            "error": {
+                "code": "PROVIDER_RATE_LIMIT",
+                "message": str(exc),
+                "retryable": True,
+            }
+        },
+    )
+
+
+@app.exception_handler(OpenRouterAuthError)
+async def auth_error_handler(request: Request, exc: OpenRouterAuthError):
+    return JSONResponse(
+        status_code=401,
+        content={
+            "error": {
+                "code": "MISSING_KEY",
+                "message": str(exc),
+                "retryable": False,
+            }
+        },
+    )
+
+
+@app.exception_handler(StarletteHTTPException)
+async def starlette_http_exception_handler(request: Request, exc: StarletteHTTPException):
+    if isinstance(exc.detail, dict) and "code" in exc.detail:
+        code = exc.detail.get("code", "INVALID_REQUEST")
+        msg = exc.detail.get("message", str(exc.detail))
+        retryable = exc.detail.get("retryable", code in ("PROVIDER_RATE_LIMIT", "BACKEND_UNAVAILABLE"))
+    else:
+        msg = str(exc.detail)
+        if exc.status_code == 400:
+            code = "INVALID_REQUEST"
+            retryable = False
+        elif exc.status_code in (401, 403):
+            code = "MISSING_KEY"
+            retryable = False
+        elif exc.status_code == 402:
+            code = "PROVIDER_CREDITS"
+            retryable = False
+        elif exc.status_code == 429:
+            code = "PROVIDER_RATE_LIMIT"
+            retryable = True
+        elif exc.status_code == 404:
+            code = "INVALID_REQUEST"
+            retryable = False
+        else:
+            code = "BACKEND_UNAVAILABLE"
+            retryable = True
+
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={
+            "error": {
+                "code": code,
+                "message": msg,
+                "retryable": retryable,
+            }
+        },
+    )
+
 
 # CORS middleware for development and React UI
 app.add_middleware(
@@ -115,6 +239,7 @@ def root():
             "GET /api/changes",
             "GET /api/stats",
             "POST /api/eval/run",
+            "GET /api/eval/results",
             "GET /api/health",
         ],
     }
@@ -138,9 +263,11 @@ def ask_question(body: AskRequest):
     """Answer an engineering question under 'graph_on' or 'graph_off' mode."""
     mode = body.mode.strip().lower()
     if mode not in ("graph_on", "graph_off"):
-        raise HTTPException(
+        raise ApiError(
+            code="INVALID_REQUEST",
+            message=f"Invalid mode '{body.mode}'. Supported modes are strictly 'graph_on' and 'graph_off'.",
             status_code=400,
-            detail=f"Invalid mode '{body.mode}'. Supported modes are strictly 'graph_on' and 'graph_off'.",
+            retryable=False,
         )
 
     loop = get_agent_loop()
@@ -169,6 +296,22 @@ def ask_question(body: AskRequest):
     return resp
 
 
+def _find_matching_rubric_qid(question: str) -> Optional[str]:
+    """Find matching dev rubric question ID if one exists for the input question."""
+    q_norm = question.strip().lower()
+    from scripts.run_dev_comparison import DEV_QUESTIONS
+    for item in DEV_QUESTIONS:
+        item_q = item["question"].strip().lower()
+        if item_q == q_norm or item_q in q_norm or q_norm in item_q:
+            return item["id"]
+        words = [w for w in item_q.replace("?", "").replace("/", " ").replace(",", "").split() if len(w) > 3]
+        if words:
+            matched = sum(1 for w in words if w in q_norm)
+            if matched / len(words) >= 0.7:
+                return item["id"]
+    return None
+
+
 @app.post("/api/compare")
 def compare_question(body: CompareRequest):
     """Run Graph ON vs Graph OFF comparison on a user question."""
@@ -180,6 +323,23 @@ def compare_question(body: CompareRequest):
     req_off = AgentRequest(question=body.question, as_of=body.as_of, mode="graph_off")
     ans_off = loop.run(req_off)
     resp_off = ans_off.to_api_response()
+
+    rubric_qid = _find_matching_rubric_qid(body.question)
+    difference_counts = None
+    if rubric_qid:
+        from scripts.run_dev_comparison import score_answer_against_rubric
+        on_correct, on_passed, on_viols = score_answer_against_rubric(
+            rubric_qid, resp_on.get("answer", ""), resp_on.get("status", ""), "graph_on"
+        )
+        off_correct, off_passed, off_viols = score_answer_against_rubric(
+            rubric_qid, resp_off.get("answer", ""), resp_off.get("status", ""), "graph_off"
+        )
+        difference_counts = {
+            "claims_diff": len(resp_on.get("claims", [])) - len(resp_off.get("claims", [])),
+            "sources_diff": len(resp_on.get("sources", [])) - len(resp_off.get("sources", [])),
+            "facts_passed_diff": len(on_passed) - len(off_passed),
+            "violations_diff": len(off_viols) - len(on_viols),
+        }
 
     return {
         "question": body.question,
@@ -195,6 +355,7 @@ def compare_question(body: CompareRequest):
             "off_sources_count": len(resp_off.get("sources", [])),
             "fabricated_citations_in_off": resp_off.get("verifier", {}).get("fabricated_citations", 0),
             "verified": resp_on.get("status") == "VERIFIED",
+            "difference_counts": difference_counts,
         },
     }
 
@@ -484,7 +645,6 @@ def get_graph_stats():
         "nodes_by_label": nodes_by_label,
         "edges_by_type": edges_by_type,
         "last_synced_at": "2026-09-30T23:59:59Z",
-        "model_slug": "deepseek/deepseek-chat",
         "active_model": get_agent_loop().llm_client.model,
     }
 
@@ -496,9 +656,11 @@ def run_evaluation(body: EvalRunRequest):
     mode = body.mode.strip().lower()
 
     if mode not in ("graph_on", "graph_off"):
-        raise HTTPException(
+        raise ApiError(
+            code="INVALID_REQUEST",
+            message=f"Invalid mode '{body.mode}'. Supported modes are strictly 'graph_on' and 'graph_off'.",
             status_code=400,
-            detail=f"Invalid mode '{body.mode}'. Supported modes are strictly 'graph_on' and 'graph_off'.",
+            retryable=False,
         )
 
     # 1. Dev split
@@ -523,16 +685,20 @@ def run_evaluation(body: EvalRunRequest):
     elif split == "holdout":
         holdout_path = Path(__file__).parent.parent.parent / "data" / "synthetic" / "holdout_sealed.json"
         if not holdout_path.exists():
-            raise HTTPException(
+            raise ApiError(
+                code="BACKEND_UNAVAILABLE",
+                message="Holdout dataset is not yet frozen or external writer has not finalized holdout_sealed.json.",
                 status_code=404,
-                detail="Holdout dataset is not yet frozen or external writer has not finalized holdout_sealed.json.",
+                retryable=False,
             )
         with open(holdout_path, "r", encoding="utf-8") as f:
             questions = json.load(f)
     else:
-        raise HTTPException(
+        raise ApiError(
+            code="INVALID_REQUEST",
+            message=f"Unknown evaluation split '{body.split}'. Must be 'dev', 'failure', or 'holdout'.",
             status_code=400,
-            detail=f"Unknown evaluation split '{body.split}'. Must be 'dev', 'failure', or 'holdout'.",
+            retryable=False,
         )
 
     if body.limit:
@@ -612,4 +778,40 @@ def run_evaluation(body: EvalRunRequest):
         "refusal_correct_count": refusal_correct_count,
         "mean_latency_ms": mean_lat,
         "results": results,
+    }
+
+
+@app.get("/api/eval/results")
+def get_eval_results():
+    """Return saved development evaluation results without calling live model."""
+    root = Path(__file__).resolve().parent.parent.parent
+    dev_path = root / "project_context" / "eval_v2" / "summary_development.json"
+    if dev_path.exists():
+        try:
+            with open(dev_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as exc:
+            logger.warning("Error reading summary_development.json: %s", exc)
+
+    chat_summary = root / "project_context" / "eval_v2" / "chat_runs" / "summary.json"
+    if chat_summary.exists():
+        try:
+            with open(chat_summary, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+
+    checkpoint = root / "project_context" / "dev_run_checkpoint.json"
+    if checkpoint.exists():
+        try:
+            with open(checkpoint, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+
+    return {
+        "split": "development",
+        "status": "completed",
+        "saved_results_available": False,
+        "message": "No saved evaluation results found on disk.",
     }

@@ -1,0 +1,39 @@
+{
+  "run_id": "sync_1792330593",
+  "repo": "saksham-AI500/company-brain-synthetic-testbed",
+  "status": "completed",
+  "events_processed": 30,
+  "mutations_applied": 3,
+  "failures": 0,
+  "dry_run": true,
+  "synced_at": "2026-10-18T13:36:33.108137+00:00",
+  "changes": [
+    {
+      "id": "chg_720",
+      "entity": "PR #720",
+      "type": "PullRequest",
+      "action": "MERGED",
+      "timestamp": "2026-09-30T18:00:00Z",
+      "summary": "Optimize pool checkout timeout and add retry jitter",
+      "author": "marcus-vance"
+    },
+    {
+      "id": "chg_350",
+      "entity": "Issue #350",
+      "type": "Issue",
+      "action": "CLOSED",
+      "timestamp": "2026-09-30T18:30:00Z",
+      "summary": "Intermittent timeout on concurrent billing webhooks",
+      "author": "priya-sharma"
+    },
+    {
+      "id": "chg_chat_01",
+      "entity": "#team-payments/thread_142",
+      "type": "Comment",
+      "action": "DECISION_RECORDED",
+      "timestamp": "2026-09-30T20:15:00Z",
+      "summary": "Team agreed to cap checkout retry attempts at 3",
+      "author": "gabriel-santos"
+    }
+  ]
+}

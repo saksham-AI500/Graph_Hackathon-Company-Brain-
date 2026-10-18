@@ -1,0 +1,46 @@
+{
+  "since": null,
+  "count": 4,
+  "changes": [
+    {
+      "id": "chg_720",
+      "entity": "PR #720",
+      "type": "PullRequest",
+      "action": "MERGED",
+      "timestamp": "2026-09-30T18:00:00Z",
+      "summary": "Optimize pool checkout timeout and add retry jitter",
+      "author": "marcus-vance",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/720"
+    },
+    {
+      "id": "chg_350",
+      "entity": "Issue #350",
+      "type": "Issue",
+      "action": "CLOSED",
+      "timestamp": "2026-09-30T18:30:00Z",
+      "summary": "Intermittent timeout on concurrent billing webhooks",
+      "author": "priya-sharma",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/issues/350"
+    },
+    {
+      "id": "chg_chat_01",
+      "entity": "#team-payments/thread_142",
+      "type": "Comment",
+      "action": "DECISION_RECORDED",
+      "timestamp": "2026-09-30T20:15:00Z",
+      "summary": "Team agreed to cap checkout retry attempts at 3",
+      "author": "gabriel-santos",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/data/synthetic/chats/team-payments.json"
+    },
+    {
+      "id": "chg_doc_01",
+      "entity": "docs/runbooks/payment-pipeline-recovery.md",
+      "type": "Document",
+      "action": "MODIFIED",
+      "timestamp": "2026-09-28T14:00:00Z",
+      "summary": "Updated runbook recovery steps for settlements",
+      "author": "elena-rostova",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md"
+    }
+  ]
+}

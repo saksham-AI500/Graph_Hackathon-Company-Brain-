@@ -1,0 +1,122 @@
+{
+  "question": "Who owns payments/refund.py according to CODEOWNERS?",
+  "as_of": null,
+  "graph_on": {
+    "answer": "File or module `payments/refund.py` is declared in CODEOWNERS under rule `payments/` with owner(s): @acme/payments [S1].\nTeam status: ACTIVE.",
+    "status": "VERIFIED",
+    "context": "As of latest synchronized data",
+    "ranking": [],
+    "reasoning": "",
+    "claims": [
+      {
+        "id": "C1",
+        "text": "File or module payments/refund.py is owned by @acme/payments according to CODEOWNERS rule payments/.",
+        "type": "fact",
+        "source_ids": [
+          "S1"
+        ],
+        "verified": true,
+        "verification_path": "exact_lookup"
+      }
+    ],
+    "excluded": [],
+    "unresolved": [],
+    "sources": [
+      {
+        "id": "S1",
+        "entity": "payments/refund.py",
+        "entity_type": "File",
+        "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L10",
+        "date": "",
+        "quote": ""
+      }
+    ],
+    "mode": "graph_on",
+    "as_of": null,
+    "synced_at": "2026-09-30T23:59:59Z",
+    "model": "deepseek/deepseek-chat",
+    "tool_calls": [
+      {
+        "tool": "freshness_check",
+        "args": {},
+        "result_count": 1,
+        "ms": 0
+      },
+      {
+        "tool": "intent_classification",
+        "args": {},
+        "result_count": 1,
+        "ms": 0
+      }
+    ],
+    "verifier": {
+      "claims_total": 1,
+      "claims_passed": 1,
+      "claims_fully_supported": 1,
+      "sources_valid": 1,
+      "sources_total": 1,
+      "sentences_total": 1,
+      "sentences_passed": 1,
+      "post_hoc_citations": 0,
+      "sentence_logs": [
+        {
+          "sentence": "File or module payments/refund.py is declared in CODEOWNERS under rule payments/ with owner(s): @acme/payments [S1].",
+          "claim_ids": [
+            "C1"
+          ],
+          "cited_sources": [
+            "S1"
+          ],
+          "verification_path": "exact_lookup",
+          "score": 1.0,
+          "passed": true,
+          "reason": null
+        }
+      ]
+    }
+  },
+  "graph_off": {
+    "answer": "I don't have Acme's repository data, so I cannot confirm which team owns payments/.",
+    "status": "ANSWERED_UNCERTAIN",
+    "context": "As of latest synchronized data",
+    "ranking": [],
+    "reasoning": "",
+    "claims": [],
+    "excluded": [],
+    "unresolved": [],
+    "sources": [],
+    "mode": "graph_off",
+    "as_of": null,
+    "synced_at": "2026-09-30T23:59:59Z",
+    "model": "deepseek/deepseek-chat",
+    "tool_calls": [],
+    "verifier": {
+      "claims_total": 0,
+      "claims_passed": 0,
+      "claims_fully_supported": 0,
+      "sources_valid": 0,
+      "sources_total": 0,
+      "sentences_total": 0,
+      "sentences_passed": 0,
+      "post_hoc_citations": 0,
+      "fabricated_citations": 0,
+      "sentence_logs": []
+    }
+  },
+  "comparison": {
+    "on_status": "VERIFIED",
+    "off_status": "ANSWERED_UNCERTAIN",
+    "on_claims_count": 1,
+    "off_claims_count": 0,
+    "on_sources_count": 1,
+    "off_sources_count": 0,
+    "fabricated_citations_in_off": 0,
+    "verified": true,
+    "difference_counts": {
+      "claims_diff": 1,
+      "sources_diff": 1,
+      "facts_passed_diff": 1,
+      "violations_diff": 0
+    }
+  }
+}

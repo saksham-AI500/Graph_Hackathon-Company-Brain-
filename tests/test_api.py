@@ -78,14 +78,18 @@ def test_ask_graph_off_mode(client):
 
 
 def test_ask_invalid_mode_rejected(client):
-    """Plain retrieval baseline or arbitrary mode must be rejected with HTTP 400."""
+    """Plain retrieval baseline or arbitrary mode must be rejected with error contract."""
     payload = {
         "question": "Who owns src/module.c?",
         "mode": "plain_retrieval",
     }
     response = client.post("/api/ask", json=payload)
     assert response.status_code == 400
-    assert "strictly 'graph_on' and 'graph_off'" in response.json()["detail"]
+    data = response.json()
+    assert "error" in data
+    assert data["error"]["code"] == "INVALID_REQUEST"
+    assert "strictly 'graph_on' and 'graph_off'" in data["error"]["message"]
+    assert data["error"]["retryable"] is False
 
 
 def test_graph_neighborhood(client):
@@ -125,15 +129,15 @@ def test_changes_feed(client):
 
 
 def test_stats_endpoint(client):
-    """Verify GET /api/stats returns counts, sync time, and model slug."""
+    """Verify GET /api/stats returns counts, sync time, and active_model."""
     response = client.get("/api/stats")
     assert response.status_code == 200
     data = response.json()
     assert "node_count" in data
     assert "edge_count" in data
     assert "last_synced_at" in data
-    assert "model_slug" in data
-    assert data["model_slug"] == "deepseek/deepseek-chat"
+    assert "active_model" in data
+    assert "model_slug" not in data
 
 
 def test_eval_run_dev_endpoint(client):
@@ -151,3 +155,11 @@ def test_eval_run_dev_endpoint(client):
     assert data["total_questions"] == 2
     assert "accuracy" in data
     assert "results" in data
+
+
+def test_eval_results_endpoint(client):
+    """Verify GET /api/eval/results returns saved dev results without calling live model."""
+    response = client.get("/api/eval/results")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, dict)
