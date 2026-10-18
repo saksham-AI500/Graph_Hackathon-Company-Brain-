@@ -1,0 +1,175 @@
+{
+  "id": 1000612,
+  "number": 612,
+  "state": "closed",
+  "title": "refactor(infra_observability): update dashboard_generator.py",
+  "body": "Implementation changes for infra_observability module improvements.\n\nFixes #99",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-08-06T13:52:41Z",
+  "updated_at": "2026-08-07T13:52:41Z",
+  "closed_at": "2026-08-07T13:52:41Z",
+  "merged_at": "2026-08-07T13:52:41Z",
+  "merge_commit_sha": "4bff608ae633",
+  "head": {
+    "ref": "feature/pr-612",
+    "sha": "4bff608ae633"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/612",
+  "files": [
+    {
+      "filename": "infra/observability/dashboard_generator.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 9,
+      "changes": 38
+    },
+    {
+      "filename": "infra/observability/__pycache__/dashboard_generator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 15,
+      "changes": 52
+    },
+    {
+      "filename": "infra/observability/logger.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 9,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f61825f3bc54",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-06T13:52:41Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-06T13:52:41Z"
+        },
+        "message": "commit 1 for PR #612: refactor(infra_observability): update dashboard_generator.py"
+      }
+    },
+    {
+      "sha": "4bff608ae633",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-06T14:22:41Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-06T14:22:41Z"
+        },
+        "message": "commit 2 for PR #612: refactor(infra_observability): update dashboard_generator.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 61201,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-08T05:52:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/612#pullrequestreview-61201"
+    },
+    {
+      "id": 61202,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-08T05:52:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/612#pullrequestreview-61202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3228,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3228: verify boundary checks on line 15.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 15
+    },
+    {
+      "id": 3229,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3229: verify boundary checks on line 25.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 25
+    },
+    {
+      "id": 3230,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3230: verify boundary checks on line 35.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 35
+    },
+    {
+      "id": 3231,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3231: verify boundary checks on line 15.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 15
+    },
+    {
+      "id": 3232,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3232: verify boundary checks on line 25.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 25
+    },
+    {
+      "id": 3233,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3233: verify boundary checks on line 35.",
+      "created_at": "2026-08-08T05:52:41Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": 1000238,
+  "number": 238,
+  "state": "closed",
+  "title": "test(billing): update notifications_billing.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-01-29T07:16:04Z",
+  "updated_at": "2026-02-01T05:16:04Z",
+  "closed_at": "2026-02-01T05:16:04Z",
+  "merged_at": "2026-02-01T05:16:04Z",
+  "merge_commit_sha": "d2815e6bdf17",
+  "head": {
+    "ref": "feature/pr-238",
+    "sha": "d2815e6bdf17"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/238",
+  "files": [
+    {
+      "filename": "billing/notifications_billing.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 9,
+      "changes": 14
+    },
+    {
+      "filename": "billing/invoicing.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 2,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f02407feacbd",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T07:16:04Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T07:16:04Z"
+        },
+        "message": "commit 1 for PR #238: test(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "9d41f0180371",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T07:46:04Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T07:46:04Z"
+        },
+        "message": "commit 2 for PR #238: test(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "a53b65f831f0",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T08:16:04Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T08:16:04Z"
+        },
+        "message": "commit 3 for PR #238: test(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "2d06bf435883",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T08:46:04Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T08:46:04Z"
+        },
+        "message": "commit 4 for PR #238: test(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "d2815e6bdf17",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T09:16:04Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-01-29T09:16:04Z"
+        },
+        "message": "commit 5 for PR #238: test(billing): update notifications_billing.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

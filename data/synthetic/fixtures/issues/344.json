@@ -1,0 +1,58 @@
+{
+  "id": 2000344,
+  "number": 344,
+  "title": "FEATURE: search-indexer improvements for throughput",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 24905,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-23T10:55:21Z",
+  "updated_at": "2026-09-23T10:55:21Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71407,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1407 on issue #344: updates from triage and reproduction steps.",
+      "created_at": "2026-09-24T06:55:21Z"
+    },
+    {
+      "id": 71408,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #1408 on issue #344: updates from triage and reproduction steps.",
+      "created_at": "2026-09-25T02:55:21Z"
+    },
+    {
+      "id": 71409,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #1409 on issue #344: updates from triage and reproduction steps.",
+      "created_at": "2026-09-25T16:55:21Z"
+    },
+    {
+      "id": 71410,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #1410 on issue #344: updates from triage and reproduction steps.",
+      "created_at": "2026-09-26T03:55:21Z"
+    }
+  ]
+}

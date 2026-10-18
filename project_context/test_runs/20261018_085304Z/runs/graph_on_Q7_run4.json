@@ -1,0 +1,100 @@
+{
+  "question_id": "Q7",
+  "question": "Who should review a new PR touching both auth/ and payments/? Rank with evidence.",
+  "mode": "graph_on",
+  "run_index": 4,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:00:05.374597+00:00",
+  "latency_ms": 17270.57,
+  "claims_count": 0,
+  "sources_count": 4,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "CODEOWNERS line 10",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L10",
+      "title_or_desc": "CODEOWNERS line 10",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "CODEOWNERS line 10",
+      "description": "CODEOWNERS line 10"
+    },
+    {
+      "id": "S4",
+      "entity_type": "Evidence",
+      "identifier": "CODEOWNERS line 6",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L6",
+      "title_or_desc": "CODEOWNERS line 6",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S4",
+      "entity_id": "CODEOWNERS line 6",
+      "description": "CODEOWNERS line 6"
+    },
+    {
+      "id": "S3",
+      "entity_type": "Evidence",
+      "identifier": "PR #237, 2026-09-02",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/237",
+      "title_or_desc": "PR #237, 2026-09-02",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S3",
+      "entity_id": "PR #237, 2026-09-02",
+      "description": "PR #237, 2026-09-02"
+    },
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "PR #236, 2026-08-14",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/236",
+      "title_or_desc": "PR #236, 2026-08-14",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "PR #236, 2026-08-14",
+      "description": "PR #236, 2026-08-14"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "1. **marcus-vance** (score 0.835):  \n   - 9 reviews in  in the last 90 days.  \n   - Declared owner for  in CODEOWNERS [S1][S2].",
+      "claim_ids": [],
+      "cited_sources": [
+        "S1",
+        "S2"
+      ],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

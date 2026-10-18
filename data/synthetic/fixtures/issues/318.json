@@ -1,0 +1,40 @@
+{
+  "id": 2000318,
+  "number": 318,
+  "title": "BUG: growth-referrals improvements for caching",
+  "body": "Detailed description for bug tracking in module growth/referrals/.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 25337,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-27T09:37:56Z",
+  "updated_at": "2026-08-27T09:37:56Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71307,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1307 on issue #318: updates from triage and reproduction steps.",
+      "created_at": "2026-08-28T03:37:56Z"
+    },
+    {
+      "id": 71308,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #1308 on issue #318: updates from triage and reproduction steps.",
+      "created_at": "2026-08-28T07:37:56Z"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": 1000660,
+  "number": 660,
+  "state": "open",
+  "title": "refactor(growth_referrals): update notification_referral.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-08-31T09:35:49Z",
+  "updated_at": "2026-08-31T09:35:49Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-660",
+    "sha": "691949818864"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/660",
+  "files": [
+    {
+      "filename": "growth/referrals/notification_referral.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 1,
+      "changes": 60
+    },
+    {
+      "filename": "growth/referrals/__pycache__/invite_codes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 11,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0e5778619dac",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T09:35:49Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T09:35:49Z"
+        },
+        "message": "commit 1 for PR #660: refactor(growth_referrals): update notification_referral.py"
+      }
+    },
+    {
+      "sha": "5ba2181b79f5",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T10:05:49Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T10:05:49Z"
+        },
+        "message": "commit 2 for PR #660: refactor(growth_referrals): update notification_referral.py"
+      }
+    },
+    {
+      "sha": "3a3f6a6fe452",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T10:35:49Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T10:35:49Z"
+        },
+        "message": "commit 3 for PR #660: refactor(growth_referrals): update notification_referral.py"
+      }
+    },
+    {
+      "sha": "691949818864",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T11:05:49Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-31T11:05:49Z"
+        },
+        "message": "commit 4 for PR #660: refactor(growth_referrals): update notification_referral.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 66001,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-01T04:35:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/660#pullrequestreview-66001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3474,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3474: verify boundary checks on line 15.",
+      "created_at": "2026-09-01T04:35:49Z",
+      "path": "growth/referrals/notification_referral.py",
+      "line": 15
+    },
+    {
+      "id": 3475,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3475: verify boundary checks on line 25.",
+      "created_at": "2026-09-01T04:35:49Z",
+      "path": "growth/referrals/notification_referral.py",
+      "line": 25
+    },
+    {
+      "id": 3476,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3476: verify boundary checks on line 35.",
+      "created_at": "2026-09-01T04:35:49Z",
+      "path": "growth/referrals/notification_referral.py",
+      "line": 35
+    },
+    {
+      "id": 3477,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3477: verify boundary checks on line 45.",
+      "created_at": "2026-09-01T04:35:49Z",
+      "path": "growth/referrals/notification_referral.py",
+      "line": 45
+    }
+  ]
+}

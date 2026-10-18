@@ -1,0 +1,67 @@
+{
+  "id": 2000188,
+  "number": 188,
+  "title": "PERF: shared-utils improvements for caching",
+  "body": "Detailed description for perf tracking in module shared/utils/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-14T00:53:27Z",
+  "updated_at": "2026-05-02T00:53:27Z",
+  "closed_at": "2026-05-02T00:53:27Z",
+  "labels": [
+    "perf",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70768,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #768 on issue #188: updates from triage and reproduction steps.",
+      "created_at": "2026-04-14T08:53:27Z"
+    },
+    {
+      "id": 70769,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #769 on issue #188: updates from triage and reproduction steps.",
+      "created_at": "2026-04-15T07:53:27Z"
+    },
+    {
+      "id": 70770,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #770 on issue #188: updates from triage and reproduction steps.",
+      "created_at": "2026-04-15T20:53:27Z"
+    },
+    {
+      "id": 70771,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #771 on issue #188: updates from triage and reproduction steps.",
+      "created_at": "2026-04-15T22:53:27Z"
+    },
+    {
+      "id": 70772,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #772 on issue #188: updates from triage and reproduction steps.",
+      "created_at": "2026-04-16T09:53:27Z"
+    }
+  ]
+}

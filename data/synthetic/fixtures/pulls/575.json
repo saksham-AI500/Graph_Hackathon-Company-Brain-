@@ -1,0 +1,133 @@
+{
+  "id": 1000575,
+  "number": 575,
+  "state": "closed",
+  "title": "chore(billing): update plans.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.\n\nCloses #133",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-07-17T20:41:20Z",
+  "updated_at": "2026-07-19T21:41:20Z",
+  "closed_at": "2026-07-19T21:41:20Z",
+  "merged_at": "2026-07-19T21:41:20Z",
+  "merge_commit_sha": "f8cbc3f4fac9",
+  "head": {
+    "ref": "feature/pr-575",
+    "sha": "f8cbc3f4fac9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/575",
+  "files": [
+    {
+      "filename": "billing/__pycache__/plans.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 13,
+      "changes": 59
+    },
+    {
+      "filename": "billing/__pycache__/currency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 10,
+      "changes": 40
+    },
+    {
+      "filename": "billing/proration.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 10,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b82a9d9df50d",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T20:41:20Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T20:41:20Z"
+        },
+        "message": "commit 1 for PR #575: chore(billing): update plans.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "faad62511855",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T21:11:20Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T21:11:20Z"
+        },
+        "message": "commit 2 for PR #575: chore(billing): update plans.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "13b0d5b726c0",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T21:41:20Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T21:41:20Z"
+        },
+        "message": "commit 3 for PR #575: chore(billing): update plans.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d2bb3f73115d",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T22:11:20Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T22:11:20Z"
+        },
+        "message": "commit 4 for PR #575: chore(billing): update plans.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f8cbc3f4fac9",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T22:41:20Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-17T22:41:20Z"
+        },
+        "message": "commit 5 for PR #575: chore(billing): update plans.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

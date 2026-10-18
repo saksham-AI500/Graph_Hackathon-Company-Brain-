@@ -1,0 +1,200 @@
+{
+  "id": 1000415,
+  "number": 415,
+  "state": "closed",
+  "title": "feat(payments/billing): automatic currency ledger reconciliation",
+  "body": "Reconcile daily payments volume directly with billing invoice generation.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-04-28T20:59:22Z",
+  "updated_at": "2026-05-01T06:59:22Z",
+  "closed_at": "2026-05-01T06:59:22Z",
+  "merged_at": "2026-05-01T06:59:22Z",
+  "merge_commit_sha": "c52757b8d900",
+  "head": {
+    "ref": "feature/pr-415",
+    "sha": "c52757b8d900"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/415",
+  "files": [
+    {
+      "filename": "payments/ledger.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 8,
+      "changes": 31
+    },
+    {
+      "filename": "billing/invoicing.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 14,
+      "changes": 23
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1039621ed80d",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T20:59:22Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T20:59:22Z"
+        },
+        "message": "commit 1 for PR #415: feat(payments/billing): automatic currency ledger reconciliation"
+      }
+    },
+    {
+      "sha": "cab800096e96",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T21:29:22Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T21:29:22Z"
+        },
+        "message": "commit 2 for PR #415: feat(payments/billing): automatic currency ledger reconciliation"
+      }
+    },
+    {
+      "sha": "353aa3d6fa77",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T21:59:22Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T21:59:22Z"
+        },
+        "message": "commit 3 for PR #415: feat(payments/billing): automatic currency ledger reconciliation"
+      }
+    },
+    {
+      "sha": "c52757b8d900",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T22:29:22Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-04-28T22:29:22Z"
+        },
+        "message": "commit 4 for PR #415: feat(payments/billing): automatic currency ledger reconciliation"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 41501,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-30T07:59:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/415#pullrequestreview-41501"
+    },
+    {
+      "id": 41502,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-30T07:59:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/415#pullrequestreview-41502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2204,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2204: verify boundary checks on line 15.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 15
+    },
+    {
+      "id": 2205,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2205: verify boundary checks on line 25.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 25
+    },
+    {
+      "id": 2206,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2206: verify boundary checks on line 35.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 35
+    },
+    {
+      "id": 2207,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2207: verify boundary checks on line 45.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 45
+    },
+    {
+      "id": 2208,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2208: verify boundary checks on line 15.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 15
+    },
+    {
+      "id": 2209,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2209: verify boundary checks on line 25.",
+      "created_at": "2026-04-30T07:59:22Z",
+      "path": "payments/ledger.py",
+      "line": 25
+    }
+  ]
+}

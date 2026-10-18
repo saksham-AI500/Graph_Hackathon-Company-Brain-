@@ -1,0 +1,22 @@
+{
+  "question_id": "Q7",
+  "question": "Who should review a new PR touching both auth/ and payments/? Rank with evidence.",
+  "mode": "graph_off",
+  "run_index": 3,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer who should review this PR or provide evidence-based rankings.  \n\nFor general guidance: cross-module PRs typically require reviewers from each affected area, ideally those with recent activity in both modules. The strongest candidates usually combine ownership declarations (like CODEOWNERS) with recent review history in the overlapping areas.  \n\nTo answer precisely, I'd need access to:  \n1. CODEOWNERS or module ownership declarations  \n2. Recent review activity in auth/ and payments/  \n3. Current team member status (active/on leave)  \n\nWithout this data, I cannot provide specific names or evidence.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:02:50.009384+00:00",
+  "latency_ms": 5043.01,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

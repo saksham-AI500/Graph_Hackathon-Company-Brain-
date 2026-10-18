@@ -1,0 +1,166 @@
+{
+  "id": 1000617,
+  "number": 617,
+  "state": "closed",
+  "title": "docs(search_indexer): update deduplication.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.\n\nCloses #87",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-08-10T02:24:38Z",
+  "updated_at": "2026-08-11T07:24:38Z",
+  "closed_at": "2026-08-11T07:24:38Z",
+  "merged_at": "2026-08-11T07:24:38Z",
+  "merge_commit_sha": "c9ad8b12ceba",
+  "head": {
+    "ref": "feature/pr-617",
+    "sha": "c9ad8b12ceba"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/617",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 2,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e210b11cf186",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T02:24:38Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T02:24:38Z"
+        },
+        "message": "commit 1 for PR #617: docs(search_indexer): update deduplication.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b75e8938bb60",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T02:54:38Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T02:54:38Z"
+        },
+        "message": "commit 2 for PR #617: docs(search_indexer): update deduplication.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c9ad8b12ceba",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T03:24:38Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-10T03:24:38Z"
+        },
+        "message": "commit 3 for PR #617: docs(search_indexer): update deduplication.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 61701,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-11T20:24:38Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/617#pullrequestreview-61701"
+    },
+    {
+      "id": 61702,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-11T20:24:38Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/617#pullrequestreview-61702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3253,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3253: verify boundary checks on line 15.",
+      "created_at": "2026-08-11T20:24:38Z",
+      "path": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3254,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3254: verify boundary checks on line 25.",
+      "created_at": "2026-08-11T20:24:38Z",
+      "path": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3255,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3255: verify boundary checks on line 35.",
+      "created_at": "2026-08-11T20:24:38Z",
+      "path": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3256,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 3256: verify boundary checks on line 15.",
+      "created_at": "2026-08-11T20:24:38Z",
+      "path": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3257,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 3257: verify boundary checks on line 25.",
+      "created_at": "2026-08-11T20:24:38Z",
+      "path": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

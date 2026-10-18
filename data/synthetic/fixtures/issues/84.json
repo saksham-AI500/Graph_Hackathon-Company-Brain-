@@ -1,0 +1,60 @@
+{
+  "id": 2000084,
+  "number": 84,
+  "title": "FEATURE: auth-mfa improvements for latency",
+  "body": "Detailed description for feature tracking in module auth/mfa/.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 28517,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-26T18:29:20Z",
+  "updated_at": "2025-12-26T18:29:20Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "auth-mfa"
+  ],
+  "linked_pulls": [
+    350
+  ],
+  "comments": [
+    {
+      "id": 70339,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #339 on issue #84: updates from triage and reproduction steps.",
+      "created_at": "2025-12-27T14:29:20Z"
+    },
+    {
+      "id": 70340,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #340 on issue #84: updates from triage and reproduction steps.",
+      "created_at": "2025-12-28T05:29:20Z"
+    },
+    {
+      "id": 70341,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #341 on issue #84: updates from triage and reproduction steps.",
+      "created_at": "2025-12-28T08:29:20Z"
+    },
+    {
+      "id": 70342,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #342 on issue #84: updates from triage and reproduction steps.",
+      "created_at": "2025-12-28T12:29:20Z"
+    }
+  ]
+}

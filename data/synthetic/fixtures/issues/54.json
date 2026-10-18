@@ -1,0 +1,78 @@
+{
+  "id": 2000054,
+  "number": 54,
+  "title": "FEATURE: search improvements for reliability",
+  "body": "Detailed description for feature tracking in module search/.",
+  "user": {
+    "login": "samir-patel",
+    "id": 22066,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-11-25T13:11:29Z",
+  "updated_at": "2025-11-25T13:11:29Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "search"
+  ],
+  "linked_pulls": [
+    536
+  ],
+  "comments": [
+    {
+      "id": 70216,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #216 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-25T21:11:29Z"
+    },
+    {
+      "id": 70217,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #217 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-26T00:11:29Z"
+    },
+    {
+      "id": 70218,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #218 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-26T14:11:29Z"
+    },
+    {
+      "id": 70219,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #219 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-26T19:11:29Z"
+    },
+    {
+      "id": 70220,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #220 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-27T15:11:29Z"
+    },
+    {
+      "id": 70221,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #221 on issue #54: updates from triage and reproduction steps.",
+      "created_at": "2025-11-28T09:11:29Z"
+    }
+  ]
+}

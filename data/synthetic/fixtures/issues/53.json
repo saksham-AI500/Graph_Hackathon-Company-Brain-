@@ -1,0 +1,60 @@
+{
+  "id": 2000053,
+  "number": 53,
+  "title": "BUG: growth-experiments improvements for security",
+  "body": "Detailed description for bug tracking in module growth/experiments/.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 21277,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-24T12:04:12Z",
+  "updated_at": "2025-12-24T12:04:12Z",
+  "closed_at": "2025-12-24T12:04:12Z",
+  "labels": [
+    "bug",
+    "growth-experiments"
+  ],
+  "linked_pulls": [
+    420
+  ],
+  "comments": [
+    {
+      "id": 70212,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #212 on issue #53: updates from triage and reproduction steps.",
+      "created_at": "2025-11-25T02:04:12Z"
+    },
+    {
+      "id": 70213,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #213 on issue #53: updates from triage and reproduction steps.",
+      "created_at": "2025-11-25T20:04:12Z"
+    },
+    {
+      "id": 70214,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #214 on issue #53: updates from triage and reproduction steps.",
+      "created_at": "2025-11-26T07:04:12Z"
+    },
+    {
+      "id": 70215,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #215 on issue #53: updates from triage and reproduction steps.",
+      "created_at": "2025-11-26T18:04:12Z"
+    }
+  ]
+}

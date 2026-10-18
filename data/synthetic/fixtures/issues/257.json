@@ -1,0 +1,49 @@
+{
+  "id": 2000257,
+  "number": 257,
+  "title": "INCIDENT: billing improvements for reliability",
+  "body": "Detailed description for incident tracking in module billing/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-24T21:06:11Z",
+  "updated_at": "2026-07-07T21:06:11Z",
+  "closed_at": "2026-07-07T21:06:11Z",
+  "labels": [
+    "incident",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71058,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #1058 on issue #257: updates from triage and reproduction steps.",
+      "created_at": "2026-06-25T04:06:11Z"
+    },
+    {
+      "id": 71059,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #1059 on issue #257: updates from triage and reproduction steps.",
+      "created_at": "2026-06-26T00:06:11Z"
+    },
+    {
+      "id": 71060,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1060 on issue #257: updates from triage and reproduction steps.",
+      "created_at": "2026-06-26T19:06:11Z"
+    }
+  ]
+}

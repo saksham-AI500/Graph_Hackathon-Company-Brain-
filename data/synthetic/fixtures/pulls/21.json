@@ -1,0 +1,182 @@
+{
+  "id": 1000021,
+  "number": 21,
+  "state": "closed",
+  "title": "chore(payments): update batch.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.\n\nCloses #71",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2025-10-10T12:24:08Z",
+  "updated_at": "2025-10-12T10:24:08Z",
+  "closed_at": "2025-10-12T10:24:08Z",
+  "merged_at": "2025-10-12T10:24:08Z",
+  "merge_commit_sha": "a24bdcb0d6ad",
+  "head": {
+    "ref": "feature/pr-21",
+    "sha": "a24bdcb0d6ad"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/21",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 11,
+      "changes": 36
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f1a21ead2d38",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T12:24:08Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T12:24:08Z"
+        },
+        "message": "commit 1 for PR #21: chore(payments): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a2a2a125603e",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T12:54:08Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T12:54:08Z"
+        },
+        "message": "commit 2 for PR #21: chore(payments): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "63b0aecbe6e5",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T13:24:08Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T13:24:08Z"
+        },
+        "message": "commit 3 for PR #21: chore(payments): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a24bdcb0d6ad",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T13:54:08Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-10-10T13:54:08Z"
+        },
+        "message": "commit 4 for PR #21: chore(payments): update batch.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 2101,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-12T06:24:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/21#pullrequestreview-2101"
+    },
+    {
+      "id": 2102,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-12T06:24:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/21#pullrequestreview-2102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 129,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 129: verify boundary checks on line 15.",
+      "created_at": "2025-10-12T06:24:08Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 130,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 130: verify boundary checks on line 25.",
+      "created_at": "2025-10-12T06:24:08Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 131,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 131: verify boundary checks on line 35.",
+      "created_at": "2025-10-12T06:24:08Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 132,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 132: verify boundary checks on line 15.",
+      "created_at": "2025-10-12T06:24:08Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 133,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 133: verify boundary checks on line 25.",
+      "created_at": "2025-10-12T06:24:08Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

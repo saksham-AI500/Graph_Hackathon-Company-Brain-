@@ -1,0 +1,22 @@
+{
+  "question_id": "Q11",
+  "question": "Which decisions affect auth/, listed by date, with sources?",
+  "mode": "graph_on",
+  "run_index": 2,
+  "status": "REFUSED",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer. To provide this information, I would need access to the repository's decision records and architectural documents related to the `auth/` module. If you can provide specific details or access to the repository data, I can assist further.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:01:01.685854+00:00",
+  "latency_ms": 3726.83,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

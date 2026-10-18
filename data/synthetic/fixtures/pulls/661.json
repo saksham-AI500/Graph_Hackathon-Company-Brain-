@@ -1,0 +1,185 @@
+{
+  "id": 1000661,
+  "number": 661,
+  "state": "closed",
+  "title": "docs(notifications): update README.md",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-08-31T21:24:47Z",
+  "updated_at": "2026-09-03T18:24:47Z",
+  "closed_at": "2026-09-03T18:24:47Z",
+  "merged_at": "2026-09-03T18:24:47Z",
+  "merge_commit_sha": "4960cb15666a",
+  "head": {
+    "ref": "feature/pr-661",
+    "sha": "4960cb15666a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/661",
+  "files": [
+    {
+      "filename": "notifications/README.md",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 4,
+      "changes": 13
+    },
+    {
+      "filename": "notifications/bounce_handler.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 13,
+      "changes": 32
+    },
+    {
+      "filename": "notifications/preferences.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 4,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "352ba0eab10e",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T21:24:47Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T21:24:47Z"
+        },
+        "message": "commit 1 for PR #661: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "11fbeffa2b81",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T21:54:47Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T21:54:47Z"
+        },
+        "message": "commit 2 for PR #661: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "25e105f25433",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T22:24:47Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T22:24:47Z"
+        },
+        "message": "commit 3 for PR #661: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "4960cb15666a",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T22:54:47Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-08-31T22:54:47Z"
+        },
+        "message": "commit 4 for PR #661: docs(notifications): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 66101,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-02T04:24:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/661#pullrequestreview-66101"
+    },
+    {
+      "id": 66102,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-02T04:24:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/661#pullrequestreview-66102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3478,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Review comment 3478: verify boundary checks on line 15.",
+      "created_at": "2026-09-02T04:24:47Z",
+      "path": "notifications/README.md",
+      "line": 15
+    },
+    {
+      "id": 3479,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Review comment 3479: verify boundary checks on line 25.",
+      "created_at": "2026-09-02T04:24:47Z",
+      "path": "notifications/README.md",
+      "line": 25
+    },
+    {
+      "id": 3480,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3480: verify boundary checks on line 15.",
+      "created_at": "2026-09-02T04:24:47Z",
+      "path": "notifications/README.md",
+      "line": 15
+    },
+    {
+      "id": 3481,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3481: verify boundary checks on line 25.",
+      "created_at": "2026-09-02T04:24:47Z",
+      "path": "notifications/README.md",
+      "line": 25
+    }
+  ]
+}

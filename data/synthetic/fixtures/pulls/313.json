@@ -1,0 +1,147 @@
+{
+  "id": 1000313,
+  "number": 313,
+  "state": "closed",
+  "title": "test(infra_observability): update pagerduty.py",
+  "body": "Implementation changes for infra_observability module improvements.\n\nCloses #75",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-03-09T06:41:02Z",
+  "updated_at": "2026-03-11T01:41:02Z",
+  "closed_at": "2026-03-11T01:41:02Z",
+  "merged_at": "2026-03-11T01:41:02Z",
+  "merge_commit_sha": "587ae0f6804d",
+  "head": {
+    "ref": "feature/pr-313",
+    "sha": "587ae0f6804d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/313",
+  "files": [
+    {
+      "filename": "infra/observability/pagerduty.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 13,
+      "changes": 48
+    },
+    {
+      "filename": "infra/observability/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 10,
+      "changes": 55
+    },
+    {
+      "filename": "infra/observability/README.md",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 1,
+      "changes": 20
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cb33c2f5207c",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T06:41:02Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T06:41:02Z"
+        },
+        "message": "commit 1 for PR #313: test(infra_observability): update pagerduty.py"
+      }
+    },
+    {
+      "sha": "475b17c1b9fe",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T07:11:02Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T07:11:02Z"
+        },
+        "message": "commit 2 for PR #313: test(infra_observability): update pagerduty.py"
+      }
+    },
+    {
+      "sha": "587ae0f6804d",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T07:41:02Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-09T07:41:02Z"
+        },
+        "message": "commit 3 for PR #313: test(infra_observability): update pagerduty.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 31301,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-09T17:41:02Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/313#pullrequestreview-31301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1661,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1661: verify boundary checks on line 15.",
+      "created_at": "2026-03-09T17:41:02Z",
+      "path": "infra/observability/pagerduty.py",
+      "line": 15
+    },
+    {
+      "id": 1662,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1662: verify boundary checks on line 25.",
+      "created_at": "2026-03-09T17:41:02Z",
+      "path": "infra/observability/pagerduty.py",
+      "line": 25
+    },
+    {
+      "id": 1663,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1663: verify boundary checks on line 35.",
+      "created_at": "2026-03-09T17:41:02Z",
+      "path": "infra/observability/pagerduty.py",
+      "line": 35
+    }
+  ]
+}

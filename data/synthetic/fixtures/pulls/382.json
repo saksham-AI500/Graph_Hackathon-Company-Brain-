@@ -1,0 +1,267 @@
+{
+  "id": 1000382,
+  "number": 382,
+  "state": "closed",
+  "title": "docs(notifications): update batch_sender.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2026-04-13T04:08:54Z",
+  "updated_at": "2026-04-15T20:08:54Z",
+  "closed_at": "2026-04-15T20:08:54Z",
+  "merged_at": "2026-04-15T20:08:54Z",
+  "merge_commit_sha": "5a4e7af74118",
+  "head": {
+    "ref": "feature/pr-382",
+    "sha": "5a4e7af74118"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/382",
+  "files": [
+    {
+      "filename": "notifications/batch_sender.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 10,
+      "changes": 15
+    },
+    {
+      "filename": "notifications/README.md",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 6,
+      "changes": 46
+    },
+    {
+      "filename": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 13,
+      "changes": 9
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5bb1714fac80",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T04:08:54Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T04:08:54Z"
+        },
+        "message": "commit 1 for PR #382: docs(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "bd3e82bc365c",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T04:38:54Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T04:38:54Z"
+        },
+        "message": "commit 2 for PR #382: docs(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "4ace72fab974",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T05:08:54Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T05:08:54Z"
+        },
+        "message": "commit 3 for PR #382: docs(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "374893fef73d",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T05:38:54Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T05:38:54Z"
+        },
+        "message": "commit 4 for PR #382: docs(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "5a4e7af74118",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T06:08:54Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-13T06:08:54Z"
+        },
+        "message": "commit 5 for PR #382: docs(notifications): update batch_sender.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 38201,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-13T10:08:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/382#pullrequestreview-38201"
+    },
+    {
+      "id": 38202,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-13T10:08:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/382#pullrequestreview-38202"
+    },
+    {
+      "id": 38203,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-13T10:08:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/382#pullrequestreview-38203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2006,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2006: verify boundary checks on line 15.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 2007,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2007: verify boundary checks on line 25.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 2008,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2008: verify boundary checks on line 15.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 2009,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2009: verify boundary checks on line 25.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 2010,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2010: verify boundary checks on line 15.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 2011,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2011: verify boundary checks on line 25.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 2012,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2012: verify boundary checks on line 35.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 35
+    },
+    {
+      "id": 2013,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2013: verify boundary checks on line 45.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 45
+    },
+    {
+      "id": 2014,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2014: verify boundary checks on line 55.",
+      "created_at": "2026-04-13T10:08:54Z",
+      "path": "notifications/batch_sender.py",
+      "line": 55
+    }
+  ]
+}

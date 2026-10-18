@@ -1,0 +1,263 @@
+{
+  "id": 1000498,
+  "number": 498,
+  "state": "closed",
+  "title": "feat(infra_deploy): update rollback.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.\n\nFixes #67",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2026-06-09T21:27:21Z",
+  "updated_at": "2026-06-12T09:27:21Z",
+  "closed_at": "2026-06-12T09:27:21Z",
+  "merged_at": "2026-06-12T09:27:21Z",
+  "merge_commit_sha": "9c55d5dfcd13",
+  "head": {
+    "ref": "feature/pr-498",
+    "sha": "9c55d5dfcd13"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/498",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 8,
+      "changes": 54
+    },
+    {
+      "filename": "infra/deploy/cron_jobs.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 7,
+      "changes": 7
+    },
+    {
+      "filename": "infra/deploy/__pycache__/secrets_loader.cpython-314.pyc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 6,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "015ac697c204",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-06-09T21:27:21Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-06-09T21:27:21Z"
+        },
+        "message": "commit 1 for PR #498: feat(infra_deploy): update rollback.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9c55d5dfcd13",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-06-09T21:57:21Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-06-09T21:57:21Z"
+        },
+        "message": "commit 2 for PR #498: feat(infra_deploy): update rollback.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 49801,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-10T13:27:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/498#pullrequestreview-49801"
+    },
+    {
+      "id": 49802,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-10T13:27:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/498#pullrequestreview-49802"
+    },
+    {
+      "id": 49803,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-10T13:27:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/498#pullrequestreview-49803"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2666,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 2666: verify boundary checks on line 15.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2667,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 2667: verify boundary checks on line 25.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2668,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 2668: verify boundary checks on line 35.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2669,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 2669: verify boundary checks on line 45.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2670,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2670: verify boundary checks on line 15.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2671,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2671: verify boundary checks on line 25.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2672,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2672: verify boundary checks on line 35.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2673,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2673: verify boundary checks on line 45.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2674,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 2674: verify boundary checks on line 15.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2675,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 2675: verify boundary checks on line 25.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2676,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 2676: verify boundary checks on line 35.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2677,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 2677: verify boundary checks on line 45.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2678,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 2678: verify boundary checks on line 55.",
+      "created_at": "2026-06-10T13:27:21Z",
+      "path": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

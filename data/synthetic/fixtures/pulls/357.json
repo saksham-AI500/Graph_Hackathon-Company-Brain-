@@ -1,0 +1,191 @@
+{
+  "id": 1000357,
+  "number": 357,
+  "state": "closed",
+  "title": "fix(search): update vector_search.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-03-30T13:04:16Z",
+  "updated_at": "2026-04-01T17:04:16Z",
+  "closed_at": "2026-04-01T17:04:16Z",
+  "merged_at": "2026-04-01T17:04:16Z",
+  "merge_commit_sha": "d04e93a96717",
+  "head": {
+    "ref": "feature/pr-357",
+    "sha": "d04e93a96717"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/357",
+  "files": [
+    {
+      "filename": "search/__pycache__/vector_search.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 52
+    },
+    {
+      "filename": "search/indexer/checkpoint.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 11,
+      "changes": 51
+    },
+    {
+      "filename": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 5,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "01973f148d0b",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T13:04:16Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T13:04:16Z"
+        },
+        "message": "commit 1 for PR #357: fix(search): update vector_search.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b0bd9cd183d0",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T13:34:16Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T13:34:16Z"
+        },
+        "message": "commit 2 for PR #357: fix(search): update vector_search.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d04e93a96717",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T14:04:16Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-03-30T14:04:16Z"
+        },
+        "message": "commit 3 for PR #357: fix(search): update vector_search.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 35701,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-01T12:04:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/357#pullrequestreview-35701"
+    },
+    {
+      "id": 35702,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-01T12:04:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/357#pullrequestreview-35702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1860,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1860: verify boundary checks on line 15.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1861,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1861: verify boundary checks on line 25.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1862,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1862: verify boundary checks on line 15.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1863,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1863: verify boundary checks on line 25.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1864,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1864: verify boundary checks on line 35.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1865,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1865: verify boundary checks on line 45.",
+      "created_at": "2026-04-01T12:04:16Z",
+      "path": "search/__pycache__/vector_search.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

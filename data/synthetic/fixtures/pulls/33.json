@@ -1,0 +1,142 @@
+{
+  "id": 1000033,
+  "number": 33,
+  "state": "closed",
+  "title": "docs(payments): update discounts.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2025-10-17T01:53:16Z",
+  "updated_at": "2025-10-19T12:53:16Z",
+  "closed_at": "2025-10-19T12:53:16Z",
+  "merged_at": "2025-10-19T12:53:16Z",
+  "merge_commit_sha": "210c10ce508f",
+  "head": {
+    "ref": "feature/pr-33",
+    "sha": "210c10ce508f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/33",
+  "files": [
+    {
+      "filename": "payments/__pycache__/discounts.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 2,
+      "changes": 31
+    },
+    {
+      "filename": "payments/__pycache__/paypal_client.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 53
+    },
+    {
+      "filename": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 13,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0ce5940672b8",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-10-17T01:53:16Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-10-17T01:53:16Z"
+        },
+        "message": "commit 1 for PR #33: docs(payments): update discounts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "210c10ce508f",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-10-17T02:23:16Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-10-17T02:23:16Z"
+        },
+        "message": "commit 2 for PR #33: docs(payments): update discounts.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3301,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-18T18:53:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/33#pullrequestreview-3301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 178,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 178: verify boundary checks on line 15.",
+      "created_at": "2025-10-18T18:53:16Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 179,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 179: verify boundary checks on line 25.",
+      "created_at": "2025-10-18T18:53:16Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 180,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 180: verify boundary checks on line 35.",
+      "created_at": "2025-10-18T18:53:16Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 181,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 181: verify boundary checks on line 45.",
+      "created_at": "2025-10-18T18:53:16Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": 1000102,
+  "number": 102,
+  "state": "closed",
+  "title": "feat(growth_experiments): update bandit.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "samir-patel",
+    "id": 26341,
+    "type": "User"
+  },
+  "created_at": "2025-11-21T11:41:46Z",
+  "updated_at": "2025-11-23T12:41:46Z",
+  "closed_at": "2025-11-23T12:41:46Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-102",
+    "sha": "2955f70e19d6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/102",
+  "files": [
+    {
+      "filename": "growth/experiments/bandit.py",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 15,
+      "changes": 29
+    },
+    {
+      "filename": "growth/experiments/statistical_engine.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 2,
+      "changes": 60
+    },
+    {
+      "filename": "growth/experiments/config_exp.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 13,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "78ea0610f4fa",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T11:41:46Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T11:41:46Z"
+        },
+        "message": "commit 1 for PR #102: feat(growth_experiments): update bandit.py"
+      }
+    },
+    {
+      "sha": "7dc14a42c7c4",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T12:11:46Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T12:11:46Z"
+        },
+        "message": "commit 2 for PR #102: feat(growth_experiments): update bandit.py"
+      }
+    },
+    {
+      "sha": "2955f70e19d6",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T12:41:46Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-21T12:41:46Z"
+        },
+        "message": "commit 3 for PR #102: feat(growth_experiments): update bandit.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10201,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-21T20:41:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/102#pullrequestreview-10201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 542,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 542: verify boundary checks on line 15.",
+      "created_at": "2025-11-21T20:41:46Z",
+      "path": "growth/experiments/bandit.py",
+      "line": 15
+    },
+    {
+      "id": 543,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 543: verify boundary checks on line 25.",
+      "created_at": "2025-11-21T20:41:46Z",
+      "path": "growth/experiments/bandit.py",
+      "line": 25
+    },
+    {
+      "id": 544,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 544: verify boundary checks on line 35.",
+      "created_at": "2025-11-21T20:41:46Z",
+      "path": "growth/experiments/bandit.py",
+      "line": 35
+    },
+    {
+      "id": 545,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 545: verify boundary checks on line 45.",
+      "created_at": "2025-11-21T20:41:46Z",
+      "path": "growth/experiments/bandit.py",
+      "line": 45
+    }
+  ]
+}

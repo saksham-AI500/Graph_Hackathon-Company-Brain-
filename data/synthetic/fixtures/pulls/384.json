@@ -1,0 +1,128 @@
+{
+  "id": 1000384,
+  "number": 384,
+  "state": "closed",
+  "title": "test(infra_deploy): update config_validator.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2026-04-13T17:03:14Z",
+  "updated_at": "2026-04-15T13:03:14Z",
+  "closed_at": "2026-04-15T13:03:14Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-384",
+    "sha": "ea96fd239be5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/384",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/config_validator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 4,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7cf12f5a97c8",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-04-13T17:03:14Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-04-13T17:03:14Z"
+        },
+        "message": "commit 1 for PR #384: test(infra_deploy): update config_validator.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ea96fd239be5",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-04-13T17:33:14Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-04-13T17:33:14Z"
+        },
+        "message": "commit 2 for PR #384: test(infra_deploy): update config_validator.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 38401,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2026-04-14T14:03:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/384#pullrequestreview-38401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2025,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2025: verify boundary checks on line 15.",
+      "created_at": "2026-04-14T14:03:14Z",
+      "path": "infra/deploy/__pycache__/config_validator.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2026,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2026: verify boundary checks on line 25.",
+      "created_at": "2026-04-14T14:03:14Z",
+      "path": "infra/deploy/__pycache__/config_validator.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2027,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2027: verify boundary checks on line 35.",
+      "created_at": "2026-04-14T14:03:14Z",
+      "path": "infra/deploy/__pycache__/config_validator.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2028,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2028: verify boundary checks on line 45.",
+      "created_at": "2026-04-14T14:03:14Z",
+      "path": "infra/deploy/__pycache__/config_validator.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

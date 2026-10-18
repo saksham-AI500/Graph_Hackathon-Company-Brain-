@@ -1,0 +1,168 @@
+{
+  "id": 1000226,
+  "number": 226,
+  "state": "closed",
+  "title": "chore(auth_mfa): update step_up.cpython-314.pyc",
+  "body": "Implementation changes for auth_mfa module improvements.\n\nFixes #103",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-01-23T05:46:13Z",
+  "updated_at": "2026-01-25T16:46:13Z",
+  "closed_at": "2026-01-25T16:46:13Z",
+  "merged_at": "2026-01-25T16:46:13Z",
+  "merge_commit_sha": "0ac631fb929e",
+  "head": {
+    "ref": "feature/pr-226",
+    "sha": "0ac631fb929e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/226",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/step_up.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 15,
+      "changes": 51
+    },
+    {
+      "filename": "auth/mfa/__pycache__/totp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 13,
+      "changes": 24
+    },
+    {
+      "filename": "auth/mfa/sms_gateway.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "89edff673a62",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T05:46:13Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T05:46:13Z"
+        },
+        "message": "commit 1 for PR #226: chore(auth_mfa): update step_up.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9a5aed81ce26",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T06:16:13Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T06:16:13Z"
+        },
+        "message": "commit 2 for PR #226: chore(auth_mfa): update step_up.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "84a1221ee84b",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T06:46:13Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T06:46:13Z"
+        },
+        "message": "commit 3 for PR #226: chore(auth_mfa): update step_up.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2237cf023c03",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T07:16:13Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T07:16:13Z"
+        },
+        "message": "commit 4 for PR #226: chore(auth_mfa): update step_up.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0ac631fb929e",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T07:46:13Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-01-23T07:46:13Z"
+        },
+        "message": "commit 5 for PR #226: chore(auth_mfa): update step_up.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22601,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-23T23:46:13Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/226#pullrequestreview-22601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1232,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1232: verify boundary checks on line 15.",
+      "created_at": "2026-01-23T23:46:13Z",
+      "path": "auth/mfa/__pycache__/step_up.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1233,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1233: verify boundary checks on line 25.",
+      "created_at": "2026-01-23T23:46:13Z",
+      "path": "auth/mfa/__pycache__/step_up.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

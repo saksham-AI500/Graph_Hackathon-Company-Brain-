@@ -1,0 +1,202 @@
+{
+  "id": 1000504,
+  "number": 504,
+  "state": "closed",
+  "title": "perf(payments): update settlements.py",
+  "body": "Implementation changes for payments module improvements.\n\nFixes #3",
+  "user": {
+    "login": "aiden-cross",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-06-12T10:20:25Z",
+  "updated_at": "2026-06-14T20:20:25Z",
+  "closed_at": "2026-06-14T20:20:25Z",
+  "merged_at": "2026-06-14T20:20:25Z",
+  "merge_commit_sha": "9f682a7913a1",
+  "head": {
+    "ref": "feature/pr-504",
+    "sha": "9f682a7913a1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/504",
+  "files": [
+    {
+      "filename": "payments/settlements.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 6,
+      "changes": 13
+    },
+    {
+      "filename": "payments/__pycache__/checkout.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 7,
+      "changes": 52
+    },
+    {
+      "filename": "payments/refunds/__pycache__/chargeback.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 13,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "56a77ee0db3b",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T10:20:25Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T10:20:25Z"
+        },
+        "message": "commit 1 for PR #504: perf(payments): update settlements.py"
+      }
+    },
+    {
+      "sha": "17c193810347",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T10:50:25Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T10:50:25Z"
+        },
+        "message": "commit 2 for PR #504: perf(payments): update settlements.py"
+      }
+    },
+    {
+      "sha": "9f682a7913a1",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T11:20:25Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-06-12T11:20:25Z"
+        },
+        "message": "commit 3 for PR #504: perf(payments): update settlements.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 50401,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-13T14:20:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/504#pullrequestreview-50401"
+    },
+    {
+      "id": 50402,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-13T14:20:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/504#pullrequestreview-50402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2697,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2697: verify boundary checks on line 15.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 15
+    },
+    {
+      "id": 2698,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2698: verify boundary checks on line 25.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 25
+    },
+    {
+      "id": 2699,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2699: verify boundary checks on line 35.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 35
+    },
+    {
+      "id": 2700,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2700: verify boundary checks on line 45.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 45
+    },
+    {
+      "id": 2701,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2701: verify boundary checks on line 55.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 55
+    },
+    {
+      "id": 2702,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2702: verify boundary checks on line 15.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 15
+    },
+    {
+      "id": 2703,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2703: verify boundary checks on line 25.",
+      "created_at": "2026-06-13T14:20:25Z",
+      "path": "payments/settlements.py",
+      "line": 25
+    }
+  ]
+}

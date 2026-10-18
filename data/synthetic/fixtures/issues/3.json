@@ -1,0 +1,78 @@
+{
+  "id": 2000003,
+  "number": 3,
+  "title": "INCIDENT: search-indexer improvements for latency",
+  "body": "Detailed description for incident tracking in module search/indexer/.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24081,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-10-03T10:33:10Z",
+  "updated_at": "2025-10-03T10:33:10Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    504
+  ],
+  "comments": [
+    {
+      "id": 70007,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #7 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-04T08:33:10Z"
+    },
+    {
+      "id": 70008,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #8 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-05T04:33:10Z"
+    },
+    {
+      "id": 70009,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #9 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-05T13:33:10Z"
+    },
+    {
+      "id": 70010,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #10 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-06T07:33:10Z"
+    },
+    {
+      "id": 70011,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #11 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-06T15:33:10Z"
+    },
+    {
+      "id": 70012,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #12 on issue #3: updates from triage and reproduction steps.",
+      "created_at": "2025-10-07T05:33:10Z"
+    }
+  ]
+}

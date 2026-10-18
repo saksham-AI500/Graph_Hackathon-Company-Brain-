@@ -1,0 +1,87 @@
+{
+  "id": 1000369,
+  "number": 369,
+  "state": "closed",
+  "title": "feat(growth_referrals): update referral_tracker.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 20590,
+    "type": "User"
+  },
+  "created_at": "2026-04-06T02:19:41Z",
+  "updated_at": "2026-04-07T03:19:41Z",
+  "closed_at": "2026-04-07T03:19:41Z",
+  "merged_at": "2026-04-07T03:19:41Z",
+  "merge_commit_sha": "4ac76c81074c",
+  "head": {
+    "ref": "feature/pr-369",
+    "sha": "4ac76c81074c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/369",
+  "files": [
+    {
+      "filename": "growth/referrals/referral_tracker.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 4,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "81c8e5de64d5",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T02:19:41Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T02:19:41Z"
+        },
+        "message": "commit 1 for PR #369: feat(growth_referrals): update referral_tracker.py"
+      }
+    },
+    {
+      "sha": "01ba6c8a5620",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T02:49:41Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T02:49:41Z"
+        },
+        "message": "commit 2 for PR #369: feat(growth_referrals): update referral_tracker.py"
+      }
+    },
+    {
+      "sha": "4ac76c81074c",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T03:19:41Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-04-06T03:19:41Z"
+        },
+        "message": "commit 3 for PR #369: feat(growth_referrals): update referral_tracker.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

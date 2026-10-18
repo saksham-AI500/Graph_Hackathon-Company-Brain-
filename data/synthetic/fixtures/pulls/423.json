@@ -1,0 +1,289 @@
+{
+  "id": 1000423,
+  "number": 423,
+  "state": "closed",
+  "title": "chore(auth): update jwt_handler.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-05-01T22:44:59Z",
+  "updated_at": "2026-05-04T05:44:59Z",
+  "closed_at": "2026-05-04T05:44:59Z",
+  "merged_at": "2026-05-04T05:44:59Z",
+  "merge_commit_sha": "77beb1049d46",
+  "head": {
+    "ref": "feature/pr-423",
+    "sha": "77beb1049d46"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/423",
+  "files": [
+    {
+      "filename": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 14,
+      "changes": 16
+    },
+    {
+      "filename": "auth/mfa/__pycache__/challenge_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 55
+    },
+    {
+      "filename": "auth/__pycache__/crypto_keys.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 50
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d77d6933a81d",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T22:44:59Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T22:44:59Z"
+        },
+        "message": "commit 1 for PR #423: chore(auth): update jwt_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8bd441d0ec56",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T23:14:59Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T23:14:59Z"
+        },
+        "message": "commit 2 for PR #423: chore(auth): update jwt_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f29bbf0a80e5",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T23:44:59Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-01T23:44:59Z"
+        },
+        "message": "commit 3 for PR #423: chore(auth): update jwt_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "34150a02726d",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-02T00:14:59Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-02T00:14:59Z"
+        },
+        "message": "commit 4 for PR #423: chore(auth): update jwt_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "77beb1049d46",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-02T00:44:59Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-02T00:44:59Z"
+        },
+        "message": "commit 5 for PR #423: chore(auth): update jwt_handler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 42301,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-03T00:44:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/423#pullrequestreview-42301"
+    },
+    {
+      "id": 42302,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-03T00:44:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/423#pullrequestreview-42302"
+    },
+    {
+      "id": 42303,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-03T00:44:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/423#pullrequestreview-42303"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2236,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2236: verify boundary checks on line 15.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2237,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2237: verify boundary checks on line 25.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2238,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2238: verify boundary checks on line 35.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2239,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2239: verify boundary checks on line 15.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2240,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2240: verify boundary checks on line 25.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2241,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2241: verify boundary checks on line 35.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2242,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2242: verify boundary checks on line 15.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2243,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2243: verify boundary checks on line 25.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2244,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2244: verify boundary checks on line 35.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2245,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2245: verify boundary checks on line 45.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2246,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2246: verify boundary checks on line 55.",
+      "created_at": "2026-05-03T00:44:59Z",
+      "path": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

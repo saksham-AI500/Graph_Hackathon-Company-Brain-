@@ -1,0 +1,133 @@
+{
+  "id": 1000401,
+  "number": 401,
+  "state": "closed",
+  "title": "chore(payments_refunds): update audit_refunds.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-04-21T19:32:29Z",
+  "updated_at": "2026-04-23T16:32:29Z",
+  "closed_at": "2026-04-23T16:32:29Z",
+  "merged_at": "2026-04-23T16:32:29Z",
+  "merge_commit_sha": "f5c5b7dd0ced",
+  "head": {
+    "ref": "feature/pr-401",
+    "sha": "f5c5b7dd0ced"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/401",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 9,
+      "changes": 50
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3159012f0db6",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T19:32:29Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T19:32:29Z"
+        },
+        "message": "commit 1 for PR #401: chore(payments_refunds): update audit_refunds.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b322c401faad",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T20:02:29Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T20:02:29Z"
+        },
+        "message": "commit 2 for PR #401: chore(payments_refunds): update audit_refunds.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f5c5b7dd0ced",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T20:32:29Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-21T20:32:29Z"
+        },
+        "message": "commit 3 for PR #401: chore(payments_refunds): update audit_refunds.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 40101,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-22T19:32:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/401#pullrequestreview-40101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2119,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2119: verify boundary checks on line 15.",
+      "created_at": "2026-04-22T19:32:29Z",
+      "path": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2120,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2120: verify boundary checks on line 25.",
+      "created_at": "2026-04-22T19:32:29Z",
+      "path": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2121,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2121: verify boundary checks on line 35.",
+      "created_at": "2026-04-22T19:32:29Z",
+      "path": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

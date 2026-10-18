@@ -1,0 +1,2042 @@
+[
+  {
+    "thread_id": "th_1010",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "Experimentation Engine Architecture",
+    "created_at": "2026-01-19T16:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "We are implementing client-side MurmurHash3 bucketing with deterministic seed evaluation in growth/experiments/.",
+    "is_reversal": false,
+    "linked_entity": "PR #155",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/155",
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1768838400",
+    "messages": [
+      {
+        "message_id": "msg_th_1010_0",
+        "author": "aiden-cross",
+        "text": "Need low-latency feature flagging for A/B rollout experiments.",
+        "timestamp": "2026-01-19T16:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1010_1",
+        "author": "maya-lin",
+        "text": "Decision: We are implementing client-side MurmurHash3 bucketing with deterministic seed evaluation in growth/experiments/.",
+        "timestamp": "2026-01-19T16:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1010_2",
+        "author": "aiden-cross",
+        "text": "Deployed in PR #155.",
+        "timestamp": "2026-01-19T16:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1011",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "Referral Bonus Allocation Logic",
+    "created_at": "2026-02-02T16:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "We are removing instant referral payout and enforcing a 14-day anti-fraud maturation lock in PR #204.",
+    "is_reversal": true,
+    "linked_entity": "PR #204",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/204",
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1770048000",
+    "messages": [
+      {
+        "message_id": "msg_th_1011_0",
+        "author": "maya-lin",
+        "text": "Instant referral credit granting was exploited by disposable email bot rings.",
+        "timestamp": "2026-02-02T16:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1011_1",
+        "author": "aiden-cross",
+        "text": "Reversal: We are removing instant referral payout and enforcing a 14-day anti-fraud maturation lock in PR #204.",
+        "timestamp": "2026-02-02T16:07:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1011_2",
+        "author": "maya-lin",
+        "text": "Fraudulent credit claims dropped to zero immediately.",
+        "timestamp": "2026-02-02T16:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1017",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "Email Dispatch Worker Architecture",
+    "created_at": "2026-04-27T16:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Decoupling user registration from notification delivery by routing via RabbitMQ dead-letter queues in PR #221.",
+    "is_reversal": true,
+    "linked_entity": "PR #221",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/221",
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1777305600",
+    "messages": [
+      {
+        "message_id": "msg_th_1017_0",
+        "author": "maya-lin",
+        "text": "Notifications worker was executing synchronously in request thread during user onboarding.",
+        "timestamp": "2026-04-27T16:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1017_1",
+        "author": "aiden-cross",
+        "text": "Reversal: Decoupling user registration from notification delivery by routing via RabbitMQ dead-letter queues in PR #221.",
+        "timestamp": "2026-04-27T16:07:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1017_2",
+        "author": "maya-lin",
+        "text": "Onboarding latency reduced from 850ms to 42ms.",
+        "timestamp": "2026-04-27T16:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1022",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "Design System Token Integration",
+    "created_at": "2026-07-06T12:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Adopting CSS custom property design tokens strictly compiled from Figma design tokens in PR #178.",
+    "is_reversal": false,
+    "linked_entity": "PR #178",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/178",
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1783339200",
+    "messages": [
+      {
+        "message_id": "msg_th_1022_0",
+        "author": "maya-lin",
+        "text": "Frontend design system tokens need standardization across React apps.",
+        "timestamp": "2026-07-06T12:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1022_1",
+        "author": "aiden-cross",
+        "text": "Decision: Adopting CSS custom property design tokens strictly compiled from Figma design tokens in PR #178.",
+        "timestamp": "2026-07-06T12:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1022_2",
+        "author": "maya-lin",
+        "text": "Looks great, full theme switching supported.",
+        "timestamp": "2026-07-06T12:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1028",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-06-05T21:25:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1749158700",
+    "messages": [
+      {
+        "message_id": "msg_th_1028_0",
+        "author": "leo-dupont",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-06-05T21:25:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1028_1",
+        "author": "ingrid-berg",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-05T21:28:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1032",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-06-07T19:42:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1749325320",
+    "messages": [
+      {
+        "message_id": "msg_th_1032_0",
+        "author": "yuki-tanaka",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-06-07T19:42:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1032_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-07T19:53:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1036",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-06-10T18:06:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1749578760",
+    "messages": [
+      {
+        "message_id": "msg_th_1036_0",
+        "author": "ingrid-berg",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-06-10T18:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1036_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-10T18:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1040",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-06-14T15:28:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1749914880",
+    "messages": [
+      {
+        "message_id": "msg_th_1040_0",
+        "author": "yuki-tanaka",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-06-14T15:28:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1040_1",
+        "author": "hassan-el-sayed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-14T15:38:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1044",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-06-18T02:52:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1750215120",
+    "messages": [
+      {
+        "message_id": "msg_th_1044_0",
+        "author": "maya-zheng",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-06-18T02:52:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1044_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-18T02:55:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1048",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-06-20T15:36:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1750433760",
+    "messages": [
+      {
+        "message_id": "msg_th_1048_0",
+        "author": "ingrid-berg",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-06-20T15:36:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1048_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-20T15:43:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1052",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-06-23T13:07:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1750684020",
+    "messages": [
+      {
+        "message_id": "msg_th_1052_0",
+        "author": "leo-dupont",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-06-23T13:07:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1052_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-23T13:12:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1056",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-06-26T20:31:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1750969860",
+    "messages": [
+      {
+        "message_id": "msg_th_1056_0",
+        "author": "hassan-el-sayed",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-06-26T20:31:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1056_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-26T20:36:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1060",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-06-30T05:17:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1751260620",
+    "messages": [
+      {
+        "message_id": "msg_th_1060_0",
+        "author": "arjun-mehta",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-06-30T05:17:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1060_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-30T05:28:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1064",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-07-03T20:23:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1751574180",
+    "messages": [
+      {
+        "message_id": "msg_th_1064_0",
+        "author": "emma-lindqvist",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-07-03T20:23:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1064_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-03T20:37:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1068",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-07-06T02:34:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1751769240",
+    "messages": [
+      {
+        "message_id": "msg_th_1068_0",
+        "author": "ingrid-berg",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-07-06T02:34:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1068_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-06T02:44:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1072",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-07-09T17:45:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1752083100",
+    "messages": [
+      {
+        "message_id": "msg_th_1072_0",
+        "author": "hassan-el-sayed",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-07-09T17:45:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1072_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-09T17:57:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1076",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-07-13T13:54:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1752414840",
+    "messages": [
+      {
+        "message_id": "msg_th_1076_0",
+        "author": "noah-kim",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-07-13T13:54:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1076_1",
+        "author": "emma-lindqvist",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-13T14:07:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1080",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-07-17T04:16:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1752725760",
+    "messages": [
+      {
+        "message_id": "msg_th_1080_0",
+        "author": "hassan-el-sayed",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-07-17T04:16:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1080_1",
+        "author": "rachel-green-fictional",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-17T04:26:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1084",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-07-21T07:53:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1753084380",
+    "messages": [
+      {
+        "message_id": "msg_th_1084_0",
+        "author": "rachel-green-fictional",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-07-21T07:53:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1084_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-21T08:04:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1088",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-07-24T07:47:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1753343220",
+    "messages": [
+      {
+        "message_id": "msg_th_1088_0",
+        "author": "emma-lindqvist",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-07-24T07:47:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1088_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-24T07:53:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1092",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-07-27T23:09:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1753657740",
+    "messages": [
+      {
+        "message_id": "msg_th_1092_0",
+        "author": "ingrid-berg",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-07-27T23:09:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1092_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-27T23:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1096",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-07-31T21:56:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1753998960",
+    "messages": [
+      {
+        "message_id": "msg_th_1096_0",
+        "author": "emma-lindqvist",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-07-31T21:56:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1096_1",
+        "author": "rachel-green-fictional",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-31T22:08:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1100",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-08-04T09:28:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1754299680",
+    "messages": [
+      {
+        "message_id": "msg_th_1100_0",
+        "author": "yuki-tanaka",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-08-04T09:28:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1100_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-04T09:32:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1104",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-08-07T06:12:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1754547120",
+    "messages": [
+      {
+        "message_id": "msg_th_1104_0",
+        "author": "hassan-el-sayed",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-08-07T06:12:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1104_1",
+        "author": "emma-lindqvist",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-07T06:17:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1108",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-08-10T22:10:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1754863800",
+    "messages": [
+      {
+        "message_id": "msg_th_1108_0",
+        "author": "arjun-mehta",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-08-10T22:10:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1108_1",
+        "author": "rachel-green-fictional",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-10T22:22:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1112",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-08-16T01:29:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1755307740",
+    "messages": [
+      {
+        "message_id": "msg_th_1112_0",
+        "author": "carlos-mendez",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-08-16T01:29:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1112_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-16T01:40:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1116",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-08-17T23:48:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1755474480",
+    "messages": [
+      {
+        "message_id": "msg_th_1116_0",
+        "author": "emma-lindqvist",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-08-17T23:48:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1116_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-17T23:52:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1120",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-08-21T03:44:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1755747840",
+    "messages": [
+      {
+        "message_id": "msg_th_1120_0",
+        "author": "emma-lindqvist",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-08-21T03:44:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1120_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-21T03:56:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1124",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-08-24T06:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1756015200",
+    "messages": [
+      {
+        "message_id": "msg_th_1124_0",
+        "author": "yuki-tanaka",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-08-24T06:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1124_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-24T06:12:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1128",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-08-27T13:51:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1756302660",
+    "messages": [
+      {
+        "message_id": "msg_th_1128_0",
+        "author": "rachel-green-fictional",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-08-27T13:51:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1128_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-27T13:59:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1132",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-08-30T23:31:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1756596660",
+    "messages": [
+      {
+        "message_id": "msg_th_1132_0",
+        "author": "noah-kim",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-08-30T23:31:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1132_1",
+        "author": "hassan-el-sayed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-30T23:36:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1136",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-09-04T07:07:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1756969620",
+    "messages": [
+      {
+        "message_id": "msg_th_1136_0",
+        "author": "ingrid-berg",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-09-04T07:07:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1136_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-04T07:17:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1140",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-09-08T08:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1757318400",
+    "messages": [
+      {
+        "message_id": "msg_th_1140_0",
+        "author": "lucia-moretti",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-09-08T08:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1140_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-08T08:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1144",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-09-12T14:39:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1757687940",
+    "messages": [
+      {
+        "message_id": "msg_th_1144_0",
+        "author": "leo-dupont",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-09-12T14:39:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1144_1",
+        "author": "rachel-green-fictional",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-12T14:44:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1148",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-09-15T02:28:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1757903280",
+    "messages": [
+      {
+        "message_id": "msg_th_1148_0",
+        "author": "leo-dupont",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-09-15T02:28:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1148_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-15T02:40:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1152",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-09-19T02:34:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1758249240",
+    "messages": [
+      {
+        "message_id": "msg_th_1152_0",
+        "author": "hassan-el-sayed",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-09-19T02:34:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1152_1",
+        "author": "ingrid-berg",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-19T02:43:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1156",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-09-23T05:11:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1758604260",
+    "messages": [
+      {
+        "message_id": "msg_th_1156_0",
+        "author": "lucia-moretti",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-09-23T05:11:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1156_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-23T05:17:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1160",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-09-26T15:58:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1758902280",
+    "messages": [
+      {
+        "message_id": "msg_th_1160_0",
+        "author": "mila-jovanovic",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-09-26T15:58:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1160_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-26T16:04:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1164",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-10-01T02:04:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1759284240",
+    "messages": [
+      {
+        "message_id": "msg_th_1164_0",
+        "author": "noah-kim",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-10-01T02:04:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1164_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-01T02:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1168",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-10-05T23:09:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1759705740",
+    "messages": [
+      {
+        "message_id": "msg_th_1168_0",
+        "author": "emma-lindqvist",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-10-05T23:09:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1168_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-05T23:23:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1172",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-10-09T03:31:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1759980660",
+    "messages": [
+      {
+        "message_id": "msg_th_1172_0",
+        "author": "ingrid-berg",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-10-09T03:31:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1172_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-09T03:38:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1176",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-10-12T02:24:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1760235840",
+    "messages": [
+      {
+        "message_id": "msg_th_1176_0",
+        "author": "rachel-green-fictional",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-10-12T02:24:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1176_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-12T02:31:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1180",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-10-16T00:07:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1760573220",
+    "messages": [
+      {
+        "message_id": "msg_th_1180_0",
+        "author": "mila-jovanovic",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-10-16T00:07:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1180_1",
+        "author": "hassan-el-sayed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-16T00:20:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1184",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-10-18T19:38:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1760816280",
+    "messages": [
+      {
+        "message_id": "msg_th_1184_0",
+        "author": "hassan-el-sayed",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-10-18T19:38:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1184_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-18T19:53:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1188",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-10-22T01:45:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1761097500",
+    "messages": [
+      {
+        "message_id": "msg_th_1188_0",
+        "author": "maya-zheng",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-10-22T01:45:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1188_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-22T01:50:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1192",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-10-23T23:55:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1761263700",
+    "messages": [
+      {
+        "message_id": "msg_th_1192_0",
+        "author": "hassan-el-sayed",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-10-23T23:55:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1192_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-24T00:02:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1196",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-10-27T20:05:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1761595500",
+    "messages": [
+      {
+        "message_id": "msg_th_1196_0",
+        "author": "rachel-green-fictional",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-10-27T20:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1196_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-27T20:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1200",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-10-31T05:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1761886800",
+    "messages": [
+      {
+        "message_id": "msg_th_1200_0",
+        "author": "arjun-mehta",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-10-31T05:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1200_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-31T05:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1204",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-11-03T06:46:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1762152360",
+    "messages": [
+      {
+        "message_id": "msg_th_1204_0",
+        "author": "rachel-green-fictional",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-11-03T06:46:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1204_1",
+        "author": "emma-lindqvist",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-03T07:00:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1208",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-11-05T05:16:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1762319760",
+    "messages": [
+      {
+        "message_id": "msg_th_1208_0",
+        "author": "maya-zheng",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-11-05T05:16:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1208_1",
+        "author": "ingrid-berg",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-05T05:26:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1212",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-11-08T11:13:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1762600380",
+    "messages": [
+      {
+        "message_id": "msg_th_1212_0",
+        "author": "rachel-green-fictional",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-11-08T11:13:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1212_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-08T11:21:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1216",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-11-11T11:57:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1762862220",
+    "messages": [
+      {
+        "message_id": "msg_th_1216_0",
+        "author": "leo-dupont",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-11-11T11:57:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1216_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-11T12:06:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1220",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-11-15T08:31:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1763195460",
+    "messages": [
+      {
+        "message_id": "msg_th_1220_0",
+        "author": "arjun-mehta",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-11-15T08:31:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1220_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-15T08:40:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1224",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-11-18T18:01:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1763488860",
+    "messages": [
+      {
+        "message_id": "msg_th_1224_0",
+        "author": "maya-zheng",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-11-18T18:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1224_1",
+        "author": "ingrid-berg",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-18T18:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1228",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-11-22T07:49:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1763797740",
+    "messages": [
+      {
+        "message_id": "msg_th_1228_0",
+        "author": "leo-dupont",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-11-22T07:49:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1228_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-22T08:02:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1232",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-11-26T22:32:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1764196320",
+    "messages": [
+      {
+        "message_id": "msg_th_1232_0",
+        "author": "leo-dupont",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-11-26T22:32:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1232_1",
+        "author": "yuki-tanaka",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-26T22:47:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1236",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-11-29T11:52:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1764417120",
+    "messages": [
+      {
+        "message_id": "msg_th_1236_0",
+        "author": "emma-lindqvist",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-11-29T11:52:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1236_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-29T12:01:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1240",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-12-01T20:20:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1764620400",
+    "messages": [
+      {
+        "message_id": "msg_th_1240_0",
+        "author": "noah-kim",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-12-01T20:20:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1240_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-01T20:31:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1244",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-12-03T21:33:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1764797580",
+    "messages": [
+      {
+        "message_id": "msg_th_1244_0",
+        "author": "ingrid-berg",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-12-03T21:33:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1244_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-03T21:39:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1248",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-12-07T04:52:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1765083120",
+    "messages": [
+      {
+        "message_id": "msg_th_1248_0",
+        "author": "hassan-el-sayed",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-12-07T04:52:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1248_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-07T04:56:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1252",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-12-10T09:17:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1765358220",
+    "messages": [
+      {
+        "message_id": "msg_th_1252_0",
+        "author": "hassan-el-sayed",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-12-10T09:17:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1252_1",
+        "author": "arjun-mehta",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-10T09:20:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1256",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2025-12-14T13:28:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1765718880",
+    "messages": [
+      {
+        "message_id": "msg_th_1256_0",
+        "author": "rachel-green-fictional",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2025-12-14T13:28:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1256_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-14T13:34:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1260",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2025-12-18T13:22:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1766064120",
+    "messages": [
+      {
+        "message_id": "msg_th_1260_0",
+        "author": "arjun-mehta",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2025-12-18T13:22:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1260_1",
+        "author": "carlos-mendez",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-18T13:25:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1264",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2025-12-23T11:02:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1766487720",
+    "messages": [
+      {
+        "message_id": "msg_th_1264_0",
+        "author": "lucia-moretti",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2025-12-23T11:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1264_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-23T11:05:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1268",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2025-12-26T17:22:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1766769720",
+    "messages": [
+      {
+        "message_id": "msg_th_1268_0",
+        "author": "arjun-mehta",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2025-12-26T17:22:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1268_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-26T17:27:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1272",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2025-12-31T11:17:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1767179820",
+    "messages": [
+      {
+        "message_id": "msg_th_1272_0",
+        "author": "hassan-el-sayed",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2025-12-31T11:17:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1272_1",
+        "author": "ingrid-berg",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-31T11:23:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1276",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2026-01-04T03:09:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1767496140",
+    "messages": [
+      {
+        "message_id": "msg_th_1276_0",
+        "author": "rachel-green-fictional",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2026-01-04T03:09:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1276_1",
+        "author": "hassan-el-sayed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-04T03:22:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1280",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[dependency-update] Discussion",
+    "created_at": "2026-01-06T10:14:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1767694440",
+    "messages": [
+      {
+        "message_id": "msg_th_1280_0",
+        "author": "noah-kim",
+        "text": "[dependency-update] Dependabot opened 3 minor security bump PRs; running integration suite.",
+        "timestamp": "2026-01-06T10:14:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1280_1",
+        "author": "leo-dupont",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-06T10:18:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1284",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[on-call-handover] Discussion",
+    "created_at": "2026-01-10T07:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1768028400",
+    "messages": [
+      {
+        "message_id": "msg_th_1284_0",
+        "author": "yuki-tanaka",
+        "text": "[on-call-handover] Handoff complete. 0 critical pages overnight. System steady.",
+        "timestamp": "2026-01-10T07:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1284_1",
+        "author": "noah-kim",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-10T07:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1288",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[standup-notes] Discussion",
+    "created_at": "2026-01-14T17:42:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1768412520",
+    "messages": [
+      {
+        "message_id": "msg_th_1288_0",
+        "author": "yuki-tanaka",
+        "text": "[standup-notes] Standup summary: completed unit tests for retry policy, working on metrics exporter.",
+        "timestamp": "2026-01-14T17:42:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1288_1",
+        "author": "mila-jovanovic",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-14T17:46:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1292",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[api-spec-review] Discussion",
+    "created_at": "2026-01-18T07:50:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1768722600",
+    "messages": [
+      {
+        "message_id": "msg_th_1292_0",
+        "author": "maya-zheng",
+        "text": "[api-spec-review] OpenAPI spec updated for the new v2 endpoints in auth/mfa/.",
+        "timestamp": "2026-01-18T07:50:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1292_1",
+        "author": "lucia-moretti",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-18T07:54:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1296",
+    "channel": "team-growth",
+    "team": "@acme/growth",
+    "title": "[ci-flakiness] Discussion",
+    "created_at": "2026-01-20T21:25:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-growth/p1768944300",
+    "messages": [
+      {
+        "message_id": "msg_th_1296_0",
+        "author": "yuki-tanaka",
+        "text": "[ci-flakiness] Investigating sporadic timeout in test_payments_integration.py; rerunning fixed it.",
+        "timestamp": "2026-01-20T21:25:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1296_1",
+        "author": "maya-zheng",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-20T21:35:00+00:00"
+      }
+    ]
+  }
+]

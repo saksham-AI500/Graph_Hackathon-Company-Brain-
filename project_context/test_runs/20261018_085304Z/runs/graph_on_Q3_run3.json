@@ -1,0 +1,67 @@
+{
+  "question_id": "Q3",
+  "question": "Which documents mention payments/ but were not updated after a PR changed payments/?",
+  "mode": "graph_on",
+  "run_index": 3,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T08:57:20.674167+00:00",
+  "latency_ms": 11226.69,
+  "claims_count": 0,
+  "sources_count": 2,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "docs/adr/0005-database-sharding.md",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md",
+      "title_or_desc": "docs/adr/0005-database-sharding.md",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "docs/adr/0005-database-sharding.md",
+      "description": "docs/adr/0005-database-sharding.md"
+    },
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "docs/runbooks/payment-pipeline-recovery.md",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md",
+      "title_or_desc": "docs/runbooks/payment-pipeline-recovery.md",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "docs/runbooks/payment-pipeline-recovery.md",
+      "description": "docs/runbooks/payment-pipeline-recovery.md"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "1. **docs/runbooks/payment-pipeline-recovery.md**: Outdated as it references , which was removed in PR #238 [S1].",
+      "claim_ids": [],
+      "cited_sources": [
+        "S1"
+      ],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

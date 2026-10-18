@@ -1,0 +1,242 @@
+{
+  "id": 1000711,
+  "number": 711,
+  "state": "closed",
+  "title": "feat(growth_experiments): update audit_experiments.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-09-25T04:56:41Z",
+  "updated_at": "2026-09-27T07:56:41Z",
+  "closed_at": "2026-09-27T07:56:41Z",
+  "merged_at": "2026-09-27T07:56:41Z",
+  "merge_commit_sha": "806b262a7bb1",
+  "head": {
+    "ref": "feature/pr-711",
+    "sha": "806b262a7bb1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/711",
+  "files": [
+    {
+      "filename": "growth/experiments/audit_experiments.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 12,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7ee3fbd6a1d1",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T04:56:41Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T04:56:41Z"
+        },
+        "message": "commit 1 for PR #711: feat(growth_experiments): update audit_experiments.py"
+      }
+    },
+    {
+      "sha": "414b9c4f0112",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T05:26:41Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T05:26:41Z"
+        },
+        "message": "commit 2 for PR #711: feat(growth_experiments): update audit_experiments.py"
+      }
+    },
+    {
+      "sha": "e1ecb5f74dd9",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T05:56:41Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T05:56:41Z"
+        },
+        "message": "commit 3 for PR #711: feat(growth_experiments): update audit_experiments.py"
+      }
+    },
+    {
+      "sha": "299b64911eba",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T06:26:41Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T06:26:41Z"
+        },
+        "message": "commit 4 for PR #711: feat(growth_experiments): update audit_experiments.py"
+      }
+    },
+    {
+      "sha": "806b262a7bb1",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T06:56:41Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T06:56:41Z"
+        },
+        "message": "commit 5 for PR #711: feat(growth_experiments): update audit_experiments.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71101,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-26T11:56:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/711#pullrequestreview-71101"
+    },
+    {
+      "id": 71102,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-26T11:56:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/711#pullrequestreview-71102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3769,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3769: verify boundary checks on line 15.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 15
+    },
+    {
+      "id": 3770,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3770: verify boundary checks on line 25.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 25
+    },
+    {
+      "id": 3771,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3771: verify boundary checks on line 35.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 35
+    },
+    {
+      "id": 3772,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3772: verify boundary checks on line 45.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 45
+    },
+    {
+      "id": 3773,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3773: verify boundary checks on line 55.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 55
+    },
+    {
+      "id": 3774,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3774: verify boundary checks on line 15.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 15
+    },
+    {
+      "id": 3775,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3775: verify boundary checks on line 25.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 25
+    },
+    {
+      "id": 3776,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3776: verify boundary checks on line 35.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 35
+    },
+    {
+      "id": 3777,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3777: verify boundary checks on line 45.",
+      "created_at": "2026-09-26T11:56:41Z",
+      "path": "growth/experiments/audit_experiments.py",
+      "line": 45
+    }
+  ]
+}

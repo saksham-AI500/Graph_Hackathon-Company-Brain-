@@ -1,0 +1,250 @@
+{
+  "id": 1000107,
+  "number": 107,
+  "state": "closed",
+  "title": "refactor(billing): update webhook_billing.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2025-11-24T12:09:49Z",
+  "updated_at": "2025-11-26T09:09:49Z",
+  "closed_at": "2025-11-26T09:09:49Z",
+  "merged_at": "2025-11-26T09:09:49Z",
+  "merge_commit_sha": "66e8d68ae84d",
+  "head": {
+    "ref": "feature/pr-107",
+    "sha": "66e8d68ae84d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/107",
+  "files": [
+    {
+      "filename": "billing/webhook_billing.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 1,
+      "changes": 22
+    },
+    {
+      "filename": "billing/__pycache__/webhook_billing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 3,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "66763b60ba33",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T12:09:49Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T12:09:49Z"
+        },
+        "message": "commit 1 for PR #107: refactor(billing): update webhook_billing.py"
+      }
+    },
+    {
+      "sha": "0000fe6ceb23",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T12:39:49Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T12:39:49Z"
+        },
+        "message": "commit 2 for PR #107: refactor(billing): update webhook_billing.py"
+      }
+    },
+    {
+      "sha": "66e8d68ae84d",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T13:09:49Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2025-11-24T13:09:49Z"
+        },
+        "message": "commit 3 for PR #107: refactor(billing): update webhook_billing.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10701,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-25T13:09:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/107#pullrequestreview-10701"
+    },
+    {
+      "id": 10702,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-25T13:09:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/107#pullrequestreview-10702"
+    },
+    {
+      "id": 10703,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-25T13:09:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/107#pullrequestreview-10703"
+    }
+  ],
+  "comments": [
+    {
+      "id": 566,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 566: verify boundary checks on line 15.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 15
+    },
+    {
+      "id": 567,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 567: verify boundary checks on line 25.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 25
+    },
+    {
+      "id": 568,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 568: verify boundary checks on line 35.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 35
+    },
+    {
+      "id": 569,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 569: verify boundary checks on line 15.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 15
+    },
+    {
+      "id": 570,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 570: verify boundary checks on line 25.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 25
+    },
+    {
+      "id": 571,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 571: verify boundary checks on line 35.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 35
+    },
+    {
+      "id": 572,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 572: verify boundary checks on line 45.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 45
+    },
+    {
+      "id": 573,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 573: verify boundary checks on line 55.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 55
+    },
+    {
+      "id": 574,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 574: verify boundary checks on line 15.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 15
+    },
+    {
+      "id": 575,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 575: verify boundary checks on line 25.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 25
+    },
+    {
+      "id": 576,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 576: verify boundary checks on line 35.",
+      "created_at": "2025-11-25T13:09:49Z",
+      "path": "billing/webhook_billing.py",
+      "line": 35
+    }
+  ]
+}

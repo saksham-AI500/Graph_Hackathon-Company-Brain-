@@ -1,0 +1,76 @@
+{
+  "id": 2000339,
+  "number": 339,
+  "title": "BUG: search improvements for caching",
+  "body": "Detailed description for bug tracking in module search/.",
+  "user": {
+    "login": "leila-farah",
+    "id": 28442,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-18T06:21:34Z",
+  "updated_at": "2026-09-18T06:21:34Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71387,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1387 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T21:21:34Z"
+    },
+    {
+      "id": 71388,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1388 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-19T10:21:34Z"
+    },
+    {
+      "id": 71389,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #1389 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-20T00:21:34Z"
+    },
+    {
+      "id": 71390,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #1390 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-20T04:21:34Z"
+    },
+    {
+      "id": 71391,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1391 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-20T15:21:34Z"
+    },
+    {
+      "id": 71392,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1392 on issue #339: updates from triage and reproduction steps.",
+      "created_at": "2026-09-21T11:21:34Z"
+    }
+  ]
+}

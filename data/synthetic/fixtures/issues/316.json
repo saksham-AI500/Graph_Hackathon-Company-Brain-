@@ -1,0 +1,49 @@
+{
+  "id": 2000316,
+  "number": 316,
+  "title": "INCIDENT: infra-deploy improvements for caching",
+  "body": "Detailed description for incident tracking in module infra/deploy/.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 25337,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-25T07:09:35Z",
+  "updated_at": "2026-08-25T07:09:35Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "infra-deploy"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71298,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #1298 on issue #316: updates from triage and reproduction steps.",
+      "created_at": "2026-08-26T07:09:35Z"
+    },
+    {
+      "id": 71299,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #1299 on issue #316: updates from triage and reproduction steps.",
+      "created_at": "2026-08-26T09:09:35Z"
+    },
+    {
+      "id": 71300,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1300 on issue #316: updates from triage and reproduction steps.",
+      "created_at": "2026-08-27T00:09:35Z"
+    }
+  ]
+}

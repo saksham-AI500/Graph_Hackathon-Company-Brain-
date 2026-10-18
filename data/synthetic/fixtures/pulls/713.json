@@ -1,0 +1,140 @@
+{
+  "id": 1000713,
+  "number": 713,
+  "state": "closed",
+  "title": "chore(growth_experiments): update guardrail_metrics.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29839,
+    "type": "User"
+  },
+  "created_at": "2026-09-25T16:39:10Z",
+  "updated_at": "2026-09-28T05:39:10Z",
+  "closed_at": "2026-09-28T05:39:10Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-713",
+    "sha": "8053c0a1c245"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/713",
+  "files": [
+    {
+      "filename": "growth/experiments/guardrail_metrics.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 15,
+      "changes": 34
+    },
+    {
+      "filename": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 8,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ffb4d6d441b0",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T16:39:10Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T16:39:10Z"
+        },
+        "message": "commit 1 for PR #713: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "1a22e49decb1",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T17:09:10Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T17:09:10Z"
+        },
+        "message": "commit 2 for PR #713: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "8053c0a1c245",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T17:39:10Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-25T17:39:10Z"
+        },
+        "message": "commit 3 for PR #713: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71301,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-26T18:39:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/713#pullrequestreview-71301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3781,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3781: verify boundary checks on line 15.",
+      "created_at": "2026-09-26T18:39:10Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 15
+    },
+    {
+      "id": 3782,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3782: verify boundary checks on line 25.",
+      "created_at": "2026-09-26T18:39:10Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 25
+    },
+    {
+      "id": 3783,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3783: verify boundary checks on line 35.",
+      "created_at": "2026-09-26T18:39:10Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 35
+    }
+  ]
+}

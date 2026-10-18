@@ -1,0 +1,190 @@
+{
+  "id": 1000573,
+  "number": 573,
+  "state": "closed",
+  "title": "perf(api_gateway): update router.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-07-17T08:31:23Z",
+  "updated_at": "2026-07-19T08:31:23Z",
+  "closed_at": "2026-07-19T08:31:23Z",
+  "merged_at": "2026-07-19T08:31:23Z",
+  "merge_commit_sha": "ff80a1a2e689",
+  "head": {
+    "ref": "feature/pr-573",
+    "sha": "ff80a1a2e689"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/573",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 4,
+      "changes": 22
+    },
+    {
+      "filename": "api/gateway/audit_gateway.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 11,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "fef94d040406",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-17T08:31:23Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-17T08:31:23Z"
+        },
+        "message": "commit 1 for PR #573: perf(api_gateway): update router.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ff80a1a2e689",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-17T09:01:23Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-17T09:01:23Z"
+        },
+        "message": "commit 2 for PR #573: perf(api_gateway): update router.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 57301,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-18T19:31:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/573#pullrequestreview-57301"
+    },
+    {
+      "id": 57302,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-18T19:31:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/573#pullrequestreview-57302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3079,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3079: verify boundary checks on line 15.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3080,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3080: verify boundary checks on line 25.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3081,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3081: verify boundary checks on line 35.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3082,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3082: verify boundary checks on line 45.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3083,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3083: verify boundary checks on line 55.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3084,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3084: verify boundary checks on line 15.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3085,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3085: verify boundary checks on line 25.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3086,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3086: verify boundary checks on line 35.",
+      "created_at": "2026-07-18T19:31:23Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

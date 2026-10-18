@@ -1,0 +1,295 @@
+{
+  "id": 1000468,
+  "number": 468,
+  "state": "closed",
+  "title": "fix(shared_utils): update serializers.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2026-05-25T17:20:19Z",
+  "updated_at": "2026-05-27T19:20:19Z",
+  "closed_at": "2026-05-27T19:20:19Z",
+  "merged_at": "2026-05-27T19:20:19Z",
+  "merge_commit_sha": "c44c681273c8",
+  "head": {
+    "ref": "feature/pr-468",
+    "sha": "c44c681273c8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/468",
+  "files": [
+    {
+      "filename": "shared/utils/serializers.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 10,
+      "changes": 43
+    },
+    {
+      "filename": "shared/utils/__pycache__/concurrency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 1,
+      "changes": 22
+    },
+    {
+      "filename": "shared/utils/README.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 5,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "241022347dfc",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T17:20:19Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T17:20:19Z"
+        },
+        "message": "commit 1 for PR #468: fix(shared_utils): update serializers.py"
+      }
+    },
+    {
+      "sha": "e2255632aa3f",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T17:50:19Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T17:50:19Z"
+        },
+        "message": "commit 2 for PR #468: fix(shared_utils): update serializers.py"
+      }
+    },
+    {
+      "sha": "b2fb36509ab8",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T18:20:19Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T18:20:19Z"
+        },
+        "message": "commit 3 for PR #468: fix(shared_utils): update serializers.py"
+      }
+    },
+    {
+      "sha": "c44c681273c8",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T18:50:19Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-25T18:50:19Z"
+        },
+        "message": "commit 4 for PR #468: fix(shared_utils): update serializers.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 46801,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-25T23:20:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/468#pullrequestreview-46801"
+    },
+    {
+      "id": 46802,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-25T23:20:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/468#pullrequestreview-46802"
+    },
+    {
+      "id": 46803,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-25T23:20:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/468#pullrequestreview-46803"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2497,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2497: verify boundary checks on line 15.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 15
+    },
+    {
+      "id": 2498,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2498: verify boundary checks on line 25.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 25
+    },
+    {
+      "id": 2499,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2499: verify boundary checks on line 35.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 35
+    },
+    {
+      "id": 2500,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2500: verify boundary checks on line 45.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 45
+    },
+    {
+      "id": 2501,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2501: verify boundary checks on line 15.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 15
+    },
+    {
+      "id": 2502,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2502: verify boundary checks on line 25.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 25
+    },
+    {
+      "id": 2503,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2503: verify boundary checks on line 35.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 35
+    },
+    {
+      "id": 2504,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2504: verify boundary checks on line 45.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 45
+    },
+    {
+      "id": 2505,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2505: verify boundary checks on line 15.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 15
+    },
+    {
+      "id": 2506,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2506: verify boundary checks on line 25.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 25
+    },
+    {
+      "id": 2507,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2507: verify boundary checks on line 35.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 35
+    },
+    {
+      "id": 2508,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2508: verify boundary checks on line 45.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 45
+    },
+    {
+      "id": 2509,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2509: verify boundary checks on line 55.",
+      "created_at": "2026-05-25T23:20:19Z",
+      "path": "shared/utils/serializers.py",
+      "line": 55
+    }
+  ]
+}

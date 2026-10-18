@@ -1,0 +1,49 @@
+{
+  "id": 2000193,
+  "number": 193,
+  "title": "PERF: notifications improvements for latency",
+  "body": "Detailed description for perf tracking in module notifications/.",
+  "user": {
+    "login": "elena-rostova",
+    "id": 23447,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-19T06:05:19Z",
+  "updated_at": "2026-04-19T06:05:19Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "notifications"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70782,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #782 on issue #193: updates from triage and reproduction steps.",
+      "created_at": "2026-04-19T21:05:19Z"
+    },
+    {
+      "id": 70783,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #783 on issue #193: updates from triage and reproduction steps.",
+      "created_at": "2026-04-20T13:05:19Z"
+    },
+    {
+      "id": 70784,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #784 on issue #193: updates from triage and reproduction steps.",
+      "created_at": "2026-04-21T01:05:19Z"
+    }
+  ]
+}

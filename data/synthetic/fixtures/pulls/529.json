@@ -1,0 +1,149 @@
+{
+  "id": 1000529,
+  "number": 529,
+  "state": "closed",
+  "title": "feat(billing): update proration.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2026-06-25T14:21:28Z",
+  "updated_at": "2026-06-28T12:21:28Z",
+  "closed_at": "2026-06-28T12:21:28Z",
+  "merged_at": "2026-06-28T12:21:28Z",
+  "merge_commit_sha": "2a11873ee9a5",
+  "head": {
+    "ref": "feature/pr-529",
+    "sha": "2a11873ee9a5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/529",
+  "files": [
+    {
+      "filename": "billing/proration.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 8,
+      "changes": 43
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a711f41c8f5f",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T14:21:28Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T14:21:28Z"
+        },
+        "message": "commit 1 for PR #529: feat(billing): update proration.py"
+      }
+    },
+    {
+      "sha": "ec3a51d1f64b",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T14:51:28Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T14:51:28Z"
+        },
+        "message": "commit 2 for PR #529: feat(billing): update proration.py"
+      }
+    },
+    {
+      "sha": "e48eb9e2c7a0",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T15:21:28Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T15:21:28Z"
+        },
+        "message": "commit 3 for PR #529: feat(billing): update proration.py"
+      }
+    },
+    {
+      "sha": "2a11873ee9a5",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T15:51:28Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-06-25T15:51:28Z"
+        },
+        "message": "commit 4 for PR #529: feat(billing): update proration.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52901,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-27T14:21:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/529#pullrequestreview-52901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2841,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2841: verify boundary checks on line 15.",
+      "created_at": "2026-06-27T14:21:28Z",
+      "path": "billing/proration.py",
+      "line": 15
+    },
+    {
+      "id": 2842,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2842: verify boundary checks on line 25.",
+      "created_at": "2026-06-27T14:21:28Z",
+      "path": "billing/proration.py",
+      "line": 25
+    },
+    {
+      "id": 2843,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2843: verify boundary checks on line 35.",
+      "created_at": "2026-06-27T14:21:28Z",
+      "path": "billing/proration.py",
+      "line": 35
+    }
+  ]
+}

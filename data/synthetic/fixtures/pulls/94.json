@@ -1,0 +1,135 @@
+{
+  "id": 1000094,
+  "number": 94,
+  "state": "closed",
+  "title": "perf(payments_refunds): update queue.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2025-11-17T21:58:03Z",
+  "updated_at": "2025-11-20T01:58:03Z",
+  "closed_at": "2025-11-20T01:58:03Z",
+  "merged_at": "2025-11-20T01:58:03Z",
+  "merge_commit_sha": "f282e5d73689",
+  "head": {
+    "ref": "feature/pr-94",
+    "sha": "f282e5d73689"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/94",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 54
+    },
+    {
+      "filename": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 1,
+      "changes": 28
+    }
+  ],
+  "commits": [
+    {
+      "sha": "64d11d18ffd8",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-11-17T21:58:03Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-11-17T21:58:03Z"
+        },
+        "message": "commit 1 for PR #94: perf(payments_refunds): update queue.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f282e5d73689",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-11-17T22:28:03Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2025-11-17T22:28:03Z"
+        },
+        "message": "commit 2 for PR #94: perf(payments_refunds): update queue.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 9401,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-19T05:58:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/94#pullrequestreview-9401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 493,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 493: verify boundary checks on line 15.",
+      "created_at": "2025-11-19T05:58:03Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 494,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 494: verify boundary checks on line 25.",
+      "created_at": "2025-11-19T05:58:03Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 495,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 495: verify boundary checks on line 35.",
+      "created_at": "2025-11-19T05:58:03Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 496,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 496: verify boundary checks on line 45.",
+      "created_at": "2025-11-19T05:58:03Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

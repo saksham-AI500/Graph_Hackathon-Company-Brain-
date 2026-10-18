@@ -1,0 +1,67 @@
+{
+  "id": 2000261,
+  "number": 261,
+  "title": "BUG: payments-refunds improvements for throughput",
+  "body": "Detailed description for bug tracking in module payments/refunds/.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 22495,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-29T01:20:50Z",
+  "updated_at": "2026-07-14T01:20:50Z",
+  "closed_at": "2026-07-14T01:20:50Z",
+  "labels": [
+    "bug",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71077,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1077 on issue #261: updates from triage and reproduction steps.",
+      "created_at": "2026-06-29T23:20:50Z"
+    },
+    {
+      "id": 71078,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #1078 on issue #261: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T11:20:50Z"
+    },
+    {
+      "id": 71079,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #1079 on issue #261: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T21:20:50Z"
+    },
+    {
+      "id": 71080,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1080 on issue #261: updates from triage and reproduction steps.",
+      "created_at": "2026-07-01T06:20:50Z"
+    },
+    {
+      "id": 71081,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1081 on issue #261: updates from triage and reproduction steps.",
+      "created_at": "2026-07-01T12:20:50Z"
+    }
+  ]
+}

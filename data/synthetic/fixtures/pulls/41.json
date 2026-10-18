@@ -1,0 +1,171 @@
+{
+  "id": 1000041,
+  "number": 41,
+  "state": "closed",
+  "title": "chore(shared_utils): update diff.cpython-314.pyc",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2025-10-21T14:38:21Z",
+  "updated_at": "2025-10-23T10:38:21Z",
+  "closed_at": "2025-10-23T10:38:21Z",
+  "merged_at": "2025-10-23T10:38:21Z",
+  "merge_commit_sha": "5f5d4939860e",
+  "head": {
+    "ref": "feature/pr-41",
+    "sha": "5f5d4939860e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/41",
+  "files": [
+    {
+      "filename": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 8,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "684024979c6c",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T14:38:21Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T14:38:21Z"
+        },
+        "message": "commit 1 for PR #41: chore(shared_utils): update diff.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fb4d4d41604e",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T15:08:21Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T15:08:21Z"
+        },
+        "message": "commit 2 for PR #41: chore(shared_utils): update diff.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "288ec04e212e",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T15:38:21Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T15:38:21Z"
+        },
+        "message": "commit 3 for PR #41: chore(shared_utils): update diff.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5f5d4939860e",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T16:08:21Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-21T16:08:21Z"
+        },
+        "message": "commit 4 for PR #41: chore(shared_utils): update diff.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4101,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T12:38:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/41#pullrequestreview-4101"
+    },
+    {
+      "id": 4102,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T12:38:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/41#pullrequestreview-4102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 217,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 217: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T12:38:21Z",
+      "path": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 218,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 218: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T12:38:21Z",
+      "path": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 219,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 219: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T12:38:21Z",
+      "path": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 220,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 220: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T12:38:21Z",
+      "path": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

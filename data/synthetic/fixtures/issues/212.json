@@ -1,0 +1,58 @@
+{
+  "id": 2000212,
+  "number": 212,
+  "title": "FEATURE: billing improvements for reliability",
+  "body": "Detailed description for feature tracking in module billing/.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 29278,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-09T01:06:21Z",
+  "updated_at": "2026-05-09T01:06:21Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70863,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #863 on issue #212: updates from triage and reproduction steps.",
+      "created_at": "2026-05-09T15:06:21Z"
+    },
+    {
+      "id": 70864,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #864 on issue #212: updates from triage and reproduction steps.",
+      "created_at": "2026-05-10T11:06:21Z"
+    },
+    {
+      "id": 70865,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #865 on issue #212: updates from triage and reproduction steps.",
+      "created_at": "2026-05-11T09:06:21Z"
+    },
+    {
+      "id": 70866,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #866 on issue #212: updates from triage and reproduction steps.",
+      "created_at": "2026-05-11T14:06:21Z"
+    }
+  ]
+}

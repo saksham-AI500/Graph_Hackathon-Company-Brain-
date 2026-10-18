@@ -1,0 +1,215 @@
+{
+  "id": 1000353,
+  "number": 353,
+  "state": "closed",
+  "title": "docs(notifications): update templates.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-03-28T11:54:39Z",
+  "updated_at": "2026-03-29T15:54:39Z",
+  "closed_at": "2026-03-29T15:54:39Z",
+  "merged_at": "2026-03-29T15:54:39Z",
+  "merge_commit_sha": "bdde1298bfc9",
+  "head": {
+    "ref": "feature/pr-353",
+    "sha": "bdde1298bfc9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/353",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/templates.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 11,
+      "changes": 32
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a10f90f9f315",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T11:54:39Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T11:54:39Z"
+        },
+        "message": "commit 1 for PR #353: docs(notifications): update templates.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b8bcd16dcad0",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T12:24:39Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T12:24:39Z"
+        },
+        "message": "commit 2 for PR #353: docs(notifications): update templates.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f7ff457fab45",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T12:54:39Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T12:54:39Z"
+        },
+        "message": "commit 3 for PR #353: docs(notifications): update templates.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bdde1298bfc9",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T13:24:39Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-28T13:24:39Z"
+        },
+        "message": "commit 4 for PR #353: docs(notifications): update templates.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 35301,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-29T07:54:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/353#pullrequestreview-35301"
+    },
+    {
+      "id": 35302,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-29T07:54:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/353#pullrequestreview-35302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1839,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1839: verify boundary checks on line 15.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1840,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1840: verify boundary checks on line 25.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1841,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1841: verify boundary checks on line 35.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1842,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1842: verify boundary checks on line 15.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1843,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1843: verify boundary checks on line 25.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1844,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1844: verify boundary checks on line 35.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1845,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1845: verify boundary checks on line 45.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1846,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1846: verify boundary checks on line 55.",
+      "created_at": "2026-03-29T07:54:39Z",
+      "path": "notifications/__pycache__/templates.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

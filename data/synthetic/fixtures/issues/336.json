@@ -1,0 +1,67 @@
+{
+  "id": 2000336,
+  "number": 336,
+  "title": "BUG: api-gateway improvements for throughput",
+  "body": "Detailed description for bug tracking in module api/gateway/.",
+  "user": {
+    "login": "ben-carter",
+    "id": 24965,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-15T03:08:57Z",
+  "updated_at": "2026-09-22T03:08:57Z",
+  "closed_at": "2026-09-22T03:08:57Z",
+  "labels": [
+    "bug",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71374,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #1374 on issue #336: updates from triage and reproduction steps.",
+      "created_at": "2026-09-15T22:08:57Z"
+    },
+    {
+      "id": 71375,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #1375 on issue #336: updates from triage and reproduction steps.",
+      "created_at": "2026-09-16T14:08:57Z"
+    },
+    {
+      "id": 71376,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #1376 on issue #336: updates from triage and reproduction steps.",
+      "created_at": "2026-09-16T23:08:57Z"
+    },
+    {
+      "id": 71377,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1377 on issue #336: updates from triage and reproduction steps.",
+      "created_at": "2026-09-17T06:08:57Z"
+    },
+    {
+      "id": 71378,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1378 on issue #336: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T01:08:57Z"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": 1000685,
+  "number": 685,
+  "state": "closed",
+  "title": "chore(infra_deploy): update service_mesh.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-09-11T13:08:22Z",
+  "updated_at": "2026-09-13T14:08:22Z",
+  "closed_at": "2026-09-13T14:08:22Z",
+  "merged_at": "2026-09-13T14:08:22Z",
+  "merge_commit_sha": "1e6db4bd304f",
+  "head": {
+    "ref": "feature/pr-685",
+    "sha": "1e6db4bd304f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/685",
+  "files": [
+    {
+      "filename": "infra/deploy/service_mesh.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 12,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "92fdb3bc78b6",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T13:08:22Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T13:08:22Z"
+        },
+        "message": "commit 1 for PR #685: chore(infra_deploy): update service_mesh.py"
+      }
+    },
+    {
+      "sha": "6a0029492900",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T13:38:22Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T13:38:22Z"
+        },
+        "message": "commit 2 for PR #685: chore(infra_deploy): update service_mesh.py"
+      }
+    },
+    {
+      "sha": "b920e18504f5",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T14:08:22Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T14:08:22Z"
+        },
+        "message": "commit 3 for PR #685: chore(infra_deploy): update service_mesh.py"
+      }
+    },
+    {
+      "sha": "1e6db4bd304f",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T14:38:22Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-09-11T14:38:22Z"
+        },
+        "message": "commit 4 for PR #685: chore(infra_deploy): update service_mesh.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 68501,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-13T06:08:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/685#pullrequestreview-68501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3616,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3616: verify boundary checks on line 15.",
+      "created_at": "2026-09-13T06:08:22Z",
+      "path": "infra/deploy/service_mesh.py",
+      "line": 15
+    },
+    {
+      "id": 3617,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3617: verify boundary checks on line 25.",
+      "created_at": "2026-09-13T06:08:22Z",
+      "path": "infra/deploy/service_mesh.py",
+      "line": 25
+    },
+    {
+      "id": 3618,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3618: verify boundary checks on line 35.",
+      "created_at": "2026-09-13T06:08:22Z",
+      "path": "infra/deploy/service_mesh.py",
+      "line": 35
+    }
+  ]
+}

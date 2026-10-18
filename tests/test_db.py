@@ -26,3 +26,18 @@ def test_falkordb_counts_returns_dict():
     assert "edges" in counts
     assert isinstance(counts["nodes"], int)
     assert isinstance(counts["edges"], int)
+
+
+def test_falkordb_uncreated_graph_empty_key_handled_safely():
+    """Verify clean-clone behavior: ping and get_counts on nonexistent graph handle empty keys safely."""
+    client = FalkorDBClient(graph_name="nonexistent_fresh_clone_graph")
+    counts = client.get_counts()
+    assert counts == {"nodes": 0, "edges": 0}
+    ping = client.ping()
+    assert ping["status"] == "healthy"
+    # Clean up test key if created
+    try:
+        client.graph.delete()
+    except Exception:
+        pass
+

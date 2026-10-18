@@ -1,0 +1,147 @@
+{
+  "id": 1000327,
+  "number": 327,
+  "state": "closed",
+  "title": "feat(payments): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-03-16T08:54:30Z",
+  "updated_at": "2026-03-17T15:54:30Z",
+  "closed_at": "2026-03-17T15:54:30Z",
+  "merged_at": "2026-03-17T15:54:30Z",
+  "merge_commit_sha": "93a7a77cb01c",
+  "head": {
+    "ref": "feature/pr-327",
+    "sha": "93a7a77cb01c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/327",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 2,
+      "changes": 46
+    },
+    {
+      "filename": "payments/receipts.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 1,
+      "changes": 40
+    },
+    {
+      "filename": "payments/refunds/reconciliation.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 7,
+      "changes": 28
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f1ab7747aae9",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T08:54:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T08:54:30Z"
+        },
+        "message": "commit 1 for PR #327: feat(payments): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2e87a5aedb96",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T09:24:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T09:24:30Z"
+        },
+        "message": "commit 2 for PR #327: feat(payments): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "93a7a77cb01c",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T09:54:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-03-16T09:54:30Z"
+        },
+        "message": "commit 3 for PR #327: feat(payments): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 32701,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-17T23:54:30Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/327#pullrequestreview-32701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1730,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1730: verify boundary checks on line 15.",
+      "created_at": "2026-03-17T23:54:30Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1731,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1731: verify boundary checks on line 25.",
+      "created_at": "2026-03-17T23:54:30Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1732,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1732: verify boundary checks on line 35.",
+      "created_at": "2026-03-17T23:54:30Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

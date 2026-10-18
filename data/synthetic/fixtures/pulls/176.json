@@ -1,0 +1,152 @@
+{
+  "id": 1000176,
+  "number": 176,
+  "state": "closed",
+  "title": "feat(payments_refunds): update notification.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 20590,
+    "type": "User"
+  },
+  "created_at": "2025-12-29T10:46:24Z",
+  "updated_at": "2025-12-31T01:46:24Z",
+  "closed_at": "2025-12-31T01:46:24Z",
+  "merged_at": "2025-12-31T01:46:24Z",
+  "merge_commit_sha": "be5fddedd3ca",
+  "head": {
+    "ref": "feature/pr-176",
+    "sha": "be5fddedd3ca"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/176",
+  "files": [
+    {
+      "filename": "payments/refunds/notification.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 8,
+      "changes": 25
+    },
+    {
+      "filename": "payments/refunds/chargeback.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 10,
+      "changes": 32
+    },
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 3,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7bacdfc149e5",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T10:46:24Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T10:46:24Z"
+        },
+        "message": "commit 1 for PR #176: feat(payments_refunds): update notification.py"
+      }
+    },
+    {
+      "sha": "116b939e5108",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T11:16:24Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T11:16:24Z"
+        },
+        "message": "commit 2 for PR #176: feat(payments_refunds): update notification.py"
+      }
+    },
+    {
+      "sha": "91a192e2d3d6",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T11:46:24Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T11:46:24Z"
+        },
+        "message": "commit 3 for PR #176: feat(payments_refunds): update notification.py"
+      }
+    },
+    {
+      "sha": "be5fddedd3ca",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T12:16:24Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-29T12:16:24Z"
+        },
+        "message": "commit 4 for PR #176: feat(payments_refunds): update notification.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17601,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-29T23:46:24Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/176#pullrequestreview-17601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 966,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 966: verify boundary checks on line 15.",
+      "created_at": "2025-12-29T23:46:24Z",
+      "path": "payments/refunds/notification.py",
+      "line": 15
+    },
+    {
+      "id": 967,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 967: verify boundary checks on line 25.",
+      "created_at": "2025-12-29T23:46:24Z",
+      "path": "payments/refunds/notification.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": 2000287,
+  "number": 287,
+  "title": "INCIDENT: search improvements for throughput",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 27770,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-07-26T03:18:33Z",
+  "updated_at": "2026-07-26T03:18:33Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71174,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #1174 on issue #287: updates from triage and reproduction steps.",
+      "created_at": "2026-07-26T08:18:33Z"
+    },
+    {
+      "id": 71175,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #1175 on issue #287: updates from triage and reproduction steps.",
+      "created_at": "2026-07-26T13:18:33Z"
+    },
+    {
+      "id": 71176,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1176 on issue #287: updates from triage and reproduction steps.",
+      "created_at": "2026-07-26T15:18:33Z"
+    },
+    {
+      "id": 71177,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1177 on issue #287: updates from triage and reproduction steps.",
+      "created_at": "2026-07-27T08:18:33Z"
+    }
+  ]
+}

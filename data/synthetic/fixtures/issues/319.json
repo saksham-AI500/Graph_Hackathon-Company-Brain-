@@ -1,0 +1,67 @@
+{
+  "id": 2000319,
+  "number": 319,
+  "title": "INCIDENT: payments-refunds improvements for reliability",
+  "body": "Detailed description for incident tracking in module payments/refunds/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-28T10:16:47Z",
+  "updated_at": "2026-09-05T10:16:47Z",
+  "closed_at": "2026-09-05T10:16:47Z",
+  "labels": [
+    "incident",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71309,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #1309 on issue #319: updates from triage and reproduction steps.",
+      "created_at": "2026-08-28T21:16:47Z"
+    },
+    {
+      "id": 71310,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #1310 on issue #319: updates from triage and reproduction steps.",
+      "created_at": "2026-08-29T06:16:47Z"
+    },
+    {
+      "id": 71311,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1311 on issue #319: updates from triage and reproduction steps.",
+      "created_at": "2026-08-29T17:16:47Z"
+    },
+    {
+      "id": 71312,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1312 on issue #319: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T00:16:47Z"
+    },
+    {
+      "id": 71313,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #1313 on issue #319: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T18:16:47Z"
+    }
+  ]
+}

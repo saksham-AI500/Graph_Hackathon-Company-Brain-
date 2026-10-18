@@ -1,0 +1,175 @@
+{
+  "id": 1000127,
+  "number": 127,
+  "state": "closed",
+  "title": "chore(payments_refunds): update export.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-12-04T03:46:56Z",
+  "updated_at": "2025-12-05T07:46:56Z",
+  "closed_at": "2025-12-05T07:46:56Z",
+  "merged_at": "2025-12-05T07:46:56Z",
+  "merge_commit_sha": "19ef5578dc8b",
+  "head": {
+    "ref": "feature/pr-127",
+    "sha": "19ef5578dc8b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/127",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 8,
+      "changes": 44
+    },
+    {
+      "filename": "payments/refunds/partial_refund.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 40
+    },
+    {
+      "filename": "payments/refunds/chargeback.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 6,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "81870311bd5b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-04T03:46:56Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-04T03:46:56Z"
+        },
+        "message": "commit 1 for PR #127: chore(payments_refunds): update export.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "19ef5578dc8b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-04T04:16:56Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-04T04:16:56Z"
+        },
+        "message": "commit 2 for PR #127: chore(payments_refunds): update export.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 12701,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-04T15:46:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/127#pullrequestreview-12701"
+    },
+    {
+      "id": 12702,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-04T15:46:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/127#pullrequestreview-12702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 700,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 700: verify boundary checks on line 15.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 701,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 701: verify boundary checks on line 25.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 702,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 702: verify boundary checks on line 35.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 703,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 703: verify boundary checks on line 15.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 704,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 704: verify boundary checks on line 25.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 705,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 705: verify boundary checks on line 35.",
+      "created_at": "2025-12-04T15:46:56Z",
+      "path": "payments/refunds/__pycache__/export.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

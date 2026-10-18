@@ -54,7 +54,7 @@ def render_compare_tab(client: Optional[FalkorDBClient], config: Dict[str, Any])
 
     if run_comp and q_text:
         api_key = config.get("openrouter_api_key") or None
-        model = config.get("model") or "anthropic/claude-3.5-sonnet"
+        model = config.get("model") or "deepseek/deepseek-chat"
         as_of = config.get("as_of")
 
         col_on, col_vec, col_off = st.columns(3)
@@ -74,6 +74,7 @@ def render_compare_tab(client: Optional[FalkorDBClient], config: Dict[str, Any])
                 req = AgentRequest(
                     question=q_text,
                     as_of=as_of,
+                    api_key=api_key,
                     openrouter_key=api_key,
                     model=model,
                 )

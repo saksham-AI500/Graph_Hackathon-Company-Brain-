@@ -1,0 +1,60 @@
+{
+  "id": 2000024,
+  "number": 24,
+  "title": "TASK: shared-utils improvements for latency",
+  "body": "Detailed description for task tracking in module shared/utils/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-10-25T07:46:47Z",
+  "updated_at": "2025-10-25T07:46:47Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    202
+  ],
+  "comments": [
+    {
+      "id": 70092,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #92 on issue #24: updates from triage and reproduction steps.",
+      "created_at": "2025-10-25T22:46:47Z"
+    },
+    {
+      "id": 70093,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #93 on issue #24: updates from triage and reproduction steps.",
+      "created_at": "2025-10-26T01:46:47Z"
+    },
+    {
+      "id": 70094,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #94 on issue #24: updates from triage and reproduction steps.",
+      "created_at": "2025-10-26T19:46:47Z"
+    },
+    {
+      "id": 70095,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #95 on issue #24: updates from triage and reproduction steps.",
+      "created_at": "2025-10-27T00:46:47Z"
+    }
+  ]
+}

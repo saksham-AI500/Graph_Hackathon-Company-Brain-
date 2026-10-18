@@ -1,0 +1,185 @@
+{
+  "id": 1000287,
+  "number": 287,
+  "state": "closed",
+  "title": "test(growth_referrals): update fraud_check.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 29760,
+    "type": "User"
+  },
+  "created_at": "2026-02-23T14:24:54Z",
+  "updated_at": "2026-02-25T07:24:54Z",
+  "closed_at": "2026-02-25T07:24:54Z",
+  "merged_at": "2026-02-25T07:24:54Z",
+  "merge_commit_sha": "f19f3f733cfa",
+  "head": {
+    "ref": "feature/pr-287",
+    "sha": "f19f3f733cfa"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/287",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 13,
+      "changes": 10
+    },
+    {
+      "filename": "growth/referrals/__pycache__/referral_tracker.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 2,
+      "changes": 52
+    },
+    {
+      "filename": "growth/referrals/fraud_check.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 3,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e14230932ccf",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T14:24:54Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T14:24:54Z"
+        },
+        "message": "commit 1 for PR #287: test(growth_referrals): update fraud_check.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fc8eb2459f43",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T14:54:54Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T14:54:54Z"
+        },
+        "message": "commit 2 for PR #287: test(growth_referrals): update fraud_check.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "def11e241a1c",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T15:24:54Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T15:24:54Z"
+        },
+        "message": "commit 3 for PR #287: test(growth_referrals): update fraud_check.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f19f3f733cfa",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T15:54:54Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-02-23T15:54:54Z"
+        },
+        "message": "commit 4 for PR #287: test(growth_referrals): update fraud_check.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 28701,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-25T00:24:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/287#pullrequestreview-28701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1513,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Review comment 1513: verify boundary checks on line 15.",
+      "created_at": "2026-02-25T00:24:54Z",
+      "path": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1514,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Review comment 1514: verify boundary checks on line 25.",
+      "created_at": "2026-02-25T00:24:54Z",
+      "path": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1515,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Review comment 1515: verify boundary checks on line 35.",
+      "created_at": "2026-02-25T00:24:54Z",
+      "path": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1516,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Review comment 1516: verify boundary checks on line 45.",
+      "created_at": "2026-02-25T00:24:54Z",
+      "path": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1517,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Review comment 1517: verify boundary checks on line 55.",
+      "created_at": "2026-02-25T00:24:54Z",
+      "path": "growth/referrals/__pycache__/fraud_check.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

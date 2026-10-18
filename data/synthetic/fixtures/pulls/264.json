@@ -1,0 +1,186 @@
+{
+  "id": 1000264,
+  "number": 264,
+  "state": "closed",
+  "title": "perf(auth): update session.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-02-11T11:15:23Z",
+  "updated_at": "2026-02-14T01:15:23Z",
+  "closed_at": "2026-02-14T01:15:23Z",
+  "merged_at": "2026-02-14T01:15:23Z",
+  "merge_commit_sha": "131b2624383f",
+  "head": {
+    "ref": "feature/pr-264",
+    "sha": "131b2624383f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/264",
+  "files": [
+    {
+      "filename": "auth/session.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 13,
+      "changes": 31
+    },
+    {
+      "filename": "auth/__init__.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 4,
+      "changes": 35
+    },
+    {
+      "filename": "auth/__pycache__/jwt_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 5,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1cbc886cbe15",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-02-11T11:15:23Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-02-11T11:15:23Z"
+        },
+        "message": "commit 1 for PR #264: perf(auth): update session.py"
+      }
+    },
+    {
+      "sha": "131b2624383f",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-02-11T11:45:23Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-02-11T11:45:23Z"
+        },
+        "message": "commit 2 for PR #264: perf(auth): update session.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 26401,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-11T17:15:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/264#pullrequestreview-26401"
+    },
+    {
+      "id": 26402,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-11T17:15:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/264#pullrequestreview-26402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1394,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 1394: verify boundary checks on line 15.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 15
+    },
+    {
+      "id": 1395,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 1395: verify boundary checks on line 25.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 25
+    },
+    {
+      "id": 1396,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 1396: verify boundary checks on line 35.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 35
+    },
+    {
+      "id": 1397,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1397: verify boundary checks on line 15.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 15
+    },
+    {
+      "id": 1398,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1398: verify boundary checks on line 25.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 25
+    },
+    {
+      "id": 1399,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1399: verify boundary checks on line 35.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 35
+    },
+    {
+      "id": 1400,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1400: verify boundary checks on line 45.",
+      "created_at": "2026-02-11T17:15:23Z",
+      "path": "auth/session.py",
+      "line": 45
+    }
+  ]
+}

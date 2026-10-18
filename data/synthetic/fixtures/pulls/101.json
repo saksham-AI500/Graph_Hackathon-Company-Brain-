@@ -1,0 +1,227 @@
+{
+  "id": 1000101,
+  "number": 101,
+  "state": "closed",
+  "title": "feat(infra_deploy): update helm_templates.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 25566,
+    "type": "User"
+  },
+  "created_at": "2025-11-20T23:44:22Z",
+  "updated_at": "2025-11-22T14:44:22Z",
+  "closed_at": "2025-11-22T14:44:22Z",
+  "merged_at": "2025-11-22T14:44:22Z",
+  "merge_commit_sha": "4d541f669754",
+  "head": {
+    "ref": "feature/pr-101",
+    "sha": "4d541f669754"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/101",
+  "files": [
+    {
+      "filename": "infra/deploy/helm_templates.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 13,
+      "changes": 28
+    },
+    {
+      "filename": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 15,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9b038040105f",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-20T23:44:22Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-20T23:44:22Z"
+        },
+        "message": "commit 1 for PR #101: feat(infra_deploy): update helm_templates.py"
+      }
+    },
+    {
+      "sha": "144d4e1cab57",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T00:14:22Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T00:14:22Z"
+        },
+        "message": "commit 2 for PR #101: feat(infra_deploy): update helm_templates.py"
+      }
+    },
+    {
+      "sha": "603b25de6fa9",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T00:44:22Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T00:44:22Z"
+        },
+        "message": "commit 3 for PR #101: feat(infra_deploy): update helm_templates.py"
+      }
+    },
+    {
+      "sha": "3287a8a70185",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T01:14:22Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T01:14:22Z"
+        },
+        "message": "commit 4 for PR #101: feat(infra_deploy): update helm_templates.py"
+      }
+    },
+    {
+      "sha": "4d541f669754",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T01:44:22Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2025-11-21T01:44:22Z"
+        },
+        "message": "commit 5 for PR #101: feat(infra_deploy): update helm_templates.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10101,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T11:44:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/101#pullrequestreview-10101"
+    },
+    {
+      "id": 10102,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T11:44:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/101#pullrequestreview-10102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 535,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 535: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 15
+    },
+    {
+      "id": 536,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 536: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 25
+    },
+    {
+      "id": 537,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 537: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 35
+    },
+    {
+      "id": 538,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 538: verify boundary checks on line 45.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 45
+    },
+    {
+      "id": 539,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 539: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 15
+    },
+    {
+      "id": 540,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 540: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 25
+    },
+    {
+      "id": 541,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 541: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T11:44:22Z",
+      "path": "infra/deploy/helm_templates.py",
+      "line": 35
+    }
+  ]
+}

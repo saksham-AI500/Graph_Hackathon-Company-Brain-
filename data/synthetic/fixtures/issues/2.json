@@ -1,0 +1,51 @@
+{
+  "id": 2000002,
+  "number": 2,
+  "title": "INCIDENT: infra-observability improvements for reliability",
+  "body": "Detailed description for incident tracking in module infra/observability/.",
+  "user": {
+    "login": "noah-kim",
+    "id": 24338,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-02T10:27:05Z",
+  "updated_at": "2025-10-11T10:27:05Z",
+  "closed_at": "2025-10-11T10:27:05Z",
+  "labels": [
+    "incident",
+    "infra-observability"
+  ],
+  "linked_pulls": [
+    290
+  ],
+  "comments": [
+    {
+      "id": 70004,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #4 on issue #2: updates from triage and reproduction steps.",
+      "created_at": "2025-10-02T20:27:05Z"
+    },
+    {
+      "id": 70005,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #5 on issue #2: updates from triage and reproduction steps.",
+      "created_at": "2025-10-02T23:27:05Z"
+    },
+    {
+      "id": 70006,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #6 on issue #2: updates from triage and reproduction steps.",
+      "created_at": "2025-10-03T01:27:05Z"
+    }
+  ]
+}

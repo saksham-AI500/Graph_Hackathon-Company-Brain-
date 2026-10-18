@@ -73,7 +73,10 @@ def render_sidebar(client: Optional[FalkorDBClient]) -> Dict[str, Any]:
 
     # Masked API Key (stored strictly in session state, never written to disk or logs)
     if "openrouter_api_key" not in st.session_state:
-        st.session_state["openrouter_api_key"] = os.environ.get("OPENROUTER_API_KEY", "")
+        if os.environ.get("PYTEST_CURRENT_TEST"):
+            st.session_state["openrouter_api_key"] = ""
+        else:
+            st.session_state["openrouter_api_key"] = os.environ.get("OPENROUTER_API_KEY", "")
 
     api_key_input = st.sidebar.text_input(
         "OpenRouter API Key",
@@ -90,14 +93,14 @@ def render_sidebar(client: Optional[FalkorDBClient]) -> Dict[str, Any]:
     else:
         st.sidebar.info("Mode: Zero-Key Deterministic Fallback (Offline Safe)")
 
-    # Model Selector
-    default_model = os.environ.get("OPENROUTER_MODEL", "anthropic/claude-3.5-sonnet")
+    # Model Selector (Verified DeepSeek models)
+    default_model = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-chat")
     preset_models = [
         default_model,
-        "anthropic/claude-3.5-sonnet",
-        "openai/gpt-4o",
-        "google/gemini-2.0-flash-001",
-        "meta-llama/llama-3.3-70b-instruct",
+        "deepseek/deepseek-chat",
+        "deepseek/deepseek-r1",
+        "deepseek/deepseek-v4.1-flash",
+        "deepseek/deepseek-v3.2",
         "Custom...",
     ]
     # Deduplicate while preserving order
@@ -107,10 +110,12 @@ def render_sidebar(client: Optional[FalkorDBClient]) -> Dict[str, Any]:
     chosen_model = st.sidebar.selectbox("Model", model_options, index=0)
     if chosen_model == "Custom...":
         chosen_model = st.sidebar.text_input(
-            "Custom Model Slug",
-            value="meta-llama/llama-3.1-8b-instruct",
-            placeholder="provider/model-name",
+            "Custom DeepSeek Model Slug",
+            value="deepseek/deepseek-chat",
+            placeholder="deepseek/...",
         ).strip()
+        if chosen_model and not chosen_model.startswith("deepseek/"):
+            st.sidebar.warning("RepoBrain strictly requires a verified DeepSeek model.")
 
     st.sidebar.markdown("---")
 
@@ -175,13 +180,15 @@ def render_sidebar(client: Optional[FalkorDBClient]) -> Dict[str, Any]:
     st.sidebar.caption("Click to load authentic questions into the active view:")
 
     presets = [
+        ("q_reviewers_multi", "Who should review a PR touching both src/ and tests/? Rank with evidence."),
         ("q_who_owns", "Who owns src/module.c?"),
         ("q_who_knows", "Who knows about src/module.c?"),
         ("q_pr_brief", "What is the brief for PR #3339?"),
         ("q_decision", "What was decided about graph limits?"),
         ("q_stale", "Are there any stale documentation files?"),
-        ("q_reviewers", "Suggest reviewers for PR #3339"),
+        ("q_maintainers", "Who are the top maintainers by PageRank?"),
         ("q_sync_status", "What is the current sync status?"),
+        ("q_codeowners", "Show all CODEOWNERS rules"),
     ]
 
     for p_key, p_text in presets:

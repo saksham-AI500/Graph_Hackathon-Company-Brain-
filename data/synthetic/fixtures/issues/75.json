@@ -1,0 +1,42 @@
+{
+  "id": 2000075,
+  "number": 75,
+  "title": "TASK: infra-deploy improvements for throughput",
+  "body": "Detailed description for task tracking in module infra/deploy/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-17T09:54:28Z",
+  "updated_at": "2025-12-17T09:54:28Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "infra-deploy"
+  ],
+  "linked_pulls": [
+    313
+  ],
+  "comments": [
+    {
+      "id": 70304,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #304 on issue #75: updates from triage and reproduction steps.",
+      "created_at": "2025-12-18T05:54:28Z"
+    },
+    {
+      "id": 70305,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #305 on issue #75: updates from triage and reproduction steps.",
+      "created_at": "2025-12-18T12:54:28Z"
+    }
+  ]
+}

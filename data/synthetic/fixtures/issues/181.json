@@ -1,0 +1,49 @@
+{
+  "id": 2000181,
+  "number": 181,
+  "title": "BUG: growth-experiments improvements for reliability",
+  "body": "Detailed description for bug tracking in module growth/experiments/.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 26692,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-06T18:26:54Z",
+  "updated_at": "2026-04-13T18:26:54Z",
+  "closed_at": "2026-04-13T18:26:54Z",
+  "labels": [
+    "bug",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70736,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #736 on issue #181: updates from triage and reproduction steps.",
+      "created_at": "2026-04-07T10:26:54Z"
+    },
+    {
+      "id": 70737,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #737 on issue #181: updates from triage and reproduction steps.",
+      "created_at": "2026-04-08T08:26:54Z"
+    },
+    {
+      "id": 70738,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #738 on issue #181: updates from triage and reproduction steps.",
+      "created_at": "2026-04-08T21:26:54Z"
+    }
+  ]
+}

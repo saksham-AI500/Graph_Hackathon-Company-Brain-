@@ -1,0 +1,136 @@
+{
+  "id": 1000257,
+  "number": 257,
+  "state": "closed",
+  "title": "perf(auth_mfa): update device_fingerprint.cpython-314.pyc",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-02-06T22:11:50Z",
+  "updated_at": "2026-02-09T03:11:50Z",
+  "closed_at": "2026-02-09T03:11:50Z",
+  "merged_at": "2026-02-09T03:11:50Z",
+  "merge_commit_sha": "a1bcbdcde245",
+  "head": {
+    "ref": "feature/pr-257",
+    "sha": "a1bcbdcde245"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/257",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 2,
+      "changes": 23
+    },
+    {
+      "filename": "auth/mfa/__pycache__/totp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 5,
+      "changes": 32
+    },
+    {
+      "filename": "auth/mfa/__pycache__/recovery_vault.cpython-314.pyc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 2,
+      "changes": 44
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9cf6e7d53b3c",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T22:11:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T22:11:50Z"
+        },
+        "message": "commit 1 for PR #257: perf(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "504ee2d6d4de",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T22:41:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T22:41:50Z"
+        },
+        "message": "commit 2 for PR #257: perf(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a1bcbdcde245",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T23:11:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-06T23:11:50Z"
+        },
+        "message": "commit 3 for PR #257: perf(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 25701,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-08T01:11:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/257#pullrequestreview-25701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1376,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1376: verify boundary checks on line 15.",
+      "created_at": "2026-02-08T01:11:50Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1377,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1377: verify boundary checks on line 25.",
+      "created_at": "2026-02-08T01:11:50Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

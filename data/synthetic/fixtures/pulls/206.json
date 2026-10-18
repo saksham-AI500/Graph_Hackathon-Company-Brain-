@@ -1,0 +1,217 @@
+{
+  "id": 1000206,
+  "number": 206,
+  "state": "closed",
+  "title": "feat(search_indexer): update document_store.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-01-13T02:34:23Z",
+  "updated_at": "2026-01-15T20:34:23Z",
+  "closed_at": "2026-01-15T20:34:23Z",
+  "merged_at": "2026-01-15T20:34:23Z",
+  "merge_commit_sha": "940088c4cd17",
+  "head": {
+    "ref": "feature/pr-206",
+    "sha": "940088c4cd17"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/206",
+  "files": [
+    {
+      "filename": "search/indexer/document_store.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 11,
+      "changes": 45
+    },
+    {
+      "filename": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 2,
+      "changes": 39
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9f5719b41dda",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T02:34:23Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T02:34:23Z"
+        },
+        "message": "commit 1 for PR #206: feat(search_indexer): update document_store.py"
+      }
+    },
+    {
+      "sha": "81de70205284",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T03:04:23Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T03:04:23Z"
+        },
+        "message": "commit 2 for PR #206: feat(search_indexer): update document_store.py"
+      }
+    },
+    {
+      "sha": "940088c4cd17",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T03:34:23Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-13T03:34:23Z"
+        },
+        "message": "commit 3 for PR #206: feat(search_indexer): update document_store.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 20601,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-15T02:34:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/206#pullrequestreview-20601"
+    },
+    {
+      "id": 20602,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-15T02:34:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/206#pullrequestreview-20602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1153,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1153: verify boundary checks on line 15.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 15
+    },
+    {
+      "id": 1154,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1154: verify boundary checks on line 25.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 25
+    },
+    {
+      "id": 1155,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1155: verify boundary checks on line 35.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 35
+    },
+    {
+      "id": 1156,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1156: verify boundary checks on line 45.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 45
+    },
+    {
+      "id": 1157,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1157: verify boundary checks on line 15.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 15
+    },
+    {
+      "id": 1158,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1158: verify boundary checks on line 25.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 25
+    },
+    {
+      "id": 1159,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1159: verify boundary checks on line 35.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 35
+    },
+    {
+      "id": 1160,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1160: verify boundary checks on line 45.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 45
+    },
+    {
+      "id": 1161,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1161: verify boundary checks on line 55.",
+      "created_at": "2026-01-15T02:34:23Z",
+      "path": "search/indexer/document_store.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": 1000717,
+  "number": 717,
+  "state": "closed",
+  "title": "test(growth_experiments): update variant_allocator.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2026-09-28T17:29:10Z",
+  "updated_at": "2026-10-01T04:29:10Z",
+  "closed_at": "2026-10-01T04:29:10Z",
+  "merged_at": "2026-10-01T04:29:10Z",
+  "merge_commit_sha": "6b35c310fac3",
+  "head": {
+    "ref": "feature/pr-717",
+    "sha": "6b35c310fac3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/717",
+  "files": [
+    {
+      "filename": "growth/experiments/variant_allocator.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 7,
+      "changes": 30
+    },
+    {
+      "filename": "growth/experiments/statistical_engine.py",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 9,
+      "changes": 48
+    },
+    {
+      "filename": "growth/experiments/__pycache__/audit_experiments.cpython-314.pyc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 7,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b9833fb1e6d9",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T17:29:10Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T17:29:10Z"
+        },
+        "message": "commit 1 for PR #717: test(growth_experiments): update variant_allocator.py"
+      }
+    },
+    {
+      "sha": "d17f16dc0bd6",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T17:59:10Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T17:59:10Z"
+        },
+        "message": "commit 2 for PR #717: test(growth_experiments): update variant_allocator.py"
+      }
+    },
+    {
+      "sha": "e807e0938a3c",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T18:29:10Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T18:29:10Z"
+        },
+        "message": "commit 3 for PR #717: test(growth_experiments): update variant_allocator.py"
+      }
+    },
+    {
+      "sha": "377d7f9c8665",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T18:59:10Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T18:59:10Z"
+        },
+        "message": "commit 4 for PR #717: test(growth_experiments): update variant_allocator.py"
+      }
+    },
+    {
+      "sha": "6b35c310fac3",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T19:29:10Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-09-28T19:29:10Z"
+        },
+        "message": "commit 5 for PR #717: test(growth_experiments): update variant_allocator.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71701,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-30T11:29:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/717#pullrequestreview-71701"
+    },
+    {
+      "id": 71702,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-30T11:29:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/717#pullrequestreview-71702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3807,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3807: verify boundary checks on line 15.",
+      "created_at": "2026-09-30T11:29:10Z",
+      "path": "growth/experiments/variant_allocator.py",
+      "line": 15
+    },
+    {
+      "id": 3808,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3808: verify boundary checks on line 25.",
+      "created_at": "2026-09-30T11:29:10Z",
+      "path": "growth/experiments/variant_allocator.py",
+      "line": 25
+    },
+    {
+      "id": 3809,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3809: verify boundary checks on line 15.",
+      "created_at": "2026-09-30T11:29:10Z",
+      "path": "growth/experiments/variant_allocator.py",
+      "line": 15
+    },
+    {
+      "id": 3810,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3810: verify boundary checks on line 25.",
+      "created_at": "2026-09-30T11:29:10Z",
+      "path": "growth/experiments/variant_allocator.py",
+      "line": 25
+    }
+  ]
+}

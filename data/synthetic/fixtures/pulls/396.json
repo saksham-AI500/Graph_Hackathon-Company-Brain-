@@ -1,0 +1,178 @@
+{
+  "id": 1000396,
+  "number": 396,
+  "state": "closed",
+  "title": "chore(shared_utils): update crypto_utils.py",
+  "body": "Implementation changes for shared_utils module improvements.\n\nFixes #33",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-04-20T06:11:03Z",
+  "updated_at": "2026-04-21T08:11:03Z",
+  "closed_at": "2026-04-21T08:11:03Z",
+  "merged_at": "2026-04-21T08:11:03Z",
+  "merge_commit_sha": "f016ce2b6e4a",
+  "head": {
+    "ref": "feature/pr-396",
+    "sha": "f016ce2b6e4a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/396",
+  "files": [
+    {
+      "filename": "shared/utils/crypto_utils.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 2,
+      "changes": 45
+    },
+    {
+      "filename": "shared/utils/__init__.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 7,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5f090dd43a82",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T06:11:03Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T06:11:03Z"
+        },
+        "message": "commit 1 for PR #396: chore(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "a92f20943e85",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T06:41:03Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T06:41:03Z"
+        },
+        "message": "commit 2 for PR #396: chore(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "9a9d96800fba",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T07:11:03Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T07:11:03Z"
+        },
+        "message": "commit 3 for PR #396: chore(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "f016ce2b6e4a",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T07:41:03Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-04-20T07:41:03Z"
+        },
+        "message": "commit 4 for PR #396: chore(shared_utils): update crypto_utils.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 39601,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-21T09:11:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/396#pullrequestreview-39601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2091,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2091: verify boundary checks on line 15.",
+      "created_at": "2026-04-21T09:11:03Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 15
+    },
+    {
+      "id": 2092,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2092: verify boundary checks on line 25.",
+      "created_at": "2026-04-21T09:11:03Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 25
+    },
+    {
+      "id": 2093,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2093: verify boundary checks on line 35.",
+      "created_at": "2026-04-21T09:11:03Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 35
+    },
+    {
+      "id": 2094,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2094: verify boundary checks on line 45.",
+      "created_at": "2026-04-21T09:11:03Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 45
+    },
+    {
+      "id": 2095,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2095: verify boundary checks on line 55.",
+      "created_at": "2026-04-21T09:11:03Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 55
+    }
+  ]
+}

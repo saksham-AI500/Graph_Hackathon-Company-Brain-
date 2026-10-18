@@ -1,0 +1,229 @@
+{
+  "id": 1000221,
+  "number": 221,
+  "state": "closed",
+  "title": "feat(infra_observability): update tracer.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-01-20T17:17:47Z",
+  "updated_at": "2026-01-22T21:17:47Z",
+  "closed_at": "2026-01-22T21:17:47Z",
+  "merged_at": "2026-01-22T21:17:47Z",
+  "merge_commit_sha": "e570939468f1",
+  "head": {
+    "ref": "feature/pr-221",
+    "sha": "e570939468f1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/221",
+  "files": [
+    {
+      "filename": "infra/observability/tracer.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 3,
+      "changes": 16
+    },
+    {
+      "filename": "infra/observability/metrics.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 7,
+      "changes": 7
+    },
+    {
+      "filename": "infra/observability/slo.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7b975bfceb16",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T17:17:47Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T17:17:47Z"
+        },
+        "message": "commit 1 for PR #221: feat(infra_observability): update tracer.py"
+      }
+    },
+    {
+      "sha": "beeb75f1761f",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T17:47:47Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T17:47:47Z"
+        },
+        "message": "commit 2 for PR #221: feat(infra_observability): update tracer.py"
+      }
+    },
+    {
+      "sha": "703779b3656e",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T18:17:47Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T18:17:47Z"
+        },
+        "message": "commit 3 for PR #221: feat(infra_observability): update tracer.py"
+      }
+    },
+    {
+      "sha": "e570939468f1",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T18:47:47Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-20T18:47:47Z"
+        },
+        "message": "commit 4 for PR #221: feat(infra_observability): update tracer.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22101,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-22T16:17:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/221#pullrequestreview-22101"
+    },
+    {
+      "id": 22102,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-22T16:17:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/221#pullrequestreview-22102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1211,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1211: verify boundary checks on line 15.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 15
+    },
+    {
+      "id": 1212,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1212: verify boundary checks on line 25.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 25
+    },
+    {
+      "id": 1213,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1213: verify boundary checks on line 35.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 35
+    },
+    {
+      "id": 1214,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 1214: verify boundary checks on line 45.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 45
+    },
+    {
+      "id": 1215,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1215: verify boundary checks on line 15.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 15
+    },
+    {
+      "id": 1216,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1216: verify boundary checks on line 25.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 25
+    },
+    {
+      "id": 1217,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1217: verify boundary checks on line 35.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 35
+    },
+    {
+      "id": 1218,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1218: verify boundary checks on line 45.",
+      "created_at": "2026-01-22T16:17:47Z",
+      "path": "infra/observability/tracer.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 2000144,
+  "number": 144,
+  "title": "BUG: search improvements for latency",
+  "body": "Detailed description for bug tracking in module search/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-02-27T05:43:06Z",
+  "updated_at": "2026-02-27T05:43:06Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70584,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #584 on issue #144: updates from triage and reproduction steps.",
+      "created_at": "2026-02-27T16:43:06Z"
+    },
+    {
+      "id": 70585,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #585 on issue #144: updates from triage and reproduction steps.",
+      "created_at": "2026-02-28T00:43:06Z"
+    },
+    {
+      "id": 70586,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #586 on issue #144: updates from triage and reproduction steps.",
+      "created_at": "2026-02-28T08:43:06Z"
+    },
+    {
+      "id": 70587,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #587 on issue #144: updates from triage and reproduction steps.",
+      "created_at": "2026-03-01T06:43:06Z"
+    },
+    {
+      "id": 70588,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #588 on issue #144: updates from triage and reproduction steps.",
+      "created_at": "2026-03-01T11:43:06Z"
+    }
+  ]
+}

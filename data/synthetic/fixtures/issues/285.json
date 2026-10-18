@@ -1,0 +1,49 @@
+{
+  "id": 2000285,
+  "number": 285,
+  "title": "TASK: growth-referrals improvements for latency",
+  "body": "Detailed description for task tracking in module growth/referrals/.",
+  "user": {
+    "login": "zane-malik",
+    "id": 29743,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-07-24T00:56:07Z",
+  "updated_at": "2026-07-24T00:56:07Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71169,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1169 on issue #285: updates from triage and reproduction steps.",
+      "created_at": "2026-07-24T02:56:07Z"
+    },
+    {
+      "id": 71170,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #1170 on issue #285: updates from triage and reproduction steps.",
+      "created_at": "2026-07-24T04:56:07Z"
+    },
+    {
+      "id": 71171,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #1171 on issue #285: updates from triage and reproduction steps.",
+      "created_at": "2026-07-24T07:56:07Z"
+    }
+  ]
+}

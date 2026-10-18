@@ -1,0 +1,176 @@
+{
+  "id": 1000267,
+  "number": 267,
+  "state": "closed",
+  "title": "chore(growth_referrals): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-02-12T23:59:00Z",
+  "updated_at": "2026-02-15T12:59:00Z",
+  "closed_at": "2026-02-15T12:59:00Z",
+  "merged_at": "2026-02-15T12:59:00Z",
+  "merge_commit_sha": "4196ae3ab77f",
+  "head": {
+    "ref": "feature/pr-267",
+    "sha": "4196ae3ab77f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/267",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0e679c3bed01",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-12T23:59:00Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-12T23:59:00Z"
+        },
+        "message": "commit 1 for PR #267: chore(growth_referrals): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c65ecd88cd8a",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T00:29:00Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T00:29:00Z"
+        },
+        "message": "commit 2 for PR #267: chore(growth_referrals): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7ff3fef0066c",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T00:59:00Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T00:59:00Z"
+        },
+        "message": "commit 3 for PR #267: chore(growth_referrals): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bec1a8be3297",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T01:29:00Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T01:29:00Z"
+        },
+        "message": "commit 4 for PR #267: chore(growth_referrals): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4196ae3ab77f",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T01:59:00Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-02-13T01:59:00Z"
+        },
+        "message": "commit 5 for PR #267: chore(growth_referrals): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 26701,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-13T04:59:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/267#pullrequestreview-26701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1410,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1410: verify boundary checks on line 15.",
+      "created_at": "2026-02-13T04:59:00Z",
+      "path": "growth/referrals/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1411,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1411: verify boundary checks on line 25.",
+      "created_at": "2026-02-13T04:59:00Z",
+      "path": "growth/referrals/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1412,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1412: verify boundary checks on line 35.",
+      "created_at": "2026-02-13T04:59:00Z",
+      "path": "growth/referrals/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1413,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1413: verify boundary checks on line 45.",
+      "created_at": "2026-02-13T04:59:00Z",
+      "path": "growth/referrals/__pycache__/__init__.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

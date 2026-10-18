@@ -1,0 +1,12 @@
+{
+  "question_id": "GEN-04",
+  "question": "Why use exponential backoff with jitter?",
+  "mode": "graph_off",
+  "run_index": 1,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "Exponential backoff with jitter is used to prevent thundering herd problems and reduce contention in distributed systems by randomizing retry delays.  \n\nContext: This technique is commonly applied in scenarios like API rate limiting, database access, or distributed system coordination.  \n\nReasoning: Exponential backoff increases the delay between retries exponentially (e.g., 1s, 2s, 4s) to avoid overwhelming the system. Jitter adds randomness to these delays, ensuring that multiple clients don\u2019t retry simultaneously, which could cause spikes in load or contention. Together, they improve system stability and fairness.  \n\nSources:  \n[S1] AWS Architecture Blog, \"Exponential Backoff and Jitter,\" https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/  \n[S2] Google Cloud Architecture Framework, \"Retry Strategies,\" https://cloud.google.com/architecture/retry-strategies",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:06:18.780363+00:00",
+  "latency_ms": 10623.22,
+  "is_correct": true
+}

@@ -1,0 +1,246 @@
+{
+  "id": 1000521,
+  "number": 521,
+  "state": "closed",
+  "title": "chore(auth): update exceptions.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-06-22T01:10:09Z",
+  "updated_at": "2026-06-25T00:10:09Z",
+  "closed_at": "2026-06-25T00:10:09Z",
+  "merged_at": "2026-06-25T00:10:09Z",
+  "merge_commit_sha": "ae04a4a6a254",
+  "head": {
+    "ref": "feature/pr-521",
+    "sha": "ae04a4a6a254"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/521",
+  "files": [
+    {
+      "filename": "auth/exceptions.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 14,
+      "changes": 26
+    },
+    {
+      "filename": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 12,
+      "changes": 50
+    },
+    {
+      "filename": "auth/mfa/__pycache__/totp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 11,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "503ed26704ee",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T01:10:09Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T01:10:09Z"
+        },
+        "message": "commit 1 for PR #521: chore(auth): update exceptions.py"
+      }
+    },
+    {
+      "sha": "4e16cc717cdf",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T01:40:09Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T01:40:09Z"
+        },
+        "message": "commit 2 for PR #521: chore(auth): update exceptions.py"
+      }
+    },
+    {
+      "sha": "ae04a4a6a254",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T02:10:09Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-06-22T02:10:09Z"
+        },
+        "message": "commit 3 for PR #521: chore(auth): update exceptions.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52101,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T04:10:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/521#pullrequestreview-52101"
+    },
+    {
+      "id": 52102,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T04:10:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/521#pullrequestreview-52102"
+    },
+    {
+      "id": 52103,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T04:10:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/521#pullrequestreview-52103"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2793,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2793: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 15
+    },
+    {
+      "id": 2794,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2794: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 25
+    },
+    {
+      "id": 2795,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2795: verify boundary checks on line 35.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 35
+    },
+    {
+      "id": 2796,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2796: verify boundary checks on line 45.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 45
+    },
+    {
+      "id": 2797,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2797: verify boundary checks on line 55.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 55
+    },
+    {
+      "id": 2798,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2798: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 15
+    },
+    {
+      "id": 2799,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2799: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 25
+    },
+    {
+      "id": 2800,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2800: verify boundary checks on line 35.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 35
+    },
+    {
+      "id": 2801,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2801: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 15
+    },
+    {
+      "id": 2802,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2802: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T04:10:09Z",
+      "path": "auth/exceptions.py",
+      "line": 25
+    }
+  ]
+}

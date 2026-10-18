@@ -1,0 +1,196 @@
+{
+  "id": 1000328,
+  "number": 328,
+  "state": "closed",
+  "title": "perf(shared_utils): update retry.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-03-16T08:56:08Z",
+  "updated_at": "2026-03-18T09:56:08Z",
+  "closed_at": "2026-03-18T09:56:08Z",
+  "merged_at": "2026-03-18T09:56:08Z",
+  "merge_commit_sha": "33cd51fa5b8b",
+  "head": {
+    "ref": "feature/pr-328",
+    "sha": "33cd51fa5b8b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/328",
+  "files": [
+    {
+      "filename": "shared/utils/retry.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 5,
+      "changes": 51
+    },
+    {
+      "filename": "shared/utils/__pycache__/hashing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 14,
+      "changes": 43
+    },
+    {
+      "filename": "shared/utils/__pycache__/string_helpers.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 4,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4aff0c7fb7dc",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T08:56:08Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T08:56:08Z"
+        },
+        "message": "commit 1 for PR #328: perf(shared_utils): update retry.py"
+      }
+    },
+    {
+      "sha": "43f015be2f5e",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T09:26:08Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T09:26:08Z"
+        },
+        "message": "commit 2 for PR #328: perf(shared_utils): update retry.py"
+      }
+    },
+    {
+      "sha": "4fcf25a7c112",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T09:56:08Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T09:56:08Z"
+        },
+        "message": "commit 3 for PR #328: perf(shared_utils): update retry.py"
+      }
+    },
+    {
+      "sha": "33cd51fa5b8b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T10:26:08Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-03-16T10:26:08Z"
+        },
+        "message": "commit 4 for PR #328: perf(shared_utils): update retry.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 32801,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-17T20:56:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/328#pullrequestreview-32801"
+    },
+    {
+      "id": 32802,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-17T20:56:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/328#pullrequestreview-32802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1733,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1733: verify boundary checks on line 15.",
+      "created_at": "2026-03-17T20:56:08Z",
+      "path": "shared/utils/retry.py",
+      "line": 15
+    },
+    {
+      "id": 1734,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1734: verify boundary checks on line 25.",
+      "created_at": "2026-03-17T20:56:08Z",
+      "path": "shared/utils/retry.py",
+      "line": 25
+    },
+    {
+      "id": 1735,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1735: verify boundary checks on line 15.",
+      "created_at": "2026-03-17T20:56:08Z",
+      "path": "shared/utils/retry.py",
+      "line": 15
+    },
+    {
+      "id": 1736,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1736: verify boundary checks on line 25.",
+      "created_at": "2026-03-17T20:56:08Z",
+      "path": "shared/utils/retry.py",
+      "line": 25
+    },
+    {
+      "id": 1737,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1737: verify boundary checks on line 35.",
+      "created_at": "2026-03-17T20:56:08Z",
+      "path": "shared/utils/retry.py",
+      "line": 35
+    }
+  ]
+}

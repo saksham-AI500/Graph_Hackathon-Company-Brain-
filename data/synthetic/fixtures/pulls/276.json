@@ -1,0 +1,199 @@
+{
+  "id": 1000276,
+  "number": 276,
+  "state": "closed",
+  "title": "fix(growth_referrals): update leaderboard.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2026-02-17T12:51:51Z",
+  "updated_at": "2026-02-20T12:51:51Z",
+  "closed_at": "2026-02-20T12:51:51Z",
+  "merged_at": "2026-02-20T12:51:51Z",
+  "merge_commit_sha": "38b6ddeb43b2",
+  "head": {
+    "ref": "feature/pr-276",
+    "sha": "38b6ddeb43b2"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/276",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6f823add59ce",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T12:51:51Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T12:51:51Z"
+        },
+        "message": "commit 1 for PR #276: fix(growth_referrals): update leaderboard.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "613076eed0e8",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T13:21:51Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T13:21:51Z"
+        },
+        "message": "commit 2 for PR #276: fix(growth_referrals): update leaderboard.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "38b6ddeb43b2",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T13:51:51Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-02-17T13:51:51Z"
+        },
+        "message": "commit 3 for PR #276: fix(growth_referrals): update leaderboard.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27601,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T20:51:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/276#pullrequestreview-27601"
+    },
+    {
+      "id": 27602,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T20:51:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/276#pullrequestreview-27602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1450,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1450: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1451,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1451: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1452,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1452: verify boundary checks on line 35.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1453,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 1453: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1454,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 1454: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1455,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 1455: verify boundary checks on line 35.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1456,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 1456: verify boundary checks on line 45.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1457,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 1457: verify boundary checks on line 55.",
+      "created_at": "2026-02-17T20:51:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

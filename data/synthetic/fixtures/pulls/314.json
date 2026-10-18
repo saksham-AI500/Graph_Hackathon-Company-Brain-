@@ -1,0 +1,133 @@
+{
+  "id": 1000314,
+  "number": 314,
+  "state": "closed",
+  "title": "refactor(billing): update __init__.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-03-09T07:08:27Z",
+  "updated_at": "2026-03-12T04:08:27Z",
+  "closed_at": "2026-03-12T04:08:27Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-314",
+    "sha": "78fa63005ded"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/314",
+  "files": [
+    {
+      "filename": "billing/__init__.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 12,
+      "changes": 58
+    },
+    {
+      "filename": "billing/statement.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 14,
+      "changes": 41
+    },
+    {
+      "filename": "billing/discounts.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 17
+    }
+  ],
+  "commits": [
+    {
+      "sha": "100b9f444858",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T07:08:27Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T07:08:27Z"
+        },
+        "message": "commit 1 for PR #314: refactor(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "e4ea4b2a1bb6",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T07:38:27Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T07:38:27Z"
+        },
+        "message": "commit 2 for PR #314: refactor(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "7d92ed687f51",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T08:08:27Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T08:08:27Z"
+        },
+        "message": "commit 3 for PR #314: refactor(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "833013026278",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T08:38:27Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T08:38:27Z"
+        },
+        "message": "commit 4 for PR #314: refactor(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "78fa63005ded",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T09:08:27Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T09:08:27Z"
+        },
+        "message": "commit 5 for PR #314: refactor(billing): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

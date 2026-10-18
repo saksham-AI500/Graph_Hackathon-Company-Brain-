@@ -1,0 +1,136 @@
+{
+  "id": 1000216,
+  "number": 216,
+  "state": "closed",
+  "title": "test(api_gateway): update cors.py",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-01-19T04:00:22Z",
+  "updated_at": "2026-01-20T10:00:22Z",
+  "closed_at": "2026-01-20T10:00:22Z",
+  "merged_at": "2026-01-20T10:00:22Z",
+  "merge_commit_sha": "241f7625d9a4",
+  "head": {
+    "ref": "feature/pr-216",
+    "sha": "241f7625d9a4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/216",
+  "files": [
+    {
+      "filename": "api/gateway/cors.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 14,
+      "changes": 33
+    },
+    {
+      "filename": "api/gateway/__pycache__/error_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 10,
+      "changes": 17
+    },
+    {
+      "filename": "api/gateway/__pycache__/rate_limit.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 10,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "15833b1d00e0",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T04:00:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T04:00:22Z"
+        },
+        "message": "commit 1 for PR #216: test(api_gateway): update cors.py"
+      }
+    },
+    {
+      "sha": "e240c21e121b",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T04:30:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T04:30:22Z"
+        },
+        "message": "commit 2 for PR #216: test(api_gateway): update cors.py"
+      }
+    },
+    {
+      "sha": "241f7625d9a4",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T05:00:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-01-19T05:00:22Z"
+        },
+        "message": "commit 3 for PR #216: test(api_gateway): update cors.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 21601,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-20T13:00:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/216#pullrequestreview-21601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1193,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1193: verify boundary checks on line 15.",
+      "created_at": "2026-01-20T13:00:22Z",
+      "path": "api/gateway/cors.py",
+      "line": 15
+    },
+    {
+      "id": 1194,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1194: verify boundary checks on line 25.",
+      "created_at": "2026-01-20T13:00:22Z",
+      "path": "api/gateway/cors.py",
+      "line": 25
+    }
+  ]
+}

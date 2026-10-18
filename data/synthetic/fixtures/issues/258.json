@@ -1,0 +1,76 @@
+{
+  "id": 2000258,
+  "number": 258,
+  "title": "INCIDENT: search improvements for caching",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 20476,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-06-25T21:53:50Z",
+  "updated_at": "2026-06-25T21:53:50Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71061,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #1061 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-26T19:53:50Z"
+    },
+    {
+      "id": 71062,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1062 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-27T03:53:50Z"
+    },
+    {
+      "id": 71063,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1063 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-27T15:53:50Z"
+    },
+    {
+      "id": 71064,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1064 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-28T13:53:50Z"
+    },
+    {
+      "id": 71065,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #1065 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-28T19:53:50Z"
+    },
+    {
+      "id": 71066,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1066 on issue #258: updates from triage and reproduction steps.",
+      "created_at": "2026-06-28T22:53:50Z"
+    }
+  ]
+}

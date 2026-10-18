@@ -1,0 +1,49 @@
+{
+  "id": 2000330,
+  "number": 330,
+  "title": "BUG: search-indexer improvements for security",
+  "body": "Detailed description for bug tracking in module search/indexer/.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 25586,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-08T21:44:54Z",
+  "updated_at": "2026-09-08T21:44:54Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71350,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1350 on issue #330: updates from triage and reproduction steps.",
+      "created_at": "2026-09-09T07:44:54Z"
+    },
+    {
+      "id": 71351,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1351 on issue #330: updates from triage and reproduction steps.",
+      "created_at": "2026-09-10T00:44:54Z"
+    },
+    {
+      "id": 71352,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1352 on issue #330: updates from triage and reproduction steps.",
+      "created_at": "2026-09-10T20:44:54Z"
+    }
+  ]
+}

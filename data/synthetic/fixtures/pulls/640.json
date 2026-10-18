@@ -1,0 +1,119 @@
+{
+  "id": 1000640,
+  "number": 640,
+  "state": "closed",
+  "title": "docs(billing): update enterprise pricing tier documentation",
+  "body": "Update plan descriptions in billing README.\n\nFixes #80",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-08-20T18:28:40Z",
+  "updated_at": "2026-08-22T05:28:40Z",
+  "closed_at": "2026-08-22T05:28:40Z",
+  "merged_at": "2026-08-22T05:28:40Z",
+  "merge_commit_sha": "2a8538e385f0",
+  "head": {
+    "ref": "feature/pr-640",
+    "sha": "2a8538e385f0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/640",
+  "files": [
+    {
+      "filename": "billing/README.md",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 5,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b9d0c027af4f",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T18:28:40Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T18:28:40Z"
+        },
+        "message": "commit 1 for PR #640: docs(billing): update enterprise pricing tier documentation"
+      }
+    },
+    {
+      "sha": "ba9e3513b2d0",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T18:58:40Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T18:58:40Z"
+        },
+        "message": "commit 2 for PR #640: docs(billing): update enterprise pricing tier documentation"
+      }
+    },
+    {
+      "sha": "6807fe10494d",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T19:28:40Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T19:28:40Z"
+        },
+        "message": "commit 3 for PR #640: docs(billing): update enterprise pricing tier documentation"
+      }
+    },
+    {
+      "sha": "11b3a87f640b",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T19:58:40Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T19:58:40Z"
+        },
+        "message": "commit 4 for PR #640: docs(billing): update enterprise pricing tier documentation"
+      }
+    },
+    {
+      "sha": "2a8538e385f0",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T20:28:40Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-20T20:28:40Z"
+        },
+        "message": "commit 5 for PR #640: docs(billing): update enterprise pricing tier documentation"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

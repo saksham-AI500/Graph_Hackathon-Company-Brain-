@@ -1,0 +1,78 @@
+{
+  "id": 2000112,
+  "number": 112,
+  "title": "PERF: payments-refunds improvements for reliability",
+  "body": "Detailed description for perf tracking in module payments/refunds/.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 24136,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-24T22:20:40Z",
+  "updated_at": "2026-02-10T22:20:40Z",
+  "closed_at": "2026-02-10T22:20:40Z",
+  "labels": [
+    "perf",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    533
+  ],
+  "comments": [
+    {
+      "id": 70459,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #459 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T00:20:40Z"
+    },
+    {
+      "id": 70460,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Comment #460 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T03:20:40Z"
+    },
+    {
+      "id": 70461,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #461 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T05:20:40Z"
+    },
+    {
+      "id": 70462,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #462 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T16:20:40Z"
+    },
+    {
+      "id": 70463,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #463 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-26T05:20:40Z"
+    },
+    {
+      "id": 70464,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #464 on issue #112: updates from triage and reproduction steps.",
+      "created_at": "2026-01-26T07:20:40Z"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": 1000545,
+  "number": 545,
+  "state": "closed",
+  "title": "test(api_gateway): update audit_gateway.py",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "hannah-schmidt",
+    "id": 26508,
+    "type": "User"
+  },
+  "created_at": "2026-07-03T04:41:11Z",
+  "updated_at": "2026-07-05T16:41:11Z",
+  "closed_at": "2026-07-05T16:41:11Z",
+  "merged_at": "2026-07-05T16:41:11Z",
+  "merge_commit_sha": "55da0ecf87e7",
+  "head": {
+    "ref": "feature/pr-545",
+    "sha": "55da0ecf87e7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/545",
+  "files": [
+    {
+      "filename": "api/gateway/audit_gateway.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 14,
+      "changes": 32
+    },
+    {
+      "filename": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 6,
+      "changes": 53
+    },
+    {
+      "filename": "api/gateway/schema_validator.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 2,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0858512d85e1",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2026-07-03T04:41:11Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2026-07-03T04:41:11Z"
+        },
+        "message": "commit 1 for PR #545: test(api_gateway): update audit_gateway.py"
+      }
+    },
+    {
+      "sha": "55da0ecf87e7",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2026-07-03T05:11:11Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2026-07-03T05:11:11Z"
+        },
+        "message": "commit 2 for PR #545: test(api_gateway): update audit_gateway.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54501,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-04T13:41:11Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/545#pullrequestreview-54501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2912,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2912: verify boundary checks on line 15.",
+      "created_at": "2026-07-04T13:41:11Z",
+      "path": "api/gateway/audit_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 2913,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2913: verify boundary checks on line 25.",
+      "created_at": "2026-07-04T13:41:11Z",
+      "path": "api/gateway/audit_gateway.py",
+      "line": 25
+    },
+    {
+      "id": 2914,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2914: verify boundary checks on line 35.",
+      "created_at": "2026-07-04T13:41:11Z",
+      "path": "api/gateway/audit_gateway.py",
+      "line": 35
+    },
+    {
+      "id": 2915,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2915: verify boundary checks on line 45.",
+      "created_at": "2026-07-04T13:41:11Z",
+      "path": "api/gateway/audit_gateway.py",
+      "line": 45
+    }
+  ]
+}

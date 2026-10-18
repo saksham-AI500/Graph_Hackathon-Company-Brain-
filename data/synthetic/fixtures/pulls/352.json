@@ -1,0 +1,169 @@
+{
+  "id": 1000352,
+  "number": 352,
+  "state": "closed",
+  "title": "feat(notifications): update sms_service.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-03-27T23:58:40Z",
+  "updated_at": "2026-03-30T20:58:40Z",
+  "closed_at": "2026-03-30T20:58:40Z",
+  "merged_at": "2026-03-30T20:58:40Z",
+  "merge_commit_sha": "10c362313d14",
+  "head": {
+    "ref": "feature/pr-352",
+    "sha": "10c362313d14"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/352",
+  "files": [
+    {
+      "filename": "notifications/sms_service.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 8,
+      "changes": 36
+    },
+    {
+      "filename": "notifications/dispatcher.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 9,
+      "changes": 57
+    },
+    {
+      "filename": "notifications/__pycache__/delivery_status.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 5,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "39196cf4df1f",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-27T23:58:40Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-27T23:58:40Z"
+        },
+        "message": "commit 1 for PR #352: feat(notifications): update sms_service.py"
+      }
+    },
+    {
+      "sha": "627cf680a33c",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-28T00:28:40Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-28T00:28:40Z"
+        },
+        "message": "commit 2 for PR #352: feat(notifications): update sms_service.py"
+      }
+    },
+    {
+      "sha": "10c362313d14",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-28T00:58:40Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-28T00:58:40Z"
+        },
+        "message": "commit 3 for PR #352: feat(notifications): update sms_service.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 35201,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-29T01:58:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/352#pullrequestreview-35201"
+    },
+    {
+      "id": 35202,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-29T01:58:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/352#pullrequestreview-35202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1835,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1835: verify boundary checks on line 15.",
+      "created_at": "2026-03-29T01:58:40Z",
+      "path": "notifications/sms_service.py",
+      "line": 15
+    },
+    {
+      "id": 1836,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1836: verify boundary checks on line 25.",
+      "created_at": "2026-03-29T01:58:40Z",
+      "path": "notifications/sms_service.py",
+      "line": 25
+    },
+    {
+      "id": 1837,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1837: verify boundary checks on line 15.",
+      "created_at": "2026-03-29T01:58:40Z",
+      "path": "notifications/sms_service.py",
+      "line": 15
+    },
+    {
+      "id": 1838,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1838: verify boundary checks on line 25.",
+      "created_at": "2026-03-29T01:58:40Z",
+      "path": "notifications/sms_service.py",
+      "line": 25
+    }
+  ]
+}

@@ -58,9 +58,80 @@ class LocalVectorBaseline:
         self._load_corpus()
 
     def _load_corpus(self) -> None:
+        """Load PR, Issue, and file records from disk cache, falling back to seed fixture."""
+        if self.cache_dir.exists():
+            self._load_from_cache()
+
+        # If cache was missing or empty, load from checked-in seed fixture
+        if len(self.documents) <= 1:
+            seed_path = Path(__file__).resolve().parent.parent / "fixtures" / "seed_repo_data.json"
+            if seed_path.exists():
+                self._load_from_seed(seed_path)
+
+    def _load_from_seed(self, seed_path: Path) -> None:
+        """Load corpus from checked-in deterministic seed fixture."""
+        try:
+            with open(seed_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            seen_prs = {d.number for d in self.documents if d.number}
+            seen_issues = set()
+            for pr in data.get("pull_requests", []):
+                num = pr.get("number")
+                if num and num not in seen_prs:
+                    seen_prs.add(num)
+                    pr_files = [f.get("path", "") for f in pr.get("files", []) if f.get("path")]
+                    pr_reviewers = [r.get("author_login") for r in pr.get("reviews", []) if r.get("author_login")]
+                    doc = TextDocument(
+                        doc_id=f"PR_{num}",
+                        doc_type="PullRequest",
+                        number=num,
+                        title=pr.get("title", ""),
+                        body=pr.get("body", ""),
+                        url=pr.get("url", f"https://github.com/FalkorDB/FalkorDB/pull/{num}"),
+                        timestamp=pr.get("merged_at") or pr.get("created_at"),
+                        author=pr.get("author_login", "unknown"),
+                        files=pr_files,
+                        reviewers=pr_reviewers,
+                    )
+                    self.documents.append(doc)
+
+                for iss in pr.get("resolved_issues", []):
+                    inum = iss.get("number")
+                    if inum and inum not in seen_issues:
+                        seen_issues.add(inum)
+                        idoc = TextDocument(
+                            doc_id=f"ISSUE_{inum}",
+                            doc_type="Issue",
+                            number=inum,
+                            title=iss.get("title", ""),
+                            body=iss.get("body", ""),
+                            url=iss.get("url", f"https://github.com/FalkorDB/FalkorDB/issues/{inum}"),
+                            timestamp=iss.get("created_at"),
+                            author=iss.get("author_login", "unknown"),
+                        )
+                        self.documents.append(idoc)
+
+            # Ensure CODEOWNERS document is present
+            if not any(d.doc_id == "CODEOWNERS" for d in self.documents):
+                co_body = data.get("codeowners", "/build/ @FalkorDB/falkordb-core /.github/ @FalkorDB/falkordb-core /CODEOWNERS @FalkorDB/falkordb-core")
+                self.documents.append(
+                    TextDocument(
+                        doc_id="CODEOWNERS",
+                        doc_type="Codeowners",
+                        number=None,
+                        title="Repository CODEOWNERS Ownership Rules",
+                        body=co_body,
+                        url="https://github.com/FalkorDB/FalkorDB/blob/main/CODEOWNERS",
+                        timestamp="2020-01-01T00:00:00Z",
+                        author="repo-maintainers",
+                        files=["/build/", "/.github/", "/CODEOWNERS"],
+                    )
+                )
+        except Exception:
+            pass
+
+    def _load_from_cache(self) -> None:
         """Load PR, Issue, and file records from disk cache."""
-        if not self.cache_dir.exists():
-            return
 
         # 1. Load PRs from cached PR list files
         pull_files = list(self.cache_dir.glob("*pulls*page*.json")) + list(self.cache_dir.glob("*pulls*per_page*.json"))
@@ -178,7 +249,9 @@ class LocalVectorBaseline:
             if exclude_pr and doc.doc_type == "PullRequest" and doc.number == exclude_pr:
                 continue
             if cutoff_timestamp:
-                if not doc.timestamp or doc.timestamp >= cutoff_timestamp:
+                norm_cutoff = cutoff_timestamp
+                # Inclusive as-of cutoff policy: events at or before cutoff are eligible; events strictly after cutoff are excluded
+                if not doc.timestamp or doc.timestamp > norm_cutoff:
                     continue
             eligible_docs.append(doc)
 

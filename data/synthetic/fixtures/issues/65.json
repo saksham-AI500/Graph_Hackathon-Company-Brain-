@@ -1,0 +1,60 @@
+{
+  "id": 2000065,
+  "number": 65,
+  "title": "BUG: payments improvements for security",
+  "body": "Detailed description for bug tracking in module payments/.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 21335,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-06T23:57:47Z",
+  "updated_at": "2025-12-31T23:57:47Z",
+  "closed_at": "2025-12-31T23:57:47Z",
+  "labels": [
+    "bug",
+    "payments"
+  ],
+  "linked_pulls": [
+    161
+  ],
+  "comments": [
+    {
+      "id": 70267,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #267 on issue #65: updates from triage and reproduction steps.",
+      "created_at": "2025-12-07T11:57:47Z"
+    },
+    {
+      "id": 70268,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #268 on issue #65: updates from triage and reproduction steps.",
+      "created_at": "2025-12-07T22:57:47Z"
+    },
+    {
+      "id": 70269,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #269 on issue #65: updates from triage and reproduction steps.",
+      "created_at": "2025-12-08T20:57:47Z"
+    },
+    {
+      "id": 70270,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #270 on issue #65: updates from triage and reproduction steps.",
+      "created_at": "2025-12-09T07:57:47Z"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 2000307,
+  "number": 307,
+  "title": "PERF: billing improvements for reliability",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 24658,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-15T22:18:15Z",
+  "updated_at": "2026-09-06T22:18:15Z",
+  "closed_at": "2026-09-06T22:18:15Z",
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71256,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #1256 on issue #307: updates from triage and reproduction steps.",
+      "created_at": "2026-08-16T02:18:15Z"
+    },
+    {
+      "id": 71257,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1257 on issue #307: updates from triage and reproduction steps.",
+      "created_at": "2026-08-16T08:18:15Z"
+    },
+    {
+      "id": 71258,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1258 on issue #307: updates from triage and reproduction steps.",
+      "created_at": "2026-08-17T07:18:15Z"
+    },
+    {
+      "id": 71259,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #1259 on issue #307: updates from triage and reproduction steps.",
+      "created_at": "2026-08-17T23:18:15Z"
+    },
+    {
+      "id": 71260,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1260 on issue #307: updates from triage and reproduction steps.",
+      "created_at": "2026-08-18T15:18:15Z"
+    }
+  ]
+}

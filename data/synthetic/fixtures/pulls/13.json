@@ -1,0 +1,147 @@
+{
+  "id": 1000013,
+  "number": 13,
+  "state": "closed",
+  "title": "fix(search): update search_api.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "zane-malik",
+    "id": 26937,
+    "type": "User"
+  },
+  "created_at": "2025-10-07T10:33:53Z",
+  "updated_at": "2025-10-09T21:33:53Z",
+  "closed_at": "2025-10-09T21:33:53Z",
+  "merged_at": "2025-10-09T21:33:53Z",
+  "merge_commit_sha": "71e3cf7495b1",
+  "head": {
+    "ref": "feature/pr-13",
+    "sha": "71e3cf7495b1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/13",
+  "files": [
+    {
+      "filename": "search/search_api.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 13,
+      "changes": 22
+    },
+    {
+      "filename": "search/__pycache__/spellcheck.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 4,
+      "changes": 55
+    },
+    {
+      "filename": "search/indexer/inverted_index.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 14,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "71d734596edd",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T10:33:53Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T10:33:53Z"
+        },
+        "message": "commit 1 for PR #13: fix(search): update search_api.py"
+      }
+    },
+    {
+      "sha": "3fd8cc5d9861",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T11:03:53Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T11:03:53Z"
+        },
+        "message": "commit 2 for PR #13: fix(search): update search_api.py"
+      }
+    },
+    {
+      "sha": "71e3cf7495b1",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T11:33:53Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2025-10-07T11:33:53Z"
+        },
+        "message": "commit 3 for PR #13: fix(search): update search_api.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1301,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-09T05:33:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/13#pullrequestreview-1301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 97,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 97: verify boundary checks on line 15.",
+      "created_at": "2025-10-09T05:33:53Z",
+      "path": "search/search_api.py",
+      "line": 15
+    },
+    {
+      "id": 98,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 98: verify boundary checks on line 25.",
+      "created_at": "2025-10-09T05:33:53Z",
+      "path": "search/search_api.py",
+      "line": 25
+    },
+    {
+      "id": 99,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 99: verify boundary checks on line 35.",
+      "created_at": "2025-10-09T05:33:53Z",
+      "path": "search/search_api.py",
+      "line": 35
+    }
+  ]
+}

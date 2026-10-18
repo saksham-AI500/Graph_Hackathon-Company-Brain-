@@ -1,0 +1,67 @@
+{
+  "id": 2000224,
+  "number": 224,
+  "title": "INCIDENT: auth-mfa improvements for latency",
+  "body": "Detailed description for incident tracking in module auth/mfa/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-21T12:54:43Z",
+  "updated_at": "2026-06-06T12:54:43Z",
+  "closed_at": "2026-06-06T12:54:43Z",
+  "labels": [
+    "incident",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70912,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #912 on issue #224: updates from triage and reproduction steps.",
+      "created_at": "2026-05-22T00:54:43Z"
+    },
+    {
+      "id": 70913,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #913 on issue #224: updates from triage and reproduction steps.",
+      "created_at": "2026-05-22T10:54:43Z"
+    },
+    {
+      "id": 70914,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #914 on issue #224: updates from triage and reproduction steps.",
+      "created_at": "2026-05-23T02:54:43Z"
+    },
+    {
+      "id": 70915,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #915 on issue #224: updates from triage and reproduction steps.",
+      "created_at": "2026-05-23T21:54:43Z"
+    },
+    {
+      "id": 70916,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #916 on issue #224: updates from triage and reproduction steps.",
+      "created_at": "2026-05-24T05:54:43Z"
+    }
+  ]
+}

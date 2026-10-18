@@ -1,0 +1,200 @@
+{
+  "id": 1000522,
+  "number": 522,
+  "state": "closed",
+  "title": "docs(search): update README.md",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-06-22T13:04:53Z",
+  "updated_at": "2026-06-24T14:04:53Z",
+  "closed_at": "2026-06-24T14:04:53Z",
+  "merged_at": "2026-06-24T14:04:53Z",
+  "merge_commit_sha": "8a51a2910eb7",
+  "head": {
+    "ref": "feature/pr-522",
+    "sha": "8a51a2910eb7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/522",
+  "files": [
+    {
+      "filename": "search/README.md",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 6,
+      "changes": 56
+    },
+    {
+      "filename": "search/facets.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 7,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "726537204976",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T13:04:53Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T13:04:53Z"
+        },
+        "message": "commit 1 for PR #522: docs(search): update README.md"
+      }
+    },
+    {
+      "sha": "524b0c7d8877",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T13:34:53Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T13:34:53Z"
+        },
+        "message": "commit 2 for PR #522: docs(search): update README.md"
+      }
+    },
+    {
+      "sha": "d8fff0310561",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T14:04:53Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T14:04:53Z"
+        },
+        "message": "commit 3 for PR #522: docs(search): update README.md"
+      }
+    },
+    {
+      "sha": "8a51a2910eb7",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T14:34:53Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-06-22T14:34:53Z"
+        },
+        "message": "commit 4 for PR #522: docs(search): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52201,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T17:04:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/522#pullrequestreview-52201"
+    },
+    {
+      "id": 52202,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T17:04:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/522#pullrequestreview-52202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2803,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2803: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 15
+    },
+    {
+      "id": 2804,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2804: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 25
+    },
+    {
+      "id": 2805,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2805: verify boundary checks on line 35.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 35
+    },
+    {
+      "id": 2806,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2806: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 15
+    },
+    {
+      "id": 2807,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2807: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 25
+    },
+    {
+      "id": 2808,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2808: verify boundary checks on line 35.",
+      "created_at": "2026-06-23T17:04:53Z",
+      "path": "search/README.md",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": 1000263,
+  "number": 263,
+  "state": "closed",
+  "title": "refactor(auth): update crypto_keys.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-02-10T23:38:44Z",
+  "updated_at": "2026-02-12T16:38:44Z",
+  "closed_at": "2026-02-12T16:38:44Z",
+  "merged_at": "2026-02-12T16:38:44Z",
+  "merge_commit_sha": "78a5af51b720",
+  "head": {
+    "ref": "feature/pr-263",
+    "sha": "78a5af51b720"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/263",
+  "files": [
+    {
+      "filename": "auth/__pycache__/crypto_keys.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 13,
+      "changes": 45
+    },
+    {
+      "filename": "auth/mfa/webauthn.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 15,
+      "changes": 21
+    },
+    {
+      "filename": "auth/permissions.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f1e73a13698f",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-02-10T23:38:44Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-02-10T23:38:44Z"
+        },
+        "message": "commit 1 for PR #263: refactor(auth): update crypto_keys.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "78a5af51b720",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-02-11T00:08:44Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-02-11T00:08:44Z"
+        },
+        "message": "commit 2 for PR #263: refactor(auth): update crypto_keys.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

@@ -1,0 +1,194 @@
+{
+  "id": 1000108,
+  "number": 108,
+  "state": "closed",
+  "title": "docs: update contributing style guide",
+  "body": "Routine updates to code style conventions and string helper docs. Fixes #42.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2025-11-24T12:45:07Z",
+  "updated_at": "2025-11-25T16:45:07Z",
+  "closed_at": "2025-11-25T16:45:07Z",
+  "merged_at": "2025-11-25T16:45:07Z",
+  "merge_commit_sha": "598028caf9b0",
+  "head": {
+    "ref": "feature/pr-108",
+    "sha": "598028caf9b0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/108",
+  "files": [
+    {
+      "filename": "docs/contributing/style-guide.md",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 12,
+      "changes": 56
+    },
+    {
+      "filename": "shared/utils/string_helpers.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 10,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1d6eadc32892",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T12:45:07Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T12:45:07Z"
+        },
+        "message": "commit 1 for PR #108: docs: update contributing style guide"
+      }
+    },
+    {
+      "sha": "ddc262bbb490",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T13:15:07Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T13:15:07Z"
+        },
+        "message": "commit 2 for PR #108: docs: update contributing style guide"
+      }
+    },
+    {
+      "sha": "0e1fb0ace0b4",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T13:45:07Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T13:45:07Z"
+        },
+        "message": "commit 3 for PR #108: docs: update contributing style guide"
+      }
+    },
+    {
+      "sha": "999fdc3f60ff",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T14:15:07Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T14:15:07Z"
+        },
+        "message": "commit 4 for PR #108: docs: update contributing style guide"
+      }
+    },
+    {
+      "sha": "598028caf9b0",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T14:45:07Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-11-24T14:45:07Z"
+        },
+        "message": "commit 5 for PR #108: docs: update contributing style guide"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10801,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-25T11:45:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/108#pullrequestreview-10801"
+    },
+    {
+      "id": 10802,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-25T11:45:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/108#pullrequestreview-10802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 577,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 577: verify boundary checks on line 15.",
+      "created_at": "2025-11-25T11:45:07Z",
+      "path": "docs/contributing/style-guide.md",
+      "line": 15
+    },
+    {
+      "id": 578,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 578: verify boundary checks on line 25.",
+      "created_at": "2025-11-25T11:45:07Z",
+      "path": "docs/contributing/style-guide.md",
+      "line": 25
+    },
+    {
+      "id": 579,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 579: verify boundary checks on line 15.",
+      "created_at": "2025-11-25T11:45:07Z",
+      "path": "docs/contributing/style-guide.md",
+      "line": 15
+    },
+    {
+      "id": 580,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 580: verify boundary checks on line 25.",
+      "created_at": "2025-11-25T11:45:07Z",
+      "path": "docs/contributing/style-guide.md",
+      "line": 25
+    }
+  ]
+}

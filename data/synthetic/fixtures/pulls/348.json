@@ -1,0 +1,126 @@
+{
+  "id": 1000348,
+  "number": 348,
+  "state": "closed",
+  "title": "perf(billing): update notifications_billing.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-03-25T23:47:17Z",
+  "updated_at": "2026-03-28T05:47:17Z",
+  "closed_at": "2026-03-28T05:47:17Z",
+  "merged_at": "2026-03-28T05:47:17Z",
+  "merge_commit_sha": "9d5a6158e992",
+  "head": {
+    "ref": "feature/pr-348",
+    "sha": "9d5a6158e992"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/348",
+  "files": [
+    {
+      "filename": "billing/notifications_billing.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 12,
+      "changes": 40
+    },
+    {
+      "filename": "billing/__pycache__/currency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 13,
+      "changes": 20
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7cecc7582f9f",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-25T23:47:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-25T23:47:17Z"
+        },
+        "message": "commit 1 for PR #348: perf(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "469bfdb8073a",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T00:17:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T00:17:17Z"
+        },
+        "message": "commit 2 for PR #348: perf(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "70f9116cad52",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T00:47:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T00:47:17Z"
+        },
+        "message": "commit 3 for PR #348: perf(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "d2656c22c1ad",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T01:17:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T01:17:17Z"
+        },
+        "message": "commit 4 for PR #348: perf(billing): update notifications_billing.py"
+      }
+    },
+    {
+      "sha": "9d5a6158e992",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T01:47:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-26T01:47:17Z"
+        },
+        "message": "commit 5 for PR #348: perf(billing): update notifications_billing.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

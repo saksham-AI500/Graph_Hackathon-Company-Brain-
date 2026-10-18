@@ -1,0 +1,227 @@
+{
+  "id": 1000473,
+  "number": 473,
+  "state": "closed",
+  "title": "test(infra_deploy): update __init__.py",
+  "body": "Implementation changes for infra_deploy module improvements.\n\nCloses #61",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24836,
+    "type": "User"
+  },
+  "created_at": "2026-05-28T05:56:33Z",
+  "updated_at": "2026-05-30T02:56:33Z",
+  "closed_at": "2026-05-30T02:56:33Z",
+  "merged_at": "2026-05-30T02:56:33Z",
+  "merge_commit_sha": "4c8cc614d5e6",
+  "head": {
+    "ref": "feature/pr-473",
+    "sha": "4c8cc614d5e6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/473",
+  "files": [
+    {
+      "filename": "infra/deploy/__init__.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 15,
+      "changes": 47
+    },
+    {
+      "filename": "infra/deploy/__pycache__/gitops.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 6,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a3266e8d3b91",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T05:56:33Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T05:56:33Z"
+        },
+        "message": "commit 1 for PR #473: test(infra_deploy): update __init__.py"
+      }
+    },
+    {
+      "sha": "6b9190e78487",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T06:26:33Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T06:26:33Z"
+        },
+        "message": "commit 2 for PR #473: test(infra_deploy): update __init__.py"
+      }
+    },
+    {
+      "sha": "1c10673eaf50",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T06:56:33Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T06:56:33Z"
+        },
+        "message": "commit 3 for PR #473: test(infra_deploy): update __init__.py"
+      }
+    },
+    {
+      "sha": "3bbdd4c03f0e",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T07:26:33Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T07:26:33Z"
+        },
+        "message": "commit 4 for PR #473: test(infra_deploy): update __init__.py"
+      }
+    },
+    {
+      "sha": "4c8cc614d5e6",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T07:56:33Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-05-28T07:56:33Z"
+        },
+        "message": "commit 5 for PR #473: test(infra_deploy): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 47301,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-28T08:56:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/473#pullrequestreview-47301"
+    },
+    {
+      "id": 47302,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-28T08:56:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/473#pullrequestreview-47302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2544,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2544: verify boundary checks on line 15.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2545,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2545: verify boundary checks on line 25.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 2546,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2546: verify boundary checks on line 15.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2547,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2547: verify boundary checks on line 25.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 2548,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2548: verify boundary checks on line 35.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 35
+    },
+    {
+      "id": 2549,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2549: verify boundary checks on line 45.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 45
+    },
+    {
+      "id": 2550,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2550: verify boundary checks on line 55.",
+      "created_at": "2026-05-28T08:56:33Z",
+      "path": "infra/deploy/__init__.py",
+      "line": 55
+    }
+  ]
+}

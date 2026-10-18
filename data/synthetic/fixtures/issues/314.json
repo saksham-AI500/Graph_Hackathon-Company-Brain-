@@ -1,0 +1,49 @@
+{
+  "id": 2000314,
+  "number": 314,
+  "title": "TASK: infra-observability improvements for security",
+  "body": "Detailed description for task tracking in module infra/observability/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-23T05:05:34Z",
+  "updated_at": "2026-08-30T05:05:34Z",
+  "closed_at": "2026-08-30T05:05:34Z",
+  "labels": [
+    "task",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71292,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1292 on issue #314: updates from triage and reproduction steps.",
+      "created_at": "2026-08-23T09:05:34Z"
+    },
+    {
+      "id": 71293,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #1293 on issue #314: updates from triage and reproduction steps.",
+      "created_at": "2026-08-23T23:05:34Z"
+    },
+    {
+      "id": 71294,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1294 on issue #314: updates from triage and reproduction steps.",
+      "created_at": "2026-08-24T01:05:34Z"
+    }
+  ]
+}

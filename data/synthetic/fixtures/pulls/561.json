@@ -1,0 +1,197 @@
+{
+  "id": 1000561,
+  "number": 561,
+  "state": "closed",
+  "title": "fix(infra_deploy): update network_policy.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.\n\nCloses #134",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2026-07-10T18:44:12Z",
+  "updated_at": "2026-07-13T16:44:12Z",
+  "closed_at": "2026-07-13T16:44:12Z",
+  "merged_at": "2026-07-13T16:44:12Z",
+  "merge_commit_sha": "f99a1d0262f5",
+  "head": {
+    "ref": "feature/pr-561",
+    "sha": "f99a1d0262f5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/561",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 9,
+      "changes": 28
+    },
+    {
+      "filename": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 11,
+      "changes": 39
+    },
+    {
+      "filename": "infra/deploy/__pycache__/cluster_state.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 6,
+      "changes": 44
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e32b4ccdaad1",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-10T18:44:12Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-10T18:44:12Z"
+        },
+        "message": "commit 1 for PR #561: fix(infra_deploy): update network_policy.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f99a1d0262f5",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-10T19:14:12Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-10T19:14:12Z"
+        },
+        "message": "commit 2 for PR #561: fix(infra_deploy): update network_policy.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56101,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-12T13:44:12Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/561#pullrequestreview-56101"
+    },
+    {
+      "id": 56102,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-12T13:44:12Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/561#pullrequestreview-56102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2994,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2994: verify boundary checks on line 15.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2995,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2995: verify boundary checks on line 25.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2996,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2996: verify boundary checks on line 35.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2997,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2997: verify boundary checks on line 15.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2998,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2998: verify boundary checks on line 25.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2999,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2999: verify boundary checks on line 35.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3000,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 3000: verify boundary checks on line 45.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3001,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 3001: verify boundary checks on line 55.",
+      "created_at": "2026-07-12T13:44:12Z",
+      "path": "infra/deploy/__pycache__/network_policy.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

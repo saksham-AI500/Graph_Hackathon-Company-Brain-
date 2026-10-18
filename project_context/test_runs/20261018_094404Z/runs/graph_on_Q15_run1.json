@@ -1,0 +1,22 @@
+{
+  "question_id": "Q15",
+  "question": "Draft a CODEOWNERS patch that fixes the ownership mismatch in payments/, with evidence. Text only, do not apply.",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "ERROR",
+  "final_answer_text": "Execution failed due to model provider error: LLM error: OpenRouter API call failed (HTTP 402): {\"error\":{\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 1024 tokens, but can only afford 898. To increase, visit https://openrouter.ai/workspaces/default/keys/d9ea6524f4025733d4cb50a51f23d2352ea4b163bf0316eb39bfd4e90cbbccc5 and adjust the key's daily limit\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null,\"previous_errors\":[{\"code\":402,\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 1024 tokens, but can only afford 777. To increase, visit https://openrouter.ai/workspaces/default/keys/d9ea6524f4025733d4cb50a51f23d2352ea4b163bf0316eb39bfd4e90cbbccc5 and adjust the key's daily limit\"}]}},\"user_id\":\"user_3GbxFz2JgAAKg0vrmtbgYsDNDKN\"}",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:58:02.145034+00:00",
+  "latency_ms": 19544.18,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": 2000091,
+  "number": 91,
+  "title": "INCIDENT: payments-refunds improvements for caching",
+  "body": "Detailed description for incident tracking in module payments/refunds/.",
+  "user": {
+    "login": "felix-baum",
+    "id": 21505,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-03T01:53:59Z",
+  "updated_at": "2026-01-03T01:53:59Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    387
+  ],
+  "comments": [
+    {
+      "id": 70365,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #365 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-03T03:53:59Z"
+    },
+    {
+      "id": 70366,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #366 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-03T11:53:59Z"
+    },
+    {
+      "id": 70367,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #367 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-04T06:53:59Z"
+    },
+    {
+      "id": 70368,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #368 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-04T23:53:59Z"
+    },
+    {
+      "id": 70369,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #369 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-05T13:53:59Z"
+    },
+    {
+      "id": 70370,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #370 on issue #91: updates from triage and reproduction steps.",
+      "created_at": "2026-01-06T09:53:59Z"
+    }
+  ]
+}

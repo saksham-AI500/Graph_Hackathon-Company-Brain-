@@ -1,0 +1,40 @@
+{
+  "id": 2000208,
+  "number": 208,
+  "title": "TASK: shared-utils improvements for latency",
+  "body": "Detailed description for task tracking in module shared/utils/.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29733,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-04T20:46:38Z",
+  "updated_at": "2026-05-20T20:46:38Z",
+  "closed_at": "2026-05-20T20:46:38Z",
+  "labels": [
+    "task",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70849,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #849 on issue #208: updates from triage and reproduction steps.",
+      "created_at": "2026-05-05T17:46:38Z"
+    },
+    {
+      "id": 70850,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #850 on issue #208: updates from triage and reproduction steps.",
+      "created_at": "2026-05-05T23:46:38Z"
+    }
+  ]
+}

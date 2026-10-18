@@ -177,3 +177,24 @@ def test_verifier_rejects_unsupported_reviewer(client, codeowners, verifier):
     assert v_res.is_valid is False
     assert v_res.status == "REJECTED"
     assert any("Unsupported claim: Reviewer 'ghost_maintainer_404'" in r for r in v_res.rejection_reasons)
+
+
+def test_evaluate_ownership_discrepancy_respects_temporal_cutoff(client, codeowners):
+    """Verify that evaluate_ownership_discrepancy strictly excludes reviews after the cutoff."""
+    file_path = "build/runtime/Dockerfile"
+
+    # Cutoff well before any 2026 PRs
+    early_cutoff = "2024-01-01T00:00:00Z"
+    early_report = evaluate_ownership_discrepancy(
+        client, file_path, codeowners, cutoff_timestamp=early_cutoff
+    )
+    assert early_report.total_modifying_prs == 0
+    assert len(early_report.observed_human_reviewers) == 0
+
+    # Cutoff after all PRs
+    late_cutoff = "2026-10-15T00:00:00Z"
+    late_report = evaluate_ownership_discrepancy(
+        client, file_path, codeowners, cutoff_timestamp=late_cutoff
+    )
+    assert late_report.declared_owners == ["@FalkorDB/falkordb-core"]
+

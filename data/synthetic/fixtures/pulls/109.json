@@ -1,0 +1,183 @@
+{
+  "id": 1000109,
+  "number": 109,
+  "state": "closed",
+  "title": "test(search): update sanitizer.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2025-11-25T01:10:09Z",
+  "updated_at": "2025-11-27T18:10:09Z",
+  "closed_at": "2025-11-27T18:10:09Z",
+  "merged_at": "2025-11-27T18:10:09Z",
+  "merge_commit_sha": "5cf097d1c958",
+  "head": {
+    "ref": "feature/pr-109",
+    "sha": "5cf097d1c958"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/109",
+  "files": [
+    {
+      "filename": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 1,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "91f9e999f7c3",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-11-25T01:10:09Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-11-25T01:10:09Z"
+        },
+        "message": "commit 1 for PR #109: test(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5cf097d1c958",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-11-25T01:40:09Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-11-25T01:40:09Z"
+        },
+        "message": "commit 2 for PR #109: test(search): update sanitizer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10901,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-26T10:10:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/109#pullrequestreview-10901"
+    },
+    {
+      "id": 10902,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-26T10:10:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/109#pullrequestreview-10902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 581,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 581: verify boundary checks on line 15.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 582,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 582: verify boundary checks on line 25.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 583,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 583: verify boundary checks on line 35.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 584,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 584: verify boundary checks on line 15.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 585,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 585: verify boundary checks on line 25.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 586,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 586: verify boundary checks on line 35.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 587,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 587: verify boundary checks on line 45.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 588,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 588: verify boundary checks on line 55.",
+      "created_at": "2025-11-26T10:10:09Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

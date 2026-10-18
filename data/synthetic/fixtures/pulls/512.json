@@ -1,0 +1,150 @@
+{
+  "id": 1000512,
+  "number": 512,
+  "state": "closed",
+  "title": "test(search_indexer): update document_store.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-06-16T23:25:57Z",
+  "updated_at": "2026-06-19T01:25:57Z",
+  "closed_at": "2026-06-19T01:25:57Z",
+  "merged_at": "2026-06-19T01:25:57Z",
+  "merge_commit_sha": "6fa8c47ece2d",
+  "head": {
+    "ref": "feature/pr-512",
+    "sha": "6fa8c47ece2d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/512",
+  "files": [
+    {
+      "filename": "search/indexer/document_store.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 8,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a3a36635c3bb",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-06-16T23:25:57Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-06-16T23:25:57Z"
+        },
+        "message": "commit 1 for PR #512: test(search_indexer): update document_store.py"
+      }
+    },
+    {
+      "sha": "6fa8c47ece2d",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-06-16T23:55:57Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-06-16T23:55:57Z"
+        },
+        "message": "commit 2 for PR #512: test(search_indexer): update document_store.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 51201,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-18T01:25:57Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/512#pullrequestreview-51201"
+    },
+    {
+      "id": 51202,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-18T01:25:57Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/512#pullrequestreview-51202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2737,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2737: verify boundary checks on line 15.",
+      "created_at": "2026-06-18T01:25:57Z",
+      "path": "search/indexer/document_store.py",
+      "line": 15
+    },
+    {
+      "id": 2738,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2738: verify boundary checks on line 25.",
+      "created_at": "2026-06-18T01:25:57Z",
+      "path": "search/indexer/document_store.py",
+      "line": 25
+    },
+    {
+      "id": 2739,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 2739: verify boundary checks on line 15.",
+      "created_at": "2026-06-18T01:25:57Z",
+      "path": "search/indexer/document_store.py",
+      "line": 15
+    },
+    {
+      "id": 2740,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 2740: verify boundary checks on line 25.",
+      "created_at": "2026-06-18T01:25:57Z",
+      "path": "search/indexer/document_store.py",
+      "line": 25
+    },
+    {
+      "id": 2741,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 2741: verify boundary checks on line 35.",
+      "created_at": "2026-06-18T01:25:57Z",
+      "path": "search/indexer/document_store.py",
+      "line": 35
+    }
+  ]
+}

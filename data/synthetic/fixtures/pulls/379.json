@@ -1,0 +1,144 @@
+{
+  "id": 1000379,
+  "number": 379,
+  "state": "open",
+  "title": "chore(notifications): update audit_notif.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2026-04-10T04:20:24Z",
+  "updated_at": "2026-04-10T04:20:24Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-379",
+    "sha": "e60b13890673"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/379",
+  "files": [
+    {
+      "filename": "notifications/audit_notif.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 9,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8977200ad8fe",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T04:20:24Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T04:20:24Z"
+        },
+        "message": "commit 1 for PR #379: chore(notifications): update audit_notif.py"
+      }
+    },
+    {
+      "sha": "307d7bfd48e2",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T04:50:24Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T04:50:24Z"
+        },
+        "message": "commit 2 for PR #379: chore(notifications): update audit_notif.py"
+      }
+    },
+    {
+      "sha": "e60b13890673",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T05:20:24Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-04-10T05:20:24Z"
+        },
+        "message": "commit 3 for PR #379: chore(notifications): update audit_notif.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 37901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T15:20:24Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/379#pullrequestreview-37901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1980,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1980: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T15:20:24Z",
+      "path": "notifications/audit_notif.py",
+      "line": 15
+    },
+    {
+      "id": 1981,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1981: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T15:20:24Z",
+      "path": "notifications/audit_notif.py",
+      "line": 25
+    },
+    {
+      "id": 1982,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1982: verify boundary checks on line 35.",
+      "created_at": "2026-04-11T15:20:24Z",
+      "path": "notifications/audit_notif.py",
+      "line": 35
+    },
+    {
+      "id": 1983,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1983: verify boundary checks on line 45.",
+      "created_at": "2026-04-11T15:20:24Z",
+      "path": "notifications/audit_notif.py",
+      "line": 45
+    }
+  ]
+}

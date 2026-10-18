@@ -1,0 +1,71 @@
+{
+  "id": 1000696,
+  "number": 696,
+  "state": "closed",
+  "title": "refactor(billing): update audit_billing.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-09-18T02:09:33Z",
+  "updated_at": "2026-09-19T21:09:33Z",
+  "closed_at": "2026-09-19T21:09:33Z",
+  "merged_at": "2026-09-19T21:09:33Z",
+  "merge_commit_sha": "197d93d8f909",
+  "head": {
+    "ref": "feature/pr-696",
+    "sha": "197d93d8f909"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/696",
+  "files": [
+    {
+      "filename": "billing/audit_billing.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 10,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7fff47b31360",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-09-18T02:09:33Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-09-18T02:09:33Z"
+        },
+        "message": "commit 1 for PR #696: refactor(billing): update audit_billing.py"
+      }
+    },
+    {
+      "sha": "197d93d8f909",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-09-18T02:39:33Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-09-18T02:39:33Z"
+        },
+        "message": "commit 2 for PR #696: refactor(billing): update audit_billing.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

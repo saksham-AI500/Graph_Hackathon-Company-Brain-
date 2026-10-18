@@ -1,0 +1,58 @@
+{
+  "id": 2000156,
+  "number": 156,
+  "title": "PERF: search-indexer improvements for latency",
+  "body": "Detailed description for perf tracking in module search/indexer/.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 24658,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-11T18:13:31Z",
+  "updated_at": "2026-03-14T18:13:31Z",
+  "closed_at": "2026-03-14T18:13:31Z",
+  "labels": [
+    "perf",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70642,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #642 on issue #156: updates from triage and reproduction steps.",
+      "created_at": "2026-03-11T21:13:31Z"
+    },
+    {
+      "id": 70643,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #643 on issue #156: updates from triage and reproduction steps.",
+      "created_at": "2026-03-12T02:13:31Z"
+    },
+    {
+      "id": 70644,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #644 on issue #156: updates from triage and reproduction steps.",
+      "created_at": "2026-03-12T10:13:31Z"
+    },
+    {
+      "id": 70645,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #645 on issue #156: updates from triage and reproduction steps.",
+      "created_at": "2026-03-13T05:13:31Z"
+    }
+  ]
+}

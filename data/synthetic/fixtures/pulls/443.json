@@ -1,0 +1,228 @@
+{
+  "id": 1000443,
+  "number": 443,
+  "state": "closed",
+  "title": "refactor(notifications): update push_service.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "jordan-hayes",
+    "id": 24658,
+    "type": "User"
+  },
+  "created_at": "2026-05-13T01:02:17Z",
+  "updated_at": "2026-05-14T07:02:17Z",
+  "closed_at": "2026-05-14T07:02:17Z",
+  "merged_at": "2026-05-14T07:02:17Z",
+  "merge_commit_sha": "144761316fa9",
+  "head": {
+    "ref": "feature/pr-443",
+    "sha": "144761316fa9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/443",
+  "files": [
+    {
+      "filename": "notifications/push_service.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 13,
+      "changes": 39
+    },
+    {
+      "filename": "notifications/__pycache__/inbox.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 1,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "742e2bbff26d",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T01:02:17Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T01:02:17Z"
+        },
+        "message": "commit 1 for PR #443: refactor(notifications): update push_service.py"
+      }
+    },
+    {
+      "sha": "db13fb8e0656",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T01:32:17Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T01:32:17Z"
+        },
+        "message": "commit 2 for PR #443: refactor(notifications): update push_service.py"
+      }
+    },
+    {
+      "sha": "144761316fa9",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T02:02:17Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-05-13T02:02:17Z"
+        },
+        "message": "commit 3 for PR #443: refactor(notifications): update push_service.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 44301,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-13T19:02:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/443#pullrequestreview-44301"
+    },
+    {
+      "id": 44302,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-13T19:02:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/443#pullrequestreview-44302"
+    },
+    {
+      "id": 44303,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-13T19:02:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/443#pullrequestreview-44303"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2367,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2367: verify boundary checks on line 15.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 15
+    },
+    {
+      "id": 2368,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2368: verify boundary checks on line 25.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 25
+    },
+    {
+      "id": 2369,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2369: verify boundary checks on line 35.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 35
+    },
+    {
+      "id": 2370,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2370: verify boundary checks on line 45.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 45
+    },
+    {
+      "id": 2371,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2371: verify boundary checks on line 15.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 15
+    },
+    {
+      "id": 2372,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2372: verify boundary checks on line 25.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 25
+    },
+    {
+      "id": 2373,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2373: verify boundary checks on line 15.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 15
+    },
+    {
+      "id": 2374,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2374: verify boundary checks on line 25.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 25
+    },
+    {
+      "id": 2375,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2375: verify boundary checks on line 35.",
+      "created_at": "2026-05-13T19:02:17Z",
+      "path": "notifications/push_service.py",
+      "line": 35
+    }
+  ]
+}

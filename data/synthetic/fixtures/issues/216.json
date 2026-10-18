@@ -1,0 +1,76 @@
+{
+  "id": 2000216,
+  "number": 216,
+  "title": "BUG: payments-refunds improvements for security",
+  "body": "Detailed description for bug tracking in module payments/refunds/.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 24136,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-13T05:03:24Z",
+  "updated_at": "2026-05-13T05:03:24Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70876,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #876 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-13T12:03:24Z"
+    },
+    {
+      "id": 70877,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #877 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-13T15:03:24Z"
+    },
+    {
+      "id": 70878,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #878 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-14T04:03:24Z"
+    },
+    {
+      "id": 70879,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #879 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-14T22:03:24Z"
+    },
+    {
+      "id": 70880,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #880 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-15T21:03:24Z"
+    },
+    {
+      "id": 70881,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #881 on issue #216: updates from triage and reproduction steps.",
+      "created_at": "2026-05-16T21:03:24Z"
+    }
+  ]
+}

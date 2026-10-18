@@ -1,0 +1,78 @@
+{
+  "id": 2000117,
+  "number": 117,
+  "title": "FEATURE: payments-refunds improvements for security",
+  "body": "Detailed description for feature tracking in module payments/refunds/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-30T02:54:18Z",
+  "updated_at": "2026-01-30T02:54:18Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    123
+  ],
+  "comments": [
+    {
+      "id": 70482,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #482 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-01-30T22:54:18Z"
+    },
+    {
+      "id": 70483,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #483 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-01-31T03:54:18Z"
+    },
+    {
+      "id": 70484,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #484 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-01-31T17:54:18Z"
+    },
+    {
+      "id": 70485,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #485 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T07:54:18Z"
+    },
+    {
+      "id": 70486,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #486 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T11:54:18Z"
+    },
+    {
+      "id": 70487,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #487 on issue #117: updates from triage and reproduction steps.",
+      "created_at": "2026-02-02T02:54:18Z"
+    }
+  ]
+}

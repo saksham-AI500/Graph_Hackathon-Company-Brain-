@@ -1,0 +1,60 @@
+{
+  "id": 2000114,
+  "number": 114,
+  "title": "PERF: infra-deploy improvements for security",
+  "body": "Detailed description for perf tracking in module infra/deploy/.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 25695,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-27T00:33:39Z",
+  "updated_at": "2026-02-08T00:33:39Z",
+  "closed_at": "2026-02-08T00:33:39Z",
+  "labels": [
+    "perf",
+    "infra-deploy"
+  ],
+  "linked_pulls": [
+    616
+  ],
+  "comments": [
+    {
+      "id": 70470,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #470 on issue #114: updates from triage and reproduction steps.",
+      "created_at": "2026-01-27T21:33:39Z"
+    },
+    {
+      "id": 70471,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #471 on issue #114: updates from triage and reproduction steps.",
+      "created_at": "2026-01-28T03:33:39Z"
+    },
+    {
+      "id": 70472,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #472 on issue #114: updates from triage and reproduction steps.",
+      "created_at": "2026-01-28T18:33:39Z"
+    },
+    {
+      "id": 70473,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #473 on issue #114: updates from triage and reproduction steps.",
+      "created_at": "2026-01-29T13:33:39Z"
+    }
+  ]
+}

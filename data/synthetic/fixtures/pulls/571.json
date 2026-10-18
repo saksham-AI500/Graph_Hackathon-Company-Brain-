@@ -1,0 +1,245 @@
+{
+  "id": 1000571,
+  "number": 571,
+  "state": "closed",
+  "title": "feat(auth_mfa): update mfa_policy.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29839,
+    "type": "User"
+  },
+  "created_at": "2026-07-16T20:14:21Z",
+  "updated_at": "2026-07-19T06:14:21Z",
+  "closed_at": "2026-07-19T06:14:21Z",
+  "merged_at": "2026-07-19T06:14:21Z",
+  "merge_commit_sha": "ce3d708dc1cd",
+  "head": {
+    "ref": "feature/pr-571",
+    "sha": "ce3d708dc1cd"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/571",
+  "files": [
+    {
+      "filename": "auth/mfa/mfa_policy.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 10,
+      "changes": 28
+    },
+    {
+      "filename": "auth/mfa/device_fingerprint.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 1,
+      "changes": 21
+    },
+    {
+      "filename": "auth/mfa/__init__.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 9,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eeffe5df485c",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T20:14:21Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T20:14:21Z"
+        },
+        "message": "commit 1 for PR #571: feat(auth_mfa): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "eb733e94a796",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T20:44:21Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T20:44:21Z"
+        },
+        "message": "commit 2 for PR #571: feat(auth_mfa): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "f82aa7f2347e",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T21:14:21Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T21:14:21Z"
+        },
+        "message": "commit 3 for PR #571: feat(auth_mfa): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "878d84e2a5e3",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T21:44:21Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T21:44:21Z"
+        },
+        "message": "commit 4 for PR #571: feat(auth_mfa): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "ce3d708dc1cd",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T22:14:21Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-07-16T22:14:21Z"
+        },
+        "message": "commit 5 for PR #571: feat(auth_mfa): update mfa_policy.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 57101,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-17T19:14:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/571#pullrequestreview-57101"
+    },
+    {
+      "id": 57102,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-17T19:14:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/571#pullrequestreview-57102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3065,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3065: verify boundary checks on line 15.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 15
+    },
+    {
+      "id": 3066,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3066: verify boundary checks on line 25.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 25
+    },
+    {
+      "id": 3067,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3067: verify boundary checks on line 35.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 35
+    },
+    {
+      "id": 3068,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3068: verify boundary checks on line 45.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 45
+    },
+    {
+      "id": 3069,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3069: verify boundary checks on line 15.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 15
+    },
+    {
+      "id": 3070,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3070: verify boundary checks on line 25.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 25
+    },
+    {
+      "id": 3071,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3071: verify boundary checks on line 35.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 35
+    },
+    {
+      "id": 3072,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3072: verify boundary checks on line 45.",
+      "created_at": "2026-07-17T19:14:21Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "id": 1000652,
+  "number": 652,
+  "state": "closed",
+  "title": "perf(notifications): update localization.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 23622,
+    "type": "User"
+  },
+  "created_at": "2026-08-26T19:55:00Z",
+  "updated_at": "2026-08-28T14:55:00Z",
+  "closed_at": "2026-08-28T14:55:00Z",
+  "merged_at": "2026-08-28T14:55:00Z",
+  "merge_commit_sha": "8cdbe3b821a3",
+  "head": {
+    "ref": "feature/pr-652",
+    "sha": "8cdbe3b821a3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/652",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/localization.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 1,
+      "changes": 22
+    },
+    {
+      "filename": "notifications/delivery_status.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 8,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "366ab8d34eef",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T19:55:00Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T19:55:00Z"
+        },
+        "message": "commit 1 for PR #652: perf(notifications): update localization.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "65f45298f07b",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T20:25:00Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T20:25:00Z"
+        },
+        "message": "commit 2 for PR #652: perf(notifications): update localization.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8f0d8093eac5",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T20:55:00Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T20:55:00Z"
+        },
+        "message": "commit 3 for PR #652: perf(notifications): update localization.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8cdbe3b821a3",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T21:25:00Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-08-26T21:25:00Z"
+        },
+        "message": "commit 4 for PR #652: perf(notifications): update localization.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 65201,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-28T18:55:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/652#pullrequestreview-65201"
+    },
+    {
+      "id": 65202,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-28T18:55:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/652#pullrequestreview-65202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3436,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3436: verify boundary checks on line 15.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3437,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3437: verify boundary checks on line 25.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3438,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3438: verify boundary checks on line 35.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3439,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3439: verify boundary checks on line 45.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3440,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3440: verify boundary checks on line 55.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3441,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3441: verify boundary checks on line 15.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3442,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3442: verify boundary checks on line 25.",
+      "created_at": "2026-08-28T18:55:00Z",
+      "path": "notifications/__pycache__/localization.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

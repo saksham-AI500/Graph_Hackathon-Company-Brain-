@@ -1,0 +1,133 @@
+{
+  "id": 1000342,
+  "number": 342,
+  "state": "closed",
+  "title": "fix(infra_observability): update query_latency.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-03-23T11:01:01Z",
+  "updated_at": "2026-03-26T00:01:01Z",
+  "closed_at": "2026-03-26T00:01:01Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-342",
+    "sha": "295767a9eeb6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/342",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 1,
+      "changes": 13
+    },
+    {
+      "filename": "infra/observability/pagerduty.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 13,
+      "changes": 23
+    },
+    {
+      "filename": "infra/observability/__pycache__/dead_mans_switch.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 11,
+      "changes": 42
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a6a972796090",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T11:01:01Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T11:01:01Z"
+        },
+        "message": "commit 1 for PR #342: fix(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2edad8c5580b",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T11:31:01Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T11:31:01Z"
+        },
+        "message": "commit 2 for PR #342: fix(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "23408ceb00f5",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T12:01:01Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T12:01:01Z"
+        },
+        "message": "commit 3 for PR #342: fix(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d02450f611ad",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T12:31:01Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T12:31:01Z"
+        },
+        "message": "commit 4 for PR #342: fix(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "295767a9eeb6",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T13:01:01Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-03-23T13:01:01Z"
+        },
+        "message": "commit 5 for PR #342: fix(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

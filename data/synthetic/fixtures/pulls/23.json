@@ -1,0 +1,131 @@
+{
+  "id": 1000023,
+  "number": 23,
+  "state": "closed",
+  "title": "feat(search_indexer): update embeddings.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-10-13T00:15:37Z",
+  "updated_at": "2025-10-15T14:15:37Z",
+  "closed_at": "2025-10-15T14:15:37Z",
+  "merged_at": "2025-10-15T14:15:37Z",
+  "merge_commit_sha": "c231c1c60989",
+  "head": {
+    "ref": "feature/pr-23",
+    "sha": "c231c1c60989"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/23",
+  "files": [
+    {
+      "filename": "search/indexer/embeddings.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 8,
+      "changes": 55
+    },
+    {
+      "filename": "search/indexer/schema_indexer.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 15,
+      "changes": 6
+    },
+    {
+      "filename": "search/indexer/health_indexer.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 5,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3713f64750ba",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-13T00:15:37Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-13T00:15:37Z"
+        },
+        "message": "commit 1 for PR #23: feat(search_indexer): update embeddings.py"
+      }
+    },
+    {
+      "sha": "c231c1c60989",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-13T00:45:37Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-13T00:45:37Z"
+        },
+        "message": "commit 2 for PR #23: feat(search_indexer): update embeddings.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 2301,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-13T12:15:37Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/23#pullrequestreview-2301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 137,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 137: verify boundary checks on line 15.",
+      "created_at": "2025-10-13T12:15:37Z",
+      "path": "search/indexer/embeddings.py",
+      "line": 15
+    },
+    {
+      "id": 138,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 138: verify boundary checks on line 25.",
+      "created_at": "2025-10-13T12:15:37Z",
+      "path": "search/indexer/embeddings.py",
+      "line": 25
+    },
+    {
+      "id": 139,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 139: verify boundary checks on line 35.",
+      "created_at": "2025-10-13T12:15:37Z",
+      "path": "search/indexer/embeddings.py",
+      "line": 35
+    }
+  ]
+}

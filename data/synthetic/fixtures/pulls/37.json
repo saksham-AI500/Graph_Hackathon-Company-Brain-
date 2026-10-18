@@ -1,0 +1,208 @@
+{
+  "id": 1000037,
+  "number": 37,
+  "state": "closed",
+  "title": "feat(api_gateway): update swagger.json",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2025-10-20T02:30:04Z",
+  "updated_at": "2025-10-22T16:30:04Z",
+  "closed_at": "2025-10-22T16:30:04Z",
+  "merged_at": "2025-10-22T16:30:04Z",
+  "merge_commit_sha": "25f3a2896ed8",
+  "head": {
+    "ref": "feature/pr-37",
+    "sha": "25f3a2896ed8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/37",
+  "files": [
+    {
+      "filename": "api/gateway/swagger.json",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 1,
+      "changes": 34
+    },
+    {
+      "filename": "api/gateway/__pycache__/grpc_gateway.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 13,
+      "changes": 30
+    },
+    {
+      "filename": "api/gateway/__pycache__/load_balancer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 12,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "70ebc9fb99a3",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-10-20T02:30:04Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-10-20T02:30:04Z"
+        },
+        "message": "commit 1 for PR #37: feat(api_gateway): update swagger.json"
+      }
+    },
+    {
+      "sha": "25f3a2896ed8",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-10-20T03:00:04Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-10-20T03:00:04Z"
+        },
+        "message": "commit 2 for PR #37: feat(api_gateway): update swagger.json"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3701,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-20T19:30:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/37#pullrequestreview-3701"
+    },
+    {
+      "id": 3702,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-20T19:30:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/37#pullrequestreview-3702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 191,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 191: verify boundary checks on line 15.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 15
+    },
+    {
+      "id": 192,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 192: verify boundary checks on line 25.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 25
+    },
+    {
+      "id": 193,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 193: verify boundary checks on line 35.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 35
+    },
+    {
+      "id": 194,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 194: verify boundary checks on line 45.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 45
+    },
+    {
+      "id": 195,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 195: verify boundary checks on line 15.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 15
+    },
+    {
+      "id": 196,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 196: verify boundary checks on line 25.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 25
+    },
+    {
+      "id": 197,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 197: verify boundary checks on line 35.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 35
+    },
+    {
+      "id": 198,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 198: verify boundary checks on line 45.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 45
+    },
+    {
+      "id": 199,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 199: verify boundary checks on line 55.",
+      "created_at": "2025-10-20T19:30:04Z",
+      "path": "api/gateway/swagger.json",
+      "line": 55
+    }
+  ]
+}

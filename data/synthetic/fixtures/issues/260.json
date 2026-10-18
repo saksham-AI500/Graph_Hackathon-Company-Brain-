@@ -1,0 +1,67 @@
+{
+  "id": 2000260,
+  "number": 260,
+  "title": "BUG: growth-experiments improvements for throughput",
+  "body": "Detailed description for bug tracking in module growth/experiments/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-28T00:46:37Z",
+  "updated_at": "2026-07-21T00:46:37Z",
+  "closed_at": "2026-07-21T00:46:37Z",
+  "labels": [
+    "bug",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71072,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #1072 on issue #260: updates from triage and reproduction steps.",
+      "created_at": "2026-06-28T14:46:37Z"
+    },
+    {
+      "id": 71073,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1073 on issue #260: updates from triage and reproduction steps.",
+      "created_at": "2026-06-29T02:46:37Z"
+    },
+    {
+      "id": 71074,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #1074 on issue #260: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T01:46:37Z"
+    },
+    {
+      "id": 71075,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1075 on issue #260: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T03:46:37Z"
+    },
+    {
+      "id": 71076,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1076 on issue #260: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T10:46:37Z"
+    }
+  ]
+}

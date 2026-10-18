@@ -1,0 +1,230 @@
+{
+  "id": 1000193,
+  "number": 193,
+  "state": "closed",
+  "title": "feat(billing): update proration.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 28052,
+    "type": "User"
+  },
+  "created_at": "2026-01-06T13:05:22Z",
+  "updated_at": "2026-01-08T14:05:22Z",
+  "closed_at": "2026-01-08T14:05:22Z",
+  "merged_at": "2026-01-08T14:05:22Z",
+  "merge_commit_sha": "ed2cf19cb13b",
+  "head": {
+    "ref": "feature/pr-193",
+    "sha": "ed2cf19cb13b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/193",
+  "files": [
+    {
+      "filename": "billing/__pycache__/proration.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 14,
+      "changes": 11
+    },
+    {
+      "filename": "billing/statement.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 3,
+      "changes": 36
+    },
+    {
+      "filename": "billing/credits.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 5,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2a3a51a9db06",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-06T13:05:22Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-06T13:05:22Z"
+        },
+        "message": "commit 1 for PR #193: feat(billing): update proration.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ed2cf19cb13b",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-06T13:35:22Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-06T13:35:22Z"
+        },
+        "message": "commit 2 for PR #193: feat(billing): update proration.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19301,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-06T23:05:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/193#pullrequestreview-19301"
+    },
+    {
+      "id": 19302,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-06T23:05:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/193#pullrequestreview-19302"
+    },
+    {
+      "id": 19303,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-06T23:05:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/193#pullrequestreview-19303"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1068,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1068: verify boundary checks on line 15.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1069,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1069: verify boundary checks on line 25.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1070,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1070: verify boundary checks on line 15.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1071,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1071: verify boundary checks on line 25.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1072,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1072: verify boundary checks on line 35.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1073,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1073: verify boundary checks on line 45.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1074,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1074: verify boundary checks on line 15.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1075,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1075: verify boundary checks on line 25.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1076,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1076: verify boundary checks on line 35.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1077,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1077: verify boundary checks on line 45.",
+      "created_at": "2026-01-06T23:05:22Z",
+      "path": "billing/__pycache__/proration.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

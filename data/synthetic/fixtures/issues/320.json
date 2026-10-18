@@ -1,0 +1,76 @@
+{
+  "id": 2000320,
+  "number": 320,
+  "title": "PERF: billing improvements for caching",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 20609,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-29T11:19:45Z",
+  "updated_at": "2026-09-10T11:19:45Z",
+  "closed_at": "2026-09-10T11:19:45Z",
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71314,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1314 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T01:19:45Z"
+    },
+    {
+      "id": 71315,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #1315 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T04:19:45Z"
+    },
+    {
+      "id": 71316,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1316 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T20:19:45Z"
+    },
+    {
+      "id": 71317,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1317 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-08-31T09:19:45Z"
+    },
+    {
+      "id": 71318,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1318 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-08-31T23:19:45Z"
+    },
+    {
+      "id": 71319,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #1319 on issue #320: updates from triage and reproduction steps.",
+      "created_at": "2026-09-01T11:19:45Z"
+    }
+  ]
+}

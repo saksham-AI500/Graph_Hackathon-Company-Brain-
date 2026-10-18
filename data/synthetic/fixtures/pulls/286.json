@@ -1,0 +1,85 @@
+{
+  "id": 1000286,
+  "number": 286,
+  "state": "closed",
+  "title": "feat(auth): update sms_gateway.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-02-23T02:53:34Z",
+  "updated_at": "2026-02-26T01:53:34Z",
+  "closed_at": "2026-02-26T01:53:34Z",
+  "merged_at": "2026-02-26T01:53:34Z",
+  "merge_commit_sha": "90809297c8ba",
+  "head": {
+    "ref": "feature/pr-286",
+    "sha": "90809297c8ba"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/286",
+  "files": [
+    {
+      "filename": "auth/mfa/sms_gateway.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 2,
+      "changes": 52
+    },
+    {
+      "filename": "auth/__pycache__/service_account.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 3,
+      "changes": 20
+    },
+    {
+      "filename": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 2,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c959831d9898",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-23T02:53:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-23T02:53:34Z"
+        },
+        "message": "commit 1 for PR #286: feat(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "90809297c8ba",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-23T03:23:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-02-23T03:23:34Z"
+        },
+        "message": "commit 2 for PR #286: feat(auth): update sms_gateway.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

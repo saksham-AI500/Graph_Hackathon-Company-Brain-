@@ -1,0 +1,211 @@
+{
+  "id": 1000315,
+  "number": 315,
+  "state": "closed",
+  "title": "perf(auth): update revocation_list.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-03-09T18:50:28Z",
+  "updated_at": "2026-03-12T06:50:28Z",
+  "closed_at": "2026-03-12T06:50:28Z",
+  "merged_at": "2026-03-12T06:50:28Z",
+  "merge_commit_sha": "202044a80db1",
+  "head": {
+    "ref": "feature/pr-315",
+    "sha": "202044a80db1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/315",
+  "files": [
+    {
+      "filename": "auth/revocation_list.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 10,
+      "changes": 7
+    },
+    {
+      "filename": "auth/__pycache__/rate_limit_auth.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 5,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6ca0bc626b65",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T18:50:28Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T18:50:28Z"
+        },
+        "message": "commit 1 for PR #315: perf(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "266a1b375584",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T19:20:28Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T19:20:28Z"
+        },
+        "message": "commit 2 for PR #315: perf(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "01130c57a21c",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T19:50:28Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T19:50:28Z"
+        },
+        "message": "commit 3 for PR #315: perf(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "202044a80db1",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T20:20:28Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-09T20:20:28Z"
+        },
+        "message": "commit 4 for PR #315: perf(auth): update revocation_list.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 31501,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-10T14:50:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/315#pullrequestreview-31501"
+    },
+    {
+      "id": 31502,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-10T14:50:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/315#pullrequestreview-31502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1664,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1664: verify boundary checks on line 15.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 15
+    },
+    {
+      "id": 1665,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1665: verify boundary checks on line 25.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 25
+    },
+    {
+      "id": 1666,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1666: verify boundary checks on line 35.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 35
+    },
+    {
+      "id": 1667,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1667: verify boundary checks on line 15.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 15
+    },
+    {
+      "id": 1668,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1668: verify boundary checks on line 25.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 25
+    },
+    {
+      "id": 1669,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1669: verify boundary checks on line 35.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 35
+    },
+    {
+      "id": 1670,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1670: verify boundary checks on line 45.",
+      "created_at": "2026-03-10T14:50:28Z",
+      "path": "auth/revocation_list.py",
+      "line": 45
+    }
+  ]
+}

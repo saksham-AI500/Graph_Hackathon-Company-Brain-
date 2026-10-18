@@ -1,0 +1,162 @@
+{
+  "id": 1000195,
+  "number": 195,
+  "state": "closed",
+  "title": "feat(search): update stopwords.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 25566,
+    "type": "User"
+  },
+  "created_at": "2026-01-07T13:27:20Z",
+  "updated_at": "2026-01-09T17:27:20Z",
+  "closed_at": "2026-01-09T17:27:20Z",
+  "merged_at": "2026-01-09T17:27:20Z",
+  "merge_commit_sha": "0c1a6ef25ed8",
+  "head": {
+    "ref": "feature/pr-195",
+    "sha": "0c1a6ef25ed8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/195",
+  "files": [
+    {
+      "filename": "search/__pycache__/stopwords.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 4,
+      "changes": 60
+    },
+    {
+      "filename": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 2,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "84319d315e9c",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T13:27:20Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T13:27:20Z"
+        },
+        "message": "commit 1 for PR #195: feat(search): update stopwords.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7f02fddc3217",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T13:57:20Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T13:57:20Z"
+        },
+        "message": "commit 2 for PR #195: feat(search): update stopwords.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0c1a6ef25ed8",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T14:27:20Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-01-07T14:27:20Z"
+        },
+        "message": "commit 3 for PR #195: feat(search): update stopwords.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19501,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T13:27:20Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/195#pullrequestreview-19501"
+    },
+    {
+      "id": 19502,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T13:27:20Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/195#pullrequestreview-19502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1087,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1087: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T13:27:20Z",
+      "path": "search/__pycache__/stopwords.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1088,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1088: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T13:27:20Z",
+      "path": "search/__pycache__/stopwords.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1089,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 1089: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T13:27:20Z",
+      "path": "search/__pycache__/stopwords.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1090,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 1090: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T13:27:20Z",
+      "path": "search/__pycache__/stopwords.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

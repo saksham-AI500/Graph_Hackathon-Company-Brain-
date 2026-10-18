@@ -1,0 +1,42 @@
+{
+  "id": 2000047,
+  "number": 47,
+  "title": "FEATURE: billing improvements for reliability",
+  "body": "Detailed description for feature tracking in module billing/.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 24439,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-18T06:40:02Z",
+  "updated_at": "2025-12-18T06:40:02Z",
+  "closed_at": "2025-12-18T06:40:02Z",
+  "labels": [
+    "feature",
+    "billing"
+  ],
+  "linked_pulls": [
+    196
+  ],
+  "comments": [
+    {
+      "id": 70190,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #190 on issue #47: updates from triage and reproduction steps.",
+      "created_at": "2025-11-19T05:40:02Z"
+    },
+    {
+      "id": 70191,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #191 on issue #47: updates from triage and reproduction steps.",
+      "created_at": "2025-11-20T05:40:02Z"
+    }
+  ]
+}

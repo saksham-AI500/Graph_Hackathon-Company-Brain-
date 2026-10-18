@@ -1,0 +1,201 @@
+{
+  "id": 1000177,
+  "number": 177,
+  "state": "closed",
+  "title": "fix(growth_experiments): update config_exp.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2025-12-29T22:02:54Z",
+  "updated_at": "2026-01-01T21:02:54Z",
+  "closed_at": "2026-01-01T21:02:54Z",
+  "merged_at": "2026-01-01T21:02:54Z",
+  "merge_commit_sha": "e2068fba0280",
+  "head": {
+    "ref": "feature/pr-177",
+    "sha": "e2068fba0280"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/177",
+  "files": [
+    {
+      "filename": "growth/experiments/config_exp.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 6,
+      "changes": 9
+    },
+    {
+      "filename": "growth/experiments/holdout.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 8,
+      "changes": 27
+    },
+    {
+      "filename": "growth/experiments/__pycache__/overrides.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 15,
+      "changes": 19
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eb5d878db1ca",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T22:02:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T22:02:54Z"
+        },
+        "message": "commit 1 for PR #177: fix(growth_experiments): update config_exp.py"
+      }
+    },
+    {
+      "sha": "6ea439b4bbaa",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T22:32:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T22:32:54Z"
+        },
+        "message": "commit 2 for PR #177: fix(growth_experiments): update config_exp.py"
+      }
+    },
+    {
+      "sha": "5a4bde4c8470",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T23:02:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T23:02:54Z"
+        },
+        "message": "commit 3 for PR #177: fix(growth_experiments): update config_exp.py"
+      }
+    },
+    {
+      "sha": "3619008ee2e0",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T23:32:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-29T23:32:54Z"
+        },
+        "message": "commit 4 for PR #177: fix(growth_experiments): update config_exp.py"
+      }
+    },
+    {
+      "sha": "e2068fba0280",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-30T00:02:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2025-12-30T00:02:54Z"
+        },
+        "message": "commit 5 for PR #177: fix(growth_experiments): update config_exp.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17701,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-31T00:02:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/177#pullrequestreview-17701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 968,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 968: verify boundary checks on line 15.",
+      "created_at": "2025-12-31T00:02:54Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 15
+    },
+    {
+      "id": 969,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 969: verify boundary checks on line 25.",
+      "created_at": "2025-12-31T00:02:54Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 25
+    },
+    {
+      "id": 970,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 970: verify boundary checks on line 35.",
+      "created_at": "2025-12-31T00:02:54Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 35
+    },
+    {
+      "id": 971,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 971: verify boundary checks on line 45.",
+      "created_at": "2025-12-31T00:02:54Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 45
+    },
+    {
+      "id": 972,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 972: verify boundary checks on line 55.",
+      "created_at": "2025-12-31T00:02:54Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 55
+    }
+  ]
+}

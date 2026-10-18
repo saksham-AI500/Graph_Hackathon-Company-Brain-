@@ -119,3 +119,99 @@ def test_graph_off_extended_leakage_and_harness_check():
     assert ans2.status != "VERIFIED"
     assert ans2.model_used is not None
     assert "fabricated_citations" in ans2.verifier
+
+
+def test_answer_string_equals_model_string_byte_for_byte(monkeypatch):
+    """C3: The answer string returned equals the model string byte-for-byte when no forbidden word is present."""
+    from unittest.mock import MagicMock
+    loop = AgentExecutionLoop()
+
+    test_model_output = "I don't have Acme's repository data, so I cannot confirm which team owns the payments/ module."
+
+    # Mock LLM client to return exact test_model_output
+    mock_client = MagicMock()
+    mock_client.has_credentials = True
+    mock_client.model = "deepseek/deepseek-chat"
+    mock_client.create_chat_completion.return_value = {
+        "choices": [{"message": {"content": test_model_output}}],
+        "model": "deepseek/deepseek-chat",
+    }
+    monkeypatch.setattr(loop, "llm_client", mock_client)
+
+    req = AgentRequest(
+        question="Which team owns the payments/ module, as far as you know?",
+        mode="graph_off",
+    )
+    ans = loop.run(req)
+
+    # Must match byte-for-byte
+    assert ans.answer == test_model_output, (
+        f"Answer text must match model string byte-for-byte.\nExpected: {repr(test_model_output)}\nGot: {repr(ans.answer)}"
+    )
+    assert ans.answer.encode("utf-8") == test_model_output.encode("utf-8")
+
+
+def test_fails_if_forbidden_words_in_answer(monkeypatch):
+    """C3: Fails if the words 'knowledge', 'graph' or 'tools' appear in the answer."""
+    from unittest.mock import MagicMock
+    loop = AgentExecutionLoop()
+
+    forbidden_candidates = [
+        "The knowledge base is unavailable.",
+        "The graph query returned no records.",
+        "I need tools to check the repository.",
+    ]
+
+    for bad_text in forbidden_candidates:
+        mock_client = MagicMock()
+        mock_client.has_credentials = True
+        mock_client.model = "deepseek/deepseek-chat"
+        mock_client.create_chat_completion.return_value = {
+            "choices": [{"message": {"content": bad_text}}],
+            "model": "deepseek/deepseek-chat",
+        }
+        monkeypatch.setattr(loop, "llm_client", mock_client)
+
+        req = AgentRequest(
+            question="Which team owns payments/?",
+            mode="graph_off",
+        )
+        ans = loop.run(req)
+
+        # Harness/test check: must detect forbidden words and fail assertion
+        low = ans.answer.lower()
+        has_forbidden = any(w in low for w in ["knowledge", "graph", "tools"])
+        assert has_forbidden is True, f"Expected forbidden word in '{bad_text}'"
+
+
+def test_question_wording_repetition_excludes_fabricated_citation(monkeypatch):
+    """D2: A question wording that repeats 'payments/' must not produce a fabricated citation count when the answer only repeats the question's words."""
+    from unittest.mock import MagicMock
+    loop = AgentExecutionLoop()
+
+    # The answer repeats 'payments/' from the question, with no tool support and no invented people/URLs
+    ans_text = "I do not possess Acme repository records to state which team owns the payments/ module."
+
+    mock_client = MagicMock()
+    mock_client.has_credentials = True
+    mock_client.model = "deepseek/deepseek-chat"
+    mock_client.create_chat_completion.return_value = {
+        "choices": [{"message": {"content": ans_text}}],
+        "model": "deepseek/deepseek-chat",
+    }
+    monkeypatch.setattr(loop, "llm_client", mock_client)
+
+    req = AgentRequest(
+        question="Which team owns the payments/ module, as far as you know?",
+        mode="graph_off",
+    )
+    ans = loop.run(req)
+
+    # Because 'payments/' appeared in the question, fabricated_citations count must be 0
+    assert ans.verifier["fabricated_citations"] == 0, (
+        f"Repeating words from the question ('payments/') must NOT count as a fabricated citation. "
+        f"Got fabricated_citations = {ans.verifier['fabricated_citations']}"
+    )
+    # And status is ANSWERED_UNCERTAIN
+    assert ans.status == "ANSWERED_UNCERTAIN"
+

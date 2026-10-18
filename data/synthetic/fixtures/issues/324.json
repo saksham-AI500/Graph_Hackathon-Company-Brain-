@@ -1,0 +1,40 @@
+{
+  "id": 2000324,
+  "number": 324,
+  "title": "FEATURE: search improvements for latency",
+  "body": "Detailed description for feature tracking in module search/.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 25337,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-02T15:16:22Z",
+  "updated_at": "2026-09-02T15:16:22Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71327,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1327 on issue #324: updates from triage and reproduction steps.",
+      "created_at": "2026-09-03T14:16:22Z"
+    },
+    {
+      "id": 71328,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #1328 on issue #324: updates from triage and reproduction steps.",
+      "created_at": "2026-09-04T09:16:22Z"
+    }
+  ]
+}

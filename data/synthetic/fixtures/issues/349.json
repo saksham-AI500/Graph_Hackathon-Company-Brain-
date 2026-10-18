@@ -1,0 +1,58 @@
+{
+  "id": 2000349,
+  "number": 349,
+  "title": "FEATURE: billing improvements for latency",
+  "body": "Detailed description for feature tracking in module billing/.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24081,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-28T16:12:23Z",
+  "updated_at": "2026-10-07T16:12:23Z",
+  "closed_at": "2026-10-07T16:12:23Z",
+  "labels": [
+    "feature",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71425,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #1425 on issue #349: updates from triage and reproduction steps.",
+      "created_at": "2026-09-28T21:12:23Z"
+    },
+    {
+      "id": 71426,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #1426 on issue #349: updates from triage and reproduction steps.",
+      "created_at": "2026-09-29T17:12:23Z"
+    },
+    {
+      "id": 71427,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1427 on issue #349: updates from triage and reproduction steps.",
+      "created_at": "2026-09-30T09:12:23Z"
+    },
+    {
+      "id": 71428,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1428 on issue #349: updates from triage and reproduction steps.",
+      "created_at": "2026-09-30T21:12:23Z"
+    }
+  ]
+}

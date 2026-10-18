@@ -1,0 +1,224 @@
+{
+  "id": 1000045,
+  "number": 45,
+  "state": "closed",
+  "title": "test(payments_refunds): update reconciliation.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.\n\nCloses #129",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-10-23T15:32:54Z",
+  "updated_at": "2025-10-25T16:32:54Z",
+  "closed_at": "2025-10-25T16:32:54Z",
+  "merged_at": "2025-10-25T16:32:54Z",
+  "merge_commit_sha": "0f95dadf54e6",
+  "head": {
+    "ref": "feature/pr-45",
+    "sha": "0f95dadf54e6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/45",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 4,
+      "changes": 26
+    },
+    {
+      "filename": "payments/refunds/rules_engine.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 3,
+      "changes": 25
+    },
+    {
+      "filename": "payments/refunds/chargeback.py",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 11,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "939b4c2b44fc",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T15:32:54Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T15:32:54Z"
+        },
+        "message": "commit 1 for PR #45: test(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9c868aac5ddb",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T16:02:54Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T16:02:54Z"
+        },
+        "message": "commit 2 for PR #45: test(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0f95dadf54e6",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T16:32:54Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T16:32:54Z"
+        },
+        "message": "commit 3 for PR #45: test(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4501,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-25T04:32:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/45#pullrequestreview-4501"
+    },
+    {
+      "id": 4502,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-25T04:32:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/45#pullrequestreview-4502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 240,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 240: verify boundary checks on line 15.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 241,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 241: verify boundary checks on line 25.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 242,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 242: verify boundary checks on line 35.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 243,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 243: verify boundary checks on line 45.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 244,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 244: verify boundary checks on line 55.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 245,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 245: verify boundary checks on line 15.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 246,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 246: verify boundary checks on line 25.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 247,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 247: verify boundary checks on line 35.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 248,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 248: verify boundary checks on line 45.",
+      "created_at": "2025-10-25T04:32:54Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

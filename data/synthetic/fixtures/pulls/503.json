@@ -1,0 +1,194 @@
+{
+  "id": 1000503,
+  "number": 503,
+  "state": "closed",
+  "title": "chore(api_gateway): update canary_router.py",
+  "body": "Implementation changes for api_gateway module improvements.\n\nCloses #139",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2026-06-12T10:18:33Z",
+  "updated_at": "2026-06-14T05:18:33Z",
+  "closed_at": "2026-06-14T05:18:33Z",
+  "merged_at": "2026-06-14T05:18:33Z",
+  "merge_commit_sha": "d8d007223917",
+  "head": {
+    "ref": "feature/pr-503",
+    "sha": "d8d007223917"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/503",
+  "files": [
+    {
+      "filename": "api/gateway/canary_router.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 3,
+      "changes": 53
+    }
+  ],
+  "commits": [
+    {
+      "sha": "35b26edc7988",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-06-12T10:18:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-06-12T10:18:33Z"
+        },
+        "message": "commit 1 for PR #503: chore(api_gateway): update canary_router.py"
+      }
+    },
+    {
+      "sha": "d8d007223917",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-06-12T10:48:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-06-12T10:48:33Z"
+        },
+        "message": "commit 2 for PR #503: chore(api_gateway): update canary_router.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 50301,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-12T12:18:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/503#pullrequestreview-50301"
+    },
+    {
+      "id": 50302,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-12T12:18:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/503#pullrequestreview-50302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2688,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2688: verify boundary checks on line 15.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 15
+    },
+    {
+      "id": 2689,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2689: verify boundary checks on line 25.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 25
+    },
+    {
+      "id": 2690,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2690: verify boundary checks on line 35.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 35
+    },
+    {
+      "id": 2691,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2691: verify boundary checks on line 45.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 45
+    },
+    {
+      "id": 2692,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2692: verify boundary checks on line 15.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 15
+    },
+    {
+      "id": 2693,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2693: verify boundary checks on line 25.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 25
+    },
+    {
+      "id": 2694,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2694: verify boundary checks on line 35.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 35
+    },
+    {
+      "id": 2695,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2695: verify boundary checks on line 45.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 45
+    },
+    {
+      "id": 2696,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2696: verify boundary checks on line 55.",
+      "created_at": "2026-06-12T12:18:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 55
+    }
+  ]
+}

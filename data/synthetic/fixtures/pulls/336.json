@@ -1,0 +1,204 @@
+{
+  "id": 1000336,
+  "number": 336,
+  "state": "closed",
+  "title": "test(growth_referrals): update link_shortener.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-03-19T21:32:52Z",
+  "updated_at": "2026-03-22T17:32:52Z",
+  "closed_at": "2026-03-22T17:32:52Z",
+  "merged_at": "2026-03-22T17:32:52Z",
+  "merge_commit_sha": "baf69784b44c",
+  "head": {
+    "ref": "feature/pr-336",
+    "sha": "baf69784b44c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/336",
+  "files": [
+    {
+      "filename": "growth/referrals/link_shortener.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 2,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e2889191a998",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T21:32:52Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T21:32:52Z"
+        },
+        "message": "commit 1 for PR #336: test(growth_referrals): update link_shortener.py"
+      }
+    },
+    {
+      "sha": "4d3eef77fb6e",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T22:02:52Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T22:02:52Z"
+        },
+        "message": "commit 2 for PR #336: test(growth_referrals): update link_shortener.py"
+      }
+    },
+    {
+      "sha": "2f2fc5b1366b",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T22:32:52Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T22:32:52Z"
+        },
+        "message": "commit 3 for PR #336: test(growth_referrals): update link_shortener.py"
+      }
+    },
+    {
+      "sha": "baf69784b44c",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T23:02:52Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-03-19T23:02:52Z"
+        },
+        "message": "commit 4 for PR #336: test(growth_referrals): update link_shortener.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 33601,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-21T01:32:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/336#pullrequestreview-33601"
+    },
+    {
+      "id": 33602,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-21T01:32:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/336#pullrequestreview-33602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1766,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1766: verify boundary checks on line 15.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 15
+    },
+    {
+      "id": 1767,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1767: verify boundary checks on line 25.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 25
+    },
+    {
+      "id": 1768,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1768: verify boundary checks on line 35.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 35
+    },
+    {
+      "id": 1769,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1769: verify boundary checks on line 45.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 45
+    },
+    {
+      "id": 1770,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1770: verify boundary checks on line 55.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 55
+    },
+    {
+      "id": 1771,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1771: verify boundary checks on line 15.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 15
+    },
+    {
+      "id": 1772,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1772: verify boundary checks on line 25.",
+      "created_at": "2026-03-21T01:32:52Z",
+      "path": "growth/referrals/link_shortener.py",
+      "line": 25
+    }
+  ]
+}

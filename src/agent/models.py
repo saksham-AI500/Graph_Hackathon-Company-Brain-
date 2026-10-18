@@ -50,8 +50,14 @@ class SourceItem(BaseModel):
     url: str = Field(description="Public GitHub or documentation URL")
     title_or_desc: Optional[str] = None
     snippet: Optional[str] = None
+    start_offset: Optional[int] = None
+    end_offset: Optional[int] = None
+    span_text: Optional[str] = None
     valid_from: Optional[str] = None
     valid_to: Optional[str] = None
+    source_id: Optional[str] = None
+    entity_id: Optional[str] = None
+    description: Optional[str] = None
 
     @field_validator("id")
     @classmethod
@@ -61,6 +67,16 @@ class SourceItem(BaseModel):
             raise ValueError(f"Source ID must follow 'S1', 'S2' format, got '{v}'")
         return clean
 
+    def model_post_init(self, __context: Any) -> None:
+        if not self.source_id:
+            self.source_id = self.id
+        if not self.entity_id:
+            self.entity_id = str(self.identifier)
+        if not self.description:
+            self.description = self.title_or_desc or ""
+        if not self.span_text and self.snippet:
+            self.span_text = self.snippet
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "id": self.id,
@@ -69,8 +85,14 @@ class SourceItem(BaseModel):
             "url": self.url,
             "title_or_desc": self.title_or_desc,
             "snippet": self.snippet,
+            "start_offset": self.start_offset,
+            "end_offset": self.end_offset,
+            "span_text": self.span_text,
             "valid_from": self.valid_from,
             "valid_to": self.valid_to,
+            "source_id": self.source_id,
+            "entity_id": self.entity_id,
+            "description": self.description,
         }
 
 
@@ -85,6 +107,16 @@ class Claim(BaseModel):
     source_ids: List[str] = Field(default_factory=list, description="Associated source item IDs, e.g. ['S1']")
     verified: bool = False
     unresolved_reason: Optional[str] = None
+    statement: Optional[str] = None
+    verification_path: Optional[str] = None  # "structured" or "nli_prose"
+    score: Optional[float] = None
+    post_hoc: bool = False
+    supporting_span: Optional[str] = None
+    citation_correction: Optional[Dict[str, Any]] = None
+
+    def model_post_init(self, __context: Any) -> None:
+        if not self.statement:
+            self.statement = self.text
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -94,6 +126,12 @@ class Claim(BaseModel):
             "source_ids": self.source_ids,
             "verified": self.verified,
             "unresolved_reason": self.unresolved_reason,
+            "statement": self.statement,
+            "verification_path": self.verification_path,
+            "score": self.score,
+            "post_hoc": self.post_hoc,
+            "supporting_span": self.supporting_span,
+            "citation_correction": self.citation_correction,
         }
 
 
@@ -104,8 +142,17 @@ class AgentRequest(BaseModel):
     max_steps: int = Field(default=8, ge=1, le=12)
     model: Optional[str] = None
     api_key: Optional[str] = None
+    openrouter_key: Optional[str] = None
+    mode: str = Field(default="graph_on", description="'graph_on' or 'graph_off'")
+    previous_answer: Optional[str] = Field(default=None, description="Previous answer text for computing what_changed diff")
     require_fresh: bool = True
     dry_run_sync: bool = True
+
+    def model_post_init(self, __context: Any) -> None:
+        if not self.api_key and self.openrouter_key:
+            self.api_key = self.openrouter_key
+        elif not self.openrouter_key and self.api_key:
+            self.openrouter_key = self.api_key
 
     @field_validator("question")
     @classmethod
@@ -124,23 +171,102 @@ class AgentAnswer(BaseModel):
     unresolved: List[str] = Field(default_factory=list, description="Questions or gaps that could not be resolved")
     as_of: Optional[str] = None
     fresh_checked: bool = True
-    status: str = Field(default="VERIFIED", description="'VERIFIED', 'PARTIALLY_VERIFIED', or 'REFUSED'")
+    status: str = Field(default="VERIFIED", description="'VERIFIED', 'PARTIALLY_VERIFIED', 'ANSWERED_UNCERTAIN', or 'REFUSED'")
     step_count: int = 0
     tools_used: List[str] = Field(default_factory=list)
     execution_log: List[Dict[str, Any]] = Field(default_factory=list)
+    tool_calls: List[Dict[str, Any]] = Field(default_factory=list)
     model_used: str = "deterministic_fallback"
 
-    def to_dict(self) -> Dict[str, Any]:
-        return {
+    context: str = ""
+    ranking: List[Dict[str, Any]] = Field(default_factory=list)
+    reasoning: str = ""
+    excluded: List[Dict[str, Any]] = Field(default_factory=list)
+    mode: str = "graph_on"
+    synced_at: Optional[str] = None
+    model: str = "deepseek/deepseek-chat"
+    verifier: Dict[str, Any] = Field(default_factory=lambda: {"claims_total": 0, "claims_passed": 0, "sources_valid": 0, "sources_total": 0})
+    what_changed: Optional[Dict[str, Any]] = None
+
+    refusal_reason: Optional[str] = None
+
+    def model_post_init(self, __context: Any) -> None:
+        if not self.tool_calls and self.execution_log:
+            self.tool_calls = self.execution_log
+        elif not self.execution_log and self.tool_calls:
+            self.execution_log = self.tool_calls
+        if self.refusal_reason is None and self.status == "REFUSED":
+            if self.unresolved:
+                self.refusal_reason = "; ".join(self.unresolved)
+            else:
+                self.refusal_reason = self.answer
+
+    def to_api_response(self) -> Dict[str, Any]:
+        """Convert AgentAnswer into the exact Part 3 Answer Object specified for Track 03 API."""
+        claims_fmt = []
+        for c in self.claims:
+            ctype = c.claim_type.lower() if c.claim_type else "fact"
+            if ctype not in ("fact", "inference", "unresolved"):
+                ctype = "fact"
+            claims_fmt.append({
+                "id": c.claim_id,
+                "text": c.text,
+                "type": ctype,
+                "source_ids": c.source_ids,
+            })
+        sources_fmt = []
+        for s in self.sources:
+            sources_fmt.append({
+                "id": s.id,
+                "entity": str(s.identifier),
+                "url": s.url,
+                "date": s.valid_from or "",
+                "quote": s.snippet or "",
+            })
+        tool_calls_fmt = []
+        for tc in (self.tool_calls or self.execution_log or []):
+            if isinstance(tc, dict) and "tool" in tc:
+                tool_calls_fmt.append({
+                    "tool": tc.get("tool", ""),
+                    "args": tc.get("arguments", {}),
+                    "result_count": 1 if tc.get("success") else 0,
+                    "ms": tc.get("ms", 0),
+                })
+            elif isinstance(tc, dict) and "action" in tc:
+                tool_calls_fmt.append({
+                    "tool": tc.get("action", ""),
+                    "args": tc.get("details", {}),
+                    "result_count": 1,
+                    "ms": 0,
+                })
+
+        resp = {
             "answer": self.answer,
-            "claims": [c.to_dict() for c in self.claims],
-            "sources": [s.to_dict() for s in self.sources],
+            "context": self.context or (f"As of {self.as_of}" if self.as_of else "As of latest synchronized data"),
+            "ranking": self.ranking,
+            "reasoning": self.reasoning,
+            "claims": claims_fmt,
+            "excluded": self.excluded,
             "unresolved": self.unresolved,
+            "sources": sources_fmt,
+            "mode": self.mode,
             "as_of": self.as_of,
-            "fresh_checked": self.fresh_checked,
-            "status": self.status,
-            "step_count": self.step_count,
-            "tools_used": self.tools_used,
-            "execution_log": self.execution_log,
-            "model_used": self.model_used,
+            "synced_at": self.synced_at or "2026-09-30T23:59:59Z",
+            "model": self.model or self.model_used or "deepseek/deepseek-chat",
+            "tool_calls": tool_calls_fmt,
+            "verifier": self.verifier,
         }
+        if self.what_changed:
+            resp["what_changed"] = self.what_changed
+        return resp
+
+    def to_dict(self) -> Dict[str, Any]:
+        d = self.to_api_response()
+        d["status"] = self.status
+        d["step_count"] = self.step_count
+        d["tools_used"] = self.tools_used
+        d["execution_log"] = self.execution_log
+        d["model_used"] = self.model_used
+        d["fresh_checked"] = self.fresh_checked
+        d["refusal_reason"] = self.refusal_reason
+        return d

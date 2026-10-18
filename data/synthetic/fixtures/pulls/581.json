@@ -1,0 +1,196 @@
+{
+  "id": 1000581,
+  "number": 581,
+  "state": "closed",
+  "title": "chore(notifications): update batch_sender.py",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #45",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2026-07-21T21:38:01Z",
+  "updated_at": "2026-07-23T22:38:01Z",
+  "closed_at": "2026-07-23T22:38:01Z",
+  "merged_at": "2026-07-23T22:38:01Z",
+  "merge_commit_sha": "8f3f1b29bec8",
+  "head": {
+    "ref": "feature/pr-581",
+    "sha": "8f3f1b29bec8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/581",
+  "files": [
+    {
+      "filename": "notifications/batch_sender.py",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 5,
+      "changes": 47
+    },
+    {
+      "filename": "notifications/bounce_handler.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 3,
+      "changes": 37
+    },
+    {
+      "filename": "notifications/__init__.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 16
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e75cce9c4321",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T21:38:01Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T21:38:01Z"
+        },
+        "message": "commit 1 for PR #581: chore(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "a59e44224df9",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T22:08:01Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T22:08:01Z"
+        },
+        "message": "commit 2 for PR #581: chore(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "3956a2204e8a",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T22:38:01Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T22:38:01Z"
+        },
+        "message": "commit 3 for PR #581: chore(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "8f3f1b29bec8",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T23:08:01Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-07-21T23:08:01Z"
+        },
+        "message": "commit 4 for PR #581: chore(notifications): update batch_sender.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58101,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-23T00:38:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/581#pullrequestreview-58101"
+    },
+    {
+      "id": 58102,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-23T00:38:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/581#pullrequestreview-58102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3108,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3108: verify boundary checks on line 15.",
+      "created_at": "2026-07-23T00:38:01Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 3109,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3109: verify boundary checks on line 25.",
+      "created_at": "2026-07-23T00:38:01Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 3110,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3110: verify boundary checks on line 15.",
+      "created_at": "2026-07-23T00:38:01Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 3111,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3111: verify boundary checks on line 25.",
+      "created_at": "2026-07-23T00:38:01Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 3112,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3112: verify boundary checks on line 35.",
+      "created_at": "2026-07-23T00:38:01Z",
+      "path": "notifications/batch_sender.py",
+      "line": 35
+    }
+  ]
+}

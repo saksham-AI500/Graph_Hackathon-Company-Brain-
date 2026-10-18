@@ -118,7 +118,7 @@ def find_historical_reviewers(
            count(DISTINCT prior_pr) AS prior_pr_count,
            collect(DISTINCT prior_pr.url)[0..5] AS evidence_pr_urls,
            collect(DISTINCT r.state) AS review_states
-    ORDER BY prior_pr_count DESC
+    ORDER BY prior_pr_count DESC, p.login ASC
     LIMIT $limit
     """
     res = client.ro_query(
@@ -166,7 +166,7 @@ def find_related_co_changes(
            f2.path AS co_changed_file,
            count(DISTINCT prior_pr) AS co_change_count,
            collect(DISTINCT prior_pr.url)[0..5] AS evidence_pr_urls
-    ORDER BY co_change_count DESC
+    ORDER BY co_change_count DESC, f2.path ASC
     LIMIT $limit
     """
     res = client.ro_query(
@@ -195,11 +195,78 @@ def audit_ownership_for_files(
     client: FalkorDBClient,
     file_paths: List[str],
     codeowners: Optional[CodeownersParser] = None,
+    cutoff_timestamp: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
     """Evaluate declared CODEOWNERS and ownership drift for all changed files."""
     parser = codeowners or CodeownersParser.from_cache_or_default()
     audits = []
     for fp in file_paths:
-        rep = evaluate_ownership_discrepancy(client, fp, parser)
+        rep = evaluate_ownership_discrepancy(
+            client, fp, parser, cutoff_timestamp=cutoff_timestamp
+        )
         audits.append(rep.to_dict())
     return audits
+
+
+class ToolPermissionError(PermissionError):
+    """Raised when an unrecognized tool or prohibited write operation is attempted."""
+    pass
+
+
+ALLOWED_INVESTIGATION_TOOLS = {
+    "lookup_pr_details": lookup_pr_details,
+    "lookup_linked_issues": lookup_linked_issues,
+    "lookup_changed_files": lookup_changed_files,
+    "find_historical_reviewers": find_historical_reviewers,
+    "find_related_co_changes": find_related_co_changes,
+    "audit_ownership_for_files": audit_ownership_for_files,
+}
+
+
+def validate_and_invoke_tool(
+    client: FalkorDBClient,
+    tool_name: str,
+    arguments: Dict[str, Any],
+) -> Any:
+    """Validate tool name and arguments against strict schema before invocation.
+
+    Protection Boundary:
+    - Rejects any unknown or unlisted tool.
+    - Explicitly blocks any graph-writing, cypher-execution, or mutation operations.
+    - Ensures all executed investigation tools are strictly read-only allowlisted functions.
+    """
+    if tool_name not in ALLOWED_INVESTIGATION_TOOLS:
+        raise ToolPermissionError(
+            f"Unauthorized tool execution rejected: '{tool_name}'. "
+            f"Only read-only investigation tools are permitted. Write operations are strictly disallowed."
+        )
+
+    # Argument validation against strict schemas
+    if tool_name in ("lookup_pr_details", "lookup_linked_issues", "lookup_changed_files"):
+        if "pr_number" not in arguments or not isinstance(arguments["pr_number"], int):
+            raise ValueError(f"Tool '{tool_name}' requires integer 'pr_number' argument.")
+        return ALLOWED_INVESTIGATION_TOOLS[tool_name](client, arguments["pr_number"])
+
+    if tool_name in ("find_historical_reviewers", "find_related_co_changes"):
+        if "file_paths" not in arguments or not isinstance(arguments["file_paths"], list):
+            raise ValueError(f"Tool '{tool_name}' requires list of strings 'file_paths'.")
+        if "exclude_pr_number" not in arguments or not isinstance(arguments["exclude_pr_number"], int):
+            raise ValueError(f"Tool '{tool_name}' requires integer 'exclude_pr_number'.")
+        limit = int(arguments.get("limit", 5))
+        return ALLOWED_INVESTIGATION_TOOLS[tool_name](
+            client,
+            file_paths=arguments["file_paths"],
+            exclude_pr_number=arguments["exclude_pr_number"],
+            limit=limit,
+        )
+
+    if tool_name == "audit_ownership_for_files":
+        if "file_paths" not in arguments or not isinstance(arguments["file_paths"], list):
+            raise ValueError("Tool 'audit_ownership_for_files' requires list 'file_paths'.")
+        return audit_ownership_for_files(
+            client,
+            file_paths=arguments["file_paths"],
+            codeowners=arguments.get("codeowners"),
+            cutoff_timestamp=arguments.get("cutoff_timestamp"),
+        )
+

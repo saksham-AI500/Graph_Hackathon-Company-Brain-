@@ -1,0 +1,157 @@
+{
+  "id": 1000097,
+  "number": 97,
+  "state": "open",
+  "title": "feat(auth_mfa): update sms_gateway.cpython-314.pyc",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2025-11-18T22:35:41Z",
+  "updated_at": "2025-11-18T22:35:41Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-97",
+    "sha": "23a5d04cf053"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/97",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 11,
+      "changes": 32
+    },
+    {
+      "filename": "auth/mfa/step_up.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 15,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "bd7b021ef697",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-11-18T22:35:41Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-11-18T22:35:41Z"
+        },
+        "message": "commit 1 for PR #97: feat(auth_mfa): update sms_gateway.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "23a5d04cf053",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-11-18T23:05:41Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-11-18T23:05:41Z"
+        },
+        "message": "commit 2 for PR #97: feat(auth_mfa): update sms_gateway.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 9701,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-19T23:35:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/97#pullrequestreview-9701"
+    },
+    {
+      "id": 9702,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-19T23:35:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/97#pullrequestreview-9702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 509,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 509: verify boundary checks on line 15.",
+      "created_at": "2025-11-19T23:35:41Z",
+      "path": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 510,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 510: verify boundary checks on line 25.",
+      "created_at": "2025-11-19T23:35:41Z",
+      "path": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 511,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 511: verify boundary checks on line 35.",
+      "created_at": "2025-11-19T23:35:41Z",
+      "path": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 512,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 512: verify boundary checks on line 15.",
+      "created_at": "2025-11-19T23:35:41Z",
+      "path": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 513,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 513: verify boundary checks on line 25.",
+      "created_at": "2025-11-19T23:35:41Z",
+      "path": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

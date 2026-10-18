@@ -1,0 +1,233 @@
+{
+  "id": 1000233,
+  "number": 233,
+  "state": "closed",
+  "title": "chore(growth_experiments): update metrics_collector.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-01-26T18:45:41Z",
+  "updated_at": "2026-01-27T22:45:41Z",
+  "closed_at": "2026-01-27T22:45:41Z",
+  "merged_at": "2026-01-27T22:45:41Z",
+  "merge_commit_sha": "0a5afd847822",
+  "head": {
+    "ref": "feature/pr-233",
+    "sha": "0a5afd847822"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/233",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 3,
+      "changes": 34
+    },
+    {
+      "filename": "growth/experiments/__pycache__/bandit.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "298fcf072d58",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T18:45:41Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T18:45:41Z"
+        },
+        "message": "commit 1 for PR #233: chore(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "27c89af13b35",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T19:15:41Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T19:15:41Z"
+        },
+        "message": "commit 2 for PR #233: chore(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9677ca6c0ca1",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T19:45:41Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T19:45:41Z"
+        },
+        "message": "commit 3 for PR #233: chore(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0a5afd847822",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T20:15:41Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-26T20:15:41Z"
+        },
+        "message": "commit 4 for PR #233: chore(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 23301,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-28T18:45:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/233#pullrequestreview-23301"
+    },
+    {
+      "id": 23302,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-28T18:45:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/233#pullrequestreview-23302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1261,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1261: verify boundary checks on line 15.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1262,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1262: verify boundary checks on line 25.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1263,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1263: verify boundary checks on line 35.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1264,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1264: verify boundary checks on line 45.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1265,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 1265: verify boundary checks on line 55.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 1266,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1266: verify boundary checks on line 15.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1267,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1267: verify boundary checks on line 25.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1268,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1268: verify boundary checks on line 35.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1269,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1269: verify boundary checks on line 45.",
+      "created_at": "2026-01-28T18:45:41Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

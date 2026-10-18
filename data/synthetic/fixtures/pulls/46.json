@@ -1,0 +1,140 @@
+{
+  "id": 1000046,
+  "number": 46,
+  "state": "closed",
+  "title": "refactor(payments_refunds): update notification.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2025-10-24T03:32:10Z",
+  "updated_at": "2025-10-26T01:32:10Z",
+  "closed_at": "2025-10-26T01:32:10Z",
+  "merged_at": "2025-10-26T01:32:10Z",
+  "merge_commit_sha": "5b9bd4ef9763",
+  "head": {
+    "ref": "feature/pr-46",
+    "sha": "5b9bd4ef9763"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/46",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/notification.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 15,
+      "changes": 29
+    },
+    {
+      "filename": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 8,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a8ea20952486",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T03:32:10Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T03:32:10Z"
+        },
+        "message": "commit 1 for PR #46: refactor(payments_refunds): update notification.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d8e29d83bb62",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T04:02:10Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T04:02:10Z"
+        },
+        "message": "commit 2 for PR #46: refactor(payments_refunds): update notification.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5b9bd4ef9763",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T04:32:10Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2025-10-24T04:32:10Z"
+        },
+        "message": "commit 3 for PR #46: refactor(payments_refunds): update notification.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4601,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-25T02:32:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/46#pullrequestreview-4601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 249,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 249: verify boundary checks on line 15.",
+      "created_at": "2025-10-25T02:32:10Z",
+      "path": "payments/refunds/__pycache__/notification.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 250,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 250: verify boundary checks on line 25.",
+      "created_at": "2025-10-25T02:32:10Z",
+      "path": "payments/refunds/__pycache__/notification.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 251,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 251: verify boundary checks on line 35.",
+      "created_at": "2025-10-25T02:32:10Z",
+      "path": "payments/refunds/__pycache__/notification.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

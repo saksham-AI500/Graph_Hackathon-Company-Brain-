@@ -1,0 +1,226 @@
+{
+  "id": 1000622,
+  "number": 622,
+  "state": "closed",
+  "title": "fix(shared_utils): update concurrency.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-08-11T15:53:43Z",
+  "updated_at": "2026-08-13T14:53:43Z",
+  "closed_at": "2026-08-13T14:53:43Z",
+  "merged_at": "2026-08-13T14:53:43Z",
+  "merge_commit_sha": "bddeecd13109",
+  "head": {
+    "ref": "feature/pr-622",
+    "sha": "bddeecd13109"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/622",
+  "files": [
+    {
+      "filename": "shared/utils/concurrency.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 11,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d1a1a57aa4ee",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T15:53:43Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T15:53:43Z"
+        },
+        "message": "commit 1 for PR #622: fix(shared_utils): update concurrency.py"
+      }
+    },
+    {
+      "sha": "8c6304f75d5b",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T16:23:43Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T16:23:43Z"
+        },
+        "message": "commit 2 for PR #622: fix(shared_utils): update concurrency.py"
+      }
+    },
+    {
+      "sha": "4491878e55d2",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T16:53:43Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T16:53:43Z"
+        },
+        "message": "commit 3 for PR #622: fix(shared_utils): update concurrency.py"
+      }
+    },
+    {
+      "sha": "bddeecd13109",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T17:23:43Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-08-11T17:23:43Z"
+        },
+        "message": "commit 4 for PR #622: fix(shared_utils): update concurrency.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 62201,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-12T23:53:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/622#pullrequestreview-62201"
+    },
+    {
+      "id": 62202,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-12T23:53:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/622#pullrequestreview-62202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3282,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3282: verify boundary checks on line 15.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 15
+    },
+    {
+      "id": 3283,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3283: verify boundary checks on line 25.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 25
+    },
+    {
+      "id": 3284,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3284: verify boundary checks on line 35.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 35
+    },
+    {
+      "id": 3285,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3285: verify boundary checks on line 45.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 45
+    },
+    {
+      "id": 3286,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3286: verify boundary checks on line 15.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 15
+    },
+    {
+      "id": 3287,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3287: verify boundary checks on line 25.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 25
+    },
+    {
+      "id": 3288,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3288: verify boundary checks on line 35.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 35
+    },
+    {
+      "id": 3289,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3289: verify boundary checks on line 45.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 45
+    },
+    {
+      "id": 3290,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3290: verify boundary checks on line 55.",
+      "created_at": "2026-08-12T23:53:43Z",
+      "path": "shared/utils/concurrency.py",
+      "line": 55
+    }
+  ]
+}

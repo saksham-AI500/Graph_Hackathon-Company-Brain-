@@ -1,0 +1,179 @@
+{
+  "id": 1000044,
+  "number": 44,
+  "state": "closed",
+  "title": "test(search_indexer): update index_stats.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-10-23T03:38:49Z",
+  "updated_at": "2025-10-24T08:38:49Z",
+  "closed_at": "2025-10-24T08:38:49Z",
+  "merged_at": "2025-10-24T08:38:49Z",
+  "merge_commit_sha": "9c23a417c890",
+  "head": {
+    "ref": "feature/pr-44",
+    "sha": "9c23a417c890"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/44",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 14,
+      "changes": 44
+    },
+    {
+      "filename": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 4,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "82a598b7a3b4",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T03:38:49Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T03:38:49Z"
+        },
+        "message": "commit 1 for PR #44: test(search_indexer): update index_stats.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9c23a417c890",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T04:08:49Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-10-23T04:08:49Z"
+        },
+        "message": "commit 2 for PR #44: test(search_indexer): update index_stats.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4401,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-23T15:38:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/44#pullrequestreview-4401"
+    },
+    {
+      "id": 4402,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-23T15:38:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/44#pullrequestreview-4402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 233,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 233: verify boundary checks on line 15.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 234,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 234: verify boundary checks on line 25.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 235,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 235: verify boundary checks on line 35.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 236,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 236: verify boundary checks on line 45.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 237,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 237: verify boundary checks on line 15.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 238,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 238: verify boundary checks on line 25.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 239,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 239: verify boundary checks on line 35.",
+      "created_at": "2025-10-23T15:38:49Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

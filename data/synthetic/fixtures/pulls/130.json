@@ -1,0 +1,190 @@
+{
+  "id": 1000130,
+  "number": 130,
+  "state": "closed",
+  "title": "feat(search): update deduplication.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2025-12-05T15:26:15Z",
+  "updated_at": "2025-12-06T17:26:15Z",
+  "closed_at": "2025-12-06T17:26:15Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-130",
+    "sha": "3bc208a7232d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/130",
+  "files": [
+    {
+      "filename": "search/indexer/deduplication.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 12,
+      "changes": 58
+    },
+    {
+      "filename": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 11,
+      "changes": 47
+    },
+    {
+      "filename": "search/__pycache__/autocomplete.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 2,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "90167867568b",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T15:26:15Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T15:26:15Z"
+        },
+        "message": "commit 1 for PR #130: feat(search): update deduplication.py"
+      }
+    },
+    {
+      "sha": "b756b7a55785",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T15:56:15Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T15:56:15Z"
+        },
+        "message": "commit 2 for PR #130: feat(search): update deduplication.py"
+      }
+    },
+    {
+      "sha": "9896af453b5c",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T16:26:15Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T16:26:15Z"
+        },
+        "message": "commit 3 for PR #130: feat(search): update deduplication.py"
+      }
+    },
+    {
+      "sha": "15b171fd9340",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T16:56:15Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T16:56:15Z"
+        },
+        "message": "commit 4 for PR #130: feat(search): update deduplication.py"
+      }
+    },
+    {
+      "sha": "3bc208a7232d",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T17:26:15Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2025-12-05T17:26:15Z"
+        },
+        "message": "commit 5 for PR #130: feat(search): update deduplication.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13001,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-05T20:26:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/130#pullrequestreview-13001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 718,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 718: verify boundary checks on line 15.",
+      "created_at": "2025-12-05T20:26:15Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 15
+    },
+    {
+      "id": 719,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 719: verify boundary checks on line 25.",
+      "created_at": "2025-12-05T20:26:15Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 25
+    },
+    {
+      "id": 720,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 720: verify boundary checks on line 35.",
+      "created_at": "2025-12-05T20:26:15Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 35
+    },
+    {
+      "id": 721,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 721: verify boundary checks on line 45.",
+      "created_at": "2025-12-05T20:26:15Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 45
+    }
+  ]
+}

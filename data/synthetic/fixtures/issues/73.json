@@ -1,0 +1,51 @@
+{
+  "id": 2000073,
+  "number": 73,
+  "title": "PERF: billing improvements for throughput",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 20476,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-15T07:44:11Z",
+  "updated_at": "2026-01-13T07:44:11Z",
+  "closed_at": "2026-01-13T07:44:11Z",
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [
+    555
+  ],
+  "comments": [
+    {
+      "id": 70299,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #299 on issue #73: updates from triage and reproduction steps.",
+      "created_at": "2025-12-15T23:44:11Z"
+    },
+    {
+      "id": 70300,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #300 on issue #73: updates from triage and reproduction steps.",
+      "created_at": "2025-12-16T14:44:11Z"
+    },
+    {
+      "id": 70301,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #301 on issue #73: updates from triage and reproduction steps.",
+      "created_at": "2025-12-17T03:44:11Z"
+    }
+  ]
+}

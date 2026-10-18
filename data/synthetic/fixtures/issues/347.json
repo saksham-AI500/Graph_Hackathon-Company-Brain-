@@ -1,0 +1,49 @@
+{
+  "id": 2000347,
+  "number": 347,
+  "title": "PERF: search-indexer improvements for reliability",
+  "body": "Detailed description for perf tracking in module search/indexer/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-26T13:46:56Z",
+  "updated_at": "2026-10-15T13:46:56Z",
+  "closed_at": "2026-10-15T13:46:56Z",
+  "labels": [
+    "perf",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71420,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #1420 on issue #347: updates from triage and reproduction steps.",
+      "created_at": "2026-09-26T20:46:56Z"
+    },
+    {
+      "id": 71421,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #1421 on issue #347: updates from triage and reproduction steps.",
+      "created_at": "2026-09-27T03:46:56Z"
+    },
+    {
+      "id": 71422,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #1422 on issue #347: updates from triage and reproduction steps.",
+      "created_at": "2026-09-27T15:46:56Z"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "id": 1000171,
+  "number": 171,
+  "state": "closed",
+  "title": "test(infra_deploy): update network_policy.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2025-12-26T09:47:32Z",
+  "updated_at": "2025-12-27T10:47:32Z",
+  "closed_at": "2025-12-27T10:47:32Z",
+  "merged_at": "2025-12-27T10:47:32Z",
+  "merge_commit_sha": "7b68279928c4",
+  "head": {
+    "ref": "feature/pr-171",
+    "sha": "7b68279928c4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/171",
+  "files": [
+    {
+      "filename": "infra/deploy/network_policy.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 11,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "721e12487687",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-12-26T09:47:32Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-12-26T09:47:32Z"
+        },
+        "message": "commit 1 for PR #171: test(infra_deploy): update network_policy.py"
+      }
+    },
+    {
+      "sha": "7b68279928c4",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-12-26T10:17:32Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-12-26T10:17:32Z"
+        },
+        "message": "commit 2 for PR #171: test(infra_deploy): update network_policy.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17101,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-28T03:47:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/171#pullrequestreview-17101"
+    },
+    {
+      "id": 17102,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-28T03:47:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/171#pullrequestreview-17102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 928,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 928: verify boundary checks on line 15.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 15
+    },
+    {
+      "id": 929,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 929: verify boundary checks on line 25.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 25
+    },
+    {
+      "id": 930,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 930: verify boundary checks on line 35.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 35
+    },
+    {
+      "id": 931,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 931: verify boundary checks on line 45.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 45
+    },
+    {
+      "id": 932,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 932: verify boundary checks on line 15.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 15
+    },
+    {
+      "id": 933,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 933: verify boundary checks on line 25.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 25
+    },
+    {
+      "id": 934,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 934: verify boundary checks on line 35.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 35
+    },
+    {
+      "id": 935,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 935: verify boundary checks on line 45.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 45
+    },
+    {
+      "id": 936,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 936: verify boundary checks on line 55.",
+      "created_at": "2025-12-28T03:47:32Z",
+      "path": "infra/deploy/network_policy.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": 1000059,
+  "number": 59,
+  "state": "closed",
+  "title": "test(payments_refunds): update disputes.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.\n\nCloses #20",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2025-10-30T17:19:50Z",
+  "updated_at": "2025-11-02T10:19:50Z",
+  "closed_at": "2025-11-02T10:19:50Z",
+  "merged_at": "2025-11-02T10:19:50Z",
+  "merge_commit_sha": "25e4b22e0b87",
+  "head": {
+    "ref": "feature/pr-59",
+    "sha": "25e4b22e0b87"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/59",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 14,
+      "changes": 42
+    },
+    {
+      "filename": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 9,
+      "changes": 58
+    },
+    {
+      "filename": "payments/refunds/reconciliation.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 1,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1ac606414d58",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T17:19:50Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T17:19:50Z"
+        },
+        "message": "commit 1 for PR #59: test(payments_refunds): update disputes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "74ea66821902",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T17:49:50Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T17:49:50Z"
+        },
+        "message": "commit 2 for PR #59: test(payments_refunds): update disputes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "25e4b22e0b87",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T18:19:50Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-30T18:19:50Z"
+        },
+        "message": "commit 3 for PR #59: test(payments_refunds): update disputes.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 5901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-31T21:19:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/59#pullrequestreview-5901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 323,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 323: verify boundary checks on line 15.",
+      "created_at": "2025-10-31T21:19:50Z",
+      "path": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 324,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 324: verify boundary checks on line 25.",
+      "created_at": "2025-10-31T21:19:50Z",
+      "path": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 325,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 325: verify boundary checks on line 35.",
+      "created_at": "2025-10-31T21:19:50Z",
+      "path": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 326,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 326: verify boundary checks on line 45.",
+      "created_at": "2025-10-31T21:19:50Z",
+      "path": "payments/refunds/__pycache__/disputes.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

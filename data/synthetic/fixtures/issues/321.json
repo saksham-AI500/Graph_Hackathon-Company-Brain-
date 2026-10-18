@@ -1,0 +1,40 @@
+{
+  "id": 2000321,
+  "number": 321,
+  "title": "BUG: payments-refunds improvements for security",
+  "body": "Detailed description for bug tracking in module payments/refunds/.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29733,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-30T11:58:41Z",
+  "updated_at": "2026-08-30T11:58:41Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71320,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1320 on issue #321: updates from triage and reproduction steps.",
+      "created_at": "2026-08-30T20:58:41Z"
+    },
+    {
+      "id": 71321,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #1321 on issue #321: updates from triage and reproduction steps.",
+      "created_at": "2026-08-31T12:58:41Z"
+    }
+  ]
+}

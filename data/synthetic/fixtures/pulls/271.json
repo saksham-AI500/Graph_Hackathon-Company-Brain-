@@ -1,0 +1,138 @@
+{
+  "id": 1000271,
+  "number": 271,
+  "state": "closed",
+  "title": "feat(infra_observability): update dashboard_generator.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-02-16T00:36:42Z",
+  "updated_at": "2026-02-17T14:36:42Z",
+  "closed_at": "2026-02-17T14:36:42Z",
+  "merged_at": "2026-02-17T14:36:42Z",
+  "merge_commit_sha": "8a46cd807758",
+  "head": {
+    "ref": "feature/pr-271",
+    "sha": "8a46cd807758"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/271",
+  "files": [
+    {
+      "filename": "infra/observability/dashboard_generator.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 14,
+      "changes": 58
+    }
+  ],
+  "commits": [
+    {
+      "sha": "67be7049a471",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T00:36:42Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T00:36:42Z"
+        },
+        "message": "commit 1 for PR #271: feat(infra_observability): update dashboard_generator.py"
+      }
+    },
+    {
+      "sha": "46d1462dcbb7",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:06:42Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:06:42Z"
+        },
+        "message": "commit 2 for PR #271: feat(infra_observability): update dashboard_generator.py"
+      }
+    },
+    {
+      "sha": "dfc7ddef6489",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:36:42Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:36:42Z"
+        },
+        "message": "commit 3 for PR #271: feat(infra_observability): update dashboard_generator.py"
+      }
+    },
+    {
+      "sha": "8a46cd807758",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:06:42Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:06:42Z"
+        },
+        "message": "commit 4 for PR #271: feat(infra_observability): update dashboard_generator.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27101,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-16T05:36:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/271#pullrequestreview-27101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1434,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1434: verify boundary checks on line 15.",
+      "created_at": "2026-02-16T05:36:42Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 15
+    },
+    {
+      "id": 1435,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1435: verify boundary checks on line 25.",
+      "created_at": "2026-02-16T05:36:42Z",
+      "path": "infra/observability/dashboard_generator.py",
+      "line": 25
+    }
+  ]
+}

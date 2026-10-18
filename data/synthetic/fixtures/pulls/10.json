@@ -1,0 +1,268 @@
+{
+  "id": 1000010,
+  "number": 10,
+  "state": "closed",
+  "title": "test(growth_referrals): update campaign.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2025-10-06T10:45:47Z",
+  "updated_at": "2025-10-09T04:45:47Z",
+  "closed_at": "2025-10-09T04:45:47Z",
+  "merged_at": "2025-10-09T04:45:47Z",
+  "merge_commit_sha": "7871ddef7869",
+  "head": {
+    "ref": "feature/pr-10",
+    "sha": "7871ddef7869"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/10",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 13,
+      "changes": 56
+    },
+    {
+      "filename": "growth/referrals/campaign.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 1,
+      "changes": 39
+    },
+    {
+      "filename": "growth/referrals/__pycache__/referral_tracker.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 13,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "048a848c166b",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T10:45:47Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T10:45:47Z"
+        },
+        "message": "commit 1 for PR #10: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "da7be5f38915",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T11:15:47Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T11:15:47Z"
+        },
+        "message": "commit 2 for PR #10: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7871ddef7869",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T11:45:47Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-06T11:45:47Z"
+        },
+        "message": "commit 3 for PR #10: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1001,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T02:45:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/10#pullrequestreview-1001"
+    },
+    {
+      "id": 1002,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T02:45:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/10#pullrequestreview-1002"
+    },
+    {
+      "id": 1003,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T02:45:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/10#pullrequestreview-1003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 68,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 68: verify boundary checks on line 15.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 69,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 69: verify boundary checks on line 25.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 70,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 70: verify boundary checks on line 35.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 71,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 71: verify boundary checks on line 45.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 72,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Review comment 72: verify boundary checks on line 15.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 73,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Review comment 73: verify boundary checks on line 25.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 74,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Review comment 74: verify boundary checks on line 35.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 75,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 75: verify boundary checks on line 15.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 76,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 76: verify boundary checks on line 25.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 77,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 77: verify boundary checks on line 35.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 78,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 78: verify boundary checks on line 45.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 79,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 79: verify boundary checks on line 55.",
+      "created_at": "2025-10-07T02:45:47Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

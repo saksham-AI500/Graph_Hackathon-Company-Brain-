@@ -1,0 +1,78 @@
+{
+  "id": 1000305,
+  "number": 305,
+  "state": "closed",
+  "title": "chore(infra_deploy): update network_policy.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2026-03-04T04:57:22Z",
+  "updated_at": "2026-03-06T18:57:22Z",
+  "closed_at": "2026-03-06T18:57:22Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-305",
+    "sha": "de1c5e265500"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/305",
+  "files": [
+    {
+      "filename": "infra/deploy/network_policy.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 9,
+      "changes": 51
+    },
+    {
+      "filename": "infra/deploy/README.md",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 12,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "454592aa9d18",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-04T04:57:22Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-04T04:57:22Z"
+        },
+        "message": "commit 1 for PR #305: chore(infra_deploy): update network_policy.py"
+      }
+    },
+    {
+      "sha": "de1c5e265500",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-04T05:27:22Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-04T05:27:22Z"
+        },
+        "message": "commit 2 for PR #305: chore(infra_deploy): update network_policy.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

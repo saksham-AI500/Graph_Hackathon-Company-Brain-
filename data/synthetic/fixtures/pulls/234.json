@@ -1,0 +1,174 @@
+{
+  "id": 1000234,
+  "number": 234,
+  "state": "closed",
+  "title": "refactor(payments): update metrics_payments.py",
+  "body": "Implementation changes for payments module improvements.\n\nFixes #18",
+  "user": {
+    "login": "ben-carter",
+    "id": 29818,
+    "type": "User"
+  },
+  "created_at": "2026-01-27T07:28:09Z",
+  "updated_at": "2026-01-29T08:28:09Z",
+  "closed_at": "2026-01-29T08:28:09Z",
+  "merged_at": "2026-01-29T08:28:09Z",
+  "merge_commit_sha": "dc5d17eaedbc",
+  "head": {
+    "ref": "feature/pr-234",
+    "sha": "dc5d17eaedbc"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/234",
+  "files": [
+    {
+      "filename": "payments/metrics_payments.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 12,
+      "changes": 12
+    },
+    {
+      "filename": "payments/__pycache__/ledger.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 12,
+      "changes": 57
+    },
+    {
+      "filename": "payments/__pycache__/currency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 7,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d0ac69de29e6",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T07:28:09Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T07:28:09Z"
+        },
+        "message": "commit 1 for PR #234: refactor(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "f8b0a1f5b894",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T07:58:09Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T07:58:09Z"
+        },
+        "message": "commit 2 for PR #234: refactor(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "695ebe85fa2b",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T08:28:09Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T08:28:09Z"
+        },
+        "message": "commit 3 for PR #234: refactor(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "dc5d17eaedbc",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T08:58:09Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-01-27T08:58:09Z"
+        },
+        "message": "commit 4 for PR #234: refactor(payments): update metrics_payments.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 23401,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-28T23:28:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/234#pullrequestreview-23401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1270,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1270: verify boundary checks on line 15.",
+      "created_at": "2026-01-28T23:28:09Z",
+      "path": "payments/metrics_payments.py",
+      "line": 15
+    },
+    {
+      "id": 1271,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1271: verify boundary checks on line 25.",
+      "created_at": "2026-01-28T23:28:09Z",
+      "path": "payments/metrics_payments.py",
+      "line": 25
+    },
+    {
+      "id": 1272,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1272: verify boundary checks on line 35.",
+      "created_at": "2026-01-28T23:28:09Z",
+      "path": "payments/metrics_payments.py",
+      "line": 35
+    },
+    {
+      "id": 1273,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1273: verify boundary checks on line 45.",
+      "created_at": "2026-01-28T23:28:09Z",
+      "path": "payments/metrics_payments.py",
+      "line": 45
+    }
+  ]
+}

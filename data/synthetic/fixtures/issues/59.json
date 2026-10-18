@@ -1,0 +1,60 @@
+{
+  "id": 2000059,
+  "number": 59,
+  "title": "INCIDENT: shared-utils improvements for security",
+  "body": "Detailed description for incident tracking in module shared/utils/.",
+  "user": {
+    "login": "elena-rostova",
+    "id": 23447,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-30T18:32:57Z",
+  "updated_at": "2025-12-10T18:32:57Z",
+  "closed_at": "2025-12-10T18:32:57Z",
+  "labels": [
+    "incident",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    623
+  ],
+  "comments": [
+    {
+      "id": 70238,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #238 on issue #59: updates from triage and reproduction steps.",
+      "created_at": "2025-12-01T06:32:57Z"
+    },
+    {
+      "id": 70239,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #239 on issue #59: updates from triage and reproduction steps.",
+      "created_at": "2025-12-02T04:32:57Z"
+    },
+    {
+      "id": 70240,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #240 on issue #59: updates from triage and reproduction steps.",
+      "created_at": "2025-12-02T17:32:57Z"
+    },
+    {
+      "id": 70241,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #241 on issue #59: updates from triage and reproduction steps.",
+      "created_at": "2025-12-02T19:32:57Z"
+    }
+  ]
+}

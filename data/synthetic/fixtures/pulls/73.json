@@ -1,0 +1,136 @@
+{
+  "id": 1000073,
+  "number": 73,
+  "state": "closed",
+  "title": "perf(payments): update audit_refunds.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2025-11-06T19:32:39Z",
+  "updated_at": "2025-11-08T23:32:39Z",
+  "closed_at": "2025-11-08T23:32:39Z",
+  "merged_at": "2025-11-08T23:32:39Z",
+  "merge_commit_sha": "eff35c01b39c",
+  "head": {
+    "ref": "feature/pr-73",
+    "sha": "eff35c01b39c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/73",
+  "files": [
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 14,
+      "changes": 36
+    },
+    {
+      "filename": "payments/refunds/errors.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 59
+    },
+    {
+      "filename": "payments/__pycache__/transactions.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 9,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "110fee84b5d2",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T19:32:39Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T19:32:39Z"
+        },
+        "message": "commit 1 for PR #73: perf(payments): update audit_refunds.py"
+      }
+    },
+    {
+      "sha": "d17645f851a2",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T20:02:39Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T20:02:39Z"
+        },
+        "message": "commit 2 for PR #73: perf(payments): update audit_refunds.py"
+      }
+    },
+    {
+      "sha": "eff35c01b39c",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T20:32:39Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2025-11-06T20:32:39Z"
+        },
+        "message": "commit 3 for PR #73: perf(payments): update audit_refunds.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 7301,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-08T04:32:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/73#pullrequestreview-7301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 399,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Review comment 399: verify boundary checks on line 15.",
+      "created_at": "2025-11-08T04:32:39Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 15
+    },
+    {
+      "id": 400,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Review comment 400: verify boundary checks on line 25.",
+      "created_at": "2025-11-08T04:32:39Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 25
+    }
+  ]
+}

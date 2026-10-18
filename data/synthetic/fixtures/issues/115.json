@@ -1,0 +1,69 @@
+{
+  "id": 2000115,
+  "number": 115,
+  "title": "PERF: growth-referrals improvements for security",
+  "body": "Detailed description for perf tracking in module growth/referrals/.",
+  "user": {
+    "login": "lucas-vogel",
+    "id": 29033,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-28T01:23:24Z",
+  "updated_at": "2026-02-17T01:23:24Z",
+  "closed_at": "2026-02-17T01:23:24Z",
+  "labels": [
+    "perf",
+    "growth-referrals"
+  ],
+  "linked_pulls": [
+    118
+  ],
+  "comments": [
+    {
+      "id": 70474,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #474 on issue #115: updates from triage and reproduction steps.",
+      "created_at": "2026-01-28T16:23:24Z"
+    },
+    {
+      "id": 70475,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #475 on issue #115: updates from triage and reproduction steps.",
+      "created_at": "2026-01-29T07:23:24Z"
+    },
+    {
+      "id": 70476,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #476 on issue #115: updates from triage and reproduction steps.",
+      "created_at": "2026-01-29T13:23:24Z"
+    },
+    {
+      "id": 70477,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #477 on issue #115: updates from triage and reproduction steps.",
+      "created_at": "2026-01-29T20:23:24Z"
+    },
+    {
+      "id": 70478,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #478 on issue #115: updates from triage and reproduction steps.",
+      "created_at": "2026-01-30T17:23:24Z"
+    }
+  ]
+}

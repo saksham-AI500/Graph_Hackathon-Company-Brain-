@@ -1,0 +1,110 @@
+{
+  "id": 1000559,
+  "number": 559,
+  "state": "closed",
+  "title": "docs(search_indexer): update compaction.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.\n\nCloses #81",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2026-07-10T06:35:17Z",
+  "updated_at": "2026-07-11T09:35:17Z",
+  "closed_at": "2026-07-11T09:35:17Z",
+  "merged_at": "2026-07-11T09:35:17Z",
+  "merge_commit_sha": "051e7b0990ee",
+  "head": {
+    "ref": "feature/pr-559",
+    "sha": "051e7b0990ee"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/559",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/compaction.cpython-314.pyc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 12,
+      "changes": 43
+    },
+    {
+      "filename": "search/indexer/schema_indexer.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 13,
+      "changes": 39
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f8e379a68e56",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T06:35:17Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T06:35:17Z"
+        },
+        "message": "commit 1 for PR #559: docs(search_indexer): update compaction.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9ae204c399f0",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T07:05:17Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T07:05:17Z"
+        },
+        "message": "commit 2 for PR #559: docs(search_indexer): update compaction.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "73329f3a7b35",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T07:35:17Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T07:35:17Z"
+        },
+        "message": "commit 3 for PR #559: docs(search_indexer): update compaction.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "051e7b0990ee",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T08:05:17Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-07-10T08:05:17Z"
+        },
+        "message": "commit 4 for PR #559: docs(search_indexer): update compaction.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

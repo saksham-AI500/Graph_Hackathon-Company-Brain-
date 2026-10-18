@@ -1,0 +1,154 @@
+{
+  "id": 1000345,
+  "number": 345,
+  "state": "closed",
+  "title": "test(search_indexer): update crawler.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 21585,
+    "type": "User"
+  },
+  "created_at": "2026-03-24T10:53:24Z",
+  "updated_at": "2026-03-25T14:53:24Z",
+  "closed_at": "2026-03-25T14:53:24Z",
+  "merged_at": "2026-03-25T14:53:24Z",
+  "merge_commit_sha": "1faed4ea3615",
+  "head": {
+    "ref": "feature/pr-345",
+    "sha": "1faed4ea3615"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/345",
+  "files": [
+    {
+      "filename": "search/indexer/crawler.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 5,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "67c9e5c7f183",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T10:53:24Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T10:53:24Z"
+        },
+        "message": "commit 1 for PR #345: test(search_indexer): update crawler.py"
+      }
+    },
+    {
+      "sha": "7cc80ddb3378",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T11:23:24Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T11:23:24Z"
+        },
+        "message": "commit 2 for PR #345: test(search_indexer): update crawler.py"
+      }
+    },
+    {
+      "sha": "b070f06cdd5a",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T11:53:24Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T11:53:24Z"
+        },
+        "message": "commit 3 for PR #345: test(search_indexer): update crawler.py"
+      }
+    },
+    {
+      "sha": "193723281a5d",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T12:23:24Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T12:23:24Z"
+        },
+        "message": "commit 4 for PR #345: test(search_indexer): update crawler.py"
+      }
+    },
+    {
+      "sha": "1faed4ea3615",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T12:53:24Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2026-03-24T12:53:24Z"
+        },
+        "message": "commit 5 for PR #345: test(search_indexer): update crawler.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 34501,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-25T06:53:24Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/345#pullrequestreview-34501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1806,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1806: verify boundary checks on line 15.",
+      "created_at": "2026-03-25T06:53:24Z",
+      "path": "search/indexer/crawler.py",
+      "line": 15
+    },
+    {
+      "id": 1807,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1807: verify boundary checks on line 25.",
+      "created_at": "2026-03-25T06:53:24Z",
+      "path": "search/indexer/crawler.py",
+      "line": 25
+    }
+  ]
+}

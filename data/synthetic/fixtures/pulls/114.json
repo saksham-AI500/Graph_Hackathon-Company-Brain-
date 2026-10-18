@@ -1,0 +1,238 @@
+{
+  "id": 1000114,
+  "number": 114,
+  "state": "closed",
+  "title": "feat(auth/payments): integrate checkout session token validation",
+  "body": "Bridge auth session tokens with payments checkout verification flow.\n\nFixes #6",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2025-11-27T13:56:05Z",
+  "updated_at": "2025-11-28T21:56:05Z",
+  "closed_at": "2025-11-28T21:56:05Z",
+  "merged_at": "2025-11-28T21:56:05Z",
+  "merge_commit_sha": "fa8ee88bfd0e",
+  "head": {
+    "ref": "feature/pr-114",
+    "sha": "fa8ee88bfd0e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/114",
+  "files": [
+    {
+      "filename": "auth/session.py",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 3,
+      "changes": 16
+    },
+    {
+      "filename": "payments/gateway.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 3,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3687b60e206c",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T13:56:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T13:56:05Z"
+        },
+        "message": "commit 1 for PR #114: feat(auth/payments): integrate checkout session token validation"
+      }
+    },
+    {
+      "sha": "1c83cf2373e1",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T14:26:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T14:26:05Z"
+        },
+        "message": "commit 2 for PR #114: feat(auth/payments): integrate checkout session token validation"
+      }
+    },
+    {
+      "sha": "0300fb346f01",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T14:56:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T14:56:05Z"
+        },
+        "message": "commit 3 for PR #114: feat(auth/payments): integrate checkout session token validation"
+      }
+    },
+    {
+      "sha": "6af35a8ec78a",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T15:26:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T15:26:05Z"
+        },
+        "message": "commit 4 for PR #114: feat(auth/payments): integrate checkout session token validation"
+      }
+    },
+    {
+      "sha": "fa8ee88bfd0e",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T15:56:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2025-11-27T15:56:05Z"
+        },
+        "message": "commit 5 for PR #114: feat(auth/payments): integrate checkout session token validation"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 11401,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-27T18:56:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/114#pullrequestreview-11401"
+    },
+    {
+      "id": 11402,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-27T18:56:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/114#pullrequestreview-11402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 621,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 621: verify boundary checks on line 15.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 15
+    },
+    {
+      "id": 622,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 622: verify boundary checks on line 25.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 25
+    },
+    {
+      "id": 623,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 623: verify boundary checks on line 35.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 35
+    },
+    {
+      "id": 624,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 624: verify boundary checks on line 45.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 45
+    },
+    {
+      "id": 625,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 625: verify boundary checks on line 55.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 55
+    },
+    {
+      "id": 626,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 626: verify boundary checks on line 15.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 15
+    },
+    {
+      "id": 627,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 627: verify boundary checks on line 25.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 25
+    },
+    {
+      "id": 628,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 628: verify boundary checks on line 35.",
+      "created_at": "2025-11-27T18:56:05Z",
+      "path": "auth/session.py",
+      "line": 35
+    }
+  ]
+}

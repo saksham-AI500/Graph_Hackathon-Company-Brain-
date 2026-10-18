@@ -1,0 +1,219 @@
+{
+  "id": 1000555,
+  "number": 555,
+  "state": "closed",
+  "title": "perf(infra_deploy): update cert_manager.py",
+  "body": "Implementation changes for infra_deploy module improvements.\n\nCloses #73",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2026-07-08T17:32:59Z",
+  "updated_at": "2026-07-09T19:32:59Z",
+  "closed_at": "2026-07-09T19:32:59Z",
+  "merged_at": "2026-07-09T19:32:59Z",
+  "merge_commit_sha": "5247759e6abb",
+  "head": {
+    "ref": "feature/pr-555",
+    "sha": "5247759e6abb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/555",
+  "files": [
+    {
+      "filename": "infra/deploy/cert_manager.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 14,
+      "changes": 60
+    },
+    {
+      "filename": "infra/deploy/rollback.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 8,
+      "changes": 22
+    },
+    {
+      "filename": "infra/deploy/config_validator.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 2,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "442f8d2cad52",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-08T17:32:59Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-08T17:32:59Z"
+        },
+        "message": "commit 1 for PR #555: perf(infra_deploy): update cert_manager.py"
+      }
+    },
+    {
+      "sha": "5247759e6abb",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-08T18:02:59Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-08T18:02:59Z"
+        },
+        "message": "commit 2 for PR #555: perf(infra_deploy): update cert_manager.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 55501,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-09T01:32:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/555#pullrequestreview-55501"
+    },
+    {
+      "id": 55502,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-09T01:32:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/555#pullrequestreview-55502"
+    },
+    {
+      "id": 55503,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-09T01:32:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/555#pullrequestreview-55503"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2962,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2962: verify boundary checks on line 15.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 2963,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2963: verify boundary checks on line 25.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    },
+    {
+      "id": 2964,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2964: verify boundary checks on line 35.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 35
+    },
+    {
+      "id": 2965,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2965: verify boundary checks on line 45.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 45
+    },
+    {
+      "id": 2966,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2966: verify boundary checks on line 55.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 55
+    },
+    {
+      "id": 2967,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 2967: verify boundary checks on line 15.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 2968,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 2968: verify boundary checks on line 25.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    },
+    {
+      "id": 2969,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2969: verify boundary checks on line 15.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 2970,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2970: verify boundary checks on line 25.",
+      "created_at": "2026-07-09T01:32:59Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    }
+  ]
+}

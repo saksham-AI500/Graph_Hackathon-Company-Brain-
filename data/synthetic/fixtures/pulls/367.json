@@ -1,0 +1,177 @@
+{
+  "id": 1000367,
+  "number": 367,
+  "state": "closed",
+  "title": "perf(infra_deploy): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-04-03T14:23:26Z",
+  "updated_at": "2026-04-04T23:23:26Z",
+  "closed_at": "2026-04-04T23:23:26Z",
+  "merged_at": "2026-04-04T23:23:26Z",
+  "merge_commit_sha": "73809b817ad0",
+  "head": {
+    "ref": "feature/pr-367",
+    "sha": "73809b817ad0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/367",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 14,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f6f041ed008f",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T14:23:26Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T14:23:26Z"
+        },
+        "message": "commit 1 for PR #367: perf(infra_deploy): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "aa18fea102d2",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T14:53:26Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T14:53:26Z"
+        },
+        "message": "commit 2 for PR #367: perf(infra_deploy): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "73809b817ad0",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T15:23:26Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-03T15:23:26Z"
+        },
+        "message": "commit 3 for PR #367: perf(infra_deploy): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 36701,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-05T04:23:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/367#pullrequestreview-36701"
+    },
+    {
+      "id": 36702,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-05T04:23:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/367#pullrequestreview-36702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1930,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1930: verify boundary checks on line 15.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1931,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1931: verify boundary checks on line 25.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1932,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1932: verify boundary checks on line 15.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1933,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1933: verify boundary checks on line 25.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1934,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1934: verify boundary checks on line 35.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1935,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1935: verify boundary checks on line 45.",
+      "created_at": "2026-04-05T04:23:26Z",
+      "path": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

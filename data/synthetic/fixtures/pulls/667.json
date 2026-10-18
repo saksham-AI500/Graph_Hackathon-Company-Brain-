@@ -1,0 +1,126 @@
+{
+  "id": 1000667,
+  "number": 667,
+  "state": "closed",
+  "title": "docs(auth): update scopes.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2026-09-03T10:35:03Z",
+  "updated_at": "2026-09-05T14:35:03Z",
+  "closed_at": "2026-09-05T14:35:03Z",
+  "merged_at": "2026-09-05T14:35:03Z",
+  "merge_commit_sha": "391ca59d5f3b",
+  "head": {
+    "ref": "feature/pr-667",
+    "sha": "391ca59d5f3b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/667",
+  "files": [
+    {
+      "filename": "auth/__pycache__/scopes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 9,
+      "changes": 13
+    },
+    {
+      "filename": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 4,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3ad053ecd846",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T10:35:03Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T10:35:03Z"
+        },
+        "message": "commit 1 for PR #667: docs(auth): update scopes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "65e8bdd9e7fe",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T11:05:03Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T11:05:03Z"
+        },
+        "message": "commit 2 for PR #667: docs(auth): update scopes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f3ae97b5a49b",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T11:35:03Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T11:35:03Z"
+        },
+        "message": "commit 3 for PR #667: docs(auth): update scopes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9d8a99106f3f",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T12:05:03Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T12:05:03Z"
+        },
+        "message": "commit 4 for PR #667: docs(auth): update scopes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "391ca59d5f3b",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T12:35:03Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-03T12:35:03Z"
+        },
+        "message": "commit 5 for PR #667: docs(auth): update scopes.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

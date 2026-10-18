@@ -1,0 +1,260 @@
+{
+  "id": 1000564,
+  "number": 564,
+  "state": "closed",
+  "title": "fix(search): update embeddings.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2026-07-13T18:49:12Z",
+  "updated_at": "2026-07-14T22:49:12Z",
+  "closed_at": "2026-07-14T22:49:12Z",
+  "merged_at": "2026-07-14T22:49:12Z",
+  "merge_commit_sha": "2766002048a9",
+  "head": {
+    "ref": "feature/pr-564",
+    "sha": "2766002048a9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/564",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 13,
+      "changes": 15
+    },
+    {
+      "filename": "search/indexer/__pycache__/health_indexer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 14,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2f3d5b9351e7",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T18:49:12Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T18:49:12Z"
+        },
+        "message": "commit 1 for PR #564: fix(search): update embeddings.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "12993ca02154",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T19:19:12Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T19:19:12Z"
+        },
+        "message": "commit 2 for PR #564: fix(search): update embeddings.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b46fd6b71349",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T19:49:12Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T19:49:12Z"
+        },
+        "message": "commit 3 for PR #564: fix(search): update embeddings.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "13f9f9a03aa7",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T20:19:12Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T20:19:12Z"
+        },
+        "message": "commit 4 for PR #564: fix(search): update embeddings.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2766002048a9",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T20:49:12Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-07-13T20:49:12Z"
+        },
+        "message": "commit 5 for PR #564: fix(search): update embeddings.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56401,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-15T01:49:12Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/564#pullrequestreview-56401"
+    },
+    {
+      "id": 56402,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-15T01:49:12Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/564#pullrequestreview-56402"
+    },
+    {
+      "id": 56403,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-15T01:49:12Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/564#pullrequestreview-56403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3013,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3013: verify boundary checks on line 15.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3014,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3014: verify boundary checks on line 25.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3015,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3015: verify boundary checks on line 35.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3016,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3016: verify boundary checks on line 45.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3017,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3017: verify boundary checks on line 15.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3018,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 3018: verify boundary checks on line 25.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3019,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3019: verify boundary checks on line 15.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3020,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3020: verify boundary checks on line 25.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3021,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3021: verify boundary checks on line 35.",
+      "created_at": "2026-07-15T01:49:12Z",
+      "path": "search/indexer/__pycache__/embeddings.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

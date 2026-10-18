@@ -1,0 +1,133 @@
+{
+  "id": 1000526,
+  "number": 526,
+  "state": "closed",
+  "title": "perf(auth): update mfa_policy.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-06-24T01:07:09Z",
+  "updated_at": "2026-06-26T19:07:09Z",
+  "closed_at": "2026-06-26T19:07:09Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-526",
+    "sha": "b559fa839029"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/526",
+  "files": [
+    {
+      "filename": "auth/mfa/mfa_policy.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 10,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a45ac621745c",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T01:07:09Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T01:07:09Z"
+        },
+        "message": "commit 1 for PR #526: perf(auth): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "13950c960737",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T01:37:09Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T01:37:09Z"
+        },
+        "message": "commit 2 for PR #526: perf(auth): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "b559fa839029",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T02:07:09Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-06-24T02:07:09Z"
+        },
+        "message": "commit 3 for PR #526: perf(auth): update mfa_policy.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52601,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-25T05:07:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/526#pullrequestreview-52601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2824,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 2824: verify boundary checks on line 15.",
+      "created_at": "2026-06-25T05:07:09Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 15
+    },
+    {
+      "id": 2825,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 2825: verify boundary checks on line 25.",
+      "created_at": "2026-06-25T05:07:09Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 25
+    },
+    {
+      "id": 2826,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 2826: verify boundary checks on line 35.",
+      "created_at": "2026-06-25T05:07:09Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 35
+    }
+  ]
+}

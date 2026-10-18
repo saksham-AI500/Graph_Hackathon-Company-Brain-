@@ -1,0 +1,161 @@
+{
+  "id": 1000525,
+  "number": 525,
+  "state": "closed",
+  "title": "chore(notifications): update inbox.py",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #131",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2026-06-23T13:10:56Z",
+  "updated_at": "2026-06-26T04:10:56Z",
+  "closed_at": "2026-06-26T04:10:56Z",
+  "merged_at": "2026-06-26T04:10:56Z",
+  "merge_commit_sha": "bd9ba383c715",
+  "head": {
+    "ref": "feature/pr-525",
+    "sha": "bd9ba383c715"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/525",
+  "files": [
+    {
+      "filename": "notifications/inbox.py",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 4,
+      "changes": 11
+    }
+  ],
+  "commits": [
+    {
+      "sha": "62078efc8680",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-06-23T13:10:56Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-06-23T13:10:56Z"
+        },
+        "message": "commit 1 for PR #525: chore(notifications): update inbox.py"
+      }
+    },
+    {
+      "sha": "bd9ba383c715",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-06-23T13:40:56Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-06-23T13:40:56Z"
+        },
+        "message": "commit 2 for PR #525: chore(notifications): update inbox.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52501,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-25T01:10:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/525#pullrequestreview-52501"
+    },
+    {
+      "id": 52502,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-25T01:10:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/525#pullrequestreview-52502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2818,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2818: verify boundary checks on line 15.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 15
+    },
+    {
+      "id": 2819,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2819: verify boundary checks on line 25.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 25
+    },
+    {
+      "id": 2820,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2820: verify boundary checks on line 15.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 15
+    },
+    {
+      "id": 2821,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2821: verify boundary checks on line 25.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 25
+    },
+    {
+      "id": 2822,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2822: verify boundary checks on line 35.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 35
+    },
+    {
+      "id": 2823,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2823: verify boundary checks on line 45.",
+      "created_at": "2026-06-25T01:10:56Z",
+      "path": "notifications/inbox.py",
+      "line": 45
+    }
+  ]
+}

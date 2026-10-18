@@ -1,0 +1,67 @@
+{
+  "id": 2000230,
+  "number": 230,
+  "title": "TASK: billing improvements for security",
+  "body": "Detailed description for task tracking in module billing/.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 20609,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-27T18:15:40Z",
+  "updated_at": "2026-05-27T18:15:40Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70941,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #941 on issue #230: updates from triage and reproduction steps.",
+      "created_at": "2026-05-28T05:15:40Z"
+    },
+    {
+      "id": 70942,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #942 on issue #230: updates from triage and reproduction steps.",
+      "created_at": "2026-05-28T14:15:40Z"
+    },
+    {
+      "id": 70943,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #943 on issue #230: updates from triage and reproduction steps.",
+      "created_at": "2026-05-28T21:15:40Z"
+    },
+    {
+      "id": 70944,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #944 on issue #230: updates from triage and reproduction steps.",
+      "created_at": "2026-05-29T13:15:40Z"
+    },
+    {
+      "id": 70945,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #945 on issue #230: updates from triage and reproduction steps.",
+      "created_at": "2026-05-29T21:15:40Z"
+    }
+  ]
+}

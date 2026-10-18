@@ -1,0 +1,78 @@
+{
+  "id": 1000664,
+  "number": 664,
+  "state": "closed",
+  "title": "chore(billing): update subscriptions.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2026-09-01T21:48:32Z",
+  "updated_at": "2026-09-03T04:48:32Z",
+  "closed_at": "2026-09-03T04:48:32Z",
+  "merged_at": "2026-09-03T04:48:32Z",
+  "merge_commit_sha": "9bbd791dbb39",
+  "head": {
+    "ref": "feature/pr-664",
+    "sha": "9bbd791dbb39"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/664",
+  "files": [
+    {
+      "filename": "billing/subscriptions.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 9,
+      "changes": 24
+    },
+    {
+      "filename": "billing/__pycache__/plans.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 3,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "deb59ec6fbf7",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-01T21:48:32Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-01T21:48:32Z"
+        },
+        "message": "commit 1 for PR #664: chore(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "9bbd791dbb39",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-01T22:18:32Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-09-01T22:18:32Z"
+        },
+        "message": "commit 2 for PR #664: chore(billing): update subscriptions.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

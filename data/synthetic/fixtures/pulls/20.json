@@ -1,0 +1,101 @@
+{
+  "id": 1000020,
+  "number": 20,
+  "state": "open",
+  "title": "refactor(auth_mfa): update totp.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2025-10-10T11:09:19Z",
+  "updated_at": "2025-10-10T11:09:19Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-20",
+    "sha": "dd4b90372c2a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/20",
+  "files": [
+    {
+      "filename": "auth/mfa/totp.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 6,
+      "changes": 60
+    },
+    {
+      "filename": "auth/mfa/device_fingerprint.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 4,
+      "changes": 55
+    },
+    {
+      "filename": "auth/mfa/__pycache__/webauthn.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 11,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2fb1e39c74f7",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T11:09:19Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T11:09:19Z"
+        },
+        "message": "commit 1 for PR #20: refactor(auth_mfa): update totp.py"
+      }
+    },
+    {
+      "sha": "80ee756b1459",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T11:39:19Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T11:39:19Z"
+        },
+        "message": "commit 2 for PR #20: refactor(auth_mfa): update totp.py"
+      }
+    },
+    {
+      "sha": "dd4b90372c2a",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T12:09:19Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-10T12:09:19Z"
+        },
+        "message": "commit 3 for PR #20: refactor(auth_mfa): update totp.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

@@ -1,0 +1,199 @@
+{
+  "id": 1000043,
+  "number": 43,
+  "state": "closed",
+  "title": "perf(shared_utils): update network.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2025-10-22T15:01:21Z",
+  "updated_at": "2025-10-24T14:01:21Z",
+  "closed_at": "2025-10-24T14:01:21Z",
+  "merged_at": "2025-10-24T14:01:21Z",
+  "merge_commit_sha": "44e996f012a8",
+  "head": {
+    "ref": "feature/pr-43",
+    "sha": "44e996f012a8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/43",
+  "files": [
+    {
+      "filename": "shared/utils/network.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 1,
+      "changes": 44
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9ba343173b04",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T15:01:21Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T15:01:21Z"
+        },
+        "message": "commit 1 for PR #43: perf(shared_utils): update network.py"
+      }
+    },
+    {
+      "sha": "33d93e1656a7",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T15:31:21Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T15:31:21Z"
+        },
+        "message": "commit 2 for PR #43: perf(shared_utils): update network.py"
+      }
+    },
+    {
+      "sha": "44e996f012a8",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T16:01:21Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-22T16:01:21Z"
+        },
+        "message": "commit 3 for PR #43: perf(shared_utils): update network.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4301,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T20:01:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/43#pullrequestreview-4301"
+    },
+    {
+      "id": 4302,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T20:01:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/43#pullrequestreview-4302"
+    },
+    {
+      "id": 4303,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T20:01:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/43#pullrequestreview-4303"
+    }
+  ],
+  "comments": [
+    {
+      "id": 226,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 226: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 15
+    },
+    {
+      "id": 227,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Review comment 227: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 25
+    },
+    {
+      "id": 228,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 228: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 15
+    },
+    {
+      "id": 229,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 229: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 25
+    },
+    {
+      "id": 230,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 230: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 15
+    },
+    {
+      "id": 231,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 231: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 25
+    },
+    {
+      "id": 232,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 232: verify boundary checks on line 35.",
+      "created_at": "2025-10-22T20:01:21Z",
+      "path": "shared/utils/network.py",
+      "line": 35
+    }
+  ]
+}

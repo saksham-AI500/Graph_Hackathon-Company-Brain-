@@ -1,0 +1,69 @@
+{
+  "id": 2000063,
+  "number": 63,
+  "title": "PERF: growth-experiments improvements for throughput",
+  "body": "Detailed description for perf tracking in module growth/experiments/.",
+  "user": {
+    "login": "felix-baum",
+    "id": 21505,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-04T22:14:57Z",
+  "updated_at": "2025-12-13T22:14:57Z",
+  "closed_at": "2025-12-13T22:14:57Z",
+  "labels": [
+    "perf",
+    "growth-experiments"
+  ],
+  "linked_pulls": [
+    64
+  ],
+  "comments": [
+    {
+      "id": 70257,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #257 on issue #63: updates from triage and reproduction steps.",
+      "created_at": "2025-12-05T22:14:57Z"
+    },
+    {
+      "id": 70258,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #258 on issue #63: updates from triage and reproduction steps.",
+      "created_at": "2025-12-06T05:14:57Z"
+    },
+    {
+      "id": 70259,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #259 on issue #63: updates from triage and reproduction steps.",
+      "created_at": "2025-12-06T21:14:57Z"
+    },
+    {
+      "id": 70260,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #260 on issue #63: updates from triage and reproduction steps.",
+      "created_at": "2025-12-07T12:14:57Z"
+    },
+    {
+      "id": 70261,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #261 on issue #63: updates from triage and reproduction steps.",
+      "created_at": "2025-12-08T05:14:57Z"
+    }
+  ]
+}

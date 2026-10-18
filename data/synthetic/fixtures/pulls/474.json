@@ -1,0 +1,119 @@
+{
+  "id": 1000474,
+  "number": 474,
+  "state": "closed",
+  "title": "test(billing): update payment_method.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "ben-carter",
+    "id": 29818,
+    "type": "User"
+  },
+  "created_at": "2026-05-28T17:36:16Z",
+  "updated_at": "2026-05-31T04:36:16Z",
+  "closed_at": "2026-05-31T04:36:16Z",
+  "merged_at": "2026-05-31T04:36:16Z",
+  "merge_commit_sha": "9374f8f15b1c",
+  "head": {
+    "ref": "feature/pr-474",
+    "sha": "9374f8f15b1c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/474",
+  "files": [
+    {
+      "filename": "billing/payment_method.py",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 4,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9247c2631cfa",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T17:36:16Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T17:36:16Z"
+        },
+        "message": "commit 1 for PR #474: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "629ecd09067b",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T18:06:16Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T18:06:16Z"
+        },
+        "message": "commit 2 for PR #474: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "403390a65d34",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T18:36:16Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T18:36:16Z"
+        },
+        "message": "commit 3 for PR #474: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "7fce1ad0d518",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T19:06:16Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T19:06:16Z"
+        },
+        "message": "commit 4 for PR #474: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "9374f8f15b1c",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T19:36:16Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-05-28T19:36:16Z"
+        },
+        "message": "commit 5 for PR #474: test(billing): update payment_method.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

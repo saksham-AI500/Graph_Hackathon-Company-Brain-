@@ -1,0 +1,120 @@
+{
+  "id": 1000720,
+  "number": 720,
+  "state": "closed",
+  "title": "chore(payments_refunds): update batch.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-09-30T06:06:45Z",
+  "updated_at": "2026-10-02T00:06:45Z",
+  "closed_at": "2026-10-02T00:06:45Z",
+  "merged_at": "2026-10-02T00:06:45Z",
+  "merge_commit_sha": "19258d982333",
+  "head": {
+    "ref": "feature/pr-720",
+    "sha": "19258d982333"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/720",
+  "files": [
+    {
+      "filename": "payments/refunds/batch.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 11,
+      "changes": 47
+    },
+    {
+      "filename": "payments/refunds/errors.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 1,
+      "changes": 19
+    },
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 3,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9b4d0672073a",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-09-30T06:06:45Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-09-30T06:06:45Z"
+        },
+        "message": "commit 1 for PR #720: chore(payments_refunds): update batch.py"
+      }
+    },
+    {
+      "sha": "19258d982333",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-09-30T06:36:45Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-09-30T06:36:45Z"
+        },
+        "message": "commit 2 for PR #720: chore(payments_refunds): update batch.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 72001,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-10-01T07:06:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/720#pullrequestreview-72001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3822,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3822: verify boundary checks on line 15.",
+      "created_at": "2026-10-01T07:06:45Z",
+      "path": "payments/refunds/batch.py",
+      "line": 15
+    },
+    {
+      "id": 3823,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3823: verify boundary checks on line 25.",
+      "created_at": "2026-10-01T07:06:45Z",
+      "path": "payments/refunds/batch.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": 1000299,
+  "number": 299,
+  "state": "closed",
+  "title": "docs(payments): update payment_router.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-03-01T04:25:27Z",
+  "updated_at": "2026-03-02T09:25:27Z",
+  "closed_at": "2026-03-02T09:25:27Z",
+  "merged_at": "2026-03-02T09:25:27Z",
+  "merge_commit_sha": "56da5f34cc7b",
+  "head": {
+    "ref": "feature/pr-299",
+    "sha": "56da5f34cc7b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/299",
+  "files": [
+    {
+      "filename": "payments/payment_router.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 3,
+      "changes": 11
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0ca572878cf5",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T04:25:27Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T04:25:27Z"
+        },
+        "message": "commit 1 for PR #299: docs(payments): update payment_router.py"
+      }
+    },
+    {
+      "sha": "e06dc1432b1d",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T04:55:27Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T04:55:27Z"
+        },
+        "message": "commit 2 for PR #299: docs(payments): update payment_router.py"
+      }
+    },
+    {
+      "sha": "2a80fa27b6f5",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T05:25:27Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T05:25:27Z"
+        },
+        "message": "commit 3 for PR #299: docs(payments): update payment_router.py"
+      }
+    },
+    {
+      "sha": "56da5f34cc7b",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T05:55:27Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-03-01T05:55:27Z"
+        },
+        "message": "commit 4 for PR #299: docs(payments): update payment_router.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 29901,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-02T22:25:27Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/299#pullrequestreview-29901"
+    },
+    {
+      "id": 29902,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-02T22:25:27Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/299#pullrequestreview-29902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1594,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1594: verify boundary checks on line 15.",
+      "created_at": "2026-03-02T22:25:27Z",
+      "path": "payments/payment_router.py",
+      "line": 15
+    },
+    {
+      "id": 1595,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1595: verify boundary checks on line 25.",
+      "created_at": "2026-03-02T22:25:27Z",
+      "path": "payments/payment_router.py",
+      "line": 25
+    },
+    {
+      "id": 1596,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1596: verify boundary checks on line 15.",
+      "created_at": "2026-03-02T22:25:27Z",
+      "path": "payments/payment_router.py",
+      "line": 15
+    },
+    {
+      "id": 1597,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1597: verify boundary checks on line 25.",
+      "created_at": "2026-03-02T22:25:27Z",
+      "path": "payments/payment_router.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": 1000346,
+  "number": 346,
+  "state": "closed",
+  "title": "perf(search): update sanitizer.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2026-03-24T23:35:19Z",
+  "updated_at": "2026-03-27T04:35:19Z",
+  "closed_at": "2026-03-27T04:35:19Z",
+  "merged_at": "2026-03-27T04:35:19Z",
+  "merge_commit_sha": "64987f8b8bfb",
+  "head": {
+    "ref": "feature/pr-346",
+    "sha": "64987f8b8bfb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/346",
+  "files": [
+    {
+      "filename": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 11,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d5cf5f12c517",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-24T23:35:19Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-24T23:35:19Z"
+        },
+        "message": "commit 1 for PR #346: perf(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7d1dc0aeb8e7",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T00:05:19Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T00:05:19Z"
+        },
+        "message": "commit 2 for PR #346: perf(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8363200301c7",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T00:35:19Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T00:35:19Z"
+        },
+        "message": "commit 3 for PR #346: perf(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "64987f8b8bfb",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T01:05:19Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-03-25T01:05:19Z"
+        },
+        "message": "commit 4 for PR #346: perf(search): update sanitizer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 34601,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-26T06:35:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/346#pullrequestreview-34601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1808,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1808: verify boundary checks on line 15.",
+      "created_at": "2026-03-26T06:35:19Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1809,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1809: verify boundary checks on line 25.",
+      "created_at": "2026-03-26T06:35:19Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1810,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1810: verify boundary checks on line 35.",
+      "created_at": "2026-03-26T06:35:19Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1811,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1811: verify boundary checks on line 45.",
+      "created_at": "2026-03-26T06:35:19Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1812,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1812: verify boundary checks on line 55.",
+      "created_at": "2026-03-26T06:35:19Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

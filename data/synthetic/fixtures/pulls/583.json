@@ -1,0 +1,226 @@
+{
+  "id": 1000583,
+  "number": 583,
+  "state": "closed",
+  "title": "chore(payments): update settlements.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-07-22T21:50:52Z",
+  "updated_at": "2026-07-25T03:50:52Z",
+  "closed_at": "2026-07-25T03:50:52Z",
+  "merged_at": "2026-07-25T03:50:52Z",
+  "merge_commit_sha": "0124a6eb833b",
+  "head": {
+    "ref": "feature/pr-583",
+    "sha": "0124a6eb833b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/583",
+  "files": [
+    {
+      "filename": "payments/__pycache__/settlements.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 8,
+      "changes": 49
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0838df828ecb",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T21:50:52Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T21:50:52Z"
+        },
+        "message": "commit 1 for PR #583: chore(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6af0d79077be",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T22:20:52Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T22:20:52Z"
+        },
+        "message": "commit 2 for PR #583: chore(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a4d27afae3aa",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T22:50:52Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T22:50:52Z"
+        },
+        "message": "commit 3 for PR #583: chore(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0124a6eb833b",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T23:20:52Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-22T23:20:52Z"
+        },
+        "message": "commit 4 for PR #583: chore(payments): update settlements.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58301,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-24T14:50:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/583#pullrequestreview-58301"
+    },
+    {
+      "id": 58302,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-24T14:50:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/583#pullrequestreview-58302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3115,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3115: verify boundary checks on line 15.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3116,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3116: verify boundary checks on line 25.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3117,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3117: verify boundary checks on line 35.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3118,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3118: verify boundary checks on line 45.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3119,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3119: verify boundary checks on line 55.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3120,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3120: verify boundary checks on line 15.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3121,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3121: verify boundary checks on line 25.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3122,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3122: verify boundary checks on line 35.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3123,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3123: verify boundary checks on line 45.",
+      "created_at": "2026-07-24T14:50:52Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

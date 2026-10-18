@@ -1,0 +1,79 @@
+{
+  "id": 2000078,
+  "number": 78,
+  "title": "Auth token v2 migration tracker",
+  "body": "Tracking issue for migration to asymmetric JWT signing and token v2 architecture.\nSpecification documented in docs/guides/auth-token-migration.md.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-20T13:20:48Z",
+  "updated_at": "2025-12-20T13:20:48Z",
+  "closed_at": "2026-09-25T14:00:00Z",
+  "labels": [
+    "feature",
+    "auth",
+    "migration"
+  ],
+  "linked_pulls": [
+    220
+  ],
+  "comments": [
+    {
+      "id": 70316,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #316 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-21T09:20:48Z"
+    },
+    {
+      "id": 70317,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #317 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-22T09:20:48Z"
+    },
+    {
+      "id": 70318,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #318 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-22T15:20:48Z"
+    },
+    {
+      "id": 70319,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #319 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-23T12:20:48Z"
+    },
+    {
+      "id": 70320,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #320 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-24T03:20:48Z"
+    },
+    {
+      "id": 70321,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #321 on issue #78: updates from triage and reproduction steps.",
+      "created_at": "2025-12-24T06:20:48Z"
+    }
+  ]
+}

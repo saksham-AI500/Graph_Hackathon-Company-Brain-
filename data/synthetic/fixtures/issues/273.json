@@ -1,0 +1,58 @@
+{
+  "id": 2000273,
+  "number": 273,
+  "title": "INCIDENT: auth improvements for throughput",
+  "body": "Detailed description for incident tracking in module auth/.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 24439,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-07-11T12:48:21Z",
+  "updated_at": "2026-07-11T12:48:21Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71121,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #1121 on issue #273: updates from triage and reproduction steps.",
+      "created_at": "2026-07-11T15:48:21Z"
+    },
+    {
+      "id": 71122,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1122 on issue #273: updates from triage and reproduction steps.",
+      "created_at": "2026-07-12T13:48:21Z"
+    },
+    {
+      "id": 71123,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #1123 on issue #273: updates from triage and reproduction steps.",
+      "created_at": "2026-07-13T00:48:21Z"
+    },
+    {
+      "id": 71124,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1124 on issue #273: updates from triage and reproduction steps.",
+      "created_at": "2026-07-13T19:48:21Z"
+    }
+  ]
+}

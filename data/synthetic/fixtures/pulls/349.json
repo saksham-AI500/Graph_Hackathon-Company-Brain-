@@ -1,0 +1,144 @@
+{
+  "id": 1000349,
+  "number": 349,
+  "state": "closed",
+  "title": "chore(growth_referrals): update audit_referrals.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-03-26T11:53:02Z",
+  "updated_at": "2026-03-28T19:53:02Z",
+  "closed_at": "2026-03-28T19:53:02Z",
+  "merged_at": "2026-03-28T19:53:02Z",
+  "merge_commit_sha": "f6f6a7f8b691",
+  "head": {
+    "ref": "feature/pr-349",
+    "sha": "f6f6a7f8b691"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/349",
+  "files": [
+    {
+      "filename": "growth/referrals/audit_referrals.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 15,
+      "changes": 58
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3b90329f2f73",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T11:53:02Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T11:53:02Z"
+        },
+        "message": "commit 1 for PR #349: chore(growth_referrals): update audit_referrals.py"
+      }
+    },
+    {
+      "sha": "8c9187a1dc4f",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T12:23:02Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T12:23:02Z"
+        },
+        "message": "commit 2 for PR #349: chore(growth_referrals): update audit_referrals.py"
+      }
+    },
+    {
+      "sha": "f6f6a7f8b691",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T12:53:02Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-26T12:53:02Z"
+        },
+        "message": "commit 3 for PR #349: chore(growth_referrals): update audit_referrals.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 34901,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-28T10:53:02Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/349#pullrequestreview-34901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1820,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1820: verify boundary checks on line 15.",
+      "created_at": "2026-03-28T10:53:02Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 15
+    },
+    {
+      "id": 1821,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1821: verify boundary checks on line 25.",
+      "created_at": "2026-03-28T10:53:02Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 25
+    },
+    {
+      "id": 1822,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1822: verify boundary checks on line 35.",
+      "created_at": "2026-03-28T10:53:02Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 35
+    },
+    {
+      "id": 1823,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1823: verify boundary checks on line 45.",
+      "created_at": "2026-03-28T10:53:02Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 45
+    }
+  ]
+}

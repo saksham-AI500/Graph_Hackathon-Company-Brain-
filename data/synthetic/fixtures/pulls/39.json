@@ -1,0 +1,182 @@
+{
+  "id": 1000039,
+  "number": 39,
+  "state": "closed",
+  "title": "fix(search): update index_stats.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2025-10-20T14:53:18Z",
+  "updated_at": "2025-10-22T09:53:18Z",
+  "closed_at": "2025-10-22T09:53:18Z",
+  "merged_at": "2025-10-22T09:53:18Z",
+  "merge_commit_sha": "44b46f264336",
+  "head": {
+    "ref": "feature/pr-39",
+    "sha": "44b46f264336"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/39",
+  "files": [
+    {
+      "filename": "search/indexer/index_stats.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 7,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7c3881392ea8",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T14:53:18Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T14:53:18Z"
+        },
+        "message": "commit 1 for PR #39: fix(search): update index_stats.py"
+      }
+    },
+    {
+      "sha": "19dfb6d1a97c",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T15:23:18Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T15:23:18Z"
+        },
+        "message": "commit 2 for PR #39: fix(search): update index_stats.py"
+      }
+    },
+    {
+      "sha": "465199df8af0",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T15:53:18Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T15:53:18Z"
+        },
+        "message": "commit 3 for PR #39: fix(search): update index_stats.py"
+      }
+    },
+    {
+      "sha": "44b46f264336",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T16:23:18Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2025-10-20T16:23:18Z"
+        },
+        "message": "commit 4 for PR #39: fix(search): update index_stats.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3901,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-21T04:53:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/39#pullrequestreview-3901"
+    },
+    {
+      "id": 3902,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-21T04:53:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/39#pullrequestreview-3902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 204,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 204: verify boundary checks on line 15.",
+      "created_at": "2025-10-21T04:53:18Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 205,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 205: verify boundary checks on line 25.",
+      "created_at": "2025-10-21T04:53:18Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 206,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 206: verify boundary checks on line 35.",
+      "created_at": "2025-10-21T04:53:18Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 35
+    },
+    {
+      "id": 207,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 207: verify boundary checks on line 15.",
+      "created_at": "2025-10-21T04:53:18Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 208,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 208: verify boundary checks on line 25.",
+      "created_at": "2025-10-21T04:53:18Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    }
+  ]
+}

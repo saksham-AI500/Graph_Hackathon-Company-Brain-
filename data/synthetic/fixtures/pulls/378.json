@@ -1,0 +1,154 @@
+{
+  "id": 1000378,
+  "number": 378,
+  "state": "closed",
+  "title": "refactor(search_indexer): update sharding.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-04-10T04:02:50Z",
+  "updated_at": "2026-04-11T22:02:50Z",
+  "closed_at": "2026-04-11T22:02:50Z",
+  "merged_at": "2026-04-11T22:02:50Z",
+  "merge_commit_sha": "aa241f94b1d8",
+  "head": {
+    "ref": "feature/pr-378",
+    "sha": "aa241f94b1d8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/378",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 15,
+      "changes": 28
+    }
+  ],
+  "commits": [
+    {
+      "sha": "199ca14db682",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T04:02:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T04:02:50Z"
+        },
+        "message": "commit 1 for PR #378: refactor(search_indexer): update sharding.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "423fb144af95",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T04:32:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T04:32:50Z"
+        },
+        "message": "commit 2 for PR #378: refactor(search_indexer): update sharding.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b81875df24d8",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T05:02:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T05:02:50Z"
+        },
+        "message": "commit 3 for PR #378: refactor(search_indexer): update sharding.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9bfef4bdcb0f",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T05:32:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T05:32:50Z"
+        },
+        "message": "commit 4 for PR #378: refactor(search_indexer): update sharding.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "aa241f94b1d8",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T06:02:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-04-10T06:02:50Z"
+        },
+        "message": "commit 5 for PR #378: refactor(search_indexer): update sharding.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 37801,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T23:02:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/378#pullrequestreview-37801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1978,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 1978: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T23:02:50Z",
+      "path": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1979,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 1979: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T23:02:50Z",
+      "path": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

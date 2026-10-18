@@ -1,0 +1,44 @@
+{
+  "id": 2000042,
+  "number": 42,
+  "title": "Checkout timeout under heavy concurrency",
+  "body": "Customers experience intermittent 504 gateway timeouts during checkout bursts. See discussion in PR #108.\nInvestigating database connection pool deadlock.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 29511,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-13T01:41:44Z",
+  "updated_at": "2025-11-18T01:41:44Z",
+  "closed_at": "2025-11-18T01:41:44Z",
+  "labels": [
+    "bug",
+    "payments",
+    "sev-2"
+  ],
+  "linked_pulls": [
+    108,
+    145
+  ],
+  "comments": [
+    {
+      "id": 70166,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #166 on issue #42: updates from triage and reproduction steps.",
+      "created_at": "2025-11-13T19:41:44Z"
+    },
+    {
+      "id": 70167,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #167 on issue #42: updates from triage and reproduction steps.",
+      "created_at": "2025-11-13T23:41:44Z"
+    }
+  ]
+}

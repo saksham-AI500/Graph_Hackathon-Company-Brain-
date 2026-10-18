@@ -1,0 +1,49 @@
+{
+  "id": 2000275,
+  "number": 275,
+  "title": "FEATURE: growth-experiments improvements for latency",
+  "body": "Detailed description for feature tracking in module growth/experiments/.",
+  "user": {
+    "login": "jordan-hayes",
+    "id": 26240,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-13T15:27:34Z",
+  "updated_at": "2026-08-01T15:27:34Z",
+  "closed_at": "2026-08-01T15:27:34Z",
+  "labels": [
+    "feature",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71129,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #1129 on issue #275: updates from triage and reproduction steps.",
+      "created_at": "2026-07-14T04:27:34Z"
+    },
+    {
+      "id": 71130,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1130 on issue #275: updates from triage and reproduction steps.",
+      "created_at": "2026-07-14T10:27:34Z"
+    },
+    {
+      "id": 71131,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #1131 on issue #275: updates from triage and reproduction steps.",
+      "created_at": "2026-07-14T15:27:34Z"
+    }
+  ]
+}

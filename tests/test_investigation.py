@@ -38,6 +38,12 @@ def test_investigation_input_normalization():
     inp3 = InvestigationInput(target="https://github.com/FalkorDB/FalkorDB/pull/3339")
     assert inp3.target == 3339
 
+    inp4 = InvestigationInput(target="#3339")
+    assert inp4.target == 3339
+
+    inp5 = InvestigationInput(target="   #3339   ")
+    assert inp5.target == 3339
+
     with pytest.raises(ValueError):
         InvestigationInput(target="not-a-pr")
 

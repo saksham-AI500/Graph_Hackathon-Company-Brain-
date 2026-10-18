@@ -27,13 +27,47 @@ from src.ownership.codeowners import CodeownersParser
 
 
 def sanitize_untrusted_text(text: Optional[str]) -> str:
-    """Sanitize repository text (PR titles, issue bodies) to prevent prompt injection."""
-    if not text:
+    """Sanitize repository text (PR titles, issue bodies, comments).
+
+    Enforces data-isolation:
+    1. Strips HTML script, iframe, and executable tags.
+    2. Neutralizes attempts to forge system instructions or injection delimiters
+       (e.g., '<!-- SYSTEM:', '[SYSTEM OVERRIDE]', '</untrusted_data>').
+    3. Normalizes whitespace and bounds maximum length to prevent context flooding.
+    """
+    if not text or not isinstance(text, str):
         return ""
-    # Strip markdown executable constructs or control tags
-    sanitized = text.replace("<script>", "").replace("</script>", "")
-    # Restrict length to prevent context flooding
-    return sanitized.strip()[:1000]
+
+    import re
+
+    sanitized = text
+    # Strip script, iframe, and executable tags
+    sanitized = re.sub(r"<\s*script[^>]*>.*?<\s*/\s*script\s*>", "", sanitized, flags=re.IGNORECASE | re.DOTALL)
+    sanitized = re.sub(r"<\s*/?\s*script[^>]*>", "", sanitized, flags=re.IGNORECASE)
+    sanitized = re.sub(r"<\s*/?\s*(?:iframe|object|embed|applet)[^>]*>", "", sanitized, flags=re.IGNORECASE)
+
+    # Neutralize attempts to close data isolation boundary or inject fake system tags
+    sanitized = sanitized.replace("</untrusted_data>", "&lt;/untrusted_data&gt;")
+    sanitized = sanitized.replace("<untrusted_data", "&lt;untrusted_data")
+    sanitized = re.sub(r"<!--\s*SYSTEM.*?(?:-->|$)", "", sanitized, flags=re.IGNORECASE)
+
+    return sanitized.strip()[:2000]
+
+
+def wrap_untrusted_data(text: Optional[str], source: str = "repository_text") -> str:
+    """Wrap untrusted repository text in strict data-isolation tags.
+
+    Protection Boundary:
+    - Treats all repository text, comments, PR bodies, and issue text as passive data, never instructions.
+    - Delimits content within <untrusted_data source="..."> blocks before passing to models.
+    - Residual Risk: While structural wrapping and deterministic tool validation prevent tool/graph injection,
+      stochastic LLM text interpretation cannot be 100% mathematically prevented solely via prompting;
+      RepoBrain mitigates this with a deterministic, non-LLM verification gate before brief emission.
+    """
+    sanitized = sanitize_untrusted_text(text)
+    import re
+    safe_source = re.sub(r'[^a-zA-Z0-9_\-.:/]', '_', str(source))[:100]
+    return f'<untrusted_data source="{safe_source}">\n{sanitized}\n</untrusted_data>'
 
 
 class PROrchestrator:
@@ -48,17 +82,29 @@ class PROrchestrator:
         self.codeowners = codeowners or CodeownersParser.from_cache_or_default()
         self.verifier = PROnlineEvidenceVerifier(self.client)
 
-    def investigate(self, target: Union[int, str]) -> PRBrief:
+    def investigate(self, target: Union[InvestigationInput, int, str]) -> PRBrief:
         """Execute the end-to-end investigation contract for a target PR."""
         # 1. Parse and validate input
         try:
-            inp = InvestigationInput(target=target)
-            pr_number = inp.target
+            if isinstance(target, InvestigationInput):
+                pr_number = target.target
+            else:
+                inp = InvestigationInput(target=target)
+                pr_number = inp.target
         except Exception as exc:
             return PRBrief(
                 status="REFUSED",
                 refusal_message=f"Invalid PR input: {exc}",
                 unresolved_questions=[f"Could not parse valid PR identifier from '{target}'."],
+            )
+
+        # Check database connectivity
+        health = self.client.ping()
+        if health.get("status") != "healthy":
+            return PRBrief(
+                status="REFUSED",
+                refusal_message=f"Database unavailable: Cannot connect to FalkorDB at {self.client.host}:{self.client.port}.",
+                unresolved_questions=["FalkorDB database service is offline or unreachable."],
             )
 
         # 2. Look up target PR details
@@ -88,19 +134,36 @@ class PROrchestrator:
         changed_files_raw = lookup_changed_files(self.client, pr_number)
         file_paths = [f["path"] for f in changed_files_raw]
 
-        # Historical reviewers (EXCLUDING target PR)
-        historical_revs_raw = find_historical_reviewers(
-            self.client, file_paths=file_paths, exclude_pr_number=pr_number, limit=5
+        cutoff_ts = pr_data.get("created_at")
+
+        # Historical reviewers (EXCLUDING target PR and strictly respecting temporal cutoff)
+        from src.evaluation.temporal import (
+            find_historical_reviewers_temporal,
+            find_related_co_changes_temporal,
+        )
+        historical_revs_raw = find_historical_reviewers_temporal(
+            self.client,
+            file_paths=file_paths,
+            exclude_pr_number=pr_number,
+            cutoff_timestamp=cutoff_ts,
+            limit=5,
         )
 
-        # Co-change signals (EXCLUDING target PR)
-        co_changes_raw = find_related_co_changes(
-            self.client, file_paths=file_paths, exclude_pr_number=pr_number, limit=5
+        # Co-change signals (EXCLUDING target PR and strictly respecting temporal cutoff)
+        co_changes_raw = find_related_co_changes_temporal(
+            self.client,
+            file_paths=file_paths,
+            exclude_pr_number=pr_number,
+            cutoff_timestamp=cutoff_ts,
+            limit=5,
         )
 
-        # Ownership audits
+        # Ownership audits (respecting target PR creation cutoff)
         ownership_audits = audit_ownership_for_files(
-            self.client, file_paths=file_paths, codeowners=self.codeowners
+            self.client,
+            file_paths=file_paths,
+            codeowners=self.codeowners,
+            cutoff_timestamp=cutoff_ts,
         )
 
         # 4. Construct Structured Findings
@@ -162,9 +225,9 @@ class PROrchestrator:
                     file_path=audit["file_path"],
                     declared_owners=audit.get("declared_owners", []),
                     observed_human_reviewers=audit.get("observed_human_reviewers", []),
-                    drift_score=audit.get("reviewer_concentration_hhi", 0.0),
-                    bus_factor=len(audit.get("observed_human_authors", [])),
-                    risk_level=audit.get("confidence_level", "MEDIUM"),
+                    drift_score=audit.get("drift_score", 0.0),
+                    bus_factor=audit.get("bus_factor", 0),
+                    risk_level=audit.get("risk_level", "LOW"),
                     discrepancy_category=audit.get("discrepancy_category", "UNKNOWN"),
                     finding=audit.get("summary_finding", ""),
                 )

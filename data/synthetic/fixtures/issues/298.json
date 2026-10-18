@@ -1,0 +1,67 @@
+{
+  "id": 2000298,
+  "number": 298,
+  "title": "BUG: payments improvements for reliability",
+  "body": "Detailed description for bug tracking in module payments/.",
+  "user": {
+    "login": "devon-reed",
+    "id": 20546,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-06T13:20:05Z",
+  "updated_at": "2026-08-06T13:20:05Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71220,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #1220 on issue #298: updates from triage and reproduction steps.",
+      "created_at": "2026-08-07T02:20:05Z"
+    },
+    {
+      "id": 71221,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #1221 on issue #298: updates from triage and reproduction steps.",
+      "created_at": "2026-08-07T12:20:05Z"
+    },
+    {
+      "id": 71222,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1222 on issue #298: updates from triage and reproduction steps.",
+      "created_at": "2026-08-08T04:20:05Z"
+    },
+    {
+      "id": 71223,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #1223 on issue #298: updates from triage and reproduction steps.",
+      "created_at": "2026-08-08T18:20:05Z"
+    },
+    {
+      "id": 71224,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1224 on issue #298: updates from triage and reproduction steps.",
+      "created_at": "2026-08-09T04:20:05Z"
+    }
+  ]
+}

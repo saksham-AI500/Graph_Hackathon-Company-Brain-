@@ -1,0 +1,101 @@
+{
+  "id": 1000460,
+  "number": 460,
+  "state": "closed",
+  "title": "feat(billing): update statement.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.\n\nFixes #60",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-05-21T16:08:55Z",
+  "updated_at": "2026-05-23T20:08:55Z",
+  "closed_at": "2026-05-23T20:08:55Z",
+  "merged_at": "2026-05-23T20:08:55Z",
+  "merge_commit_sha": "742cfe714d77",
+  "head": {
+    "ref": "feature/pr-460",
+    "sha": "742cfe714d77"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/460",
+  "files": [
+    {
+      "filename": "billing/__pycache__/statement.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 1,
+      "changes": 16
+    },
+    {
+      "filename": "billing/__pycache__/currency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 12,
+      "changes": 14
+    },
+    {
+      "filename": "billing/__pycache__/credits.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 8,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4e774f71a299",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T16:08:55Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T16:08:55Z"
+        },
+        "message": "commit 1 for PR #460: feat(billing): update statement.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1f90a1eee8e5",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T16:38:55Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T16:38:55Z"
+        },
+        "message": "commit 2 for PR #460: feat(billing): update statement.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "742cfe714d77",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T17:08:55Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-05-21T17:08:55Z"
+        },
+        "message": "commit 3 for PR #460: feat(billing): update statement.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

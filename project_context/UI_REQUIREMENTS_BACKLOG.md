@@ -61,3 +61,14 @@ These items document functional UI requirements for future visual design passes 
 ## 3. Governance & Scope Boundary
 - **Do Not Redesign UI Now:** The current Streamlit interface satisfies all P0 functional and verification requirements for Hackathon Phase 6.
 - **Deferred Implementation:** Visual skinning, Tailwind/CSS themes, dynamic animations, and dedicated Gemini UI components will be addressed in the separate UI design phase if time permits, preserving the core engine's stability.
+
+---
+
+## 4. Phase 9 Defect Log & Functional Improvements
+
+| Defect ID | Feature Area | Severity / Priority | Status | Reproduction & Resolution Details |
+|---|---|---|---|---|
+| **DEFECT-UI-01** | Cold-Start Offline Crash | **High / P0** | **Fixed** | **Repro:** Launch Streamlit when FalkorDB is offline on clean session.<br>**Actual:** `get_orchestrator()` called before client check, raising unhandled `redis.ConnectionError`.<br>**Fix:** Guarded orchestrator instantiation after client null-check and passed `_client` to reuse connection pool. |
+| **DEFECT-UI-02** | Inaccurate Demo Preset Label | **Low / P1** | **Fixed** | **Repro:** Click preset button for PR #3176 claiming `(Decode Fix / Issue #3175)`.<br>**Actual:** PR #3176 in graph has no body or issue resolution edge.<br>**Fix:** Replaced preset with authentic PR #3307 resolving issue #3306. |
+| **DEFECT-UI-03** | Hash Prefix PR Rejection | **Medium / P1** | **Fixed** | **Repro:** Enter `#3339` or ` #3339 ` into PR input field.<br>**Actual:** Failed regex with `ValueError: Invalid PR identifier`.<br>**Fix:** Normalized input in `InvestigationInput.validate_target` to strip optional leading `#`. Tested in `test_investigation.py` and `test_ui.py`. |
+

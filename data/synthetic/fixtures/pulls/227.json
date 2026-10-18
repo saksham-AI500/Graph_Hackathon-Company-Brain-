@@ -1,0 +1,151 @@
+{
+  "id": 1000227,
+  "number": 227,
+  "state": "open",
+  "title": "chore(payments): update __init__.py",
+  "body": "Implementation changes for payments module improvements.\n\nCloses #31",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-01-23T06:13:49Z",
+  "updated_at": "2026-01-23T06:13:49Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-227",
+    "sha": "095eeea43dce"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/227",
+  "files": [
+    {
+      "filename": "payments/__init__.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 10,
+      "changes": 42
+    },
+    {
+      "filename": "payments/audit_payments.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 15,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3fb321e58d40",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T06:13:49Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T06:13:49Z"
+        },
+        "message": "commit 1 for PR #227: chore(payments): update __init__.py"
+      }
+    },
+    {
+      "sha": "17edfee14010",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T06:43:49Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T06:43:49Z"
+        },
+        "message": "commit 2 for PR #227: chore(payments): update __init__.py"
+      }
+    },
+    {
+      "sha": "095eeea43dce",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T07:13:49Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-01-23T07:13:49Z"
+        },
+        "message": "commit 3 for PR #227: chore(payments): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22701,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-24T23:13:49Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/227#pullrequestreview-22701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1234,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1234: verify boundary checks on line 15.",
+      "created_at": "2026-01-24T23:13:49Z",
+      "path": "payments/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 1235,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1235: verify boundary checks on line 25.",
+      "created_at": "2026-01-24T23:13:49Z",
+      "path": "payments/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 1236,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1236: verify boundary checks on line 35.",
+      "created_at": "2026-01-24T23:13:49Z",
+      "path": "payments/__init__.py",
+      "line": 35
+    },
+    {
+      "id": 1237,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1237: verify boundary checks on line 45.",
+      "created_at": "2026-01-24T23:13:49Z",
+      "path": "payments/__init__.py",
+      "line": 45
+    }
+  ]
+}

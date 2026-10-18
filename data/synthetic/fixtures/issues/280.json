@@ -1,0 +1,58 @@
+{
+  "id": 2000280,
+  "number": 280,
+  "title": "TASK: billing improvements for caching",
+  "body": "Detailed description for task tracking in module billing/.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 21335,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-07-18T20:11:07Z",
+  "updated_at": "2026-07-18T20:11:07Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71146,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #1146 on issue #280: updates from triage and reproduction steps.",
+      "created_at": "2026-07-19T13:11:07Z"
+    },
+    {
+      "id": 71147,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1147 on issue #280: updates from triage and reproduction steps.",
+      "created_at": "2026-07-20T00:11:07Z"
+    },
+    {
+      "id": 71148,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1148 on issue #280: updates from triage and reproduction steps.",
+      "created_at": "2026-07-20T05:11:07Z"
+    },
+    {
+      "id": 71149,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #1149 on issue #280: updates from triage and reproduction steps.",
+      "created_at": "2026-07-21T01:11:07Z"
+    }
+  ]
+}

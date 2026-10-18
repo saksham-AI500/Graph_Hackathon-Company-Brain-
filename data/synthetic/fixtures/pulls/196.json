@@ -1,0 +1,200 @@
+{
+  "id": 1000196,
+  "number": 196,
+  "state": "closed",
+  "title": "feat(billing): update tax_exemption.py",
+  "body": "Implementation changes for billing module improvements.\n\nFixes #47",
+  "user": {
+    "login": "aiden-cross",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-01-08T01:24:03Z",
+  "updated_at": "2026-01-09T17:24:03Z",
+  "closed_at": "2026-01-09T17:24:03Z",
+  "merged_at": "2026-01-09T17:24:03Z",
+  "merge_commit_sha": "c3985df68be5",
+  "head": {
+    "ref": "feature/pr-196",
+    "sha": "c3985df68be5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/196",
+  "files": [
+    {
+      "filename": "api/gateway/router.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 14,
+      "changes": 41
+    },
+    {
+      "filename": "api/gateway/middleware.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 13,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "498f9b87a2c7",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T01:24:03Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T01:24:03Z"
+        },
+        "message": "commit 1 for PR #196: feat(billing): update tax_exemption.py"
+      }
+    },
+    {
+      "sha": "99766255dab9",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T01:54:03Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T01:54:03Z"
+        },
+        "message": "commit 2 for PR #196: feat(billing): update tax_exemption.py"
+      }
+    },
+    {
+      "sha": "210d31e0daf9",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T02:24:03Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T02:24:03Z"
+        },
+        "message": "commit 3 for PR #196: feat(billing): update tax_exemption.py"
+      }
+    },
+    {
+      "sha": "c3985df68be5",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T02:54:03Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-01-08T02:54:03Z"
+        },
+        "message": "commit 4 for PR #196: feat(billing): update tax_exemption.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19601,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T11:24:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/196#pullrequestreview-19601"
+    },
+    {
+      "id": 19602,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T11:24:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/196#pullrequestreview-19602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1091,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1091: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1092,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1092: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1093,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1093: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1094,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1094: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1095,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1095: verify boundary checks on line 35.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 35
+    },
+    {
+      "id": 1096,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1096: verify boundary checks on line 45.",
+      "created_at": "2026-01-08T11:24:03Z",
+      "path": "api/gateway/router.py",
+      "line": 45
+    }
+  ]
+}

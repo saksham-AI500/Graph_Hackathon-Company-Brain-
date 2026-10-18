@@ -1,0 +1,113 @@
+{
+  "id": 1000662,
+  "number": 662,
+  "state": "closed",
+  "title": "feat(payments_refunds): update queue.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-08-31T21:31:15Z",
+  "updated_at": "2026-09-03T17:31:15Z",
+  "closed_at": "2026-09-03T17:31:15Z",
+  "merged_at": "2026-09-03T17:31:15Z",
+  "merge_commit_sha": "65381263e7f3",
+  "head": {
+    "ref": "feature/pr-662",
+    "sha": "65381263e7f3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/662",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 13,
+      "changes": 48
+    },
+    {
+      "filename": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 11,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3dcf47445e6a",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-08-31T21:31:15Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-08-31T21:31:15Z"
+        },
+        "message": "commit 1 for PR #662: feat(payments_refunds): update queue.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "65381263e7f3",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-08-31T22:01:15Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-08-31T22:01:15Z"
+        },
+        "message": "commit 2 for PR #662: feat(payments_refunds): update queue.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 66201,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-01T09:31:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/662#pullrequestreview-66201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3482,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3482: verify boundary checks on line 15.",
+      "created_at": "2026-09-01T09:31:15Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3483,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3483: verify boundary checks on line 25.",
+      "created_at": "2026-09-01T09:31:15Z",
+      "path": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

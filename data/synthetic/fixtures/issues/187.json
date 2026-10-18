@@ -1,0 +1,67 @@
+{
+  "id": 2000187,
+  "number": 187,
+  "title": "BUG: search improvements for latency",
+  "body": "Detailed description for bug tracking in module search/.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 20432,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-12T23:59:02Z",
+  "updated_at": "2026-04-12T23:59:02Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70763,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #763 on issue #187: updates from triage and reproduction steps.",
+      "created_at": "2026-04-13T17:59:02Z"
+    },
+    {
+      "id": 70764,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #764 on issue #187: updates from triage and reproduction steps.",
+      "created_at": "2026-04-14T04:59:02Z"
+    },
+    {
+      "id": 70765,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #765 on issue #187: updates from triage and reproduction steps.",
+      "created_at": "2026-04-14T13:59:02Z"
+    },
+    {
+      "id": 70766,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #766 on issue #187: updates from triage and reproduction steps.",
+      "created_at": "2026-04-15T09:59:02Z"
+    },
+    {
+      "id": 70767,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #767 on issue #187: updates from triage and reproduction steps.",
+      "created_at": "2026-04-16T05:59:02Z"
+    }
+  ]
+}

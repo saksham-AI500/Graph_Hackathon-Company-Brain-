@@ -1,0 +1,211 @@
+{
+  "id": 1000112,
+  "number": 112,
+  "state": "closed",
+  "title": "fix(billing): update __init__.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-11-26T13:06:22Z",
+  "updated_at": "2025-11-28T20:06:22Z",
+  "closed_at": "2025-11-28T20:06:22Z",
+  "merged_at": "2025-11-28T20:06:22Z",
+  "merge_commit_sha": "475da9299f7b",
+  "head": {
+    "ref": "feature/pr-112",
+    "sha": "475da9299f7b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/112",
+  "files": [
+    {
+      "filename": "billing/__init__.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 35
+    },
+    {
+      "filename": "billing/__pycache__/tax_calculator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 7,
+      "changes": 36
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2a2fba401466",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T13:06:22Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T13:06:22Z"
+        },
+        "message": "commit 1 for PR #112: fix(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "e2ea1096ed0b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T13:36:22Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T13:36:22Z"
+        },
+        "message": "commit 2 for PR #112: fix(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "5863986744da",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T14:06:22Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T14:06:22Z"
+        },
+        "message": "commit 3 for PR #112: fix(billing): update __init__.py"
+      }
+    },
+    {
+      "sha": "475da9299f7b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T14:36:22Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-11-26T14:36:22Z"
+        },
+        "message": "commit 4 for PR #112: fix(billing): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 11201,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-28T08:06:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/112#pullrequestreview-11201"
+    },
+    {
+      "id": 11202,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-28T08:06:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/112#pullrequestreview-11202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 604,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 604: verify boundary checks on line 15.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 605,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 605: verify boundary checks on line 25.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 606,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 606: verify boundary checks on line 35.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 35
+    },
+    {
+      "id": 607,
+      "user": {
+        "login": "docs-lint[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 607: verify boundary checks on line 45.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 45
+    },
+    {
+      "id": 608,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 608: verify boundary checks on line 15.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 609,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 609: verify boundary checks on line 25.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 610,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 610: verify boundary checks on line 35.",
+      "created_at": "2025-11-28T08:06:22Z",
+      "path": "billing/__init__.py",
+      "line": 35
+    }
+  ]
+}

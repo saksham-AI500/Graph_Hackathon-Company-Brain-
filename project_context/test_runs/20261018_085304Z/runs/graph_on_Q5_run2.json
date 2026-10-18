@@ -1,0 +1,67 @@
+{
+  "question_id": "Q5",
+  "question": "Who owns payments/refund.py according to CODEOWNERS?",
+  "mode": "graph_on",
+  "run_index": 2,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T08:58:20.597979+00:00",
+  "latency_ms": 8977.05,
+  "claims_count": 0,
+  "sources_count": 1,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "CODEOWNERS line 11",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L11",
+      "title_or_desc": "CODEOWNERS line 11",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "CODEOWNERS line 11",
+      "description": "CODEOWNERS line 11"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "The file  is declared as owned by the  team in CODEOWNERS, but the team is stale with no active members as of 2026-09-30.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "The team  has no active members, with Lucas Vogel having departed on 2026-01-31.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "Marcus Vance is the observed maintainer due to recent activity, but this is not reflected in CODEOWNERS.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

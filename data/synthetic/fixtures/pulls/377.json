@@ -1,0 +1,216 @@
+{
+  "id": 1000377,
+  "number": 377,
+  "state": "closed",
+  "title": "refactor(infra_deploy): update k8s_manager.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-04-09T16:01:42Z",
+  "updated_at": "2026-04-12T08:01:42Z",
+  "closed_at": "2026-04-12T08:01:42Z",
+  "merged_at": "2026-04-12T08:01:42Z",
+  "merge_commit_sha": "955dae6828c9",
+  "head": {
+    "ref": "feature/pr-377",
+    "sha": "955dae6828c9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/377",
+  "files": [
+    {
+      "filename": "infra/deploy/k8s_manager.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 7,
+      "changes": 45
+    },
+    {
+      "filename": "infra/deploy/__pycache__/cron_jobs.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 9,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3d069126359f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T16:01:42Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T16:01:42Z"
+        },
+        "message": "commit 1 for PR #377: refactor(infra_deploy): update k8s_manager.py"
+      }
+    },
+    {
+      "sha": "c92cfe93a85f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T16:31:42Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T16:31:42Z"
+        },
+        "message": "commit 2 for PR #377: refactor(infra_deploy): update k8s_manager.py"
+      }
+    },
+    {
+      "sha": "b6a2f5b422d7",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T17:01:42Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T17:01:42Z"
+        },
+        "message": "commit 3 for PR #377: refactor(infra_deploy): update k8s_manager.py"
+      }
+    },
+    {
+      "sha": "45f092298001",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T17:31:42Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T17:31:42Z"
+        },
+        "message": "commit 4 for PR #377: refactor(infra_deploy): update k8s_manager.py"
+      }
+    },
+    {
+      "sha": "955dae6828c9",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T18:01:42Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-04-09T18:01:42Z"
+        },
+        "message": "commit 5 for PR #377: refactor(infra_deploy): update k8s_manager.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 37701,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T12:01:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/377#pullrequestreview-37701"
+    },
+    {
+      "id": 37702,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T12:01:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/377#pullrequestreview-37702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1972,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1972: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 15
+    },
+    {
+      "id": 1973,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1973: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 25
+    },
+    {
+      "id": 1974,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1974: verify boundary checks on line 35.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 35
+    },
+    {
+      "id": 1975,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1975: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 15
+    },
+    {
+      "id": 1976,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1976: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 25
+    },
+    {
+      "id": 1977,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1977: verify boundary checks on line 35.",
+      "created_at": "2026-04-11T12:01:42Z",
+      "path": "infra/deploy/k8s_manager.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": 1000606,
+  "number": 606,
+  "state": "closed",
+  "title": "fix(api_gateway): update canary_router.py",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-08-03T13:10:33Z",
+  "updated_at": "2026-08-06T08:10:33Z",
+  "closed_at": "2026-08-06T08:10:33Z",
+  "merged_at": "2026-08-06T08:10:33Z",
+  "merge_commit_sha": "062cbda9b55b",
+  "head": {
+    "ref": "feature/pr-606",
+    "sha": "062cbda9b55b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/606",
+  "files": [
+    {
+      "filename": "api/gateway/canary_router.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 11,
+      "changes": 30
+    },
+    {
+      "filename": "api/gateway/__pycache__/cors.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 9,
+      "changes": 7
+    },
+    {
+      "filename": "api/gateway/rate_limit.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 6,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d8c07219aec0",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T13:10:33Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T13:10:33Z"
+        },
+        "message": "commit 1 for PR #606: fix(api_gateway): update canary_router.py"
+      }
+    },
+    {
+      "sha": "6bf8ea61557a",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T13:40:33Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T13:40:33Z"
+        },
+        "message": "commit 2 for PR #606: fix(api_gateway): update canary_router.py"
+      }
+    },
+    {
+      "sha": "062cbda9b55b",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T14:10:33Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-03T14:10:33Z"
+        },
+        "message": "commit 3 for PR #606: fix(api_gateway): update canary_router.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 60601,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-04T22:10:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/606#pullrequestreview-60601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3196,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3196: verify boundary checks on line 15.",
+      "created_at": "2026-08-04T22:10:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 15
+    },
+    {
+      "id": 3197,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3197: verify boundary checks on line 25.",
+      "created_at": "2026-08-04T22:10:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 25
+    },
+    {
+      "id": 3198,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3198: verify boundary checks on line 35.",
+      "created_at": "2026-08-04T22:10:33Z",
+      "path": "api/gateway/canary_router.py",
+      "line": 35
+    }
+  ]
+}

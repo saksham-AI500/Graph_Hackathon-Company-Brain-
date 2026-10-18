@@ -1,0 +1,69 @@
+{
+  "id": 2000098,
+  "number": 98,
+  "title": "INCIDENT: search improvements for latency",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-10T08:25:21Z",
+  "updated_at": "2026-02-04T08:25:21Z",
+  "closed_at": "2026-02-04T08:25:21Z",
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [
+    254
+  ],
+  "comments": [
+    {
+      "id": 70400,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #400 on issue #98: updates from triage and reproduction steps.",
+      "created_at": "2026-01-11T00:25:21Z"
+    },
+    {
+      "id": 70401,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #401 on issue #98: updates from triage and reproduction steps.",
+      "created_at": "2026-01-11T22:25:21Z"
+    },
+    {
+      "id": 70402,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #402 on issue #98: updates from triage and reproduction steps.",
+      "created_at": "2026-01-12T08:25:21Z"
+    },
+    {
+      "id": 70403,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #403 on issue #98: updates from triage and reproduction steps.",
+      "created_at": "2026-01-12T16:25:21Z"
+    },
+    {
+      "id": 70404,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #404 on issue #98: updates from triage and reproduction steps.",
+      "created_at": "2026-01-13T04:25:21Z"
+    }
+  ]
+}

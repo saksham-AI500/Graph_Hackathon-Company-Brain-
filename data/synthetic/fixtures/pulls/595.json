@@ -1,0 +1,85 @@
+{
+  "id": 1000595,
+  "number": 595,
+  "state": "closed",
+  "title": "test(growth_referrals): update rewards_engine.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "ben-carter",
+    "id": 29818,
+    "type": "User"
+  },
+  "created_at": "2026-07-28T23:27:47Z",
+  "updated_at": "2026-07-31T13:27:47Z",
+  "closed_at": "2026-07-31T13:27:47Z",
+  "merged_at": "2026-07-31T13:27:47Z",
+  "merge_commit_sha": "e85207310775",
+  "head": {
+    "ref": "feature/pr-595",
+    "sha": "e85207310775"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/595",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/rewards_engine.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 5,
+      "changes": 44
+    },
+    {
+      "filename": "growth/referrals/__pycache__/terms_validator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 8,
+      "changes": 57
+    },
+    {
+      "filename": "growth/referrals/link_shortener.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 11,
+      "changes": 29
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d3f3431b73ba",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-28T23:27:47Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-28T23:27:47Z"
+        },
+        "message": "commit 1 for PR #595: test(growth_referrals): update rewards_engine.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e85207310775",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-28T23:57:47Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-28T23:57:47Z"
+        },
+        "message": "commit 2 for PR #595: test(growth_referrals): update rewards_engine.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

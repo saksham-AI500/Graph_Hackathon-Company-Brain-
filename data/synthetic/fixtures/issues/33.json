@@ -1,0 +1,78 @@
+{
+  "id": 2000033,
+  "number": 33,
+  "title": "FEATURE: shared-utils improvements for throughput",
+  "body": "Detailed description for feature tracking in module shared/utils/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-03T16:48:04Z",
+  "updated_at": "2025-11-28T16:48:04Z",
+  "closed_at": "2025-11-28T16:48:04Z",
+  "labels": [
+    "feature",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    396
+  ],
+  "comments": [
+    {
+      "id": 70128,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #128 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-03T22:48:04Z"
+    },
+    {
+      "id": 70129,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #129 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-04T13:48:04Z"
+    },
+    {
+      "id": 70130,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #130 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-05T03:48:04Z"
+    },
+    {
+      "id": 70131,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #131 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-06T02:48:04Z"
+    },
+    {
+      "id": 70132,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #132 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-06T17:48:04Z"
+    },
+    {
+      "id": 70133,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #133 on issue #33: updates from triage and reproduction steps.",
+      "created_at": "2025-11-07T14:48:04Z"
+    }
+  ]
+}

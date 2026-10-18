@@ -154,3 +154,88 @@ def find_file_co_changes(
                     }
                 )
     return results
+
+
+def trace_documented_decisions(
+    client: FalkorDBClient,
+    pr_number: Optional[int] = None,
+    limit: int = 10,
+) -> List[Dict[str, Any]]:
+    """Query explicit engineering decisions where a merged PR resolved a documented issue."""
+    if pr_number is not None:
+        query = """
+        MATCH (pr:PullRequest {number: $pr_num})-[:RESOLVES]->(i:Issue)
+        OPTIONAL MATCH (reporter:Person)-[:REPORTED]->(i)
+        RETURN pr.number AS pr_number,
+               pr.title AS pr_title,
+               pr.url AS pr_url,
+               pr.merged_at AS decided_at,
+               i.number AS issue_number,
+               i.title AS issue_title,
+               i.url AS issue_url,
+               reporter.login AS reporter
+        """
+        params = {"pr_num": pr_number}
+    else:
+        query = """
+        MATCH (pr:PullRequest)-[:RESOLVES]->(i:Issue)
+        OPTIONAL MATCH (reporter:Person)-[:REPORTED]->(i)
+        RETURN pr.number AS pr_number,
+               pr.title AS pr_title,
+               pr.url AS pr_url,
+               pr.merged_at AS decided_at,
+               i.number AS issue_number,
+               i.title AS issue_title,
+               i.url AS issue_url,
+               reporter.login AS reporter
+        ORDER BY pr.merged_at DESC
+        LIMIT $limit
+        """
+        params = {"limit": limit}
+
+    res = client.ro_query(query, params)
+    decisions = []
+    if res and res.result_set:
+        for r in res.result_set:
+            decisions.append({
+                "pr_number": r[0],
+                "pr_title": r[1],
+                "pr_url": r[2],
+                "decided_at": r[3],
+                "issue_number": r[4],
+                "issue_title": r[5],
+                "issue_url": r[6],
+                "reporter": r[7],
+                "decision_type": "EXPLICIT_ISSUE_RESOLUTION",
+                "evidence_basis": "Direct (:PullRequest)-[:RESOLVES]->(:Issue) relationship verified from PR description.",
+            })
+    return decisions
+
+
+def find_source_backed_documentation(
+    client: FalkorDBClient,
+    limit: int = 10,
+) -> List[Dict[str, Any]]:
+    """Query source-backed repository documentation files and their modifying PR history."""
+    query = """
+    MATCH (f:File)
+    WHERE f.path ENDS WITH '.md' OR f.path ENDS WITH '.txt' OR f.path = 'CODEOWNERS' OR f.path CONTAINS 'docs/'
+    OPTIONAL MATCH (pr:PullRequest)-[:MODIFIES]->(f)
+    RETURN f.path AS doc_path,
+           f.url AS doc_url,
+           count(DISTINCT pr) AS modifying_prs_count,
+           collect(DISTINCT pr.url)[0..5] AS evidence_pr_urls
+    ORDER BY modifying_prs_count DESC
+    LIMIT $limit
+    """
+    res = client.ro_query(query, {"limit": limit})
+    docs = []
+    if res and res.result_set:
+        for r in res.result_set:
+            docs.append({
+                "path": r[0],
+                "url": r[1],
+                "modifying_prs_count": r[2],
+                "evidence_pr_urls": r[3] or [],
+            })
+    return docs

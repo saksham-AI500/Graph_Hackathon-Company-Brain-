@@ -1,0 +1,67 @@
+{
+  "id": 2000301,
+  "number": 301,
+  "title": "BUG: auth-mfa improvements for security",
+  "body": "Detailed description for bug tracking in module auth/mfa/.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28163,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-09T17:01:07Z",
+  "updated_at": "2026-08-09T17:01:07Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71232,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #1232 on issue #301: updates from triage and reproduction steps.",
+      "created_at": "2026-08-10T12:01:07Z"
+    },
+    {
+      "id": 71233,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1233 on issue #301: updates from triage and reproduction steps.",
+      "created_at": "2026-08-10T15:01:07Z"
+    },
+    {
+      "id": 71234,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #1234 on issue #301: updates from triage and reproduction steps.",
+      "created_at": "2026-08-10T22:01:07Z"
+    },
+    {
+      "id": 71235,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #1235 on issue #301: updates from triage and reproduction steps.",
+      "created_at": "2026-08-11T02:01:07Z"
+    },
+    {
+      "id": 71236,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1236 on issue #301: updates from triage and reproduction steps.",
+      "created_at": "2026-08-11T08:01:07Z"
+    }
+  ]
+}

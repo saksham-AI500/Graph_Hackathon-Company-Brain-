@@ -1,0 +1,49 @@
+{
+  "id": 2000329,
+  "number": 329,
+  "title": "FEATURE: shared-utils improvements for latency",
+  "body": "Detailed description for feature tracking in module shared/utils/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-07T20:09:44Z",
+  "updated_at": "2026-09-20T20:09:44Z",
+  "closed_at": "2026-09-20T20:09:44Z",
+  "labels": [
+    "feature",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71347,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1347 on issue #329: updates from triage and reproduction steps.",
+      "created_at": "2026-09-08T11:09:44Z"
+    },
+    {
+      "id": 71348,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #1348 on issue #329: updates from triage and reproduction steps.",
+      "created_at": "2026-09-09T03:09:44Z"
+    },
+    {
+      "id": 71349,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #1349 on issue #329: updates from triage and reproduction steps.",
+      "created_at": "2026-09-09T05:09:44Z"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": 1000333,
+  "number": 333,
+  "state": "closed",
+  "title": "test(infra_deploy): update healthcheck.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-03-18T09:54:34Z",
+  "updated_at": "2026-03-21T03:54:34Z",
+  "closed_at": "2026-03-21T03:54:34Z",
+  "merged_at": "2026-03-21T03:54:34Z",
+  "merge_commit_sha": "b91e25ebb767",
+  "head": {
+    "ref": "feature/pr-333",
+    "sha": "b91e25ebb767"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/333",
+  "files": [
+    {
+      "filename": "infra/deploy/healthcheck.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 58
+    },
+    {
+      "filename": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 3,
+      "changes": 25
+    },
+    {
+      "filename": "infra/deploy/rollback.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 1,
+      "changes": 19
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9b57024793bf",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T09:54:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T09:54:34Z"
+        },
+        "message": "commit 1 for PR #333: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "b027e56b646c",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T10:24:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T10:24:34Z"
+        },
+        "message": "commit 2 for PR #333: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "763a483aebdf",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T10:54:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T10:54:34Z"
+        },
+        "message": "commit 3 for PR #333: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "51909ce1d97d",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T11:24:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T11:24:34Z"
+        },
+        "message": "commit 4 for PR #333: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "b91e25ebb767",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T11:54:34Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-03-18T11:54:34Z"
+        },
+        "message": "commit 5 for PR #333: test(infra_deploy): update healthcheck.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 33301,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-19T05:54:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/333#pullrequestreview-33301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1749,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 1749: verify boundary checks on line 15.",
+      "created_at": "2026-03-19T05:54:34Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 15
+    },
+    {
+      "id": 1750,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 1750: verify boundary checks on line 25.",
+      "created_at": "2026-03-19T05:54:34Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 25
+    },
+    {
+      "id": 1751,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 1751: verify boundary checks on line 35.",
+      "created_at": "2026-03-19T05:54:34Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 35
+    },
+    {
+      "id": 1752,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 1752: verify boundary checks on line 45.",
+      "created_at": "2026-03-19T05:54:34Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 45
+    }
+  ]
+}

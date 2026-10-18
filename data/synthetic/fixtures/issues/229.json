@@ -1,0 +1,58 @@
+{
+  "id": 2000229,
+  "number": 229,
+  "title": "FEATURE: auth improvements for security",
+  "body": "Detailed description for feature tracking in module auth/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-26T18:05:21Z",
+  "updated_at": "2026-05-26T18:05:21Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70937,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #937 on issue #229: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T06:05:21Z"
+    },
+    {
+      "id": 70938,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #938 on issue #229: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T17:05:21Z"
+    },
+    {
+      "id": 70939,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #939 on issue #229: updates from triage and reproduction steps.",
+      "created_at": "2026-05-28T08:05:21Z"
+    },
+    {
+      "id": 70940,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #940 on issue #229: updates from triage and reproduction steps.",
+      "created_at": "2026-05-29T04:05:21Z"
+    }
+  ]
+}

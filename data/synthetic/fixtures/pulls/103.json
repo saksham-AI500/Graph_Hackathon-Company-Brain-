@@ -1,0 +1,207 @@
+{
+  "id": 1000103,
+  "number": 103,
+  "state": "closed",
+  "title": "test(auth): update revocation_list.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 22261,
+    "type": "User"
+  },
+  "created_at": "2025-11-21T12:29:04Z",
+  "updated_at": "2025-11-23T14:29:04Z",
+  "closed_at": "2025-11-23T14:29:04Z",
+  "merged_at": "2025-11-23T14:29:04Z",
+  "merge_commit_sha": "3b9d6b2c3040",
+  "head": {
+    "ref": "feature/pr-103",
+    "sha": "3b9d6b2c3040"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/103",
+  "files": [
+    {
+      "filename": "auth/revocation_list.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 9,
+      "changes": 43
+    },
+    {
+      "filename": "auth/audit_auth.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 15,
+      "changes": 57
+    },
+    {
+      "filename": "auth/mfa/webauthn.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 15,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a98332e1e355",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T12:29:04Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T12:29:04Z"
+        },
+        "message": "commit 1 for PR #103: test(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "23353754b270",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T12:59:04Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T12:59:04Z"
+        },
+        "message": "commit 2 for PR #103: test(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "23a41793aa99",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T13:29:04Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T13:29:04Z"
+        },
+        "message": "commit 3 for PR #103: test(auth): update revocation_list.py"
+      }
+    },
+    {
+      "sha": "3b9d6b2c3040",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T13:59:04Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2025-11-21T13:59:04Z"
+        },
+        "message": "commit 4 for PR #103: test(auth): update revocation_list.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10301,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T06:29:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/103#pullrequestreview-10301"
+    },
+    {
+      "id": 10302,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T06:29:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/103#pullrequestreview-10302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 546,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 546: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 15
+    },
+    {
+      "id": 547,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 547: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 25
+    },
+    {
+      "id": 548,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 548: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 35
+    },
+    {
+      "id": 549,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 549: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 15
+    },
+    {
+      "id": 550,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 550: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 25
+    },
+    {
+      "id": 551,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 551: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T06:29:04Z",
+      "path": "auth/revocation_list.py",
+      "line": 35
+    }
+  ]
+}

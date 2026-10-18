@@ -1,0 +1,208 @@
+{
+  "id": 1000011,
+  "number": 11,
+  "state": "closed",
+  "title": "perf(search): update index_stats.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2025-10-06T21:50:15Z",
+  "updated_at": "2025-10-08T20:50:15Z",
+  "closed_at": "2025-10-08T20:50:15Z",
+  "merged_at": "2025-10-08T20:50:15Z",
+  "merge_commit_sha": "dd06b5255692",
+  "head": {
+    "ref": "feature/pr-11",
+    "sha": "dd06b5255692"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/11",
+  "files": [
+    {
+      "filename": "search/indexer/index_stats.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 13,
+      "changes": 26
+    },
+    {
+      "filename": "search/vector_search.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 13,
+      "changes": 59
+    },
+    {
+      "filename": "search/autocomplete.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 11,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cc119a1a1051",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-06T21:50:15Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-06T21:50:15Z"
+        },
+        "message": "commit 1 for PR #11: perf(search): update index_stats.py"
+      }
+    },
+    {
+      "sha": "dd06b5255692",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-06T22:20:15Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-06T22:20:15Z"
+        },
+        "message": "commit 2 for PR #11: perf(search): update index_stats.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1101,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-08T13:50:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/11#pullrequestreview-1101"
+    },
+    {
+      "id": 1102,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-08T13:50:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/11#pullrequestreview-1102"
+    },
+    {
+      "id": 1103,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-08T13:50:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/11#pullrequestreview-1103"
+    }
+  ],
+  "comments": [
+    {
+      "id": 80,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 80: verify boundary checks on line 15.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 81,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 81: verify boundary checks on line 25.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 82,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 82: verify boundary checks on line 35.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 35
+    },
+    {
+      "id": 83,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 83: verify boundary checks on line 15.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 84,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 84: verify boundary checks on line 25.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 85,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 85: verify boundary checks on line 15.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 86,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 86: verify boundary checks on line 25.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 87,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 87: verify boundary checks on line 35.",
+      "created_at": "2025-10-08T13:50:15Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 35
+    }
+  ]
+}

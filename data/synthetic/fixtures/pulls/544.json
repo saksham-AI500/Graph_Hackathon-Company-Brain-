@@ -1,0 +1,238 @@
+{
+  "id": 1000544,
+  "number": 544,
+  "state": "closed",
+  "title": "feat(growth_experiments): update sample_sizer.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-07-03T04:12:00Z",
+  "updated_at": "2026-07-04T09:12:00Z",
+  "closed_at": "2026-07-04T09:12:00Z",
+  "merged_at": "2026-07-04T09:12:00Z",
+  "merge_commit_sha": "31c90be31149",
+  "head": {
+    "ref": "feature/pr-544",
+    "sha": "31c90be31149"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/544",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 12,
+      "changes": 33
+    },
+    {
+      "filename": "growth/experiments/config_exp.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 1,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "dbc2abdbfdd7",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T04:12:00Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T04:12:00Z"
+        },
+        "message": "commit 1 for PR #544: feat(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "04c9c21c6b2c",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T04:42:00Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T04:42:00Z"
+        },
+        "message": "commit 2 for PR #544: feat(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3a8d72cee0f3",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T05:12:00Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T05:12:00Z"
+        },
+        "message": "commit 3 for PR #544: feat(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a529759bf878",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T05:42:00Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T05:42:00Z"
+        },
+        "message": "commit 4 for PR #544: feat(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "31c90be31149",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T06:12:00Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-03T06:12:00Z"
+        },
+        "message": "commit 5 for PR #544: feat(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-04T16:12:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/544#pullrequestreview-54401"
+    },
+    {
+      "id": 54402,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-04T16:12:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/544#pullrequestreview-54402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2904,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2904: verify boundary checks on line 15.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2905,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2905: verify boundary checks on line 25.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2906,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2906: verify boundary checks on line 35.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2907,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2907: verify boundary checks on line 45.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2908,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2908: verify boundary checks on line 15.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2909,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2909: verify boundary checks on line 25.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2910,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2910: verify boundary checks on line 35.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2911,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2911: verify boundary checks on line 45.",
+      "created_at": "2026-07-04T16:12:00Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

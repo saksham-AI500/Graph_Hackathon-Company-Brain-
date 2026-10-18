@@ -1,0 +1,76 @@
+{
+  "id": 2000222,
+  "number": 222,
+  "title": "INCIDENT: auth-mfa improvements for latency",
+  "body": "Detailed description for incident tracking in module auth/mfa/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-19T11:07:42Z",
+  "updated_at": "2026-05-19T11:07:42Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70900,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #900 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-19T22:07:42Z"
+    },
+    {
+      "id": 70901,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #901 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-20T01:07:42Z"
+    },
+    {
+      "id": 70902,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #902 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-20T11:07:42Z"
+    },
+    {
+      "id": 70903,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #903 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-20T21:07:42Z"
+    },
+    {
+      "id": 70904,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #904 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-21T07:07:42Z"
+    },
+    {
+      "id": 70905,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #905 on issue #222: updates from triage and reproduction steps.",
+      "created_at": "2026-05-21T12:07:42Z"
+    }
+  ]
+}

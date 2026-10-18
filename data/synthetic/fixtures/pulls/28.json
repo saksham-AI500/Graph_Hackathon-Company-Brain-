@@ -1,0 +1,212 @@
+{
+  "id": 1000028,
+  "number": 28,
+  "state": "closed",
+  "title": "fix(search_indexer): update cdc_listener.py",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #93",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2025-10-15T00:30:39Z",
+  "updated_at": "2025-10-16T09:30:39Z",
+  "closed_at": "2025-10-16T09:30:39Z",
+  "merged_at": "2025-10-16T09:30:39Z",
+  "merge_commit_sha": "f0c439c151ab",
+  "head": {
+    "ref": "feature/pr-28",
+    "sha": "f0c439c151ab"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/28",
+  "files": [
+    {
+      "filename": "search/indexer/cdc_listener.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 15,
+      "changes": 15
+    },
+    {
+      "filename": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 10,
+      "changes": 49
+    },
+    {
+      "filename": "search/indexer/__pycache__/health_indexer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 15,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8649d2eca697",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T00:30:39Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T00:30:39Z"
+        },
+        "message": "commit 1 for PR #28: fix(search_indexer): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "14d5fdfd826b",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T01:00:39Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T01:00:39Z"
+        },
+        "message": "commit 2 for PR #28: fix(search_indexer): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "6467860b5bd4",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T01:30:39Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T01:30:39Z"
+        },
+        "message": "commit 3 for PR #28: fix(search_indexer): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "4811d483f643",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T02:00:39Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T02:00:39Z"
+        },
+        "message": "commit 4 for PR #28: fix(search_indexer): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "f0c439c151ab",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T02:30:39Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-15T02:30:39Z"
+        },
+        "message": "commit 5 for PR #28: fix(search_indexer): update cdc_listener.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 2801,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-16T05:30:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/28#pullrequestreview-2801"
+    },
+    {
+      "id": 2802,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-16T05:30:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/28#pullrequestreview-2802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 159,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 159: verify boundary checks on line 15.",
+      "created_at": "2025-10-16T05:30:39Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 15
+    },
+    {
+      "id": 160,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 160: verify boundary checks on line 25.",
+      "created_at": "2025-10-16T05:30:39Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 25
+    },
+    {
+      "id": 161,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 161: verify boundary checks on line 35.",
+      "created_at": "2025-10-16T05:30:39Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 35
+    },
+    {
+      "id": 162,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 162: verify boundary checks on line 15.",
+      "created_at": "2025-10-16T05:30:39Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 15
+    },
+    {
+      "id": 163,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 163: verify boundary checks on line 25.",
+      "created_at": "2025-10-16T05:30:39Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 25
+    }
+  ]
+}

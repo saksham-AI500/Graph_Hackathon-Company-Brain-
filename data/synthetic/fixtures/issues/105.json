@@ -1,0 +1,60 @@
+{
+  "id": 2000105,
+  "number": 105,
+  "title": "TASK: billing improvements for throughput",
+  "body": "Detailed description for task tracking in module billing/.",
+  "user": {
+    "login": "maya-zheng",
+    "id": 23493,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-17T15:10:30Z",
+  "updated_at": "2026-01-30T15:10:30Z",
+  "closed_at": "2026-01-30T15:10:30Z",
+  "labels": [
+    "task",
+    "billing"
+  ],
+  "linked_pulls": [
+    515
+  ],
+  "comments": [
+    {
+      "id": 70426,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #426 on issue #105: updates from triage and reproduction steps.",
+      "created_at": "2026-01-17T17:10:30Z"
+    },
+    {
+      "id": 70427,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #427 on issue #105: updates from triage and reproduction steps.",
+      "created_at": "2026-01-18T10:10:30Z"
+    },
+    {
+      "id": 70428,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #428 on issue #105: updates from triage and reproduction steps.",
+      "created_at": "2026-01-19T06:10:30Z"
+    },
+    {
+      "id": 70429,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #429 on issue #105: updates from triage and reproduction steps.",
+      "created_at": "2026-01-20T06:10:30Z"
+    }
+  ]
+}

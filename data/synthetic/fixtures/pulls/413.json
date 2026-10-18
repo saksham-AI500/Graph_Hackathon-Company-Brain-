@@ -1,0 +1,244 @@
+{
+  "id": 1000413,
+  "number": 413,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update holdout.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 28052,
+    "type": "User"
+  },
+  "created_at": "2026-04-27T20:45:47Z",
+  "updated_at": "2026-04-29T05:45:47Z",
+  "closed_at": "2026-04-29T05:45:47Z",
+  "merged_at": "2026-04-29T05:45:47Z",
+  "merge_commit_sha": "8fc38d22241b",
+  "head": {
+    "ref": "feature/pr-413",
+    "sha": "8fc38d22241b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/413",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 7,
+      "changes": 22
+    },
+    {
+      "filename": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 6,
+      "changes": 17
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a4d7d928107e",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T20:45:47Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T20:45:47Z"
+        },
+        "message": "commit 1 for PR #413: refactor(growth_experiments): update holdout.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b93308221ac9",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T21:15:47Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T21:15:47Z"
+        },
+        "message": "commit 2 for PR #413: refactor(growth_experiments): update holdout.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "81b0c26417ee",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T21:45:47Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T21:45:47Z"
+        },
+        "message": "commit 3 for PR #413: refactor(growth_experiments): update holdout.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8fc38d22241b",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T22:15:47Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-04-27T22:15:47Z"
+        },
+        "message": "commit 4 for PR #413: refactor(growth_experiments): update holdout.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 41301,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-28T22:45:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/413#pullrequestreview-41301"
+    },
+    {
+      "id": 41302,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-28T22:45:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/413#pullrequestreview-41302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2189,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2189: verify boundary checks on line 15.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2190,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2190: verify boundary checks on line 25.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2191,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2191: verify boundary checks on line 35.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2192,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2192: verify boundary checks on line 45.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2193,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2193: verify boundary checks on line 55.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2194,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2194: verify boundary checks on line 15.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2195,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2195: verify boundary checks on line 25.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2196,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2196: verify boundary checks on line 35.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2197,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2197: verify boundary checks on line 45.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2198,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2198: verify boundary checks on line 55.",
+      "created_at": "2026-04-28T22:45:47Z",
+      "path": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

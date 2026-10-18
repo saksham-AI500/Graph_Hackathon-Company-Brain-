@@ -1,0 +1,40 @@
+{
+  "id": 2000195,
+  "number": 195,
+  "title": "BUG: shared-utils improvements for throughput",
+  "body": "Detailed description for bug tracking in module shared/utils/.",
+  "user": {
+    "login": "liam-chen",
+    "id": 24218,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-21T08:07:43Z",
+  "updated_at": "2026-04-21T08:07:43Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70790,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #790 on issue #195: updates from triage and reproduction steps.",
+      "created_at": "2026-04-21T20:07:43Z"
+    },
+    {
+      "id": 70791,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #791 on issue #195: updates from triage and reproduction steps.",
+      "created_at": "2026-04-22T09:07:43Z"
+    }
+  ]
+}

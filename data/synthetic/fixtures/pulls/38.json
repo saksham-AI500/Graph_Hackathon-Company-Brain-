@@ -1,0 +1,167 @@
+{
+  "id": 1000038,
+  "number": 38,
+  "state": "closed",
+  "title": "chore(billing): update dunning.py",
+  "body": "Implementation changes for billing module improvements.\n\nFixes #64",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2025-10-20T14:35:47Z",
+  "updated_at": "2025-10-22T15:35:47Z",
+  "closed_at": "2025-10-22T15:35:47Z",
+  "merged_at": "2025-10-22T15:35:47Z",
+  "merge_commit_sha": "02fc6e519b0d",
+  "head": {
+    "ref": "feature/pr-38",
+    "sha": "02fc6e519b0d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/38",
+  "files": [
+    {
+      "filename": "billing/dunning.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 10
+    },
+    {
+      "filename": "billing/__pycache__/invoicing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 10,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d56348ae9789",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T14:35:47Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T14:35:47Z"
+        },
+        "message": "commit 1 for PR #38: chore(billing): update dunning.py"
+      }
+    },
+    {
+      "sha": "abafd3958bcc",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T15:05:47Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T15:05:47Z"
+        },
+        "message": "commit 2 for PR #38: chore(billing): update dunning.py"
+      }
+    },
+    {
+      "sha": "52f0e5650806",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T15:35:47Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T15:35:47Z"
+        },
+        "message": "commit 3 for PR #38: chore(billing): update dunning.py"
+      }
+    },
+    {
+      "sha": "02fc6e519b0d",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T16:05:47Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-10-20T16:05:47Z"
+        },
+        "message": "commit 4 for PR #38: chore(billing): update dunning.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3801,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-21T20:35:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/38#pullrequestreview-3801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 200,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 200: verify boundary checks on line 15.",
+      "created_at": "2025-10-21T20:35:47Z",
+      "path": "billing/dunning.py",
+      "line": 15
+    },
+    {
+      "id": 201,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 201: verify boundary checks on line 25.",
+      "created_at": "2025-10-21T20:35:47Z",
+      "path": "billing/dunning.py",
+      "line": 25
+    },
+    {
+      "id": 202,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 202: verify boundary checks on line 35.",
+      "created_at": "2025-10-21T20:35:47Z",
+      "path": "billing/dunning.py",
+      "line": 35
+    },
+    {
+      "id": 203,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 203: verify boundary checks on line 45.",
+      "created_at": "2025-10-21T20:35:47Z",
+      "path": "billing/dunning.py",
+      "line": 45
+    }
+  ]
+}

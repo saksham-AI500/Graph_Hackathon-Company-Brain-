@@ -1,0 +1,205 @@
+{
+  "id": 1000569,
+  "number": 569,
+  "state": "closed",
+  "title": "perf(notifications): update preferences.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "felix-baum",
+    "id": 28109,
+    "type": "User"
+  },
+  "created_at": "2026-07-15T20:16:21Z",
+  "updated_at": "2026-07-18T10:16:21Z",
+  "closed_at": "2026-07-18T10:16:21Z",
+  "merged_at": "2026-07-18T10:16:21Z",
+  "merge_commit_sha": "d11b5c2fad5d",
+  "head": {
+    "ref": "feature/pr-569",
+    "sha": "d11b5c2fad5d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/569",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 4,
+      "changes": 40
+    },
+    {
+      "filename": "notifications/__pycache__/localization.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 3,
+      "changes": 39
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1264a923400c",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T20:16:21Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T20:16:21Z"
+        },
+        "message": "commit 1 for PR #569: perf(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "56f7361b2f71",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T20:46:21Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T20:46:21Z"
+        },
+        "message": "commit 2 for PR #569: perf(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9e3489e961c9",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T21:16:21Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T21:16:21Z"
+        },
+        "message": "commit 3 for PR #569: perf(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "36dc1f431f3c",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T21:46:21Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T21:46:21Z"
+        },
+        "message": "commit 4 for PR #569: perf(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d11b5c2fad5d",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T22:16:21Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-07-15T22:16:21Z"
+        },
+        "message": "commit 5 for PR #569: perf(notifications): update preferences.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56901,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-16T07:16:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/569#pullrequestreview-56901"
+    },
+    {
+      "id": 56902,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-16T07:16:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/569#pullrequestreview-56902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3051,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3051: verify boundary checks on line 15.",
+      "created_at": "2026-07-16T07:16:21Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3052,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 3052: verify boundary checks on line 25.",
+      "created_at": "2026-07-16T07:16:21Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3053,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3053: verify boundary checks on line 15.",
+      "created_at": "2026-07-16T07:16:21Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3054,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3054: verify boundary checks on line 25.",
+      "created_at": "2026-07-16T07:16:21Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3055,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3055: verify boundary checks on line 35.",
+      "created_at": "2026-07-16T07:16:21Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

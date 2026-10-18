@@ -1,0 +1,169 @@
+{
+  "id": 1000588,
+  "number": 588,
+  "state": "closed",
+  "title": "test(auth_mfa): update fido_attestation.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "ben-carter",
+    "id": 29818,
+    "type": "User"
+  },
+  "created_at": "2026-07-24T22:42:26Z",
+  "updated_at": "2026-07-27T20:42:26Z",
+  "closed_at": "2026-07-27T20:42:26Z",
+  "merged_at": "2026-07-27T20:42:26Z",
+  "merge_commit_sha": "d59685c78eeb",
+  "head": {
+    "ref": "feature/pr-588",
+    "sha": "d59685c78eeb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/588",
+  "files": [
+    {
+      "filename": "auth/mfa/fido_attestation.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 7,
+      "changes": 42
+    },
+    {
+      "filename": "auth/mfa/step_up.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 15,
+      "changes": 27
+    },
+    {
+      "filename": "auth/mfa/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 7,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cb78ee75ecab",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T22:42:26Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T22:42:26Z"
+        },
+        "message": "commit 1 for PR #588: test(auth_mfa): update fido_attestation.py"
+      }
+    },
+    {
+      "sha": "c762999cb82f",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T23:12:26Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T23:12:26Z"
+        },
+        "message": "commit 2 for PR #588: test(auth_mfa): update fido_attestation.py"
+      }
+    },
+    {
+      "sha": "d59685c78eeb",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T23:42:26Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2026-07-24T23:42:26Z"
+        },
+        "message": "commit 3 for PR #588: test(auth_mfa): update fido_attestation.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58801,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-25T02:42:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/588#pullrequestreview-58801"
+    },
+    {
+      "id": 58802,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-25T02:42:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/588#pullrequestreview-58802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3133,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 3133: verify boundary checks on line 15.",
+      "created_at": "2026-07-25T02:42:26Z",
+      "path": "auth/mfa/fido_attestation.py",
+      "line": 15
+    },
+    {
+      "id": 3134,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 3134: verify boundary checks on line 25.",
+      "created_at": "2026-07-25T02:42:26Z",
+      "path": "auth/mfa/fido_attestation.py",
+      "line": 25
+    },
+    {
+      "id": 3135,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3135: verify boundary checks on line 15.",
+      "created_at": "2026-07-25T02:42:26Z",
+      "path": "auth/mfa/fido_attestation.py",
+      "line": 15
+    },
+    {
+      "id": 3136,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3136: verify boundary checks on line 25.",
+      "created_at": "2026-07-25T02:42:26Z",
+      "path": "auth/mfa/fido_attestation.py",
+      "line": 25
+    }
+  ]
+}

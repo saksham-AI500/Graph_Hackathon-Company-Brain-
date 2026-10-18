@@ -1,0 +1,67 @@
+{
+  "id": 2000231,
+  "number": 231,
+  "title": "PERF: auth-mfa improvements for latency",
+  "body": "Detailed description for perf tracking in module auth/mfa/.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 21029,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-28T19:29:00Z",
+  "updated_at": "2026-05-28T19:29:00Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70946,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #946 on issue #231: updates from triage and reproduction steps.",
+      "created_at": "2026-05-29T01:29:00Z"
+    },
+    {
+      "id": 70947,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #947 on issue #231: updates from triage and reproduction steps.",
+      "created_at": "2026-05-29T23:29:00Z"
+    },
+    {
+      "id": 70948,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #948 on issue #231: updates from triage and reproduction steps.",
+      "created_at": "2026-05-30T21:29:00Z"
+    },
+    {
+      "id": 70949,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #949 on issue #231: updates from triage and reproduction steps.",
+      "created_at": "2026-05-31T12:29:00Z"
+    },
+    {
+      "id": 70950,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #950 on issue #231: updates from triage and reproduction steps.",
+      "created_at": "2026-06-01T07:29:00Z"
+    }
+  ]
+}

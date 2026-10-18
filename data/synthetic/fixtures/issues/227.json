@@ -1,0 +1,76 @@
+{
+  "id": 2000227,
+  "number": 227,
+  "title": "TASK: infra-observability improvements for reliability",
+  "body": "Detailed description for task tracking in module infra/observability/.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 25884,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-24T15:57:27Z",
+  "updated_at": "2026-06-10T15:57:27Z",
+  "closed_at": "2026-06-10T15:57:27Z",
+  "labels": [
+    "task",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70927,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #927 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-25T06:57:27Z"
+    },
+    {
+      "id": 70928,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #928 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-25T19:57:27Z"
+    },
+    {
+      "id": 70929,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #929 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-26T18:57:27Z"
+    },
+    {
+      "id": 70930,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #930 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T05:57:27Z"
+    },
+    {
+      "id": 70931,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #931 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T10:57:27Z"
+    },
+    {
+      "id": 70932,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #932 on issue #227: updates from triage and reproduction steps.",
+      "created_at": "2026-05-28T09:57:27Z"
+    }
+  ]
+}

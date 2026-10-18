@@ -1,0 +1,178 @@
+{
+  "id": 1000447,
+  "number": 447,
+  "state": "closed",
+  "title": "refactor(infra_observability): update query_latency.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2026-05-15T01:37:08Z",
+  "updated_at": "2026-05-16T16:37:08Z",
+  "closed_at": "2026-05-16T16:37:08Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-447",
+    "sha": "32bbe97c6814"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/447",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 1,
+      "changes": 20
+    },
+    {
+      "filename": "infra/observability/README.md",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 11,
+      "changes": 59
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e7371db8cebb",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T01:37:08Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T01:37:08Z"
+        },
+        "message": "commit 1 for PR #447: refactor(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bd2981a08ec6",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T02:07:08Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T02:07:08Z"
+        },
+        "message": "commit 2 for PR #447: refactor(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "716ec95fb45a",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T02:37:08Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T02:37:08Z"
+        },
+        "message": "commit 3 for PR #447: refactor(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "32bbe97c6814",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T03:07:08Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-05-15T03:07:08Z"
+        },
+        "message": "commit 4 for PR #447: refactor(infra_observability): update query_latency.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 44701,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-16T05:37:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/447#pullrequestreview-44701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2399,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2399: verify boundary checks on line 15.",
+      "created_at": "2026-05-16T05:37:08Z",
+      "path": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2400,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2400: verify boundary checks on line 25.",
+      "created_at": "2026-05-16T05:37:08Z",
+      "path": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2401,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2401: verify boundary checks on line 35.",
+      "created_at": "2026-05-16T05:37:08Z",
+      "path": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2402,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2402: verify boundary checks on line 45.",
+      "created_at": "2026-05-16T05:37:08Z",
+      "path": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2403,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2403: verify boundary checks on line 55.",
+      "created_at": "2026-05-16T05:37:08Z",
+      "path": "infra/observability/__pycache__/query_latency.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

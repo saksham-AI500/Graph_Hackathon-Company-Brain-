@@ -1,0 +1,245 @@
+{
+  "id": 1000472,
+  "number": 472,
+  "state": "closed",
+  "title": "fix(notifications): update circuit_breaker.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-05-27T17:30:46Z",
+  "updated_at": "2026-05-30T16:30:46Z",
+  "closed_at": "2026-05-30T16:30:46Z",
+  "merged_at": "2026-05-30T16:30:46Z",
+  "merge_commit_sha": "c3a0b6da41ad",
+  "head": {
+    "ref": "feature/pr-472",
+    "sha": "c3a0b6da41ad"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/472",
+  "files": [
+    {
+      "filename": "notifications/circuit_breaker.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 7,
+      "changes": 14
+    },
+    {
+      "filename": "notifications/sms_service.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 10,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "843e59a3bd51",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-05-27T17:30:46Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-05-27T17:30:46Z"
+        },
+        "message": "commit 1 for PR #472: fix(notifications): update circuit_breaker.py"
+      }
+    },
+    {
+      "sha": "c3a0b6da41ad",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-05-27T18:00:46Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-05-27T18:00:46Z"
+        },
+        "message": "commit 2 for PR #472: fix(notifications): update circuit_breaker.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 47201,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-28T12:30:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/472#pullrequestreview-47201"
+    },
+    {
+      "id": 47202,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-28T12:30:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/472#pullrequestreview-47202"
+    },
+    {
+      "id": 47203,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-28T12:30:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/472#pullrequestreview-47203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2532,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2532: verify boundary checks on line 15.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 2533,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2533: verify boundary checks on line 25.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    },
+    {
+      "id": 2534,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2534: verify boundary checks on line 15.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 2535,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2535: verify boundary checks on line 25.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    },
+    {
+      "id": 2536,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2536: verify boundary checks on line 35.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 35
+    },
+    {
+      "id": 2537,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2537: verify boundary checks on line 45.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 45
+    },
+    {
+      "id": 2538,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2538: verify boundary checks on line 55.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 55
+    },
+    {
+      "id": 2539,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2539: verify boundary checks on line 15.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 2540,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2540: verify boundary checks on line 25.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    },
+    {
+      "id": 2541,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2541: verify boundary checks on line 35.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 35
+    },
+    {
+      "id": 2542,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2542: verify boundary checks on line 45.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 45
+    },
+    {
+      "id": 2543,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2543: verify boundary checks on line 55.",
+      "created_at": "2026-05-28T12:30:46Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 55
+    }
+  ]
+}

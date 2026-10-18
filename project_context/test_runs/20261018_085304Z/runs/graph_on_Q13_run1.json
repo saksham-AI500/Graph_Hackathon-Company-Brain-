@@ -1,0 +1,50 @@
+{
+  "question_id": "Q13",
+  "question": "Who owns search/ now?",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "REFUSED",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer who owns the search/ directory. To determine ownership, I would need access to the CODEOWNERS file or repository metadata that specifies ownership for that path. \n\nIf you can provide the repository name or CODEOWNERS file path, I can check the ownership information. Alternatively, you can use the `who_owns` function to inspect the CODEOWNERS declaration for the search/ directory.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:01:22.690032+00:00",
+  "latency_ms": 5495.49,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "To determine ownership, I would need access to the CODEOWNERS file or repository metadata that specifies ownership for that path.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "If you can provide the repository name or CODEOWNERS file path, I can check the ownership information.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "Alternatively, you can use the  function to inspect the CODEOWNERS declaration for the search/ directory.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": 2000058,
+  "number": 58,
+  "title": "INCIDENT: api-gateway improvements for security",
+  "body": "Detailed description for incident tracking in module api/gateway/.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 25586,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-29T17:41:06Z",
+  "updated_at": "2025-12-05T17:41:06Z",
+  "closed_at": "2025-12-05T17:41:06Z",
+  "labels": [
+    "incident",
+    "api-gateway"
+  ],
+  "linked_pulls": [
+    402
+  ],
+  "comments": [
+    {
+      "id": 70234,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #234 on issue #58: updates from triage and reproduction steps.",
+      "created_at": "2025-11-29T23:41:06Z"
+    },
+    {
+      "id": 70235,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #235 on issue #58: updates from triage and reproduction steps.",
+      "created_at": "2025-11-30T12:41:06Z"
+    },
+    {
+      "id": 70236,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #236 on issue #58: updates from triage and reproduction steps.",
+      "created_at": "2025-12-01T09:41:06Z"
+    },
+    {
+      "id": 70237,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #237 on issue #58: updates from triage and reproduction steps.",
+      "created_at": "2025-12-02T02:41:06Z"
+    }
+  ]
+}

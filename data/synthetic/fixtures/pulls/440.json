@@ -1,0 +1,190 @@
+{
+  "id": 1000440,
+  "number": 440,
+  "state": "closed",
+  "title": "chore(search_indexer): update pipeline.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #26",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-05-11T13:10:05Z",
+  "updated_at": "2026-05-13T00:10:05Z",
+  "closed_at": "2026-05-13T00:10:05Z",
+  "merged_at": "2026-05-13T00:10:05Z",
+  "merge_commit_sha": "62f00995360e",
+  "head": {
+    "ref": "feature/pr-440",
+    "sha": "62f00995360e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/440",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 9,
+      "changes": 16
+    },
+    {
+      "filename": "search/indexer/__pycache__/tokenizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 4,
+      "changes": 41
+    },
+    {
+      "filename": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 23
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0cf5bb3d11e7",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T13:10:05Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T13:10:05Z"
+        },
+        "message": "commit 1 for PR #440: chore(search_indexer): update pipeline.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "60b4bb4109b1",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T13:40:05Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T13:40:05Z"
+        },
+        "message": "commit 2 for PR #440: chore(search_indexer): update pipeline.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1a08f0bb34bb",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T14:10:05Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T14:10:05Z"
+        },
+        "message": "commit 3 for PR #440: chore(search_indexer): update pipeline.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2c051e2aebf6",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T14:40:05Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T14:40:05Z"
+        },
+        "message": "commit 4 for PR #440: chore(search_indexer): update pipeline.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "62f00995360e",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T15:10:05Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-11T15:10:05Z"
+        },
+        "message": "commit 5 for PR #440: chore(search_indexer): update pipeline.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 44001,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-13T05:10:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/440#pullrequestreview-44001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2352,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2352: verify boundary checks on line 15.",
+      "created_at": "2026-05-13T05:10:05Z",
+      "path": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2353,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2353: verify boundary checks on line 25.",
+      "created_at": "2026-05-13T05:10:05Z",
+      "path": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2354,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2354: verify boundary checks on line 35.",
+      "created_at": "2026-05-13T05:10:05Z",
+      "path": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2355,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2355: verify boundary checks on line 45.",
+      "created_at": "2026-05-13T05:10:05Z",
+      "path": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

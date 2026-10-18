@@ -1,0 +1,175 @@
+{
+  "id": 1000243,
+  "number": 243,
+  "state": "closed",
+  "title": "chore(notifications): update config.yaml",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-01-30T20:41:55Z",
+  "updated_at": "2026-02-02T18:41:55Z",
+  "closed_at": "2026-02-02T18:41:55Z",
+  "merged_at": "2026-02-02T18:41:55Z",
+  "merge_commit_sha": "b20fec895d02",
+  "head": {
+    "ref": "feature/pr-243",
+    "sha": "b20fec895d02"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/243",
+  "files": [
+    {
+      "filename": "notifications/config.yaml",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 12,
+      "changes": 52
+    },
+    {
+      "filename": "notifications/dispatcher.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 4,
+      "changes": 34
+    },
+    {
+      "filename": "notifications/__pycache__/priority_queue.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 9,
+      "changes": 9
+    }
+  ],
+  "commits": [
+    {
+      "sha": "58afa30fb3e7",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-30T20:41:55Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-30T20:41:55Z"
+        },
+        "message": "commit 1 for PR #243: chore(notifications): update config.yaml"
+      }
+    },
+    {
+      "sha": "b20fec895d02",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-30T21:11:55Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-30T21:11:55Z"
+        },
+        "message": "commit 2 for PR #243: chore(notifications): update config.yaml"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 24301,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-01T02:41:55Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/243#pullrequestreview-24301"
+    },
+    {
+      "id": 24302,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-01T02:41:55Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/243#pullrequestreview-24302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1302,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1302: verify boundary checks on line 15.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 15
+    },
+    {
+      "id": 1303,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1303: verify boundary checks on line 25.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 25
+    },
+    {
+      "id": 1304,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1304: verify boundary checks on line 35.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 35
+    },
+    {
+      "id": 1305,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1305: verify boundary checks on line 45.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 45
+    },
+    {
+      "id": 1306,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1306: verify boundary checks on line 15.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 15
+    },
+    {
+      "id": 1307,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1307: verify boundary checks on line 25.",
+      "created_at": "2026-02-01T02:41:55Z",
+      "path": "notifications/config.yaml",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "question_id": "Q9",
+  "question": "Why did we choose the retry policy? Quote the source.",
+  "mode": "graph_on",
+  "run_index": 2,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:00:36.959865+00:00",
+  "latency_ms": 5917.74,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

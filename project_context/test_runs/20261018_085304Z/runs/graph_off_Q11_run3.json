@@ -1,0 +1,22 @@
+{
+  "question_id": "Q11",
+  "question": "Which decisions affect auth/, listed by date, with sources?",
+  "mode": "graph_off",
+  "run_index": 3,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot list specific decisions affecting the `auth/` module. To answer this, I would need access to pull requests, issues, or documents that reference `auth/` and include decision details. \n\nIf you have access to the repository, you can search for PRs, issues, or documents tagged with `auth/` and filter by date to identify relevant decisions.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:03:51.959998+00:00",
+  "latency_ms": 5556.52,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

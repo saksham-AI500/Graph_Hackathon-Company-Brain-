@@ -1,0 +1,145 @@
+{
+  "id": 1000178,
+  "number": 178,
+  "state": "open",
+  "title": "fix(billing): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2025-12-29T22:30:40Z",
+  "updated_at": "2025-12-29T22:30:40Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-178",
+    "sha": "e2539cda46a7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/178",
+  "files": [
+    {
+      "filename": "billing/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 11,
+      "changes": 46
+    },
+    {
+      "filename": "billing/webhook_billing.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 10,
+      "changes": 49
+    }
+  ],
+  "commits": [
+    {
+      "sha": "873c72481bd2",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T22:30:40Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T22:30:40Z"
+        },
+        "message": "commit 1 for PR #178: fix(billing): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f29c50bbe72e",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T23:00:40Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T23:00:40Z"
+        },
+        "message": "commit 2 for PR #178: fix(billing): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b21d7607de34",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T23:30:40Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-29T23:30:40Z"
+        },
+        "message": "commit 3 for PR #178: fix(billing): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e2539cda46a7",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-30T00:00:40Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-12-30T00:00:40Z"
+        },
+        "message": "commit 4 for PR #178: fix(billing): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17801,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-31T16:30:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/178#pullrequestreview-17801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 973,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 973: verify boundary checks on line 15.",
+      "created_at": "2025-12-31T16:30:40Z",
+      "path": "billing/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 974,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 974: verify boundary checks on line 25.",
+      "created_at": "2025-12-31T16:30:40Z",
+      "path": "billing/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

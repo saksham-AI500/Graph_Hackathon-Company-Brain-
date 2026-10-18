@@ -1,0 +1,78 @@
+{
+  "id": 2000118,
+  "number": 118,
+  "title": "PERF: growth-referrals improvements for security",
+  "body": "Detailed description for perf tracking in module growth/referrals/.",
+  "user": {
+    "login": "zane-malik",
+    "id": 29743,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-31T04:31:33Z",
+  "updated_at": "2026-01-31T04:31:33Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "growth-referrals"
+  ],
+  "linked_pulls": [
+    22
+  ],
+  "comments": [
+    {
+      "id": 70488,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #488 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-01-31T20:31:33Z"
+    },
+    {
+      "id": 70489,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #489 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T09:31:33Z"
+    },
+    {
+      "id": 70490,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #490 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T14:31:33Z"
+    },
+    {
+      "id": 70491,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #491 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T17:31:33Z"
+    },
+    {
+      "id": 70492,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #492 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-02-02T05:31:33Z"
+    },
+    {
+      "id": 70493,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #493 on issue #118: updates from triage and reproduction steps.",
+      "created_at": "2026-02-02T18:31:33Z"
+    }
+  ]
+}

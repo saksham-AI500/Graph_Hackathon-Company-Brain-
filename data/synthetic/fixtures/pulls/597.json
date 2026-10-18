@@ -1,0 +1,173 @@
+{
+  "id": 1000597,
+  "number": 597,
+  "state": "closed",
+  "title": "chore(infra_deploy): update deployer.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-07-29T23:40:16Z",
+  "updated_at": "2026-07-31T03:40:16Z",
+  "closed_at": "2026-07-31T03:40:16Z",
+  "merged_at": "2026-07-31T03:40:16Z",
+  "merge_commit_sha": "f7fac82b9922",
+  "head": {
+    "ref": "feature/pr-597",
+    "sha": "f7fac82b9922"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/597",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 11,
+      "changes": 35
+    },
+    {
+      "filename": "infra/deploy/canary.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 8,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "00a4e6562799",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-29T23:40:16Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-29T23:40:16Z"
+        },
+        "message": "commit 1 for PR #597: chore(infra_deploy): update deployer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b15bd1c074a7",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-30T00:10:16Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-30T00:10:16Z"
+        },
+        "message": "commit 2 for PR #597: chore(infra_deploy): update deployer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f7fac82b9922",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-30T00:40:16Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-30T00:40:16Z"
+        },
+        "message": "commit 3 for PR #597: chore(infra_deploy): update deployer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 59701,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-31T22:40:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/597#pullrequestreview-59701"
+    },
+    {
+      "id": 59702,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-31T22:40:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/597#pullrequestreview-59702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3149,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3149: verify boundary checks on line 15.",
+      "created_at": "2026-07-31T22:40:16Z",
+      "path": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3150,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3150: verify boundary checks on line 25.",
+      "created_at": "2026-07-31T22:40:16Z",
+      "path": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3151,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3151: verify boundary checks on line 35.",
+      "created_at": "2026-07-31T22:40:16Z",
+      "path": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3152,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3152: verify boundary checks on line 15.",
+      "created_at": "2026-07-31T22:40:16Z",
+      "path": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3153,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3153: verify boundary checks on line 25.",
+      "created_at": "2026-07-31T22:40:16Z",
+      "path": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

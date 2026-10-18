@@ -1,0 +1,233 @@
+{
+  "id": 1000404,
+  "number": 404,
+  "state": "closed",
+  "title": "fix(search): update README.md",
+  "body": "Implementation changes for search module improvements.\n\nFixes #116",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-04-23T08:11:45Z",
+  "updated_at": "2026-04-24T08:11:45Z",
+  "closed_at": "2026-04-24T08:11:45Z",
+  "merged_at": "2026-04-24T08:11:45Z",
+  "merge_commit_sha": "346d73d82cc4",
+  "head": {
+    "ref": "feature/pr-404",
+    "sha": "346d73d82cc4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/404",
+  "files": [
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 7,
+      "changes": 19
+    },
+    {
+      "filename": "search/indexer/__pycache__/document_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 11
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d0ac9fe65efc",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T08:11:45Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T08:11:45Z"
+        },
+        "message": "commit 1 for PR #404: fix(search): update README.md"
+      }
+    },
+    {
+      "sha": "3aebef893a6c",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T08:41:45Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T08:41:45Z"
+        },
+        "message": "commit 2 for PR #404: fix(search): update README.md"
+      }
+    },
+    {
+      "sha": "ec42e8546a80",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T09:11:45Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T09:11:45Z"
+        },
+        "message": "commit 3 for PR #404: fix(search): update README.md"
+      }
+    },
+    {
+      "sha": "346d73d82cc4",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T09:41:45Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-04-23T09:41:45Z"
+        },
+        "message": "commit 4 for PR #404: fix(search): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 40401,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-23T23:11:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/404#pullrequestreview-40401"
+    },
+    {
+      "id": 40402,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-23T23:11:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/404#pullrequestreview-40402"
+    },
+    {
+      "id": 40403,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-23T23:11:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/404#pullrequestreview-40403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2135,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2135: verify boundary checks on line 15.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 15
+    },
+    {
+      "id": 2136,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2136: verify boundary checks on line 25.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 25
+    },
+    {
+      "id": 2137,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2137: verify boundary checks on line 35.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 35
+    },
+    {
+      "id": 2138,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2138: verify boundary checks on line 15.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 15
+    },
+    {
+      "id": 2139,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2139: verify boundary checks on line 25.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 25
+    },
+    {
+      "id": 2140,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2140: verify boundary checks on line 35.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 35
+    },
+    {
+      "id": 2141,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2141: verify boundary checks on line 15.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 15
+    },
+    {
+      "id": 2142,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2142: verify boundary checks on line 25.",
+      "created_at": "2026-04-23T23:11:45Z",
+      "path": "search/indexer/README.md",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "question_id": "Q1",
+  "question": "Summarize everything known about the checkout timeout bug: the issue, linked PR, review discussion, and any doc that mentions it.",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "ERROR",
+  "error": "1 validation error for AgentAnswer\nunresolved.0\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type",
+  "final_answer_text": "",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:44:34.987112+00:00",
+  "latency_ms": 28619.89,
+  "is_correct": false,
+  "is_faithful": false,
+  "fabricated_citation_count": 0
+}

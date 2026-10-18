@@ -1,0 +1,232 @@
+{
+  "id": 1000639,
+  "number": 639,
+  "state": "closed",
+  "title": "chore(search): update README.md",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-08-20T06:16:53Z",
+  "updated_at": "2026-08-21T20:16:53Z",
+  "closed_at": "2026-08-21T20:16:53Z",
+  "merged_at": "2026-08-21T20:16:53Z",
+  "merge_commit_sha": "647c596fd24d",
+  "head": {
+    "ref": "feature/pr-639",
+    "sha": "647c596fd24d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/639",
+  "files": [
+    {
+      "filename": "search/README.md",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 9,
+      "changes": 58
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9421bce6431b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T06:16:53Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T06:16:53Z"
+        },
+        "message": "commit 1 for PR #639: chore(search): update README.md"
+      }
+    },
+    {
+      "sha": "7760acbf7df1",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T06:46:53Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T06:46:53Z"
+        },
+        "message": "commit 2 for PR #639: chore(search): update README.md"
+      }
+    },
+    {
+      "sha": "647c596fd24d",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T07:16:53Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-20T07:16:53Z"
+        },
+        "message": "commit 3 for PR #639: chore(search): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 63901,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-20T09:16:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/639#pullrequestreview-63901"
+    },
+    {
+      "id": 63902,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-20T09:16:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/639#pullrequestreview-63902"
+    },
+    {
+      "id": 63903,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-20T09:16:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/639#pullrequestreview-63903"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3366,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3366: verify boundary checks on line 15.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 15
+    },
+    {
+      "id": 3367,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3367: verify boundary checks on line 25.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 25
+    },
+    {
+      "id": 3368,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3368: verify boundary checks on line 35.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 35
+    },
+    {
+      "id": 3369,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3369: verify boundary checks on line 45.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 45
+    },
+    {
+      "id": 3370,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3370: verify boundary checks on line 55.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 55
+    },
+    {
+      "id": 3371,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3371: verify boundary checks on line 15.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 15
+    },
+    {
+      "id": 3372,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3372: verify boundary checks on line 25.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 25
+    },
+    {
+      "id": 3373,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3373: verify boundary checks on line 15.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 15
+    },
+    {
+      "id": 3374,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3374: verify boundary checks on line 25.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 25
+    },
+    {
+      "id": 3375,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3375: verify boundary checks on line 35.",
+      "created_at": "2026-08-20T09:16:53Z",
+      "path": "search/README.md",
+      "line": 35
+    }
+  ]
+}

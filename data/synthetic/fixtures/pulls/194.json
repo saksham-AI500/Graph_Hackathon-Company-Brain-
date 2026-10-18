@@ -1,0 +1,253 @@
+{
+  "id": 1000194,
+  "number": 194,
+  "state": "closed",
+  "title": "docs(infra_deploy): update canary.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-01-07T00:43:56Z",
+  "updated_at": "2026-01-09T14:43:56Z",
+  "closed_at": "2026-01-09T14:43:56Z",
+  "merged_at": "2026-01-09T14:43:56Z",
+  "merge_commit_sha": "5a5ec532330a",
+  "head": {
+    "ref": "feature/pr-194",
+    "sha": "5a5ec532330a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/194",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 1,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "43c8437d3267",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T00:43:56Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T00:43:56Z"
+        },
+        "message": "commit 1 for PR #194: docs(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ac133f27da38",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T01:13:56Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T01:13:56Z"
+        },
+        "message": "commit 2 for PR #194: docs(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a36044395477",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T01:43:56Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T01:43:56Z"
+        },
+        "message": "commit 3 for PR #194: docs(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "962f648e1615",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T02:13:56Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T02:13:56Z"
+        },
+        "message": "commit 4 for PR #194: docs(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5a5ec532330a",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T02:43:56Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-07T02:43:56Z"
+        },
+        "message": "commit 5 for PR #194: docs(infra_deploy): update canary.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19401,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T02:43:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/194#pullrequestreview-19401"
+    },
+    {
+      "id": 19402,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T02:43:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/194#pullrequestreview-19402"
+    },
+    {
+      "id": 19403,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-08T02:43:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/194#pullrequestreview-19403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1078,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1078: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1079,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1079: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1080,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1080: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1081,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1081: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1082,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1082: verify boundary checks on line 35.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1083,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1083: verify boundary checks on line 45.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1084,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1084: verify boundary checks on line 55.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 1085,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 1085: verify boundary checks on line 15.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1086,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 1086: verify boundary checks on line 25.",
+      "created_at": "2026-01-08T02:43:56Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

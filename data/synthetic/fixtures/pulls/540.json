@@ -1,0 +1,208 @@
+{
+  "id": 1000540,
+  "number": 540,
+  "state": "closed",
+  "title": "test(auth_mfa): update challenge_store.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-07-01T03:34:52Z",
+  "updated_at": "2026-07-02T04:34:52Z",
+  "closed_at": "2026-07-02T04:34:52Z",
+  "merged_at": "2026-07-02T04:34:52Z",
+  "merge_commit_sha": "cf2bbeb778f9",
+  "head": {
+    "ref": "feature/pr-540",
+    "sha": "cf2bbeb778f9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/540",
+  "files": [
+    {
+      "filename": "auth/mfa/challenge_store.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 14,
+      "changes": 7
+    },
+    {
+      "filename": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 12,
+      "changes": 54
+    },
+    {
+      "filename": "auth/mfa/mfa_errors.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 5,
+      "changes": 17
+    }
+  ],
+  "commits": [
+    {
+      "sha": "aaece8b1a957",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-01T03:34:52Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-01T03:34:52Z"
+        },
+        "message": "commit 1 for PR #540: test(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "cf2bbeb778f9",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-01T04:04:52Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-01T04:04:52Z"
+        },
+        "message": "commit 2 for PR #540: test(auth_mfa): update challenge_store.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54001,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-01T16:34:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/540#pullrequestreview-54001"
+    },
+    {
+      "id": 54002,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-01T16:34:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/540#pullrequestreview-54002"
+    },
+    {
+      "id": 54003,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-01T16:34:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/540#pullrequestreview-54003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2887,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 2887: verify boundary checks on line 15.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 15
+    },
+    {
+      "id": 2888,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 2888: verify boundary checks on line 25.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 25
+    },
+    {
+      "id": 2889,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 2889: verify boundary checks on line 15.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 15
+    },
+    {
+      "id": 2890,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 2890: verify boundary checks on line 25.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 25
+    },
+    {
+      "id": 2891,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 2891: verify boundary checks on line 35.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 35
+    },
+    {
+      "id": 2892,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 2892: verify boundary checks on line 15.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 15
+    },
+    {
+      "id": 2893,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 2893: verify boundary checks on line 25.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 25
+    },
+    {
+      "id": 2894,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 2894: verify boundary checks on line 35.",
+      "created_at": "2026-07-01T16:34:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 35
+    }
+  ]
+}

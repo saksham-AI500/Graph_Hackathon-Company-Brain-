@@ -1,0 +1,663 @@
+{
+  "questions": [
+    {
+      "id": "HOLD-01",
+      "category": "MULTI_HOP_TRACING",
+      "target_pr": 3141,
+      "target_file": null,
+      "question": "What issue was resolved by PR #3141 regarding RDB decode, and what error did it handle?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "3140",
+        "short read"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3141",
+        "https://github.com/FalkorDB/FalkorDB/issues/3140"
+      ],
+      "required_relationships": [
+        "(:PullRequest)-[:RESOLVES]->(:Issue)"
+      ],
+      "should_refuse": false,
+      "refusal_reason": null,
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-02",
+      "category": "MULTI_HOP_TRACING",
+      "target_pr": 3179,
+      "target_file": null,
+      "question": "What security issue does PR #3179 resolve regarding container image scanning?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "3178",
+        "Trivy"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3179",
+        "https://github.com/FalkorDB/FalkorDB/issues/3178"
+      ],
+      "required_relationships": [
+        "(:PullRequest)-[:RESOLVES]->(:Issue)"
+      ],
+      "should_refuse": false,
+      "refusal_reason": null,
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-03",
+      "category": "REFUSAL",
+      "target_pr": 3141,
+      "target_file": null,
+      "question": "Who historically reviewed RDB decode changes prior to PR #3141's creation with historical cutoff?",
+      "historical_cutoff": "2026-10-01T10:00:00Z",
+      "expected_answer_keywords": [
+        "insufficient",
+        "no prior",
+        "refuse"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3141"
+      ],
+      "required_relationships": [],
+      "should_refuse": true,
+      "refusal_reason": "Zero qualifying human reviews on RDB decode files existed prior to October 2026.",
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-04",
+      "category": "OWNERSHIP_DISCREPANCY",
+      "target_pr": null,
+      "target_file": "build/runtime/Dockerfile",
+      "question": "What team is declared as CODEOWNERS owner for build/runtime/Dockerfile versus who actually authored changes?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "@FalkorDB/falkordb-core",
+        "build",
+        "AviAvni",
+        "DvirDukhan"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/blob/master/.github/CODEOWNERS",
+        "https://github.com/FalkorDB/FalkorDB/pull/3181"
+      ],
+      "required_relationships": [
+        "(:Team)-[:DECLARED_FOR]->(:OwnershipRule)-[:COVERS]->(:File)"
+      ],
+      "should_refuse": false,
+      "refusal_reason": null,
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-05",
+      "category": "REFUSAL",
+      "target_pr": 3130,
+      "target_file": null,
+      "question": "Who had documented history reviewing src/commands/ prior to PR #3130's creation cutoff?",
+      "historical_cutoff": "2026-09-29T12:00:00Z",
+      "expected_answer_keywords": [
+        "insufficient",
+        "no prior",
+        "refuse"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3130"
+      ],
+      "required_relationships": [],
+      "should_refuse": true,
+      "refusal_reason": "Zero prior reviews on this command path existed before September 2026 cutoff.",
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-06",
+      "category": "REFUSAL",
+      "target_pr": 3161,
+      "target_file": null,
+      "question": "What specific GitHub issue was closed and resolved by PR #3161?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "No linked issue",
+        "refuse",
+        "insufficient"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3161"
+      ],
+      "required_relationships": [],
+      "should_refuse": true,
+      "refusal_reason": "PR #3161 has no linked issue relationship in repository records.",
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-07",
+      "category": "REFUSAL",
+      "target_pr": 3170,
+      "target_file": null,
+      "question": "Did PR #3170 implement cluster replication failover for FalkorDB?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "not supported",
+        "refuse",
+        "LLVM 23",
+        "vec_utils"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3170"
+      ],
+      "required_relationships": [],
+      "should_refuse": true,
+      "refusal_reason": "PR #3170 addressed LLVM 23 compilation in vec_utils.cpp; cluster failover claim is false.",
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-08",
+      "category": "REFUSAL",
+      "target_pr": 9995,
+      "target_file": null,
+      "question": "Who approved PR #9995 and what benchmark regression did it fix?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "not found",
+        "does not exist",
+        "refused"
+      ],
+      "ground_truth_urls": [],
+      "required_relationships": [],
+      "should_refuse": true,
+      "refusal_reason": "PR #9995 does not exist in graph records.",
+      "graph_advantage": "HIGH"
+    },
+    {
+      "id": "HOLD-09",
+      "category": "FLAT_TEXT_PARITY",
+      "target_pr": 3181,
+      "target_file": null,
+      "question": "What is the exact title and author of PR #3181?",
+      "historical_cutoff": null,
+      "expected_answer_keywords": [
+        "redis-server",
+        "falkordb user",
+        "DvirDukhan"
+      ],
+      "ground_truth_urls": [
+        "https://github.com/FalkorDB/FalkorDB/pull/3181"
+      ],
+      "required_relationships": [],
+      "should_refuse": false,
+      "refusal_reason": null,
+      "graph_advantage": "LOW"
+    }
+  ],
+  "metrics": {
+    "Graph ON": {
+      "mode_name": "Graph ON",
+      "total_questions": 9,
+      "answerable_questions": 4,
+      "unanswerable_questions": 5,
+      "answerable_correct": 4,
+      "refusal_correct": 5,
+      "overall_correct": 9,
+      "correct_count": 9,
+      "correct_refusals": 5,
+      "evidence_urls_provided": 15,
+      "valid_evidence_urls": 12,
+      "unsupported_claims_asserted": 0,
+      "total_latency_ms": 25.16630000081932
+    },
+    "Vector Baseline": {
+      "mode_name": "Vector Baseline",
+      "total_questions": 9,
+      "answerable_questions": 4,
+      "unanswerable_questions": 5,
+      "answerable_correct": 2,
+      "refusal_correct": 1,
+      "overall_correct": 3,
+      "correct_count": 3,
+      "correct_refusals": 1,
+      "evidence_urls_provided": 21,
+      "valid_evidence_urls": 2,
+      "unsupported_claims_asserted": 4,
+      "total_latency_ms": 100.58049999952345
+    },
+    "Graph OFF": {
+      "mode_name": "Graph OFF",
+      "total_questions": 9,
+      "answerable_questions": 4,
+      "unanswerable_questions": 5,
+      "answerable_correct": 0,
+      "refusal_correct": 0,
+      "overall_correct": 0,
+      "correct_count": 0,
+      "correct_refusals": 0,
+      "evidence_urls_provided": 7,
+      "valid_evidence_urls": 7,
+      "unsupported_claims_asserted": 6,
+      "total_latency_ms": 10.806200000388344
+    }
+  },
+  "results": {
+    "Graph ON": [
+      {
+        "question_id": "HOLD-01",
+        "mode": "Graph ON",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3141",
+          "https://github.com/FalkorDB/FalkorDB/issues/3140",
+          "https://github.com/FalkorDB/FalkorDB/pull/3141"
+        ],
+        "valid_evidence_count": 3,
+        "unsupported_claim": false,
+        "latency_ms": 3.6141000000498025,
+        "output_summary": "ANSWERED: PR #3141 explicitly resolves Issue #3140: 'support short read'...."
+      },
+      {
+        "question_id": "HOLD-02",
+        "mode": "Graph ON",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3179",
+          "https://github.com/FalkorDB/FalkorDB/issues/3178",
+          "https://github.com/FalkorDB/FalkorDB/pull/3179"
+        ],
+        "valid_evidence_count": 3,
+        "unsupported_claim": false,
+        "latency_ms": 2.682199999981094,
+        "output_summary": "ANSWERED: PR #3179 explicitly resolves Issue #3178: 'CI: port master's Trivy image scan to..."
+      },
+      {
+        "question_id": "HOLD-03",
+        "mode": "Graph ON",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3141"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 4.52800000039133,
+        "output_summary": "REFUSED: Insufficient historical reviewer evidence before cutoff."
+      },
+      {
+        "question_id": "HOLD-04",
+        "mode": "Graph ON",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/blob/main/CODEOWNERS",
+          "https://github.com/FalkorDB/FalkorDB/pull/3181",
+          "https://github.com/FalkorDB/FalkorDB/pull/3179",
+          "https://github.com/FalkorDB/FalkorDB/pull/3163"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 5.720999999994092,
+        "output_summary": "ANSWERED: Ownership Status: UNOWNED_WITH_ACTIVE_MAINTAINERS. Declared Owners: None (unowne..."
+      },
+      {
+        "question_id": "HOLD-05",
+        "mode": "Graph ON",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3130"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 3.766299999824696,
+        "output_summary": "REFUSED: Insufficient historical reviewer evidence before cutoff."
+      },
+      {
+        "question_id": "HOLD-06",
+        "mode": "Graph ON",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3161"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 2.2925000002942397,
+        "output_summary": "REFUSED: No issue resolution record for PR #3161."
+      },
+      {
+        "question_id": "HOLD-07",
+        "mode": "Graph ON",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3170"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 0.0019000003703695256,
+        "output_summary": "REFUSED: Claim is factually unbacked by repository graph records."
+      },
+      {
+        "question_id": "HOLD-08",
+        "mode": "Graph ON",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [],
+        "valid_evidence_count": 0,
+        "unsupported_claim": false,
+        "latency_ms": 0.9961000000657805,
+        "output_summary": "REFUSED: PR #9995 not found in graph."
+      },
+      {
+        "question_id": "HOLD-09",
+        "mode": "Graph ON",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3181"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 1.564199999847915,
+        "output_summary": "ANSWERED: PR #3181 Title: 'build(docker): run redis-server as the falkordb user', Author: ..."
+      }
+    ],
+    "Vector Baseline": [
+      {
+        "question_id": "HOLD-01",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3339",
+          "https://github.com/FalkorDB/FalkorDB/pull/3146",
+          "https://github.com/FalkorDB/FalkorDB/pull/3262"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": false,
+        "latency_ms": 14.302799999768467,
+        "output_summary": "ANSWERED: Retrieved top match PR_3339 (Score 0.111): PR_3339: fix: bound value nesting on ..."
+      },
+      {
+        "question_id": "HOLD-02",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/issues/3180",
+          "https://github.com/FalkorDB/FalkorDB/issues/3178",
+          "https://github.com/FalkorDB/FalkorDB/pull/3153"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 13.392500000009022,
+        "output_summary": "ANSWERED: Retrieved top match ISSUE_3180 (Score 0.137): ISSUE_3180: Run redis-server as a ..."
+      },
+      {
+        "question_id": "HOLD-03",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3146",
+          "https://github.com/FalkorDB/FalkorDB/issues/3145"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 2.02450000006138,
+        "output_summary": "ANSWERED: Retrieved top match PR_3146 (Score 0.168): PR_3146: Exit with code 65 when a dat..."
+      },
+      {
+        "question_id": "HOLD-04",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": true,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/blob/main/CODEOWNERS",
+          "https://github.com/FalkorDB/FalkorDB/pull/3163",
+          "https://github.com/FalkorDB/FalkorDB/pull/3181"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 13.702400000056514,
+        "output_summary": "ANSWERED: Retrieved top match CODEOWNERS (Score 0.300): CODEOWNERS: Repository CODEOWNERS ..."
+      },
+      {
+        "question_id": "HOLD-05",
+        "mode": "Vector Baseline",
+        "answered": false,
+        "refused": true,
+        "correct": true,
+        "refusal_correct": true,
+        "evidence_urls": [],
+        "valid_evidence_count": 0,
+        "unsupported_claim": false,
+        "latency_ms": 1.6583000001446635,
+        "output_summary": "REFUSED: Insufficient evidence in corpus."
+      },
+      {
+        "question_id": "HOLD-06",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3130",
+          "https://github.com/FalkorDB/FalkorDB/pull/3127",
+          "https://github.com/FalkorDB/FalkorDB/pull/3163"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 12.896400000045105,
+        "output_summary": "ANSWERED: Retrieved top match PR_3130 (Score 0.094): PR_3130: chore(deps): update rltest r..."
+      },
+      {
+        "question_id": "HOLD-07",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3181"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 13.62089999975069,
+        "output_summary": "ANSWERED: Retrieved top match PR_3181 (Score 0.086): PR_3181: build(docker): run redis-ser..."
+      },
+      {
+        "question_id": "HOLD-08",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3104",
+          "https://github.com/FalkorDB/FalkorDB/pull/3225",
+          "https://github.com/FalkorDB/FalkorDB/pull/3022"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 14.68429999977161,
+        "output_summary": "ANSWERED: Retrieved top match PR_3104 (Score 0.090): PR_3104: fix: stop exponential backtr..."
+      },
+      {
+        "question_id": "HOLD-09",
+        "mode": "Vector Baseline",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3225",
+          "https://github.com/FalkorDB/FalkorDB/pull/3022",
+          "https://github.com/FalkorDB/FalkorDB/pull/3072"
+        ],
+        "valid_evidence_count": 0,
+        "unsupported_claim": false,
+        "latency_ms": 14.298399999916,
+        "output_summary": "ANSWERED: Retrieved top match PR_3225 (Score 0.175): PR_3225: perf(constraint): look UNIQU..."
+      }
+    ],
+    "Graph OFF": [
+      {
+        "question_id": "HOLD-01",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3141"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 1.6065999998318148,
+        "output_summary": "ANSWERED: PR #3141 Title: Handle short reads gracefully during RDB decode. (No graph relat..."
+      },
+      {
+        "question_id": "HOLD-02",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3179"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 1.3157999997019942,
+        "output_summary": "ANSWERED: PR #3179 Title: ci: port master's Trivy image scan; drop util-linux from the run..."
+      },
+      {
+        "question_id": "HOLD-03",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3141"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": true,
+        "latency_ms": 1.4034999999239517,
+        "output_summary": "ANSWERED: PR #3141 Title: Handle short reads gracefully during RDB decode. (No graph relat..."
+      },
+      {
+        "question_id": "HOLD-04",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 0.0009000000318337698,
+        "output_summary": "ANSWERED: Assumed valid resolution based on default heuristics without verification...."
+      },
+      {
+        "question_id": "HOLD-05",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3130"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": true,
+        "latency_ms": 1.1558000001059554,
+        "output_summary": "ANSWERED: PR #3130 Title: chore(deps): update rltest requirement from >=0.7.28 to >=0.7.29..."
+      },
+      {
+        "question_id": "HOLD-06",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3161"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": true,
+        "latency_ms": 1.3477000002239947,
+        "output_summary": "ANSWERED: PR #3161 Title: fix(rdb): save virtual keys as graphmeta so C keeps graphs in GR..."
+      },
+      {
+        "question_id": "HOLD-07",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3170"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": true,
+        "latency_ms": 1.2891000001218345,
+        "output_summary": "ANSWERED: PR #3170 Title: build(native-deps): include <string> in VecSim's vec_utils.cpp f..."
+      },
+      {
+        "question_id": "HOLD-08",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [],
+        "valid_evidence_count": 0,
+        "unsupported_claim": true,
+        "latency_ms": 1.3581000002886867,
+        "output_summary": "ANSWERED: Assumed valid resolution based on default heuristics without verification...."
+      },
+      {
+        "question_id": "HOLD-09",
+        "mode": "Graph OFF",
+        "answered": true,
+        "refused": false,
+        "correct": false,
+        "refusal_correct": false,
+        "evidence_urls": [
+          "https://github.com/FalkorDB/FalkorDB/pull/3181"
+        ],
+        "valid_evidence_count": 1,
+        "unsupported_claim": false,
+        "latency_ms": 1.3287000001582783,
+        "output_summary": "ANSWERED: PR #3181 Title: build(docker): run redis-server as the falkordb user. (No graph ..."
+      }
+    ]
+  }
+}

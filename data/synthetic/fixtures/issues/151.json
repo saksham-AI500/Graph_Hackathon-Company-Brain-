@@ -1,0 +1,67 @@
+{
+  "id": 2000151,
+  "number": 151,
+  "title": "PERF: infra-observability improvements for latency",
+  "body": "Detailed description for perf tracking in module infra/observability/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-03-06T12:59:02Z",
+  "updated_at": "2026-03-06T12:59:02Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70620,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #620 on issue #151: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T19:59:02Z"
+    },
+    {
+      "id": 70621,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #621 on issue #151: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T12:59:02Z"
+    },
+    {
+      "id": 70622,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #622 on issue #151: updates from triage and reproduction steps.",
+      "created_at": "2026-03-08T10:59:02Z"
+    },
+    {
+      "id": 70623,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #623 on issue #151: updates from triage and reproduction steps.",
+      "created_at": "2026-03-08T12:59:02Z"
+    },
+    {
+      "id": 70624,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #624 on issue #151: updates from triage and reproduction steps.",
+      "created_at": "2026-03-08T20:59:02Z"
+    }
+  ]
+}

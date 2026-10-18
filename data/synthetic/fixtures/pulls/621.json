@@ -1,0 +1,94 @@
+{
+  "id": 1000621,
+  "number": 621,
+  "state": "closed",
+  "title": "chore(billing): update tax_exemption.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-08-11T03:43:17Z",
+  "updated_at": "2026-08-12T07:43:17Z",
+  "closed_at": "2026-08-12T07:43:17Z",
+  "merged_at": "2026-08-12T07:43:17Z",
+  "merge_commit_sha": "96a075395c01",
+  "head": {
+    "ref": "feature/pr-621",
+    "sha": "96a075395c01"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/621",
+  "files": [
+    {
+      "filename": "billing/tax_exemption.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 6,
+      "changes": 8
+    },
+    {
+      "filename": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 13,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f88543d5bf64",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T03:43:17Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T03:43:17Z"
+        },
+        "message": "commit 1 for PR #621: chore(billing): update tax_exemption.py"
+      }
+    },
+    {
+      "sha": "87fa0c494fff",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T04:13:17Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T04:13:17Z"
+        },
+        "message": "commit 2 for PR #621: chore(billing): update tax_exemption.py"
+      }
+    },
+    {
+      "sha": "96a075395c01",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T04:43:17Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-08-11T04:43:17Z"
+        },
+        "message": "commit 3 for PR #621: chore(billing): update tax_exemption.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

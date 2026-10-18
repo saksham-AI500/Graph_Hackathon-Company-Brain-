@@ -1,0 +1,179 @@
+{
+  "id": 1000047,
+  "number": 47,
+  "state": "closed",
+  "title": "perf(payments_refunds): update audit_refunds.py",
+  "body": "Implementation changes for payments_refunds module improvements.\n\nCloses #110",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2025-10-24T03:40:09Z",
+  "updated_at": "2025-10-25T20:40:09Z",
+  "closed_at": "2025-10-25T20:40:09Z",
+  "merged_at": "2025-10-25T20:40:09Z",
+  "merge_commit_sha": "3cb4fea779c1",
+  "head": {
+    "ref": "feature/pr-47",
+    "sha": "3cb4fea779c1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/47",
+  "files": [
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 8,
+      "changes": 30
+    },
+    {
+      "filename": "payments/refunds/notification.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 6,
+      "changes": 9
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8e0004515c68",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-10-24T03:40:09Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-10-24T03:40:09Z"
+        },
+        "message": "commit 1 for PR #47: perf(payments_refunds): update audit_refunds.py"
+      }
+    },
+    {
+      "sha": "3cb4fea779c1",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-10-24T04:10:09Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-10-24T04:10:09Z"
+        },
+        "message": "commit 2 for PR #47: perf(payments_refunds): update audit_refunds.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4701,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-26T01:40:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/47#pullrequestreview-4701"
+    },
+    {
+      "id": 4702,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-26T01:40:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/47#pullrequestreview-4702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 252,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 252: verify boundary checks on line 15.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 15
+    },
+    {
+      "id": 253,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 253: verify boundary checks on line 25.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 25
+    },
+    {
+      "id": 254,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 254: verify boundary checks on line 35.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 35
+    },
+    {
+      "id": 255,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Review comment 255: verify boundary checks on line 15.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 15
+    },
+    {
+      "id": 256,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Review comment 256: verify boundary checks on line 25.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 25
+    },
+    {
+      "id": 257,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Review comment 257: verify boundary checks on line 35.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 35
+    },
+    {
+      "id": 258,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Review comment 258: verify boundary checks on line 45.",
+      "created_at": "2025-10-26T01:40:09Z",
+      "path": "payments/refunds/audit_refunds.py",
+      "line": 45
+    }
+  ]
+}

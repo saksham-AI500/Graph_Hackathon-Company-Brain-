@@ -1,0 +1,103 @@
+{
+  "id": 1000128,
+  "number": 128,
+  "state": "closed",
+  "title": "refactor(notifications): update preferences.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2025-12-04T15:59:52Z",
+  "updated_at": "2025-12-07T11:59:52Z",
+  "closed_at": "2025-12-07T11:59:52Z",
+  "merged_at": "2025-12-07T11:59:52Z",
+  "merge_commit_sha": "5a54dd5e1be0",
+  "head": {
+    "ref": "feature/pr-128",
+    "sha": "5a54dd5e1be0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/128",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 15,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "696c1fbe1bcd",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T15:59:52Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T15:59:52Z"
+        },
+        "message": "commit 1 for PR #128: refactor(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "14e06fcf07ac",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T16:29:52Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T16:29:52Z"
+        },
+        "message": "commit 2 for PR #128: refactor(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ca496e86a57e",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T16:59:52Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T16:59:52Z"
+        },
+        "message": "commit 3 for PR #128: refactor(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5a54dd5e1be0",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T17:29:52Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-04T17:29:52Z"
+        },
+        "message": "commit 4 for PR #128: refactor(notifications): update preferences.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

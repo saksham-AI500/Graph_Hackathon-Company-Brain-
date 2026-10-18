@@ -1,0 +1,58 @@
+{
+  "id": 2000235,
+  "number": 235,
+  "title": "TASK: infra-deploy improvements for reliability",
+  "body": "Detailed description for task tracking in module infra/deploy/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-01T23:27:13Z",
+  "updated_at": "2026-06-03T23:27:13Z",
+  "closed_at": "2026-06-03T23:27:13Z",
+  "labels": [
+    "task",
+    "infra-deploy"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70963,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #963 on issue #235: updates from triage and reproduction steps.",
+      "created_at": "2026-06-02T21:27:13Z"
+    },
+    {
+      "id": 70964,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #964 on issue #235: updates from triage and reproduction steps.",
+      "created_at": "2026-06-03T01:27:13Z"
+    },
+    {
+      "id": 70965,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #965 on issue #235: updates from triage and reproduction steps.",
+      "created_at": "2026-06-03T19:27:13Z"
+    },
+    {
+      "id": 70966,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #966 on issue #235: updates from triage and reproduction steps.",
+      "created_at": "2026-06-04T15:27:13Z"
+    }
+  ]
+}

@@ -84,12 +84,17 @@ class ModeEvaluationMetrics(BaseModel):
 
     @property
     def evidence_precision_pct(self) -> float:
-        """Percentage of provided evidence URLs that are authentic ground-truth references."""
+        """Percentage of provided evidence URLs that match minimal benchmark ground-truth reference set."""
         return (
             round((self.valid_evidence_urls / self.evidence_urls_provided) * 100, 1)
             if self.evidence_urls_provided
             else 0.0
         )
+
+    @property
+    def ground_truth_match_rate_pct(self) -> float:
+        """Alias for evidence_precision_pct: reflects ground-truth matches, NOT broken-link rates."""
+        return self.evidence_precision_pct
 
     @property
     def unsupported_claim_rate_pct(self) -> float:

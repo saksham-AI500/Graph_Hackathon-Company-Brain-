@@ -1,0 +1,245 @@
+{
+  "id": 1000100,
+  "number": 100,
+  "state": "closed",
+  "title": "refactor(payments): update settlements.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 29760,
+    "type": "User"
+  },
+  "created_at": "2025-11-20T11:21:59Z",
+  "updated_at": "2025-11-23T00:21:59Z",
+  "closed_at": "2025-11-23T00:21:59Z",
+  "merged_at": "2025-11-23T00:21:59Z",
+  "merge_commit_sha": "1183896fb73a",
+  "head": {
+    "ref": "feature/pr-100",
+    "sha": "1183896fb73a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/100",
+  "files": [
+    {
+      "filename": "payments/__pycache__/settlements.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 59
+    },
+    {
+      "filename": "payments/__pycache__/paypal_client.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 1,
+      "changes": 30
+    },
+    {
+      "filename": "payments/refunds/reconciliation.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eb3032c6c24a",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T11:21:59Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T11:21:59Z"
+        },
+        "message": "commit 1 for PR #100: refactor(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "59a8edf33f2c",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T11:51:59Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T11:51:59Z"
+        },
+        "message": "commit 2 for PR #100: refactor(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d648a2f454b9",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T12:21:59Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T12:21:59Z"
+        },
+        "message": "commit 3 for PR #100: refactor(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4d4e50092c87",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T12:51:59Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T12:51:59Z"
+        },
+        "message": "commit 4 for PR #100: refactor(payments): update settlements.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1183896fb73a",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T13:21:59Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-20T13:21:59Z"
+        },
+        "message": "commit 5 for PR #100: refactor(payments): update settlements.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10001,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T03:21:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/100#pullrequestreview-10001"
+    },
+    {
+      "id": 10002,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-22T03:21:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/100#pullrequestreview-10002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 527,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 527: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 528,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 528: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 529,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 529: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 530,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 530: verify boundary checks on line 45.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 531,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 531: verify boundary checks on line 55.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 532,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 532: verify boundary checks on line 15.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 533,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 533: verify boundary checks on line 25.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 534,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 534: verify boundary checks on line 35.",
+      "created_at": "2025-11-22T03:21:59Z",
+      "path": "payments/__pycache__/settlements.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

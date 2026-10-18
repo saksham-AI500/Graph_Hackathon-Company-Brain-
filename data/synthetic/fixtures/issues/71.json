@@ -1,0 +1,60 @@
+{
+  "id": 2000071,
+  "number": 71,
+  "title": "PERF: payments improvements for caching",
+  "body": "Detailed description for perf tracking in module payments/.",
+  "user": {
+    "login": "liam-chen",
+    "id": 24218,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-13T06:28:25Z",
+  "updated_at": "2025-12-13T06:28:25Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "payments"
+  ],
+  "linked_pulls": [
+    21
+  ],
+  "comments": [
+    {
+      "id": 70292,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #292 on issue #71: updates from triage and reproduction steps.",
+      "created_at": "2025-12-13T14:28:25Z"
+    },
+    {
+      "id": 70293,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #293 on issue #71: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T11:28:25Z"
+    },
+    {
+      "id": 70294,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #294 on issue #71: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T14:28:25Z"
+    },
+    {
+      "id": 70295,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #295 on issue #71: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T21:28:25Z"
+    }
+  ]
+}

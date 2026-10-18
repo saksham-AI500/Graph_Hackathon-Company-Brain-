@@ -1,0 +1,184 @@
+{
+  "id": 1000230,
+  "number": 230,
+  "state": "closed",
+  "title": "refactor(refunds): remove deprecated batch reconciliation method",
+  "body": "Remove legacy reconcile_unsettled_batches() in favor of stream-based accounting.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2026-01-26T06:09:09Z",
+  "updated_at": "2026-01-28T07:09:09Z",
+  "closed_at": "2026-01-28T07:09:09Z",
+  "merged_at": "2026-01-28T07:09:09Z",
+  "merge_commit_sha": "b00d592c8757",
+  "head": {
+    "ref": "feature/pr-230",
+    "sha": "b00d592c8757"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/230",
+  "files": [
+    {
+      "filename": "payments/refunds/batch.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 10,
+      "changes": 14
+    },
+    {
+      "filename": "payments/refunds/reconciliation.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 11,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7b1bd3b72dca",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T06:09:09Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T06:09:09Z"
+        },
+        "message": "commit 1 for PR #230: refactor(refunds): remove deprecated batch reconciliation method"
+      }
+    },
+    {
+      "sha": "320102eb7602",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T06:39:09Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T06:39:09Z"
+        },
+        "message": "commit 2 for PR #230: refactor(refunds): remove deprecated batch reconciliation method"
+      }
+    },
+    {
+      "sha": "b00d592c8757",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T07:09:09Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-01-26T07:09:09Z"
+        },
+        "message": "commit 3 for PR #230: refactor(refunds): remove deprecated batch reconciliation method"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 23001,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-27T11:09:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/230#pullrequestreview-23001"
+    },
+    {
+      "id": 23002,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-27T11:09:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/230#pullrequestreview-23002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1247,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1247: verify boundary checks on line 15.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 15
+    },
+    {
+      "id": 1248,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1248: verify boundary checks on line 25.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 25
+    },
+    {
+      "id": 1249,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1249: verify boundary checks on line 35.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 35
+    },
+    {
+      "id": 1250,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1250: verify boundary checks on line 15.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 15
+    },
+    {
+      "id": 1251,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1251: verify boundary checks on line 25.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 25
+    },
+    {
+      "id": 1252,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1252: verify boundary checks on line 35.",
+      "created_at": "2026-01-27T11:09:09Z",
+      "path": "payments/refunds/batch.py",
+      "line": 35
+    }
+  ]
+}

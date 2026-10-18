@@ -1,0 +1,40 @@
+{
+  "id": 2000348,
+  "number": 348,
+  "title": "PERF: growth-experiments improvements for latency",
+  "body": "Detailed description for perf tracking in module growth/experiments/.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 20432,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-27T14:53:58Z",
+  "updated_at": "2026-10-02T14:53:58Z",
+  "closed_at": "2026-10-02T14:53:58Z",
+  "labels": [
+    "perf",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71423,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1423 on issue #348: updates from triage and reproduction steps.",
+      "created_at": "2026-09-28T01:53:58Z"
+    },
+    {
+      "id": 71424,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1424 on issue #348: updates from triage and reproduction steps.",
+      "created_at": "2026-09-28T12:53:58Z"
+    }
+  ]
+}

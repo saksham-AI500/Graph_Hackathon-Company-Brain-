@@ -1,0 +1,193 @@
+{
+  "id": 1000185,
+  "number": 185,
+  "state": "closed",
+  "title": "docs(notifications): update email_sender.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-01-02T12:04:51Z",
+  "updated_at": "2026-01-04T15:04:51Z",
+  "closed_at": "2026-01-04T15:04:51Z",
+  "merged_at": "2026-01-04T15:04:51Z",
+  "merge_commit_sha": "23c399478069",
+  "head": {
+    "ref": "feature/pr-185",
+    "sha": "23c399478069"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/185",
+  "files": [
+    {
+      "filename": "notifications/email_sender.py",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 9,
+      "changes": 59
+    }
+  ],
+  "commits": [
+    {
+      "sha": "620110cb7fac",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T12:04:51Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T12:04:51Z"
+        },
+        "message": "commit 1 for PR #185: docs(notifications): update email_sender.py"
+      }
+    },
+    {
+      "sha": "260c0ea63f5c",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T12:34:51Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T12:34:51Z"
+        },
+        "message": "commit 2 for PR #185: docs(notifications): update email_sender.py"
+      }
+    },
+    {
+      "sha": "722d4d73a3d7",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T13:04:51Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T13:04:51Z"
+        },
+        "message": "commit 3 for PR #185: docs(notifications): update email_sender.py"
+      }
+    },
+    {
+      "sha": "23c399478069",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T13:34:51Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-01-02T13:34:51Z"
+        },
+        "message": "commit 4 for PR #185: docs(notifications): update email_sender.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 18501,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-02T16:04:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/185#pullrequestreview-18501"
+    },
+    {
+      "id": 18502,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-02T16:04:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/185#pullrequestreview-18502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1017,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 1017: verify boundary checks on line 15.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 15
+    },
+    {
+      "id": 1018,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 1018: verify boundary checks on line 25.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 25
+    },
+    {
+      "id": 1019,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1019: verify boundary checks on line 15.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 15
+    },
+    {
+      "id": 1020,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1020: verify boundary checks on line 25.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 25
+    },
+    {
+      "id": 1021,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1021: verify boundary checks on line 35.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 35
+    },
+    {
+      "id": 1022,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 1022: verify boundary checks on line 45.",
+      "created_at": "2026-01-02T16:04:51Z",
+      "path": "notifications/email_sender.py",
+      "line": 45
+    }
+  ]
+}

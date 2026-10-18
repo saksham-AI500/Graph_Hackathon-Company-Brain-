@@ -1,0 +1,152 @@
+{
+  "id": 1000134,
+  "number": 134,
+  "state": "closed",
+  "title": "chore(growth_experiments): update guardrail_metrics.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2025-12-08T04:47:01Z",
+  "updated_at": "2025-12-10T22:47:01Z",
+  "closed_at": "2025-12-10T22:47:01Z",
+  "merged_at": "2025-12-10T22:47:01Z",
+  "merge_commit_sha": "b0adab548ecc",
+  "head": {
+    "ref": "feature/pr-134",
+    "sha": "b0adab548ecc"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/134",
+  "files": [
+    {
+      "filename": "growth/experiments/guardrail_metrics.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 7,
+      "changes": 23
+    },
+    {
+      "filename": "growth/experiments/holdout.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 8,
+      "changes": 43
+    },
+    {
+      "filename": "growth/experiments/__pycache__/holdout.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 15,
+      "changes": 6
+    }
+  ],
+  "commits": [
+    {
+      "sha": "673782b2686a",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T04:47:01Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T04:47:01Z"
+        },
+        "message": "commit 1 for PR #134: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "4f83b993736c",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T05:17:01Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T05:17:01Z"
+        },
+        "message": "commit 2 for PR #134: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "8ccaaae816d5",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T05:47:01Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T05:47:01Z"
+        },
+        "message": "commit 3 for PR #134: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "b0adab548ecc",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T06:17:01Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-08T06:17:01Z"
+        },
+        "message": "commit 4 for PR #134: chore(growth_experiments): update guardrail_metrics.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-09T23:47:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/134#pullrequestreview-13401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 738,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 738: verify boundary checks on line 15.",
+      "created_at": "2025-12-09T23:47:01Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 15
+    },
+    {
+      "id": 739,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 739: verify boundary checks on line 25.",
+      "created_at": "2025-12-09T23:47:01Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 25
+    }
+  ]
+}

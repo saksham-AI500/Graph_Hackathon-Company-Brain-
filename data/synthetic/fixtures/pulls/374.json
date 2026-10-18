@@ -1,0 +1,133 @@
+{
+  "id": 1000374,
+  "number": 374,
+  "state": "closed",
+  "title": "fix(billing): update subscriptions.py",
+  "body": "Implementation changes for billing module improvements.\n\nFixes #92",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-04-08T03:00:27Z",
+  "updated_at": "2026-04-11T02:00:27Z",
+  "closed_at": "2026-04-11T02:00:27Z",
+  "merged_at": "2026-04-11T02:00:27Z",
+  "merge_commit_sha": "6f6285f943bd",
+  "head": {
+    "ref": "feature/pr-374",
+    "sha": "6f6285f943bd"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/374",
+  "files": [
+    {
+      "filename": "billing/subscriptions.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 7,
+      "changes": 27
+    },
+    {
+      "filename": "billing/__pycache__/audit_billing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 15,
+      "changes": 48
+    },
+    {
+      "filename": "billing/__pycache__/webhook_billing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 14,
+      "changes": 36
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cd40730a9abf",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T03:00:27Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T03:00:27Z"
+        },
+        "message": "commit 1 for PR #374: fix(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "0276273b26ee",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T03:30:27Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T03:30:27Z"
+        },
+        "message": "commit 2 for PR #374: fix(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "e7bf9781a6e2",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T04:00:27Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T04:00:27Z"
+        },
+        "message": "commit 3 for PR #374: fix(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "59de76810d0f",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T04:30:27Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T04:30:27Z"
+        },
+        "message": "commit 4 for PR #374: fix(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "6f6285f943bd",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T05:00:27Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-08T05:00:27Z"
+        },
+        "message": "commit 5 for PR #374: fix(billing): update subscriptions.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

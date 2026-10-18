@@ -1,0 +1,242 @@
+{
+  "id": 1000611,
+  "number": 611,
+  "state": "closed",
+  "title": "fix(payments_refunds): update batch.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-08-06T01:35:22Z",
+  "updated_at": "2026-08-07T11:35:22Z",
+  "closed_at": "2026-08-07T11:35:22Z",
+  "merged_at": "2026-08-07T11:35:22Z",
+  "merge_commit_sha": "b2c3e7a01fe3",
+  "head": {
+    "ref": "feature/pr-611",
+    "sha": "b2c3e7a01fe3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/611",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 5,
+      "changes": 11
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b763be4c689a",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T01:35:22Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T01:35:22Z"
+        },
+        "message": "commit 1 for PR #611: fix(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e744a28d81f3",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T02:05:22Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T02:05:22Z"
+        },
+        "message": "commit 2 for PR #611: fix(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c35898012752",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T02:35:22Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T02:35:22Z"
+        },
+        "message": "commit 3 for PR #611: fix(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5a01a2ee7f10",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T03:05:22Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T03:05:22Z"
+        },
+        "message": "commit 4 for PR #611: fix(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b2c3e7a01fe3",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T03:35:22Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-08-06T03:35:22Z"
+        },
+        "message": "commit 5 for PR #611: fix(payments_refunds): update batch.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 61101,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-06T05:35:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/611#pullrequestreview-61101"
+    },
+    {
+      "id": 61102,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-06T05:35:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/611#pullrequestreview-61102"
+    },
+    {
+      "id": 61103,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-06T05:35:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/611#pullrequestreview-61103"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3220,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Review comment 3220: verify boundary checks on line 15.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3221,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Review comment 3221: verify boundary checks on line 25.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3222,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3222: verify boundary checks on line 15.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3223,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3223: verify boundary checks on line 25.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3224,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3224: verify boundary checks on line 35.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3225,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3225: verify boundary checks on line 45.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3226,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3226: verify boundary checks on line 15.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3227,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3227: verify boundary checks on line 25.",
+      "created_at": "2026-08-06T05:35:22Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

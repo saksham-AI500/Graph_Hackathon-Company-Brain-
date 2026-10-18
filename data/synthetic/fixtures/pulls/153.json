@@ -1,0 +1,204 @@
+{
+  "id": 1000153,
+  "number": 153,
+  "state": "closed",
+  "title": "refactor(api_gateway): update middleware.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2025-12-17T07:35:48Z",
+  "updated_at": "2025-12-19T18:35:48Z",
+  "closed_at": "2025-12-19T18:35:48Z",
+  "merged_at": "2025-12-19T18:35:48Z",
+  "merge_commit_sha": "c280c389fb3c",
+  "head": {
+    "ref": "feature/pr-153",
+    "sha": "c280c389fb3c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/153",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 4,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "46a148f3013b",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T07:35:48Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T07:35:48Z"
+        },
+        "message": "commit 1 for PR #153: refactor(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c63e8d76c23c",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T08:05:48Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T08:05:48Z"
+        },
+        "message": "commit 2 for PR #153: refactor(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7370abab29e0",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T08:35:48Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T08:35:48Z"
+        },
+        "message": "commit 3 for PR #153: refactor(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c280c389fb3c",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T09:05:48Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2025-12-17T09:05:48Z"
+        },
+        "message": "commit 4 for PR #153: refactor(api_gateway): update middleware.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 15301,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-18T01:35:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/153#pullrequestreview-15301"
+    },
+    {
+      "id": 15302,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-18T01:35:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/153#pullrequestreview-15302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 829,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 829: verify boundary checks on line 15.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 830,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 830: verify boundary checks on line 25.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 831,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 831: verify boundary checks on line 35.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 832,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 832: verify boundary checks on line 45.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 833,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 833: verify boundary checks on line 15.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 834,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 834: verify boundary checks on line 25.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 835,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 835: verify boundary checks on line 35.",
+      "created_at": "2025-12-18T01:35:48Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

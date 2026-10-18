@@ -1,0 +1,67 @@
+{
+  "id": 2000259,
+  "number": 259,
+  "title": "PERF: growth-experiments improvements for security",
+  "body": "Detailed description for perf tracking in module growth/experiments/.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 22495,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-26T22:52:24Z",
+  "updated_at": "2026-06-29T22:52:24Z",
+  "closed_at": "2026-06-29T22:52:24Z",
+  "labels": [
+    "perf",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71067,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1067 on issue #259: updates from triage and reproduction steps.",
+      "created_at": "2026-06-27T11:52:24Z"
+    },
+    {
+      "id": 71068,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1068 on issue #259: updates from triage and reproduction steps.",
+      "created_at": "2026-06-28T11:52:24Z"
+    },
+    {
+      "id": 71069,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1069 on issue #259: updates from triage and reproduction steps.",
+      "created_at": "2026-06-29T04:52:24Z"
+    },
+    {
+      "id": 71070,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1070 on issue #259: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T00:52:24Z"
+    },
+    {
+      "id": 71071,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1071 on issue #259: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T02:52:24Z"
+    }
+  ]
+}

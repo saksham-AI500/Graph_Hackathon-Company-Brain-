@@ -1,0 +1,223 @@
+{
+  "id": 1000438,
+  "number": 438,
+  "state": "closed",
+  "title": "perf(growth_experiments): update metrics_collector.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 22261,
+    "type": "User"
+  },
+  "created_at": "2026-05-11T00:58:30Z",
+  "updated_at": "2026-05-13T19:58:30Z",
+  "closed_at": "2026-05-13T19:58:30Z",
+  "merged_at": "2026-05-13T19:58:30Z",
+  "merge_commit_sha": "a5a6538fe0f7",
+  "head": {
+    "ref": "feature/pr-438",
+    "sha": "a5a6538fe0f7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/438",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 12,
+      "changes": 21
+    },
+    {
+      "filename": "growth/experiments/__pycache__/statistical_engine.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 4,
+      "changes": 10
+    },
+    {
+      "filename": "growth/experiments/holdout.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 10,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4c4772380028",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T00:58:30Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T00:58:30Z"
+        },
+        "message": "commit 1 for PR #438: perf(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "55c16ea12626",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T01:28:30Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T01:28:30Z"
+        },
+        "message": "commit 2 for PR #438: perf(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e906b2484f1f",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T01:58:30Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T01:58:30Z"
+        },
+        "message": "commit 3 for PR #438: perf(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d7542f62baf2",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T02:28:30Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T02:28:30Z"
+        },
+        "message": "commit 4 for PR #438: perf(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a5a6538fe0f7",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T02:58:30Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-05-11T02:58:30Z"
+        },
+        "message": "commit 5 for PR #438: perf(growth_experiments): update metrics_collector.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 43801,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-11T16:58:30Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/438#pullrequestreview-43801"
+    },
+    {
+      "id": 43802,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-11T16:58:30Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/438#pullrequestreview-43802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2341,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2341: verify boundary checks on line 15.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2342,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2342: verify boundary checks on line 25.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2343,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 2343: verify boundary checks on line 15.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2344,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 2344: verify boundary checks on line 25.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2345,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 2345: verify boundary checks on line 35.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2346,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Review comment 2346: verify boundary checks on line 45.",
+      "created_at": "2026-05-11T16:58:30Z",
+      "path": "growth/experiments/__pycache__/metrics_collector.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

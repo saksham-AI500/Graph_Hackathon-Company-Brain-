@@ -1,0 +1,126 @@
+{
+  "id": 1000585,
+  "number": 585,
+  "state": "closed",
+  "title": "docs(search): update checkpoint.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-07-23T21:44:40Z",
+  "updated_at": "2026-07-25T01:44:40Z",
+  "closed_at": "2026-07-25T01:44:40Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-585",
+    "sha": "9e3afd5152bf"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/585",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 12,
+      "changes": 34
+    },
+    {
+      "filename": "search/relevance_tuning.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 4,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d950738369af",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T21:44:40Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T21:44:40Z"
+        },
+        "message": "commit 1 for PR #585: docs(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "328343bb0f0f",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T22:14:40Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T22:14:40Z"
+        },
+        "message": "commit 2 for PR #585: docs(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fb1dfa314ea9",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T22:44:40Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T22:44:40Z"
+        },
+        "message": "commit 3 for PR #585: docs(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "69ad2c3c2544",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T23:14:40Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T23:14:40Z"
+        },
+        "message": "commit 4 for PR #585: docs(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9e3afd5152bf",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T23:44:40Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-07-23T23:44:40Z"
+        },
+        "message": "commit 5 for PR #585: docs(search): update checkpoint.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

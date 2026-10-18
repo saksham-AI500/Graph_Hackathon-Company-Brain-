@@ -1,0 +1,58 @@
+{
+  "id": 2000304,
+  "number": 304,
+  "title": "INCIDENT: shared-utils improvements for latency",
+  "body": "Detailed description for incident tracking in module shared/utils/.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 21029,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-12T19:24:37Z",
+  "updated_at": "2026-08-15T19:24:37Z",
+  "closed_at": "2026-08-15T19:24:37Z",
+  "labels": [
+    "incident",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71243,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #1243 on issue #304: updates from triage and reproduction steps.",
+      "created_at": "2026-08-13T14:24:37Z"
+    },
+    {
+      "id": 71244,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1244 on issue #304: updates from triage and reproduction steps.",
+      "created_at": "2026-08-13T20:24:37Z"
+    },
+    {
+      "id": 71245,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1245 on issue #304: updates from triage and reproduction steps.",
+      "created_at": "2026-08-14T16:24:37Z"
+    },
+    {
+      "id": 71246,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1246 on issue #304: updates from triage and reproduction steps.",
+      "created_at": "2026-08-15T06:24:37Z"
+    }
+  ]
+}

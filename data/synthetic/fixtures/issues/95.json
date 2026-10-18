@@ -1,0 +1,78 @@
+{
+  "id": 2000095,
+  "number": 95,
+  "title": "TASK: growth-referrals improvements for latency",
+  "body": "Detailed description for task tracking in module growth/referrals/.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-07T05:52:39Z",
+  "updated_at": "2026-01-07T05:52:39Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "growth-referrals"
+  ],
+  "linked_pulls": [
+    320
+  ],
+  "comments": [
+    {
+      "id": 70383,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #383 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-07T11:52:39Z"
+    },
+    {
+      "id": 70384,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #384 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-07T19:52:39Z"
+    },
+    {
+      "id": 70385,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #385 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-07T21:52:39Z"
+    },
+    {
+      "id": 70386,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #386 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-08T08:52:39Z"
+    },
+    {
+      "id": 70387,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #387 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-09T05:52:39Z"
+    },
+    {
+      "id": 70388,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #388 on issue #95: updates from triage and reproduction steps.",
+      "created_at": "2026-01-09T23:52:39Z"
+    }
+  ]
+}

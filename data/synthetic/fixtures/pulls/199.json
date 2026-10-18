@@ -1,0 +1,179 @@
+{
+  "id": 1000199,
+  "number": 199,
+  "state": "closed",
+  "title": "test(api_gateway): update metrics_gateway.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 28052,
+    "type": "User"
+  },
+  "created_at": "2026-01-09T02:00:37Z",
+  "updated_at": "2026-01-10T05:00:37Z",
+  "closed_at": "2026-01-10T05:00:37Z",
+  "merged_at": "2026-01-10T05:00:37Z",
+  "merge_commit_sha": "cd5f8afb6226",
+  "head": {
+    "ref": "feature/pr-199",
+    "sha": "cd5f8afb6226"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/199",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/metrics_gateway.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 3,
+      "changes": 47
+    },
+    {
+      "filename": "api/gateway/cache_control.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 14,
+      "changes": 7
+    },
+    {
+      "filename": "api/gateway/health.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 8,
+      "changes": 44
+    }
+  ],
+  "commits": [
+    {
+      "sha": "601cf451e7b7",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T02:00:37Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T02:00:37Z"
+        },
+        "message": "commit 1 for PR #199: test(api_gateway): update metrics_gateway.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "975ec8f9b2cd",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T02:30:37Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T02:30:37Z"
+        },
+        "message": "commit 2 for PR #199: test(api_gateway): update metrics_gateway.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "65a15ab6e414",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T03:00:37Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T03:00:37Z"
+        },
+        "message": "commit 3 for PR #199: test(api_gateway): update metrics_gateway.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d814f318167b",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T03:30:37Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T03:30:37Z"
+        },
+        "message": "commit 4 for PR #199: test(api_gateway): update metrics_gateway.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "cd5f8afb6226",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T04:00:37Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-01-09T04:00:37Z"
+        },
+        "message": "commit 5 for PR #199: test(api_gateway): update metrics_gateway.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19901,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-09T15:00:37Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/199#pullrequestreview-19901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1112,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1112: verify boundary checks on line 15.",
+      "created_at": "2026-01-09T15:00:37Z",
+      "path": "api/gateway/__pycache__/metrics_gateway.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1113,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1113: verify boundary checks on line 25.",
+      "created_at": "2026-01-09T15:00:37Z",
+      "path": "api/gateway/__pycache__/metrics_gateway.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1114,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1114: verify boundary checks on line 35.",
+      "created_at": "2026-01-09T15:00:37Z",
+      "path": "api/gateway/__pycache__/metrics_gateway.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

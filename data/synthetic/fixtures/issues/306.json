@@ -1,0 +1,76 @@
+{
+  "id": 2000306,
+  "number": 306,
+  "title": "PERF: auth-mfa improvements for throughput",
+  "body": "Detailed description for perf tracking in module auth/mfa/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-14T21:16:00Z",
+  "updated_at": "2026-08-18T21:16:00Z",
+  "closed_at": "2026-08-18T21:16:00Z",
+  "labels": [
+    "perf",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71250,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #1250 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-15T09:16:00Z"
+    },
+    {
+      "id": 71251,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1251 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-15T23:16:00Z"
+    },
+    {
+      "id": 71252,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1252 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-16T08:16:00Z"
+    },
+    {
+      "id": 71253,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1253 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-16T17:16:00Z"
+    },
+    {
+      "id": 71254,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1254 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-16T20:16:00Z"
+    },
+    {
+      "id": 71255,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1255 on issue #306: updates from triage and reproduction steps.",
+      "created_at": "2026-08-17T00:16:00Z"
+    }
+  ]
+}

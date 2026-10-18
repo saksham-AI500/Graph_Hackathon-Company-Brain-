@@ -1,0 +1,78 @@
+{
+  "id": 1000657,
+  "number": 657,
+  "state": "closed",
+  "title": "chore(shared_utils): update timezones.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-08-28T21:03:02Z",
+  "updated_at": "2026-08-30T19:03:02Z",
+  "closed_at": "2026-08-30T19:03:02Z",
+  "merged_at": "2026-08-30T19:03:02Z",
+  "merge_commit_sha": "810a4f4b5015",
+  "head": {
+    "ref": "feature/pr-657",
+    "sha": "810a4f4b5015"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/657",
+  "files": [
+    {
+      "filename": "shared/utils/timezones.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 2,
+      "changes": 32
+    },
+    {
+      "filename": "shared/utils/env_reader.py",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 13,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3a4e50111f53",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-08-28T21:03:02Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-08-28T21:03:02Z"
+        },
+        "message": "commit 1 for PR #657: chore(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "810a4f4b5015",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-08-28T21:33:02Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-08-28T21:33:02Z"
+        },
+        "message": "commit 2 for PR #657: chore(shared_utils): update timezones.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

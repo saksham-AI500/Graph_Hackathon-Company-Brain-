@@ -1,0 +1,24 @@
+{
+  "question_id": "Q15",
+  "question": "Draft a CODEOWNERS patch that fixes the ownership mismatch in payments/, with evidence. Text only, do not apply.",
+  "mode": "graph_off",
+  "run_index": 4,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot draft a CODEOWNERS patch or verify ownership mismatches.  \n\nTo fix this, you would need:  \n1. The current CODEOWNERS file showing the mismatch  \n2. Evidence of correct ownership (e.g., team declarations, recent review history)  \n\nWithout these, I cannot produce a valid patch.  \n\nNote: If you provide the conflicting lines and correct owners, I can format the patch.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:05:09.573432+00:00",
+  "latency_ms": 5621.75,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": true,
+  "is_faithful": false,
+  "passed_facts": [
+    "Text patch"
+  ],
+  "forbidden_violations": []
+}

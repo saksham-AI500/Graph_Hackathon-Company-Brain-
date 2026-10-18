@@ -1,0 +1,199 @@
+{
+  "id": 1000323,
+  "number": 323,
+  "state": "closed",
+  "title": "test(notifications): update bounce_handler.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-03-13T08:10:28Z",
+  "updated_at": "2026-03-15T12:10:28Z",
+  "closed_at": "2026-03-15T12:10:28Z",
+  "merged_at": "2026-03-15T12:10:28Z",
+  "merge_commit_sha": "f2ea2cd5fe53",
+  "head": {
+    "ref": "feature/pr-323",
+    "sha": "f2ea2cd5fe53"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/323",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 15,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b3075067be93",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T08:10:28Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T08:10:28Z"
+        },
+        "message": "commit 1 for PR #323: test(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "59be53981339",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T08:40:28Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T08:40:28Z"
+        },
+        "message": "commit 2 for PR #323: test(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f2ea2cd5fe53",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T09:10:28Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2026-03-13T09:10:28Z"
+        },
+        "message": "commit 3 for PR #323: test(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 32301,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-14T04:10:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/323#pullrequestreview-32301"
+    },
+    {
+      "id": 32302,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-14T04:10:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/323#pullrequestreview-32302"
+    },
+    {
+      "id": 32303,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-14T04:10:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/323#pullrequestreview-32303"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1705,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1705: verify boundary checks on line 15.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1706,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1706: verify boundary checks on line 25.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1707,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1707: verify boundary checks on line 15.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1708,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 1708: verify boundary checks on line 25.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1709,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1709: verify boundary checks on line 15.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1710,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1710: verify boundary checks on line 25.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1711,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 1711: verify boundary checks on line 35.",
+      "created_at": "2026-03-14T04:10:28Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

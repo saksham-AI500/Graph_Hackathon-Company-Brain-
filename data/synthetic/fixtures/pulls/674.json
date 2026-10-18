@@ -1,0 +1,163 @@
+{
+  "id": 1000674,
+  "number": 674,
+  "state": "closed",
+  "title": "chore(search_indexer): update dead_letter.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-09-07T11:14:26Z",
+  "updated_at": "2026-09-09T17:14:26Z",
+  "closed_at": "2026-09-09T17:14:26Z",
+  "merged_at": "2026-09-09T17:14:26Z",
+  "merge_commit_sha": "4059520ac9dc",
+  "head": {
+    "ref": "feature/pr-674",
+    "sha": "4059520ac9dc"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/674",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/dead_letter.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 11,
+      "changes": 52
+    },
+    {
+      "filename": "search/indexer/deduplication.py",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 7,
+      "changes": 31
+    },
+    {
+      "filename": "search/indexer/crawler.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 5,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7f85b03d634d",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T11:14:26Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T11:14:26Z"
+        },
+        "message": "commit 1 for PR #674: chore(search_indexer): update dead_letter.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "76b40734a39a",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T11:44:26Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T11:44:26Z"
+        },
+        "message": "commit 2 for PR #674: chore(search_indexer): update dead_letter.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2bbd9c88825c",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T12:14:26Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T12:14:26Z"
+        },
+        "message": "commit 3 for PR #674: chore(search_indexer): update dead_letter.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4059520ac9dc",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T12:44:26Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-09-07T12:44:26Z"
+        },
+        "message": "commit 4 for PR #674: chore(search_indexer): update dead_letter.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 67401,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-08T01:14:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/674#pullrequestreview-67401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3539,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3539: verify boundary checks on line 15.",
+      "created_at": "2026-09-08T01:14:26Z",
+      "path": "search/indexer/__pycache__/dead_letter.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3540,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3540: verify boundary checks on line 25.",
+      "created_at": "2026-09-08T01:14:26Z",
+      "path": "search/indexer/__pycache__/dead_letter.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3541,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3541: verify boundary checks on line 35.",
+      "created_at": "2026-09-08T01:14:26Z",
+      "path": "search/indexer/__pycache__/dead_letter.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

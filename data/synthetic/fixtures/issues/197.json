@@ -1,0 +1,58 @@
+{
+  "id": 2000197,
+  "number": 197,
+  "title": "TASK: api-gateway improvements for latency",
+  "body": "Detailed description for task tracking in module api/gateway/.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 28517,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-23T10:25:06Z",
+  "updated_at": "2026-04-23T10:25:06Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70795,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #795 on issue #197: updates from triage and reproduction steps.",
+      "created_at": "2026-04-23T19:25:06Z"
+    },
+    {
+      "id": 70796,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #796 on issue #197: updates from triage and reproduction steps.",
+      "created_at": "2026-04-24T18:25:06Z"
+    },
+    {
+      "id": 70797,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #797 on issue #197: updates from triage and reproduction steps.",
+      "created_at": "2026-04-25T01:25:06Z"
+    },
+    {
+      "id": 70798,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #798 on issue #197: updates from triage and reproduction steps.",
+      "created_at": "2026-04-25T05:25:06Z"
+    }
+  ]
+}

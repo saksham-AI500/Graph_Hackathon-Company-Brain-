@@ -1,0 +1,49 @@
+{
+  "id": 2000315,
+  "number": 315,
+  "title": "BUG: api-gateway improvements for throughput",
+  "body": "Detailed description for bug tracking in module api/gateway/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-24T06:17:18Z",
+  "updated_at": "2026-09-11T06:17:18Z",
+  "closed_at": "2026-09-11T06:17:18Z",
+  "labels": [
+    "bug",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71295,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1295 on issue #315: updates from triage and reproduction steps.",
+      "created_at": "2026-08-24T08:17:18Z"
+    },
+    {
+      "id": 71296,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1296 on issue #315: updates from triage and reproduction steps.",
+      "created_at": "2026-08-24T10:17:18Z"
+    },
+    {
+      "id": 71297,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1297 on issue #315: updates from triage and reproduction steps.",
+      "created_at": "2026-08-25T06:17:18Z"
+    }
+  ]
+}

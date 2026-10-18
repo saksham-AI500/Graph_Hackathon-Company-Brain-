@@ -1,0 +1,149 @@
+{
+  "id": 1000170,
+  "number": 170,
+  "state": "closed",
+  "title": "refactor(notifications): update templates.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2025-12-25T21:47:48Z",
+  "updated_at": "2025-12-28T16:47:48Z",
+  "closed_at": "2025-12-28T16:47:48Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-170",
+    "sha": "3ad4c4878830"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/170",
+  "files": [
+    {
+      "filename": "notifications/templates.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 7,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a31605915c94",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T21:47:48Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T21:47:48Z"
+        },
+        "message": "commit 1 for PR #170: refactor(notifications): update templates.py"
+      }
+    },
+    {
+      "sha": "ff781c800b46",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T22:17:48Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T22:17:48Z"
+        },
+        "message": "commit 2 for PR #170: refactor(notifications): update templates.py"
+      }
+    },
+    {
+      "sha": "89b7d32f18c6",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T22:47:48Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T22:47:48Z"
+        },
+        "message": "commit 3 for PR #170: refactor(notifications): update templates.py"
+      }
+    },
+    {
+      "sha": "3ad4c4878830",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T23:17:48Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2025-12-25T23:17:48Z"
+        },
+        "message": "commit 4 for PR #170: refactor(notifications): update templates.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17001,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-27T18:47:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/170#pullrequestreview-17001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 925,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 925: verify boundary checks on line 15.",
+      "created_at": "2025-12-27T18:47:48Z",
+      "path": "notifications/templates.py",
+      "line": 15
+    },
+    {
+      "id": 926,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 926: verify boundary checks on line 25.",
+      "created_at": "2025-12-27T18:47:48Z",
+      "path": "notifications/templates.py",
+      "line": 25
+    },
+    {
+      "id": 927,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 927: verify boundary checks on line 35.",
+      "created_at": "2025-12-27T18:47:48Z",
+      "path": "notifications/templates.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": 2000119,
+  "number": 119,
+  "title": "BUG: search-indexer improvements for latency",
+  "body": "Detailed description for bug tracking in module search/indexer/.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 20432,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-01T04:51:49Z",
+  "updated_at": "2026-02-28T04:51:49Z",
+  "closed_at": "2026-02-28T04:51:49Z",
+  "labels": [
+    "bug",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    450
+  ],
+  "comments": [
+    {
+      "id": 70494,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #494 on issue #119: updates from triage and reproduction steps.",
+      "created_at": "2026-02-01T19:51:49Z"
+    },
+    {
+      "id": 70495,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #495 on issue #119: updates from triage and reproduction steps.",
+      "created_at": "2026-02-02T01:51:49Z"
+    }
+  ]
+}

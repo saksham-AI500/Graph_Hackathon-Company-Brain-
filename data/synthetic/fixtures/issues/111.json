@@ -1,0 +1,69 @@
+{
+  "id": 2000111,
+  "number": 111,
+  "title": "FEATURE: api-gateway improvements for reliability",
+  "body": "Detailed description for feature tracking in module api/gateway/.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 21671,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-23T21:03:56Z",
+  "updated_at": "2026-01-30T21:03:56Z",
+  "closed_at": "2026-01-30T21:03:56Z",
+  "labels": [
+    "feature",
+    "api-gateway"
+  ],
+  "linked_pulls": [
+    431
+  ],
+  "comments": [
+    {
+      "id": 70454,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #454 on issue #111: updates from triage and reproduction steps.",
+      "created_at": "2026-01-23T23:03:56Z"
+    },
+    {
+      "id": 70455,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #455 on issue #111: updates from triage and reproduction steps.",
+      "created_at": "2026-01-24T10:03:56Z"
+    },
+    {
+      "id": 70456,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #456 on issue #111: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T08:03:56Z"
+    },
+    {
+      "id": 70457,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #457 on issue #111: updates from triage and reproduction steps.",
+      "created_at": "2026-01-25T16:03:56Z"
+    },
+    {
+      "id": 70458,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #458 on issue #111: updates from triage and reproduction steps.",
+      "created_at": "2026-01-26T08:03:56Z"
+    }
+  ]
+}

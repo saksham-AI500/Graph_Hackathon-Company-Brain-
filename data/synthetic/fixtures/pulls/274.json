@@ -1,0 +1,204 @@
+{
+  "id": 1000274,
+  "number": 274,
+  "state": "closed",
+  "title": "docs(search): update index_stats.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-02-16T12:25:31Z",
+  "updated_at": "2026-02-18T23:25:31Z",
+  "closed_at": "2026-02-18T23:25:31Z",
+  "merged_at": "2026-02-18T23:25:31Z",
+  "merge_commit_sha": "21e454772fef",
+  "head": {
+    "ref": "feature/pr-274",
+    "sha": "21e454772fef"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/274",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 5,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b3e8617c4622",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T12:25:31Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T12:25:31Z"
+        },
+        "message": "commit 1 for PR #274: docs(search): update index_stats.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a817b4fbd6b6",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T12:55:31Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T12:55:31Z"
+        },
+        "message": "commit 2 for PR #274: docs(search): update index_stats.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "db8c0d20faf9",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T13:25:31Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T13:25:31Z"
+        },
+        "message": "commit 3 for PR #274: docs(search): update index_stats.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "21e454772fef",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T13:55:31Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-02-16T13:55:31Z"
+        },
+        "message": "commit 4 for PR #274: docs(search): update index_stats.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T13:25:31Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/274#pullrequestreview-27401"
+    },
+    {
+      "id": 27402,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T13:25:31Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/274#pullrequestreview-27402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1443,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1443: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1444,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1444: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1445,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1445: verify boundary checks on line 35.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1446,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1446: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1447,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1447: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1448,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1448: verify boundary checks on line 35.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1449,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1449: verify boundary checks on line 45.",
+      "created_at": "2026-02-17T13:25:31Z",
+      "path": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

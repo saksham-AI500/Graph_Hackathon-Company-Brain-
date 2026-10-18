@@ -1,0 +1,238 @@
+{
+  "id": 1000552,
+  "number": 552,
+  "state": "closed",
+  "title": "test(infra_observability): update synthetics.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-07-07T05:12:14Z",
+  "updated_at": "2026-07-09T20:12:14Z",
+  "closed_at": "2026-07-09T20:12:14Z",
+  "merged_at": "2026-07-09T20:12:14Z",
+  "merge_commit_sha": "724c4e4c2ce7",
+  "head": {
+    "ref": "feature/pr-552",
+    "sha": "724c4e4c2ce7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/552",
+  "files": [
+    {
+      "filename": "infra/observability/synthetics.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 10,
+      "changes": 38
+    },
+    {
+      "filename": "infra/observability/__pycache__/collector.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 12,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cf71045dc71f",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T05:12:14Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T05:12:14Z"
+        },
+        "message": "commit 1 for PR #552: test(infra_observability): update synthetics.py"
+      }
+    },
+    {
+      "sha": "7a983816613a",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T05:42:14Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T05:42:14Z"
+        },
+        "message": "commit 2 for PR #552: test(infra_observability): update synthetics.py"
+      }
+    },
+    {
+      "sha": "ac8f732c65fe",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T06:12:14Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T06:12:14Z"
+        },
+        "message": "commit 3 for PR #552: test(infra_observability): update synthetics.py"
+      }
+    },
+    {
+      "sha": "c746f0d0a2f0",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T06:42:14Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T06:42:14Z"
+        },
+        "message": "commit 4 for PR #552: test(infra_observability): update synthetics.py"
+      }
+    },
+    {
+      "sha": "724c4e4c2ce7",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T07:12:14Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-07T07:12:14Z"
+        },
+        "message": "commit 5 for PR #552: test(infra_observability): update synthetics.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 55201,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-08T05:12:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/552#pullrequestreview-55201"
+    },
+    {
+      "id": 55202,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-08T05:12:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/552#pullrequestreview-55202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2952,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2952: verify boundary checks on line 15.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 15
+    },
+    {
+      "id": 2953,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2953: verify boundary checks on line 25.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 25
+    },
+    {
+      "id": 2954,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2954: verify boundary checks on line 35.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 35
+    },
+    {
+      "id": 2955,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2955: verify boundary checks on line 45.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 45
+    },
+    {
+      "id": 2956,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 2956: verify boundary checks on line 55.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 55
+    },
+    {
+      "id": 2957,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2957: verify boundary checks on line 15.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 15
+    },
+    {
+      "id": 2958,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2958: verify boundary checks on line 25.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 25
+    },
+    {
+      "id": 2959,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2959: verify boundary checks on line 35.",
+      "created_at": "2026-07-08T05:12:14Z",
+      "path": "infra/observability/synthetics.py",
+      "line": 35
+    }
+  ]
+}

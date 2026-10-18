@@ -1,0 +1,168 @@
+{
+  "id": 1000140,
+  "number": 140,
+  "state": "closed",
+  "title": "perf(payments): update settlements.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2025-12-10T16:50:22Z",
+  "updated_at": "2025-12-13T10:50:22Z",
+  "closed_at": "2025-12-13T10:50:22Z",
+  "merged_at": "2025-12-13T10:50:22Z",
+  "merge_commit_sha": "0c6003966d58",
+  "head": {
+    "ref": "feature/pr-140",
+    "sha": "0c6003966d58"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/140",
+  "files": [
+    {
+      "filename": "payments/settlements.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 5,
+      "changes": 54
+    },
+    {
+      "filename": "payments/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 3,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "369bd78f9449",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-10T16:50:22Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-10T16:50:22Z"
+        },
+        "message": "commit 1 for PR #140: perf(payments): update settlements.py"
+      }
+    },
+    {
+      "sha": "0c6003966d58",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-10T17:20:22Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-10T17:20:22Z"
+        },
+        "message": "commit 2 for PR #140: perf(payments): update settlements.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 14001,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-11T15:50:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/140#pullrequestreview-14001"
+    },
+    {
+      "id": 14002,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-11T15:50:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/140#pullrequestreview-14002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 765,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 765: verify boundary checks on line 15.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 15
+    },
+    {
+      "id": 766,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 766: verify boundary checks on line 25.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 25
+    },
+    {
+      "id": 767,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 767: verify boundary checks on line 15.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 15
+    },
+    {
+      "id": 768,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 768: verify boundary checks on line 25.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 25
+    },
+    {
+      "id": 769,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 769: verify boundary checks on line 35.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 35
+    },
+    {
+      "id": 770,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 770: verify boundary checks on line 45.",
+      "created_at": "2025-12-11T15:50:22Z",
+      "path": "payments/settlements.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 2000284,
+  "number": 284,
+  "title": "BUG: search-indexer improvements for reliability",
+  "body": "Detailed description for bug tracking in module search/indexer/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-23T00:12:33Z",
+  "updated_at": "2026-08-16T00:12:33Z",
+  "closed_at": "2026-08-16T00:12:33Z",
+  "labels": [
+    "bug",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71164,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #1164 on issue #284: updates from triage and reproduction steps.",
+      "created_at": "2026-07-23T04:12:33Z"
+    },
+    {
+      "id": 71165,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1165 on issue #284: updates from triage and reproduction steps.",
+      "created_at": "2026-07-23T19:12:33Z"
+    },
+    {
+      "id": 71166,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #1166 on issue #284: updates from triage and reproduction steps.",
+      "created_at": "2026-07-24T18:12:33Z"
+    },
+    {
+      "id": 71167,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1167 on issue #284: updates from triage and reproduction steps.",
+      "created_at": "2026-07-25T15:12:33Z"
+    },
+    {
+      "id": 71168,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #1168 on issue #284: updates from triage and reproduction steps.",
+      "created_at": "2026-07-26T03:12:33Z"
+    }
+  ]
+}

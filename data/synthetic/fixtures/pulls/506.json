@@ -1,0 +1,154 @@
+{
+  "id": 1000506,
+  "number": 506,
+  "state": "closed",
+  "title": "chore(shared_utils): update geo.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-06-13T22:44:16Z",
+  "updated_at": "2026-06-15T07:44:16Z",
+  "closed_at": "2026-06-15T07:44:16Z",
+  "merged_at": "2026-06-15T07:44:16Z",
+  "merge_commit_sha": "6b6202871169",
+  "head": {
+    "ref": "feature/pr-506",
+    "sha": "6b6202871169"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/506",
+  "files": [
+    {
+      "filename": "shared/utils/geo.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 1,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "79bfbd3ccaed",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T22:44:16Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T22:44:16Z"
+        },
+        "message": "commit 1 for PR #506: chore(shared_utils): update geo.py"
+      }
+    },
+    {
+      "sha": "026213980bde",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T23:14:16Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T23:14:16Z"
+        },
+        "message": "commit 2 for PR #506: chore(shared_utils): update geo.py"
+      }
+    },
+    {
+      "sha": "83a21f13fb04",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T23:44:16Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-13T23:44:16Z"
+        },
+        "message": "commit 3 for PR #506: chore(shared_utils): update geo.py"
+      }
+    },
+    {
+      "sha": "97f7576bfcb5",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-14T00:14:16Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-14T00:14:16Z"
+        },
+        "message": "commit 4 for PR #506: chore(shared_utils): update geo.py"
+      }
+    },
+    {
+      "sha": "6b6202871169",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-14T00:44:16Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-06-14T00:44:16Z"
+        },
+        "message": "commit 5 for PR #506: chore(shared_utils): update geo.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 50601,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-14T01:44:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/506#pullrequestreview-50601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2707,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2707: verify boundary checks on line 15.",
+      "created_at": "2026-06-14T01:44:16Z",
+      "path": "shared/utils/geo.py",
+      "line": 15
+    },
+    {
+      "id": 2708,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2708: verify boundary checks on line 25.",
+      "created_at": "2026-06-14T01:44:16Z",
+      "path": "shared/utils/geo.py",
+      "line": 25
+    }
+  ]
+}

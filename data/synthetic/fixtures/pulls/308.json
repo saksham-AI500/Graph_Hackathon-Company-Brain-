@@ -1,0 +1,128 @@
+{
+  "id": 1000308,
+  "number": 308,
+  "state": "closed",
+  "title": "test(billing): update subscriptions.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-03-05T18:11:02Z",
+  "updated_at": "2026-03-08T18:11:02Z",
+  "closed_at": "2026-03-08T18:11:02Z",
+  "merged_at": "2026-03-08T18:11:02Z",
+  "merge_commit_sha": "44fc498706f5",
+  "head": {
+    "ref": "feature/pr-308",
+    "sha": "44fc498706f5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/308",
+  "files": [
+    {
+      "filename": "api/gateway/router.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 8,
+      "changes": 17
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0f5359c92af0",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-05T18:11:02Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-05T18:11:02Z"
+        },
+        "message": "commit 1 for PR #308: test(billing): update subscriptions.py"
+      }
+    },
+    {
+      "sha": "44fc498706f5",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-05T18:41:02Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-05T18:41:02Z"
+        },
+        "message": "commit 2 for PR #308: test(billing): update subscriptions.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30801,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-07T12:11:02Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/308#pullrequestreview-30801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1632,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1632: verify boundary checks on line 15.",
+      "created_at": "2026-03-07T12:11:02Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1633,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1633: verify boundary checks on line 25.",
+      "created_at": "2026-03-07T12:11:02Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1634,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1634: verify boundary checks on line 35.",
+      "created_at": "2026-03-07T12:11:02Z",
+      "path": "api/gateway/router.py",
+      "line": 35
+    },
+    {
+      "id": 1635,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1635: verify boundary checks on line 45.",
+      "created_at": "2026-03-07T12:11:02Z",
+      "path": "api/gateway/router.py",
+      "line": 45
+    }
+  ]
+}

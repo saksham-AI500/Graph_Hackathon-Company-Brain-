@@ -1,0 +1,42 @@
+{
+  "id": 2000083,
+  "number": 83,
+  "title": "INCIDENT: shared-utils improvements for reliability",
+  "body": "Detailed description for incident tracking in module shared/utils/.",
+  "user": {
+    "login": "zane-malik",
+    "id": 29743,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-25T17:20:20Z",
+  "updated_at": "2025-12-25T17:20:20Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    8
+  ],
+  "comments": [
+    {
+      "id": 70337,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #337 on issue #83: updates from triage and reproduction steps.",
+      "created_at": "2025-12-25T21:20:20Z"
+    },
+    {
+      "id": 70338,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #338 on issue #83: updates from triage and reproduction steps.",
+      "created_at": "2025-12-26T19:20:20Z"
+    }
+  ]
+}

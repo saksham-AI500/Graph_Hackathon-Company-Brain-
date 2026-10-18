@@ -1,0 +1,69 @@
+{
+  "id": 2000023,
+  "number": 23,
+  "title": "BUG: shared-utils improvements for throughput",
+  "body": "Detailed description for bug tracking in module shared/utils/.",
+  "user": {
+    "login": "maya-zheng",
+    "id": 23493,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-10-24T06:38:55Z",
+  "updated_at": "2025-10-24T06:38:55Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    179
+  ],
+  "comments": [
+    {
+      "id": 70087,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #87 on issue #23: updates from triage and reproduction steps.",
+      "created_at": "2025-10-24T20:38:55Z"
+    },
+    {
+      "id": 70088,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #88 on issue #23: updates from triage and reproduction steps.",
+      "created_at": "2025-10-25T13:38:55Z"
+    },
+    {
+      "id": 70089,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #89 on issue #23: updates from triage and reproduction steps.",
+      "created_at": "2025-10-26T04:38:55Z"
+    },
+    {
+      "id": 70090,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #90 on issue #23: updates from triage and reproduction steps.",
+      "created_at": "2025-10-26T15:38:55Z"
+    },
+    {
+      "id": 70091,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #91 on issue #23: updates from triage and reproduction steps.",
+      "created_at": "2025-10-26T23:38:55Z"
+    }
+  ]
+}

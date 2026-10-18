@@ -1,0 +1,248 @@
+{
+  "id": 1000602,
+  "number": 602,
+  "state": "closed",
+  "title": "chore(search): update crawler.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-07-31T12:37:53Z",
+  "updated_at": "2026-08-02T07:37:53Z",
+  "closed_at": "2026-08-02T07:37:53Z",
+  "merged_at": "2026-08-02T07:37:53Z",
+  "merge_commit_sha": "145b13a403be",
+  "head": {
+    "ref": "feature/pr-602",
+    "sha": "145b13a403be"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/602",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 13,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "27a5a743ba54",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T12:37:53Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T12:37:53Z"
+        },
+        "message": "commit 1 for PR #602: chore(search): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2e90d8dc4b63",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T13:07:53Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T13:07:53Z"
+        },
+        "message": "commit 2 for PR #602: chore(search): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "47fdf1f48e3a",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T13:37:53Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T13:37:53Z"
+        },
+        "message": "commit 3 for PR #602: chore(search): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "145b13a403be",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T14:07:53Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-07-31T14:07:53Z"
+        },
+        "message": "commit 4 for PR #602: chore(search): update crawler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 60201,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T04:37:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/602#pullrequestreview-60201"
+    },
+    {
+      "id": 60202,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T04:37:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/602#pullrequestreview-60202"
+    },
+    {
+      "id": 60203,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T04:37:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/602#pullrequestreview-60203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3173,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 3173: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3174,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 3174: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3175,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 3175: verify boundary checks on line 35.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3176,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3176: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3177,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3177: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3178,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3178: verify boundary checks on line 35.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3179,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3179: verify boundary checks on line 45.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3180,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 3180: verify boundary checks on line 55.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3181,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3181: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3182,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3182: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T04:37:53Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "id": 1000074,
+  "number": 74,
+  "state": "closed",
+  "title": "test(billing): update audit_billing.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "samir-patel",
+    "id": 26341,
+    "type": "User"
+  },
+  "created_at": "2025-11-07T07:52:04Z",
+  "updated_at": "2025-11-09T05:52:04Z",
+  "closed_at": "2025-11-09T05:52:04Z",
+  "merged_at": "2025-11-09T05:52:04Z",
+  "merge_commit_sha": "a58207a0c930",
+  "head": {
+    "ref": "feature/pr-74",
+    "sha": "a58207a0c930"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/74",
+  "files": [
+    {
+      "filename": "billing/audit_billing.py",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 6,
+      "changes": 58
+    }
+  ],
+  "commits": [
+    {
+      "sha": "920494602f54",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T07:52:04Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T07:52:04Z"
+        },
+        "message": "commit 1 for PR #74: test(billing): update audit_billing.py"
+      }
+    },
+    {
+      "sha": "e38e7d866063",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T08:22:04Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T08:22:04Z"
+        },
+        "message": "commit 2 for PR #74: test(billing): update audit_billing.py"
+      }
+    },
+    {
+      "sha": "7376da047349",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T08:52:04Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T08:52:04Z"
+        },
+        "message": "commit 3 for PR #74: test(billing): update audit_billing.py"
+      }
+    },
+    {
+      "sha": "a58207a0c930",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T09:22:04Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-07T09:22:04Z"
+        },
+        "message": "commit 4 for PR #74: test(billing): update audit_billing.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 7401,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-08T22:52:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/74#pullrequestreview-7401"
+    },
+    {
+      "id": 7402,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-08T22:52:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/74#pullrequestreview-7402"
+    },
+    {
+      "id": 7403,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-08T22:52:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/74#pullrequestreview-7403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 401,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 401: verify boundary checks on line 15.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 15
+    },
+    {
+      "id": 402,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 402: verify boundary checks on line 25.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 25
+    },
+    {
+      "id": 403,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 403: verify boundary checks on line 15.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 15
+    },
+    {
+      "id": 404,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 404: verify boundary checks on line 25.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 25
+    },
+    {
+      "id": 405,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 405: verify boundary checks on line 15.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 15
+    },
+    {
+      "id": 406,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 406: verify boundary checks on line 25.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 25
+    },
+    {
+      "id": 407,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 407: verify boundary checks on line 35.",
+      "created_at": "2025-11-08T22:52:04Z",
+      "path": "billing/audit_billing.py",
+      "line": 35
+    }
+  ]
+}

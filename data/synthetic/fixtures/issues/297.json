@@ -1,0 +1,49 @@
+{
+  "id": 2000297,
+  "number": 297,
+  "title": "TASK: infra-deploy improvements for reliability",
+  "body": "Detailed description for task tracking in module infra/deploy/.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 27786,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-05T12:42:47Z",
+  "updated_at": "2026-08-19T12:42:47Z",
+  "closed_at": "2026-08-19T12:42:47Z",
+  "labels": [
+    "task",
+    "infra-deploy"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71217,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1217 on issue #297: updates from triage and reproduction steps.",
+      "created_at": "2026-08-05T23:42:47Z"
+    },
+    {
+      "id": 71218,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1218 on issue #297: updates from triage and reproduction steps.",
+      "created_at": "2026-08-06T07:42:47Z"
+    },
+    {
+      "id": 71219,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1219 on issue #297: updates from triage and reproduction steps.",
+      "created_at": "2026-08-06T21:42:47Z"
+    }
+  ]
+}

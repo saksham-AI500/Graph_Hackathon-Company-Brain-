@@ -20,6 +20,7 @@ class FileRecord(BaseModel):
 
 class ReviewRecord(BaseModel):
     """A review submitted on a pull request."""
+    id: Optional[int] = None
     author_login: str
     author_url: str
     state: str = "COMMENTED"  # APPROVED, CHANGES_REQUESTED, COMMENTED, DISMISSED

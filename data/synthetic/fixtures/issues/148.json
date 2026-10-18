@@ -1,0 +1,76 @@
+{
+  "id": 2000148,
+  "number": 148,
+  "title": "BUG: growth-experiments improvements for caching",
+  "body": "Detailed description for bug tracking in module growth/experiments/.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 24905,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-03T10:09:44Z",
+  "updated_at": "2026-04-02T10:09:44Z",
+  "closed_at": "2026-04-02T10:09:44Z",
+  "labels": [
+    "bug",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70603,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #603 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-04T06:09:44Z"
+    },
+    {
+      "id": 70604,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #604 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-05T05:09:44Z"
+    },
+    {
+      "id": 70605,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #605 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T01:09:44Z"
+    },
+    {
+      "id": 70606,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #606 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T20:09:44Z"
+    },
+    {
+      "id": 70607,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #607 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T12:09:44Z"
+    },
+    {
+      "id": 70608,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #608 on issue #148: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T21:09:44Z"
+    }
+  ]
+}

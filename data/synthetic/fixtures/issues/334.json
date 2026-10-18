@@ -1,0 +1,76 @@
+{
+  "id": 2000334,
+  "number": 334,
+  "title": "TASK: growth-referrals improvements for throughput",
+  "body": "Detailed description for task tracking in module growth/referrals/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-13T01:03:57Z",
+  "updated_at": "2026-09-30T01:03:57Z",
+  "closed_at": "2026-09-30T01:03:57Z",
+  "labels": [
+    "task",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71366,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #1366 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-13T19:03:57Z"
+    },
+    {
+      "id": 71367,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1367 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-14T02:03:57Z"
+    },
+    {
+      "id": 71368,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #1368 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-14T22:03:57Z"
+    },
+    {
+      "id": 71369,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #1369 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-15T19:03:57Z"
+    },
+    {
+      "id": 71370,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1370 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-16T02:03:57Z"
+    },
+    {
+      "id": 71371,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #1371 on issue #334: updates from triage and reproduction steps.",
+      "created_at": "2026-09-16T07:03:57Z"
+    }
+  ]
+}

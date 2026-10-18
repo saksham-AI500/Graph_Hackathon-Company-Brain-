@@ -1,0 +1,270 @@
+{
+  "id": 1000360,
+  "number": 360,
+  "state": "closed",
+  "title": "fix(growth_experiments): update guardrail_metrics.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-04-01T01:46:17Z",
+  "updated_at": "2026-04-03T09:46:17Z",
+  "closed_at": "2026-04-03T09:46:17Z",
+  "merged_at": "2026-04-03T09:46:17Z",
+  "merge_commit_sha": "7ca32bffab72",
+  "head": {
+    "ref": "feature/pr-360",
+    "sha": "7ca32bffab72"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/360",
+  "files": [
+    {
+      "filename": "growth/experiments/guardrail_metrics.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 10,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "963c522f4144",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T01:46:17Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T01:46:17Z"
+        },
+        "message": "commit 1 for PR #360: fix(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "40a4d4b350b8",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T02:16:17Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T02:16:17Z"
+        },
+        "message": "commit 2 for PR #360: fix(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "3008a0b61158",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T02:46:17Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T02:46:17Z"
+        },
+        "message": "commit 3 for PR #360: fix(growth_experiments): update guardrail_metrics.py"
+      }
+    },
+    {
+      "sha": "7ca32bffab72",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T03:16:17Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-04-01T03:16:17Z"
+        },
+        "message": "commit 4 for PR #360: fix(growth_experiments): update guardrail_metrics.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 36001,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-01T10:46:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/360#pullrequestreview-36001"
+    },
+    {
+      "id": 36002,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-01T10:46:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/360#pullrequestreview-36002"
+    },
+    {
+      "id": 36003,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-01T10:46:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/360#pullrequestreview-36003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1879,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 1879: verify boundary checks on line 15.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 15
+    },
+    {
+      "id": 1880,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 1880: verify boundary checks on line 25.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 25
+    },
+    {
+      "id": 1881,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 1881: verify boundary checks on line 35.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 35
+    },
+    {
+      "id": 1882,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 1882: verify boundary checks on line 45.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 45
+    },
+    {
+      "id": 1883,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 1883: verify boundary checks on line 55.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 55
+    },
+    {
+      "id": 1884,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1884: verify boundary checks on line 15.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 15
+    },
+    {
+      "id": 1885,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1885: verify boundary checks on line 25.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 25
+    },
+    {
+      "id": 1886,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1886: verify boundary checks on line 35.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 35
+    },
+    {
+      "id": 1887,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1887: verify boundary checks on line 45.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 45
+    },
+    {
+      "id": 1888,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1888: verify boundary checks on line 15.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 15
+    },
+    {
+      "id": 1889,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1889: verify boundary checks on line 25.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 25
+    },
+    {
+      "id": 1890,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1890: verify boundary checks on line 35.",
+      "created_at": "2026-04-01T10:46:17Z",
+      "path": "growth/experiments/guardrail_metrics.py",
+      "line": 35
+    }
+  ]
+}

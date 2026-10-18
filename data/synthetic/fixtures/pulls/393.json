@@ -1,0 +1,182 @@
+{
+  "id": 1000393,
+  "number": 393,
+  "state": "closed",
+  "title": "test(growth_experiments): update cuped.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-04-17T06:20:50Z",
+  "updated_at": "2026-04-20T06:20:50Z",
+  "closed_at": "2026-04-20T06:20:50Z",
+  "merged_at": "2026-04-20T06:20:50Z",
+  "merge_commit_sha": "747a6cc344b1",
+  "head": {
+    "ref": "feature/pr-393",
+    "sha": "747a6cc344b1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/393",
+  "files": [
+    {
+      "filename": "growth/experiments/cuped.py",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 14,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "460a642a49ed",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T06:20:50Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T06:20:50Z"
+        },
+        "message": "commit 1 for PR #393: test(growth_experiments): update cuped.py"
+      }
+    },
+    {
+      "sha": "9f06ffc13031",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T06:50:50Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T06:50:50Z"
+        },
+        "message": "commit 2 for PR #393: test(growth_experiments): update cuped.py"
+      }
+    },
+    {
+      "sha": "97ae4dd0a91a",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T07:20:50Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T07:20:50Z"
+        },
+        "message": "commit 3 for PR #393: test(growth_experiments): update cuped.py"
+      }
+    },
+    {
+      "sha": "747a6cc344b1",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T07:50:50Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-04-17T07:50:50Z"
+        },
+        "message": "commit 4 for PR #393: test(growth_experiments): update cuped.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 39301,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-18T10:20:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/393#pullrequestreview-39301"
+    },
+    {
+      "id": 39302,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-18T10:20:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/393#pullrequestreview-39302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2068,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2068: verify boundary checks on line 15.",
+      "created_at": "2026-04-18T10:20:50Z",
+      "path": "growth/experiments/cuped.py",
+      "line": 15
+    },
+    {
+      "id": 2069,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2069: verify boundary checks on line 25.",
+      "created_at": "2026-04-18T10:20:50Z",
+      "path": "growth/experiments/cuped.py",
+      "line": 25
+    },
+    {
+      "id": 2070,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2070: verify boundary checks on line 15.",
+      "created_at": "2026-04-18T10:20:50Z",
+      "path": "growth/experiments/cuped.py",
+      "line": 15
+    },
+    {
+      "id": 2071,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2071: verify boundary checks on line 25.",
+      "created_at": "2026-04-18T10:20:50Z",
+      "path": "growth/experiments/cuped.py",
+      "line": 25
+    },
+    {
+      "id": 2072,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2072: verify boundary checks on line 35.",
+      "created_at": "2026-04-18T10:20:50Z",
+      "path": "growth/experiments/cuped.py",
+      "line": 35
+    }
+  ]
+}

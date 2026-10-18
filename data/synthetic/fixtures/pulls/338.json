@@ -1,0 +1,161 @@
+{
+  "id": 1000338,
+  "number": 338,
+  "state": "closed",
+  "title": "perf(shared_utils): update README.md",
+  "body": "Implementation changes for shared_utils module improvements.\n\nFixes #113",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-03-20T10:16:55Z",
+  "updated_at": "2026-03-21T12:16:55Z",
+  "closed_at": "2026-03-21T12:16:55Z",
+  "merged_at": "2026-03-21T12:16:55Z",
+  "merge_commit_sha": "22f821f8ffc9",
+  "head": {
+    "ref": "feature/pr-338",
+    "sha": "22f821f8ffc9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/338",
+  "files": [
+    {
+      "filename": "shared/utils/README.md",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 7,
+      "changes": 50
+    },
+    {
+      "filename": "shared/utils/__pycache__/timezones.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 11,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8835dadd8988",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T10:16:55Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T10:16:55Z"
+        },
+        "message": "commit 1 for PR #338: perf(shared_utils): update README.md"
+      }
+    },
+    {
+      "sha": "9f2ba7dcc7fd",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T10:46:55Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T10:46:55Z"
+        },
+        "message": "commit 2 for PR #338: perf(shared_utils): update README.md"
+      }
+    },
+    {
+      "sha": "151c606f5d92",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T11:16:55Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T11:16:55Z"
+        },
+        "message": "commit 3 for PR #338: perf(shared_utils): update README.md"
+      }
+    },
+    {
+      "sha": "233cb21754a0",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T11:46:55Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T11:46:55Z"
+        },
+        "message": "commit 4 for PR #338: perf(shared_utils): update README.md"
+      }
+    },
+    {
+      "sha": "22f821f8ffc9",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T12:16:55Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-20T12:16:55Z"
+        },
+        "message": "commit 5 for PR #338: perf(shared_utils): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 33801,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-21T19:16:55Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/338#pullrequestreview-33801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1782,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1782: verify boundary checks on line 15.",
+      "created_at": "2026-03-21T19:16:55Z",
+      "path": "shared/utils/README.md",
+      "line": 15
+    },
+    {
+      "id": 1783,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1783: verify boundary checks on line 25.",
+      "created_at": "2026-03-21T19:16:55Z",
+      "path": "shared/utils/README.md",
+      "line": 25
+    }
+  ]
+}

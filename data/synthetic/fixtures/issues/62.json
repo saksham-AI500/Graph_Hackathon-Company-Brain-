@@ -1,0 +1,60 @@
+{
+  "id": 2000062,
+  "number": 62,
+  "title": "TASK: search improvements for caching",
+  "body": "Detailed description for task tracking in module search/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-03T21:25:54Z",
+  "updated_at": "2025-12-19T21:25:54Z",
+  "closed_at": "2025-12-19T21:25:54Z",
+  "labels": [
+    "task",
+    "search"
+  ],
+  "linked_pulls": [
+    63
+  ],
+  "comments": [
+    {
+      "id": 70253,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #253 on issue #62: updates from triage and reproduction steps.",
+      "created_at": "2025-12-04T01:25:54Z"
+    },
+    {
+      "id": 70254,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #254 on issue #62: updates from triage and reproduction steps.",
+      "created_at": "2025-12-04T17:25:54Z"
+    },
+    {
+      "id": 70255,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #255 on issue #62: updates from triage and reproduction steps.",
+      "created_at": "2025-12-05T11:25:54Z"
+    },
+    {
+      "id": 70256,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #256 on issue #62: updates from triage and reproduction steps.",
+      "created_at": "2025-12-05T15:25:54Z"
+    }
+  ]
+}

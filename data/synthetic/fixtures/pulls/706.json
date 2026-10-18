@@ -1,0 +1,191 @@
+{
+  "id": 1000706,
+  "number": 706,
+  "state": "closed",
+  "title": "chore(shared_utils): update env_reader.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2026-09-23T03:21:58Z",
+  "updated_at": "2026-09-25T16:21:58Z",
+  "closed_at": "2026-09-25T16:21:58Z",
+  "merged_at": "2026-09-25T16:21:58Z",
+  "merge_commit_sha": "ba99fecb0e24",
+  "head": {
+    "ref": "feature/pr-706",
+    "sha": "ba99fecb0e24"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/706",
+  "files": [
+    {
+      "filename": "shared/utils/env_reader.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 5,
+      "changes": 27
+    },
+    {
+      "filename": "shared/utils/__pycache__/geo.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 5,
+      "changes": 59
+    },
+    {
+      "filename": "shared/utils/__pycache__/deep_copy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 5,
+      "changes": 17
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b225e6fc8f32",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T03:21:58Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T03:21:58Z"
+        },
+        "message": "commit 1 for PR #706: chore(shared_utils): update env_reader.py"
+      }
+    },
+    {
+      "sha": "8726304eaff9",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T03:51:58Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T03:51:58Z"
+        },
+        "message": "commit 2 for PR #706: chore(shared_utils): update env_reader.py"
+      }
+    },
+    {
+      "sha": "ba99fecb0e24",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T04:21:58Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-23T04:21:58Z"
+        },
+        "message": "commit 3 for PR #706: chore(shared_utils): update env_reader.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 70601,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-24T08:21:58Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/706#pullrequestreview-70601"
+    },
+    {
+      "id": 70602,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-24T08:21:58Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/706#pullrequestreview-70602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3730,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3730: verify boundary checks on line 15.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 15
+    },
+    {
+      "id": 3731,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3731: verify boundary checks on line 25.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 25
+    },
+    {
+      "id": 3732,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3732: verify boundary checks on line 35.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 35
+    },
+    {
+      "id": 3733,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3733: verify boundary checks on line 15.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 15
+    },
+    {
+      "id": 3734,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3734: verify boundary checks on line 25.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 25
+    },
+    {
+      "id": 3735,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 3735: verify boundary checks on line 35.",
+      "created_at": "2026-09-24T08:21:58Z",
+      "path": "shared/utils/env_reader.py",
+      "line": 35
+    }
+  ]
+}

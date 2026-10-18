@@ -1,0 +1,110 @@
+{
+  "id": 1000705,
+  "number": 705,
+  "state": "closed",
+  "title": "perf(billing): update proration.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-09-22T16:03:13Z",
+  "updated_at": "2026-09-23T22:03:13Z",
+  "closed_at": "2026-09-23T22:03:13Z",
+  "merged_at": "2026-09-23T22:03:13Z",
+  "merge_commit_sha": "137482437317",
+  "head": {
+    "ref": "feature/pr-705",
+    "sha": "137482437317"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/705",
+  "files": [
+    {
+      "filename": "billing/__pycache__/proration.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 11,
+      "changes": 57
+    },
+    {
+      "filename": "billing/__pycache__/revenue_recognition.cpython-314.pyc",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 13,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8cc45184a386",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T16:03:13Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T16:03:13Z"
+        },
+        "message": "commit 1 for PR #705: perf(billing): update proration.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "709f61cb3f42",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T16:33:13Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T16:33:13Z"
+        },
+        "message": "commit 2 for PR #705: perf(billing): update proration.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "734e39caad81",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T17:03:13Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T17:03:13Z"
+        },
+        "message": "commit 3 for PR #705: perf(billing): update proration.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "137482437317",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T17:33:13Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-09-22T17:33:13Z"
+        },
+        "message": "commit 4 for PR #705: perf(billing): update proration.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

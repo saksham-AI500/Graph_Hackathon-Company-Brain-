@@ -1,0 +1,42 @@
+{
+  "id": 2000102,
+  "number": 102,
+  "title": "FEATURE: search-indexer improvements for reliability",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "hannah-schmidt",
+    "id": 23486,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-14T12:53:13Z",
+  "updated_at": "2026-02-10T12:53:13Z",
+  "closed_at": "2026-02-10T12:53:13Z",
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    542
+  ],
+  "comments": [
+    {
+      "id": 70417,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #417 on issue #102: updates from triage and reproduction steps.",
+      "created_at": "2026-01-15T12:53:13Z"
+    },
+    {
+      "id": 70418,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #418 on issue #102: updates from triage and reproduction steps.",
+      "created_at": "2026-01-16T02:53:13Z"
+    }
+  ]
+}

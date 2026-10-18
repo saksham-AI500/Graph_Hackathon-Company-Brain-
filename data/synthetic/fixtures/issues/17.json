@@ -1,0 +1,42 @@
+{
+  "id": 2000017,
+  "number": 17,
+  "title": "TASK: search-indexer improvements for reliability",
+  "body": "Detailed description for task tracking in module search/indexer/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-18T00:58:49Z",
+  "updated_at": "2025-11-15T00:58:49Z",
+  "closed_at": "2025-11-15T00:58:49Z",
+  "labels": [
+    "task",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    62
+  ],
+  "comments": [
+    {
+      "id": 70064,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #64 on issue #17: updates from triage and reproduction steps.",
+      "created_at": "2025-10-18T20:58:49Z"
+    },
+    {
+      "id": 70065,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #65 on issue #17: updates from triage and reproduction steps.",
+      "created_at": "2025-10-18T23:58:49Z"
+    }
+  ]
+}

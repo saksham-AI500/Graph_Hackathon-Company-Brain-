@@ -1,0 +1,155 @@
+{
+  "id": 1000260,
+  "number": 260,
+  "state": "closed",
+  "title": "feat(search_indexer): update pipeline.py",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #29",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-02-09T22:42:48Z",
+  "updated_at": "2026-02-12T21:42:48Z",
+  "closed_at": "2026-02-12T21:42:48Z",
+  "merged_at": "2026-02-12T21:42:48Z",
+  "merge_commit_sha": "e83165bed6ca",
+  "head": {
+    "ref": "feature/pr-260",
+    "sha": "e83165bed6ca"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/260",
+  "files": [
+    {
+      "filename": "api/gateway/router.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 8,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "deac6381e900",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T22:42:48Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T22:42:48Z"
+        },
+        "message": "commit 1 for PR #260: feat(search_indexer): update pipeline.py"
+      }
+    },
+    {
+      "sha": "01fff7cc55be",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T23:12:48Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T23:12:48Z"
+        },
+        "message": "commit 2 for PR #260: feat(search_indexer): update pipeline.py"
+      }
+    },
+    {
+      "sha": "e83165bed6ca",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T23:42:48Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-09T23:42:48Z"
+        },
+        "message": "commit 3 for PR #260: feat(search_indexer): update pipeline.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 26001,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-11T20:42:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/260#pullrequestreview-26001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1383,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1383: verify boundary checks on line 15.",
+      "created_at": "2026-02-11T20:42:48Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1384,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1384: verify boundary checks on line 25.",
+      "created_at": "2026-02-11T20:42:48Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1385,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1385: verify boundary checks on line 35.",
+      "created_at": "2026-02-11T20:42:48Z",
+      "path": "api/gateway/router.py",
+      "line": 35
+    },
+    {
+      "id": 1386,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1386: verify boundary checks on line 45.",
+      "created_at": "2026-02-11T20:42:48Z",
+      "path": "api/gateway/router.py",
+      "line": 45
+    },
+    {
+      "id": 1387,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1387: verify boundary checks on line 55.",
+      "created_at": "2026-02-11T20:42:48Z",
+      "path": "api/gateway/router.py",
+      "line": 55
+    }
+  ]
+}

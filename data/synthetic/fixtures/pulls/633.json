@@ -1,0 +1,106 @@
+{
+  "id": 1000633,
+  "number": 633,
+  "state": "closed",
+  "title": "test(auth_mfa): update mfa_policy.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-08-17T05:16:47Z",
+  "updated_at": "2026-08-18T07:16:47Z",
+  "closed_at": "2026-08-18T07:16:47Z",
+  "merged_at": "2026-08-18T07:16:47Z",
+  "merge_commit_sha": "674bab555137",
+  "head": {
+    "ref": "feature/pr-633",
+    "sha": "674bab555137"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/633",
+  "files": [
+    {
+      "filename": "auth/mfa/mfa_policy.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 1,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cb85d4e9a6ab",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-17T05:16:47Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-17T05:16:47Z"
+        },
+        "message": "commit 1 for PR #633: test(auth_mfa): update mfa_policy.py"
+      }
+    },
+    {
+      "sha": "674bab555137",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-17T05:46:47Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-08-17T05:46:47Z"
+        },
+        "message": "commit 2 for PR #633: test(auth_mfa): update mfa_policy.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 63301,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-19T05:16:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/633#pullrequestreview-63301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3336,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3336: verify boundary checks on line 15.",
+      "created_at": "2026-08-19T05:16:47Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 15
+    },
+    {
+      "id": 3337,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3337: verify boundary checks on line 25.",
+      "created_at": "2026-08-19T05:16:47Z",
+      "path": "auth/mfa/mfa_policy.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": 2000175,
+  "number": 175,
+  "title": "FEATURE: growth-experiments improvements for throughput",
+  "body": "Detailed description for feature tracking in module growth/experiments/.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 20702,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-31T12:05:44Z",
+  "updated_at": "2026-04-16T12:05:44Z",
+  "closed_at": "2026-04-16T12:05:44Z",
+  "labels": [
+    "feature",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70716,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #716 on issue #175: updates from triage and reproduction steps.",
+      "created_at": "2026-03-31T22:05:44Z"
+    },
+    {
+      "id": 70717,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #717 on issue #175: updates from triage and reproduction steps.",
+      "created_at": "2026-04-01T15:05:44Z"
+    }
+  ]
+}

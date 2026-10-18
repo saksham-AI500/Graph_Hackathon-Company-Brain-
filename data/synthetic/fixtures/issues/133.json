@@ -1,0 +1,51 @@
+{
+  "id": 2000133,
+  "number": 133,
+  "title": "FEATURE: payments improvements for latency",
+  "body": "Detailed description for feature tracking in module payments/.",
+  "user": {
+    "login": "devon-reed",
+    "id": 20546,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-02-15T19:02:09Z",
+  "updated_at": "2026-02-15T19:02:09Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "payments"
+  ],
+  "linked_pulls": [
+    575
+  ],
+  "comments": [
+    {
+      "id": 70545,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #545 on issue #133: updates from triage and reproduction steps.",
+      "created_at": "2026-02-16T16:02:09Z"
+    },
+    {
+      "id": 70546,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #546 on issue #133: updates from triage and reproduction steps.",
+      "created_at": "2026-02-17T15:02:09Z"
+    },
+    {
+      "id": 70547,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #547 on issue #133: updates from triage and reproduction steps.",
+      "created_at": "2026-02-18T03:02:09Z"
+    }
+  ]
+}

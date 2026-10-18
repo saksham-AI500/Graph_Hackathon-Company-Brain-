@@ -1,0 +1,218 @@
+{
+  "id": 1000547,
+  "number": 547,
+  "state": "closed",
+  "title": "refactor(search_indexer): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-07-03T16:38:34Z",
+  "updated_at": "2026-07-06T02:38:34Z",
+  "closed_at": "2026-07-06T02:38:34Z",
+  "merged_at": "2026-07-06T02:38:34Z",
+  "merge_commit_sha": "b108f40da8d6",
+  "head": {
+    "ref": "feature/pr-547",
+    "sha": "b108f40da8d6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/547",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 10,
+      "changes": 26
+    },
+    {
+      "filename": "search/indexer/crawler.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 6,
+      "changes": 17
+    },
+    {
+      "filename": "search/indexer/pipeline.py",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 13,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d11b5a9297df",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T16:38:34Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T16:38:34Z"
+        },
+        "message": "commit 1 for PR #547: refactor(search_indexer): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "03f7ea7f429a",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T17:08:34Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T17:08:34Z"
+        },
+        "message": "commit 2 for PR #547: refactor(search_indexer): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1e4e481066fd",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T17:38:34Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T17:38:34Z"
+        },
+        "message": "commit 3 for PR #547: refactor(search_indexer): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b108f40da8d6",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T18:08:34Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-03T18:08:34Z"
+        },
+        "message": "commit 4 for PR #547: refactor(search_indexer): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54701,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-03T21:38:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/547#pullrequestreview-54701"
+    },
+    {
+      "id": 54702,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-03T21:38:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/547#pullrequestreview-54702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2918,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2918: verify boundary checks on line 15.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2919,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2919: verify boundary checks on line 25.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2920,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2920: verify boundary checks on line 35.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2921,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2921: verify boundary checks on line 15.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2922,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2922: verify boundary checks on line 25.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2923,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2923: verify boundary checks on line 35.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2924,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2924: verify boundary checks on line 45.",
+      "created_at": "2026-07-03T21:38:34Z",
+      "path": "search/indexer/__pycache__/__init__.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

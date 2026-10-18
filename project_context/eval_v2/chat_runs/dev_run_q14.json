@@ -1,0 +1,89 @@
+{
+  "question_id": "Q14",
+  "question": "Is the incident runbook still accurate, or has the code changed since it was written?",
+  "timestamp": "2026-10-18T05:06:31.366584+00:00",
+  "model": "deepseek/deepseek-chat",
+  "status": "VERIFIED",
+  "tools_used": [
+    "request_sync",
+    "sync_status",
+    "find_stale_docs"
+  ],
+  "tool_calls_trace": [
+    {
+      "step": 0,
+      "action": "freshness_check",
+      "result": {
+        "repo": "FalkorDB/FalkorDB",
+        "last_sync_at": null,
+        "last_run_id": null,
+        "status": "idle",
+        "pr_cursor": 0,
+        "issue_cursor": 0
+      }
+    },
+    {
+      "step": 0,
+      "action": "triggered_sync",
+      "result": {
+        "run_id": "sync_1792299978",
+        "repo": "FalkorDB/FalkorDB",
+        "events_processed": 30,
+        "mutations_applied": 0,
+        "no_ops": 30,
+        "failures": 0,
+        "dry_run": true,
+        "errors": []
+      }
+    },
+    {
+      "step": 1,
+      "tool": "find_stale_docs",
+      "arguments": {
+        "limit": 1
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "raw_answer": "The incident runbook is outdated because it references a function that was removed from the codebase.\n\nContext: As of the latest sync, the runbook `docs/runbooks/payment-pipeline-recovery.md` mentions `reconcile_unsettled_batches()`, which was removed in PR #238. This suggests the runbook needs updating to reflect the current state of the payments pipeline.\n\nReasoning: The runbook's status is marked as \"OUTDATED\" because it references a function that no longer exists in the codebase. Other documents related to payments are also flagged as potentially stale, indicating broader changes in the payments module that may require documentation updates.\n\nSources:\n[S1] `docs/runbooks/payment-pipeline-recovery.md`, status: OUTDATED, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "The incident runbook is outdated because it references a function that was removed from the codebase.\n\nContext: As of the latest sync, the runbook `docs/runbooks/payment-pipeline-recovery.md` mentions `reconcile_unsettled_batches()`, which was removed in PR #238. This suggests the runbook needs updating to reflect the current state of the payments pipeline.\n\nReasoning: The runbook's status is marked as \"OUTDATED\" because it references a function that no longer exists in the codebase. Other documents related to payments are also flagged as potentially stale, indicating broader changes in the payments module that may require documentation updates.\n\nSources:\n[S1] `docs/runbooks/payment-pipeline-recovery.md`, status: OUTDATED, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md",
+      "claim_type": "GENERAL",
+      "source_ids": [
+        "S1"
+      ],
+      "verified": true,
+      "unresolved_reason": null,
+      "statement": "The incident runbook is outdated because it references a function that was removed from the codebase.\n\nContext: As of the latest sync, the runbook `docs/runbooks/payment-pipeline-recovery.md` mentions `reconcile_unsettled_batches()`, which was removed in PR #238. This suggests the runbook needs updating to reflect the current state of the payments pipeline.\n\nReasoning: The runbook's status is marked as \"OUTDATED\" because it references a function that no longer exists in the codebase. Other documents related to payments are also flagged as potentially stale, indicating broader changes in the payments module that may require documentation updates.\n\nSources:\n[S1] `docs/runbooks/payment-pipeline-recovery.md`, status: OUTDATED, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "`docs/runbooks/payment-pipeline-recovery.md`, stat",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md",
+      "title_or_desc": "`docs/runbooks/payment-pipeline-recovery.md`, status: OUTDATED",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "`docs/runbooks/payment-pipeline-recovery.md`, stat",
+      "description": "`docs/runbooks/payment-pipeline-recovery.md`, status: OUTDATED"
+    }
+  ],
+  "unresolved": [],
+  "latency_ms": 14749.9,
+  "compliance": {
+    "passed": true,
+    "violations": [],
+    "word_count": 97,
+    "has_direct_answer": true,
+    "has_context": true,
+    "has_sources": true,
+    "status": "VERIFIED"
+  }
+}

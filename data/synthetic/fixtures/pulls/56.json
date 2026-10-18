@@ -1,0 +1,200 @@
+{
+  "id": 1000056,
+  "number": 56,
+  "state": "closed",
+  "title": "docs(growth_referrals): update README.md",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2025-10-29T05:19:07Z",
+  "updated_at": "2025-10-31T23:19:07Z",
+  "closed_at": "2025-10-31T23:19:07Z",
+  "merged_at": "2025-10-31T23:19:07Z",
+  "merge_commit_sha": "a53e4fbc1e8a",
+  "head": {
+    "ref": "feature/pr-56",
+    "sha": "a53e4fbc1e8a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/56",
+  "files": [
+    {
+      "filename": "growth/referrals/README.md",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 7,
+      "changes": 30
+    },
+    {
+      "filename": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 3,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8e0d8f7f1cb8",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T05:19:07Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T05:19:07Z"
+        },
+        "message": "commit 1 for PR #56: docs(growth_referrals): update README.md"
+      }
+    },
+    {
+      "sha": "f3c6664c842b",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T05:49:07Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T05:49:07Z"
+        },
+        "message": "commit 2 for PR #56: docs(growth_referrals): update README.md"
+      }
+    },
+    {
+      "sha": "136d94489ddd",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T06:19:07Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T06:19:07Z"
+        },
+        "message": "commit 3 for PR #56: docs(growth_referrals): update README.md"
+      }
+    },
+    {
+      "sha": "a53e4fbc1e8a",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T06:49:07Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-29T06:49:07Z"
+        },
+        "message": "commit 4 for PR #56: docs(growth_referrals): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 5601,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-29T23:19:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/56#pullrequestreview-5601"
+    },
+    {
+      "id": 5602,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-29T23:19:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/56#pullrequestreview-5602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 308,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 308: verify boundary checks on line 15.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 15
+    },
+    {
+      "id": 309,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 309: verify boundary checks on line 25.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 25
+    },
+    {
+      "id": 310,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 310: verify boundary checks on line 35.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 35
+    },
+    {
+      "id": 311,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 311: verify boundary checks on line 45.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 45
+    },
+    {
+      "id": 312,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 312: verify boundary checks on line 15.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 15
+    },
+    {
+      "id": 313,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 313: verify boundary checks on line 25.",
+      "created_at": "2025-10-29T23:19:07Z",
+      "path": "growth/referrals/README.md",
+      "line": 25
+    }
+  ]
+}

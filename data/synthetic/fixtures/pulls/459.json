@@ -1,0 +1,161 @@
+{
+  "id": 1000459,
+  "number": 459,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update sample_sizer.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.\n\nCloses #1",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2026-05-21T03:43:18Z",
+  "updated_at": "2026-05-22T10:43:18Z",
+  "closed_at": "2026-05-22T10:43:18Z",
+  "merged_at": "2026-05-22T10:43:18Z",
+  "merge_commit_sha": "097c399378e6",
+  "head": {
+    "ref": "feature/pr-459",
+    "sha": "097c399378e6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/459",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 12,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5e6f65b73134",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-05-21T03:43:18Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-05-21T03:43:18Z"
+        },
+        "message": "commit 1 for PR #459: refactor(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "097c399378e6",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-05-21T04:13:18Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-05-21T04:13:18Z"
+        },
+        "message": "commit 2 for PR #459: refactor(growth_experiments): update sample_sizer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 45901,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-21T14:43:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/459#pullrequestreview-45901"
+    },
+    {
+      "id": 45902,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-21T14:43:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/459#pullrequestreview-45902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2456,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2456: verify boundary checks on line 15.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2457,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2457: verify boundary checks on line 25.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2458,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2458: verify boundary checks on line 35.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2459,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2459: verify boundary checks on line 45.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2460,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2460: verify boundary checks on line 15.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2461,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2461: verify boundary checks on line 25.",
+      "created_at": "2026-05-21T14:43:18Z",
+      "path": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

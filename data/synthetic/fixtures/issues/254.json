@@ -1,0 +1,40 @@
+{
+  "id": 2000254,
+  "number": 254,
+  "title": "BUG: search improvements for reliability",
+  "body": "Detailed description for bug tracking in module search/.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 25435,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-21T18:35:26Z",
+  "updated_at": "2026-07-20T18:35:26Z",
+  "closed_at": "2026-07-20T18:35:26Z",
+  "labels": [
+    "bug",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71046,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1046 on issue #254: updates from triage and reproduction steps.",
+      "created_at": "2026-06-22T16:35:26Z"
+    },
+    {
+      "id": 71047,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #1047 on issue #254: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T11:35:26Z"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "handle": "@acme/platform",
+    "name": "Platform & Infrastructure",
+    "target_count": 14,
+    "members": [
+      "caleb-rivers",
+      "clara-oswald",
+      "devon-reed",
+      "liam-chen",
+      "maya-lin",
+      "sophia-rossi",
+      "mateo-silva",
+      "aiden-cross",
+      "olivia-taylor",
+      "zane-malik",
+      "hannah-schmidt",
+      "kevin-malone",
+      "jordan-hayes",
+      "felix-baum"
+    ],
+    "senior_reviewers": [
+      "caleb-rivers",
+      "clara-oswald",
+      "devon-reed"
+    ],
+    "primary_modules": [
+      "infra/deploy/",
+      "infra/observability/",
+      "api/gateway/",
+      "shared/utils/"
+    ]
+  },
+  {
+    "handle": "@acme/payments",
+    "name": "Payments & Billing Core",
+    "target_count": 13,
+    "members": [
+      "priya-sharma",
+      "marcus-vance",
+      "nora-al-mansoor",
+      "diego-ramirez",
+      "chloe-bennett",
+      "raj-kulkarni",
+      "amara-okafor",
+      "tariq-aziz",
+      "lina-kostas",
+      "ethan-hunt",
+      "leila-farah",
+      "elena-rostova",
+      "lucas-vogel"
+    ],
+    "senior_reviewers": [
+      "priya-sharma",
+      "marcus-vance",
+      "nora-al-mansoor"
+    ],
+    "primary_modules": [
+      "payments/",
+      "payments/refunds/",
+      "billing/"
+    ]
+  },
+  {
+    "handle": "@acme/identity",
+    "name": "Identity & Access Management",
+    "target_count": 11,
+    "members": [
+      "ananya-rao",
+      "gabriel-santos",
+      "zoe-kravitz",
+      "owen-murphy",
+      "fatima-zahra",
+      "kai-nielsen",
+      "isabella-martinez",
+      "hugo-leclerc",
+      "tanya-popova",
+      "ben-carter",
+      "samir-patel"
+    ],
+    "senior_reviewers": [
+      "ananya-rao",
+      "gabriel-santos"
+    ],
+    "primary_modules": [
+      "auth/",
+      "auth/mfa/"
+    ]
+  },
+  {
+    "handle": "@acme/growth",
+    "name": "Search & Growth Engineering",
+    "target_count": 12,
+    "members": [
+      "arjun-mehta",
+      "emma-lindqvist",
+      "lucia-moretti",
+      "noah-kim",
+      "yuki-tanaka",
+      "carlos-mendez",
+      "ingrid-berg",
+      "hassan-el-sayed",
+      "mila-jovanovic",
+      "leo-dupont",
+      "rachel-green-fictional",
+      "maya-zheng"
+    ],
+    "senior_reviewers": [
+      "arjun-mehta",
+      "emma-lindqvist"
+    ],
+    "primary_modules": [
+      "search/",
+      "search/indexer/",
+      "notifications/",
+      "growth/experiments/",
+      "growth/referrals/"
+    ]
+  }
+]

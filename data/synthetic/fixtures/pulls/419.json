@@ -1,0 +1,117 @@
+{
+  "id": 1000419,
+  "number": 419,
+  "state": "closed",
+  "title": "test(infra_deploy): update deploy.yaml",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-04-30T21:39:30Z",
+  "updated_at": "2026-05-02T06:39:30Z",
+  "closed_at": "2026-05-02T06:39:30Z",
+  "merged_at": "2026-05-02T06:39:30Z",
+  "merge_commit_sha": "0b8dfe2f089e",
+  "head": {
+    "ref": "feature/pr-419",
+    "sha": "0b8dfe2f089e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/419",
+  "files": [
+    {
+      "filename": "infra/deploy/deploy.yaml",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 5,
+      "changes": 55
+    },
+    {
+      "filename": "infra/deploy/__pycache__/rollback.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 3,
+      "changes": 60
+    },
+    {
+      "filename": "infra/deploy/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 13,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ca2962f5de3c",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T21:39:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T21:39:30Z"
+        },
+        "message": "commit 1 for PR #419: test(infra_deploy): update deploy.yaml"
+      }
+    },
+    {
+      "sha": "f9518838f836",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T22:09:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T22:09:30Z"
+        },
+        "message": "commit 2 for PR #419: test(infra_deploy): update deploy.yaml"
+      }
+    },
+    {
+      "sha": "4a113daa0deb",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T22:39:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T22:39:30Z"
+        },
+        "message": "commit 3 for PR #419: test(infra_deploy): update deploy.yaml"
+      }
+    },
+    {
+      "sha": "0b8dfe2f089e",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T23:09:30Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-04-30T23:09:30Z"
+        },
+        "message": "commit 4 for PR #419: test(infra_deploy): update deploy.yaml"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

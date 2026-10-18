@@ -1,0 +1,58 @@
+{
+  "id": 2000341,
+  "number": 341,
+  "title": "FEATURE: infra-observability improvements for latency",
+  "body": "Detailed description for feature tracking in module infra/observability/.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 20609,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-20T08:14:04Z",
+  "updated_at": "2026-09-29T08:14:04Z",
+  "closed_at": "2026-09-29T08:14:04Z",
+  "labels": [
+    "feature",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71398,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1398 on issue #341: updates from triage and reproduction steps.",
+      "created_at": "2026-09-20T22:14:04Z"
+    },
+    {
+      "id": 71399,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1399 on issue #341: updates from triage and reproduction steps.",
+      "created_at": "2026-09-21T19:14:04Z"
+    },
+    {
+      "id": 71400,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #1400 on issue #341: updates from triage and reproduction steps.",
+      "created_at": "2026-09-22T17:14:04Z"
+    },
+    {
+      "id": 71401,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #1401 on issue #341: updates from triage and reproduction steps.",
+      "created_at": "2026-09-23T17:14:04Z"
+    }
+  ]
+}

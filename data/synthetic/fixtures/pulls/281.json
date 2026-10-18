@@ -1,0 +1,146 @@
+{
+  "id": 1000281,
+  "number": 281,
+  "state": "closed",
+  "title": "chore(payments_refunds): update __init__.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-02-20T01:49:44Z",
+  "updated_at": "2026-02-22T05:49:44Z",
+  "closed_at": "2026-02-22T05:49:44Z",
+  "merged_at": "2026-02-22T05:49:44Z",
+  "merge_commit_sha": "78a7957e865f",
+  "head": {
+    "ref": "feature/pr-281",
+    "sha": "78a7957e865f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/281",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 9,
+      "changes": 43
+    },
+    {
+      "filename": "payments/refunds/__init__.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 11,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "784556449a57",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-20T01:49:44Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-20T01:49:44Z"
+        },
+        "message": "commit 1 for PR #281: chore(payments_refunds): update __init__.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "78a7957e865f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-20T02:19:44Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-20T02:19:44Z"
+        },
+        "message": "commit 2 for PR #281: chore(payments_refunds): update __init__.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 28101,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-21T05:49:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/281#pullrequestreview-28101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1484,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1484: verify boundary checks on line 15.",
+      "created_at": "2026-02-21T05:49:44Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1485,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1485: verify boundary checks on line 25.",
+      "created_at": "2026-02-21T05:49:44Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1486,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1486: verify boundary checks on line 35.",
+      "created_at": "2026-02-21T05:49:44Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1487,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1487: verify boundary checks on line 45.",
+      "created_at": "2026-02-21T05:49:44Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1488,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1488: verify boundary checks on line 55.",
+      "created_at": "2026-02-21T05:49:44Z",
+      "path": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

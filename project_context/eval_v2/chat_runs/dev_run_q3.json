@@ -1,0 +1,119 @@
+{
+  "question_id": "Q3",
+  "question": "Which documents mention payments/ but were not updated after a PR changed payments/?",
+  "timestamp": "2026-10-18T05:04:40.233464+00:00",
+  "model": "deepseek/deepseek-chat",
+  "status": "VERIFIED",
+  "tools_used": [
+    "request_sync",
+    "sync_status",
+    "find_stale_docs"
+  ],
+  "tool_calls_trace": [
+    {
+      "step": 0,
+      "action": "freshness_check",
+      "result": {
+        "repo": "FalkorDB/FalkorDB",
+        "last_sync_at": null,
+        "last_run_id": null,
+        "status": "idle",
+        "pr_cursor": 0,
+        "issue_cursor": 0
+      }
+    },
+    {
+      "step": 0,
+      "action": "triggered_sync",
+      "result": {
+        "run_id": "sync_1792299857",
+        "repo": "FalkorDB/FalkorDB",
+        "events_processed": 30,
+        "mutations_applied": 0,
+        "no_ops": 30,
+        "failures": 0,
+        "dry_run": true,
+        "errors": []
+      }
+    },
+    {
+      "step": 1,
+      "tool": "find_stale_docs",
+      "arguments": {
+        "as_of": null
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "raw_answer": "The following documents mention `payments/` but were not updated after changes to the module:\n\n1. **docs/runbooks/payment-pipeline-recovery.md**: Outdated because it references `reconcile_unsettled_batches()`, which was removed in PR #238 [S1].  \n2. **docs/adr/0005-database-sharding.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after schema changes [S2].  \n3. **docs/modules/payments_refunds-README.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after refactoring [S3].  \n\n**Reasoning**: These documents were flagged because they reference `payments/` but lack updates after recent changes. The runbook is explicitly outdated due to a removed function, while the ADR and README are flagged as potentially stale based on their mentions of `payments/` without corresponding updates.  \n\nSources:  \n[S1] [docs/runbooks/payment-pipeline-recovery.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md)  \n[S2] [docs/adr/0005-database-sharding.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md)  \n[S3] [docs/modules/payments_refunds-README.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/modules/payments_refunds-README.md)",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "The following documents mention `payments/` but were not updated after changes to the module:\n\n1. **docs/runbooks/payment-pipeline-recovery.md**: Outdated because it references `reconcile_unsettled_batches()`, which was removed in PR #238 [S1].  \n2. **docs/adr/0005-database-sharding.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after schema changes [S2].  \n3. **docs/modules/payments_refunds-README.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after refactoring [S3].  \n\n**Reasoning**: These documents were flagged because they reference `payments/` but lack updates after recent changes. The runbook is explicitly outdated due to a removed function, while the ADR and README are flagged as potentially stale based on their mentions of `payments/` without corresponding updates.  \n\nSources:  \n[S1] [docs/runbooks/payment-pipeline-recovery.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md)  \n[S2] [docs/adr/0005-database-sharding.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md)  \n[S3] [docs/modules/payments_refunds-README.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/modules/payments_refunds-README.md)",
+      "claim_type": "GENERAL",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "verified": true,
+      "unresolved_reason": null,
+      "statement": "The following documents mention `payments/` but were not updated after changes to the module:\n\n1. **docs/runbooks/payment-pipeline-recovery.md**: Outdated because it references `reconcile_unsettled_batches()`, which was removed in PR #238 [S1].  \n2. **docs/adr/0005-database-sharding.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after schema changes [S2].  \n3. **docs/modules/payments_refunds-README.md**: Potentially stale as it mentions `payments/` but wasn\u2019t updated after refactoring [S3].  \n\n**Reasoning**: These documents were flagged because they reference `payments/` but lack updates after recent changes. The runbook is explicitly outdated due to a removed function, while the ADR and README are flagged as potentially stale based on their mentions of `payments/` without corresponding updates.  \n\nSources:  \n[S1] [docs/runbooks/payment-pipeline-recovery.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md)  \n[S2] [docs/adr/0005-database-sharding.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md)  \n[S3] [docs/modules/payments_refunds-README.md](https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/modules/payments_refunds-README.md)"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "[docs/runbooks/payment-pipeline-recovery.md]()",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/runbooks/payment-pipeline-recovery.md",
+      "title_or_desc": "[docs/runbooks/payment-pipeline-recovery.md]()",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "[docs/runbooks/payment-pipeline-recovery.md]()",
+      "description": "[docs/runbooks/payment-pipeline-recovery.md]()"
+    },
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "[docs/adr/0005-database-sharding.md]()",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md",
+      "title_or_desc": "[docs/adr/0005-database-sharding.md]()",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "[docs/adr/0005-database-sharding.md]()",
+      "description": "[docs/adr/0005-database-sharding.md]()"
+    },
+    {
+      "id": "S3",
+      "entity_type": "Evidence",
+      "identifier": "[docs/modules/payments_refunds-README.md]()",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/modules/payments_refunds-README.md",
+      "title_or_desc": "[docs/modules/payments_refunds-README.md]()",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S3",
+      "entity_id": "[docs/modules/payments_refunds-README.md]()",
+      "description": "[docs/modules/payments_refunds-README.md]()"
+    }
+  ],
+  "unresolved": [],
+  "latency_ms": 24136.44,
+  "compliance": {
+    "passed": false,
+    "violations": [
+      "Missing temporal context or as-of date."
+    ],
+    "word_count": 108,
+    "has_direct_answer": true,
+    "has_context": false,
+    "has_sources": true,
+    "status": "VERIFIED"
+  }
+}

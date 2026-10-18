@@ -1,0 +1,229 @@
+{
+  "id": 1000006,
+  "number": 6,
+  "state": "closed",
+  "title": "perf(api_gateway): update middleware.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "ben-carter",
+    "id": 29818,
+    "type": "User"
+  },
+  "created_at": "2025-10-03T09:43:30Z",
+  "updated_at": "2025-10-05T07:43:30Z",
+  "closed_at": "2025-10-05T07:43:30Z",
+  "merged_at": "2025-10-05T07:43:30Z",
+  "merge_commit_sha": "71228bfc2ebe",
+  "head": {
+    "ref": "feature/pr-6",
+    "sha": "71228bfc2ebe"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/6",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 11,
+      "changes": 37
+    },
+    {
+      "filename": "api/gateway/service_discovery.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 8,
+      "changes": 26
+    },
+    {
+      "filename": "api/gateway/__pycache__/error_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 14,
+      "changes": 59
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2912e5dca472",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T09:43:30Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T09:43:30Z"
+        },
+        "message": "commit 1 for PR #6: perf(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a1df6cd8183a",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T10:13:30Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T10:13:30Z"
+        },
+        "message": "commit 2 for PR #6: perf(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0d2696c24ca8",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T10:43:30Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T10:43:30Z"
+        },
+        "message": "commit 3 for PR #6: perf(api_gateway): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "71228bfc2ebe",
+      "commit": {
+        "author": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T11:13:30Z"
+        },
+        "committer": {
+          "name": "Ben Carter",
+          "email": "ben-carter@example.com",
+          "date": "2025-10-03T11:13:30Z"
+        },
+        "message": "commit 4 for PR #6: perf(api_gateway): update middleware.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 601,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-03T12:43:30Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/6#pullrequestreview-601"
+    },
+    {
+      "id": 602,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-03T12:43:30Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/6#pullrequestreview-602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 30,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 30: verify boundary checks on line 15.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 31,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 31: verify boundary checks on line 25.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 32,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 32: verify boundary checks on line 35.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 33,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 33: verify boundary checks on line 15.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 34,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 34: verify boundary checks on line 25.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 35,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 35: verify boundary checks on line 35.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 36,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 36: verify boundary checks on line 45.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 37,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 37: verify boundary checks on line 55.",
+      "created_at": "2025-10-03T12:43:30Z",
+      "path": "api/gateway/__pycache__/middleware.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": 2000274,
+  "number": 274,
+  "title": "TASK: payments improvements for reliability",
+  "body": "Detailed description for task tracking in module payments/.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 21277,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-12T14:05:28Z",
+  "updated_at": "2026-08-01T14:05:28Z",
+  "closed_at": "2026-08-01T14:05:28Z",
+  "labels": [
+    "task",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71125,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1125 on issue #274: updates from triage and reproduction steps.",
+      "created_at": "2026-07-13T02:05:28Z"
+    },
+    {
+      "id": 71126,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1126 on issue #274: updates from triage and reproduction steps.",
+      "created_at": "2026-07-13T23:05:28Z"
+    },
+    {
+      "id": 71127,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1127 on issue #274: updates from triage and reproduction steps.",
+      "created_at": "2026-07-14T07:05:28Z"
+    },
+    {
+      "id": 71128,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #1128 on issue #274: updates from triage and reproduction steps.",
+      "created_at": "2026-07-14T21:05:28Z"
+    }
+  ]
+}

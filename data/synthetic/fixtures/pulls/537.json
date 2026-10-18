@@ -1,0 +1,117 @@
+{
+  "id": 1000537,
+  "number": 537,
+  "state": "closed",
+  "title": "test(payments_refunds): update disputes.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 28052,
+    "type": "User"
+  },
+  "created_at": "2026-06-29T15:18:41Z",
+  "updated_at": "2026-07-01T22:18:41Z",
+  "closed_at": "2026-07-01T22:18:41Z",
+  "merged_at": "2026-07-01T22:18:41Z",
+  "merge_commit_sha": "904a8823ead4",
+  "head": {
+    "ref": "feature/pr-537",
+    "sha": "904a8823ead4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/537",
+  "files": [
+    {
+      "filename": "payments/refunds/disputes.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 15,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "479ba49f7937",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-06-29T15:18:41Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-06-29T15:18:41Z"
+        },
+        "message": "commit 1 for PR #537: test(payments_refunds): update disputes.py"
+      }
+    },
+    {
+      "sha": "904a8823ead4",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-06-29T15:48:41Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2026-06-29T15:48:41Z"
+        },
+        "message": "commit 2 for PR #537: test(payments_refunds): update disputes.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 53701,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-30T04:18:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/537#pullrequestreview-53701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2884,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2884: verify boundary checks on line 15.",
+      "created_at": "2026-06-30T04:18:41Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 15
+    },
+    {
+      "id": 2885,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2885: verify boundary checks on line 25.",
+      "created_at": "2026-06-30T04:18:41Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 25
+    },
+    {
+      "id": 2886,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2886: verify boundary checks on line 35.",
+      "created_at": "2026-06-30T04:18:41Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 35
+    }
+  ]
+}

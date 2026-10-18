@@ -1,0 +1,60 @@
+{
+  "id": 2000077,
+  "number": 77,
+  "title": "BUG: notifications improvements for reliability",
+  "body": "Detailed description for bug tracking in module notifications/.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 25435,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-19T11:39:00Z",
+  "updated_at": "2025-12-21T11:39:00Z",
+  "closed_at": "2025-12-21T11:39:00Z",
+  "labels": [
+    "bug",
+    "notifications"
+  ],
+  "linked_pulls": [
+    470
+  ],
+  "comments": [
+    {
+      "id": 70312,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #312 on issue #77: updates from triage and reproduction steps.",
+      "created_at": "2025-12-20T07:39:00Z"
+    },
+    {
+      "id": 70313,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #313 on issue #77: updates from triage and reproduction steps.",
+      "created_at": "2025-12-21T04:39:00Z"
+    },
+    {
+      "id": 70314,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Comment #314 on issue #77: updates from triage and reproduction steps.",
+      "created_at": "2025-12-21T13:39:00Z"
+    },
+    {
+      "id": 70315,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #315 on issue #77: updates from triage and reproduction steps.",
+      "created_at": "2025-12-22T03:39:00Z"
+    }
+  ]
+}

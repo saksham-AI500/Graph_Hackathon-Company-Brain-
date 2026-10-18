@@ -1,0 +1,167 @@
+{
+  "id": 1000469,
+  "number": 469,
+  "state": "closed",
+  "title": "feat(payments_refunds): update settlement_ledger.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-05-26T05:40:03Z",
+  "updated_at": "2026-05-28T03:40:03Z",
+  "closed_at": "2026-05-28T03:40:03Z",
+  "merged_at": "2026-05-28T03:40:03Z",
+  "merge_commit_sha": "994e29b5909a",
+  "head": {
+    "ref": "feature/pr-469",
+    "sha": "994e29b5909a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/469",
+  "files": [
+    {
+      "filename": "payments/refunds/settlement_ledger.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 11,
+      "changes": 26
+    },
+    {
+      "filename": "payments/refunds/__pycache__/settlement_ledger.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 12,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "937880ccc2c5",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T05:40:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T05:40:03Z"
+        },
+        "message": "commit 1 for PR #469: feat(payments_refunds): update settlement_ledger.py"
+      }
+    },
+    {
+      "sha": "d4718caae2fe",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T06:10:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T06:10:03Z"
+        },
+        "message": "commit 2 for PR #469: feat(payments_refunds): update settlement_ledger.py"
+      }
+    },
+    {
+      "sha": "5dc816793849",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T06:40:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T06:40:03Z"
+        },
+        "message": "commit 3 for PR #469: feat(payments_refunds): update settlement_ledger.py"
+      }
+    },
+    {
+      "sha": "994e29b5909a",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T07:10:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-05-26T07:10:03Z"
+        },
+        "message": "commit 4 for PR #469: feat(payments_refunds): update settlement_ledger.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 46901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-27T08:40:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/469#pullrequestreview-46901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2510,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2510: verify boundary checks on line 15.",
+      "created_at": "2026-05-27T08:40:03Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 15
+    },
+    {
+      "id": 2511,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2511: verify boundary checks on line 25.",
+      "created_at": "2026-05-27T08:40:03Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 25
+    },
+    {
+      "id": 2512,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2512: verify boundary checks on line 35.",
+      "created_at": "2026-05-27T08:40:03Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 35
+    },
+    {
+      "id": 2513,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2513: verify boundary checks on line 45.",
+      "created_at": "2026-05-27T08:40:03Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 45
+    }
+  ]
+}

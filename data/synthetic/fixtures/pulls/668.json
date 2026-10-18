@@ -1,0 +1,179 @@
+{
+  "id": 1000668,
+  "number": 668,
+  "state": "closed",
+  "title": "test(growth_experiments): update config_exp.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29839,
+    "type": "User"
+  },
+  "created_at": "2026-09-03T22:40:35Z",
+  "updated_at": "2026-09-06T21:40:35Z",
+  "closed_at": "2026-09-06T21:40:35Z",
+  "merged_at": "2026-09-06T21:40:35Z",
+  "merge_commit_sha": "77a5c19cc960",
+  "head": {
+    "ref": "feature/pr-668",
+    "sha": "77a5c19cc960"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/668",
+  "files": [
+    {
+      "filename": "growth/experiments/config_exp.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 14,
+      "changes": 10
+    },
+    {
+      "filename": "growth/experiments/statistical_engine.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 3,
+      "changes": 9
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3763b86198f8",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-03T22:40:35Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-03T22:40:35Z"
+        },
+        "message": "commit 1 for PR #668: test(growth_experiments): update config_exp.py"
+      }
+    },
+    {
+      "sha": "77a5c19cc960",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-03T23:10:35Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-03T23:10:35Z"
+        },
+        "message": "commit 2 for PR #668: test(growth_experiments): update config_exp.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 66801,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-04T08:40:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/668#pullrequestreview-66801"
+    },
+    {
+      "id": 66802,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-04T08:40:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/668#pullrequestreview-66802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3495,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3495: verify boundary checks on line 15.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 15
+    },
+    {
+      "id": 3496,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3496: verify boundary checks on line 25.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 25
+    },
+    {
+      "id": 3497,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3497: verify boundary checks on line 35.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 35
+    },
+    {
+      "id": 3498,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3498: verify boundary checks on line 45.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 45
+    },
+    {
+      "id": 3499,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3499: verify boundary checks on line 15.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 15
+    },
+    {
+      "id": 3500,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3500: verify boundary checks on line 25.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 25
+    },
+    {
+      "id": 3501,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3501: verify boundary checks on line 35.",
+      "created_at": "2026-09-04T08:40:35Z",
+      "path": "growth/experiments/config_exp.py",
+      "line": 35
+    }
+  ]
+}

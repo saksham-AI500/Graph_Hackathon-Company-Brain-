@@ -1,0 +1,154 @@
+{
+  "id": 1000546,
+  "number": 546,
+  "state": "closed",
+  "title": "feat(infra_observability): update README.md",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2026-07-03T16:12:07Z",
+  "updated_at": "2026-07-06T02:12:07Z",
+  "closed_at": "2026-07-06T02:12:07Z",
+  "merged_at": "2026-07-06T02:12:07Z",
+  "merge_commit_sha": "624656064c62",
+  "head": {
+    "ref": "feature/pr-546",
+    "sha": "624656064c62"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/546",
+  "files": [
+    {
+      "filename": "infra/observability/README.md",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 3,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b2a65f896de0",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T16:12:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T16:12:07Z"
+        },
+        "message": "commit 1 for PR #546: feat(infra_observability): update README.md"
+      }
+    },
+    {
+      "sha": "317c2bb7732e",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T16:42:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T16:42:07Z"
+        },
+        "message": "commit 2 for PR #546: feat(infra_observability): update README.md"
+      }
+    },
+    {
+      "sha": "ebc95d70f938",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T17:12:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T17:12:07Z"
+        },
+        "message": "commit 3 for PR #546: feat(infra_observability): update README.md"
+      }
+    },
+    {
+      "sha": "ddaafa284dc0",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T17:42:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T17:42:07Z"
+        },
+        "message": "commit 4 for PR #546: feat(infra_observability): update README.md"
+      }
+    },
+    {
+      "sha": "624656064c62",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T18:12:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-07-03T18:12:07Z"
+        },
+        "message": "commit 5 for PR #546: feat(infra_observability): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54601,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-05T11:12:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/546#pullrequestreview-54601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2916,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2916: verify boundary checks on line 15.",
+      "created_at": "2026-07-05T11:12:07Z",
+      "path": "infra/observability/README.md",
+      "line": 15
+    },
+    {
+      "id": 2917,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2917: verify boundary checks on line 25.",
+      "created_at": "2026-07-05T11:12:07Z",
+      "path": "infra/observability/README.md",
+      "line": 25
+    }
+  ]
+}

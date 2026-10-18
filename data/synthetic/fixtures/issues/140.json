@@ -1,0 +1,42 @@
+{
+  "id": 2000140,
+  "number": 140,
+  "title": "PERF: payments improvements for security",
+  "body": "Detailed description for perf tracking in module payments/.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 27770,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-23T01:44:26Z",
+  "updated_at": "2026-02-25T01:44:26Z",
+  "closed_at": "2026-02-25T01:44:26Z",
+  "labels": [
+    "perf",
+    "payments"
+  ],
+  "linked_pulls": [
+    620
+  ],
+  "comments": [
+    {
+      "id": 70569,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #569 on issue #140: updates from triage and reproduction steps.",
+      "created_at": "2026-02-23T12:44:26Z"
+    },
+    {
+      "id": 70570,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Comment #570 on issue #140: updates from triage and reproduction steps.",
+      "created_at": "2026-02-23T19:44:26Z"
+    }
+  ]
+}

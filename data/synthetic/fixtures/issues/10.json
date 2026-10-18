@@ -1,0 +1,69 @@
+{
+  "id": 2000010,
+  "number": 10,
+  "title": "PERF: auth improvements for reliability",
+  "body": "Detailed description for perf tracking in module auth/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-10T18:17:26Z",
+  "updated_at": "2025-10-23T18:17:26Z",
+  "closed_at": "2025-10-23T18:17:26Z",
+  "labels": [
+    "perf",
+    "auth"
+  ],
+  "linked_pulls": [
+    594
+  ],
+  "comments": [
+    {
+      "id": 70033,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #33 on issue #10: updates from triage and reproduction steps.",
+      "created_at": "2025-10-11T10:17:26Z"
+    },
+    {
+      "id": 70034,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #34 on issue #10: updates from triage and reproduction steps.",
+      "created_at": "2025-10-12T05:17:26Z"
+    },
+    {
+      "id": 70035,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #35 on issue #10: updates from triage and reproduction steps.",
+      "created_at": "2025-10-13T03:17:26Z"
+    },
+    {
+      "id": 70036,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #36 on issue #10: updates from triage and reproduction steps.",
+      "created_at": "2025-10-13T05:17:26Z"
+    },
+    {
+      "id": 70037,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #37 on issue #10: updates from triage and reproduction steps.",
+      "created_at": "2025-10-13T12:17:26Z"
+    }
+  ]
+}

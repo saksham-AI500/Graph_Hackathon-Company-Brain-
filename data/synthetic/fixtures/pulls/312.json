@@ -1,0 +1,128 @@
+{
+  "id": 1000312,
+  "number": 312,
+  "state": "closed",
+  "title": "feat(gateway): support WebSocket proxying for real-time channels",
+  "body": "Add duplex frame forwarding for notifications websocket connections.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-03-07T18:40:21Z",
+  "updated_at": "2026-03-10T14:40:21Z",
+  "closed_at": "2026-03-10T14:40:21Z",
+  "merged_at": "2026-03-10T14:40:21Z",
+  "merge_commit_sha": "6c5f9a606ccb",
+  "head": {
+    "ref": "feature/pr-312",
+    "sha": "6c5f9a606ccb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/312",
+  "files": [
+    {
+      "filename": "api/gateway/websocket_proxy.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 11,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5718107608ed",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-07T18:40:21Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-07T18:40:21Z"
+        },
+        "message": "commit 1 for PR #312: feat(gateway): support WebSocket proxying for real-time channels"
+      }
+    },
+    {
+      "sha": "6c5f9a606ccb",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-07T19:10:21Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-03-07T19:10:21Z"
+        },
+        "message": "commit 2 for PR #312: feat(gateway): support WebSocket proxying for real-time channels"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 31201,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-09T15:40:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/312#pullrequestreview-31201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1657,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1657: verify boundary checks on line 15.",
+      "created_at": "2026-03-09T15:40:21Z",
+      "path": "api/gateway/websocket_proxy.py",
+      "line": 15
+    },
+    {
+      "id": 1658,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1658: verify boundary checks on line 25.",
+      "created_at": "2026-03-09T15:40:21Z",
+      "path": "api/gateway/websocket_proxy.py",
+      "line": 25
+    },
+    {
+      "id": 1659,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1659: verify boundary checks on line 35.",
+      "created_at": "2026-03-09T15:40:21Z",
+      "path": "api/gateway/websocket_proxy.py",
+      "line": 35
+    },
+    {
+      "id": 1660,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1660: verify boundary checks on line 45.",
+      "created_at": "2026-03-09T15:40:21Z",
+      "path": "api/gateway/websocket_proxy.py",
+      "line": 45
+    }
+  ]
+}

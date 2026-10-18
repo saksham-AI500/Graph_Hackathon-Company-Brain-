@@ -1,0 +1,42 @@
+{
+  "id": 2000006,
+  "number": 6,
+  "title": "FEATURE: search-indexer improvements for latency",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 21671,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-06T13:35:37Z",
+  "updated_at": "2025-11-01T13:35:37Z",
+  "closed_at": "2025-11-01T13:35:37Z",
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    114
+  ],
+  "comments": [
+    {
+      "id": 70020,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #20 on issue #6: updates from triage and reproduction steps.",
+      "created_at": "2025-10-07T00:35:37Z"
+    },
+    {
+      "id": 70021,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #21 on issue #6: updates from triage and reproduction steps.",
+      "created_at": "2025-10-07T19:35:37Z"
+    }
+  ]
+}

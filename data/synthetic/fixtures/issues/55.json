@@ -1,0 +1,69 @@
+{
+  "id": 2000055,
+  "number": 55,
+  "title": "PERF: api-gateway improvements for latency",
+  "body": "Detailed description for perf tracking in module api/gateway/.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 29511,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-11-26T14:12:18Z",
+  "updated_at": "2025-11-26T14:12:18Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "api-gateway"
+  ],
+  "linked_pulls": [
+    592
+  ],
+  "comments": [
+    {
+      "id": 70222,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #222 on issue #55: updates from triage and reproduction steps.",
+      "created_at": "2025-11-27T06:12:18Z"
+    },
+    {
+      "id": 70223,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #223 on issue #55: updates from triage and reproduction steps.",
+      "created_at": "2025-11-27T17:12:18Z"
+    },
+    {
+      "id": 70224,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #224 on issue #55: updates from triage and reproduction steps.",
+      "created_at": "2025-11-28T01:12:18Z"
+    },
+    {
+      "id": 70225,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #225 on issue #55: updates from triage and reproduction steps.",
+      "created_at": "2025-11-28T19:12:18Z"
+    },
+    {
+      "id": 70226,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #226 on issue #55: updates from triage and reproduction steps.",
+      "created_at": "2025-11-29T00:12:18Z"
+    }
+  ]
+}

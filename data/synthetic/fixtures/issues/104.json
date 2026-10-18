@@ -1,0 +1,60 @@
+{
+  "id": 2000104,
+  "number": 104,
+  "title": "TASK: auth improvements for security",
+  "body": "Detailed description for task tracking in module auth/.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 21277,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-16T14:58:18Z",
+  "updated_at": "2026-01-16T14:58:18Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "auth"
+  ],
+  "linked_pulls": [
+    253
+  ],
+  "comments": [
+    {
+      "id": 70422,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #422 on issue #104: updates from triage and reproduction steps.",
+      "created_at": "2026-01-17T13:58:18Z"
+    },
+    {
+      "id": 70423,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #423 on issue #104: updates from triage and reproduction steps.",
+      "created_at": "2026-01-18T11:58:18Z"
+    },
+    {
+      "id": 70424,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #424 on issue #104: updates from triage and reproduction steps.",
+      "created_at": "2026-01-19T02:58:18Z"
+    },
+    {
+      "id": 70425,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #425 on issue #104: updates from triage and reproduction steps.",
+      "created_at": "2026-01-19T18:58:18Z"
+    }
+  ]
+}

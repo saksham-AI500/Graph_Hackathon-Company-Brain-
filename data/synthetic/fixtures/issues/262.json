@@ -1,0 +1,49 @@
+{
+  "id": 2000262,
+  "number": 262,
+  "title": "INCIDENT: api-gateway improvements for latency",
+  "body": "Detailed description for incident tracking in module api/gateway/.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 24905,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-30T02:02:51Z",
+  "updated_at": "2026-07-17T02:02:51Z",
+  "closed_at": "2026-07-17T02:02:51Z",
+  "labels": [
+    "incident",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71082,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1082 on issue #262: updates from triage and reproduction steps.",
+      "created_at": "2026-06-30T07:02:51Z"
+    },
+    {
+      "id": 71083,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1083 on issue #262: updates from triage and reproduction steps.",
+      "created_at": "2026-07-01T03:02:51Z"
+    },
+    {
+      "id": 71084,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #1084 on issue #262: updates from triage and reproduction steps.",
+      "created_at": "2026-07-01T16:02:51Z"
+    }
+  ]
+}

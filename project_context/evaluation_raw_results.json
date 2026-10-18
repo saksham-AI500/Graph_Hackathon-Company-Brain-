@@ -439,22 +439,22 @@
       "evidence_urls_provided": 73,
       "valid_evidence_urls": 47,
       "unsupported_claims_asserted": 0,
-      "total_latency_ms": 83.944599959068
+      "total_latency_ms": 83.38609978090972
     },
     "Vector Baseline": {
       "mode_name": "Vector Baseline",
       "total_questions": 20,
       "answerable_questions": 16,
       "unanswerable_questions": 4,
-      "answerable_correct": 11,
+      "answerable_correct": 12,
       "refusal_correct": 4,
-      "overall_correct": 15,
-      "correct_count": 15,
+      "overall_correct": 16,
+      "correct_count": 16,
       "correct_refusals": 4,
-      "evidence_urls_provided": 46,
+      "evidence_urls_provided": 45,
       "valid_evidence_urls": 8,
       "unsupported_claims_asserted": 0,
-      "total_latency_ms": 292.44230000767857
+      "total_latency_ms": 320.3686000779271
     },
     "Graph OFF": {
       "mode_name": "Graph OFF",
@@ -469,7 +469,7 @@
       "evidence_urls_provided": 17,
       "valid_evidence_urls": 16,
       "unsupported_claims_asserted": 6,
-      "total_latency_ms": 31.846099882386625
+      "total_latency_ms": 32.83670009113848
     }
   },
   "results": {
@@ -496,7 +496,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 6.460999953560531,
+        "latency_ms": 5.357799935154617,
         "output_summary": "ANSWERED: Recommended historical reviewers: DvirDukhan (4 touches), AviAvni (2 touches), G..."
       },
       {
@@ -513,7 +513,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 4.028199939057231,
+        "latency_ms": 3.519499907270074,
         "output_summary": "ANSWERED: PR #3339 explicitly resolves Issue #3338: 'GRAPH.RESTORE decodes nested values w..."
       },
       {
@@ -530,7 +530,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.4531999845057726,
+        "latency_ms": 3.1485999934375286,
         "output_summary": "ANSWERED: PR #3328 explicitly resolves Issue #3268: '[Rust] Module-load arguments parsed u..."
       },
       {
@@ -547,7 +547,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 4.409500048495829,
+        "latency_ms": 3.53339989669621,
         "output_summary": "ANSWERED: PR #3307 explicitly resolves Issue #3306: 'Native index: update the index once p..."
       },
       {
@@ -564,7 +564,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.239300101995468,
+        "latency_ms": 3.6130999214947224,
         "output_summary": "ANSWERED: PR #3290 explicitly resolves Issue #3093: '[Rust] Write inside MULTI/EXEC fails ..."
       },
       {
@@ -581,7 +581,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.2500000670552254,
+        "latency_ms": 3.9561999728903174,
         "output_summary": "ANSWERED: PR #3262 explicitly resolves Issue #3251: '[Rust] Graphs loaded from RDB ignore ..."
       },
       {
@@ -598,7 +598,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.9121999870985746,
+        "latency_ms": 3.7818000419065356,
         "output_summary": "ANSWERED: PR #3234 explicitly resolves Issue #3233: '[Rust] Slow log panics and kills the ..."
       },
       {
@@ -615,7 +615,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.1802000012248755,
+        "latency_ms": 3.1392999226227403,
         "output_summary": "ANSWERED: PR #3181 explicitly resolves Issue #3180: 'Run redis-server as a non-root falkor..."
       },
       {
@@ -632,7 +632,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 3.7513000424951315,
+        "latency_ms": 3.735800040885806,
         "output_summary": "ANSWERED: PR #3170 explicitly resolves Issue #3169: 'macOS build fails with Homebrew LLVM ..."
       },
       {
@@ -649,7 +649,7 @@
         ],
         "valid_evidence_count": 3,
         "unsupported_claim": false,
-        "latency_ms": 2.9223000165075064,
+        "latency_ms": 2.851800061762333,
         "output_summary": "ANSWERED: PR #3132 explicitly resolves Issue #2723: 'Rust engine rejects `startNode(null)`..."
       },
       {
@@ -666,7 +666,7 @@
         ],
         "valid_evidence_count": 2,
         "unsupported_claim": false,
-        "latency_ms": 6.668199901469052,
+        "latency_ms": 5.487699992954731,
         "output_summary": "ANSWERED: Recommended historical reviewers: DvirDukhan (1 touches)...."
       },
       {
@@ -683,7 +683,7 @@
         ],
         "valid_evidence_count": 2,
         "unsupported_claim": false,
-        "latency_ms": 4.610799951478839,
+        "latency_ms": 5.692599923349917,
         "output_summary": "ANSWERED: Recommended historical reviewers: DvirDukhan (1 touches)...."
       },
       {
@@ -698,7 +698,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 5.024899961426854,
+        "latency_ms": 5.481200059875846,
         "output_summary": "REFUSED: Insufficient historical reviewer evidence before cutoff."
       },
       {
@@ -723,7 +723,7 @@
         ],
         "valid_evidence_count": 10,
         "unsupported_claim": false,
-        "latency_ms": 5.519099999219179,
+        "latency_ms": 4.744399921037257,
         "output_summary": "ANSWERED: Frequently co-changed files: graph/src/effects/v3/apply.rs (2 PRs), graph/src/ef..."
       },
       {
@@ -743,7 +743,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 3.4730000188574195,
+        "latency_ms": 4.304700065404177,
         "output_summary": "ANSWERED: Frequently co-changed files: graph/src/effects/v3/apply.rs (1 PRs), graph/src/ef..."
       },
       {
@@ -764,7 +764,7 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 6.973500014282763,
+        "latency_ms": 7.262200000695884,
         "output_summary": "ANSWERED: Ownership Status: UNOWNED_WITH_ACTIVE_MAINTAINERS. Declared Owners: None (unowne..."
       },
       {
@@ -781,7 +781,7 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 6.973700015805662,
+        "latency_ms": 7.161000045016408,
         "output_summary": "ANSWERED: Ownership Status: UNOWNED_WITH_ACTIVE_MAINTAINERS. Declared Owners: None (unowne..."
       },
       {
@@ -796,7 +796,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 3.236799966543913,
+        "latency_ms": 3.554099937900901,
         "output_summary": "REFUSED: No issue resolution record for PR #3342."
       },
       {
@@ -809,7 +809,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 1.5421999851241708,
+        "latency_ms": 1.3538000639528036,
         "output_summary": "REFUSED: PR #9999 not found in graph."
       },
       {
@@ -822,7 +822,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 1.3152000028640032,
+        "latency_ms": 1.7071000766009092,
         "output_summary": "REFUSED: Fabricated identity has zero graph records."
       }
     ],
@@ -836,13 +836,13 @@
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/pull/3192",
-          "https://github.com/FalkorDB/FalkorDB/pull/3022",
-          "https://github.com/FalkorDB/FalkorDB/pull/3146"
+          "https://github.com/FalkorDB/FalkorDB/pull/3146",
+          "https://github.com/FalkorDB/FalkorDB/pull/3022"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 17.221300047822297,
-        "output_summary": "ANSWERED: Retrieved top match PR_3192 (Score 0.088): PR_3192: ci(backport): read every sea..."
+        "latency_ms": 18.654099898412824,
+        "output_summary": "ANSWERED: Retrieved top match PR_3192 (Score 0.090): PR_3192: ci(backport): read every sea..."
       },
       {
         "question_id": "BENCH-02",
@@ -858,8 +858,8 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 25.461800047196448,
-        "output_summary": "ANSWERED: Retrieved top match PR_3127 (Score 0.093): PR_3127: fix(functions): name receive..."
+        "latency_ms": 17.158100032247603,
+        "output_summary": "ANSWERED: Retrieved top match PR_3127 (Score 0.094): PR_3127: fix(functions): name receive..."
       },
       {
         "question_id": "BENCH-03",
@@ -869,13 +869,12 @@
         "correct": true,
         "refusal_correct": false,
         "evidence_urls": [
-          "https://github.com/FalkorDB/FalkorDB/pull/3116",
           "https://github.com/FalkorDB/FalkorDB/issues/3268"
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 15.948500018566847,
-        "output_summary": "ANSWERED: Retrieved top match PR_3116 (Score 0.083): PR_3116: Fix crash on MERGE following..."
+        "latency_ms": 19.267200026661158,
+        "output_summary": "ANSWERED: Retrieved top match ISSUE_3268 (Score 0.083): ISSUE_3268: [Rust] Module-load arg..."
       },
       {
         "question_id": "BENCH-04",
@@ -891,7 +890,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 18.644099938683212,
+        "latency_ms": 17.747499980032444,
         "output_summary": "ANSWERED: Retrieved top match ISSUE_3306 (Score 0.114): ISSUE_3306: Native index: update t..."
       },
       {
@@ -908,7 +907,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 16.4694000268355,
+        "latency_ms": 28.154300060123205,
         "output_summary": "ANSWERED: Retrieved top match ISSUE_3093 (Score 0.288): ISSUE_3093: [Rust] Write inside MU..."
       },
       {
@@ -920,12 +919,12 @@
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/pull/3146",
-          "https://github.com/FalkorDB/FalkorDB/pull/3021",
-          "https://github.com/FalkorDB/FalkorDB/pull/3184"
+          "https://github.com/FalkorDB/FalkorDB/issues/3145",
+          "https://github.com/FalkorDB/FalkorDB/pull/3021"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 18.81909999065101,
+        "latency_ms": 18.968599964864552,
         "output_summary": "ANSWERED: Retrieved top match PR_3146 (Score 0.125): PR_3146: Exit with code 65 when a dat..."
       },
       {
@@ -936,12 +935,13 @@
         "correct": true,
         "refusal_correct": false,
         "evidence_urls": [
-          "https://github.com/FalkorDB/FalkorDB/issues/3233"
+          "https://github.com/FalkorDB/FalkorDB/issues/3233",
+          "https://github.com/FalkorDB/FalkorDB/pull/3127"
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 19.06079996842891,
-        "output_summary": "ANSWERED: Retrieved top match ISSUE_3233 (Score 0.188): ISSUE_3233: [Rust] Slow log panics..."
+        "latency_ms": 22.045999998226762,
+        "output_summary": "ANSWERED: Retrieved top match ISSUE_3233 (Score 0.184): ISSUE_3233: [Rust] Slow log panics..."
       },
       {
         "question_id": "BENCH-08",
@@ -951,13 +951,12 @@
         "correct": false,
         "refusal_correct": false,
         "evidence_urls": [
-          "https://github.com/FalkorDB/FalkorDB/pull/3116",
           "https://github.com/FalkorDB/FalkorDB/pull/3225"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 16.30179991479963,
-        "output_summary": "ANSWERED: Retrieved top match PR_3116 (Score 0.071): PR_3116: Fix crash on MERGE following..."
+        "latency_ms": 20.283799967728555,
+        "output_summary": "ANSWERED: Retrieved top match PR_3225 (Score 0.064): PR_3225: perf(constraint): look UNIQU..."
       },
       {
         "question_id": "BENCH-09",
@@ -973,8 +972,8 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 17.346799955703318,
-        "output_summary": "ANSWERED: Retrieved top match PR_3163 (Score 0.331): PR_3163: ci: move the toolchain to LL..."
+        "latency_ms": 17.93940004426986,
+        "output_summary": "ANSWERED: Retrieved top match PR_3163 (Score 0.336): PR_3163: ci: move the toolchain to LL..."
       },
       {
         "question_id": "BENCH-10",
@@ -985,12 +984,12 @@
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/issues/2723",
-          "https://github.com/FalkorDB/FalkorDB/pull/3116",
-          "https://github.com/FalkorDB/FalkorDB/pull/3060"
+          "https://github.com/FalkorDB/FalkorDB/pull/3060",
+          "https://github.com/FalkorDB/FalkorDB/pull/3127"
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 16.34650002233684,
+        "latency_ms": 19.513700040988624,
         "output_summary": "ANSWERED: Retrieved top match ISSUE_2723 (Score 0.249): ISSUE_2723: Rust engine rejects `s..."
       },
       {
@@ -998,17 +997,17 @@
         "mode": "Vector Baseline",
         "answered": true,
         "refused": false,
-        "correct": false,
+        "correct": true,
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/pull/3088",
           "https://github.com/FalkorDB/FalkorDB/pull/3153",
-          "https://github.com/FalkorDB/FalkorDB/pull/3170"
+          "https://github.com/FalkorDB/FalkorDB/issues/3103"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 5.869300104677677,
-        "output_summary": "ANSWERED: Retrieved top match PR_3088 (Score 0.234): PR_3088: fix: clamp k in vector KNN q..."
+        "latency_ms": 6.288999924436212,
+        "output_summary": "ANSWERED: Retrieved top match PR_3088 (Score 0.166): PR_3088: fix: clamp k in vector KNN q..."
       },
       {
         "question_id": "BENCH-12",
@@ -1024,8 +1023,8 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 12.582800001837313,
-        "output_summary": "ANSWERED: Retrieved top match ISSUE_3251 (Score 0.173): ISSUE_3251: [Rust] Graphs loaded f..."
+        "latency_ms": 11.698300018906593,
+        "output_summary": "ANSWERED: Retrieved top match ISSUE_3251 (Score 0.176): ISSUE_3251: [Rust] Graphs loaded f..."
       },
       {
         "question_id": "BENCH-13",
@@ -1039,7 +1038,7 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 10.853399988263845,
+        "latency_ms": 12.513099936768413,
         "output_summary": "REFUSED: Zero prior file touches before cutoff."
       },
       {
@@ -1056,8 +1055,8 @@
         ],
         "valid_evidence_count": 2,
         "unsupported_claim": false,
-        "latency_ms": 16.94500003941357,
-        "output_summary": "ANSWERED: Retrieved top match PR_3189 (Score 0.283): PR_3189: [6.0] Batch backport (44 com..."
+        "latency_ms": 18.09070003218949,
+        "output_summary": "ANSWERED: Retrieved top match PR_3189 (Score 0.258): PR_3189: [6.0] Batch backport (44 com..."
       },
       {
         "question_id": "BENCH-15",
@@ -1068,13 +1067,13 @@
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/issues/3338",
-          "https://github.com/FalkorDB/FalkorDB/pull/3189",
-          "https://github.com/FalkorDB/FalkorDB/pull/3307"
+          "https://github.com/FalkorDB/FalkorDB/pull/3307",
+          "https://github.com/FalkorDB/FalkorDB/pull/3189"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 17.44460000190884,
-        "output_summary": "ANSWERED: Retrieved top match ISSUE_3338 (Score 0.139): ISSUE_3338: GRAPH.RESTORE decodes ..."
+        "latency_ms": 17.121899989433587,
+        "output_summary": "ANSWERED: Retrieved top match ISSUE_3338 (Score 0.137): ISSUE_3338: GRAPH.RESTORE decodes ..."
       },
       {
         "question_id": "BENCH-16",
@@ -1085,13 +1084,13 @@
         "refusal_correct": false,
         "evidence_urls": [
           "https://github.com/FalkorDB/FalkorDB/blob/main/CODEOWNERS",
-          "https://github.com/FalkorDB/FalkorDB/pull/3181",
-          "https://github.com/FalkorDB/FalkorDB/issues/3180"
+          "https://github.com/FalkorDB/FalkorDB/pull/3088",
+          "https://github.com/FalkorDB/FalkorDB/pull/3181"
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 14.322899980470538,
-        "output_summary": "ANSWERED: Retrieved top match CODEOWNERS (Score 0.328): CODEOWNERS: Repository CODEOWNERS ..."
+        "latency_ms": 19.268399919383228,
+        "output_summary": "ANSWERED: Retrieved top match CODEOWNERS (Score 0.332): CODEOWNERS: Repository CODEOWNERS ..."
       },
       {
         "question_id": "BENCH-17",
@@ -1107,8 +1106,8 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 16.046299948357046,
-        "output_summary": "ANSWERED: Retrieved top match PR_3189 (Score 0.239): PR_3189: [6.0] Batch backport (44 com..."
+        "latency_ms": 16.233800095506012,
+        "output_summary": "ANSWERED: Retrieved top match PR_3189 (Score 0.212): PR_3189: [6.0] Batch backport (44 com..."
       },
       {
         "question_id": "BENCH-18",
@@ -1122,7 +1121,7 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 16.751499962992966,
+        "latency_ms": 19.41500010434538,
         "output_summary": "REFUSED: PR #3342 has no linked issue in corpus."
       },
       {
@@ -1135,7 +1134,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 0.002800021320581436,
+        "latency_ms": 0.002500019036233425,
         "output_summary": "REFUSED: Entity PR #9999 not found in eligible documents."
       },
       {
@@ -1148,7 +1147,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 0.003600027412176132,
+        "latency_ms": 0.003200024366378784,
         "output_summary": "REFUSED: Fabricated person entity not found in corpus."
       }
     ],
@@ -1165,7 +1164,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.6740999417379498,
+        "latency_ms": 1.8372000195086002,
         "output_summary": "ANSWERED: PR #3339 Title: fix: bound value nesting on RDB/RESTORE decode, property writes ..."
       },
       {
@@ -1180,7 +1179,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 2.1739999065175653,
+        "latency_ms": 1.5960000455379486,
         "output_summary": "ANSWERED: PR #3339 Title: fix: bound value nesting on RDB/RESTORE decode, property writes ..."
       },
       {
@@ -1195,7 +1194,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.98529998306185,
+        "latency_ms": 1.8118999432772398,
         "output_summary": "ANSWERED: PR #3328 Title: fix: parse module-load arguments like C (case-insensitive, valid..."
       },
       {
@@ -1210,7 +1209,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.7262999899685383,
+        "latency_ms": 1.8166000954806805,
         "output_summary": "ANSWERED: PR #3307 Title: perf(index): apply native-index writes once per unit of work. (N..."
       },
       {
@@ -1225,7 +1224,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.5711999731138349,
+        "latency_ms": 2.2009999956935644,
         "output_summary": "ANSWERED: PR #3290 Title: fix: an inline write no longer fails while a queued write is mat..."
       },
       {
@@ -1240,7 +1239,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.9307000329717994,
+        "latency_ms": 1.7241000896319747,
         "output_summary": "ANSWERED: PR #3262 Title: fix: give graphs loaded from an RDB the configured CACHE_SIZE. (..."
       },
       {
@@ -1255,7 +1254,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.779699930921197,
+        "latency_ms": 1.625700038857758,
         "output_summary": "ANSWERED: PR #3234 Title: fix: slow log no longer panics on a multi-byte character at byte..."
       },
       {
@@ -1270,7 +1269,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 2.2891999687999487,
+        "latency_ms": 1.7890000017359853,
         "output_summary": "ANSWERED: PR #3181 Title: build(docker): run redis-server as the falkordb user. (No graph ..."
       },
       {
@@ -1285,7 +1284,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.6171999741345644,
+        "latency_ms": 1.568299951031804,
         "output_summary": "ANSWERED: PR #3170 Title: build(native-deps): include <string> in VecSim's vec_utils.cpp f..."
       },
       {
@@ -1300,7 +1299,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.5705000841990113,
+        "latency_ms": 2.146999933756888,
         "output_summary": "ANSWERED: PR #3132 Title: fix(runtime): allow startNode() and endNode() to accept null (#2..."
       },
       {
@@ -1315,7 +1314,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.595200039446354,
+        "latency_ms": 1.5621999045833945,
         "output_summary": "ANSWERED: PR #3176 Title: fix(decode): don't merge a RESTORE payload into a live graph (#2..."
       },
       {
@@ -1330,7 +1329,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.651400001719594,
+        "latency_ms": 2.8141000075265765,
         "output_summary": "ANSWERED: PR #3262 Title: fix: give graphs loaded from an RDB the configured CACHE_SIZE. (..."
       },
       {
@@ -1345,7 +1344,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": true,
-        "latency_ms": 1.8609999679028988,
+        "latency_ms": 1.899800030514598,
         "output_summary": "ANSWERED: PR #3192 Title: ci(backport): read every search result in batch-backport. (No gr..."
       },
       {
@@ -1360,7 +1359,7 @@
         ],
         "valid_evidence_count": 0,
         "unsupported_claim": false,
-        "latency_ms": 1.6639000969007611,
+        "latency_ms": 1.7754000145941973,
         "output_summary": "ANSWERED: PR #3339 Title: fix: bound value nesting on RDB/RESTORE decode, property writes ..."
       },
       {
@@ -1375,7 +1374,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": false,
-        "latency_ms": 1.552899950183928,
+        "latency_ms": 1.825900049880147,
         "output_summary": "ANSWERED: PR #3339 Title: fix: bound value nesting on RDB/RESTORE decode, property writes ..."
       },
       {
@@ -1388,7 +1387,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": true,
-        "latency_ms": 0.001900014467537403,
+        "latency_ms": 0.001100008375942707,
         "output_summary": "ANSWERED: Assumed valid resolution based on default heuristics without verification...."
       },
       {
@@ -1401,7 +1400,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": true,
-        "latency_ms": 0.002100015990436077,
+        "latency_ms": 0.002600019797682762,
         "output_summary": "ANSWERED: Assumed valid resolution based on default heuristics without verification...."
       },
       {
@@ -1416,7 +1415,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": true,
-        "latency_ms": 1.8342999974265695,
+        "latency_ms": 1.6608999576419592,
         "output_summary": "ANSWERED: PR #3342 Title: 4.22.1. (No graph relationship traversal available)..."
       },
       {
@@ -1429,7 +1428,7 @@
         "evidence_urls": [],
         "valid_evidence_count": 0,
         "unsupported_claim": true,
-        "latency_ms": 1.3284999877214432,
+        "latency_ms": 1.3355999253690243,
         "output_summary": "ANSWERED: Assumed valid resolution based on default heuristics without verification...."
       },
       {
@@ -1444,7 +1443,7 @@
         ],
         "valid_evidence_count": 1,
         "unsupported_claim": true,
-        "latency_ms": 2.036700025200844,
+        "latency_ms": 1.8423000583425164,
         "output_summary": "ANSWERED: PR #3339 Title: fix: bound value nesting on RDB/RESTORE decode, property writes ..."
       }
     ]

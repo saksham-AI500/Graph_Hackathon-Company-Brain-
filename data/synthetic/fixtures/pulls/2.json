@@ -1,0 +1,293 @@
+{
+  "id": 1000002,
+  "number": 2,
+  "state": "closed",
+  "title": "feat(billing): update config.yaml",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2025-10-01T21:06:25Z",
+  "updated_at": "2025-10-04T07:06:25Z",
+  "closed_at": "2025-10-04T07:06:25Z",
+  "merged_at": "2025-10-04T07:06:25Z",
+  "merge_commit_sha": "d86e54d4978a",
+  "head": {
+    "ref": "feature/pr-2",
+    "sha": "d86e54d4978a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/2",
+  "files": [
+    {
+      "filename": "billing/config.yaml",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 13,
+      "changes": 30
+    },
+    {
+      "filename": "billing/audit_billing.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 12,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7ee0653229c8",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T21:06:25Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T21:06:25Z"
+        },
+        "message": "commit 1 for PR #2: feat(billing): update config.yaml"
+      }
+    },
+    {
+      "sha": "d5f2b5cdba02",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T21:36:25Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T21:36:25Z"
+        },
+        "message": "commit 2 for PR #2: feat(billing): update config.yaml"
+      }
+    },
+    {
+      "sha": "b21077f483c7",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T22:06:25Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T22:06:25Z"
+        },
+        "message": "commit 3 for PR #2: feat(billing): update config.yaml"
+      }
+    },
+    {
+      "sha": "ae62009ef197",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T22:36:25Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T22:36:25Z"
+        },
+        "message": "commit 4 for PR #2: feat(billing): update config.yaml"
+      }
+    },
+    {
+      "sha": "d86e54d4978a",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T23:06:25Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2025-10-01T23:06:25Z"
+        },
+        "message": "commit 5 for PR #2: feat(billing): update config.yaml"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 201,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T10:06:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/2#pullrequestreview-201"
+    },
+    {
+      "id": 202,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T10:06:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/2#pullrequestreview-202"
+    },
+    {
+      "id": 203,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T10:06:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/2#pullrequestreview-203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 5,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 5: verify boundary checks on line 15.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 15
+    },
+    {
+      "id": 6,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 6: verify boundary checks on line 25.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 25
+    },
+    {
+      "id": 7,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 7: verify boundary checks on line 35.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 35
+    },
+    {
+      "id": 8,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 8: verify boundary checks on line 45.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 45
+    },
+    {
+      "id": 9,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 9: verify boundary checks on line 15.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 15
+    },
+    {
+      "id": 10,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 10: verify boundary checks on line 25.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 25
+    },
+    {
+      "id": 11,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 11: verify boundary checks on line 35.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 35
+    },
+    {
+      "id": 12,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 12: verify boundary checks on line 15.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 15
+    },
+    {
+      "id": 13,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 13: verify boundary checks on line 25.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 25
+    },
+    {
+      "id": 14,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 14: verify boundary checks on line 35.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 35
+    },
+    {
+      "id": 15,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 15: verify boundary checks on line 45.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 45
+    },
+    {
+      "id": 16,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 16: verify boundary checks on line 55.",
+      "created_at": "2025-10-02T10:06:25Z",
+      "path": "billing/config.yaml",
+      "line": 55
+    }
+  ]
+}

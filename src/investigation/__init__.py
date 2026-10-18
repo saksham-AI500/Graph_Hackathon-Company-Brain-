@@ -18,9 +18,15 @@ from src.investigation.tools import (
     find_historical_reviewers,
     find_related_co_changes,
     audit_ownership_for_files,
+    validate_and_invoke_tool,
+    ToolPermissionError,
 )
 from src.investigation.verifier import PROnlineEvidenceVerifier
-from src.investigation.orchestrator import PROrchestrator
+from src.investigation.orchestrator import (
+    PROrchestrator,
+    sanitize_untrusted_text,
+    wrap_untrusted_data,
+)
 
 __all__ = [
     "InvestigationInput",
@@ -38,6 +44,10 @@ __all__ = [
     "find_historical_reviewers",
     "find_related_co_changes",
     "audit_ownership_for_files",
+    "validate_and_invoke_tool",
+    "ToolPermissionError",
     "PROnlineEvidenceVerifier",
     "PROrchestrator",
+    "sanitize_untrusted_text",
+    "wrap_untrusted_data",
 ]

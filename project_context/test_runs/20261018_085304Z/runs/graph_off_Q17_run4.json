@@ -1,0 +1,24 @@
+{
+  "question_id": "Q17",
+  "question": "Who is on call next week?",
+  "mode": "graph_off",
+  "run_index": 4,
+  "status": "REFUSED",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer.  \n\nTo find this, check the company's on-call schedule system or contact the team lead. The repository data does not track on-call rotations.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:05:26.926143+00:00",
+  "latency_ms": 4759.33,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": true,
+  "is_faithful": true,
+  "passed_facts": [
+    "Refusal with reason"
+  ],
+  "forbidden_violations": []
+}

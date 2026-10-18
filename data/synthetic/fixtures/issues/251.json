@@ -1,0 +1,49 @@
+{
+  "id": 2000251,
+  "number": 251,
+  "title": "FEATURE: growth-experiments improvements for reliability",
+  "body": "Detailed description for feature tracking in module growth/experiments/.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29733,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-06-18T15:32:58Z",
+  "updated_at": "2026-06-18T15:32:58Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71031,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #1031 on issue #251: updates from triage and reproduction steps.",
+      "created_at": "2026-06-18T18:32:58Z"
+    },
+    {
+      "id": 71032,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1032 on issue #251: updates from triage and reproduction steps.",
+      "created_at": "2026-06-19T02:32:58Z"
+    },
+    {
+      "id": 71033,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #1033 on issue #251: updates from triage and reproduction steps.",
+      "created_at": "2026-06-19T18:32:58Z"
+    }
+  ]
+}

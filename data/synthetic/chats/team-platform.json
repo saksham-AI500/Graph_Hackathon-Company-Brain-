@@ -1,0 +1,2280 @@
+[
+  {
+    "thread_id": "th_1005",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Logging Pipeline Architecture",
+    "created_at": "2025-11-10T10:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "All production services must stream logs via OpenTelemetry OTLP over gRPC directly to the collector, bypassing stdout.",
+    "is_reversal": true,
+    "linked_entity": "ADR-0007",
+    "linked_type": "Document",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0007-opentelemetry-grpc-logging.md",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1762768800",
+    "messages": [
+      {
+        "message_id": "msg_th_1005_0",
+        "author": "liam-chen",
+        "text": "ADR-0003 mandated standard stdout JSON logging for container runtimes.",
+        "timestamp": "2025-11-10T10:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1005_1",
+        "author": "sophia-rossi",
+        "text": "Stdout logging docker daemon buffer saturated during Kafka replay spikes.",
+        "timestamp": "2025-11-10T10:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1005_2",
+        "author": "sophia-rossi",
+        "text": "Reversal: All production services must stream logs via OpenTelemetry OTLP over gRPC directly to the collector, bypassing stdout.",
+        "timestamp": "2025-11-10T10:09:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1005_3",
+        "author": "liam-chen",
+        "text": "Confirmed, documented in ADR-0007 superseding ADR-0003.",
+        "timestamp": "2025-11-10T10:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1006",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "PostgreSQL Sharding Strategy",
+    "created_at": "2025-11-24T14:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "We are partitioning payment transactional ledger tables by tenant ID hash across 16 database shards.",
+    "is_reversal": false,
+    "linked_entity": "ADR-0005",
+    "linked_type": "Document",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0005-database-sharding.md",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1763992800",
+    "messages": [
+      {
+        "message_id": "msg_th_1006_0",
+        "author": "caleb-rivers",
+        "text": "Reviewing cluster scale projections for the next 18 months.",
+        "timestamp": "2025-11-24T14:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1006_1",
+        "author": "clara-oswald",
+        "text": "Decision: We are partitioning payment transactional ledger tables by tenant ID hash across 16 database shards.",
+        "timestamp": "2025-11-24T14:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1006_2",
+        "author": "caleb-rivers",
+        "text": "Documented in docs/adr/0005-database-sharding.md.",
+        "timestamp": "2025-11-24T14:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1007",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Search Engine Backend Selection",
+    "created_at": "2025-12-08T12:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "We are migrating search/ from PostgreSQL tsvector to distributed OpenSearch to support sub-50ms fuzzy queries.",
+    "is_reversal": true,
+    "linked_entity": "Issue #88",
+    "linked_type": "Issue",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/issues/88",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1765195200",
+    "messages": [
+      {
+        "message_id": "msg_th_1007_0",
+        "author": "caleb-rivers",
+        "text": "We originally prototyped search/ using PostgreSQL tsvector full-text indices.",
+        "timestamp": "2025-12-08T12:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1007_1",
+        "author": "liam-chen",
+        "text": "Reversal: We are migrating search/ from PostgreSQL tsvector to distributed OpenSearch to support sub-50ms fuzzy queries.",
+        "timestamp": "2025-12-08T12:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1007_2",
+        "author": "caleb-rivers",
+        "text": "Assigned Issue #88 to track the cluster rollout.",
+        "timestamp": "2025-12-08T12:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1012",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Event Serialization Standards",
+    "created_at": "2026-02-16T17:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "All Kafka event producers must register Protobuf v3 schemas with strict backwards compatibility checks in CI.",
+    "is_reversal": false,
+    "linked_entity": "ADR-0004",
+    "linked_type": "Document",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0004-event-schema-registry.md",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1771261200",
+    "messages": [
+      {
+        "message_id": "msg_th_1012_0",
+        "author": "clara-oswald",
+        "text": "Uncoordinated schema changes in billing payloads broke downstream ingestion twice this month.",
+        "timestamp": "2026-02-16T17:03:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1012_1",
+        "author": "caleb-rivers",
+        "text": "Decision: All Kafka event producers must register Protobuf v3 schemas with strict backwards compatibility checks in CI.",
+        "timestamp": "2026-02-16T17:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1012_2",
+        "author": "clara-oswald",
+        "text": "Published ADR-0004.",
+        "timestamp": "2026-02-16T17:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1013",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Kubernetes Secret Provider Migration",
+    "created_at": "2026-03-02T13:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Decommissioning git-crypt in favor of HashiCorp Vault with automated 30-day token rotation in Issue #120.",
+    "is_reversal": true,
+    "linked_entity": "Issue #120",
+    "linked_type": "Issue",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/issues/120",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1772456400",
+    "messages": [
+      {
+        "message_id": "msg_th_1013_0",
+        "author": "liam-chen",
+        "text": "Previously we stored encrypted secrets directly in git using git-crypt.",
+        "timestamp": "2026-03-02T13:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1013_1",
+        "author": "sophia-rossi",
+        "text": "Reversal: Decommissioning git-crypt in favor of HashiCorp Vault with automated 30-day token rotation in Issue #120.",
+        "timestamp": "2026-03-02T13:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1013_2",
+        "author": "liam-chen",
+        "text": "All clusters migrated successfully.",
+        "timestamp": "2026-03-02T13:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1014",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Internal Service-to-Service Protocol",
+    "created_at": "2026-03-16T12:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "All internal East-West RPC communication between microservices must use gRPC over HTTP/2 with mTLS.",
+    "is_reversal": false,
+    "linked_entity": "ADR-0006",
+    "linked_type": "Document",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0006-service-mesh-grpc.md",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1773662400",
+    "messages": [
+      {
+        "message_id": "msg_th_1014_0",
+        "author": "sophia-rossi",
+        "text": "Internal JSON over HTTP/1.1 is consuming excessive CPU on serialization.",
+        "timestamp": "2026-03-16T12:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1014_1",
+        "author": "caleb-rivers",
+        "text": "Decision: All internal East-West RPC communication between microservices must use gRPC over HTTP/2 with mTLS.",
+        "timestamp": "2026-03-16T12:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1014_2",
+        "author": "sophia-rossi",
+        "text": "Documented in ADR-0006.",
+        "timestamp": "2026-03-16T12:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1018",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "OpenTelemetry Trace Sampling Rate",
+    "created_at": "2026-05-11T13:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Setting adaptive tail-based sampling to 5% for HTTP 200 responses and 100% for error status codes in PR #198.",
+    "is_reversal": false,
+    "linked_entity": "PR #198",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/198",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1778504400",
+    "messages": [
+      {
+        "message_id": "msg_th_1018_0",
+        "author": "liam-chen",
+        "text": "100% trace capture is overwhelming our Grafana Tempo storage.",
+        "timestamp": "2026-05-11T13:03:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1018_1",
+        "author": "sophia-rossi",
+        "text": "Decision: Setting adaptive tail-based sampling to 5% for HTTP 200 responses and 100% for error status codes in PR #198.",
+        "timestamp": "2026-05-11T13:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1018_2",
+        "author": "liam-chen",
+        "text": "Storage overhead dropped 80% while retaining full visibility on 5xx incidents.",
+        "timestamp": "2026-05-11T13:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1019",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "PgBouncer vs In-App Pooling",
+    "created_at": "2026-05-25T10:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Eliminating in-process connection pools in favor of a centralized PgBouncer pooler in transaction mode in PR #231.",
+    "is_reversal": true,
+    "linked_entity": "PR #231",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/231",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1779703200",
+    "messages": [
+      {
+        "message_id": "msg_th_1019_0",
+        "author": "clara-oswald",
+        "text": "We previously configured in-process connection pools inside each ECS container task.",
+        "timestamp": "2026-05-25T10:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1019_1",
+        "author": "caleb-rivers",
+        "text": "Reversal: Eliminating in-process connection pools in favor of a centralized PgBouncer pooler in transaction mode in PR #231.",
+        "timestamp": "2026-05-25T10:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1019_2",
+        "author": "clara-oswald",
+        "text": "Max DB connections dropped from 1,200 to 120.",
+        "timestamp": "2026-05-25T10:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1023",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Docker Layer Cache in CI",
+    "created_at": "2026-07-20T17:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "Replacing local runner directory caching with remote buildx registry inline cache in Issue #140.",
+    "is_reversal": true,
+    "linked_entity": "Issue #140",
+    "linked_type": "Issue",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/issues/140",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1784566800",
+    "messages": [
+      {
+        "message_id": "msg_th_1023_0",
+        "author": "sophia-rossi",
+        "text": "Using local runner directory caching was causing cache invalidation bugs in GitHub Actions.",
+        "timestamp": "2026-07-20T17:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1023_1",
+        "author": "liam-chen",
+        "text": "Reversal: Replacing local runner directory caching with remote buildx registry inline cache in Issue #140.",
+        "timestamp": "2026-07-20T17:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1023_2",
+        "author": "sophia-rossi",
+        "text": "CI pipeline build times dropped from 14 minutes to 3.5 minutes.",
+        "timestamp": "2026-07-20T17:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1024",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "Continuous Performance Testing",
+    "created_at": "2026-08-03T12:00:00+00:00",
+    "has_decision": true,
+    "decision_quote": "We are scheduling automated nightly Locust load runs against the staging environment in PR #240.",
+    "is_reversal": false,
+    "linked_entity": "PR #240",
+    "linked_type": "PullRequest",
+    "linked_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/240",
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1785758400",
+    "messages": [
+      {
+        "message_id": "msg_th_1024_0",
+        "author": "caleb-rivers",
+        "text": "Need automated load verification before weekly production deployments.",
+        "timestamp": "2026-08-03T12:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1024_1",
+        "author": "clara-oswald",
+        "text": "Decision: We are scheduling automated nightly Locust load runs against the staging environment in PR #240.",
+        "timestamp": "2026-08-03T12:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1024_2",
+        "author": "caleb-rivers",
+        "text": "Approved and scheduled.",
+        "timestamp": "2026-08-03T12:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1025",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-06-02T18:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1748887200",
+    "messages": [
+      {
+        "message_id": "msg_th_1025_0",
+        "author": "hannah-schmidt",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-06-02T18:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1025_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-02T18:06:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1029",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-06-06T04:01:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1749182460",
+    "messages": [
+      {
+        "message_id": "msg_th_1029_0",
+        "author": "felix-baum",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-06-06T04:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1029_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-06T04:06:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1033",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-06-08T05:59:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1749362340",
+    "messages": [
+      {
+        "message_id": "msg_th_1033_0",
+        "author": "kevin-malone",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-06-08T05:59:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1033_1",
+        "author": "felix-baum",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-08T06:11:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1037",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-06-11T14:27:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1749652020",
+    "messages": [
+      {
+        "message_id": "msg_th_1037_0",
+        "author": "kevin-malone",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-06-11T14:27:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1037_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-11T14:38:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1041",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-06-15T12:53:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1749991980",
+    "messages": [
+      {
+        "message_id": "msg_th_1041_0",
+        "author": "aiden-cross",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-06-15T12:53:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1041_1",
+        "author": "kevin-malone",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-15T12:56:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1045",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-06-19T00:01:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1750291260",
+    "messages": [
+      {
+        "message_id": "msg_th_1045_0",
+        "author": "zane-malik",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-06-19T00:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1045_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-19T00:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1049",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-06-21T17:23:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1750526580",
+    "messages": [
+      {
+        "message_id": "msg_th_1049_0",
+        "author": "kevin-malone",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-06-21T17:23:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1049_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-21T17:35:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1053",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-06-24T16:46:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1750783560",
+    "messages": [
+      {
+        "message_id": "msg_th_1053_0",
+        "author": "zane-malik",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-06-24T16:46:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1053_1",
+        "author": "olivia-taylor",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-24T16:52:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1057",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-06-28T00:12:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1751069520",
+    "messages": [
+      {
+        "message_id": "msg_th_1057_0",
+        "author": "caleb-rivers",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-06-28T00:12:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1057_1",
+        "author": "aiden-cross",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-28T00:26:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1061",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-06-30T11:55:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1751284500",
+    "messages": [
+      {
+        "message_id": "msg_th_1061_0",
+        "author": "sophia-rossi",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-06-30T11:55:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1061_1",
+        "author": "devon-reed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-06-30T12:04:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1065",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-07-04T01:57:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1751594220",
+    "messages": [
+      {
+        "message_id": "msg_th_1065_0",
+        "author": "mateo-silva",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-07-04T01:57:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1065_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-04T02:02:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1069",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-07-06T19:12:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1751829120",
+    "messages": [
+      {
+        "message_id": "msg_th_1069_0",
+        "author": "clara-oswald",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-07-06T19:12:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1069_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-06T19:21:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1073",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-07-11T00:19:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1752193140",
+    "messages": [
+      {
+        "message_id": "msg_th_1073_0",
+        "author": "zane-malik",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-07-11T00:19:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1073_1",
+        "author": "olivia-taylor",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-11T00:24:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1077",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-07-15T02:13:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1752545580",
+    "messages": [
+      {
+        "message_id": "msg_th_1077_0",
+        "author": "sophia-rossi",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-07-15T02:13:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1077_1",
+        "author": "aiden-cross",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-15T02:21:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1081",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-07-17T21:54:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1752789240",
+    "messages": [
+      {
+        "message_id": "msg_th_1081_0",
+        "author": "zane-malik",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-07-17T21:54:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1081_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-17T21:58:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1085",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-07-22T17:47:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1753206420",
+    "messages": [
+      {
+        "message_id": "msg_th_1085_0",
+        "author": "olivia-taylor",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-07-22T17:47:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1085_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-22T17:58:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1089",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-07-25T13:18:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1753449480",
+    "messages": [
+      {
+        "message_id": "msg_th_1089_0",
+        "author": "liam-chen",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-07-25T13:18:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1089_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-25T13:31:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1093",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-07-29T10:46:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1753785960",
+    "messages": [
+      {
+        "message_id": "msg_th_1093_0",
+        "author": "felix-baum",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-07-29T10:46:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1093_1",
+        "author": "liam-chen",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-07-29T10:57:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1097",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-08-02T06:51:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1754117460",
+    "messages": [
+      {
+        "message_id": "msg_th_1097_0",
+        "author": "liam-chen",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-08-02T06:51:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1097_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-02T07:03:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1101",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-08-05T02:23:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1754360580",
+    "messages": [
+      {
+        "message_id": "msg_th_1101_0",
+        "author": "sophia-rossi",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-08-05T02:23:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1101_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-05T02:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1105",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-08-08T14:29:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1754663340",
+    "messages": [
+      {
+        "message_id": "msg_th_1105_0",
+        "author": "hannah-schmidt",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-08-08T14:29:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1105_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-08T14:41:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1109",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-08-12T07:18:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1754983080",
+    "messages": [
+      {
+        "message_id": "msg_th_1109_0",
+        "author": "devon-reed",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-08-12T07:18:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1109_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-12T07:30:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1113",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-08-16T09:36:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1755336960",
+    "messages": [
+      {
+        "message_id": "msg_th_1113_0",
+        "author": "aiden-cross",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-08-16T09:36:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1113_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-16T09:39:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1117",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-08-19T00:13:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1755562380",
+    "messages": [
+      {
+        "message_id": "msg_th_1117_0",
+        "author": "mateo-silva",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-08-19T00:13:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1117_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-19T00:27:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1121",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-08-21T19:38:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1755805080",
+    "messages": [
+      {
+        "message_id": "msg_th_1121_0",
+        "author": "olivia-taylor",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-08-21T19:38:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1121_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-21T19:50:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1125",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-08-25T01:25:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1756085100",
+    "messages": [
+      {
+        "message_id": "msg_th_1125_0",
+        "author": "clara-oswald",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-08-25T01:25:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1125_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-25T01:39:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1129",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-08-28T12:05:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1756382700",
+    "messages": [
+      {
+        "message_id": "msg_th_1129_0",
+        "author": "jordan-hayes",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-08-28T12:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1129_1",
+        "author": "kevin-malone",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-28T12:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1133",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-08-31T14:13:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1756649580",
+    "messages": [
+      {
+        "message_id": "msg_th_1133_0",
+        "author": "mateo-silva",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-08-31T14:13:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1133_1",
+        "author": "felix-baum",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-08-31T14:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1137",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-09-05T19:40:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1757101200",
+    "messages": [
+      {
+        "message_id": "msg_th_1137_0",
+        "author": "hannah-schmidt",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-09-05T19:40:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1137_1",
+        "author": "liam-chen",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-05T19:55:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1141",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-09-09T14:44:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1757429040",
+    "messages": [
+      {
+        "message_id": "msg_th_1141_0",
+        "author": "devon-reed",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-09-09T14:44:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1141_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-09T14:49:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1145",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-09-13T19:00:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1757790000",
+    "messages": [
+      {
+        "message_id": "msg_th_1145_0",
+        "author": "liam-chen",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-09-13T19:00:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1145_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-13T19:09:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1149",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-09-16T02:12:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1757988720",
+    "messages": [
+      {
+        "message_id": "msg_th_1149_0",
+        "author": "kevin-malone",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-09-16T02:12:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1149_1",
+        "author": "devon-reed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-16T02:22:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1153",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-09-20T05:39:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1758346740",
+    "messages": [
+      {
+        "message_id": "msg_th_1153_0",
+        "author": "zane-malik",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-09-20T05:39:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1153_1",
+        "author": "mateo-silva",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-20T05:45:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1157",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-09-24T09:34:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1758706440",
+    "messages": [
+      {
+        "message_id": "msg_th_1157_0",
+        "author": "zane-malik",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-09-24T09:34:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1157_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-24T09:48:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1161",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-09-28T02:22:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1759026120",
+    "messages": [
+      {
+        "message_id": "msg_th_1161_0",
+        "author": "mateo-silva",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-09-28T02:22:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1161_1",
+        "author": "liam-chen",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-09-28T02:26:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1165",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-10-01T21:23:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1759353780",
+    "messages": [
+      {
+        "message_id": "msg_th_1165_0",
+        "author": "clara-oswald",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-10-01T21:23:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1165_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-01T21:36:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1169",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-10-06T10:47:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1759747620",
+    "messages": [
+      {
+        "message_id": "msg_th_1169_0",
+        "author": "caleb-rivers",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-10-06T10:47:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1169_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-06T10:59:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1173",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-10-09T10:38:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1760006280",
+    "messages": [
+      {
+        "message_id": "msg_th_1173_0",
+        "author": "devon-reed",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-10-09T10:38:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1173_1",
+        "author": "maya-lin",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-09T10:45:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1177",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-10-13T03:58:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1760327880",
+    "messages": [
+      {
+        "message_id": "msg_th_1177_0",
+        "author": "aiden-cross",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-10-13T03:58:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1177_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-13T04:07:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1181",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-10-16T19:34:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1760643240",
+    "messages": [
+      {
+        "message_id": "msg_th_1181_0",
+        "author": "aiden-cross",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-10-16T19:34:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1181_1",
+        "author": "olivia-taylor",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-16T19:45:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1185",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-10-20T04:32:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1760934720",
+    "messages": [
+      {
+        "message_id": "msg_th_1185_0",
+        "author": "maya-lin",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-10-20T04:32:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1185_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-20T04:42:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1189",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-10-22T08:54:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1761123240",
+    "messages": [
+      {
+        "message_id": "msg_th_1189_0",
+        "author": "jordan-hayes",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-10-22T08:54:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1189_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-22T09:01:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1193",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-10-24T23:42:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1761349320",
+    "messages": [
+      {
+        "message_id": "msg_th_1193_0",
+        "author": "aiden-cross",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-10-24T23:42:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1193_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-24T23:49:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1197",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-10-28T21:58:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1761688680",
+    "messages": [
+      {
+        "message_id": "msg_th_1197_0",
+        "author": "olivia-taylor",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-10-28T21:58:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1197_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-28T22:13:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1201",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-10-31T10:05:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1761905100",
+    "messages": [
+      {
+        "message_id": "msg_th_1201_0",
+        "author": "caleb-rivers",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-10-31T10:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1201_1",
+        "author": "liam-chen",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-10-31T10:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1205",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-11-03T10:58:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1762167480",
+    "messages": [
+      {
+        "message_id": "msg_th_1205_0",
+        "author": "mateo-silva",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-11-03T10:58:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1205_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-03T11:13:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1209",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-11-06T04:37:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1762403820",
+    "messages": [
+      {
+        "message_id": "msg_th_1209_0",
+        "author": "aiden-cross",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-11-06T04:37:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1209_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-06T04:41:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1213",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-11-09T16:38:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1762706280",
+    "messages": [
+      {
+        "message_id": "msg_th_1213_0",
+        "author": "jordan-hayes",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-11-09T16:38:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1213_1",
+        "author": "zane-malik",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-09T16:48:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1217",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-11-12T22:45:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1762987500",
+    "messages": [
+      {
+        "message_id": "msg_th_1217_0",
+        "author": "hannah-schmidt",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-11-12T22:45:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1217_1",
+        "author": "maya-lin",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-12T22:50:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1221",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-11-16T10:54:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1763290440",
+    "messages": [
+      {
+        "message_id": "msg_th_1221_0",
+        "author": "liam-chen",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-11-16T10:54:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1221_1",
+        "author": "kevin-malone",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-16T11:04:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1225",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-11-19T12:06:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1763553960",
+    "messages": [
+      {
+        "message_id": "msg_th_1225_0",
+        "author": "clara-oswald",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-11-19T12:06:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1225_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-19T12:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1229",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-11-23T10:01:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1763892060",
+    "messages": [
+      {
+        "message_id": "msg_th_1229_0",
+        "author": "maya-lin",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-11-23T10:01:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1229_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-23T10:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1233",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-11-27T11:24:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1764242640",
+    "messages": [
+      {
+        "message_id": "msg_th_1233_0",
+        "author": "kevin-malone",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-11-27T11:24:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1233_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-27T11:35:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1237",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-11-30T10:05:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1764497100",
+    "messages": [
+      {
+        "message_id": "msg_th_1237_0",
+        "author": "sophia-rossi",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-11-30T10:05:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1237_1",
+        "author": "jordan-hayes",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-11-30T10:08:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1241",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-12-02T15:02:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1764687720",
+    "messages": [
+      {
+        "message_id": "msg_th_1241_0",
+        "author": "hannah-schmidt",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-12-02T15:02:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1241_1",
+        "author": "mateo-silva",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-02T15:15:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1245",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-12-04T10:38:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1764844680",
+    "messages": [
+      {
+        "message_id": "msg_th_1245_0",
+        "author": "olivia-taylor",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-12-04T10:38:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1245_1",
+        "author": "aiden-cross",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-04T10:50:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1249",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-12-07T18:39:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1765132740",
+    "messages": [
+      {
+        "message_id": "msg_th_1249_0",
+        "author": "aiden-cross",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-12-07T18:39:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1249_1",
+        "author": "olivia-taylor",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-07T18:42:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1253",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2025-12-11T21:10:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1765487400",
+    "messages": [
+      {
+        "message_id": "msg_th_1253_0",
+        "author": "kevin-malone",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2025-12-11T21:10:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1253_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-11T21:18:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1257",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2025-12-15T04:37:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1765773420",
+    "messages": [
+      {
+        "message_id": "msg_th_1257_0",
+        "author": "mateo-silva",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2025-12-15T04:37:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1257_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-15T04:52:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1261",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2025-12-19T17:57:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1766167020",
+    "messages": [
+      {
+        "message_id": "msg_th_1261_0",
+        "author": "hannah-schmidt",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2025-12-19T17:57:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1261_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-19T18:10:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1265",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2025-12-24T04:11:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1766549460",
+    "messages": [
+      {
+        "message_id": "msg_th_1265_0",
+        "author": "clara-oswald",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2025-12-24T04:11:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1265_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-24T04:16:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1269",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2025-12-27T19:47:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1766864820",
+    "messages": [
+      {
+        "message_id": "msg_th_1269_0",
+        "author": "devon-reed",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2025-12-27T19:47:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1269_1",
+        "author": "clara-oswald",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2025-12-27T19:59:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1273",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2026-01-01T20:11:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1767298260",
+    "messages": [
+      {
+        "message_id": "msg_th_1273_0",
+        "author": "devon-reed",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2026-01-01T20:11:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1273_1",
+        "author": "hannah-schmidt",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-01T20:23:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1277",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2026-01-05T06:32:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1767594720",
+    "messages": [
+      {
+        "message_id": "msg_th_1277_0",
+        "author": "olivia-taylor",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2026-01-05T06:32:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1277_1",
+        "author": "kevin-malone",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-05T06:38:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1281",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[codeowners-drift] Discussion",
+    "created_at": "2026-01-07T11:40:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1767786000",
+    "messages": [
+      {
+        "message_id": "msg_th_1281_0",
+        "author": "olivia-taylor",
+        "text": "[codeowners-drift] Noticing lots of PRs in payments/ are reviewed by people outside legacy-settlements.",
+        "timestamp": "2026-01-07T11:40:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1281_1",
+        "author": "devon-reed",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-07T11:43:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1285",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[deployment-sync] Discussion",
+    "created_at": "2026-01-11T18:34:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1768156440",
+    "messages": [
+      {
+        "message_id": "msg_th_1285_0",
+        "author": "hannah-schmidt",
+        "text": "[deployment-sync] Deploying release candidate to staging. Smoke tests passing.",
+        "timestamp": "2026-01-11T18:34:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1285_1",
+        "author": "sophia-rossi",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-11T18:48:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1289",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[incident-postmortem] Discussion",
+    "created_at": "2026-01-16T02:23:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1768530180",
+    "messages": [
+      {
+        "message_id": "msg_th_1289_0",
+        "author": "jordan-hayes",
+        "text": "[incident-postmortem] Reviewing postmortem action items from last week's replica lag spike.",
+        "timestamp": "2026-01-16T02:23:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1289_1",
+        "author": "felix-baum",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-16T02:36:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1293",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[performance-tuning] Discussion",
+    "created_at": "2026-01-18T17:27:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1768757220",
+    "messages": [
+      {
+        "message_id": "msg_th_1293_0",
+        "author": "caleb-rivers",
+        "text": "[performance-tuning] P99 latency down 15ms after indexing file_path column.",
+        "timestamp": "2026-01-18T17:27:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1293_1",
+        "author": "mateo-silva",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-18T17:36:00+00:00"
+      }
+    ]
+  },
+  {
+    "thread_id": "th_1297",
+    "channel": "team-platform",
+    "team": "@acme/platform",
+    "title": "[pr-review-ping] Discussion",
+    "created_at": "2026-01-22T04:50:00+00:00",
+    "has_decision": false,
+    "decision_quote": null,
+    "is_reversal": false,
+    "linked_entity": null,
+    "linked_type": null,
+    "linked_url": null,
+    "thread_url": "https://acme-corp.slack.com/archives/team-platform/p1769057400",
+    "messages": [
+      {
+        "message_id": "msg_th_1297_0",
+        "author": "kevin-malone",
+        "text": "[pr-review-ping] Can someone with CODEOWNERS authority review my PR touching shared/utils/?",
+        "timestamp": "2026-01-22T04:50:00+00:00"
+      },
+      {
+        "message_id": "msg_th_1297_1",
+        "author": "caleb-rivers",
+        "text": "Acknowledged. Thanks for the heads up, tracking this.",
+        "timestamp": "2026-01-22T04:54:00+00:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "question_id": "Q3",
+  "question": "Which documents mention payments/ but were not updated after a PR changed payments/?",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T08:56:55.203203+00:00",
+  "latency_ms": 12872.47,
+  "claims_count": 0,
+  "sources_count": 2,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "PR #230, 2026-09-10",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/230",
+      "title_or_desc": "PR #230, 2026-09-10",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "PR #230, 2026-09-10",
+      "description": "PR #230, 2026-09-10"
+    },
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "PR #238, 2026-09-15",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/238",
+      "title_or_desc": "PR #238, 2026-09-15",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "PR #238, 2026-09-15",
+      "description": "PR #238, 2026-09-15"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "1. **docs/runbooks/payment-pipeline-recovery.md**: Outdated because it references , which was removed in PR #238 [S1].",
+      "claim_ids": [],
+      "cited_sources": [
+        "S1"
+      ],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": 2000030,
+  "number": 30,
+  "title": "PERF: growth-experiments improvements for security",
+  "body": "Detailed description for perf tracking in module growth/experiments/.",
+  "user": {
+    "login": "elena-rostova",
+    "id": 23447,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-31T13:05:39Z",
+  "updated_at": "2025-11-13T13:05:39Z",
+  "closed_at": "2025-11-13T13:05:39Z",
+  "labels": [
+    "perf",
+    "growth-experiments"
+  ],
+  "linked_pulls": [
+    245
+  ],
+  "comments": [
+    {
+      "id": 70115,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #115 on issue #30: updates from triage and reproduction steps.",
+      "created_at": "2025-10-31T19:05:39Z"
+    },
+    {
+      "id": 70116,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #116 on issue #30: updates from triage and reproduction steps.",
+      "created_at": "2025-11-01T02:05:39Z"
+    },
+    {
+      "id": 70117,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #117 on issue #30: updates from triage and reproduction steps.",
+      "created_at": "2025-11-01T05:05:39Z"
+    },
+    {
+      "id": 70118,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #118 on issue #30: updates from triage and reproduction steps.",
+      "created_at": "2025-11-01T13:05:39Z"
+    }
+  ]
+}

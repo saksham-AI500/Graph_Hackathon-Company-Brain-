@@ -1,0 +1,190 @@
+{
+  "id": 1000239,
+  "number": 239,
+  "state": "closed",
+  "title": "refactor(infra_observability): update cost_attribution.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "zane-malik",
+    "id": 26937,
+    "type": "User"
+  },
+  "created_at": "2026-01-29T20:03:31Z",
+  "updated_at": "2026-02-01T14:03:31Z",
+  "closed_at": "2026-02-01T14:03:31Z",
+  "merged_at": "2026-02-01T14:03:31Z",
+  "merge_commit_sha": "4d4311070f5a",
+  "head": {
+    "ref": "feature/pr-239",
+    "sha": "4d4311070f5a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/239",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/cost_attribution.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 10,
+      "changes": 37
+    },
+    {
+      "filename": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 4,
+      "changes": 11
+    },
+    {
+      "filename": "infra/observability/logger.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 15,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "14451688c249",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T20:03:31Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T20:03:31Z"
+        },
+        "message": "commit 1 for PR #239: refactor(infra_observability): update cost_attribution.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "042013daccc3",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T20:33:31Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T20:33:31Z"
+        },
+        "message": "commit 2 for PR #239: refactor(infra_observability): update cost_attribution.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4940d0dfbbdb",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T21:03:31Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T21:03:31Z"
+        },
+        "message": "commit 3 for PR #239: refactor(infra_observability): update cost_attribution.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6d0a4527a766",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T21:33:31Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T21:33:31Z"
+        },
+        "message": "commit 4 for PR #239: refactor(infra_observability): update cost_attribution.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4d4311070f5a",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T22:03:31Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-01-29T22:03:31Z"
+        },
+        "message": "commit 5 for PR #239: refactor(infra_observability): update cost_attribution.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 23901,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-30T03:03:31Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/239#pullrequestreview-23901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1279,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1279: verify boundary checks on line 15.",
+      "created_at": "2026-01-30T03:03:31Z",
+      "path": "infra/observability/__pycache__/cost_attribution.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1280,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1280: verify boundary checks on line 25.",
+      "created_at": "2026-01-30T03:03:31Z",
+      "path": "infra/observability/__pycache__/cost_attribution.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1281,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1281: verify boundary checks on line 35.",
+      "created_at": "2026-01-30T03:03:31Z",
+      "path": "infra/observability/__pycache__/cost_attribution.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1282,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1282: verify boundary checks on line 45.",
+      "created_at": "2026-01-30T03:03:31Z",
+      "path": "infra/observability/__pycache__/cost_attribution.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

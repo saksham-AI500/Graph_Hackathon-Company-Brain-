@@ -1,0 +1,223 @@
+{
+  "id": 1000630,
+  "number": 630,
+  "state": "closed",
+  "title": "fix(growth_experiments): update experiment_store.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "tanya-popova",
+    "id": 22022,
+    "type": "User"
+  },
+  "created_at": "2026-08-14T17:01:10Z",
+  "updated_at": "2026-08-16T20:01:10Z",
+  "closed_at": "2026-08-16T20:01:10Z",
+  "merged_at": "2026-08-16T20:01:10Z",
+  "merge_commit_sha": "63d8ede1d858",
+  "head": {
+    "ref": "feature/pr-630",
+    "sha": "63d8ede1d858"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/630",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 8,
+      "changes": 19
+    },
+    {
+      "filename": "growth/experiments/__pycache__/sample_sizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 6,
+      "changes": 27
+    },
+    {
+      "filename": "growth/experiments/holdout.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 9,
+      "changes": 32
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b70e5b384c81",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T17:01:10Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T17:01:10Z"
+        },
+        "message": "commit 1 for PR #630: fix(growth_experiments): update experiment_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6666253d6cb0",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T17:31:10Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T17:31:10Z"
+        },
+        "message": "commit 2 for PR #630: fix(growth_experiments): update experiment_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8353caacf245",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T18:01:10Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T18:01:10Z"
+        },
+        "message": "commit 3 for PR #630: fix(growth_experiments): update experiment_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "73a10c696974",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T18:31:10Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T18:31:10Z"
+        },
+        "message": "commit 4 for PR #630: fix(growth_experiments): update experiment_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "63d8ede1d858",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T19:01:10Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-08-14T19:01:10Z"
+        },
+        "message": "commit 5 for PR #630: fix(growth_experiments): update experiment_store.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 63001,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-15T06:01:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/630#pullrequestreview-63001"
+    },
+    {
+      "id": 63002,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-15T06:01:10Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/630#pullrequestreview-63002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3320,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3320: verify boundary checks on line 15.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3321,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3321: verify boundary checks on line 25.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3322,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3322: verify boundary checks on line 15.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3323,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3323: verify boundary checks on line 25.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3324,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3324: verify boundary checks on line 35.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3325,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 3325: verify boundary checks on line 45.",
+      "created_at": "2026-08-15T06:01:10Z",
+      "path": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

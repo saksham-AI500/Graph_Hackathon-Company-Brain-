@@ -1,0 +1,191 @@
+{
+  "id": 1000572,
+  "number": 572,
+  "state": "closed",
+  "title": "docs(growth_experiments): update ramp_scheduler.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-07-17T08:17:42Z",
+  "updated_at": "2026-07-18T16:17:42Z",
+  "closed_at": "2026-07-18T16:17:42Z",
+  "merged_at": "2026-07-18T16:17:42Z",
+  "merge_commit_sha": "be90670f0625",
+  "head": {
+    "ref": "feature/pr-572",
+    "sha": "be90670f0625"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/572",
+  "files": [
+    {
+      "filename": "growth/experiments/ramp_scheduler.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 15,
+      "changes": 12
+    },
+    {
+      "filename": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 14,
+      "changes": 40
+    },
+    {
+      "filename": "growth/experiments/segmentation.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 4,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "31486818bc8c",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T08:17:42Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T08:17:42Z"
+        },
+        "message": "commit 1 for PR #572: docs(growth_experiments): update ramp_scheduler.py"
+      }
+    },
+    {
+      "sha": "8f8005e9517b",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T08:47:42Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T08:47:42Z"
+        },
+        "message": "commit 2 for PR #572: docs(growth_experiments): update ramp_scheduler.py"
+      }
+    },
+    {
+      "sha": "be90670f0625",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T09:17:42Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-07-17T09:17:42Z"
+        },
+        "message": "commit 3 for PR #572: docs(growth_experiments): update ramp_scheduler.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 57201,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-17T19:17:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/572#pullrequestreview-57201"
+    },
+    {
+      "id": 57202,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-17T19:17:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/572#pullrequestreview-57202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3073,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 3073: verify boundary checks on line 15.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 15
+    },
+    {
+      "id": 3074,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 3074: verify boundary checks on line 25.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 25
+    },
+    {
+      "id": 3075,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 3075: verify boundary checks on line 35.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 35
+    },
+    {
+      "id": 3076,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 3076: verify boundary checks on line 15.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 15
+    },
+    {
+      "id": 3077,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 3077: verify boundary checks on line 25.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 25
+    },
+    {
+      "id": 3078,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 3078: verify boundary checks on line 35.",
+      "created_at": "2026-07-17T19:17:42Z",
+      "path": "growth/experiments/ramp_scheduler.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": 1000675,
+  "number": 675,
+  "state": "closed",
+  "title": "feat(api_gateway): update ip_blocklist.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29839,
+    "type": "User"
+  },
+  "created_at": "2026-09-07T23:02:44Z",
+  "updated_at": "2026-09-09T12:02:44Z",
+  "closed_at": "2026-09-09T12:02:44Z",
+  "merged_at": "2026-09-09T12:02:44Z",
+  "merge_commit_sha": "5bff0845c472",
+  "head": {
+    "ref": "feature/pr-675",
+    "sha": "5bff0845c472"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/675",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 14,
+      "changes": 26
+    },
+    {
+      "filename": "api/gateway/__pycache__/load_balancer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 3,
+      "changes": 39
+    },
+    {
+      "filename": "api/gateway/middleware.py",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 5,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "279e5673e2a6",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-07T23:02:44Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-07T23:02:44Z"
+        },
+        "message": "commit 1 for PR #675: feat(api_gateway): update ip_blocklist.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fe169bedce10",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-07T23:32:44Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-07T23:32:44Z"
+        },
+        "message": "commit 2 for PR #675: feat(api_gateway): update ip_blocklist.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5bff0845c472",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-08T00:02:44Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-09-08T00:02:44Z"
+        },
+        "message": "commit 3 for PR #675: feat(api_gateway): update ip_blocklist.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 67501,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-09T18:02:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/675#pullrequestreview-67501"
+    },
+    {
+      "id": 67502,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-09T18:02:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/675#pullrequestreview-67502"
+    },
+    {
+      "id": 67503,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-09T18:02:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/675#pullrequestreview-67503"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3542,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3542: verify boundary checks on line 15.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3543,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3543: verify boundary checks on line 25.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3544,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3544: verify boundary checks on line 35.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3545,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3545: verify boundary checks on line 45.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3546,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3546: verify boundary checks on line 15.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3547,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3547: verify boundary checks on line 25.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3548,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3548: verify boundary checks on line 35.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3549,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3549: verify boundary checks on line 15.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3550,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3550: verify boundary checks on line 25.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3551,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3551: verify boundary checks on line 35.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3552,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3552: verify boundary checks on line 45.",
+      "created_at": "2026-09-09T18:02:44Z",
+      "path": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

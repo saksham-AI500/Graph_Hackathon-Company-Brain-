@@ -1,0 +1,40 @@
+{
+  "id": 2000218,
+  "number": 218,
+  "title": "INCIDENT: billing improvements for reliability",
+  "body": "Detailed description for incident tracking in module billing/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-15T06:48:19Z",
+  "updated_at": "2026-06-04T06:48:19Z",
+  "closed_at": "2026-06-04T06:48:19Z",
+  "labels": [
+    "incident",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70884,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #884 on issue #218: updates from triage and reproduction steps.",
+      "created_at": "2026-05-16T03:48:19Z"
+    },
+    {
+      "id": 70885,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #885 on issue #218: updates from triage and reproduction steps.",
+      "created_at": "2026-05-16T12:48:19Z"
+    }
+  ]
+}

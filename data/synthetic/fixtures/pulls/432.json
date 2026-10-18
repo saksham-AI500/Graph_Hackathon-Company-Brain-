@@ -1,0 +1,241 @@
+{
+  "id": 1000432,
+  "number": 432,
+  "state": "closed",
+  "title": "fix(search): update synonyms.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2026-05-07T11:30:28Z",
+  "updated_at": "2026-05-09T20:30:28Z",
+  "closed_at": "2026-05-09T20:30:28Z",
+  "merged_at": "2026-05-09T20:30:28Z",
+  "merge_commit_sha": "292f87a34648",
+  "head": {
+    "ref": "feature/pr-432",
+    "sha": "292f87a34648"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/432",
+  "files": [
+    {
+      "filename": "search/synonyms.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 7,
+      "changes": 50
+    },
+    {
+      "filename": "search/indexer/checkpoint.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 5,
+      "changes": 43
+    },
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 10,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2fb4657a1c34",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-07T11:30:28Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-07T11:30:28Z"
+        },
+        "message": "commit 1 for PR #432: fix(search): update synonyms.py"
+      }
+    },
+    {
+      "sha": "292f87a34648",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-07T12:00:28Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-05-07T12:00:28Z"
+        },
+        "message": "commit 2 for PR #432: fix(search): update synonyms.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 43201,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-08T19:30:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/432#pullrequestreview-43201"
+    },
+    {
+      "id": 43202,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-08T19:30:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/432#pullrequestreview-43202"
+    },
+    {
+      "id": 43203,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-08T19:30:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/432#pullrequestreview-43203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2299,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2299: verify boundary checks on line 15.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 15
+    },
+    {
+      "id": 2300,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2300: verify boundary checks on line 25.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 25
+    },
+    {
+      "id": 2301,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2301: verify boundary checks on line 35.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 35
+    },
+    {
+      "id": 2302,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2302: verify boundary checks on line 45.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 45
+    },
+    {
+      "id": 2303,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2303: verify boundary checks on line 55.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 55
+    },
+    {
+      "id": 2304,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2304: verify boundary checks on line 15.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 15
+    },
+    {
+      "id": 2305,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2305: verify boundary checks on line 25.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 25
+    },
+    {
+      "id": 2306,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2306: verify boundary checks on line 35.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 35
+    },
+    {
+      "id": 2307,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2307: verify boundary checks on line 45.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 45
+    },
+    {
+      "id": 2308,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2308: verify boundary checks on line 15.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 15
+    },
+    {
+      "id": 2309,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 2309: verify boundary checks on line 25.",
+      "created_at": "2026-05-08T19:30:28Z",
+      "path": "search/synonyms.py",
+      "line": 25
+    }
+  ]
+}

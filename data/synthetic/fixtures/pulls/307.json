@@ -1,0 +1,174 @@
+{
+  "id": 1000307,
+  "number": 307,
+  "state": "closed",
+  "title": "chore(notifications): update preferences.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #46",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 29760,
+    "type": "User"
+  },
+  "created_at": "2026-03-05T05:49:39Z",
+  "updated_at": "2026-03-06T14:49:39Z",
+  "closed_at": "2026-03-06T14:49:39Z",
+  "merged_at": "2026-03-06T14:49:39Z",
+  "merge_commit_sha": "a34164b82b8e",
+  "head": {
+    "ref": "feature/pr-307",
+    "sha": "a34164b82b8e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/307",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 10,
+      "changes": 14
+    },
+    {
+      "filename": "notifications/bounce_handler.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 15,
+      "changes": 59
+    },
+    {
+      "filename": "notifications/dispatcher.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 11,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eb3f1564868a",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T05:49:39Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T05:49:39Z"
+        },
+        "message": "commit 1 for PR #307: chore(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fb0b14492841",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T06:19:39Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T06:19:39Z"
+        },
+        "message": "commit 2 for PR #307: chore(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "390da769a8af",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T06:49:39Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T06:49:39Z"
+        },
+        "message": "commit 3 for PR #307: chore(notifications): update preferences.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a34164b82b8e",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T07:19:39Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-03-05T07:19:39Z"
+        },
+        "message": "commit 4 for PR #307: chore(notifications): update preferences.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30701,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-06T23:49:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/307#pullrequestreview-30701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1628,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1628: verify boundary checks on line 15.",
+      "created_at": "2026-03-06T23:49:39Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1629,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1629: verify boundary checks on line 25.",
+      "created_at": "2026-03-06T23:49:39Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1630,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1630: verify boundary checks on line 35.",
+      "created_at": "2026-03-06T23:49:39Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1631,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1631: verify boundary checks on line 45.",
+      "created_at": "2026-03-06T23:49:39Z",
+      "path": "notifications/__pycache__/preferences.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

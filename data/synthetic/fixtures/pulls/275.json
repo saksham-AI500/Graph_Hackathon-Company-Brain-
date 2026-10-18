@@ -1,0 +1,110 @@
+{
+  "id": 1000275,
+  "number": 275,
+  "state": "closed",
+  "title": "chore(search): update metrics_search.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24836,
+    "type": "User"
+  },
+  "created_at": "2026-02-17T01:05:22Z",
+  "updated_at": "2026-02-18T12:05:22Z",
+  "closed_at": "2026-02-18T12:05:22Z",
+  "merged_at": "2026-02-18T12:05:22Z",
+  "merge_commit_sha": "578e39cf8982",
+  "head": {
+    "ref": "feature/pr-275",
+    "sha": "578e39cf8982"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/275",
+  "files": [
+    {
+      "filename": "search/__pycache__/metrics_search.cpython-314.pyc",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 3,
+      "changes": 34
+    },
+    {
+      "filename": "search/indexer/dead_letter.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 1,
+      "changes": 19
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d8add67149e1",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T01:05:22Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T01:05:22Z"
+        },
+        "message": "commit 1 for PR #275: chore(search): update metrics_search.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9208c64ff80d",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T01:35:22Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T01:35:22Z"
+        },
+        "message": "commit 2 for PR #275: chore(search): update metrics_search.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0b17258ddb48",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T02:05:22Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T02:05:22Z"
+        },
+        "message": "commit 3 for PR #275: chore(search): update metrics_search.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "578e39cf8982",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T02:35:22Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-02-17T02:35:22Z"
+        },
+        "message": "commit 4 for PR #275: chore(search): update metrics_search.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

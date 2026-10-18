@@ -1,0 +1,42 @@
+{
+  "id": 2000136,
+  "number": 136,
+  "title": "TASK: infra-observability improvements for caching",
+  "body": "Detailed description for task tracking in module infra/observability/.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 29278,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-18T22:30:42Z",
+  "updated_at": "2026-03-14T22:30:42Z",
+  "closed_at": "2026-03-14T22:30:42Z",
+  "labels": [
+    "task",
+    "infra-observability"
+  ],
+  "linked_pulls": [
+    605
+  ],
+  "comments": [
+    {
+      "id": 70555,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #555 on issue #136: updates from triage and reproduction steps.",
+      "created_at": "2026-02-19T02:30:42Z"
+    },
+    {
+      "id": 70556,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #556 on issue #136: updates from triage and reproduction steps.",
+      "created_at": "2026-02-19T09:30:42Z"
+    }
+  ]
+}

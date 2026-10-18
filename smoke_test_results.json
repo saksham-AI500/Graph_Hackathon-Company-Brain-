@@ -1,0 +1,267 @@
+{
+  "graph_on": [
+    {
+      "question": "Who owns src/module.c?",
+      "answer_object": {
+        "answer": "File `src/module.c` is declared in CODEOWNERS under rule `*` with owner(s): @acme/platform [S1].\nObserved ownership drift score is 0.00.",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [
+          {
+            "id": "C1",
+            "text": "File src/module.c is owned by @acme/platform according to CODEOWNERS rule *.",
+            "type": "fact",
+            "source_ids": [
+              "S1"
+            ]
+          }
+        ],
+        "excluded": [],
+        "unresolved": [],
+        "sources": [
+          {
+            "id": "S1",
+            "entity": "src/module.c",
+            "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L5",
+            "date": "",
+            "quote": ""
+          }
+        ],
+        "mode": "graph_on",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [
+          {
+            "tool": "freshness_check",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "triggered_sync",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "intent_classification",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          }
+        ],
+        "verifier": {
+          "claims_total": 1,
+          "claims_passed": 1,
+          "sources_valid": 1,
+          "sources_total": 1
+        },
+        "stage_timings_ms": {
+          "total": 3802.1,
+          "tool_ms": 0
+        }
+      }
+    },
+    {
+      "question": "Why did we choose the retry policy? Quote the source.",
+      "answer_object": {
+        "answer": "Engineering decision recorded in the graph [S1]:\n> \"Retry policy: exponential backoff with jitter, max 5 attempts.\"",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [
+          {
+            "id": "C1",
+            "text": "Retry policy: exponential backoff with jitter, max 5 attempts.",
+            "type": "fact",
+            "source_ids": [
+              "S1"
+            ]
+          }
+        ],
+        "excluded": [],
+        "unresolved": [],
+        "sources": [
+          {
+            "id": "S1",
+            "entity": "ADR-0004",
+            "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0004-network-retry-policy.md",
+            "date": "",
+            "quote": "Retry policy: exponential backoff with jitter, max 5 attempts."
+          }
+        ],
+        "mode": "graph_on",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [
+          {
+            "tool": "freshness_check",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "triggered_sync",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "intent_classification",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          }
+        ],
+        "verifier": {
+          "claims_total": 1,
+          "claims_passed": 1,
+          "sources_valid": 1,
+          "sources_total": 1
+        },
+        "stage_timings_ms": {
+          "total": 3810.49,
+          "tool_ms": 0
+        }
+      }
+    },
+    {
+      "question": "Who is on call next week?",
+      "answer_object": {
+        "answer": "I cannot answer this question because no grounded graph evidence or matching entity was found in repo_kg.",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [],
+        "excluded": [],
+        "unresolved": [
+          "No relevant entities or relationships found in graph."
+        ],
+        "sources": [],
+        "mode": "graph_on",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [
+          {
+            "tool": "freshness_check",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "triggered_sync",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          },
+          {
+            "tool": "intent_classification",
+            "args": {},
+            "result_count": 1,
+            "ms": 0
+          }
+        ],
+        "verifier": {
+          "claims_total": 0,
+          "claims_passed": 0,
+          "sources_valid": 0,
+          "sources_total": 0
+        },
+        "stage_timings_ms": {
+          "total": 3354.74,
+          "tool_ms": 0
+        }
+      }
+    }
+  ],
+  "graph_off": [
+    {
+      "question": "Who owns src/module.c?",
+      "answer_object": {
+        "answer": "I can't answer that from the data. Knowledge graph tools and repository access are disabled in graph_off mode.",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [],
+        "excluded": [],
+        "unresolved": [],
+        "sources": [],
+        "mode": "graph_off",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [],
+        "verifier": {
+          "claims_total": 0,
+          "claims_passed": 0,
+          "sources_valid": 0,
+          "sources_total": 0
+        },
+        "stage_timings_ms": {
+          "total": 2544.71,
+          "tool_ms": 0
+        }
+      }
+    },
+    {
+      "question": "Why did we choose the retry policy? Quote the source.",
+      "answer_object": {
+        "answer": "I can't answer that from the data. Knowledge graph tools and repository access are disabled in graph_off mode.",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [],
+        "excluded": [],
+        "unresolved": [],
+        "sources": [],
+        "mode": "graph_off",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [],
+        "verifier": {
+          "claims_total": 0,
+          "claims_passed": 0,
+          "sources_valid": 0,
+          "sources_total": 0
+        },
+        "stage_timings_ms": {
+          "total": 2569.15,
+          "tool_ms": 0
+        }
+      }
+    },
+    {
+      "question": "Who is on call next week?",
+      "answer_object": {
+        "answer": "I can't answer that from the data. Knowledge graph tools and repository access are disabled in graph_off mode.",
+        "context": "As of latest synchronized data",
+        "ranking": [],
+        "reasoning": "",
+        "claims": [],
+        "excluded": [],
+        "unresolved": [],
+        "sources": [],
+        "mode": "graph_off",
+        "as_of": null,
+        "synced_at": "2026-09-30T23:59:59Z",
+        "model": "deepseek/deepseek-chat",
+        "tool_calls": [],
+        "verifier": {
+          "claims_total": 0,
+          "claims_passed": 0,
+          "sources_valid": 0,
+          "sources_total": 0
+        },
+        "stage_timings_ms": {
+          "total": 2567.21,
+          "tool_ms": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": 2000174,
+  "number": 174,
+  "title": "TASK: billing improvements for latency",
+  "body": "Detailed description for task tracking in module billing/.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 25695,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-30T11:28:07Z",
+  "updated_at": "2026-04-06T11:28:07Z",
+  "closed_at": "2026-04-06T11:28:07Z",
+  "labels": [
+    "task",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70710,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #710 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-03-31T09:28:07Z"
+    },
+    {
+      "id": 70711,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #711 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-03-31T19:28:07Z"
+    },
+    {
+      "id": 70712,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #712 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-04-01T05:28:07Z"
+    },
+    {
+      "id": 70713,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #713 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-04-01T15:28:07Z"
+    },
+    {
+      "id": 70714,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #714 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-04-01T21:28:07Z"
+    },
+    {
+      "id": 70715,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #715 on issue #174: updates from triage and reproduction steps.",
+      "created_at": "2026-04-02T17:28:07Z"
+    }
+  ]
+}

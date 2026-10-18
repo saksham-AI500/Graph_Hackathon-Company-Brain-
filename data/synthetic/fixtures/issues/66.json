@@ -1,0 +1,60 @@
+{
+  "id": 2000066,
+  "number": 66,
+  "title": "PERF: growth-referrals improvements for reliability",
+  "body": "Detailed description for perf tracking in module growth/referrals/.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 25884,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-08T01:13:48Z",
+  "updated_at": "2026-01-06T01:13:48Z",
+  "closed_at": "2026-01-06T01:13:48Z",
+  "labels": [
+    "perf",
+    "growth-referrals"
+  ],
+  "linked_pulls": [
+    77
+  ],
+  "comments": [
+    {
+      "id": 70271,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #271 on issue #66: updates from triage and reproduction steps.",
+      "created_at": "2025-12-08T07:13:48Z"
+    },
+    {
+      "id": 70272,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Comment #272 on issue #66: updates from triage and reproduction steps.",
+      "created_at": "2025-12-09T03:13:48Z"
+    },
+    {
+      "id": 70273,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #273 on issue #66: updates from triage and reproduction steps.",
+      "created_at": "2025-12-09T16:13:48Z"
+    },
+    {
+      "id": 70274,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #274 on issue #66: updates from triage and reproduction steps.",
+      "created_at": "2025-12-09T18:13:48Z"
+    }
+  ]
+}

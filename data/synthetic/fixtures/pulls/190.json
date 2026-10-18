@@ -1,0 +1,211 @@
+{
+  "id": 1000190,
+  "number": 190,
+  "state": "closed",
+  "title": "fix(payments): update __init__.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "jordan-hayes",
+    "id": 24658,
+    "type": "User"
+  },
+  "created_at": "2026-01-05T12:06:00Z",
+  "updated_at": "2026-01-07T05:06:00Z",
+  "closed_at": "2026-01-07T05:06:00Z",
+  "merged_at": "2026-01-07T05:06:00Z",
+  "merge_commit_sha": "b71067755faa",
+  "head": {
+    "ref": "feature/pr-190",
+    "sha": "b71067755faa"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/190",
+  "files": [
+    {
+      "filename": "api/gateway/router.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 3,
+      "changes": 60
+    },
+    {
+      "filename": "api/gateway/middleware.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 10,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "32e22539848d",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T12:06:00Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T12:06:00Z"
+        },
+        "message": "commit 1 for PR #190: fix(payments): update __init__.py"
+      }
+    },
+    {
+      "sha": "f31810d5d997",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T12:36:00Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T12:36:00Z"
+        },
+        "message": "commit 2 for PR #190: fix(payments): update __init__.py"
+      }
+    },
+    {
+      "sha": "1f05075db441",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T13:06:00Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T13:06:00Z"
+        },
+        "message": "commit 3 for PR #190: fix(payments): update __init__.py"
+      }
+    },
+    {
+      "sha": "b71067755faa",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T13:36:00Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2026-01-05T13:36:00Z"
+        },
+        "message": "commit 4 for PR #190: fix(payments): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19001,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-06T03:06:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/190#pullrequestreview-19001"
+    },
+    {
+      "id": 19002,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-06T03:06:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/190#pullrequestreview-19002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1049,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1049: verify boundary checks on line 15.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1050,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1050: verify boundary checks on line 25.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1051,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1051: verify boundary checks on line 35.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 35
+    },
+    {
+      "id": 1052,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1052: verify boundary checks on line 45.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 45
+    },
+    {
+      "id": 1053,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1053: verify boundary checks on line 55.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 55
+    },
+    {
+      "id": 1054,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1054: verify boundary checks on line 15.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1055,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1055: verify boundary checks on line 25.",
+      "created_at": "2026-01-06T03:06:00Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    }
+  ]
+}

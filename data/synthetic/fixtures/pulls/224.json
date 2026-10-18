@@ -1,0 +1,260 @@
+{
+  "id": 1000224,
+  "number": 224,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update variant_allocator.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 22261,
+    "type": "User"
+  },
+  "created_at": "2026-01-22T05:43:26Z",
+  "updated_at": "2026-01-24T12:43:26Z",
+  "closed_at": "2026-01-24T12:43:26Z",
+  "merged_at": "2026-01-24T12:43:26Z",
+  "merge_commit_sha": "1f09489534aa",
+  "head": {
+    "ref": "feature/pr-224",
+    "sha": "1f09489534aa"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/224",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 6,
+      "changes": 9
+    },
+    {
+      "filename": "growth/experiments/__pycache__/ramp_scheduler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 11,
+      "changes": 40
+    }
+  ],
+  "commits": [
+    {
+      "sha": "783188e91a75",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T05:43:26Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T05:43:26Z"
+        },
+        "message": "commit 1 for PR #224: refactor(growth_experiments): update variant_allocator.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d249feb98dea",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T06:13:26Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T06:13:26Z"
+        },
+        "message": "commit 2 for PR #224: refactor(growth_experiments): update variant_allocator.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "83957f9d462e",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T06:43:26Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T06:43:26Z"
+        },
+        "message": "commit 3 for PR #224: refactor(growth_experiments): update variant_allocator.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6ecf9b5a8e74",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T07:13:26Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T07:13:26Z"
+        },
+        "message": "commit 4 for PR #224: refactor(growth_experiments): update variant_allocator.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1f09489534aa",
+      "commit": {
+        "author": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T07:43:26Z"
+        },
+        "committer": {
+          "name": "Isabella Martinez",
+          "email": "isabella-martinez@example.com",
+          "date": "2026-01-22T07:43:26Z"
+        },
+        "message": "commit 5 for PR #224: refactor(growth_experiments): update variant_allocator.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-24T01:43:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/224#pullrequestreview-22401"
+    },
+    {
+      "id": 22402,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-24T01:43:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/224#pullrequestreview-22402"
+    },
+    {
+      "id": 22403,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-24T01:43:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/224#pullrequestreview-22403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1221,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1221: verify boundary checks on line 15.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1222,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1222: verify boundary checks on line 25.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1223,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1223: verify boundary checks on line 15.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1224,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1224: verify boundary checks on line 25.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1225,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1225: verify boundary checks on line 15.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1226,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1226: verify boundary checks on line 25.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1227,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1227: verify boundary checks on line 35.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1228,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1228: verify boundary checks on line 45.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1229,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1229: verify boundary checks on line 55.",
+      "created_at": "2026-01-24T01:43:26Z",
+      "path": "growth/experiments/__pycache__/variant_allocator.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": 1000601,
+  "number": 601,
+  "state": "closed",
+  "title": "chore(deps): bump cryptography from 41.0.4 to 41.0.7",
+  "body": "Automated dependency security patch upgrade.\n\nCloses #85",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-07-31T12:23:13Z",
+  "updated_at": "2026-08-02T16:23:13Z",
+  "closed_at": "2026-08-02T16:23:13Z",
+  "merged_at": "2026-08-02T16:23:13Z",
+  "merge_commit_sha": "b648fa196544",
+  "head": {
+    "ref": "feature/pr-601",
+    "sha": "b648fa196544"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/601",
+  "files": [
+    {
+      "filename": "requirements.txt",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 6,
+      "changes": 53
+    },
+    {
+      "filename": "shared/utils/crypto_utils.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 14,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d57719e63b76",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T12:23:13Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T12:23:13Z"
+        },
+        "message": "commit 1 for PR #601: chore(deps): bump cryptography from 41.0.4 to 41.0.7"
+      }
+    },
+    {
+      "sha": "36b9fe1ae761",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T12:53:13Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T12:53:13Z"
+        },
+        "message": "commit 2 for PR #601: chore(deps): bump cryptography from 41.0.4 to 41.0.7"
+      }
+    },
+    {
+      "sha": "af3276b8e63a",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T13:23:13Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T13:23:13Z"
+        },
+        "message": "commit 3 for PR #601: chore(deps): bump cryptography from 41.0.4 to 41.0.7"
+      }
+    },
+    {
+      "sha": "4e2fe9be6399",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T13:53:13Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T13:53:13Z"
+        },
+        "message": "commit 4 for PR #601: chore(deps): bump cryptography from 41.0.4 to 41.0.7"
+      }
+    },
+    {
+      "sha": "b648fa196544",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T14:23:13Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T14:23:13Z"
+        },
+        "message": "commit 5 for PR #601: chore(deps): bump cryptography from 41.0.4 to 41.0.7"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 60101,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T11:23:13Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/601#pullrequestreview-60101"
+    },
+    {
+      "id": 60102,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T11:23:13Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/601#pullrequestreview-60102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3168,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3168: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T11:23:13Z",
+      "path": "requirements.txt",
+      "line": 15
+    },
+    {
+      "id": 3169,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3169: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T11:23:13Z",
+      "path": "requirements.txt",
+      "line": 25
+    },
+    {
+      "id": 3170,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 3170: verify boundary checks on line 35.",
+      "created_at": "2026-08-01T11:23:13Z",
+      "path": "requirements.txt",
+      "line": 35
+    },
+    {
+      "id": 3171,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3171: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T11:23:13Z",
+      "path": "requirements.txt",
+      "line": 15
+    },
+    {
+      "id": 3172,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3172: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T11:23:13Z",
+      "path": "requirements.txt",
+      "line": 25
+    }
+  ]
+}

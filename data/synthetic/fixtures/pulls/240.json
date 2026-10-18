@@ -1,0 +1,178 @@
+{
+  "id": 1000240,
+  "number": 240,
+  "state": "closed",
+  "title": "feat(growth_experiments): update feature_flags.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2026-01-30T07:49:13Z",
+  "updated_at": "2026-02-01T15:49:13Z",
+  "closed_at": "2026-02-01T15:49:13Z",
+  "merged_at": "2026-02-01T15:49:13Z",
+  "merge_commit_sha": "6a9c25713e00",
+  "head": {
+    "ref": "feature/pr-240",
+    "sha": "6a9c25713e00"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/240",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 6,
+      "changes": 48
+    },
+    {
+      "filename": "growth/experiments/__init__.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 6,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b3f622177380",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T07:49:13Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T07:49:13Z"
+        },
+        "message": "commit 1 for PR #240: feat(growth_experiments): update feature_flags.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "00152f2ad974",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T08:19:13Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T08:19:13Z"
+        },
+        "message": "commit 2 for PR #240: feat(growth_experiments): update feature_flags.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "26e7cedd98e9",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T08:49:13Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T08:49:13Z"
+        },
+        "message": "commit 3 for PR #240: feat(growth_experiments): update feature_flags.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6a9c25713e00",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T09:19:13Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2026-01-30T09:19:13Z"
+        },
+        "message": "commit 4 for PR #240: feat(growth_experiments): update feature_flags.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 24001,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-30T13:49:13Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/240#pullrequestreview-24001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1283,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1283: verify boundary checks on line 15.",
+      "created_at": "2026-01-30T13:49:13Z",
+      "path": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1284,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1284: verify boundary checks on line 25.",
+      "created_at": "2026-01-30T13:49:13Z",
+      "path": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1285,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1285: verify boundary checks on line 35.",
+      "created_at": "2026-01-30T13:49:13Z",
+      "path": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1286,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1286: verify boundary checks on line 45.",
+      "created_at": "2026-01-30T13:49:13Z",
+      "path": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1287,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1287: verify boundary checks on line 55.",
+      "created_at": "2026-01-30T13:49:13Z",
+      "path": "growth/experiments/__pycache__/feature_flags.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

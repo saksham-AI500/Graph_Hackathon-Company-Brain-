@@ -1,0 +1,75 @@
+{
+  "question_id": "Q15",
+  "question": "Draft a CODEOWNERS patch that fixes the ownership mismatch in payments/, with evidence. Text only, do not apply.",
+  "mode": "graph_on",
+  "run_index": 5,
+  "status": "VERIFIED",
+  "final_answer_text": "File or module `payments/` is declared in CODEOWNERS under rule `payments/` with owner(s): @acme/payments [S1].\nTeam status: ACTIVE.",
+  "model_string_returned": "deterministic_fallback",
+  "timestamp": "2026-10-18T09:01:46.318334+00:00",
+  "latency_ms": 1333.67,
+  "claims_count": 1,
+  "sources_count": 1,
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "File or module payments/ is owned by @acme/payments according to CODEOWNERS rule payments/.",
+      "claim_type": "OWNERSHIP",
+      "source_ids": [
+        "S1"
+      ],
+      "verified": true,
+      "unresolved_reason": null,
+      "statement": "File or module payments/ is owned by @acme/payments according to CODEOWNERS rule payments/.",
+      "verification_path": "exact_lookup",
+      "score": null,
+      "post_hoc": false,
+      "supporting_span": "@acme/payments",
+      "citation_correction": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "File",
+      "identifier": "payments/",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/CODEOWNERS#L10",
+      "title_or_desc": "Repository file payments/",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": "CODEOWNERS rule: payments/, Owners: @acme/payments, Observed ownership drift score is 0.00",
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "payments/",
+      "description": "Repository file payments/"
+    }
+  ],
+  "verifier_path_per_claim": [
+    "exact_lookup"
+  ],
+  "sentence_level_results": [
+    {
+      "sentence": "File or module  is declared in CODEOWNERS under rule  with owner(s): @acme/payments [S1].",
+      "claim_ids": [
+        "C1"
+      ],
+      "cited_sources": [
+        "S1"
+      ],
+      "verification_path": "exact_lookup",
+      "score": null,
+      "passed": true,
+      "reason": null
+    }
+  ],
+  "fabricated_citation_count": 1,
+  "is_correct": true,
+  "is_faithful": true,
+  "passed_facts": [
+    "@acme/payments",
+    "Text patch"
+  ],
+  "forbidden_violations": []
+}

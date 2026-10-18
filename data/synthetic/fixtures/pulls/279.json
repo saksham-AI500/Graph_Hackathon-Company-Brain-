@@ -1,0 +1,162 @@
+{
+  "id": 1000279,
+  "number": 279,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update sample_sizer.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2026-02-19T01:15:33Z",
+  "updated_at": "2026-02-21T20:15:33Z",
+  "closed_at": "2026-02-21T20:15:33Z",
+  "merged_at": "2026-02-21T20:15:33Z",
+  "merge_commit_sha": "ada1139d19df",
+  "head": {
+    "ref": "feature/pr-279",
+    "sha": "ada1139d19df"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/279",
+  "files": [
+    {
+      "filename": "growth/experiments/sample_sizer.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 9,
+      "changes": 10
+    },
+    {
+      "filename": "growth/experiments/segmentation.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 10,
+      "changes": 16
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eba9d42a1669",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T01:15:33Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T01:15:33Z"
+        },
+        "message": "commit 1 for PR #279: refactor(growth_experiments): update sample_sizer.py"
+      }
+    },
+    {
+      "sha": "e9f447fad403",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T01:45:33Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T01:45:33Z"
+        },
+        "message": "commit 2 for PR #279: refactor(growth_experiments): update sample_sizer.py"
+      }
+    },
+    {
+      "sha": "ada1139d19df",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T02:15:33Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-02-19T02:15:33Z"
+        },
+        "message": "commit 3 for PR #279: refactor(growth_experiments): update sample_sizer.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27901,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-19T05:15:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/279#pullrequestreview-27901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1476,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1476: verify boundary checks on line 15.",
+      "created_at": "2026-02-19T05:15:33Z",
+      "path": "growth/experiments/sample_sizer.py",
+      "line": 15
+    },
+    {
+      "id": 1477,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1477: verify boundary checks on line 25.",
+      "created_at": "2026-02-19T05:15:33Z",
+      "path": "growth/experiments/sample_sizer.py",
+      "line": 25
+    },
+    {
+      "id": 1478,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1478: verify boundary checks on line 35.",
+      "created_at": "2026-02-19T05:15:33Z",
+      "path": "growth/experiments/sample_sizer.py",
+      "line": 35
+    },
+    {
+      "id": 1479,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1479: verify boundary checks on line 45.",
+      "created_at": "2026-02-19T05:15:33Z",
+      "path": "growth/experiments/sample_sizer.py",
+      "line": 45
+    },
+    {
+      "id": 1480,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 1480: verify boundary checks on line 55.",
+      "created_at": "2026-02-19T05:15:33Z",
+      "path": "growth/experiments/sample_sizer.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": 1000266,
+  "number": 266,
+  "state": "closed",
+  "title": "feat(billing): update customer.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-02-12T11:16:24Z",
+  "updated_at": "2026-02-15T09:16:24Z",
+  "closed_at": "2026-02-15T09:16:24Z",
+  "merged_at": "2026-02-15T09:16:24Z",
+  "merge_commit_sha": "79ffbf296783",
+  "head": {
+    "ref": "feature/pr-266",
+    "sha": "79ffbf296783"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/266",
+  "files": [
+    {
+      "filename": "billing/__pycache__/customer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 1,
+      "changes": 38
+    },
+    {
+      "filename": "billing/audit_billing.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 9,
+      "changes": 11
+    },
+    {
+      "filename": "billing/__pycache__/invoicing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 5,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "60dca6a621dc",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T11:16:24Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T11:16:24Z"
+        },
+        "message": "commit 1 for PR #266: feat(billing): update customer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "32fd71e625a7",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T11:46:24Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T11:46:24Z"
+        },
+        "message": "commit 2 for PR #266: feat(billing): update customer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9f4c44c9302a",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T12:16:24Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T12:16:24Z"
+        },
+        "message": "commit 3 for PR #266: feat(billing): update customer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "79ffbf296783",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T12:46:24Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-12T12:46:24Z"
+        },
+        "message": "commit 4 for PR #266: feat(billing): update customer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 26601,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-13T23:16:24Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/266#pullrequestreview-26601"
+    },
+    {
+      "id": 26602,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-13T23:16:24Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/266#pullrequestreview-26602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1406,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1406: verify boundary checks on line 15.",
+      "created_at": "2026-02-13T23:16:24Z",
+      "path": "billing/__pycache__/customer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1407,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1407: verify boundary checks on line 25.",
+      "created_at": "2026-02-13T23:16:24Z",
+      "path": "billing/__pycache__/customer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1408,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1408: verify boundary checks on line 15.",
+      "created_at": "2026-02-13T23:16:24Z",
+      "path": "billing/__pycache__/customer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1409,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1409: verify boundary checks on line 25.",
+      "created_at": "2026-02-13T23:16:24Z",
+      "path": "billing/__pycache__/customer.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

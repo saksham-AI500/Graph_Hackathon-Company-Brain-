@@ -1,0 +1,76 @@
+{
+  "id": 2000225,
+  "number": 225,
+  "title": "TASK: auth improvements for security",
+  "body": "Detailed description for task tracking in module auth/.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 25435,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-22T13:22:36Z",
+  "updated_at": "2026-05-24T13:22:36Z",
+  "closed_at": "2026-05-24T13:22:36Z",
+  "labels": [
+    "task",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70917,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #917 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-23T08:22:36Z"
+    },
+    {
+      "id": 70918,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #918 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-24T02:22:36Z"
+    },
+    {
+      "id": 70919,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #919 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-24T23:22:36Z"
+    },
+    {
+      "id": 70920,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #920 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-25T16:22:36Z"
+    },
+    {
+      "id": 70921,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #921 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-26T08:22:36Z"
+    },
+    {
+      "id": 70922,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #922 on issue #225: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T06:22:36Z"
+    }
+  ]
+}

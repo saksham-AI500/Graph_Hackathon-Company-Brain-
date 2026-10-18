@@ -1,0 +1,49 @@
+{
+  "id": 2000154,
+  "number": 154,
+  "title": "TASK: search improvements for latency",
+  "body": "Detailed description for task tracking in module search/.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 24136,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-09T16:10:26Z",
+  "updated_at": "2026-04-03T16:10:26Z",
+  "closed_at": "2026-04-03T16:10:26Z",
+  "labels": [
+    "task",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70634,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #634 on issue #154: updates from triage and reproduction steps.",
+      "created_at": "2026-03-10T03:10:26Z"
+    },
+    {
+      "id": 70635,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #635 on issue #154: updates from triage and reproduction steps.",
+      "created_at": "2026-03-10T21:10:26Z"
+    },
+    {
+      "id": 70636,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #636 on issue #154: updates from triage and reproduction steps.",
+      "created_at": "2026-03-11T15:10:26Z"
+    }
+  ]
+}

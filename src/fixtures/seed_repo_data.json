@@ -1,0 +1,3114 @@
+{
+  "metadata": {
+    "source_repo": "FalkorDB/FalkorDB",
+    "source_url": "https://github.com/FalkorDB/FalkorDB",
+    "retrieval_time": "2026-10-15T00:00:00Z",
+    "schema_version": "1.0.0",
+    "pr_count": 25,
+    "description": "Deterministic public repository seed fixture for offline demonstration and reproducible evaluation without network access or GitHub tokens."
+  },
+  "codeowners": "# Paths whose contents EXECUTE with this repository's credentials, rather than\n# merely being tested by CI.\n#\n# Why this is the control and the workflow check is not: for a merge-queue run\n# the workflow is read from the queue branch, which carries the pull request's\n# own changes \u2014 so a fork can edit the step that is supposed to refuse it. The\n# CODEOWNERS that applies to a pull request is always the one on the BASE\n# branch (\"the pull request will use the CODEOWNERS file from that branch in\n# the upstream repository\"), so a fork cannot supply the rules that judge it.\n#\n# This file only REQUESTS review on its own. It blocks merging only if the\n# ruleset also enables \"Require review from Code Owners\" \u2014 which is the point,\n# and has to be turned on separately.\n#\n# /tests/ and /flow.sh are deliberately not listed. Both execute, but a\n# contributor has to be able to add a test and adjust how it runs; that exposure\n# is handled by the queue running with persist-credentials off and no registry\n# credential, not by review.\n\n/build/          @FalkorDB/falkordb-core\n/.github/        @FalkorDB/falkordb-core\n\n# Listed so weakening the rules above needs the same approval they do.\n/CODEOWNERS      @FalkorDB/falkordb-core\n",
+  "pull_requests": [
+    {
+      "number": 3342,
+      "title": "4.22.1",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3342",
+      "state": "closed",
+      "created_at": "2026-10-14T16:47:34Z",
+      "merged_at": "2026-10-14T18:39:59Z",
+      "author_login": "swilly22",
+      "author_url": "https://github.com/swilly22",
+      "files": [
+        {
+          "path": "src/errors/error_msgs.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Ferrors%2Ferror_msgs.h",
+          "additions": 22,
+          "deletions": 0
+        },
+        {
+          "path": "src/graph/graph_limits.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fgraph%2Fgraph_limits.h",
+          "additions": 54,
+          "deletions": 0
+        },
+        {
+          "path": "src/index/cch_index.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Findex%2Fcch_index.c",
+          "additions": 13,
+          "deletions": 3
+        },
+        {
+          "path": "src/index/cch_index.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Findex%2Fcch_index.h",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "src/module.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fmodule.c",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph.c",
+          "additions": 126,
+          "deletions": 34
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_entities.c",
+          "additions": 184,
+          "deletions": 79
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_schema.c",
+          "additions": 109,
+          "deletions": 42
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_matrix.c",
+          "additions": 169,
+          "deletions": 36
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_udf.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_udf.c",
+          "additions": 49,
+          "deletions": 6
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_v20.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_v20.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/decode_aux.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_aux.c",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_aux.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_aux.h",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.c",
+          "additions": 110,
+          "deletions": 5
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.h",
+          "additions": 12,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_previous.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_previous.c",
+          "additions": 0,
+          "deletions": 96
+        },
+        {
+          "path": "src/serializers/decoders/decode_previous.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fdecode_previous.h",
+          "additions": 0,
+          "deletions": 17
+        },
+        {
+          "path": "src/serializers/decoders/prev/decoders.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fdecoders.h",
+          "additions": 0,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 253
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 336
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 130
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_v10.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_v10.h",
+          "additions": 0,
+          "deletions": 17
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 245
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 343
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 199
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_v11.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_v11.h",
+          "additions": 0,
+          "deletions": 48
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 254
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 340
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 200
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_v12.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_v12.h",
+          "additions": 0,
+          "deletions": 48
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 259
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 344
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 291
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_v13.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_v13.h",
+          "additions": 0,
+          "deletions": 50
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph_entities.c",
+          "additions": 164,
+          "deletions": 40
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph_schema.c",
+          "additions": 159,
+          "deletions": 75
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_v14.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_v14.h",
+          "additions": 10,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph_entities.c",
+          "additions": 164,
+          "deletions": 39
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph_schema.c",
+          "additions": 172,
+          "deletions": 86
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_v15.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_v15.h",
+          "additions": 10,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph_entities.c",
+          "additions": 201,
+          "deletions": 63
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph_schema.c",
+          "additions": 171,
+          "deletions": 85
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_v16.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_v16.h",
+          "additions": 18,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph.c",
+          "additions": 78,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph_entities.c",
+          "additions": 148,
+          "deletions": 52
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph_schema.c",
+          "additions": 169,
+          "deletions": 83
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_matrix.c",
+          "additions": 55,
+          "deletions": 23
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_v17.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_v17.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph_entities.c",
+          "additions": 184,
+          "deletions": 80
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph_schema.c",
+          "additions": 168,
+          "deletions": 82
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_matrix.c",
+          "additions": 181,
+          "deletions": 49
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_v18.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_v18.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph.c",
+          "additions": 92,
+          "deletions": 32
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_entities.c",
+          "additions": 184,
+          "deletions": 80
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_schema.c",
+          "additions": 114,
+          "deletions": 47
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_matrix.c",
+          "additions": 169,
+          "deletions": 36
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_v19.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_v19.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/encoding_version.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fencoding_version.h",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "src/serializers/graphcontext_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphcontext_type.c",
+          "additions": 16,
+          "deletions": 7
+        },
+        {
+          "path": "src/serializers/graphmeta_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphmeta_type.c",
+          "additions": 7,
+          "deletions": 7
+        },
+        {
+          "path": "src/serializers/serializer_io.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.c",
+          "additions": 278,
+          "deletions": 77
+        },
+        {
+          "path": "src/serializers/serializer_io.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.h",
+          "additions": 116,
+          "deletions": 28
+        },
+        {
+          "path": "src/serializers/serializer_io_internal.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_internal.h",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/serializer_io_prev.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_prev.c",
+          "additions": 35,
+          "deletions": 42
+        },
+        {
+          "path": "src/version.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6918f185fd590be38dd21616be326c89e5e6e0c2/src%2Fversion.h",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "tests/flow/rdb_payload.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Frdb_payload.py",
+          "additions": 443,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_prev_rdb_decode.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Fflow%2Ftest_prev_rdb_decode.py",
+          "additions": 2,
+          "deletions": 20
+        },
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 284,
+          "deletions": 29
+        },
+        {
+          "path": "tests/flow/test_rdb_malformed.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_malformed.py",
+          "additions": 701,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_replication_states.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Fflow%2Ftest_replication_states.py",
+          "additions": 7,
+          "deletions": 5
+        },
+        {
+          "path": "tests/unit/test_serializer.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Funit%2Ftest_serializer.c",
+          "additions": 11,
+          "deletions": 11
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T17:02:33Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-14T18:21:02Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3339,
+      "title": "fix: bound value nesting on RDB/RESTORE decode, property writes and bulk insert",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3339",
+      "state": "closed",
+      "created_at": "2026-10-14T09:03:20Z",
+      "merged_at": "2026-10-14T12:14:14Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 147,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/pending.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fpending.rs",
+          "additions": 104,
+          "deletions": 10
+        },
+        {
+          "path": "graph/src/runtime/value.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/8c2609fdc11687269333751ebd4394d22692c533/graph%2Fsrc%2Fruntime%2Fvalue.rs",
+          "additions": 259,
+          "deletions": 57
+        },
+        {
+          "path": "src/commands/bulk_insert.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fcommands%2Fbulk_insert.rs",
+          "additions": 10,
+          "deletions": 4
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T09:09:58Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "DISMISSED",
+          "submitted_at": "2026-10-14T09:05:56Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-14T11:56:02Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T11:31:03Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3338,
+          "title": "GRAPH.RESTORE decodes nested values without a depth limit",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3338",
+          "state": "closed",
+          "created_at": "2026-10-14T09:03:17Z",
+          "closed_at": "2026-10-14T12:14:15Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3329,
+      "title": "support RDB decode short read",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3329",
+      "state": "closed",
+      "created_at": "2026-10-13T11:44:20Z",
+      "merged_at": "2026-10-14T11:49:44Z",
+      "author_login": "swilly22",
+      "author_url": "https://github.com/swilly22",
+      "files": [
+        {
+          "path": "src/errors/error_msgs.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Ferrors%2Ferror_msgs.h",
+          "additions": 22,
+          "deletions": 0
+        },
+        {
+          "path": "src/graph/graph_limits.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fgraph%2Fgraph_limits.h",
+          "additions": 54,
+          "deletions": 0
+        },
+        {
+          "path": "src/index/cch_index.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Findex%2Fcch_index.c",
+          "additions": 8,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph.c",
+          "additions": 83,
+          "deletions": 63
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_entities.c",
+          "additions": 144,
+          "deletions": 164
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_schema.c",
+          "additions": 50,
+          "deletions": 90
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_matrix.c",
+          "additions": 47,
+          "deletions": 82
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_v20.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_v20.h",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.c",
+          "additions": 84,
+          "deletions": 15
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.h",
+          "additions": 4,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_previous.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_previous.c",
+          "additions": 0,
+          "deletions": 112
+        },
+        {
+          "path": "src/serializers/decoders/decode_previous.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fdecode_previous.h",
+          "additions": 0,
+          "deletions": 17
+        },
+        {
+          "path": "src/serializers/decoders/prev/decoders.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fdecoders.h",
+          "additions": 0,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 253
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 336
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 130
+        },
+        {
+          "path": "src/serializers/decoders/prev/v10/decode_v10.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv10%2Fdecode_v10.h",
+          "additions": 0,
+          "deletions": 17
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 245
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 343
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 199
+        },
+        {
+          "path": "src/serializers/decoders/prev/v11/decode_v11.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv11%2Fdecode_v11.h",
+          "additions": 0,
+          "deletions": 48
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 254
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 340
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 200
+        },
+        {
+          "path": "src/serializers/decoders/prev/v12/decode_v12.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv12%2Fdecode_v12.h",
+          "additions": 0,
+          "deletions": 48
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph.c",
+          "additions": 0,
+          "deletions": 259
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph_entities.c",
+          "additions": 0,
+          "deletions": 344
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_graph_schema.c",
+          "additions": 0,
+          "deletions": 291
+        },
+        {
+          "path": "src/serializers/decoders/prev/v13/decode_v13.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/25b5b076802b12e7ea9bcdf9d049dfc146580bc6/src%2Fserializers%2Fdecoders%2Fprev%2Fv13%2Fdecode_v13.h",
+          "additions": 0,
+          "deletions": 50
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph_entities.c",
+          "additions": 164,
+          "deletions": 40
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_graph_schema.c",
+          "additions": 159,
+          "deletions": 75
+        },
+        {
+          "path": "src/serializers/decoders/prev/v14/decode_v14.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv14%2Fdecode_v14.h",
+          "additions": 10,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph_entities.c",
+          "additions": 164,
+          "deletions": 39
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_graph_schema.c",
+          "additions": 172,
+          "deletions": 86
+        },
+        {
+          "path": "src/serializers/decoders/prev/v15/decode_v15.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv15%2Fdecode_v15.h",
+          "additions": 10,
+          "deletions": 4
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph_entities.c",
+          "additions": 201,
+          "deletions": 63
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_graph_schema.c",
+          "additions": 171,
+          "deletions": 85
+        },
+        {
+          "path": "src/serializers/decoders/prev/v16/decode_v16.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv16%2Fdecode_v16.h",
+          "additions": 18,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph.c",
+          "additions": 78,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph_entities.c",
+          "additions": 148,
+          "deletions": 52
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_graph_schema.c",
+          "additions": 169,
+          "deletions": 83
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_matrix.c",
+          "additions": 55,
+          "deletions": 23
+        },
+        {
+          "path": "src/serializers/decoders/prev/v17/decode_v17.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv17%2Fdecode_v17.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph.c",
+          "additions": 79,
+          "deletions": 29
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph_entities.c",
+          "additions": 184,
+          "deletions": 80
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_graph_schema.c",
+          "additions": 168,
+          "deletions": 82
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_matrix.c",
+          "additions": 181,
+          "deletions": 49
+        },
+        {
+          "path": "src/serializers/decoders/prev/v18/decode_v18.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fdecoders%2Fprev%2Fv18%2Fdecode_v18.h",
+          "additions": 17,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph.c",
+          "additions": 82,
+          "deletions": 94
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_entities.c",
+          "additions": 144,
+          "deletions": 165
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_schema.c",
+          "additions": 58,
+          "deletions": 94
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_matrix.c",
+          "additions": 47,
+          "deletions": 82
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_v19.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_v19.h",
+          "additions": 9,
+          "deletions": 8
+        },
+        {
+          "path": "src/serializers/encoding_version.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/src%2Fserializers%2Fencoding_version.h",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "src/serializers/graphcontext_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphcontext_type.c",
+          "additions": 2,
+          "deletions": 7
+        },
+        {
+          "path": "src/serializers/graphmeta_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphmeta_type.c",
+          "additions": 2,
+          "deletions": 8
+        },
+        {
+          "path": "src/serializers/serializer_io.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.c",
+          "additions": 106,
+          "deletions": 64
+        },
+        {
+          "path": "src/serializers/serializer_io.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.h",
+          "additions": 94,
+          "deletions": 40
+        },
+        {
+          "path": "src/serializers/serializer_io_internal.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_internal.h",
+          "additions": 17,
+          "deletions": 20
+        },
+        {
+          "path": "src/serializers/serializer_io_prev.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_prev.c",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "tests/flow/test_prev_rdb_decode.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Fflow%2Ftest_prev_rdb_decode.py",
+          "additions": 2,
+          "deletions": 20
+        },
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 22,
+          "deletions": 37
+        },
+        {
+          "path": "tests/flow/test_rdb_malformed.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_malformed.py",
+          "additions": 85,
+          "deletions": 31
+        },
+        {
+          "path": "tests/flow/test_replication_states.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Fflow%2Ftest_replication_states.py",
+          "additions": 7,
+          "deletions": 5
+        },
+        {
+          "path": "tests/unit/test_serializer.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a5579417119bf190a6a3fdf204b030bb26ac1a7d/tests%2Funit%2Ftest_serializer.c",
+          "additions": 11,
+          "deletions": 11
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T09:14:00Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-13T19:17:22Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-14T09:17:25Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3328,
+      "title": "fix: parse module-load arguments like C (case-insensitive, validated, refused on bad input)",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3328",
+      "state": "closed",
+      "created_at": "2026-10-13T07:44:02Z",
+      "merged_at": "2026-10-14T11:54:56Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "flow_tests_done.txt",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/flow_tests_done.txt",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "src/commands/config_cmd.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/7dfde9b16c64085a1e9be0cbbd538f68baade48a/src%2Fcommands%2Fconfig_cmd.rs",
+          "additions": 24,
+          "deletions": 14
+        },
+        {
+          "path": "src/config.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/7dfde9b16c64085a1e9be0cbbd538f68baade48a/src%2Fconfig.rs",
+          "additions": 190,
+          "deletions": 2
+        },
+        {
+          "path": "src/lib.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/7dfde9b16c64085a1e9be0cbbd538f68baade48a/src%2Flib.rs",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "src/module_init.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/7dfde9b16c64085a1e9be0cbbd538f68baade48a/src%2Fmodule_init.rs",
+          "additions": 12,
+          "deletions": 85
+        },
+        {
+          "path": "tests/flow/test_module_args.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/7dfde9b16c64085a1e9be0cbbd538f68baade48a/tests%2Fflow%2Ftest_module_args.py",
+          "additions": 147,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T07:42:30Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-13T20:34:53Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-14T08:27:54Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T07:34:05Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-14T07:36:15Z"
+        },
+        {
+          "author_login": "github-code-quality[bot]",
+          "author_url": "https://github.com/apps/github-code-quality",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-13T07:45:27Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3268,
+          "title": "[Rust] Module-load arguments parsed unlike C: case-sensitive names, any boolean value, ASYNC_DELETE ignored, invalid/unknown args load",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3268",
+          "state": "closed",
+          "created_at": "2026-10-11T13:11:12Z",
+          "closed_at": "2026-10-14T11:54:57Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3307,
+      "title": "perf(index): apply native-index writes once per unit of work",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3307",
+      "state": "closed",
+      "created_at": "2026-10-11T14:50:05Z",
+      "merged_at": "2026-10-11T18:36:58Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": "graph/src/runtime/pending.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fpending.rs",
+          "additions": 28,
+          "deletions": 47
+        },
+        {
+          "path": "src/commands/bulk_insert.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fcommands%2Fbulk_insert.rs",
+          "additions": 33,
+          "deletions": 49
+        },
+        {
+          "path": "graph/src/effects/v3/apply.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Fapply.rs",
+          "additions": 14,
+          "deletions": 28
+        },
+        {
+          "path": "graph/src/effects/v3/test_aux.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Ftest_aux.rs",
+          "additions": 3,
+          "deletions": 2
+        },
+        {
+          "path": "graph/src/graph/graph.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraph.rs",
+          "additions": 101,
+          "deletions": 38
+        },
+        {
+          "path": "graph/src/graph/graph/falkordb_index_tests.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Fgraph%2Fgraph%2Ffalkordb_index_tests.rs",
+          "additions": 121,
+          "deletions": 35
+        },
+        {
+          "path": "graph/src/graph/id_space.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fid_space.rs",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "graph/src/index/falkordb/falkordb_index.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Ffalkordb%2Ffalkordb_index.rs",
+          "additions": 112,
+          "deletions": 41
+        },
+        {
+          "path": "graph/src/index/falkordb/graph_writes.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Ffalkordb%2Fgraph_writes.rs",
+          "additions": 109,
+          "deletions": 185
+        },
+        {
+          "path": "graph/src/index/falkordb/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Ffalkordb%2Fmod.rs",
+          "additions": 3,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/index/falkordb/numeric.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Ffalkordb%2Fnumeric.rs",
+          "additions": 20,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/index/falkordb/pending_writes.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Ffalkordb%2Fpending_writes.rs",
+          "additions": 220,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/index/index_docs.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/cf878b9dd73e518717dd18a66f2126dcdd2b6bfc/graph%2Fsrc%2Findex%2Findex_docs.rs",
+          "additions": 42,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/index/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Fmod.rs",
+          "additions": 1,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-11T17:07:50Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-11T16:06:10Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-11T17:04:48Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3306,
+          "title": "Native index: update the index once per unit of work, not once per write call",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3306",
+          "state": "closed",
+          "created_at": "2026-10-11T14:49:53Z",
+          "closed_at": "2026-10-11T18:36:59Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3290,
+      "title": "fix: an inline write no longer fails while a queued write is matching",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3290",
+      "state": "closed",
+      "created_at": "2026-10-11T13:26:19Z",
+      "merged_at": "2026-10-13T13:27:27Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "src/commands/bulk_insert.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fcommands%2Fbulk_insert.rs",
+          "additions": 17,
+          "deletions": 13
+        },
+        {
+          "path": "graph/src/graph/mvcc_graph.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fmvcc_graph.rs",
+          "additions": 78,
+          "deletions": 4
+        },
+        {
+          "path": "src/commands/constraint.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fcommands%2Fconstraint.rs",
+          "additions": 5,
+          "deletions": 1
+        },
+        {
+          "path": "src/commands/record.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fcommands%2Frecord.rs",
+          "additions": 4,
+          "deletions": 3
+        },
+        {
+          "path": "src/graph_core.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fgraph_core.rs",
+          "additions": 75,
+          "deletions": 19
+        },
+        {
+          "path": "src/query_session.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/src%2Fquery_session.rs",
+          "additions": 141,
+          "deletions": 4
+        },
+        {
+          "path": "tests/flow/test_multi_exec.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/tests%2Fflow%2Ftest_multi_exec.py",
+          "additions": 41,
+          "deletions": 0
+        },
+        {
+          "path": "tests/test_concurrency.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ad2925117a40fdb47325867c5e9238c0d4feb0e0/tests%2Ftest_concurrency.py",
+          "additions": 6,
+          "deletions": 11
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-11T13:30:14Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-13T11:38:43Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-13T11:38:55Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3093,
+          "title": "[Rust] Write inside MULTI/EXEC fails with 'another write is in progress' while a queued write is still matching",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3093",
+          "state": "closed",
+          "created_at": "2026-09-25T05:18:29Z",
+          "closed_at": "2026-10-13T13:27:29Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3262,
+      "title": "fix: give graphs loaded from an RDB the configured CACHE_SIZE",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3262",
+      "state": "closed",
+      "created_at": "2026-10-11T13:09:06Z",
+      "merged_at": "2026-10-12T08:53:13Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "src/redis_type.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/abd835bd0490793535ccbb578f59154d3aa0162d/src%2Fredis_type.rs",
+          "additions": 15,
+          "deletions": 8
+        },
+        {
+          "path": "tests/flow/test_cache.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/52e5fe159bf3391b98ad7e4754dc6adb16c539ad/tests%2Fflow%2Ftest_cache.py",
+          "additions": 17,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-11T13:12:58Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-12T06:15:59Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3251,
+          "title": "[Rust] Graphs loaded from RDB ignore CACHE_SIZE (always 25)",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3251",
+          "state": "closed",
+          "created_at": "2026-10-11T13:04:05Z",
+          "closed_at": "2026-10-12T08:53:15Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3234,
+      "title": "fix: slow log no longer panics on a multi-byte character at byte 2048",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3234",
+      "state": "closed",
+      "created_at": "2026-10-11T12:31:50Z",
+      "merged_at": "2026-10-12T08:16:19Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "src/slow_log.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/be7a3ae20320f44c8025faad721a2cb1c84920da/src%2Fslow_log.rs",
+          "additions": 15,
+          "deletions": 6
+        },
+        {
+          "path": "tests/flow/test_slowlog.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/9aa79659d728bd4bb1e04ce6f98bc7da97d4c3e0/tests%2Fflow%2Ftest_slowlog.py",
+          "additions": 35,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-11T12:34:39Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-12T06:29:48Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3233,
+          "title": "[Rust] Slow log panics and kills the server when a multi-byte character straddles byte 2048 of a slow query",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3233",
+          "state": "closed",
+          "created_at": "2026-10-11T12:27:48Z",
+          "closed_at": "2026-10-12T08:16:20Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3192,
+      "title": "ci(backport): read every search result in batch-backport",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3192",
+      "state": "closed",
+      "created_at": "2026-10-08T08:31:46Z",
+      "merged_at": "2026-10-08T12:54:41Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": ".github/workflows/batch-backport.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/10060413f4c3450f9d2ef5e18a15f7371e83868b/.github%2Fworkflows%2Fbatch-backport.yml",
+          "additions": 22,
+          "deletions": 9
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-08T08:35:13Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-08T08:41:41Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-08T08:35:17Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3191,
+          "title": "batch-backport only backports the first 30 matching PRs",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3191",
+          "state": "closed",
+          "created_at": "2026-10-08T08:31:36Z",
+          "closed_at": "2026-10-08T12:54:42Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3189,
+      "title": "[6.0] Batch backport (44 commits)",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3189",
+      "state": "closed",
+      "created_at": "2026-10-08T07:48:49Z",
+      "merged_at": "2026-10-08T13:31:36Z",
+      "author_login": "github-actions[bot]",
+      "author_url": "https://github.com/apps/github-actions",
+      "files": [
+        {
+          "path": "graph/src/runtime/pending.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fpending.rs",
+          "additions": 111,
+          "deletions": 115
+        },
+        {
+          "path": "flow_tests_done.txt",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/flow_tests_done.txt",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/effects/v3/apply.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Fapply.rs",
+          "additions": 399,
+          "deletions": 72
+        },
+        {
+          "path": "graph/src/effects/v3/test_aux.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Ftest_aux.rs",
+          "additions": 3,
+          "deletions": 12
+        },
+        {
+          "path": "graph/src/graph/graph.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraph.rs",
+          "additions": 683,
+          "deletions": 206
+        },
+        {
+          "path": "graph/src/graph/id_space.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fid_space.rs",
+          "additions": 979,
+          "deletions": 264
+        },
+        {
+          "path": "graph/src/index/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Fmod.rs",
+          "additions": 35,
+          "deletions": 10
+        },
+        {
+          "path": "graph/src/graph/mvcc_graph.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fmvcc_graph.rs",
+          "additions": 65,
+          "deletions": 2
+        },
+        {
+          "path": ".claude/skills/build/SKILL.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.claude%2Fskills%2Fbuild%2FSKILL.md",
+          "additions": 29,
+          "deletions": 8
+        },
+        {
+          "path": ".devcontainer/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.devcontainer%2FDockerfile",
+          "additions": 36,
+          "deletions": 31
+        },
+        {
+          "path": ".devcontainer/README.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.devcontainer%2FREADME.md",
+          "additions": 7,
+          "deletions": 6
+        },
+        {
+          "path": ".dockerignore",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.dockerignore",
+          "additions": 15,
+          "deletions": 11
+        },
+        {
+          "path": ".github/codeql/codeql-config.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.github%2Fcodeql%2Fcodeql-config.yml",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": ".github/workflows/_build-artifacts-macos.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/32aacf47f23f9df7f7da216f74eeb07f537feb94/.github%2Fworkflows%2F_build-artifacts-macos.yml",
+          "additions": 0,
+          "deletions": 158
+        },
+        {
+          "path": ".github/workflows/_build-artifacts.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.github%2Fworkflows%2F_build-artifacts.yml",
+          "additions": 4,
+          "deletions": 4
+        },
+        {
+          "path": ".github/workflows/_build-flavour.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/e8d9bd97b5f3339fb82811cc0375be9697d9b02b/.github%2Fworkflows%2F_build-flavour.yml",
+          "additions": 5,
+          "deletions": 5
+        },
+        {
+          "path": ".github/workflows/_ci-pipeline.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/455efc6e6b89aabb43472f477ec236ecdba3864b/.github%2Fworkflows%2F_ci-pipeline.yml",
+          "additions": 87,
+          "deletions": 0
+        },
+        {
+          "path": ".github/workflows/_flow-artifact.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2F_flow-artifact.yml",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "path": ".github/workflows/_flow-flavour.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2F_flow-flavour.yml",
+          "additions": 6,
+          "deletions": 6
+        },
+        {
+          "path": ".github/workflows/build-artifacts.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Fbuild-artifacts.yml",
+          "additions": 5,
+          "deletions": 24
+        },
+        {
+          "path": ".github/workflows/build-toolchain.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.github%2Fworkflows%2Fbuild-toolchain.yml",
+          "additions": 5,
+          "deletions": 5
+        },
+        {
+          "path": ".github/workflows/codeql.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.github%2Fworkflows%2Fcodeql.yml",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "path": ".github/workflows/release-artifacts.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frelease-artifacts.yml",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": ".github/workflows/release-image.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.github%2Fworkflows%2Frelease-image.yml",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": ".github/workflows/rust-pr.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frust-pr.yml",
+          "additions": 24,
+          "deletions": 13
+        },
+        {
+          "path": ".github/workflows/rust-push.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frust-push.yml",
+          "additions": 12,
+          "deletions": 12
+        },
+        {
+          "path": ".gitignore",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.gitignore",
+          "additions": 10,
+          "deletions": 2
+        },
+        {
+          "path": ".gitmodules",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/.gitmodules",
+          "additions": 15,
+          "deletions": 0
+        },
+        {
+          "path": "CLAUDE.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/CLAUDE.md",
+          "additions": 31,
+          "deletions": 8
+        },
+        {
+          "path": "Cargo.lock",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/Cargo.lock",
+          "additions": 109,
+          "deletions": 49
+        },
+        {
+          "path": "Cargo.toml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/9aa79659d728bd4bb1e04ce6f98bc7da97d4c3e0/Cargo.toml",
+          "additions": 5,
+          "deletions": 2
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/README.md",
+          "additions": 36,
+          "deletions": 24
+        },
+        {
+          "path": "bench/src/falkorbench/callgrind.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/bench%2Fsrc%2Ffalkorbench%2Fcallgrind.py",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "bench/src/falkorbench/queries.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/bench%2Fsrc%2Ffalkorbench%2Fqueries.py",
+          "additions": 33,
+          "deletions": 2
+        },
+        {
+          "path": "bench/tests/test_queries.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/bench%2Ftests%2Ftest_queries.py",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "build/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2FDockerfile",
+          "additions": 102,
+          "deletions": 67
+        },
+        {
+          "path": "build/libomp.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Flibomp.sh",
+          "additions": 13,
+          "deletions": 6
+        },
+        {
+          "path": "build/runtime/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile",
+          "additions": 38,
+          "deletions": 11
+        },
+        {
+          "path": "build/runtime/Dockerfile.amazonlinux2023",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/build%2Fruntime%2FDockerfile.amazonlinux2023",
+          "additions": 30,
+          "deletions": 27
+        },
+        {
+          "path": "build/runtime/Dockerfile.asan",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.asan",
+          "additions": 42,
+          "deletions": 36
+        },
+        {
+          "path": "build/runtime/Dockerfile.coverage",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.coverage",
+          "additions": 18,
+          "deletions": 6
+        },
+        {
+          "path": "build/runtime/Dockerfile.rhel9",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/build%2Fruntime%2FDockerfile.rhel9",
+          "additions": 33,
+          "deletions": 26
+        },
+        {
+          "path": "build/runtime/run.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/fc239e8cde959463a5c40a81f9884927ed1a29ab/build%2Fruntime%2Frun.sh",
+          "additions": 92,
+          "deletions": 2
+        },
+        {
+          "path": "codecov.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/codecov.yml",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "path": "deps/GraphBLAS",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/master/deps/GraphBLAS",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "deps/LAGraph",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/master/deps/LAGraph",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "deps/native-deps.lock",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/deps%2Fnative-deps.lock",
+          "additions": 28,
+          "deletions": 0
+        },
+        {
+          "path": "gen_prejit.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/32aacf47f23f9df7f7da216f74eeb07f537feb94/gen_prejit.sh",
+          "additions": 0,
+          "deletions": 344
+        },
+        {
+          "path": "graph/Cargo.toml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/graph%2FCargo.toml",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "graph/build.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/graph%2Fbuild.rs",
+          "additions": 186,
+          "deletions": 163
+        },
+        {
+          "path": "graph/src/effects/error.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Ferror.rs",
+          "additions": 51,
+          "deletions": 20
+        },
+        {
+          "path": "graph/src/effects/v3/emit.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Femit.rs",
+          "additions": 16,
+          "deletions": 9
+        },
+        {
+          "path": "graph/src/effects/v3/id_list.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Fid_list.rs",
+          "additions": 130,
+          "deletions": 6
+        },
+        {
+          "path": "graph/src/effects/v3/records.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Feffects%2Fv3%2Frecords.rs",
+          "additions": 159,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/graph/graphblas/fold_cost_bench.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraphblas%2Ffold_cost_bench.rs",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "graph/src/graph/graphblas/matrix.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraphblas%2Fmatrix.rs",
+          "additions": 38,
+          "deletions": 8
+        },
+        {
+          "path": "graph/src/graph/graphblas/tensor.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraphblas%2Ftensor.rs",
+          "additions": 13,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/graph/graphblas/vector.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraphblas%2Fvector.rs",
+          "additions": 57,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/graph/graphblas/versioned_matrix.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fgraph%2Fgraphblas%2Fversioned_matrix.rs",
+          "additions": 37,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/cursor.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Fcursor.rs",
+          "additions": 80,
+          "deletions": 20
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/leaf/aos.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Fleaf%2Faos.rs",
+          "additions": 18,
+          "deletions": 27
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/leaf/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Fleaf%2Fmod.rs",
+          "additions": 21,
+          "deletions": 21
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Fmod.rs",
+          "additions": 207,
+          "deletions": 21
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/node.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Fnode.rs",
+          "additions": 258,
+          "deletions": 84
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/cow_btree/tests.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fcow_btree%2Ftests.rs",
+          "additions": 425,
+          "deletions": 34
+        },
+        {
+          "path": "graph/src/index/falkordb/data_structures/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Findex%2Ffalkordb%2Fdata_structures%2Fmod.rs",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/parser/cypher.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fparser%2Fcypher.rs",
+          "additions": 98,
+          "deletions": 16
+        },
+        {
+          "path": "graph/src/parser/lexer.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fparser%2Flexer.rs",
+          "additions": 72,
+          "deletions": 41
+        },
+        {
+          "path": "graph/src/planner/binder.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Fbinder.rs",
+          "additions": 61,
+          "deletions": 32
+        },
+        {
+          "path": "graph/src/planner/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Fmod.rs",
+          "additions": 283,
+          "deletions": 168
+        },
+        {
+          "path": "graph/src/planner/optimizer/fuse_anonymous_traverse.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Ffuse_anonymous_traverse.rs",
+          "additions": 44,
+          "deletions": 40
+        },
+        {
+          "path": "graph/src/planner/optimizer/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Fmod.rs",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/planner/optimizer/push_filters_down.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Fpush_filters_down.rs",
+          "additions": 84,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/planner/optimizer/reduce_bound_edge.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Freduce_bound_edge.rs",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/planner/optimizer/reduce_expand_into.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Freduce_expand_into.rs",
+          "additions": 1,
+          "deletions": 89
+        },
+        {
+          "path": "graph/src/planner/optimizer/reduce_var_len_path.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Freduce_var_len_path.rs",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/planner/optimizer/references.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Freferences.rs",
+          "additions": 334,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/planner/optimizer/select_scan_node.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Fselect_scan_node.rs",
+          "additions": 206,
+          "deletions": 67
+        },
+        {
+          "path": "graph/src/planner/optimizer/utilize_index.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Futilize_index.rs",
+          "additions": 77,
+          "deletions": 144
+        },
+        {
+          "path": "graph/src/planner/optimizer/utilize_node_by_id.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fplanner%2Foptimizer%2Futilize_node_by_id.rs",
+          "additions": 7,
+          "deletions": 19
+        },
+        {
+          "path": "graph/src/runtime/batch.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fbatch.rs",
+          "additions": 29,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/functions/conversion.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Ffunctions%2Fconversion.rs",
+          "additions": 7,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/functions/entity.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a89007c8168e9eae801be21d56525280b351f401/graph%2Fsrc%2Fruntime%2Ffunctions%2Fentity.rs",
+          "additions": 85,
+          "deletions": 6
+        },
+        {
+          "path": "graph/src/runtime/functions/list.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Ffunctions%2Flist.rs",
+          "additions": 36,
+          "deletions": 8
+        },
+        {
+          "path": "graph/src/runtime/functions/math.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Ffunctions%2Fmath.rs",
+          "additions": 2,
+          "deletions": 5
+        },
+        {
+          "path": "graph/src/runtime/functions/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Ffunctions%2Fmod.rs",
+          "additions": 8,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/functions/temporal.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Ffunctions%2Ftemporal.rs",
+          "additions": 78,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/runtime/index_ddl.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Findex_ddl.rs",
+          "additions": 5,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/ops/batched_result_emitter.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fbatched_result_emitter.rs",
+          "additions": 13,
+          "deletions": 9
+        },
+        {
+          "path": "graph/src/runtime/ops/commit.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fcommit.rs",
+          "additions": 11,
+          "deletions": 7
+        },
+        {
+          "path": "graph/src/runtime/ops/cond_traverse.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fcond_traverse.rs",
+          "additions": 20,
+          "deletions": 111
+        },
+        {
+          "path": "graph/src/runtime/ops/cond_var_len_traverse.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fcond_var_len_traverse.rs",
+          "additions": 11,
+          "deletions": 1
+        },
+        {
+          "path": "graph/src/runtime/ops/create.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fcreate.rs",
+          "additions": 7,
+          "deletions": 13
+        },
+        {
+          "path": "graph/src/runtime/ops/delete.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fdelete.rs",
+          "additions": 12,
+          "deletions": 9
+        },
+        {
+          "path": "graph/src/runtime/ops/edge_by_index_scan.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fedge_by_index_scan.rs",
+          "additions": 15,
+          "deletions": 2
+        },
+        {
+          "path": "graph/src/runtime/ops/expand_into.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fexpand_into.rs",
+          "additions": 5,
+          "deletions": 31
+        },
+        {
+          "path": "graph/src/runtime/ops/project.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fops%2Fproject.rs",
+          "additions": 14,
+          "deletions": 0
+        },
+        {
+          "path": "graph/src/runtime/runtime.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fruntime%2Fruntime.rs",
+          "additions": 30,
+          "deletions": 9
+        },
+        {
+          "path": "graph/src/udf/js_globals.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fudf%2Fjs_globals.rs",
+          "additions": 9,
+          "deletions": 2
+        },
+        {
+          "path": "graph/src/udf/type_convert.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/0775c572f88a3a4e39ef56bc17976c3a80668c15/graph%2Fsrc%2Fudf%2Ftype_convert.rs",
+          "additions": 35,
+          "deletions": 38
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-08T07:50:41Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3182,
+      "title": "chore(deps): bump rustls from 0.23.41 to 0.23.45",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3182",
+      "state": "closed",
+      "created_at": "2026-10-07T16:23:50Z",
+      "merged_at": "2026-10-07T18:50:24Z",
+      "author_login": "dependabot[bot]",
+      "author_url": "https://github.com/apps/dependabot",
+      "files": [
+        {
+          "path": "Cargo.lock",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/Cargo.lock",
+          "additions": 4,
+          "deletions": 4
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-07T18:34:19Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3181,
+      "title": "build(docker): run redis-server as the falkordb user",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3181",
+      "state": "closed",
+      "created_at": "2026-10-07T14:14:57Z",
+      "merged_at": "2026-10-08T07:24:56Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": "build/runtime/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile",
+          "additions": 17,
+          "deletions": 8
+        },
+        {
+          "path": "build/runtime/Dockerfile.asan",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.asan",
+          "additions": 4,
+          "deletions": 1
+        },
+        {
+          "path": "build/runtime/Dockerfile.coverage",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.coverage",
+          "additions": 7,
+          "deletions": 3
+        },
+        {
+          "path": "build/runtime/run.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/fc239e8cde959463a5c40a81f9884927ed1a29ab/build%2Fruntime%2Frun.sh",
+          "additions": 92,
+          "deletions": 2
+        },
+        {
+          "path": "tests/flow/common.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/fc239e8cde959463a5c40a81f9884927ed1a29ab/tests%2Fflow%2Fcommon.py",
+          "additions": 9,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T14:22:11Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T17:08:24Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-08T07:05:18Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T17:13:32Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T17:18:03Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3180,
+          "title": "Run redis-server as a non-root falkordb user in the Docker image",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3180",
+          "state": "closed",
+          "created_at": "2026-10-07T14:14:34Z",
+          "closed_at": "2026-10-08T07:24:57Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3179,
+      "title": "ci: port master's Trivy image scan; drop util-linux from the runtime image",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3179",
+      "state": "closed",
+      "created_at": "2026-10-07T13:26:57Z",
+      "merged_at": "2026-10-07T16:22:21Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": ".github/workflows/_ci-pipeline.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/455efc6e6b89aabb43472f477ec236ecdba3864b/.github%2Fworkflows%2F_ci-pipeline.yml",
+          "additions": 87,
+          "deletions": 0
+        },
+        {
+          "path": "build/runtime/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile",
+          "additions": 11,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T13:36:35Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-07T14:14:54Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T13:45:36Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3178,
+          "title": "CI: port master's Trivy image scan to the Rust pipeline",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3178",
+          "state": "closed",
+          "created_at": "2026-10-07T13:26:35Z",
+          "closed_at": "2026-10-07T16:22:23Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3176,
+      "title": "fix(decode): don't merge a RESTORE payload into a live graph (#259, #\u2026",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3176",
+      "state": "closed",
+      "created_at": "2026-10-07T07:05:44Z",
+      "merged_at": "2026-10-07T08:39:07Z",
+      "author_login": "swilly22",
+      "author_url": "https://github.com/swilly22",
+      "files": [
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph.c",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 35,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T07:09:29Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-07T08:08:00Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T07:09:25Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3170,
+      "title": "build(native-deps): include <string> in VecSim's vec_utils.cpp for libc++ 23",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3170",
+      "state": "closed",
+      "created_at": "2026-10-05T19:25:45Z",
+      "merged_at": "2026-10-06T05:47:22Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": "native-deps/src/recipes/mod.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/e5f5b46358e399d21136bf3e18abc79bc2096305/native-deps%2Fsrc%2Frecipes%2Fmod.rs",
+          "additions": 5,
+          "deletions": 4
+        },
+        {
+          "path": "native-deps/src/recipes/redisearch.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/e5f5b46358e399d21136bf3e18abc79bc2096305/native-deps%2Fsrc%2Frecipes%2Fredisearch.rs",
+          "additions": 108,
+          "deletions": 2
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-05T19:35:09Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-05T19:31:17Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-05T19:27:50Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3169,
+          "title": "macOS build fails with Homebrew LLVM 23: VectorSimilarity's vec_utils.cpp doesn't include <string>",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3169",
+          "state": "closed",
+          "created_at": "2026-10-05T19:25:14Z",
+          "closed_at": "2026-10-06T05:47:23Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3163,
+      "title": "ci: move the toolchain to LLVM 23",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3163",
+      "state": "closed",
+      "created_at": "2026-10-04T08:55:25Z",
+      "merged_at": "2026-10-04T12:04:55Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": ".devcontainer/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.devcontainer%2FDockerfile",
+          "additions": 14,
+          "deletions": 14
+        },
+        {
+          "path": ".devcontainer/README.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.devcontainer%2FREADME.md",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "path": ".github/workflows/_flow-artifact.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2F_flow-artifact.yml",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": ".github/workflows/_flow-flavour.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2F_flow-flavour.yml",
+          "additions": 4,
+          "deletions": 4
+        },
+        {
+          "path": ".github/workflows/build-artifacts.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Fbuild-artifacts.yml",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": ".github/workflows/release-artifacts.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frelease-artifacts.yml",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": ".github/workflows/rust-pr.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frust-pr.yml",
+          "additions": 9,
+          "deletions": 9
+        },
+        {
+          "path": ".github/workflows/rust-push.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/.github%2Fworkflows%2Frust-push.yml",
+          "additions": 6,
+          "deletions": 6
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/README.md",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "build/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2FDockerfile",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "build/libomp.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Flibomp.sh",
+          "additions": 13,
+          "deletions": 6
+        },
+        {
+          "path": "build/runtime/Dockerfile",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "build/runtime/Dockerfile.asan",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.asan",
+          "additions": 18,
+          "deletions": 18
+        },
+        {
+          "path": "build/runtime/Dockerfile.coverage",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/build%2Fruntime%2FDockerfile.coverage",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "path": "graph/build.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/graph%2Fbuild.rs",
+          "additions": 4,
+          "deletions": 2
+        },
+        {
+          "path": "graphblas.sh",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/974a88bc2988113d2f2e315a1a03514b34a30038/graphblas.sh",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-04T09:05:10Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-04T08:56:46Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-04T08:58:55Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3162,
+          "title": "CI: coverage jobs fail since Rust 1.99 (raw profile v11 vs llvm-profdata-22)",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3162",
+          "state": "closed",
+          "created_at": "2026-10-04T08:55:04Z",
+          "closed_at": "2026-10-04T12:04:57Z",
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni"
+        }
+      ]
+    },
+    {
+      "number": 3161,
+      "title": "fix(rdb): save virtual keys as graphmeta so C keeps graphs in GRAPH.LIST",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3161",
+      "state": "closed",
+      "created_at": "2026-10-04T08:13:21Z",
+      "merged_at": "2026-10-04T16:20:33Z",
+      "author_login": "AviAvni",
+      "author_url": "https://github.com/AviAvni",
+      "files": [
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 10,
+          "deletions": 0
+        },
+        {
+          "path": "src/redis_type.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/abd835bd0490793535ccbb578f59154d3aa0162d/src%2Fredis_type.rs",
+          "additions": 62,
+          "deletions": 47
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-04T08:22:36Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-04T08:21:35Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-04T12:33:01Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-04T12:13:48Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3156,
+      "title": "[6.0] Batch backport (2 commits)",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3156",
+      "state": "closed",
+      "created_at": "2026-10-01T10:21:05Z",
+      "merged_at": "2026-10-01T12:51:14Z",
+      "author_login": "github-actions[bot]",
+      "author_url": "https://github.com/apps/github-actions",
+      "files": [
+        {
+          "path": "tests/flow/test_slowlog.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/9aa79659d728bd4bb1e04ce6f98bc7da97d4c3e0/tests%2Fflow%2Ftest_slowlog.py",
+          "additions": 55,
+          "deletions": 62
+        },
+        {
+          "path": ".github/workflows/_build-flavour.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/e8d9bd97b5f3339fb82811cc0375be9697d9b02b/.github%2Fworkflows%2F_build-flavour.yml",
+          "additions": 14,
+          "deletions": 0
+        },
+        {
+          "path": "Cargo.lock",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/Cargo.lock",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "path": "Cargo.toml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/9aa79659d728bd4bb1e04ce6f98bc7da97d4c3e0/Cargo.toml",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "barakb",
+          "author_url": "https://github.com/barakb",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-01T10:25:30Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3157,
+          "title": "prepare release 6.0.1",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3157",
+          "state": "closed",
+          "created_at": "2026-10-01T10:22:18Z",
+          "closed_at": "2026-10-04T07:22:37Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3153,
+      "title": "ci(images): rebuild the OS-package stages on every image build",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3153",
+      "state": "closed",
+      "created_at": "2026-10-01T06:47:23Z",
+      "merged_at": "2026-10-01T10:19:30Z",
+      "author_login": "DvirDukhan",
+      "author_url": "https://github.com/DvirDukhan",
+      "files": [
+        {
+          "path": ".github/workflows/_build-flavour.yml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/e8d9bd97b5f3339fb82811cc0375be9697d9b02b/.github%2Fworkflows%2F_build-flavour.yml",
+          "additions": 14,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "barakb",
+          "author_url": "https://github.com/barakb",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-01T09:02:28Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3152,
+          "title": "ci: build images with latest packages",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3152",
+          "state": "closed",
+          "created_at": "2026-10-01T06:41:18Z",
+          "closed_at": "2026-10-01T10:19:31Z",
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan"
+        }
+      ]
+    },
+    {
+      "number": 3141,
+      "title": "Handle short reads gracefully during RDB decode",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3141",
+      "state": "closed",
+      "created_at": "2026-09-28T11:53:24Z",
+      "merged_at": "2026-10-07T17:14:44Z",
+      "author_login": "swilly22",
+      "author_url": "https://github.com/swilly22",
+      "files": [
+        {
+          "path": "src/index/cch_index.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Findex%2Fcch_index.c",
+          "additions": 14,
+          "deletions": 0
+        },
+        {
+          "path": "src/index/cch_index.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Findex%2Fcch_index.h",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "path": "src/module.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fmodule.c",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph.c",
+          "additions": 80,
+          "deletions": 26
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_entities.c",
+          "additions": 152,
+          "deletions": 27
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_graph_schema.c",
+          "additions": 131,
+          "deletions": 24
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_matrix.c",
+          "additions": 191,
+          "deletions": 23
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_udf.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_udf.c",
+          "additions": 49,
+          "deletions": 6
+        },
+        {
+          "path": "src/serializers/decoders/current/v20/decode_v20.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fcurrent%2Fv20%2Fdecode_v20.h",
+          "additions": 16,
+          "deletions": 12
+        },
+        {
+          "path": "src/serializers/decoders/decode_aux.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_aux.c",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_aux.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_aux.h",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.c",
+          "additions": 36,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/decoders/decode_graph.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_graph.h",
+          "additions": 8,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/decoders/decode_previous.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fdecode_previous.c",
+          "additions": 22,
+          "deletions": 6
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph.c",
+          "additions": 80,
+          "deletions": 8
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_entities.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_entities.c",
+          "additions": 152,
+          "deletions": 27
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_graph_schema.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_graph_schema.c",
+          "additions": 127,
+          "deletions": 24
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_matrix.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_matrix.c",
+          "additions": 191,
+          "deletions": 23
+        },
+        {
+          "path": "src/serializers/decoders/prev/v19/decode_v19.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fdecoders%2Fprev%2Fv19%2Fdecode_v19.h",
+          "additions": 14,
+          "deletions": 10
+        },
+        {
+          "path": "src/serializers/graphcontext_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphcontext_type.c",
+          "additions": 15,
+          "deletions": 1
+        },
+        {
+          "path": "src/serializers/graphmeta_type.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fgraphmeta_type.c",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/serializer_io.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.c",
+          "additions": 226,
+          "deletions": 67
+        },
+        {
+          "path": "src/serializers/serializer_io.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io.h",
+          "additions": 34,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/serializer_io_internal.h",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_internal.h",
+          "additions": 81,
+          "deletions": 0
+        },
+        {
+          "path": "src/serializers/serializer_io_prev.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/src%2Fserializers%2Fserializer_io_prev.c",
+          "additions": 32,
+          "deletions": 42
+        },
+        {
+          "path": "tests/flow/rdb_payload.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Frdb_payload.py",
+          "additions": 443,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_rdb_load.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_load.py",
+          "additions": 235,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_rdb_malformed.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/c7f7f4cc73ed2b9a676330e0b46cd6d453bfda4c/tests%2Fflow%2Ftest_rdb_malformed.py",
+          "additions": 647,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "swilly22",
+          "author_url": "https://github.com/swilly22",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T07:57:34Z"
+        },
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T09:42:21Z"
+        },
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T09:37:16Z"
+        },
+        {
+          "author_login": "kaicontext[bot]",
+          "author_url": "https://github.com/apps/kaicontext",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T12:46:44Z"
+        },
+        {
+          "author_login": "copilot-pull-request-reviewer[bot]",
+          "author_url": "https://github.com/apps/copilot-pull-request-reviewer",
+          "state": "COMMENTED",
+          "submitted_at": "2026-09-28T11:59:34Z"
+        },
+        {
+          "author_login": "GomezGab",
+          "author_url": "https://github.com/GomezGab",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-06T17:13:55Z"
+        },
+        {
+          "author_login": "GomezGab",
+          "author_url": "https://github.com/GomezGab",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-06T19:06:56Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3140,
+          "title": "support short read",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3140",
+          "state": "open",
+          "created_at": "2026-09-28T11:53:12Z",
+          "closed_at": "",
+          "author_login": "swilly22",
+          "author_url": "https://github.com/swilly22"
+        }
+      ]
+    },
+    {
+      "number": 3139,
+      "title": "Fix crash when a clause errors mid plan-build (#250)",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3139",
+      "state": "closed",
+      "created_at": "2026-09-28T08:15:10Z",
+      "merged_at": "2026-09-28T11:34:13Z",
+      "author_login": "swilly22",
+      "author_url": "https://github.com/swilly22",
+      "files": [
+        {
+          "path": "src/execution_plan/execution_plan.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/b03ad6b30c0c4a347d1e990e4178af7388c162ff/src%2Fexecution_plan%2Fexecution_plan.c",
+          "additions": 26,
+          "deletions": 0
+        },
+        {
+          "path": "src/execution_plan/execution_plan_build/build_call_subquery.c",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/b03ad6b30c0c4a347d1e990e4178af7388c162ff/src%2Fexecution_plan%2Fexecution_plan_build%2Fbuild_call_subquery.c",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_call_subquery.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/b03ad6b30c0c4a347d1e990e4178af7388c162ff/tests%2Fflow%2Ftest_call_subquery.py",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "path": "tests/flow/test_optional_match.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/b03ad6b30c0c4a347d1e990e4178af7388c162ff/tests%2Fflow%2Ftest_optional_match.py",
+          "additions": 56,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-09-28T11:05:03Z"
+        },
+        {
+          "author_login": "copilot-pull-request-reviewer[bot]",
+          "author_url": "https://github.com/apps/copilot-pull-request-reviewer",
+          "state": "COMMENTED",
+          "submitted_at": "2026-09-28T08:19:08Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3132,
+      "title": "fix(runtime): allow startNode() and endNode() to accept null (#2723)",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3132",
+      "state": "closed",
+      "created_at": "2026-09-27T05:11:30Z",
+      "merged_at": "2026-10-07T08:38:43Z",
+      "author_login": "onlyysaurabh",
+      "author_url": "https://github.com/onlyysaurabh",
+      "files": [
+        {
+          "path": "graph/src/runtime/functions/entity.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a89007c8168e9eae801be21d56525280b351f401/graph%2Fsrc%2Fruntime%2Ffunctions%2Fentity.rs",
+          "additions": 4,
+          "deletions": 2
+        },
+        {
+          "path": "tests/flow/test_function_calls.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a89007c8168e9eae801be21d56525280b351f401/tests%2Fflow%2Ftest_function_calls.py",
+          "additions": 9,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-07T07:38:50Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 2723,
+          "title": "Rust engine rejects `startNode(null)` and `endNode(null)` from `OPTIONAL MATCH`",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/2723",
+          "state": "closed",
+          "created_at": "2026-09-04T00:32:35Z",
+          "closed_at": "2026-10-07T08:38:45Z",
+          "author_login": "YGY-001",
+          "author_url": "https://github.com/YGY-001"
+        }
+      ]
+    },
+    {
+      "number": 3131,
+      "title": "chore(deps): bump the cargo-deps group across 1 directory with 9 updates",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3131",
+      "state": "closed",
+      "created_at": "2026-09-27T00:04:55Z",
+      "merged_at": "2026-10-04T21:16:18Z",
+      "author_login": "dependabot[bot]",
+      "author_url": "https://github.com/apps/dependabot",
+      "files": [
+        {
+          "path": "Cargo.lock",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/Cargo.lock",
+          "additions": 29,
+          "deletions": 43
+        },
+        {
+          "path": "graph/Cargo.toml",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/6179a53a6d225cb1bb130e02b396ba4c212d14a5/graph%2FCargo.toml",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "DISMISSED",
+          "submitted_at": "2026-09-28T05:22:36Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-04T20:10:21Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3130,
+      "title": "chore(deps): update rltest requirement from >=0.7.28 to >=0.7.29 in /tests in the python-test-deps group",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3130",
+      "state": "closed",
+      "created_at": "2026-09-27T00:04:29Z",
+      "merged_at": "2026-10-04T21:45:18Z",
+      "author_login": "dependabot[bot]",
+      "author_url": "https://github.com/apps/dependabot",
+      "files": [
+        {
+          "path": "tests/requirements.txt",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/ae9ff75d39fad4fc9dac54c77a136ad4eff7b2e0/tests%2Frequirements.txt",
+          "additions": 1,
+          "deletions": 1
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "DvirDukhan",
+          "author_url": "https://github.com/DvirDukhan",
+          "state": "APPROVED",
+          "submitted_at": "2026-09-28T05:24:38Z"
+        }
+      ],
+      "resolved_issues": []
+    },
+    {
+      "number": 3127,
+      "title": "fix(functions): name received types in the engine's vocabulary in entity.rs",
+      "url": "https://github.com/FalkorDB/FalkorDB/pull/3127",
+      "state": "closed",
+      "created_at": "2026-09-26T11:43:52Z",
+      "merged_at": "2026-10-07T10:44:01Z",
+      "author_login": "aniruddhaadak80",
+      "author_url": "https://github.com/aniruddhaadak80",
+      "files": [
+        {
+          "path": "graph/src/runtime/functions/entity.rs",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a89007c8168e9eae801be21d56525280b351f401/graph%2Fsrc%2Fruntime%2Ffunctions%2Fentity.rs",
+          "additions": 81,
+          "deletions": 4
+        },
+        {
+          "path": "tests/flow/test_function_calls.py",
+          "url": "https://github.com/FalkorDB/FalkorDB/blob/a89007c8168e9eae801be21d56525280b351f401/tests%2Fflow%2Ftest_function_calls.py",
+          "additions": 24,
+          "deletions": 0
+        }
+      ],
+      "reviews": [
+        {
+          "author_login": "cubic-dev-ai[bot]",
+          "author_url": "https://github.com/apps/cubic-dev-ai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T09:48:09Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "DISMISSED",
+          "submitted_at": "2026-10-07T07:41:14Z"
+        },
+        {
+          "author_login": "AviAvni",
+          "author_url": "https://github.com/AviAvni",
+          "state": "APPROVED",
+          "submitted_at": "2026-10-07T09:42:20Z"
+        },
+        {
+          "author_login": "coderabbitai[bot]",
+          "author_url": "https://github.com/apps/coderabbitai",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T09:48:21Z"
+        },
+        {
+          "author_login": "copilot-pull-request-reviewer[bot]",
+          "author_url": "https://github.com/apps/copilot-pull-request-reviewer",
+          "state": "COMMENTED",
+          "submitted_at": "2026-10-07T09:37:24Z"
+        }
+      ],
+      "resolved_issues": [
+        {
+          "number": 3126,
+          "title": "[Rust] entity.rs type-mismatch messages use Rust's Debug type names (Int, List(List(Any))) and hasLabels omits the received type",
+          "url": "https://github.com/FalkorDB/FalkorDB/issues/3126",
+          "state": "closed",
+          "created_at": "2026-09-26T11:42:26Z",
+          "closed_at": "2026-10-07T10:44:03Z",
+          "author_login": "aniruddhaadak80",
+          "author_url": "https://github.com/aniruddhaadak80"
+        }
+      ]
+    }
+  ]
+}

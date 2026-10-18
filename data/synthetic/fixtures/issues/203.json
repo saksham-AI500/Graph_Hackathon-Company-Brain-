@@ -1,0 +1,76 @@
+{
+  "id": 2000203,
+  "number": 203,
+  "title": "PERF: infra-observability improvements for security",
+  "body": "Detailed description for perf tracking in module infra/observability/.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 25586,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-29T16:11:22Z",
+  "updated_at": "2026-04-29T16:11:22Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70823,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #823 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-04-30T10:11:22Z"
+    },
+    {
+      "id": 70824,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #824 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-05-01T01:11:22Z"
+    },
+    {
+      "id": 70825,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #825 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-05-01T16:11:22Z"
+    },
+    {
+      "id": 70826,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #826 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-05-02T03:11:22Z"
+    },
+    {
+      "id": 70827,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #827 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-05-02T18:11:22Z"
+    },
+    {
+      "id": 70828,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #828 on issue #203: updates from triage and reproduction steps.",
+      "created_at": "2026-05-03T09:11:22Z"
+    }
+  ]
+}

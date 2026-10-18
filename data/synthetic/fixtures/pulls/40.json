@@ -1,0 +1,229 @@
+{
+  "id": 1000040,
+  "number": 40,
+  "state": "closed",
+  "title": "test(infra_deploy): update healthcheck.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 28052,
+    "type": "User"
+  },
+  "created_at": "2025-10-21T02:22:28Z",
+  "updated_at": "2025-10-23T04:22:28Z",
+  "closed_at": "2025-10-23T04:22:28Z",
+  "merged_at": "2025-10-23T04:22:28Z",
+  "merge_commit_sha": "67fdd924ed4b",
+  "head": {
+    "ref": "feature/pr-40",
+    "sha": "67fdd924ed4b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/40",
+  "files": [
+    {
+      "filename": "infra/deploy/healthcheck.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 8,
+      "changes": 43
+    },
+    {
+      "filename": "infra/deploy/rollback.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 8,
+      "changes": 16
+    },
+    {
+      "filename": "infra/deploy/__pycache__/deployer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 8,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d84bfbad1081",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T02:22:28Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T02:22:28Z"
+        },
+        "message": "commit 1 for PR #40: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "0414ad5778ad",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T02:52:28Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T02:52:28Z"
+        },
+        "message": "commit 2 for PR #40: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "1fe6264b1755",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T03:22:28Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T03:22:28Z"
+        },
+        "message": "commit 3 for PR #40: test(infra_deploy): update healthcheck.py"
+      }
+    },
+    {
+      "sha": "67fdd924ed4b",
+      "commit": {
+        "author": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T03:52:28Z"
+        },
+        "committer": {
+          "name": "Carlos Mendez",
+          "email": "carlos-mendez@example.com",
+          "date": "2025-10-21T03:52:28Z"
+        },
+        "message": "commit 4 for PR #40: test(infra_deploy): update healthcheck.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4001,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T07:22:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/40#pullrequestreview-4001"
+    },
+    {
+      "id": 4002,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T07:22:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/40#pullrequestreview-4002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 209,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 209: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 15
+    },
+    {
+      "id": 210,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 210: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 25
+    },
+    {
+      "id": 211,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 211: verify boundary checks on line 35.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 35
+    },
+    {
+      "id": 212,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 212: verify boundary checks on line 45.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 45
+    },
+    {
+      "id": 213,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 213: verify boundary checks on line 55.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 55
+    },
+    {
+      "id": 214,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 214: verify boundary checks on line 15.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 15
+    },
+    {
+      "id": 215,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 215: verify boundary checks on line 25.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 25
+    },
+    {
+      "id": 216,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 216: verify boundary checks on line 35.",
+      "created_at": "2025-10-22T07:22:28Z",
+      "path": "infra/deploy/healthcheck.py",
+      "line": 35
+    }
+  ]
+}

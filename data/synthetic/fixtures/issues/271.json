@@ -1,0 +1,40 @@
+{
+  "id": 2000271,
+  "number": 271,
+  "title": "PERF: payments improvements for latency",
+  "body": "Detailed description for perf tracking in module payments/.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28163,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-09T11:12:28Z",
+  "updated_at": "2026-07-18T11:12:28Z",
+  "closed_at": "2026-07-18T11:12:28Z",
+  "labels": [
+    "perf",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71117,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1117 on issue #271: updates from triage and reproduction steps.",
+      "created_at": "2026-07-09T13:12:28Z"
+    },
+    {
+      "id": 71118,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1118 on issue #271: updates from triage and reproduction steps.",
+      "created_at": "2026-07-09T17:12:28Z"
+    }
+  ]
+}

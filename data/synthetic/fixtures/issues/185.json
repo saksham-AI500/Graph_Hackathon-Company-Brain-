@@ -1,0 +1,76 @@
+{
+  "id": 2000185,
+  "number": 185,
+  "title": "TASK: search-indexer improvements for latency",
+  "body": "Detailed description for task tracking in module search/indexer/.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 24658,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-10T22:13:36Z",
+  "updated_at": "2026-04-21T22:13:36Z",
+  "closed_at": "2026-04-21T22:13:36Z",
+  "labels": [
+    "task",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70753,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #753 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-11T11:13:36Z"
+    },
+    {
+      "id": 70754,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #754 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-11T13:13:36Z"
+    },
+    {
+      "id": 70755,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #755 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-12T06:13:36Z"
+    },
+    {
+      "id": 70756,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #756 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-13T01:13:36Z"
+    },
+    {
+      "id": 70757,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #757 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-13T13:13:36Z"
+    },
+    {
+      "id": 70758,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #758 on issue #185: updates from triage and reproduction steps.",
+      "created_at": "2026-04-13T19:13:36Z"
+    }
+  ]
+}

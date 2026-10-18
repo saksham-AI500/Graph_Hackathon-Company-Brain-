@@ -1,0 +1,67 @@
+{
+  "id": 2000194,
+  "number": 194,
+  "title": "PERF: auth improvements for security",
+  "body": "Detailed description for perf tracking in module auth/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-20T06:54:46Z",
+  "updated_at": "2026-05-07T06:54:46Z",
+  "closed_at": "2026-05-07T06:54:46Z",
+  "labels": [
+    "perf",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70785,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #785 on issue #194: updates from triage and reproduction steps.",
+      "created_at": "2026-04-20T11:54:46Z"
+    },
+    {
+      "id": 70786,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #786 on issue #194: updates from triage and reproduction steps.",
+      "created_at": "2026-04-20T19:54:46Z"
+    },
+    {
+      "id": 70787,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #787 on issue #194: updates from triage and reproduction steps.",
+      "created_at": "2026-04-21T08:54:46Z"
+    },
+    {
+      "id": 70788,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #788 on issue #194: updates from triage and reproduction steps.",
+      "created_at": "2026-04-21T20:54:46Z"
+    },
+    {
+      "id": 70789,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #789 on issue #194: updates from triage and reproduction steps.",
+      "created_at": "2026-04-22T10:54:46Z"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "question_id": "Q14",
+  "question": "Is the incident runbook still accurate, or has the code changed since it was written?",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "REFUSED",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer whether the incident runbook is still accurate or if the code has changed since it was written. To determine this, I would need access to the repository data to compare the runbook's content with the current state of the code. \n\nIf you can provide the specific file path of the runbook, I can check for any recent changes or discrepancies.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:01:33.658499+00:00",
+  "latency_ms": 3960.23,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": [
+    "Claimed runbook is accurate"
+  ]
+}

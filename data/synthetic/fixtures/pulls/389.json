@@ -1,0 +1,178 @@
+{
+  "id": 1000389,
+  "number": 389,
+  "state": "closed",
+  "title": "test(growth_referrals): update milestones.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2026-04-15T17:36:25Z",
+  "updated_at": "2026-04-17T11:36:25Z",
+  "closed_at": "2026-04-17T11:36:25Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-389",
+    "sha": "23139b9db1d4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/389",
+  "files": [
+    {
+      "filename": "growth/referrals/milestones.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 10,
+      "changes": 49
+    },
+    {
+      "filename": "growth/referrals/rewards_engine.py",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 11,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3171a8253e47",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T17:36:25Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T17:36:25Z"
+        },
+        "message": "commit 1 for PR #389: test(growth_referrals): update milestones.py"
+      }
+    },
+    {
+      "sha": "c94893617fcd",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T18:06:25Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T18:06:25Z"
+        },
+        "message": "commit 2 for PR #389: test(growth_referrals): update milestones.py"
+      }
+    },
+    {
+      "sha": "869580c639eb",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T18:36:25Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T18:36:25Z"
+        },
+        "message": "commit 3 for PR #389: test(growth_referrals): update milestones.py"
+      }
+    },
+    {
+      "sha": "23139b9db1d4",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T19:06:25Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-04-15T19:06:25Z"
+        },
+        "message": "commit 4 for PR #389: test(growth_referrals): update milestones.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 38901,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-17T06:36:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/389#pullrequestreview-38901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2051,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2051: verify boundary checks on line 15.",
+      "created_at": "2026-04-17T06:36:25Z",
+      "path": "growth/referrals/milestones.py",
+      "line": 15
+    },
+    {
+      "id": 2052,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2052: verify boundary checks on line 25.",
+      "created_at": "2026-04-17T06:36:25Z",
+      "path": "growth/referrals/milestones.py",
+      "line": 25
+    },
+    {
+      "id": 2053,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2053: verify boundary checks on line 35.",
+      "created_at": "2026-04-17T06:36:25Z",
+      "path": "growth/referrals/milestones.py",
+      "line": 35
+    },
+    {
+      "id": 2054,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2054: verify boundary checks on line 45.",
+      "created_at": "2026-04-17T06:36:25Z",
+      "path": "growth/referrals/milestones.py",
+      "line": 45
+    },
+    {
+      "id": 2055,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2055: verify boundary checks on line 55.",
+      "created_at": "2026-04-17T06:36:25Z",
+      "path": "growth/referrals/milestones.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": 1000104,
+  "number": 104,
+  "state": "open",
+  "title": "fix(growth_referrals): update audit_referrals.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24836,
+    "type": "User"
+  },
+  "created_at": "2025-11-21T23:31:34Z",
+  "updated_at": "2025-11-21T23:31:34Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-104",
+    "sha": "7eae6e5e2809"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/104",
+  "files": [
+    {
+      "filename": "growth/referrals/audit_referrals.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 15,
+      "changes": 22
+    },
+    {
+      "filename": "growth/referrals/__pycache__/attribution.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 14,
+      "changes": 19
+    },
+    {
+      "filename": "growth/referrals/README.md",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 14,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d1cc3815e471",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-11-21T23:31:34Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-11-21T23:31:34Z"
+        },
+        "message": "commit 1 for PR #104: fix(growth_referrals): update audit_referrals.py"
+      }
+    },
+    {
+      "sha": "7eae6e5e2809",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-11-22T00:01:34Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-11-22T00:01:34Z"
+        },
+        "message": "commit 2 for PR #104: fix(growth_referrals): update audit_referrals.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10401,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-23T04:31:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/104#pullrequestreview-10401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 552,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 552: verify boundary checks on line 15.",
+      "created_at": "2025-11-23T04:31:34Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 15
+    },
+    {
+      "id": 553,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 553: verify boundary checks on line 25.",
+      "created_at": "2025-11-23T04:31:34Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 25
+    },
+    {
+      "id": 554,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 554: verify boundary checks on line 35.",
+      "created_at": "2025-11-23T04:31:34Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 35
+    },
+    {
+      "id": 555,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 555: verify boundary checks on line 45.",
+      "created_at": "2025-11-23T04:31:34Z",
+      "path": "growth/referrals/audit_referrals.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": 2000264,
+  "number": 264,
+  "title": "INCIDENT: search-indexer improvements for throughput",
+  "body": "Detailed description for incident tracking in module search/indexer/.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 25884,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-02T04:10:59Z",
+  "updated_at": "2026-07-09T04:10:59Z",
+  "closed_at": "2026-07-09T04:10:59Z",
+  "labels": [
+    "incident",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71091,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #1091 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-03T04:10:59Z"
+    },
+    {
+      "id": 71092,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1092 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-04T00:10:59Z"
+    },
+    {
+      "id": 71093,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1093 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-04T17:10:59Z"
+    },
+    {
+      "id": 71094,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1094 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-04T23:10:59Z"
+    },
+    {
+      "id": 71095,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1095 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T05:10:59Z"
+    },
+    {
+      "id": 71096,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1096 on issue #264: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T16:10:59Z"
+    }
+  ]
+}

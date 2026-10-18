@@ -1,0 +1,76 @@
+{
+  "id": 2000331,
+  "number": 331,
+  "title": "PERF: auth improvements for caching",
+  "body": "Detailed description for perf tracking in module auth/.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 25884,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-09T22:46:32Z",
+  "updated_at": "2026-09-09T22:46:32Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71353,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1353 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-10T10:46:32Z"
+    },
+    {
+      "id": 71354,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #1354 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-10T12:46:32Z"
+    },
+    {
+      "id": 71355,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1355 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-10T23:46:32Z"
+    },
+    {
+      "id": 71356,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #1356 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-11T07:46:32Z"
+    },
+    {
+      "id": 71357,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #1357 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-12T07:46:32Z"
+    },
+    {
+      "id": 71358,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #1358 on issue #331: updates from triage and reproduction steps.",
+      "created_at": "2026-09-12T23:46:32Z"
+    }
+  ]
+}

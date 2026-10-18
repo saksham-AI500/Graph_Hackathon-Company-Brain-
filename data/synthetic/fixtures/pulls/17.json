@@ -1,0 +1,194 @@
+{
+  "id": 1000017,
+  "number": 17,
+  "state": "closed",
+  "title": "refactor(search_indexer): update health_indexer.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "jordan-hayes",
+    "id": 24658,
+    "type": "User"
+  },
+  "created_at": "2025-10-09T11:29:53Z",
+  "updated_at": "2025-10-10T16:29:53Z",
+  "closed_at": "2025-10-10T16:29:53Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-17",
+    "sha": "4ff73a597154"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/17",
+  "files": [
+    {
+      "filename": "search/indexer/health_indexer.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 14,
+      "changes": 29
+    },
+    {
+      "filename": "search/indexer/index_stats.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 9,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6d7b0e9c9f7c",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T11:29:53Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T11:29:53Z"
+        },
+        "message": "commit 1 for PR #17: refactor(search_indexer): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "1cab024cb3bf",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T11:59:53Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T11:59:53Z"
+        },
+        "message": "commit 2 for PR #17: refactor(search_indexer): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "2797a1a37171",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T12:29:53Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T12:29:53Z"
+        },
+        "message": "commit 3 for PR #17: refactor(search_indexer): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "0f5d0fe54b7f",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T12:59:53Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T12:59:53Z"
+        },
+        "message": "commit 4 for PR #17: refactor(search_indexer): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "4ff73a597154",
+      "commit": {
+        "author": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T13:29:53Z"
+        },
+        "committer": {
+          "name": "Jordan Hayes",
+          "email": "jordan-hayes@example.com",
+          "date": "2025-10-09T13:29:53Z"
+        },
+        "message": "commit 5 for PR #17: refactor(search_indexer): update health_indexer.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1701,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-09T16:29:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/17#pullrequestreview-1701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 113,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 113: verify boundary checks on line 15.",
+      "created_at": "2025-10-09T16:29:53Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 15
+    },
+    {
+      "id": 114,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 114: verify boundary checks on line 25.",
+      "created_at": "2025-10-09T16:29:53Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 25
+    },
+    {
+      "id": 115,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 115: verify boundary checks on line 35.",
+      "created_at": "2025-10-09T16:29:53Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 35
+    },
+    {
+      "id": 116,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 116: verify boundary checks on line 45.",
+      "created_at": "2025-10-09T16:29:53Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 45
+    },
+    {
+      "id": 117,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 117: verify boundary checks on line 55.",
+      "created_at": "2025-10-09T16:29:53Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 55
+    }
+  ]
+}

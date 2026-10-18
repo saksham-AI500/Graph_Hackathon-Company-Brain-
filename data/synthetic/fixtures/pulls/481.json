@@ -1,0 +1,133 @@
+{
+  "id": 1000481,
+  "number": 481,
+  "state": "closed",
+  "title": "fix(billing): update subscriptions.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2026-06-01T19:19:52Z",
+  "updated_at": "2026-06-04T05:19:52Z",
+  "closed_at": "2026-06-04T05:19:52Z",
+  "merged_at": "2026-06-04T05:19:52Z",
+  "merge_commit_sha": "d27ae325507d",
+  "head": {
+    "ref": "feature/pr-481",
+    "sha": "d27ae325507d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/481",
+  "files": [
+    {
+      "filename": "billing/__pycache__/subscriptions.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 15,
+      "changes": 19
+    },
+    {
+      "filename": "billing/__pycache__/revenue_recognition.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 4,
+      "changes": 18
+    },
+    {
+      "filename": "billing/revenue_recognition.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 10,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f2de85c2b805",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T19:19:52Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T19:19:52Z"
+        },
+        "message": "commit 1 for PR #481: fix(billing): update subscriptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "db0576031a03",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T19:49:52Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T19:49:52Z"
+        },
+        "message": "commit 2 for PR #481: fix(billing): update subscriptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "05bd56220081",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T20:19:52Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T20:19:52Z"
+        },
+        "message": "commit 3 for PR #481: fix(billing): update subscriptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "14560a42df67",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T20:49:52Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T20:49:52Z"
+        },
+        "message": "commit 4 for PR #481: fix(billing): update subscriptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d27ae325507d",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T21:19:52Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-06-01T21:19:52Z"
+        },
+        "message": "commit 5 for PR #481: fix(billing): update subscriptions.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

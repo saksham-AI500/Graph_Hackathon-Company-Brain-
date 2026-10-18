@@ -1,0 +1,42 @@
+{
+  "id": 2000081,
+  "number": 81,
+  "title": "PERF: payments-refunds improvements for latency",
+  "body": "Detailed description for perf tracking in module payments/refunds/.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 20432,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-23T15:56:31Z",
+  "updated_at": "2025-12-23T15:56:31Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    559
+  ],
+  "comments": [
+    {
+      "id": 70329,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #329 on issue #81: updates from triage and reproduction steps.",
+      "created_at": "2025-12-24T07:56:31Z"
+    },
+    {
+      "id": 70330,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #330 on issue #81: updates from triage and reproduction steps.",
+      "created_at": "2025-12-24T16:56:31Z"
+    }
+  ]
+}

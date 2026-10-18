@@ -1,0 +1,131 @@
+{
+  "id": 1000018,
+  "number": 18,
+  "state": "closed",
+  "title": "feat(payments_refunds): update reconciliation.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2025-10-09T23:28:05Z",
+  "updated_at": "2025-10-12T10:28:05Z",
+  "closed_at": "2025-10-12T10:28:05Z",
+  "merged_at": "2025-10-12T10:28:05Z",
+  "merge_commit_sha": "9762e4fbe2e3",
+  "head": {
+    "ref": "feature/pr-18",
+    "sha": "9762e4fbe2e3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/18",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 6,
+      "changes": 41
+    },
+    {
+      "filename": "payments/refunds/disputes.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 1,
+      "changes": 13
+    },
+    {
+      "filename": "payments/refunds/__pycache__/chargeback.cpython-314.pyc",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 6,
+      "changes": 9
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f65f956b6d89",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-09T23:28:05Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-09T23:28:05Z"
+        },
+        "message": "commit 1 for PR #18: feat(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9762e4fbe2e3",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-09T23:58:05Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2025-10-09T23:58:05Z"
+        },
+        "message": "commit 2 for PR #18: feat(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1801,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-11T09:28:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/18#pullrequestreview-1801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 118,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 118: verify boundary checks on line 15.",
+      "created_at": "2025-10-11T09:28:05Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 119,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 119: verify boundary checks on line 25.",
+      "created_at": "2025-10-11T09:28:05Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 120,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 120: verify boundary checks on line 35.",
+      "created_at": "2025-10-11T09:28:05Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

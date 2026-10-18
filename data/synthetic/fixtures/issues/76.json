@@ -1,0 +1,78 @@
+{
+  "id": 2000076,
+  "number": 76,
+  "title": "TASK: payments-refunds improvements for caching",
+  "body": "Detailed description for task tracking in module payments/refunds/.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 22495,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-18T10:32:44Z",
+  "updated_at": "2025-12-18T10:32:44Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    29
+  ],
+  "comments": [
+    {
+      "id": 70306,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #306 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-18T20:32:44Z"
+    },
+    {
+      "id": 70307,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #307 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-19T08:32:44Z"
+    },
+    {
+      "id": 70308,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #308 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-20T07:32:44Z"
+    },
+    {
+      "id": 70309,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Comment #309 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-20T10:32:44Z"
+    },
+    {
+      "id": 70310,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #310 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-21T00:32:44Z"
+    },
+    {
+      "id": 70311,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #311 on issue #76: updates from triage and reproduction steps.",
+      "created_at": "2025-12-21T05:32:44Z"
+    }
+  ]
+}

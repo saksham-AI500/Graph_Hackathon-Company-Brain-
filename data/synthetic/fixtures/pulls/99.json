@@ -1,0 +1,262 @@
+{
+  "id": 1000099,
+  "number": 99,
+  "state": "closed",
+  "title": "refactor(billing): update tax_exemption.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2025-11-19T23:13:42Z",
+  "updated_at": "2025-11-21T02:13:42Z",
+  "closed_at": "2025-11-21T02:13:42Z",
+  "merged_at": "2025-11-21T02:13:42Z",
+  "merge_commit_sha": "90f81dd81f17",
+  "head": {
+    "ref": "feature/pr-99",
+    "sha": "90f81dd81f17"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/99",
+  "files": [
+    {
+      "filename": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 26
+    },
+    {
+      "filename": "billing/__pycache__/statement.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 7,
+      "changes": 23
+    },
+    {
+      "filename": "billing/__pycache__/currency.cpython-314.pyc",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 1,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b852f7a23417",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-19T23:13:42Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-19T23:13:42Z"
+        },
+        "message": "commit 1 for PR #99: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4008501a6dcc",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-19T23:43:42Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-19T23:43:42Z"
+        },
+        "message": "commit 2 for PR #99: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b29832b8be68",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-20T00:13:42Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-20T00:13:42Z"
+        },
+        "message": "commit 3 for PR #99: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "90f81dd81f17",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-20T00:43:42Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-11-20T00:43:42Z"
+        },
+        "message": "commit 4 for PR #99: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 9901,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-20T23:13:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/99#pullrequestreview-9901"
+    },
+    {
+      "id": 9902,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-20T23:13:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/99#pullrequestreview-9902"
+    },
+    {
+      "id": 9903,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-20T23:13:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/99#pullrequestreview-9903"
+    }
+  ],
+  "comments": [
+    {
+      "id": 517,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 517: verify boundary checks on line 15.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 518,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 518: verify boundary checks on line 25.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 519,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 519: verify boundary checks on line 35.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 520,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 520: verify boundary checks on line 45.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 521,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 521: verify boundary checks on line 15.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 522,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 522: verify boundary checks on line 25.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 523,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 523: verify boundary checks on line 15.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 524,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 524: verify boundary checks on line 25.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 525,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 525: verify boundary checks on line 35.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 526,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 526: verify boundary checks on line 45.",
+      "created_at": "2025-11-20T23:13:42Z",
+      "path": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

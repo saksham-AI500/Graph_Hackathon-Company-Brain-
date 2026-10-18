@@ -1,0 +1,67 @@
+{
+  "id": 2000141,
+  "number": 141,
+  "title": "PERF: auth-mfa improvements for reliability",
+  "body": "Detailed description for perf tracking in module auth/mfa/.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 20609,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-24T03:21:36Z",
+  "updated_at": "2026-03-11T03:21:36Z",
+  "closed_at": "2026-03-11T03:21:36Z",
+  "labels": [
+    "perf",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70571,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #571 on issue #141: updates from triage and reproduction steps.",
+      "created_at": "2026-02-24T15:21:36Z"
+    },
+    {
+      "id": 70572,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #572 on issue #141: updates from triage and reproduction steps.",
+      "created_at": "2026-02-24T18:21:36Z"
+    },
+    {
+      "id": 70573,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #573 on issue #141: updates from triage and reproduction steps.",
+      "created_at": "2026-02-25T07:21:36Z"
+    },
+    {
+      "id": 70574,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #574 on issue #141: updates from triage and reproduction steps.",
+      "created_at": "2026-02-26T05:21:36Z"
+    },
+    {
+      "id": 70575,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #575 on issue #141: updates from triage and reproduction steps.",
+      "created_at": "2026-02-26T23:21:36Z"
+    }
+  ]
+}

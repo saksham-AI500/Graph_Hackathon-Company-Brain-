@@ -1,0 +1,42 @@
+{
+  "id": 2000027,
+  "number": 27,
+  "title": "PERF: search improvements for reliability",
+  "body": "Detailed description for perf tracking in module search/.",
+  "user": {
+    "login": "maya-lin",
+    "id": 28779,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-28T10:24:09Z",
+  "updated_at": "2025-11-13T10:24:09Z",
+  "closed_at": "2025-11-13T10:24:09Z",
+  "labels": [
+    "perf",
+    "search"
+  ],
+  "linked_pulls": [
+    72
+  ],
+  "comments": [
+    {
+      "id": 70104,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #104 on issue #27: updates from triage and reproduction steps.",
+      "created_at": "2025-10-29T00:24:09Z"
+    },
+    {
+      "id": 70105,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #105 on issue #27: updates from triage and reproduction steps.",
+      "created_at": "2025-10-29T23:24:09Z"
+    }
+  ]
+}

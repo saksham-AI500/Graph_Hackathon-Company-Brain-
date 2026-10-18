@@ -1,0 +1,58 @@
+{
+  "id": 2000210,
+  "number": 210,
+  "title": "FEATURE: search improvements for throughput",
+  "body": "Detailed description for feature tracking in module search/.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 25337,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-06T23:03:21Z",
+  "updated_at": "2026-05-30T23:03:21Z",
+  "closed_at": "2026-05-30T23:03:21Z",
+  "labels": [
+    "feature",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70857,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #857 on issue #210: updates from triage and reproduction steps.",
+      "created_at": "2026-05-07T04:03:21Z"
+    },
+    {
+      "id": 70858,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #858 on issue #210: updates from triage and reproduction steps.",
+      "created_at": "2026-05-07T23:03:21Z"
+    },
+    {
+      "id": 70859,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #859 on issue #210: updates from triage and reproduction steps.",
+      "created_at": "2026-05-08T23:03:21Z"
+    },
+    {
+      "id": 70860,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #860 on issue #210: updates from triage and reproduction steps.",
+      "created_at": "2026-05-09T14:03:21Z"
+    }
+  ]
+}

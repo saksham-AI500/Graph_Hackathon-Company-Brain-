@@ -158,3 +158,47 @@ def test_summary_generator_tables():
         breakdown = format_question_breakdown_table(data)
         assert "| Question ID |" in breakdown
         assert "`BENCH-01`" in breakdown
+
+
+def test_fake_citation_prefix_rejected_by_evaluator_v2(evaluator):
+    """A citation with valid GitHub prefix but nonexistent entity must be rejected."""
+    q = evaluator.question_map["BENCH-01"]
+    fake_url = "https://github.com/FalkorDB/FalkorDB/pull/9999999"
+    score = evaluator._score_outcome(
+        q,
+        architecture="graph_on",
+        raw_response="DvirDukhan was the reviewer.",
+        is_refusal=False,
+        citations=[fake_url],
+        exec_type="DETERMINISTIC_FALLBACK",
+    )
+    assert score.citation_support is False
+    assert score.valid_citation_count == 0
+    assert score.unsupported_claim_count >= 1
+
+
+def test_future_timestamp_citation_violates_as_of(evaluator):
+    """A citation created after historical cutoff must invalidate as_of compliance and fail."""
+    q = evaluator.question_map["BENCH-01"]  # cutoff = 2026-10-14T09:03:20Z
+    # PR #3342 was created at 2026-10-14T16:47:34Z (strictly after cutoff)
+    future_pr_url = "https://github.com/FalkorDB/FalkorDB/pull/3342"
+    score = evaluator._score_outcome(
+        q,
+        architecture="graph_on",
+        raw_response="DvirDukhan was the reviewer.",
+        is_refusal=False,
+        citations=[future_pr_url],
+        exec_type="DETERMINISTIC_FALLBACK",
+    )
+    assert score.as_of_valid is False
+    assert score.correct is False
+    assert score.verdict == "FAIL"
+    assert score.unsupported_claim_count >= 1
+
+
+def test_word_boundary_keyword_matching_avoids_spurious_hits(evaluator):
+    """Keyword matching must respect token boundaries to prevent substring collisions."""
+    assert evaluator._match_keyword("33", "PR #3339 was closed") is False
+    assert evaluator._match_keyword("3339", "PR #3339 was closed") is True
+    assert evaluator._match_keyword("in", "Native index unit of work") is False
+    assert evaluator._match_keyword("index", "Native index unit of work") is True

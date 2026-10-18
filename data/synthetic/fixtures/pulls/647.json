@@ -1,0 +1,101 @@
+{
+  "id": 1000647,
+  "number": 647,
+  "state": "closed",
+  "title": "refactor(billing): update tax_exemption.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2026-08-24T18:47:32Z",
+  "updated_at": "2026-08-27T07:47:32Z",
+  "closed_at": "2026-08-27T07:47:32Z",
+  "merged_at": "2026-08-27T07:47:32Z",
+  "merge_commit_sha": "bd48c4306c60",
+  "head": {
+    "ref": "feature/pr-647",
+    "sha": "bd48c4306c60"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/647",
+  "files": [
+    {
+      "filename": "billing/__pycache__/tax_exemption.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 11,
+      "changes": 51
+    },
+    {
+      "filename": "billing/__pycache__/webhook_billing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 5,
+      "changes": 47
+    },
+    {
+      "filename": "billing/discounts.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 5,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "383afd6235a7",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T18:47:32Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T18:47:32Z"
+        },
+        "message": "commit 1 for PR #647: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8a3e100d3fc3",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T19:17:32Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T19:17:32Z"
+        },
+        "message": "commit 2 for PR #647: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bd48c4306c60",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T19:47:32Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-08-24T19:47:32Z"
+        },
+        "message": "commit 3 for PR #647: refactor(billing): update tax_exemption.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

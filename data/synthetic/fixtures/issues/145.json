@@ -1,0 +1,76 @@
+{
+  "id": 2000145,
+  "number": 145,
+  "title": "FEATURE: search-indexer improvements for security",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "devon-reed",
+    "id": 20546,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-02-28T06:55:25Z",
+  "updated_at": "2026-02-28T06:55:25Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70589,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #589 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-02-28T13:55:25Z"
+    },
+    {
+      "id": 70590,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #590 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-03-01T05:55:25Z"
+    },
+    {
+      "id": 70591,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #591 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-03-02T02:55:25Z"
+    },
+    {
+      "id": 70592,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #592 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-03-02T21:55:25Z"
+    },
+    {
+      "id": 70593,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #593 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-03-03T11:55:25Z"
+    },
+    {
+      "id": 70594,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #594 on issue #145: updates from triage and reproduction steps.",
+      "created_at": "2026-03-04T03:55:25Z"
+    }
+  ]
+}

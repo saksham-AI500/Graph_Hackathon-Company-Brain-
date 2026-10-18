@@ -1,0 +1,177 @@
+{
+  "id": 1000151,
+  "number": 151,
+  "state": "closed",
+  "title": "fix(infra_observability): update disk_monitor.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2025-12-16T06:38:23Z",
+  "updated_at": "2025-12-18T22:38:23Z",
+  "closed_at": "2025-12-18T22:38:23Z",
+  "merged_at": "2025-12-18T22:38:23Z",
+  "merge_commit_sha": "36281d7eaadb",
+  "head": {
+    "ref": "feature/pr-151",
+    "sha": "36281d7eaadb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/151",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 13,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8916e27ed5ec",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T06:38:23Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T06:38:23Z"
+        },
+        "message": "commit 1 for PR #151: fix(infra_observability): update disk_monitor.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "834f10fe66ec",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T07:08:23Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T07:08:23Z"
+        },
+        "message": "commit 2 for PR #151: fix(infra_observability): update disk_monitor.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "36281d7eaadb",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T07:38:23Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2025-12-16T07:38:23Z"
+        },
+        "message": "commit 3 for PR #151: fix(infra_observability): update disk_monitor.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 15101,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-17T14:38:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/151#pullrequestreview-15101"
+    },
+    {
+      "id": 15102,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-17T14:38:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/151#pullrequestreview-15102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 820,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 820: verify boundary checks on line 15.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 821,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 821: verify boundary checks on line 25.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 822,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 822: verify boundary checks on line 15.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 823,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 823: verify boundary checks on line 25.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 824,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 824: verify boundary checks on line 35.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 825,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 825: verify boundary checks on line 45.",
+      "created_at": "2025-12-17T14:38:23Z",
+      "path": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

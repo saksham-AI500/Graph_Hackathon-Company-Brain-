@@ -1,0 +1,220 @@
+{
+  "id": 1000565,
+  "number": 565,
+  "state": "closed",
+  "title": "chore(payments): update discounts.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.\n\nCloses #13",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-07-13T19:24:03Z",
+  "updated_at": "2026-07-15T06:24:03Z",
+  "closed_at": "2026-07-15T06:24:03Z",
+  "merged_at": "2026-07-15T06:24:03Z",
+  "merge_commit_sha": "5c5906aaaa3e",
+  "head": {
+    "ref": "feature/pr-565",
+    "sha": "5c5906aaaa3e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/565",
+  "files": [
+    {
+      "filename": "payments/__pycache__/discounts.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 11,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cbf82359bb8d",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T19:24:03Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T19:24:03Z"
+        },
+        "message": "commit 1 for PR #565: chore(payments): update discounts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bd12e48c3764",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T19:54:03Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T19:54:03Z"
+        },
+        "message": "commit 2 for PR #565: chore(payments): update discounts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "14a1c673846f",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T20:24:03Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T20:24:03Z"
+        },
+        "message": "commit 3 for PR #565: chore(payments): update discounts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6d36e02bb4bb",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T20:54:03Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T20:54:03Z"
+        },
+        "message": "commit 4 for PR #565: chore(payments): update discounts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5c5906aaaa3e",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T21:24:03Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-13T21:24:03Z"
+        },
+        "message": "commit 5 for PR #565: chore(payments): update discounts.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56501,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-14T04:24:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/565#pullrequestreview-56501"
+    },
+    {
+      "id": 56502,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-14T04:24:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/565#pullrequestreview-56502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3022,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3022: verify boundary checks on line 15.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3023,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3023: verify boundary checks on line 25.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3024,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3024: verify boundary checks on line 35.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3025,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Review comment 3025: verify boundary checks on line 45.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3026,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3026: verify boundary checks on line 15.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3027,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3027: verify boundary checks on line 25.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3028,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3028: verify boundary checks on line 35.",
+      "created_at": "2026-07-14T04:24:03Z",
+      "path": "payments/__pycache__/discounts.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

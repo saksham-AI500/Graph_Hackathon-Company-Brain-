@@ -1,0 +1,144 @@
+{
+  "id": 1000499,
+  "number": 499,
+  "state": "closed",
+  "title": "chore(payments_refunds): update queue.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2026-06-10T09:54:06Z",
+  "updated_at": "2026-06-11T13:54:06Z",
+  "closed_at": "2026-06-11T13:54:06Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-499",
+    "sha": "e6e8a79c6022"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/499",
+  "files": [
+    {
+      "filename": "payments/refunds/queue.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 8,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "68dc49c6c6b9",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T09:54:06Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T09:54:06Z"
+        },
+        "message": "commit 1 for PR #499: chore(payments_refunds): update queue.py"
+      }
+    },
+    {
+      "sha": "0491ba8a86d7",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T10:24:06Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T10:24:06Z"
+        },
+        "message": "commit 2 for PR #499: chore(payments_refunds): update queue.py"
+      }
+    },
+    {
+      "sha": "e6e8a79c6022",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T10:54:06Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-06-10T10:54:06Z"
+        },
+        "message": "commit 3 for PR #499: chore(payments_refunds): update queue.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 49901,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-11T20:54:06Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/499#pullrequestreview-49901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2679,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2679: verify boundary checks on line 15.",
+      "created_at": "2026-06-11T20:54:06Z",
+      "path": "payments/refunds/queue.py",
+      "line": 15
+    },
+    {
+      "id": 2680,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2680: verify boundary checks on line 25.",
+      "created_at": "2026-06-11T20:54:06Z",
+      "path": "payments/refunds/queue.py",
+      "line": 25
+    },
+    {
+      "id": 2681,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2681: verify boundary checks on line 35.",
+      "created_at": "2026-06-11T20:54:06Z",
+      "path": "payments/refunds/queue.py",
+      "line": 35
+    },
+    {
+      "id": 2682,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 2682: verify boundary checks on line 45.",
+      "created_at": "2026-06-11T20:54:06Z",
+      "path": "payments/refunds/queue.py",
+      "line": 45
+    }
+  ]
+}

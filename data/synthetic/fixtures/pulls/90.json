@@ -1,0 +1,149 @@
+{
+  "id": 1000090,
+  "number": 90,
+  "state": "closed",
+  "title": "test(billing): update payment_method.py",
+  "body": "Implementation changes for billing module improvements.\n\nFixes #138",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 29760,
+    "type": "User"
+  },
+  "created_at": "2025-11-14T21:56:13Z",
+  "updated_at": "2025-11-16T00:56:13Z",
+  "closed_at": "2025-11-16T00:56:13Z",
+  "merged_at": "2025-11-16T00:56:13Z",
+  "merge_commit_sha": "2f23007e696a",
+  "head": {
+    "ref": "feature/pr-90",
+    "sha": "2f23007e696a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/90",
+  "files": [
+    {
+      "filename": "billing/payment_method.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 8,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d2883abb1b46",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T21:56:13Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T21:56:13Z"
+        },
+        "message": "commit 1 for PR #90: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "79cfee3ff994",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T22:26:13Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T22:26:13Z"
+        },
+        "message": "commit 2 for PR #90: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "b3a12ca2c8fb",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T22:56:13Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T22:56:13Z"
+        },
+        "message": "commit 3 for PR #90: test(billing): update payment_method.py"
+      }
+    },
+    {
+      "sha": "2f23007e696a",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T23:26:13Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2025-11-14T23:26:13Z"
+        },
+        "message": "commit 4 for PR #90: test(billing): update payment_method.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 9001,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-16T06:56:13Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/90#pullrequestreview-9001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 475,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 475: verify boundary checks on line 15.",
+      "created_at": "2025-11-16T06:56:13Z",
+      "path": "billing/payment_method.py",
+      "line": 15
+    },
+    {
+      "id": 476,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 476: verify boundary checks on line 25.",
+      "created_at": "2025-11-16T06:56:13Z",
+      "path": "billing/payment_method.py",
+      "line": 25
+    },
+    {
+      "id": 477,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Review comment 477: verify boundary checks on line 35.",
+      "created_at": "2025-11-16T06:56:13Z",
+      "path": "billing/payment_method.py",
+      "line": 35
+    }
+  ]
+}

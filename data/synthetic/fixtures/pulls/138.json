@@ -1,0 +1,177 @@
+{
+  "id": 1000138,
+  "number": 138,
+  "state": "closed",
+  "title": "test(growth_referrals): update campaign.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2025-12-09T16:53:33Z",
+  "updated_at": "2025-12-12T11:53:33Z",
+  "closed_at": "2025-12-12T11:53:33Z",
+  "merged_at": "2025-12-12T11:53:33Z",
+  "merge_commit_sha": "486c9c8a5ca7",
+  "head": {
+    "ref": "feature/pr-138",
+    "sha": "486c9c8a5ca7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/138",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 4,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "930d6c3c0b1b",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T16:53:33Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T16:53:33Z"
+        },
+        "message": "commit 1 for PR #138: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "306725a6a28d",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T17:23:33Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T17:23:33Z"
+        },
+        "message": "commit 2 for PR #138: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "486c9c8a5ca7",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T17:53:33Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2025-12-09T17:53:33Z"
+        },
+        "message": "commit 3 for PR #138: test(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13801,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-10T04:53:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/138#pullrequestreview-13801"
+    },
+    {
+      "id": 13802,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-10T04:53:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/138#pullrequestreview-13802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 756,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 756: verify boundary checks on line 15.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 757,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 757: verify boundary checks on line 25.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 758,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 758: verify boundary checks on line 15.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 759,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 759: verify boundary checks on line 25.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 760,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 760: verify boundary checks on line 35.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 761,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 761: verify boundary checks on line 45.",
+      "created_at": "2025-12-10T04:53:33Z",
+      "path": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": 1000215,
+  "number": 215,
+  "state": "closed",
+  "title": "feat(gateway): implement adaptive rate limiter middleware",
+  "body": "Introduce configurable rate limits at edge router.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-01-16T16:25:08Z",
+  "updated_at": "2026-01-18T21:25:08Z",
+  "closed_at": "2026-01-18T21:25:08Z",
+  "merged_at": "2026-01-18T21:25:08Z",
+  "merge_commit_sha": "226f19923abb",
+  "head": {
+    "ref": "feature/pr-215",
+    "sha": "226f19923abb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/215",
+  "files": [
+    {
+      "filename": "api/gateway/rate_limit.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 9
+    },
+    {
+      "filename": "api/gateway/middleware.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 11,
+      "changes": 32
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4b5e9edd7ad2",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-01-16T16:25:08Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-01-16T16:25:08Z"
+        },
+        "message": "commit 1 for PR #215: feat(gateway): implement adaptive rate limiter middleware"
+      }
+    },
+    {
+      "sha": "226f19923abb",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-01-16T16:55:08Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-01-16T16:55:08Z"
+        },
+        "message": "commit 2 for PR #215: feat(gateway): implement adaptive rate limiter middleware"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 21501,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "We are going with per-tenant rate limits. Approved.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-17T20:25:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/215#pullrequestreview-21501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1189,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1189: verify boundary checks on line 15.",
+      "created_at": "2026-01-17T20:25:08Z",
+      "path": "api/gateway/rate_limit.py",
+      "line": 15
+    },
+    {
+      "id": 1190,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1190: verify boundary checks on line 25.",
+      "created_at": "2026-01-17T20:25:08Z",
+      "path": "api/gateway/rate_limit.py",
+      "line": 25
+    },
+    {
+      "id": 1191,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1191: verify boundary checks on line 35.",
+      "created_at": "2026-01-17T20:25:08Z",
+      "path": "api/gateway/rate_limit.py",
+      "line": 35
+    },
+    {
+      "id": 1192,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1192: verify boundary checks on line 45.",
+      "created_at": "2026-01-17T20:25:08Z",
+      "path": "api/gateway/rate_limit.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": 2000093,
+  "number": 93,
+  "title": "INCIDENT: infra-deploy improvements for security",
+  "body": "Detailed description for incident tracking in module infra/deploy/.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 27786,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-05T04:00:43Z",
+  "updated_at": "2026-01-05T04:00:43Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "infra-deploy"
+  ],
+  "linked_pulls": [
+    28
+  ],
+  "comments": [
+    {
+      "id": 70374,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #374 on issue #93: updates from triage and reproduction steps.",
+      "created_at": "2026-01-06T03:00:43Z"
+    },
+    {
+      "id": 70375,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #375 on issue #93: updates from triage and reproduction steps.",
+      "created_at": "2026-01-06T08:00:43Z"
+    },
+    {
+      "id": 70376,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #376 on issue #93: updates from triage and reproduction steps.",
+      "created_at": "2026-01-07T07:00:43Z"
+    },
+    {
+      "id": 70377,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #377 on issue #93: updates from triage and reproduction steps.",
+      "created_at": "2026-01-08T01:00:43Z"
+    }
+  ]
+}

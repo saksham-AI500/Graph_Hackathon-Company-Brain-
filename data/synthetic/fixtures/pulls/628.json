@@ -1,0 +1,179 @@
+{
+  "id": 1000628,
+  "number": 628,
+  "state": "closed",
+  "title": "docs(payments): update rules_engine.py",
+  "body": "Implementation changes for payments module improvements.\n\nFixes #130",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2026-08-14T04:30:58Z",
+  "updated_at": "2026-08-15T18:30:58Z",
+  "closed_at": "2026-08-15T18:30:58Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-628",
+    "sha": "be62ed0cb095"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/628",
+  "files": [
+    {
+      "filename": "payments/refunds/rules_engine.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 14,
+      "changes": 43
+    },
+    {
+      "filename": "payments/refunds/partial_refund.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 22
+    },
+    {
+      "filename": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 11,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8c8fbd85742b",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T04:30:58Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T04:30:58Z"
+        },
+        "message": "commit 1 for PR #628: docs(payments): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "5b981c6b0a82",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T05:00:58Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T05:00:58Z"
+        },
+        "message": "commit 2 for PR #628: docs(payments): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "4577a3be5085",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T05:30:58Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T05:30:58Z"
+        },
+        "message": "commit 3 for PR #628: docs(payments): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "0af0dc4188bc",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T06:00:58Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T06:00:58Z"
+        },
+        "message": "commit 4 for PR #628: docs(payments): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "be62ed0cb095",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T06:30:58Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2026-08-14T06:30:58Z"
+        },
+        "message": "commit 5 for PR #628: docs(payments): update rules_engine.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 62801,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-14T09:30:58Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/628#pullrequestreview-62801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3314,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3314: verify boundary checks on line 15.",
+      "created_at": "2026-08-14T09:30:58Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 15
+    },
+    {
+      "id": 3315,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3315: verify boundary checks on line 25.",
+      "created_at": "2026-08-14T09:30:58Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 25
+    },
+    {
+      "id": 3316,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3316: verify boundary checks on line 35.",
+      "created_at": "2026-08-14T09:30:58Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 35
+    }
+  ]
+}

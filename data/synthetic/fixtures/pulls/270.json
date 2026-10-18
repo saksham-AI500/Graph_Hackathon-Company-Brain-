@@ -1,0 +1,279 @@
+{
+  "id": 1000270,
+  "number": 270,
+  "state": "closed",
+  "title": "feat(search_indexer): update crawler.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2026-02-13T12:17:08Z",
+  "updated_at": "2026-02-15T09:17:08Z",
+  "closed_at": "2026-02-15T09:17:08Z",
+  "merged_at": "2026-02-15T09:17:08Z",
+  "merge_commit_sha": "951ca5a4c94d",
+  "head": {
+    "ref": "feature/pr-270",
+    "sha": "951ca5a4c94d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/270",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 13,
+      "changes": 18
+    },
+    {
+      "filename": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 6,
+      "changes": 22
+    },
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 11,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "76683e5a62d0",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T12:17:08Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T12:17:08Z"
+        },
+        "message": "commit 1 for PR #270: feat(search_indexer): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0779d5398b88",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T12:47:08Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T12:47:08Z"
+        },
+        "message": "commit 2 for PR #270: feat(search_indexer): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "951ca5a4c94d",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T13:17:08Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-02-13T13:17:08Z"
+        },
+        "message": "commit 3 for PR #270: feat(search_indexer): update crawler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27001,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-14T04:17:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/270#pullrequestreview-27001"
+    },
+    {
+      "id": 27002,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-14T04:17:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/270#pullrequestreview-27002"
+    },
+    {
+      "id": 27003,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-14T04:17:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/270#pullrequestreview-27003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1421,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1421: verify boundary checks on line 15.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1422,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1422: verify boundary checks on line 25.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1423,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1423: verify boundary checks on line 35.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1424,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 1424: verify boundary checks on line 45.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1425,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 1425: verify boundary checks on line 15.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1426,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 1426: verify boundary checks on line 25.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1427,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 1427: verify boundary checks on line 35.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1428,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 1428: verify boundary checks on line 45.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1429,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1429: verify boundary checks on line 15.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1430,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1430: verify boundary checks on line 25.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1431,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1431: verify boundary checks on line 35.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1432,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1432: verify boundary checks on line 45.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1433,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1433: verify boundary checks on line 55.",
+      "created_at": "2026-02-14T04:17:08Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": 1000254,
+  "number": 254,
+  "state": "closed",
+  "title": "docs(search_indexer): update backpressure.py",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #98",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2026-02-06T09:42:39Z",
+  "updated_at": "2026-02-08T16:42:39Z",
+  "closed_at": "2026-02-08T16:42:39Z",
+  "merged_at": "2026-02-08T16:42:39Z",
+  "merge_commit_sha": "8c6ab3d5aab3",
+  "head": {
+    "ref": "feature/pr-254",
+    "sha": "8c6ab3d5aab3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/254",
+  "files": [
+    {
+      "filename": "search/indexer/backpressure.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 1,
+      "changes": 13
+    },
+    {
+      "filename": "search/indexer/__pycache__/pipeline.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 15,
+      "changes": 19
+    },
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 5,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "03f323bba8ef",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T09:42:39Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T09:42:39Z"
+        },
+        "message": "commit 1 for PR #254: docs(search_indexer): update backpressure.py"
+      }
+    },
+    {
+      "sha": "b3f2ebb225cc",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T10:12:39Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T10:12:39Z"
+        },
+        "message": "commit 2 for PR #254: docs(search_indexer): update backpressure.py"
+      }
+    },
+    {
+      "sha": "8c6ab3d5aab3",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T10:42:39Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-02-06T10:42:39Z"
+        },
+        "message": "commit 3 for PR #254: docs(search_indexer): update backpressure.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 25401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-06T19:42:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/254#pullrequestreview-25401"
+    },
+    {
+      "id": 25402,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-06T19:42:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/254#pullrequestreview-25402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1363,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1363: verify boundary checks on line 15.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 15
+    },
+    {
+      "id": 1364,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1364: verify boundary checks on line 25.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 25
+    },
+    {
+      "id": 1365,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1365: verify boundary checks on line 35.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 35
+    },
+    {
+      "id": 1366,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1366: verify boundary checks on line 45.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 45
+    },
+    {
+      "id": 1367,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1367: verify boundary checks on line 15.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 15
+    },
+    {
+      "id": 1368,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1368: verify boundary checks on line 25.",
+      "created_at": "2026-02-06T19:42:39Z",
+      "path": "search/indexer/backpressure.py",
+      "line": 25
+    }
+  ]
+}

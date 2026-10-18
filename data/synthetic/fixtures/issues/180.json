@@ -1,0 +1,49 @@
+{
+  "id": 2000180,
+  "number": 180,
+  "title": "PERF: billing improvements for security",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-05T17:44:26Z",
+  "updated_at": "2026-04-11T17:44:26Z",
+  "closed_at": "2026-04-11T17:44:26Z",
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70733,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #733 on issue #180: updates from triage and reproduction steps.",
+      "created_at": "2026-04-06T00:44:26Z"
+    },
+    {
+      "id": 70734,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #734 on issue #180: updates from triage and reproduction steps.",
+      "created_at": "2026-04-06T22:44:26Z"
+    },
+    {
+      "id": 70735,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #735 on issue #180: updates from triage and reproduction steps.",
+      "created_at": "2026-04-07T08:44:26Z"
+    }
+  ]
+}

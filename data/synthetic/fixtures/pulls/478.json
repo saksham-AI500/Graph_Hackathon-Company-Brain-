@@ -1,0 +1,199 @@
+{
+  "id": 1000478,
+  "number": 478,
+  "state": "closed",
+  "title": "perf(shared_utils): update env_reader.cpython-314.pyc",
+  "body": "Implementation changes for shared_utils module improvements.\n\nFixes #125",
+  "user": {
+    "login": "zane-malik",
+    "id": 26937,
+    "type": "User"
+  },
+  "created_at": "2026-05-29T18:32:07Z",
+  "updated_at": "2026-06-01T04:32:07Z",
+  "closed_at": "2026-06-01T04:32:07Z",
+  "merged_at": "2026-06-01T04:32:07Z",
+  "merge_commit_sha": "0f0e3da7610d",
+  "head": {
+    "ref": "feature/pr-478",
+    "sha": "0f0e3da7610d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/478",
+  "files": [
+    {
+      "filename": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 1,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9a100c392e6f",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T18:32:07Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T18:32:07Z"
+        },
+        "message": "commit 1 for PR #478: perf(shared_utils): update env_reader.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9ca382c06f95",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T19:02:07Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T19:02:07Z"
+        },
+        "message": "commit 2 for PR #478: perf(shared_utils): update env_reader.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0f0e3da7610d",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T19:32:07Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-05-29T19:32:07Z"
+        },
+        "message": "commit 3 for PR #478: perf(shared_utils): update env_reader.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 47801,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-31T11:32:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/478#pullrequestreview-47801"
+    },
+    {
+      "id": 47802,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-31T11:32:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/478#pullrequestreview-47802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2562,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2562: verify boundary checks on line 15.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2563,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2563: verify boundary checks on line 25.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2564,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2564: verify boundary checks on line 35.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2565,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 2565: verify boundary checks on line 45.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2566,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 2566: verify boundary checks on line 15.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2567,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 2567: verify boundary checks on line 25.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2568,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 2568: verify boundary checks on line 35.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2569,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 2569: verify boundary checks on line 45.",
+      "created_at": "2026-05-31T11:32:07Z",
+      "path": "shared/utils/__pycache__/env_reader.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

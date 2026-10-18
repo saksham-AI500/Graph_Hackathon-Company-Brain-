@@ -1,0 +1,249 @@
+{
+  "id": 1000298,
+  "number": 298,
+  "state": "closed",
+  "title": "test(growth_referrals): update payout_sync.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-02-27T16:28:21Z",
+  "updated_at": "2026-03-02T08:28:21Z",
+  "closed_at": "2026-03-02T08:28:21Z",
+  "merged_at": "2026-03-02T08:28:21Z",
+  "merge_commit_sha": "e2150359a0fa",
+  "head": {
+    "ref": "feature/pr-298",
+    "sha": "e2150359a0fa"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/298",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 3,
+      "changes": 11
+    },
+    {
+      "filename": "growth/referrals/__pycache__/notification_referral.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 7,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7f7ee262ffb6",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T16:28:21Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T16:28:21Z"
+        },
+        "message": "commit 1 for PR #298: test(growth_referrals): update payout_sync.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "83ed14d4383d",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T16:58:21Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T16:58:21Z"
+        },
+        "message": "commit 2 for PR #298: test(growth_referrals): update payout_sync.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "38adea581f7d",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T17:28:21Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T17:28:21Z"
+        },
+        "message": "commit 3 for PR #298: test(growth_referrals): update payout_sync.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a1ccaf682629",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T17:58:21Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T17:58:21Z"
+        },
+        "message": "commit 4 for PR #298: test(growth_referrals): update payout_sync.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e2150359a0fa",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T18:28:21Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-02-27T18:28:21Z"
+        },
+        "message": "commit 5 for PR #298: test(growth_referrals): update payout_sync.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 29801,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-01T05:28:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/298#pullrequestreview-29801"
+    },
+    {
+      "id": 29802,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-01T05:28:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/298#pullrequestreview-29802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1585,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1585: verify boundary checks on line 15.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1586,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1586: verify boundary checks on line 25.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1587,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1587: verify boundary checks on line 35.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1588,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1588: verify boundary checks on line 45.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1589,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1589: verify boundary checks on line 55.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 1590,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 1590: verify boundary checks on line 15.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1591,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 1591: verify boundary checks on line 25.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1592,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 1592: verify boundary checks on line 35.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1593,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Review comment 1593: verify boundary checks on line 45.",
+      "created_at": "2026-03-01T05:28:21Z",
+      "path": "growth/referrals/__pycache__/payout_sync.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

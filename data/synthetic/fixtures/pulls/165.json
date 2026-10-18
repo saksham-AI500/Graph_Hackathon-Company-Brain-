@@ -1,0 +1,154 @@
+{
+  "id": 1000165,
+  "number": 165,
+  "state": "closed",
+  "title": "fix(search): update embeddings.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "chloe-bennett",
+    "id": 28687,
+    "type": "User"
+  },
+  "created_at": "2025-12-23T09:08:29Z",
+  "updated_at": "2025-12-24T09:08:29Z",
+  "closed_at": "2025-12-24T09:08:29Z",
+  "merged_at": "2025-12-24T09:08:29Z",
+  "merge_commit_sha": "cc3b496673c2",
+  "head": {
+    "ref": "feature/pr-165",
+    "sha": "cc3b496673c2"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/165",
+  "files": [
+    {
+      "filename": "search/indexer/embeddings.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 8,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8551953e027c",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T09:08:29Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T09:08:29Z"
+        },
+        "message": "commit 1 for PR #165: fix(search): update embeddings.py"
+      }
+    },
+    {
+      "sha": "fa306bce8e1c",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T09:38:29Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T09:38:29Z"
+        },
+        "message": "commit 2 for PR #165: fix(search): update embeddings.py"
+      }
+    },
+    {
+      "sha": "4c974e1f2367",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T10:08:29Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T10:08:29Z"
+        },
+        "message": "commit 3 for PR #165: fix(search): update embeddings.py"
+      }
+    },
+    {
+      "sha": "eeae56b4c172",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T10:38:29Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T10:38:29Z"
+        },
+        "message": "commit 4 for PR #165: fix(search): update embeddings.py"
+      }
+    },
+    {
+      "sha": "cc3b496673c2",
+      "commit": {
+        "author": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T11:08:29Z"
+        },
+        "committer": {
+          "name": "Chloe Bennett",
+          "email": "chloe-bennett@example.com",
+          "date": "2025-12-23T11:08:29Z"
+        },
+        "message": "commit 5 for PR #165: fix(search): update embeddings.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 16501,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-25T08:08:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/165#pullrequestreview-16501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 898,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 898: verify boundary checks on line 15.",
+      "created_at": "2025-12-25T08:08:29Z",
+      "path": "search/indexer/embeddings.py",
+      "line": 15
+    },
+    {
+      "id": 899,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 899: verify boundary checks on line 25.",
+      "created_at": "2025-12-25T08:08:29Z",
+      "path": "search/indexer/embeddings.py",
+      "line": 25
+    }
+  ]
+}

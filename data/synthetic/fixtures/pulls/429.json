@@ -1,0 +1,147 @@
+{
+  "id": 1000429,
+  "number": 429,
+  "state": "closed",
+  "title": "feat(search_indexer): update backpressure.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.\n\nCloses #101",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2026-05-05T23:10:15Z",
+  "updated_at": "2026-05-08T13:10:15Z",
+  "closed_at": "2026-05-08T13:10:15Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-429",
+    "sha": "f91b2ce3043c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/429",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 12,
+      "changes": 39
+    },
+    {
+      "filename": "search/indexer/tokenizer.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 12,
+      "changes": 17
+    },
+    {
+      "filename": "search/indexer/index_stats.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 4,
+      "changes": 11
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b79c833d437b",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-05T23:10:15Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-05T23:10:15Z"
+        },
+        "message": "commit 1 for PR #429: feat(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9002ef85f228",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-05T23:40:15Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-05T23:40:15Z"
+        },
+        "message": "commit 2 for PR #429: feat(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f91b2ce3043c",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-06T00:10:15Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2026-05-06T00:10:15Z"
+        },
+        "message": "commit 3 for PR #429: feat(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 42901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-06T03:10:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/429#pullrequestreview-42901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2282,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2282: verify boundary checks on line 15.",
+      "created_at": "2026-05-06T03:10:15Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2283,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2283: verify boundary checks on line 25.",
+      "created_at": "2026-05-06T03:10:15Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2284,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2284: verify boundary checks on line 35.",
+      "created_at": "2026-05-06T03:10:15Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

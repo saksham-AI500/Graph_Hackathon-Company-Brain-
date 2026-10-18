@@ -1,0 +1,176 @@
+{
+  "id": 1000578,
+  "number": 578,
+  "state": "closed",
+  "title": "fix(search): update schema_indexer.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-07-20T20:50:14Z",
+  "updated_at": "2026-07-23T12:50:14Z",
+  "closed_at": "2026-07-23T12:50:14Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-578",
+    "sha": "f0a0df90bb73"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/578",
+  "files": [
+    {
+      "filename": "search/indexer/schema_indexer.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 1,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7c2c76e9a832",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T20:50:14Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T20:50:14Z"
+        },
+        "message": "commit 1 for PR #578: fix(search): update schema_indexer.py"
+      }
+    },
+    {
+      "sha": "9e5ec4565c22",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T21:20:14Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T21:20:14Z"
+        },
+        "message": "commit 2 for PR #578: fix(search): update schema_indexer.py"
+      }
+    },
+    {
+      "sha": "ccca238b5259",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T21:50:14Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T21:50:14Z"
+        },
+        "message": "commit 3 for PR #578: fix(search): update schema_indexer.py"
+      }
+    },
+    {
+      "sha": "33a972f7681e",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T22:20:14Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T22:20:14Z"
+        },
+        "message": "commit 4 for PR #578: fix(search): update schema_indexer.py"
+      }
+    },
+    {
+      "sha": "f0a0df90bb73",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T22:50:14Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-07-20T22:50:14Z"
+        },
+        "message": "commit 5 for PR #578: fix(search): update schema_indexer.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 57801,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-22T05:50:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/578#pullrequestreview-57801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3098,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3098: verify boundary checks on line 15.",
+      "created_at": "2026-07-22T05:50:14Z",
+      "path": "search/indexer/schema_indexer.py",
+      "line": 15
+    },
+    {
+      "id": 3099,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3099: verify boundary checks on line 25.",
+      "created_at": "2026-07-22T05:50:14Z",
+      "path": "search/indexer/schema_indexer.py",
+      "line": 25
+    },
+    {
+      "id": 3100,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3100: verify boundary checks on line 35.",
+      "created_at": "2026-07-22T05:50:14Z",
+      "path": "search/indexer/schema_indexer.py",
+      "line": 35
+    },
+    {
+      "id": 3101,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3101: verify boundary checks on line 45.",
+      "created_at": "2026-07-22T05:50:14Z",
+      "path": "search/indexer/schema_indexer.py",
+      "line": 45
+    }
+  ]
+}

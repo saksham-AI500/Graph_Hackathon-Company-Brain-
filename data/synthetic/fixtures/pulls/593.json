@@ -1,0 +1,138 @@
+{
+  "id": 1000593,
+  "number": 593,
+  "state": "closed",
+  "title": "test(notifications): update metrics_notif.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #127",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 29457,
+    "type": "User"
+  },
+  "created_at": "2026-07-27T23:41:08Z",
+  "updated_at": "2026-07-29T17:41:08Z",
+  "closed_at": "2026-07-29T17:41:08Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-593",
+    "sha": "440ac187c9be"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/593",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/metrics_notif.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 11,
+      "changes": 40
+    }
+  ],
+  "commits": [
+    {
+      "sha": "84de5ac1d89f",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-27T23:41:08Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-27T23:41:08Z"
+        },
+        "message": "commit 1 for PR #593: test(notifications): update metrics_notif.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1d12b93eb79b",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T00:11:08Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T00:11:08Z"
+        },
+        "message": "commit 2 for PR #593: test(notifications): update metrics_notif.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "373dde620116",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T00:41:08Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T00:41:08Z"
+        },
+        "message": "commit 3 for PR #593: test(notifications): update metrics_notif.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "440ac187c9be",
+      "commit": {
+        "author": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T01:11:08Z"
+        },
+        "committer": {
+          "name": "Caleb Rivers",
+          "email": "caleb-rivers@example.com",
+          "date": "2026-07-28T01:11:08Z"
+        },
+        "message": "commit 4 for PR #593: test(notifications): update metrics_notif.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 59301,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-29T07:41:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/593#pullrequestreview-59301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3145,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3145: verify boundary checks on line 15.",
+      "created_at": "2026-07-29T07:41:08Z",
+      "path": "notifications/__pycache__/metrics_notif.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3146,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3146: verify boundary checks on line 25.",
+      "created_at": "2026-07-29T07:41:08Z",
+      "path": "notifications/__pycache__/metrics_notif.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

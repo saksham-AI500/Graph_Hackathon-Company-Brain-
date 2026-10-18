@@ -1,0 +1,205 @@
+{
+  "id": 1000558,
+  "number": 558,
+  "state": "closed",
+  "title": "feat(auth_mfa): update device_fingerprint.cpython-314.pyc",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-07-10T06:19:36Z",
+  "updated_at": "2026-07-12T09:19:36Z",
+  "closed_at": "2026-07-12T09:19:36Z",
+  "merged_at": "2026-07-12T09:19:36Z",
+  "merge_commit_sha": "36f2370dfb30",
+  "head": {
+    "ref": "feature/pr-558",
+    "sha": "36f2370dfb30"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/558",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 13,
+      "changes": 53
+    },
+    {
+      "filename": "auth/mfa/totp.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 10,
+      "changes": 28
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1bdc7dd2b862",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T06:19:36Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T06:19:36Z"
+        },
+        "message": "commit 1 for PR #558: feat(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a0ec6608d95b",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T06:49:36Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T06:49:36Z"
+        },
+        "message": "commit 2 for PR #558: feat(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7102aeeec222",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T07:19:36Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T07:19:36Z"
+        },
+        "message": "commit 3 for PR #558: feat(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a52ccdf7cb9e",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T07:49:36Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T07:49:36Z"
+        },
+        "message": "commit 4 for PR #558: feat(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "36f2370dfb30",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T08:19:36Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-07-10T08:19:36Z"
+        },
+        "message": "commit 5 for PR #558: feat(auth_mfa): update device_fingerprint.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 55801,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-10T15:19:36Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/558#pullrequestreview-55801"
+    },
+    {
+      "id": 55802,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-10T15:19:36Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/558#pullrequestreview-55802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2979,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2979: verify boundary checks on line 15.",
+      "created_at": "2026-07-10T15:19:36Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2980,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2980: verify boundary checks on line 25.",
+      "created_at": "2026-07-10T15:19:36Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2981,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2981: verify boundary checks on line 35.",
+      "created_at": "2026-07-10T15:19:36Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2982,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2982: verify boundary checks on line 15.",
+      "created_at": "2026-07-10T15:19:36Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2983,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2983: verify boundary checks on line 25.",
+      "created_at": "2026-07-10T15:19:36Z",
+      "path": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": 1000245,
+  "number": 245,
+  "state": "closed",
+  "title": "refactor(notifications): update batch_sender.py",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #30",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-02-02T09:02:42Z",
+  "updated_at": "2026-02-03T12:02:42Z",
+  "closed_at": "2026-02-03T12:02:42Z",
+  "merged_at": "2026-02-03T12:02:42Z",
+  "merge_commit_sha": "dbcd8d5f31a5",
+  "head": {
+    "ref": "feature/pr-245",
+    "sha": "dbcd8d5f31a5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/245",
+  "files": [
+    {
+      "filename": "notifications/batch_sender.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 11,
+      "changes": 57
+    },
+    {
+      "filename": "notifications/__pycache__/localization.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 9,
+      "changes": 29
+    },
+    {
+      "filename": "notifications/delivery_status.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 12,
+      "changes": 50
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c76a529c78e9",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T09:02:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T09:02:42Z"
+        },
+        "message": "commit 1 for PR #245: refactor(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "e5e5c23564aa",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T09:32:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T09:32:42Z"
+        },
+        "message": "commit 2 for PR #245: refactor(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "eaa6f9548060",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T10:02:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T10:02:42Z"
+        },
+        "message": "commit 3 for PR #245: refactor(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "cc98e19ce1bf",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T10:32:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T10:32:42Z"
+        },
+        "message": "commit 4 for PR #245: refactor(notifications): update batch_sender.py"
+      }
+    },
+    {
+      "sha": "dbcd8d5f31a5",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T11:02:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-02-02T11:02:42Z"
+        },
+        "message": "commit 5 for PR #245: refactor(notifications): update batch_sender.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 24501,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-03T10:02:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/245#pullrequestreview-24501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1315,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1315: verify boundary checks on line 15.",
+      "created_at": "2026-02-03T10:02:42Z",
+      "path": "notifications/batch_sender.py",
+      "line": 15
+    },
+    {
+      "id": 1316,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1316: verify boundary checks on line 25.",
+      "created_at": "2026-02-03T10:02:42Z",
+      "path": "notifications/batch_sender.py",
+      "line": 25
+    },
+    {
+      "id": 1317,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1317: verify boundary checks on line 35.",
+      "created_at": "2026-02-03T10:02:42Z",
+      "path": "notifications/batch_sender.py",
+      "line": 35
+    }
+  ]
+}

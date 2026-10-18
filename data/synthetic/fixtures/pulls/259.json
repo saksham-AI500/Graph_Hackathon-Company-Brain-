@@ -1,0 +1,149 @@
+{
+  "id": 1000259,
+  "number": 259,
+  "state": "closed",
+  "title": "feat(shared_utils): update timezones.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-02-09T10:47:54Z",
+  "updated_at": "2026-02-11T03:47:54Z",
+  "closed_at": "2026-02-11T03:47:54Z",
+  "merged_at": "2026-02-11T03:47:54Z",
+  "merge_commit_sha": "ef7db0be3210",
+  "head": {
+    "ref": "feature/pr-259",
+    "sha": "ef7db0be3210"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/259",
+  "files": [
+    {
+      "filename": "shared/utils/timezones.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 9,
+      "changes": 29
+    }
+  ],
+  "commits": [
+    {
+      "sha": "44c3819ea201",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T10:47:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T10:47:54Z"
+        },
+        "message": "commit 1 for PR #259: feat(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "c0cab26c37db",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T11:17:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T11:17:54Z"
+        },
+        "message": "commit 2 for PR #259: feat(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "7ac00f1568f8",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T11:47:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T11:47:54Z"
+        },
+        "message": "commit 3 for PR #259: feat(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "ef7db0be3210",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T12:17:54Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-02-09T12:17:54Z"
+        },
+        "message": "commit 4 for PR #259: feat(shared_utils): update timezones.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 25901,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-10T16:47:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/259#pullrequestreview-25901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1380,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1380: verify boundary checks on line 15.",
+      "created_at": "2026-02-10T16:47:54Z",
+      "path": "shared/utils/timezones.py",
+      "line": 15
+    },
+    {
+      "id": 1381,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1381: verify boundary checks on line 25.",
+      "created_at": "2026-02-10T16:47:54Z",
+      "path": "shared/utils/timezones.py",
+      "line": 25
+    },
+    {
+      "id": 1382,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1382: verify boundary checks on line 35.",
+      "created_at": "2026-02-10T16:47:54Z",
+      "path": "shared/utils/timezones.py",
+      "line": 35
+    }
+  ]
+}

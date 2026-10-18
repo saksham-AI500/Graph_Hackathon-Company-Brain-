@@ -1,0 +1,76 @@
+{
+  "id": 2000149,
+  "number": 149,
+  "title": "PERF: search-indexer improvements for latency",
+  "body": "Detailed description for perf tracking in module search/indexer/.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 21671,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-04T11:02:38Z",
+  "updated_at": "2026-03-25T11:02:38Z",
+  "closed_at": "2026-03-25T11:02:38Z",
+  "labels": [
+    "perf",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70609,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #609 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-04T19:02:38Z"
+    },
+    {
+      "id": 70610,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #610 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-05T09:02:38Z"
+    },
+    {
+      "id": 70611,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #611 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T03:02:38Z"
+    },
+    {
+      "id": 70612,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #612 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T16:02:38Z"
+    },
+    {
+      "id": 70613,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #613 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T07:02:38Z"
+    },
+    {
+      "id": 70614,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #614 on issue #149: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T15:02:38Z"
+    }
+  ]
+}

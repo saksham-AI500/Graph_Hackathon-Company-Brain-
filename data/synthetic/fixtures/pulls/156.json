@@ -1,0 +1,315 @@
+{
+  "id": 1000156,
+  "number": 156,
+  "state": "closed",
+  "title": "docs(infra_observability): update alerts.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "hannah-schmidt",
+    "id": 26508,
+    "type": "User"
+  },
+  "created_at": "2025-12-18T19:08:43Z",
+  "updated_at": "2025-12-20T16:08:43Z",
+  "closed_at": "2025-12-20T16:08:43Z",
+  "merged_at": "2025-12-20T16:08:43Z",
+  "merge_commit_sha": "12979afc8bf6",
+  "head": {
+    "ref": "feature/pr-156",
+    "sha": "12979afc8bf6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/156",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 39
+    },
+    {
+      "filename": "infra/observability/__pycache__/disk_monitor.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 1,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9bc9d4e545b6",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T19:08:43Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T19:08:43Z"
+        },
+        "message": "commit 1 for PR #156: docs(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5ac3faf8b3b9",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T19:38:43Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T19:38:43Z"
+        },
+        "message": "commit 2 for PR #156: docs(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9465c6b6723f",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T20:08:43Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T20:08:43Z"
+        },
+        "message": "commit 3 for PR #156: docs(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b4173e914125",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T20:38:43Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T20:38:43Z"
+        },
+        "message": "commit 4 for PR #156: docs(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "12979afc8bf6",
+      "commit": {
+        "author": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T21:08:43Z"
+        },
+        "committer": {
+          "name": "Hannah Schmidt",
+          "email": "hannah-schmidt@example.com",
+          "date": "2025-12-18T21:08:43Z"
+        },
+        "message": "commit 5 for PR #156: docs(infra_observability): update alerts.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 15601,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T11:08:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/156#pullrequestreview-15601"
+    },
+    {
+      "id": 15602,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T11:08:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/156#pullrequestreview-15602"
+    },
+    {
+      "id": 15603,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T11:08:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/156#pullrequestreview-15603"
+    }
+  ],
+  "comments": [
+    {
+      "id": 846,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 846: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 847,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 847: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 848,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 848: verify boundary checks on line 35.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 849,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 849: verify boundary checks on line 45.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 850,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 850: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 851,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 851: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 852,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 852: verify boundary checks on line 35.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 853,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 853: verify boundary checks on line 45.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 854,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Review comment 854: verify boundary checks on line 55.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 855,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 855: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 856,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 856: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 857,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 857: verify boundary checks on line 35.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 858,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 858: verify boundary checks on line 45.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 859,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 859: verify boundary checks on line 55.",
+      "created_at": "2025-12-19T11:08:43Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

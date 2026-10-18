@@ -1,0 +1,67 @@
+{
+  "id": 2000308,
+  "number": 308,
+  "title": "BUG: billing improvements for latency",
+  "body": "Detailed description for bug tracking in module billing/.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 28517,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-16T23:18:55Z",
+  "updated_at": "2026-09-02T23:18:55Z",
+  "closed_at": "2026-09-02T23:18:55Z",
+  "labels": [
+    "bug",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71261,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #1261 on issue #308: updates from triage and reproduction steps.",
+      "created_at": "2026-08-17T21:18:55Z"
+    },
+    {
+      "id": 71262,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1262 on issue #308: updates from triage and reproduction steps.",
+      "created_at": "2026-08-18T17:18:55Z"
+    },
+    {
+      "id": 71263,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #1263 on issue #308: updates from triage and reproduction steps.",
+      "created_at": "2026-08-18T21:18:55Z"
+    },
+    {
+      "id": 71264,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1264 on issue #308: updates from triage and reproduction steps.",
+      "created_at": "2026-08-18T23:18:55Z"
+    },
+    {
+      "id": 71265,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1265 on issue #308: updates from triage and reproduction steps.",
+      "created_at": "2026-08-19T06:18:55Z"
+    }
+  ]
+}

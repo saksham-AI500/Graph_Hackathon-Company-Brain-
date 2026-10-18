@@ -1,0 +1,218 @@
+{
+  "id": 1000387,
+  "number": 387,
+  "state": "closed",
+  "title": "perf(payments): update metrics_payments.py",
+  "body": "Implementation changes for payments module improvements.\n\nCloses #91",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-04-14T17:47:15Z",
+  "updated_at": "2026-04-16T15:47:15Z",
+  "closed_at": "2026-04-16T15:47:15Z",
+  "merged_at": "2026-04-16T15:47:15Z",
+  "merge_commit_sha": "619089d81ee4",
+  "head": {
+    "ref": "feature/pr-387",
+    "sha": "619089d81ee4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/387",
+  "files": [
+    {
+      "filename": "payments/metrics_payments.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 5,
+      "changes": 8
+    },
+    {
+      "filename": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 6,
+      "changes": 29
+    },
+    {
+      "filename": "payments/__pycache__/tax_service.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 4,
+      "changes": 58
+    }
+  ],
+  "commits": [
+    {
+      "sha": "eb28ff85a256",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T17:47:15Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T17:47:15Z"
+        },
+        "message": "commit 1 for PR #387: perf(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "ccd70d4011ce",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T18:17:15Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T18:17:15Z"
+        },
+        "message": "commit 2 for PR #387: perf(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "e9af9344fda9",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T18:47:15Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T18:47:15Z"
+        },
+        "message": "commit 3 for PR #387: perf(payments): update metrics_payments.py"
+      }
+    },
+    {
+      "sha": "619089d81ee4",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T19:17:15Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-04-14T19:17:15Z"
+        },
+        "message": "commit 4 for PR #387: perf(payments): update metrics_payments.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 38701,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-15T05:47:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/387#pullrequestreview-38701"
+    },
+    {
+      "id": 38702,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-15T05:47:15Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/387#pullrequestreview-38702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2037,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2037: verify boundary checks on line 15.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 15
+    },
+    {
+      "id": 2038,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2038: verify boundary checks on line 25.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 25
+    },
+    {
+      "id": 2039,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2039: verify boundary checks on line 35.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 35
+    },
+    {
+      "id": 2040,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2040: verify boundary checks on line 45.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 45
+    },
+    {
+      "id": 2041,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2041: verify boundary checks on line 15.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 15
+    },
+    {
+      "id": 2042,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2042: verify boundary checks on line 25.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 25
+    },
+    {
+      "id": 2043,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2043: verify boundary checks on line 35.",
+      "created_at": "2026-04-15T05:47:15Z",
+      "path": "payments/metrics_payments.py",
+      "line": 35
+    }
+  ]
+}

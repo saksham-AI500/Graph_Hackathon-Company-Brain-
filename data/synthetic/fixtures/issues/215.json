@@ -1,0 +1,40 @@
+{
+  "id": 2000215,
+  "number": 215,
+  "title": "BUG: infra-observability improvements for security",
+  "body": "Detailed description for bug tracking in module infra/observability/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-12T03:49:45Z",
+  "updated_at": "2026-05-18T03:49:45Z",
+  "closed_at": "2026-05-18T03:49:45Z",
+  "labels": [
+    "bug",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70874,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #874 on issue #215: updates from triage and reproduction steps.",
+      "created_at": "2026-05-12T18:49:45Z"
+    },
+    {
+      "id": 70875,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #875 on issue #215: updates from triage and reproduction steps.",
+      "created_at": "2026-05-13T14:49:45Z"
+    }
+  ]
+}

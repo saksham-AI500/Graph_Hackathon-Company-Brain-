@@ -1,0 +1,163 @@
+{
+  "id": 1000071,
+  "number": 71,
+  "state": "closed",
+  "title": "chore(growth_referrals): update __init__.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2025-11-05T19:01:11Z",
+  "updated_at": "2025-11-07T02:01:11Z",
+  "closed_at": "2025-11-07T02:01:11Z",
+  "merged_at": "2025-11-07T02:01:11Z",
+  "merge_commit_sha": "851a79466dc9",
+  "head": {
+    "ref": "feature/pr-71",
+    "sha": "851a79466dc9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/71",
+  "files": [
+    {
+      "filename": "growth/referrals/__init__.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 11,
+      "changes": 36
+    },
+    {
+      "filename": "growth/referrals/invite_codes.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 2,
+      "changes": 8
+    },
+    {
+      "filename": "growth/referrals/audit_referrals.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 15,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "67c0e12f147e",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T19:01:11Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T19:01:11Z"
+        },
+        "message": "commit 1 for PR #71: chore(growth_referrals): update __init__.py"
+      }
+    },
+    {
+      "sha": "be80cb263609",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T19:31:11Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T19:31:11Z"
+        },
+        "message": "commit 2 for PR #71: chore(growth_referrals): update __init__.py"
+      }
+    },
+    {
+      "sha": "4bd366d92923",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T20:01:11Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T20:01:11Z"
+        },
+        "message": "commit 3 for PR #71: chore(growth_referrals): update __init__.py"
+      }
+    },
+    {
+      "sha": "851a79466dc9",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T20:31:11Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-11-05T20:31:11Z"
+        },
+        "message": "commit 4 for PR #71: chore(growth_referrals): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 7101,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-06T14:01:11Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/71#pullrequestreview-7101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 390,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 390: verify boundary checks on line 15.",
+      "created_at": "2025-11-06T14:01:11Z",
+      "path": "growth/referrals/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 391,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 391: verify boundary checks on line 25.",
+      "created_at": "2025-11-06T14:01:11Z",
+      "path": "growth/referrals/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 392,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Review comment 392: verify boundary checks on line 35.",
+      "created_at": "2025-11-06T14:01:11Z",
+      "path": "growth/referrals/__init__.py",
+      "line": 35
+    }
+  ]
+}

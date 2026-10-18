@@ -1,0 +1,40 @@
+{
+  "id": 2000189,
+  "number": 189,
+  "title": "PERF: search-indexer improvements for latency",
+  "body": "Detailed description for perf tracking in module search/indexer/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-15T02:39:16Z",
+  "updated_at": "2026-04-17T02:39:16Z",
+  "closed_at": "2026-04-17T02:39:16Z",
+  "labels": [
+    "perf",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70773,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #773 on issue #189: updates from triage and reproduction steps.",
+      "created_at": "2026-04-15T11:39:16Z"
+    },
+    {
+      "id": 70774,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #774 on issue #189: updates from triage and reproduction steps.",
+      "created_at": "2026-04-16T09:39:16Z"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": 1000320,
+  "number": 320,
+  "state": "closed",
+  "title": "feat(growth_referrals): update leaderboard.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.\n\nFixes #95",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2026-03-11T19:40:51Z",
+  "updated_at": "2026-03-13T19:40:51Z",
+  "closed_at": "2026-03-13T19:40:51Z",
+  "merged_at": "2026-03-13T19:40:51Z",
+  "merge_commit_sha": "b4b087bc650a",
+  "head": {
+    "ref": "feature/pr-320",
+    "sha": "b4b087bc650a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/320",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 9,
+      "changes": 18
+    },
+    {
+      "filename": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 2,
+      "changes": 14
+    },
+    {
+      "filename": "growth/referrals/audit_referrals.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 8,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0660de0f4e37",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-11T19:40:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-11T19:40:51Z"
+        },
+        "message": "commit 1 for PR #320: feat(growth_referrals): update leaderboard.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b4b087bc650a",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-11T20:10:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2026-03-11T20:10:51Z"
+        },
+        "message": "commit 2 for PR #320: feat(growth_referrals): update leaderboard.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 32001,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-12T07:40:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/320#pullrequestreview-32001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1697,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1697: verify boundary checks on line 15.",
+      "created_at": "2026-03-12T07:40:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1698,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1698: verify boundary checks on line 25.",
+      "created_at": "2026-03-12T07:40:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1699,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1699: verify boundary checks on line 35.",
+      "created_at": "2026-03-12T07:40:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1700,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 1700: verify boundary checks on line 45.",
+      "created_at": "2026-03-12T07:40:51Z",
+      "path": "growth/referrals/__pycache__/leaderboard.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

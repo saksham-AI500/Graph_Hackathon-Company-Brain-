@@ -1,0 +1,67 @@
+{
+  "id": 2000279,
+  "number": 279,
+  "title": "BUG: auth improvements for caching",
+  "body": "Detailed description for bug tracking in module auth/.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 25586,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-17T19:25:00Z",
+  "updated_at": "2026-07-20T19:25:00Z",
+  "closed_at": "2026-07-20T19:25:00Z",
+  "labels": [
+    "bug",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71141,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1141 on issue #279: updates from triage and reproduction steps.",
+      "created_at": "2026-07-17T22:25:00Z"
+    },
+    {
+      "id": 71142,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1142 on issue #279: updates from triage and reproduction steps.",
+      "created_at": "2026-07-18T10:25:00Z"
+    },
+    {
+      "id": 71143,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1143 on issue #279: updates from triage and reproduction steps.",
+      "created_at": "2026-07-19T08:25:00Z"
+    },
+    {
+      "id": 71144,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1144 on issue #279: updates from triage and reproduction steps.",
+      "created_at": "2026-07-20T01:25:00Z"
+    },
+    {
+      "id": 71145,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1145 on issue #279: updates from triage and reproduction steps.",
+      "created_at": "2026-07-20T08:25:00Z"
+    }
+  ]
+}

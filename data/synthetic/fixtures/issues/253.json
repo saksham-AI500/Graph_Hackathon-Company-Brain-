@@ -1,0 +1,76 @@
+{
+  "id": 2000253,
+  "number": 253,
+  "title": "BUG: infra-observability improvements for latency",
+  "body": "Detailed description for bug tracking in module infra/observability/.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 21335,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-20T17:16:53Z",
+  "updated_at": "2026-07-05T17:16:53Z",
+  "closed_at": "2026-07-05T17:16:53Z",
+  "labels": [
+    "bug",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71040,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1040 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-21T17:16:53Z"
+    },
+    {
+      "id": 71041,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #1041 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-21T21:16:53Z"
+    },
+    {
+      "id": 71042,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1042 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-22T21:16:53Z"
+    },
+    {
+      "id": 71043,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1043 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T05:16:53Z"
+    },
+    {
+      "id": 71044,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #1044 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T14:16:53Z"
+    },
+    {
+      "id": 71045,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1045 on issue #253: updates from triage and reproduction steps.",
+      "created_at": "2026-06-24T04:16:53Z"
+    }
+  ]
+}

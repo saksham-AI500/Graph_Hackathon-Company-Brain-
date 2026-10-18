@@ -1,0 +1,140 @@
+{
+  "id": 1000592,
+  "number": 592,
+  "state": "closed",
+  "title": "perf(notifications): update bounce_handler.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.\n\nFixes #55",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-07-27T22:44:41Z",
+  "updated_at": "2026-07-30T19:44:41Z",
+  "closed_at": "2026-07-30T19:44:41Z",
+  "merged_at": "2026-07-30T19:44:41Z",
+  "merge_commit_sha": "71e6d8107744",
+  "head": {
+    "ref": "feature/pr-592",
+    "sha": "71e6d8107744"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/592",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 10,
+      "changes": 37
+    },
+    {
+      "filename": "notifications/inbox.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 9,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b739a4b3c8ae",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T22:44:41Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T22:44:41Z"
+        },
+        "message": "commit 1 for PR #592: perf(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "576c6609cac4",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T23:14:41Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T23:14:41Z"
+        },
+        "message": "commit 2 for PR #592: perf(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "71e6d8107744",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T23:44:41Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-07-27T23:44:41Z"
+        },
+        "message": "commit 3 for PR #592: perf(notifications): update bounce_handler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 59201,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-29T05:44:41Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/592#pullrequestreview-59201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3142,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3142: verify boundary checks on line 15.",
+      "created_at": "2026-07-29T05:44:41Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3143,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3143: verify boundary checks on line 25.",
+      "created_at": "2026-07-29T05:44:41Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3144,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3144: verify boundary checks on line 35.",
+      "created_at": "2026-07-29T05:44:41Z",
+      "path": "notifications/__pycache__/bounce_handler.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "id": 1000519,
+  "number": 519,
+  "state": "closed",
+  "title": "chore(notifications): update metrics_notif.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "zane-malik",
+    "id": 26937,
+    "type": "User"
+  },
+  "created_at": "2026-06-19T12:30:16Z",
+  "updated_at": "2026-06-22T04:30:16Z",
+  "closed_at": "2026-06-22T04:30:16Z",
+  "merged_at": "2026-06-22T04:30:16Z",
+  "merge_commit_sha": "70016a78f740",
+  "head": {
+    "ref": "feature/pr-519",
+    "sha": "70016a78f740"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/519",
+  "files": [
+    {
+      "filename": "notifications/metrics_notif.py",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 12,
+      "changes": 16
+    }
+  ],
+  "commits": [
+    {
+      "sha": "821aa205976c",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T12:30:16Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T12:30:16Z"
+        },
+        "message": "commit 1 for PR #519: chore(notifications): update metrics_notif.py"
+      }
+    },
+    {
+      "sha": "24117a2476e9",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T13:00:16Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T13:00:16Z"
+        },
+        "message": "commit 2 for PR #519: chore(notifications): update metrics_notif.py"
+      }
+    },
+    {
+      "sha": "7affd6c78118",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T13:30:16Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T13:30:16Z"
+        },
+        "message": "commit 3 for PR #519: chore(notifications): update metrics_notif.py"
+      }
+    },
+    {
+      "sha": "13fa00ac0e6e",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T14:00:16Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T14:00:16Z"
+        },
+        "message": "commit 4 for PR #519: chore(notifications): update metrics_notif.py"
+      }
+    },
+    {
+      "sha": "70016a78f740",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T14:30:16Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-06-19T14:30:16Z"
+        },
+        "message": "commit 5 for PR #519: chore(notifications): update metrics_notif.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 51901,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-21T06:30:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/519#pullrequestreview-51901"
+    },
+    {
+      "id": 51902,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-21T06:30:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/519#pullrequestreview-51902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2780,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2780: verify boundary checks on line 15.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 15
+    },
+    {
+      "id": 2781,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2781: verify boundary checks on line 25.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 25
+    },
+    {
+      "id": 2782,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2782: verify boundary checks on line 35.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 35
+    },
+    {
+      "id": 2783,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2783: verify boundary checks on line 45.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 45
+    },
+    {
+      "id": 2784,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2784: verify boundary checks on line 55.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 55
+    },
+    {
+      "id": 2785,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 2785: verify boundary checks on line 15.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 15
+    },
+    {
+      "id": 2786,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 2786: verify boundary checks on line 25.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 25
+    },
+    {
+      "id": 2787,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 2787: verify boundary checks on line 35.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 35
+    },
+    {
+      "id": 2788,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 2788: verify boundary checks on line 45.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 45
+    },
+    {
+      "id": 2789,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 2789: verify boundary checks on line 55.",
+      "created_at": "2026-06-21T06:30:16Z",
+      "path": "notifications/metrics_notif.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": 1000453,
+  "number": 453,
+  "state": "closed",
+  "title": "feat(shared_utils): update exceptions.cpython-314.pyc",
+  "body": "Implementation changes for shared_utils module improvements.\n\nCloses #38",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-05-18T14:18:35Z",
+  "updated_at": "2026-05-21T06:18:35Z",
+  "closed_at": "2026-05-21T06:18:35Z",
+  "merged_at": "2026-05-21T06:18:35Z",
+  "merge_commit_sha": "8cca08f255a5",
+  "head": {
+    "ref": "feature/pr-453",
+    "sha": "8cca08f255a5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/453",
+  "files": [
+    {
+      "filename": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 9,
+      "changes": 31
+    },
+    {
+      "filename": "shared/utils/env_reader.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 5,
+      "changes": 32
+    },
+    {
+      "filename": "shared/utils/__pycache__/validators.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 15,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "239a53104e5f",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T14:18:35Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T14:18:35Z"
+        },
+        "message": "commit 1 for PR #453: feat(shared_utils): update exceptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "353c090bd2bb",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T14:48:35Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T14:48:35Z"
+        },
+        "message": "commit 2 for PR #453: feat(shared_utils): update exceptions.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8cca08f255a5",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T15:18:35Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-05-18T15:18:35Z"
+        },
+        "message": "commit 3 for PR #453: feat(shared_utils): update exceptions.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 45301,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-19T09:18:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/453#pullrequestreview-45301"
+    },
+    {
+      "id": 45302,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-19T09:18:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/453#pullrequestreview-45302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2429,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2429: verify boundary checks on line 15.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2430,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2430: verify boundary checks on line 25.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2431,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2431: verify boundary checks on line 15.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2432,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2432: verify boundary checks on line 25.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2433,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2433: verify boundary checks on line 35.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2434,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 2434: verify boundary checks on line 45.",
+      "created_at": "2026-05-19T09:18:35Z",
+      "path": "shared/utils/__pycache__/exceptions.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

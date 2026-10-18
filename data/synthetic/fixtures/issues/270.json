@@ -1,0 +1,49 @@
+{
+  "id": 2000270,
+  "number": 270,
+  "title": "TASK: auth-mfa improvements for latency",
+  "body": "Detailed description for task tracking in module auth/mfa/.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 21335,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-08T09:55:11Z",
+  "updated_at": "2026-07-21T09:55:11Z",
+  "closed_at": "2026-07-21T09:55:11Z",
+  "labels": [
+    "task",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71114,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1114 on issue #270: updates from triage and reproduction steps.",
+      "created_at": "2026-07-09T06:55:11Z"
+    },
+    {
+      "id": 71115,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #1115 on issue #270: updates from triage and reproduction steps.",
+      "created_at": "2026-07-09T17:55:11Z"
+    },
+    {
+      "id": 71116,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #1116 on issue #270: updates from triage and reproduction steps.",
+      "created_at": "2026-07-10T08:55:11Z"
+    }
+  ]
+}

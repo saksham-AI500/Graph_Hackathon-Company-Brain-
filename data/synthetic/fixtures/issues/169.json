@@ -1,0 +1,58 @@
+{
+  "id": 2000169,
+  "number": 169,
+  "title": "TASK: infra-observability improvements for throughput",
+  "body": "Detailed description for task tracking in module infra/observability/.",
+  "user": {
+    "login": "devon-reed",
+    "id": 20546,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-25T06:50:14Z",
+  "updated_at": "2026-04-15T06:50:14Z",
+  "closed_at": "2026-04-15T06:50:14Z",
+  "labels": [
+    "task",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70689,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #689 on issue #169: updates from triage and reproduction steps.",
+      "created_at": "2026-03-25T16:50:14Z"
+    },
+    {
+      "id": 70690,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #690 on issue #169: updates from triage and reproduction steps.",
+      "created_at": "2026-03-26T05:50:14Z"
+    },
+    {
+      "id": 70691,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #691 on issue #169: updates from triage and reproduction steps.",
+      "created_at": "2026-03-26T23:50:14Z"
+    },
+    {
+      "id": 70692,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #692 on issue #169: updates from triage and reproduction steps.",
+      "created_at": "2026-03-27T03:50:14Z"
+    }
+  ]
+}

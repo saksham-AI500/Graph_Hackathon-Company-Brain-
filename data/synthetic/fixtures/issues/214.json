@@ -1,0 +1,58 @@
+{
+  "id": 2000214,
+  "number": 214,
+  "title": "TASK: growth-referrals improvements for caching",
+  "body": "Detailed description for task tracking in module growth/referrals/.",
+  "user": {
+    "login": "maya-lin",
+    "id": 28779,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-11T02:34:08Z",
+  "updated_at": "2026-05-15T02:34:08Z",
+  "closed_at": "2026-05-15T02:34:08Z",
+  "labels": [
+    "task",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70870,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #870 on issue #214: updates from triage and reproduction steps.",
+      "created_at": "2026-05-11T23:34:08Z"
+    },
+    {
+      "id": 70871,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #871 on issue #214: updates from triage and reproduction steps.",
+      "created_at": "2026-05-12T14:34:08Z"
+    },
+    {
+      "id": 70872,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #872 on issue #214: updates from triage and reproduction steps.",
+      "created_at": "2026-05-12T22:34:08Z"
+    },
+    {
+      "id": 70873,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #873 on issue #214: updates from triage and reproduction steps.",
+      "created_at": "2026-05-13T16:34:08Z"
+    }
+  ]
+}

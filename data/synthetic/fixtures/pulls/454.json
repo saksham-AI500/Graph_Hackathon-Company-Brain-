@@ -1,0 +1,234 @@
+{
+  "id": 1000454,
+  "number": 454,
+  "state": "closed",
+  "title": "docs(notifications): update dispatcher.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 21939,
+    "type": "User"
+  },
+  "created_at": "2026-05-18T15:23:53Z",
+  "updated_at": "2026-05-20T02:23:53Z",
+  "closed_at": "2026-05-20T02:23:53Z",
+  "merged_at": "2026-05-20T02:23:53Z",
+  "merge_commit_sha": "9778ba87756d",
+  "head": {
+    "ref": "feature/pr-454",
+    "sha": "9778ba87756d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/454",
+  "files": [
+    {
+      "filename": "notifications/dispatcher.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 10,
+      "changes": 31
+    },
+    {
+      "filename": "notifications/__pycache__/circuit_breaker.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 6,
+      "changes": 26
+    },
+    {
+      "filename": "notifications/README.md",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 11,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "dba72e29796f",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T15:23:53Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T15:23:53Z"
+        },
+        "message": "commit 1 for PR #454: docs(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "346443254f03",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T15:53:53Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T15:53:53Z"
+        },
+        "message": "commit 2 for PR #454: docs(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "7aebbc9b72d3",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T16:23:53Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T16:23:53Z"
+        },
+        "message": "commit 3 for PR #454: docs(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "66bd7bc2c5f5",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T16:53:53Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T16:53:53Z"
+        },
+        "message": "commit 4 for PR #454: docs(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "9778ba87756d",
+      "commit": {
+        "author": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T17:23:53Z"
+        },
+        "committer": {
+          "name": "Tariq Aziz",
+          "email": "tariq-aziz@example.com",
+          "date": "2026-05-18T17:23:53Z"
+        },
+        "message": "commit 5 for PR #454: docs(notifications): update dispatcher.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 45401,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-18T19:23:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/454#pullrequestreview-45401"
+    },
+    {
+      "id": 45402,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-18T19:23:53Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/454#pullrequestreview-45402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2435,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2435: verify boundary checks on line 15.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 15
+    },
+    {
+      "id": 2436,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2436: verify boundary checks on line 25.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 25
+    },
+    {
+      "id": 2437,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2437: verify boundary checks on line 35.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 35
+    },
+    {
+      "id": 2438,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2438: verify boundary checks on line 15.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 15
+    },
+    {
+      "id": 2439,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2439: verify boundary checks on line 25.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 25
+    },
+    {
+      "id": 2440,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2440: verify boundary checks on line 35.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 35
+    },
+    {
+      "id": 2441,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2441: verify boundary checks on line 45.",
+      "created_at": "2026-05-18T19:23:53Z",
+      "path": "notifications/dispatcher.py",
+      "line": 45
+    }
+  ]
+}

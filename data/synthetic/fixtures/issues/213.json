@@ -1,0 +1,49 @@
+{
+  "id": 2000213,
+  "number": 213,
+  "title": "PERF: payments-refunds improvements for caching",
+  "body": "Detailed description for perf tracking in module payments/refunds/.",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 21671,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-10T02:04:03Z",
+  "updated_at": "2026-05-10T02:04:03Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70867,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #867 on issue #213: updates from triage and reproduction steps.",
+      "created_at": "2026-05-10T12:04:03Z"
+    },
+    {
+      "id": 70868,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #868 on issue #213: updates from triage and reproduction steps.",
+      "created_at": "2026-05-10T15:04:03Z"
+    },
+    {
+      "id": 70869,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #869 on issue #213: updates from triage and reproduction steps.",
+      "created_at": "2026-05-11T06:04:03Z"
+    }
+  ]
+}

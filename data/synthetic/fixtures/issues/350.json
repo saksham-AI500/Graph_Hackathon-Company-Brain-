@@ -1,0 +1,76 @@
+{
+  "id": 2000350,
+  "number": 350,
+  "title": "FEATURE: infra-observability improvements for caching",
+  "body": "Detailed description for feature tracking in module infra/observability/.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-09-29T17:00:42Z",
+  "updated_at": "2026-09-29T17:00:42Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71429,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1429 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-09-30T07:00:42Z"
+    },
+    {
+      "id": 71430,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1430 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-09-30T14:00:42Z"
+    },
+    {
+      "id": 71431,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #1431 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-10-01T04:00:42Z"
+    },
+    {
+      "id": 71432,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1432 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-10-01T06:00:42Z"
+    },
+    {
+      "id": 71433,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #1433 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-10-02T03:00:42Z"
+    },
+    {
+      "id": 71434,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1434 on issue #350: updates from triage and reproduction steps.",
+      "created_at": "2026-10-02T06:00:42Z"
+    }
+  ]
+}

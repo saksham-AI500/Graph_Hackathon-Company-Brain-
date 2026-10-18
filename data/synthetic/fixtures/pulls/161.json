@@ -1,0 +1,168 @@
+{
+  "id": 1000161,
+  "number": 161,
+  "state": "closed",
+  "title": "refactor(notifications): update dispatcher.py",
+  "body": "Implementation changes for notifications module improvements.\n\nCloses #65",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2025-12-22T08:36:52Z",
+  "updated_at": "2025-12-24T13:36:52Z",
+  "closed_at": "2025-12-24T13:36:52Z",
+  "merged_at": "2025-12-24T13:36:52Z",
+  "merge_commit_sha": "5031a447d284",
+  "head": {
+    "ref": "feature/pr-161",
+    "sha": "5031a447d284"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/161",
+  "files": [
+    {
+      "filename": "notifications/dispatcher.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 9,
+      "changes": 27
+    },
+    {
+      "filename": "notifications/sms_service.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 8,
+      "changes": 32
+    },
+    {
+      "filename": "notifications/__pycache__/email_sender.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 14,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "dfdfcad1f68c",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T08:36:52Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T08:36:52Z"
+        },
+        "message": "commit 1 for PR #161: refactor(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "47acc3312158",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T09:06:52Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T09:06:52Z"
+        },
+        "message": "commit 2 for PR #161: refactor(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "4ddb21a353e1",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T09:36:52Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T09:36:52Z"
+        },
+        "message": "commit 3 for PR #161: refactor(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "d3c1b35af902",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T10:06:52Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T10:06:52Z"
+        },
+        "message": "commit 4 for PR #161: refactor(notifications): update dispatcher.py"
+      }
+    },
+    {
+      "sha": "5031a447d284",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T10:36:52Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-22T10:36:52Z"
+        },
+        "message": "commit 5 for PR #161: refactor(notifications): update dispatcher.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 16101,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-22T10:36:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/161#pullrequestreview-16101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 886,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 886: verify boundary checks on line 15.",
+      "created_at": "2025-12-22T10:36:52Z",
+      "path": "notifications/dispatcher.py",
+      "line": 15
+    },
+    {
+      "id": 887,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 887: verify boundary checks on line 25.",
+      "created_at": "2025-12-22T10:36:52Z",
+      "path": "notifications/dispatcher.py",
+      "line": 25
+    }
+  ]
+}

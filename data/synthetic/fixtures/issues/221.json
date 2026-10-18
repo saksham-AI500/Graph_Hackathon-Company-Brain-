@@ -1,0 +1,58 @@
+{
+  "id": 2000221,
+  "number": 221,
+  "title": "INCIDENT: api-gateway improvements for caching",
+  "body": "Detailed description for incident tracking in module api/gateway/.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 27786,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-18T09:42:55Z",
+  "updated_at": "2026-06-13T09:42:55Z",
+  "closed_at": "2026-06-13T09:42:55Z",
+  "labels": [
+    "incident",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70896,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #896 on issue #221: updates from triage and reproduction steps.",
+      "created_at": "2026-05-18T18:42:55Z"
+    },
+    {
+      "id": 70897,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #897 on issue #221: updates from triage and reproduction steps.",
+      "created_at": "2026-05-19T09:42:55Z"
+    },
+    {
+      "id": 70898,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #898 on issue #221: updates from triage and reproduction steps.",
+      "created_at": "2026-05-19T22:42:55Z"
+    },
+    {
+      "id": 70899,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #899 on issue #221: updates from triage and reproduction steps.",
+      "created_at": "2026-05-20T22:42:55Z"
+    }
+  ]
+}

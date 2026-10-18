@@ -1,0 +1,209 @@
+{
+  "id": 1000119,
+  "number": 119,
+  "state": "closed",
+  "title": "feat(search_indexer): update index_stats.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "felix-baum",
+    "id": 28109,
+    "type": "User"
+  },
+  "created_at": "2025-12-01T02:37:19Z",
+  "updated_at": "2025-12-02T03:37:19Z",
+  "closed_at": "2025-12-02T03:37:19Z",
+  "merged_at": "2025-12-02T03:37:19Z",
+  "merge_commit_sha": "a1e0aef88f54",
+  "head": {
+    "ref": "feature/pr-119",
+    "sha": "a1e0aef88f54"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/119",
+  "files": [
+    {
+      "filename": "search/indexer/index_stats.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 43
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f3f18a5ff0ef",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T02:37:19Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T02:37:19Z"
+        },
+        "message": "commit 1 for PR #119: feat(search_indexer): update index_stats.py"
+      }
+    },
+    {
+      "sha": "71d12f15729b",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T03:07:19Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T03:07:19Z"
+        },
+        "message": "commit 2 for PR #119: feat(search_indexer): update index_stats.py"
+      }
+    },
+    {
+      "sha": "6dd6d406b673",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T03:37:19Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T03:37:19Z"
+        },
+        "message": "commit 3 for PR #119: feat(search_indexer): update index_stats.py"
+      }
+    },
+    {
+      "sha": "4fe4279a38ef",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T04:07:19Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T04:07:19Z"
+        },
+        "message": "commit 4 for PR #119: feat(search_indexer): update index_stats.py"
+      }
+    },
+    {
+      "sha": "a1e0aef88f54",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T04:37:19Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2025-12-01T04:37:19Z"
+        },
+        "message": "commit 5 for PR #119: feat(search_indexer): update index_stats.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 11901,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-01T10:37:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/119#pullrequestreview-11901"
+    },
+    {
+      "id": 11902,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-01T10:37:19Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/119#pullrequestreview-11902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 661,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 661: verify boundary checks on line 15.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 662,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 662: verify boundary checks on line 25.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 663,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 663: verify boundary checks on line 15.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 15
+    },
+    {
+      "id": 664,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 664: verify boundary checks on line 25.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 25
+    },
+    {
+      "id": 665,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 665: verify boundary checks on line 35.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 35
+    },
+    {
+      "id": 666,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 666: verify boundary checks on line 45.",
+      "created_at": "2025-12-01T10:37:19Z",
+      "path": "search/indexer/index_stats.py",
+      "line": 45
+    }
+  ]
+}

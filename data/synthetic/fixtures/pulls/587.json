@@ -1,0 +1,101 @@
+{
+  "id": 1000587,
+  "number": 587,
+  "state": "closed",
+  "title": "test(payments): update tax_service.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2026-07-24T10:40:31Z",
+  "updated_at": "2026-07-25T14:40:31Z",
+  "closed_at": "2026-07-25T14:40:31Z",
+  "merged_at": "2026-07-25T14:40:31Z",
+  "merge_commit_sha": "ea3d3c170aea",
+  "head": {
+    "ref": "feature/pr-587",
+    "sha": "ea3d3c170aea"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/587",
+  "files": [
+    {
+      "filename": "payments/tax_service.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 11,
+      "changes": 59
+    },
+    {
+      "filename": "payments/stripe_client.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 7,
+      "changes": 36
+    },
+    {
+      "filename": "payments/refunds/README.md",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 8,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d6fbf7904d83",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T10:40:31Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T10:40:31Z"
+        },
+        "message": "commit 1 for PR #587: test(payments): update tax_service.py"
+      }
+    },
+    {
+      "sha": "6d53aa497b1e",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T11:10:31Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T11:10:31Z"
+        },
+        "message": "commit 2 for PR #587: test(payments): update tax_service.py"
+      }
+    },
+    {
+      "sha": "ea3d3c170aea",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T11:40:31Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-24T11:40:31Z"
+        },
+        "message": "commit 3 for PR #587: test(payments): update tax_service.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

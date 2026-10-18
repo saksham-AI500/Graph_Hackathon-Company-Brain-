@@ -1,0 +1,158 @@
+{
+  "id": 1000461,
+  "number": 461,
+  "state": "closed",
+  "title": "test(auth): update authenticator.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-05-22T04:13:46Z",
+  "updated_at": "2026-05-24T14:13:46Z",
+  "closed_at": "2026-05-24T14:13:46Z",
+  "merged_at": "2026-05-24T14:13:46Z",
+  "merge_commit_sha": "0059b033be1f",
+  "head": {
+    "ref": "feature/pr-461",
+    "sha": "0059b033be1f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/461",
+  "files": [
+    {
+      "filename": "auth/authenticator.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 11,
+      "changes": 32
+    },
+    {
+      "filename": "auth/session.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 6,
+      "changes": 12
+    },
+    {
+      "filename": "auth/rate_limit_auth.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 1,
+      "changes": 6
+    }
+  ],
+  "commits": [
+    {
+      "sha": "62e07ceb37a8",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T04:13:46Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T04:13:46Z"
+        },
+        "message": "commit 1 for PR #461: test(auth): update authenticator.py"
+      }
+    },
+    {
+      "sha": "0664c37defae",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T04:43:46Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T04:43:46Z"
+        },
+        "message": "commit 2 for PR #461: test(auth): update authenticator.py"
+      }
+    },
+    {
+      "sha": "0059b033be1f",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T05:13:46Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-22T05:13:46Z"
+        },
+        "message": "commit 3 for PR #461: test(auth): update authenticator.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 46101,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-22T22:13:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/461#pullrequestreview-46101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2462,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2462: verify boundary checks on line 15.",
+      "created_at": "2026-05-22T22:13:46Z",
+      "path": "auth/authenticator.py",
+      "line": 15
+    },
+    {
+      "id": 2463,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2463: verify boundary checks on line 25.",
+      "created_at": "2026-05-22T22:13:46Z",
+      "path": "auth/authenticator.py",
+      "line": 25
+    },
+    {
+      "id": 2464,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2464: verify boundary checks on line 35.",
+      "created_at": "2026-05-22T22:13:46Z",
+      "path": "auth/authenticator.py",
+      "line": 35
+    },
+    {
+      "id": 2465,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2465: verify boundary checks on line 45.",
+      "created_at": "2026-05-22T22:13:46Z",
+      "path": "auth/authenticator.py",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": 1000123,
+  "number": 123,
+  "state": "closed",
+  "title": "perf(payments_refunds): update errors.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.\n\nCloses #117",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2025-12-02T02:53:29Z",
+  "updated_at": "2025-12-03T22:53:29Z",
+  "closed_at": "2025-12-03T22:53:29Z",
+  "merged_at": "2025-12-03T22:53:29Z",
+  "merge_commit_sha": "32069e5ef4d9",
+  "head": {
+    "ref": "feature/pr-123",
+    "sha": "32069e5ef4d9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/123",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/errors.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 15,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "19923f1af32b",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T02:53:29Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T02:53:29Z"
+        },
+        "message": "commit 1 for PR #123: perf(payments_refunds): update errors.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4cc31c1373a4",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T03:23:29Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T03:23:29Z"
+        },
+        "message": "commit 2 for PR #123: perf(payments_refunds): update errors.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "cdd5b90790ae",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T03:53:29Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T03:53:29Z"
+        },
+        "message": "commit 3 for PR #123: perf(payments_refunds): update errors.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "32069e5ef4d9",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T04:23:29Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-02T04:23:29Z"
+        },
+        "message": "commit 4 for PR #123: perf(payments_refunds): update errors.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 12301,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-03T20:53:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/123#pullrequestreview-12301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 676,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 676: verify boundary checks on line 15.",
+      "created_at": "2025-12-03T20:53:29Z",
+      "path": "payments/refunds/__pycache__/errors.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 677,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 677: verify boundary checks on line 25.",
+      "created_at": "2025-12-03T20:53:29Z",
+      "path": "payments/refunds/__pycache__/errors.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 678,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 678: verify boundary checks on line 35.",
+      "created_at": "2025-12-03T20:53:29Z",
+      "path": "payments/refunds/__pycache__/errors.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 679,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 679: verify boundary checks on line 45.",
+      "created_at": "2025-12-03T20:53:29Z",
+      "path": "payments/refunds/__pycache__/errors.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

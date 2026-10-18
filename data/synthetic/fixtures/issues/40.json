@@ -1,0 +1,51 @@
+{
+  "id": 2000040,
+  "number": 40,
+  "title": "PERF: auth improvements for latency",
+  "body": "Detailed description for perf tracking in module auth/.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 25337,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-10T23:49:00Z",
+  "updated_at": "2025-12-09T23:49:00Z",
+  "closed_at": "2025-12-09T23:49:00Z",
+  "labels": [
+    "perf",
+    "auth"
+  ],
+  "linked_pulls": [
+    232
+  ],
+  "comments": [
+    {
+      "id": 70158,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #158 on issue #40: updates from triage and reproduction steps.",
+      "created_at": "2025-11-11T08:49:00Z"
+    },
+    {
+      "id": 70159,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #159 on issue #40: updates from triage and reproduction steps.",
+      "created_at": "2025-11-11T20:49:00Z"
+    },
+    {
+      "id": 70160,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #160 on issue #40: updates from triage and reproduction steps.",
+      "created_at": "2025-11-12T03:49:00Z"
+    }
+  ]
+}

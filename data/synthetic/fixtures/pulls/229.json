@@ -1,0 +1,124 @@
+{
+  "id": 1000229,
+  "number": 229,
+  "state": "closed",
+  "title": "feat(auth): update authenticator.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-01-23T18:28:33Z",
+  "updated_at": "2026-01-26T02:28:33Z",
+  "closed_at": "2026-01-26T02:28:33Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-229",
+    "sha": "f301384f18eb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/229",
+  "files": [
+    {
+      "filename": "auth/authenticator.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 4,
+      "changes": 17
+    },
+    {
+      "filename": "auth/mfa/__pycache__/challenge_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 13,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2c2d171707e1",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-01-23T18:28:33Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-01-23T18:28:33Z"
+        },
+        "message": "commit 1 for PR #229: feat(auth): update authenticator.py"
+      }
+    },
+    {
+      "sha": "f301384f18eb",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-01-23T18:58:33Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-01-23T18:58:33Z"
+        },
+        "message": "commit 2 for PR #229: feat(auth): update authenticator.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22901,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-25T15:28:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/229#pullrequestreview-22901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1244,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1244: verify boundary checks on line 15.",
+      "created_at": "2026-01-25T15:28:33Z",
+      "path": "auth/authenticator.py",
+      "line": 15
+    },
+    {
+      "id": 1245,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1245: verify boundary checks on line 25.",
+      "created_at": "2026-01-25T15:28:33Z",
+      "path": "auth/authenticator.py",
+      "line": 25
+    },
+    {
+      "id": 1246,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1246: verify boundary checks on line 35.",
+      "created_at": "2026-01-25T15:28:33Z",
+      "path": "auth/authenticator.py",
+      "line": 35
+    }
+  ]
+}

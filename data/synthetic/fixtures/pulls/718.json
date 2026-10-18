@@ -1,0 +1,207 @@
+{
+  "id": 1000718,
+  "number": 718,
+  "state": "closed",
+  "title": "perf(payments_refunds): update disputes.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-09-29T05:22:45Z",
+  "updated_at": "2026-10-01T20:22:45Z",
+  "closed_at": "2026-10-01T20:22:45Z",
+  "merged_at": "2026-10-01T20:22:45Z",
+  "merge_commit_sha": "867f90757702",
+  "head": {
+    "ref": "feature/pr-718",
+    "sha": "867f90757702"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/718",
+  "files": [
+    {
+      "filename": "payments/refunds/disputes.py",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 12,
+      "changes": 28
+    },
+    {
+      "filename": "payments/refunds/queue.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 7,
+      "changes": 33
+    },
+    {
+      "filename": "payments/refunds/notification.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 8,
+      "changes": 39
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7ce5746403b1",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T05:22:45Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T05:22:45Z"
+        },
+        "message": "commit 1 for PR #718: perf(payments_refunds): update disputes.py"
+      }
+    },
+    {
+      "sha": "a0a718ee5cbb",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T05:52:45Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T05:52:45Z"
+        },
+        "message": "commit 2 for PR #718: perf(payments_refunds): update disputes.py"
+      }
+    },
+    {
+      "sha": "27d087d11111",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T06:22:45Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T06:22:45Z"
+        },
+        "message": "commit 3 for PR #718: perf(payments_refunds): update disputes.py"
+      }
+    },
+    {
+      "sha": "867f90757702",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T06:52:45Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-09-29T06:52:45Z"
+        },
+        "message": "commit 4 for PR #718: perf(payments_refunds): update disputes.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71801,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-29T21:22:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/718#pullrequestreview-71801"
+    },
+    {
+      "id": 71802,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-29T21:22:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/718#pullrequestreview-71802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3811,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 3811: verify boundary checks on line 15.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 15
+    },
+    {
+      "id": 3812,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 3812: verify boundary checks on line 25.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 25
+    },
+    {
+      "id": 3813,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 3813: verify boundary checks on line 35.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 35
+    },
+    {
+      "id": 3814,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3814: verify boundary checks on line 15.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 15
+    },
+    {
+      "id": 3815,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3815: verify boundary checks on line 25.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 25
+    },
+    {
+      "id": 3816,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 3816: verify boundary checks on line 35.",
+      "created_at": "2026-09-29T21:22:45Z",
+      "path": "payments/refunds/disputes.py",
+      "line": 35
+    }
+  ]
+}

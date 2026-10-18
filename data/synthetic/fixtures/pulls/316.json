@@ -1,0 +1,268 @@
+{
+  "id": 1000316,
+  "number": 316,
+  "state": "closed",
+  "title": "test(search): update health_indexer.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-03-09T19:18:47Z",
+  "updated_at": "2026-03-12T16:18:47Z",
+  "closed_at": "2026-03-12T16:18:47Z",
+  "merged_at": "2026-03-12T16:18:47Z",
+  "merge_commit_sha": "68fb99ee866f",
+  "head": {
+    "ref": "feature/pr-316",
+    "sha": "68fb99ee866f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/316",
+  "files": [
+    {
+      "filename": "search/indexer/health_indexer.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 9,
+      "changes": 38
+    },
+    {
+      "filename": "search/metrics_search.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 8,
+      "changes": 39
+    },
+    {
+      "filename": "search/query_parser.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 6,
+      "changes": 29
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b4f4ba6fba5b",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T19:18:47Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T19:18:47Z"
+        },
+        "message": "commit 1 for PR #316: test(search): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "da52c6c9f214",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T19:48:47Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T19:48:47Z"
+        },
+        "message": "commit 2 for PR #316: test(search): update health_indexer.py"
+      }
+    },
+    {
+      "sha": "68fb99ee866f",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T20:18:47Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-03-09T20:18:47Z"
+        },
+        "message": "commit 3 for PR #316: test(search): update health_indexer.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 31601,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-10T23:18:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/316#pullrequestreview-31601"
+    },
+    {
+      "id": 31602,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-10T23:18:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/316#pullrequestreview-31602"
+    },
+    {
+      "id": 31603,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-10T23:18:47Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/316#pullrequestreview-31603"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1671,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1671: verify boundary checks on line 15.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 15
+    },
+    {
+      "id": 1672,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1672: verify boundary checks on line 25.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 25
+    },
+    {
+      "id": 1673,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1673: verify boundary checks on line 35.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 35
+    },
+    {
+      "id": 1674,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1674: verify boundary checks on line 45.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 45
+    },
+    {
+      "id": 1675,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1675: verify boundary checks on line 15.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 15
+    },
+    {
+      "id": 1676,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1676: verify boundary checks on line 25.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 25
+    },
+    {
+      "id": 1677,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 1677: verify boundary checks on line 35.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 35
+    },
+    {
+      "id": 1678,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 1678: verify boundary checks on line 15.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 15
+    },
+    {
+      "id": 1679,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 1679: verify boundary checks on line 25.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 25
+    },
+    {
+      "id": 1680,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 1680: verify boundary checks on line 35.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 35
+    },
+    {
+      "id": 1681,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 1681: verify boundary checks on line 45.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 45
+    },
+    {
+      "id": 1682,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 1682: verify boundary checks on line 55.",
+      "created_at": "2026-03-10T23:18:47Z",
+      "path": "search/indexer/health_indexer.py",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": 1000152,
+  "number": 152,
+  "state": "closed",
+  "title": "refactor(payments_refunds): update settlement_ledger.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2025-12-16T18:32:17Z",
+  "updated_at": "2025-12-18T22:32:17Z",
+  "closed_at": "2025-12-18T22:32:17Z",
+  "merged_at": "2025-12-18T22:32:17Z",
+  "merge_commit_sha": "5354d12f5f89",
+  "head": {
+    "ref": "feature/pr-152",
+    "sha": "5354d12f5f89"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/152",
+  "files": [
+    {
+      "filename": "payments/refunds/settlement_ledger.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 15,
+      "changes": 48
+    },
+    {
+      "filename": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 14,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b878e589f5f4",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T18:32:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T18:32:17Z"
+        },
+        "message": "commit 1 for PR #152: refactor(payments_refunds): update settlement_ledger.py"
+      }
+    },
+    {
+      "sha": "0f7763363a5c",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T19:02:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T19:02:17Z"
+        },
+        "message": "commit 2 for PR #152: refactor(payments_refunds): update settlement_ledger.py"
+      }
+    },
+    {
+      "sha": "5354d12f5f89",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T19:32:17Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2025-12-16T19:32:17Z"
+        },
+        "message": "commit 3 for PR #152: refactor(payments_refunds): update settlement_ledger.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 15201,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-18T18:32:17Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/152#pullrequestreview-15201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 826,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 826: verify boundary checks on line 15.",
+      "created_at": "2025-12-18T18:32:17Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 15
+    },
+    {
+      "id": 827,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 827: verify boundary checks on line 25.",
+      "created_at": "2025-12-18T18:32:17Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 25
+    },
+    {
+      "id": 828,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 828: verify boundary checks on line 35.",
+      "created_at": "2025-12-18T18:32:17Z",
+      "path": "payments/refunds/settlement_ledger.py",
+      "line": 35
+    }
+  ]
+}

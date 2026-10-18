@@ -1,0 +1,58 @@
+{
+  "id": 2000163,
+  "number": 163,
+  "title": "TASK: auth improvements for reliability",
+  "body": "Detailed description for task tracking in module auth/.",
+  "user": {
+    "login": "leila-farah",
+    "id": 28442,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-19T00:16:25Z",
+  "updated_at": "2026-04-01T00:16:25Z",
+  "closed_at": "2026-04-01T00:16:25Z",
+  "labels": [
+    "task",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70668,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #668 on issue #163: updates from triage and reproduction steps.",
+      "created_at": "2026-03-19T17:16:25Z"
+    },
+    {
+      "id": 70669,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #669 on issue #163: updates from triage and reproduction steps.",
+      "created_at": "2026-03-20T16:16:25Z"
+    },
+    {
+      "id": 70670,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #670 on issue #163: updates from triage and reproduction steps.",
+      "created_at": "2026-03-21T08:16:25Z"
+    },
+    {
+      "id": 70671,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #671 on issue #163: updates from triage and reproduction steps.",
+      "created_at": "2026-03-21T19:16:25Z"
+    }
+  ]
+}

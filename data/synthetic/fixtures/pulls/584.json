@@ -1,0 +1,201 @@
+{
+  "id": 1000584,
+  "number": 584,
+  "state": "closed",
+  "title": "fix(payments): update receipts.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-07-23T09:46:07Z",
+  "updated_at": "2026-07-25T10:46:07Z",
+  "closed_at": "2026-07-25T10:46:07Z",
+  "merged_at": "2026-07-25T10:46:07Z",
+  "merge_commit_sha": "c6b0e72da795",
+  "head": {
+    "ref": "feature/pr-584",
+    "sha": "c6b0e72da795"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/584",
+  "files": [
+    {
+      "filename": "payments/__pycache__/receipts.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 8,
+      "changes": 38
+    },
+    {
+      "filename": "payments/__pycache__/exceptions.cpython-314.pyc",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 5,
+      "changes": 19
+    },
+    {
+      "filename": "payments/refunds/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 11,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9e1eb8fd6737",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T09:46:07Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T09:46:07Z"
+        },
+        "message": "commit 1 for PR #584: fix(payments): update receipts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "21ef7c9f418f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T10:16:07Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T10:16:07Z"
+        },
+        "message": "commit 2 for PR #584: fix(payments): update receipts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9fcbda50095d",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T10:46:07Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T10:46:07Z"
+        },
+        "message": "commit 3 for PR #584: fix(payments): update receipts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "2cb93ab27d4f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T11:16:07Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T11:16:07Z"
+        },
+        "message": "commit 4 for PR #584: fix(payments): update receipts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c6b0e72da795",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T11:46:07Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-07-23T11:46:07Z"
+        },
+        "message": "commit 5 for PR #584: fix(payments): update receipts.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58401,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-24T13:46:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/584#pullrequestreview-58401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3124,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 3124: verify boundary checks on line 15.",
+      "created_at": "2026-07-24T13:46:07Z",
+      "path": "payments/__pycache__/receipts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3125,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 3125: verify boundary checks on line 25.",
+      "created_at": "2026-07-24T13:46:07Z",
+      "path": "payments/__pycache__/receipts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3126,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 3126: verify boundary checks on line 35.",
+      "created_at": "2026-07-24T13:46:07Z",
+      "path": "payments/__pycache__/receipts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3127,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 3127: verify boundary checks on line 45.",
+      "created_at": "2026-07-24T13:46:07Z",
+      "path": "payments/__pycache__/receipts.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3128,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 3128: verify boundary checks on line 55.",
+      "created_at": "2026-07-24T13:46:07Z",
+      "path": "payments/__pycache__/receipts.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

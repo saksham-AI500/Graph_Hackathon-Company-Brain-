@@ -1,0 +1,278 @@
+{
+  "id": 1000131,
+  "number": 131,
+  "state": "closed",
+  "title": "test(payments_refunds): update export.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 22722,
+    "type": "User"
+  },
+  "created_at": "2025-12-05T15:54:07Z",
+  "updated_at": "2025-12-08T09:54:07Z",
+  "closed_at": "2025-12-08T09:54:07Z",
+  "merged_at": "2025-12-08T09:54:07Z",
+  "merge_commit_sha": "32efe9447577",
+  "head": {
+    "ref": "feature/pr-131",
+    "sha": "32efe9447577"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/131",
+  "files": [
+    {
+      "filename": "payments/refunds/export.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 3,
+      "changes": 52
+    },
+    {
+      "filename": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 41
+    },
+    {
+      "filename": "payments/refunds/rules_engine.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 7,
+      "changes": 32
+    }
+  ],
+  "commits": [
+    {
+      "sha": "82f37ac359c7",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T15:54:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T15:54:07Z"
+        },
+        "message": "commit 1 for PR #131: test(payments_refunds): update export.py"
+      }
+    },
+    {
+      "sha": "43557a0a248a",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T16:24:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T16:24:07Z"
+        },
+        "message": "commit 2 for PR #131: test(payments_refunds): update export.py"
+      }
+    },
+    {
+      "sha": "4f855725acec",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T16:54:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T16:54:07Z"
+        },
+        "message": "commit 3 for PR #131: test(payments_refunds): update export.py"
+      }
+    },
+    {
+      "sha": "36f0dda2a9dc",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T17:24:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T17:24:07Z"
+        },
+        "message": "commit 4 for PR #131: test(payments_refunds): update export.py"
+      }
+    },
+    {
+      "sha": "32efe9447577",
+      "commit": {
+        "author": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T17:54:07Z"
+        },
+        "committer": {
+          "name": "Rachel Green",
+          "email": "rachel-green-fictional@example.com",
+          "date": "2025-12-05T17:54:07Z"
+        },
+        "message": "commit 5 for PR #131: test(payments_refunds): update export.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13101,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T23:54:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/131#pullrequestreview-13101"
+    },
+    {
+      "id": 13102,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T23:54:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/131#pullrequestreview-13102"
+    },
+    {
+      "id": 13103,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T23:54:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/131#pullrequestreview-13103"
+    }
+  ],
+  "comments": [
+    {
+      "id": 722,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 722: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 15
+    },
+    {
+      "id": 723,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 723: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 25
+    },
+    {
+      "id": 724,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 724: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 15
+    },
+    {
+      "id": 725,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 725: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 25
+    },
+    {
+      "id": 726,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 726: verify boundary checks on line 35.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 35
+    },
+    {
+      "id": 727,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 727: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 15
+    },
+    {
+      "id": 728,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 728: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 25
+    },
+    {
+      "id": 729,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 729: verify boundary checks on line 35.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 35
+    },
+    {
+      "id": 730,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 730: verify boundary checks on line 45.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 45
+    },
+    {
+      "id": 731,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 731: verify boundary checks on line 55.",
+      "created_at": "2025-12-06T23:54:07Z",
+      "path": "payments/refunds/export.py",
+      "line": 55
+    }
+  ]
+}

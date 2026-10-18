@@ -1,0 +1,85 @@
+{
+  "id": 1000501,
+  "number": 501,
+  "state": "open",
+  "title": "perf(auth): update middleware.py",
+  "body": "Implementation changes for auth module improvements.\n\nCloses #49",
+  "user": {
+    "login": "clara-oswald",
+    "id": 20590,
+    "type": "User"
+  },
+  "created_at": "2026-06-11T10:07:30Z",
+  "updated_at": "2026-06-11T10:07:30Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-501",
+    "sha": "850e88dd385d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/501",
+  "files": [
+    {
+      "filename": "auth/middleware.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 13,
+      "changes": 55
+    },
+    {
+      "filename": "auth/__pycache__/password.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 6,
+      "changes": 27
+    },
+    {
+      "filename": "auth/__pycache__/scopes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 9,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "173d68a44b41",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-06-11T10:07:30Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-06-11T10:07:30Z"
+        },
+        "message": "commit 1 for PR #501: perf(auth): update middleware.py"
+      }
+    },
+    {
+      "sha": "850e88dd385d",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-06-11T10:37:30Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2026-06-11T10:37:30Z"
+        },
+        "message": "commit 2 for PR #501: perf(auth): update middleware.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

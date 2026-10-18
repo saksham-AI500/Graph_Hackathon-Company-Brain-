@@ -1,0 +1,40 @@
+{
+  "id": 2000239,
+  "number": 239,
+  "title": "BUG: growth-experiments improvements for security",
+  "body": "Detailed description for bug tracking in module growth/experiments/.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-06T03:53:55Z",
+  "updated_at": "2026-06-28T03:53:55Z",
+  "closed_at": "2026-06-28T03:53:55Z",
+  "labels": [
+    "bug",
+    "growth-experiments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70978,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #978 on issue #239: updates from triage and reproduction steps.",
+      "created_at": "2026-06-07T03:53:55Z"
+    },
+    {
+      "id": 70979,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #979 on issue #239: updates from triage and reproduction steps.",
+      "created_at": "2026-06-07T06:53:55Z"
+    }
+  ]
+}

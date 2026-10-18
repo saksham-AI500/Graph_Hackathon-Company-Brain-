@@ -1,0 +1,133 @@
+{
+  "id": 1000005,
+  "number": 5,
+  "state": "closed",
+  "title": "chore(billing): update webhook_billing.cpython-314.pyc",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2025-10-03T09:20:10Z",
+  "updated_at": "2025-10-04T11:20:10Z",
+  "closed_at": "2025-10-04T11:20:10Z",
+  "merged_at": "2025-10-04T11:20:10Z",
+  "merge_commit_sha": "3ae7ef2b39cb",
+  "head": {
+    "ref": "feature/pr-5",
+    "sha": "3ae7ef2b39cb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/5",
+  "files": [
+    {
+      "filename": "billing/__pycache__/webhook_billing.cpython-314.pyc",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 1,
+      "changes": 32
+    },
+    {
+      "filename": "billing/payment_method.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 11,
+      "changes": 47
+    },
+    {
+      "filename": "billing/__pycache__/payment_method.cpython-314.pyc",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 3,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "442cd9553afe",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T09:20:10Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T09:20:10Z"
+        },
+        "message": "commit 1 for PR #5: chore(billing): update webhook_billing.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c86b1e835945",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T09:50:10Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T09:50:10Z"
+        },
+        "message": "commit 2 for PR #5: chore(billing): update webhook_billing.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f590773d2770",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T10:20:10Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T10:20:10Z"
+        },
+        "message": "commit 3 for PR #5: chore(billing): update webhook_billing.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3b5d1bf50666",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T10:50:10Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T10:50:10Z"
+        },
+        "message": "commit 4 for PR #5: chore(billing): update webhook_billing.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3ae7ef2b39cb",
+      "commit": {
+        "author": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T11:20:10Z"
+        },
+        "committer": {
+          "name": "Aiden Cross",
+          "email": "aiden-cross@example.com",
+          "date": "2025-10-03T11:20:10Z"
+        },
+        "message": "commit 5 for PR #5: chore(billing): update webhook_billing.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

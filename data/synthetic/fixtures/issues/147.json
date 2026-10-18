@@ -1,0 +1,76 @@
+{
+  "id": 2000147,
+  "number": 147,
+  "title": "PERF: payments-refunds improvements for security",
+  "body": "Detailed description for perf tracking in module payments/refunds/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-02T08:42:49Z",
+  "updated_at": "2026-03-20T08:42:49Z",
+  "closed_at": "2026-03-20T08:42:49Z",
+  "labels": [
+    "perf",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70597,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #597 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-03T04:42:49Z"
+    },
+    {
+      "id": 70598,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #598 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-03T23:42:49Z"
+    },
+    {
+      "id": 70599,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #599 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-04T08:42:49Z"
+    },
+    {
+      "id": 70600,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #600 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-04T21:42:49Z"
+    },
+    {
+      "id": 70601,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Comment #601 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-05T16:42:49Z"
+    },
+    {
+      "id": 70602,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #602 on issue #147: updates from triage and reproduction steps.",
+      "created_at": "2026-03-05T18:42:49Z"
+    }
+  ]
+}

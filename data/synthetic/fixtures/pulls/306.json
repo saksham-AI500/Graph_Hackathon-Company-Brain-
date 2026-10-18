@@ -1,0 +1,135 @@
+{
+  "id": 1000306,
+  "number": 306,
+  "state": "closed",
+  "title": "refactor(notifications): update push_service.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-03-04T17:41:09Z",
+  "updated_at": "2026-03-06T04:41:09Z",
+  "closed_at": "2026-03-06T04:41:09Z",
+  "merged_at": "2026-03-06T04:41:09Z",
+  "merge_commit_sha": "6e0c2eaa71b5",
+  "head": {
+    "ref": "feature/pr-306",
+    "sha": "6e0c2eaa71b5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/306",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 41
+    },
+    {
+      "filename": "notifications/__pycache__/delivery_status.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 9,
+      "changes": 54
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c55114c65184",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-03-04T17:41:09Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-03-04T17:41:09Z"
+        },
+        "message": "commit 1 for PR #306: refactor(notifications): update push_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6e0c2eaa71b5",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-03-04T18:11:09Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-03-04T18:11:09Z"
+        },
+        "message": "commit 2 for PR #306: refactor(notifications): update push_service.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30601,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-05T23:41:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/306#pullrequestreview-30601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1624,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1624: verify boundary checks on line 15.",
+      "created_at": "2026-03-05T23:41:09Z",
+      "path": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1625,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1625: verify boundary checks on line 25.",
+      "created_at": "2026-03-05T23:41:09Z",
+      "path": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1626,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1626: verify boundary checks on line 35.",
+      "created_at": "2026-03-05T23:41:09Z",
+      "path": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1627,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1627: verify boundary checks on line 45.",
+      "created_at": "2026-03-05T23:41:09Z",
+      "path": "notifications/__pycache__/push_service.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

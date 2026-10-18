@@ -1,0 +1,133 @@
+{
+  "id": 1000458,
+  "number": 458,
+  "state": "closed",
+  "title": "fix(growth_referrals): update campaign.cpython-314.pyc",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29839,
+    "type": "User"
+  },
+  "created_at": "2026-05-20T16:00:01Z",
+  "updated_at": "2026-05-22T17:00:01Z",
+  "closed_at": "2026-05-22T17:00:01Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-458",
+    "sha": "29a8aae737e9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/458",
+  "files": [
+    {
+      "filename": "growth/referrals/__pycache__/campaign.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 3,
+      "changes": 53
+    },
+    {
+      "filename": "growth/referrals/link_shortener.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 12,
+      "changes": 14
+    },
+    {
+      "filename": "growth/referrals/__pycache__/referral_tracker.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 2,
+      "changes": 19
+    }
+  ],
+  "commits": [
+    {
+      "sha": "31cda298dfd2",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T16:00:01Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T16:00:01Z"
+        },
+        "message": "commit 1 for PR #458: fix(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "861d499816c9",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T16:30:01Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T16:30:01Z"
+        },
+        "message": "commit 2 for PR #458: fix(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a1b27d96fc01",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T17:00:01Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T17:00:01Z"
+        },
+        "message": "commit 3 for PR #458: fix(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3071bfc1d9ea",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T17:30:01Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T17:30:01Z"
+        },
+        "message": "commit 4 for PR #458: fix(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "29a8aae737e9",
+      "commit": {
+        "author": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T18:00:01Z"
+        },
+        "committer": {
+          "name": "Owen Murphy",
+          "email": "owen-murphy@example.com",
+          "date": "2026-05-20T18:00:01Z"
+        },
+        "message": "commit 5 for PR #458: fix(growth_referrals): update campaign.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

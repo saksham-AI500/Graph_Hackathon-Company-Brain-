@@ -1,0 +1,129 @@
+{
+  "id": 1000273,
+  "number": 273,
+  "state": "closed",
+  "title": "refactor(growth_referrals): update payout_sync.py",
+  "body": "Implementation changes for growth_referrals module improvements.\n\nCloses #14",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2026-02-16T12:11:06Z",
+  "updated_at": "2026-02-19T03:11:06Z",
+  "closed_at": "2026-02-19T03:11:06Z",
+  "merged_at": "2026-02-19T03:11:06Z",
+  "merge_commit_sha": "1752032cfb2d",
+  "head": {
+    "ref": "feature/pr-273",
+    "sha": "1752032cfb2d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/273",
+  "files": [
+    {
+      "filename": "growth/referrals/payout_sync.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 8,
+      "changes": 14
+    },
+    {
+      "filename": "growth/referrals/attribution.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 11,
+      "changes": 51
+    }
+  ],
+  "commits": [
+    {
+      "sha": "13385a35f528",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T12:11:06Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T12:11:06Z"
+        },
+        "message": "commit 1 for PR #273: refactor(growth_referrals): update payout_sync.py"
+      }
+    },
+    {
+      "sha": "16b9e7e8bc30",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T12:41:06Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T12:41:06Z"
+        },
+        "message": "commit 2 for PR #273: refactor(growth_referrals): update payout_sync.py"
+      }
+    },
+    {
+      "sha": "1752032cfb2d",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T13:11:06Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2026-02-16T13:11:06Z"
+        },
+        "message": "commit 3 for PR #273: refactor(growth_referrals): update payout_sync.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27301,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T06:11:06Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/273#pullrequestreview-27301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1441,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1441: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T06:11:06Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 15
+    },
+    {
+      "id": 1442,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1442: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T06:11:06Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 25
+    }
+  ]
+}

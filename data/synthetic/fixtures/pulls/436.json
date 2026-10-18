@@ -1,0 +1,218 @@
+{
+  "id": 1000436,
+  "number": 436,
+  "state": "closed",
+  "title": "chore(search_indexer): update __init__.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "tanya-popova",
+    "id": 22022,
+    "type": "User"
+  },
+  "created_at": "2026-05-08T12:55:32Z",
+  "updated_at": "2026-05-10T01:55:32Z",
+  "closed_at": "2026-05-10T01:55:32Z",
+  "merged_at": "2026-05-10T01:55:32Z",
+  "merge_commit_sha": "200a0ce561e3",
+  "head": {
+    "ref": "feature/pr-436",
+    "sha": "200a0ce561e3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/436",
+  "files": [
+    {
+      "filename": "search/indexer/__init__.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 4,
+      "changes": 9
+    },
+    {
+      "filename": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 11,
+      "changes": 16
+    },
+    {
+      "filename": "search/indexer/__pycache__/compaction.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 15,
+      "changes": 56
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2f6ca167f5fb",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T12:55:32Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T12:55:32Z"
+        },
+        "message": "commit 1 for PR #436: chore(search_indexer): update __init__.py"
+      }
+    },
+    {
+      "sha": "82e9cf24d13e",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T13:25:32Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T13:25:32Z"
+        },
+        "message": "commit 2 for PR #436: chore(search_indexer): update __init__.py"
+      }
+    },
+    {
+      "sha": "db0f74f52640",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T13:55:32Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T13:55:32Z"
+        },
+        "message": "commit 3 for PR #436: chore(search_indexer): update __init__.py"
+      }
+    },
+    {
+      "sha": "200a0ce561e3",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T14:25:32Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-05-08T14:25:32Z"
+        },
+        "message": "commit 4 for PR #436: chore(search_indexer): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 43601,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-09T00:55:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/436#pullrequestreview-43601"
+    },
+    {
+      "id": 43602,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-09T00:55:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/436#pullrequestreview-43602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2324,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 2324: verify boundary checks on line 15.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2325,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 2325: verify boundary checks on line 25.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 2326,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 2326: verify boundary checks on line 35.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 35
+    },
+    {
+      "id": 2327,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 2327: verify boundary checks on line 45.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 45
+    },
+    {
+      "id": 2328,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 2328: verify boundary checks on line 55.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 55
+    },
+    {
+      "id": 2329,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2329: verify boundary checks on line 15.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2330,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2330: verify boundary checks on line 25.",
+      "created_at": "2026-05-09T00:55:32Z",
+      "path": "search/indexer/__init__.py",
+      "line": 25
+    }
+  ]
+}

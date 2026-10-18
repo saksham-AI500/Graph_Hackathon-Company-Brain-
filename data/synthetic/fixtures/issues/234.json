@@ -1,0 +1,67 @@
+{
+  "id": 2000234,
+  "number": 234,
+  "title": "TASK: notifications improvements for security",
+  "body": "Detailed description for task tracking in module notifications/.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-31T22:24:42Z",
+  "updated_at": "2026-06-08T22:24:42Z",
+  "closed_at": "2026-06-08T22:24:42Z",
+  "labels": [
+    "task",
+    "notifications"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70958,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #958 on issue #234: updates from triage and reproduction steps.",
+      "created_at": "2026-06-01T21:24:42Z"
+    },
+    {
+      "id": 70959,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #959 on issue #234: updates from triage and reproduction steps.",
+      "created_at": "2026-06-02T11:24:42Z"
+    },
+    {
+      "id": 70960,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #960 on issue #234: updates from triage and reproduction steps.",
+      "created_at": "2026-06-03T00:24:42Z"
+    },
+    {
+      "id": 70961,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #961 on issue #234: updates from triage and reproduction steps.",
+      "created_at": "2026-06-03T05:24:42Z"
+    },
+    {
+      "id": 70962,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #962 on issue #234: updates from triage and reproduction steps.",
+      "created_at": "2026-06-04T04:24:42Z"
+    }
+  ]
+}

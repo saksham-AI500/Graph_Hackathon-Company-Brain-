@@ -1,0 +1,135 @@
+{
+  "id": 1000586,
+  "number": 586,
+  "state": "closed",
+  "title": "feat(search_indexer): update deduplication.py",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #12",
+  "user": {
+    "login": "diego-ramirez",
+    "id": 27791,
+    "type": "User"
+  },
+  "created_at": "2026-07-24T10:15:04Z",
+  "updated_at": "2026-07-25T10:15:04Z",
+  "closed_at": "2026-07-25T10:15:04Z",
+  "merged_at": "2026-07-25T10:15:04Z",
+  "merge_commit_sha": "5e062bca7148",
+  "head": {
+    "ref": "feature/pr-586",
+    "sha": "5e062bca7148"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/586",
+  "files": [
+    {
+      "filename": "search/indexer/deduplication.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 13,
+      "changes": 52
+    },
+    {
+      "filename": "search/indexer/dead_letter.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 14,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3f474d021a0d",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-07-24T10:15:04Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-07-24T10:15:04Z"
+        },
+        "message": "commit 1 for PR #586: feat(search_indexer): update deduplication.py"
+      }
+    },
+    {
+      "sha": "5e062bca7148",
+      "commit": {
+        "author": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-07-24T10:45:04Z"
+        },
+        "committer": {
+          "name": "Diego Ramirez",
+          "email": "diego-ramirez@example.com",
+          "date": "2026-07-24T10:45:04Z"
+        },
+        "message": "commit 2 for PR #586: feat(search_indexer): update deduplication.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58601,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-26T06:15:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/586#pullrequestreview-58601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3129,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3129: verify boundary checks on line 15.",
+      "created_at": "2026-07-26T06:15:04Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 15
+    },
+    {
+      "id": 3130,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3130: verify boundary checks on line 25.",
+      "created_at": "2026-07-26T06:15:04Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 25
+    },
+    {
+      "id": 3131,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3131: verify boundary checks on line 35.",
+      "created_at": "2026-07-26T06:15:04Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 35
+    },
+    {
+      "id": 3132,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3132: verify boundary checks on line 45.",
+      "created_at": "2026-07-26T06:15:04Z",
+      "path": "search/indexer/deduplication.py",
+      "line": 45
+    }
+  ]
+}

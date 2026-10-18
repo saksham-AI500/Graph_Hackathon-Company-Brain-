@@ -1,0 +1,69 @@
+{
+  "id": 2000113,
+  "number": 113,
+  "title": "PERF: auth-mfa improvements for throughput",
+  "body": "Detailed description for perf tracking in module auth/mfa/.",
+  "user": {
+    "login": "maya-lin",
+    "id": 28779,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-01-25T22:54:21Z",
+  "updated_at": "2026-02-21T22:54:21Z",
+  "closed_at": "2026-02-21T22:54:21Z",
+  "labels": [
+    "perf",
+    "auth-mfa"
+  ],
+  "linked_pulls": [
+    338
+  ],
+  "comments": [
+    {
+      "id": 70465,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #465 on issue #113: updates from triage and reproduction steps.",
+      "created_at": "2026-01-26T08:54:21Z"
+    },
+    {
+      "id": 70466,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #466 on issue #113: updates from triage and reproduction steps.",
+      "created_at": "2026-01-27T06:54:21Z"
+    },
+    {
+      "id": 70467,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #467 on issue #113: updates from triage and reproduction steps.",
+      "created_at": "2026-01-27T13:54:21Z"
+    },
+    {
+      "id": 70468,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #468 on issue #113: updates from triage and reproduction steps.",
+      "created_at": "2026-01-28T13:54:21Z"
+    },
+    {
+      "id": 70469,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #469 on issue #113: updates from triage and reproduction steps.",
+      "created_at": "2026-01-28T21:54:21Z"
+    }
+  ]
+}

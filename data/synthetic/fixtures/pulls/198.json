@@ -1,0 +1,216 @@
+{
+  "id": 1000198,
+  "number": 198,
+  "state": "closed",
+  "title": "test(api_gateway): update README.md",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "felix-baum",
+    "id": 28109,
+    "type": "User"
+  },
+  "created_at": "2026-01-09T01:47:54Z",
+  "updated_at": "2026-01-10T22:47:54Z",
+  "closed_at": "2026-01-10T22:47:54Z",
+  "merged_at": "2026-01-10T22:47:54Z",
+  "merge_commit_sha": "c72b70e4c94f",
+  "head": {
+    "ref": "feature/pr-198",
+    "sha": "c72b70e4c94f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/198",
+  "files": [
+    {
+      "filename": "api/gateway/README.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 44
+    },
+    {
+      "filename": "api/gateway/__pycache__/request_id.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 4,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "fcb35c9c1da0",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T01:47:54Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T01:47:54Z"
+        },
+        "message": "commit 1 for PR #198: test(api_gateway): update README.md"
+      }
+    },
+    {
+      "sha": "17113851dcd7",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T02:17:54Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T02:17:54Z"
+        },
+        "message": "commit 2 for PR #198: test(api_gateway): update README.md"
+      }
+    },
+    {
+      "sha": "f45faeb0299f",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T02:47:54Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T02:47:54Z"
+        },
+        "message": "commit 3 for PR #198: test(api_gateway): update README.md"
+      }
+    },
+    {
+      "sha": "d66189dfa7dc",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T03:17:54Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T03:17:54Z"
+        },
+        "message": "commit 4 for PR #198: test(api_gateway): update README.md"
+      }
+    },
+    {
+      "sha": "c72b70e4c94f",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T03:47:54Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-01-09T03:47:54Z"
+        },
+        "message": "commit 5 for PR #198: test(api_gateway): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 19801,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-09T03:47:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/198#pullrequestreview-19801"
+    },
+    {
+      "id": 19802,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-09T03:47:54Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/198#pullrequestreview-19802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1106,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1106: verify boundary checks on line 15.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 15
+    },
+    {
+      "id": 1107,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1107: verify boundary checks on line 25.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 25
+    },
+    {
+      "id": 1108,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1108: verify boundary checks on line 35.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 35
+    },
+    {
+      "id": 1109,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1109: verify boundary checks on line 45.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 45
+    },
+    {
+      "id": 1110,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1110: verify boundary checks on line 15.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 15
+    },
+    {
+      "id": 1111,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1111: verify boundary checks on line 25.",
+      "created_at": "2026-01-09T03:47:54Z",
+      "path": "api/gateway/README.md",
+      "line": 25
+    }
+  ]
+}

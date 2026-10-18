@@ -1,0 +1,249 @@
+{
+  "id": 1000220,
+  "number": 220,
+  "state": "closed",
+  "title": "feat(notifications): update circuit_breaker.py",
+  "body": "Implementation changes for notifications module improvements.\n\nFixes #78",
+  "user": {
+    "login": "samir-patel",
+    "id": 26341,
+    "type": "User"
+  },
+  "created_at": "2026-01-20T05:11:34Z",
+  "updated_at": "2026-01-22T11:11:34Z",
+  "closed_at": "2026-01-22T11:11:34Z",
+  "merged_at": "2026-01-22T11:11:34Z",
+  "merge_commit_sha": "400f5d9a5ac5",
+  "head": {
+    "ref": "feature/pr-220",
+    "sha": "400f5d9a5ac5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/220",
+  "files": [
+    {
+      "filename": "notifications/circuit_breaker.py",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 13,
+      "changes": 38
+    },
+    {
+      "filename": "notifications/metrics_notif.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 12,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a95472c5d1ab",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T05:11:34Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T05:11:34Z"
+        },
+        "message": "commit 1 for PR #220: feat(notifications): update circuit_breaker.py"
+      }
+    },
+    {
+      "sha": "59696d139f1c",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T05:41:34Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T05:41:34Z"
+        },
+        "message": "commit 2 for PR #220: feat(notifications): update circuit_breaker.py"
+      }
+    },
+    {
+      "sha": "4481c974b851",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T06:11:34Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T06:11:34Z"
+        },
+        "message": "commit 3 for PR #220: feat(notifications): update circuit_breaker.py"
+      }
+    },
+    {
+      "sha": "a9157711fc71",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T06:41:34Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T06:41:34Z"
+        },
+        "message": "commit 4 for PR #220: feat(notifications): update circuit_breaker.py"
+      }
+    },
+    {
+      "sha": "400f5d9a5ac5",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T07:11:34Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2026-01-20T07:11:34Z"
+        },
+        "message": "commit 5 for PR #220: feat(notifications): update circuit_breaker.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22001,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-21T19:11:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/220#pullrequestreview-22001"
+    },
+    {
+      "id": 22002,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-21T19:11:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/220#pullrequestreview-22002"
+    },
+    {
+      "id": 22003,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-21T19:11:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/220#pullrequestreview-22003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1203,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1203: verify boundary checks on line 15.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 1204,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1204: verify boundary checks on line 25.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    },
+    {
+      "id": 1205,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1205: verify boundary checks on line 15.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 1206,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1206: verify boundary checks on line 25.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    },
+    {
+      "id": 1207,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1207: verify boundary checks on line 35.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 35
+    },
+    {
+      "id": 1208,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1208: verify boundary checks on line 45.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 45
+    },
+    {
+      "id": 1209,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1209: verify boundary checks on line 15.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 15
+    },
+    {
+      "id": 1210,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Review comment 1210: verify boundary checks on line 25.",
+      "created_at": "2026-01-21T19:11:34Z",
+      "path": "notifications/circuit_breaker.py",
+      "line": 25
+    }
+  ]
+}

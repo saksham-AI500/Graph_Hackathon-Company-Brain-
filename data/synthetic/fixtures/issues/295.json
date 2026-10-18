@@ -1,0 +1,40 @@
+{
+  "id": 2000295,
+  "number": 295,
+  "title": "PERF: billing improvements for latency",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 24136,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-03T11:02:07Z",
+  "updated_at": "2026-08-29T11:02:07Z",
+  "closed_at": "2026-08-29T11:02:07Z",
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71210,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #1210 on issue #295: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T07:02:07Z"
+    },
+    {
+      "id": 71211,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #1211 on issue #295: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T22:02:07Z"
+    }
+  ]
+}

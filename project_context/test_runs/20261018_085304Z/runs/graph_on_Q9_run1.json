@@ -1,0 +1,39 @@
+{
+  "question_id": "Q9",
+  "question": "Why did we choose the retry policy? Quote the source.",
+  "mode": "graph_on",
+  "run_index": 1,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:00:31.040911+00:00",
+  "latency_ms": 7769.74,
+  "claims_count": 0,
+  "sources_count": 1,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "Technical Design Document: \"System Resilience Stra",
+      "url": "https://example.com/design-docs/resilience-strategy",
+      "title_or_desc": "Technical Design Document: \"System Resilience Strategy\", 2026-07-15",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "Technical Design Document: \"System Resilience Stra",
+      "description": "Technical Design Document: \"System Resilience Strategy\", 2026-07-15"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

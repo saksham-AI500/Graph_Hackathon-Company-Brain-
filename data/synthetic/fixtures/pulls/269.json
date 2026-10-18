@@ -1,0 +1,165 @@
+{
+  "id": 1000269,
+  "number": 269,
+  "state": "closed",
+  "title": "refactor(notifications): update batch_sender.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "kai-nielsen",
+    "id": 23622,
+    "type": "User"
+  },
+  "created_at": "2026-02-13T11:57:50Z",
+  "updated_at": "2026-02-14T14:57:50Z",
+  "closed_at": "2026-02-14T14:57:50Z",
+  "merged_at": "2026-02-14T14:57:50Z",
+  "merge_commit_sha": "30e375496376",
+  "head": {
+    "ref": "feature/pr-269",
+    "sha": "30e375496376"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/269",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/batch_sender.cpython-314.pyc",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 14,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "60568463d864",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T11:57:50Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T11:57:50Z"
+        },
+        "message": "commit 1 for PR #269: refactor(notifications): update batch_sender.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d713d4af191e",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T12:27:50Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T12:27:50Z"
+        },
+        "message": "commit 2 for PR #269: refactor(notifications): update batch_sender.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "dbb1273ca8be",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T12:57:50Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T12:57:50Z"
+        },
+        "message": "commit 3 for PR #269: refactor(notifications): update batch_sender.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5fc271ac5a19",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T13:27:50Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T13:27:50Z"
+        },
+        "message": "commit 4 for PR #269: refactor(notifications): update batch_sender.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "30e375496376",
+      "commit": {
+        "author": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T13:57:50Z"
+        },
+        "committer": {
+          "name": "Kai Nielsen",
+          "email": "kai-nielsen@example.com",
+          "date": "2026-02-13T13:57:50Z"
+        },
+        "message": "commit 5 for PR #269: refactor(notifications): update batch_sender.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 26901,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-15T07:57:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/269#pullrequestreview-26901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1418,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1418: verify boundary checks on line 15.",
+      "created_at": "2026-02-15T07:57:50Z",
+      "path": "notifications/__pycache__/batch_sender.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1419,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1419: verify boundary checks on line 25.",
+      "created_at": "2026-02-15T07:57:50Z",
+      "path": "notifications/__pycache__/batch_sender.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1420,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1420: verify boundary checks on line 35.",
+      "created_at": "2026-02-15T07:57:50Z",
+      "path": "notifications/__pycache__/batch_sender.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

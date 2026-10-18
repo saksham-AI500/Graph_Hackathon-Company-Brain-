@@ -1,0 +1,22 @@
+{
+  "question_id": "Q13",
+  "question": "Who owns search/ now?",
+  "mode": "graph_off",
+  "run_index": 2,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer who owns the `search/` module. To find the owner, check the `CODEOWNERS` file or recent pull requests in the `search/` directory for reviewers and contributors.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:04:09.079188+00:00",
+  "latency_ms": 3312.25,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

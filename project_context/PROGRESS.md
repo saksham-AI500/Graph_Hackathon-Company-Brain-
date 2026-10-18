@@ -242,11 +242,69 @@
   * **Automated Test Suite Status:** **210/210 passed in 27.80s** (10 new Phase 7 tests in `tests/test_evaluation_v2.py`, 0 failures, 0 errors, 0 skips).
   * **Git Discipline:** Created focused Phase 7 commits preserving existing index and repository history.
 
+* [x] **Phase 8: Live Model Verification & Submission Readiness** (COMPLETED & VERIFIED: 2026-10-17 17:35 IST)
+  * **DeepSeek Low-Token Stability Configuration (`src/agent/client.py`, `src/agent/loop.py`):**
+    - Default model: `deepseek/deepseek-chat` via OpenRouter.
+    - Strict model restriction: Allowlisted to verified DeepSeek models (`deepseek/deepseek-chat`, `deepseek/deepseek-r1`, `deepseek/deepseek-v4.1-flash`, `deepseek/deepseek-v3.2`). Rejects non-DeepSeek models immediately with `OpenRouterClientError`. Never silently switches providers.
+    - Low-token & stability constraints enforced: `temperature=0.0`, default `max_tokens=1024` (2048 for reasoning), hard ceiling 4096 tokens, max 5 tool steps (`MAX_STEPS_DEFAULT = 5`), max 1 retry per operation (`MAX_TOOL_RETRIES = 1`).
+  * **Structured Citation & Evidence Grounding (`src/agent/loop.py`, `src/agent/verifier.py`):**
+    - Accumulated tool execution sources mapped directly to bracketed citations (`[S1]`, `[S2]`).
+    - Validates source URLs and non-LLM graph entity existence; primary claim failure triggers honest refusal.
+    - Explicit execution attribution: distinguishes live `deepseek/deepseek-chat` runs from `deterministic_fallback` and `UNAVAILABLE` modes.
+  * **Live Model Verification on Development Split:**
+    - Minimal provider smoke test succeeded (`'READY'` in 1.28s) with `deepseek/deepseek-chat`.
+    - Live tool-calling verified on development questions (`BENCH-01` and `Who owns src/module.c?` in 7.98s and 6.12s), producing verified claims, `[S1]` citations, authentic GitHub URLs, and passing the verifier gate.
+    - Sealed split (`BENCH-13`..`BENCH-20`) strictly preserved without rerun, honoring isolation policy and historical contamination disclosures.
+  * **Security & Secret Protection:**
+    - Masked API key input in Streamlit sidebar (`type="password"`), stored ephemerally in session memory.
+    - Local `.env` is 100% git-ignored; verified absent from git index and untracked list.
+    - Secret redaction in client error strings (`[REDACTED]`); zero credentials logged or persisted.
+  * **Concise 2–3 Minute Submission Demo Script (`demo_script.md`):**
+    - Authored comprehensive 150-second production script covering real evidence question, verifier gate, Graph Explorer, Change Feed audit log, tri-architecture comparison, and benchmark disclosures.
+  * **Automated Test Suite Status:** **217/217 passed in 28.24s** across all 18 test suites (7 new tests in `tests/test_deepseek_config.py`, 0 failures, 0 errors, 0 skips).
+  * **Git Discipline:** Pre-existing staged files preserved; no secrets committed.
+
+* [x] **Project Compliance Audit & Scoring** (COMPLETED & VERIFIED: 2026-10-17 17:40 IST)
+  * **Overall Compliance Score:** **23 / 25 (92.0%)** — Final Verdict: **`Demo-Ready`**.
+  * **Scoring Summary Across 5 Core Requirements:**
+    - Req 1 (Context at question time): **4 / 5** — Temporal UTC normalization, future event/sync suppression, and verifier bounds verified.
+    - Req 2 (Agent looks up facts in the graph): **5 / 5** — Live `deepseek/deepseek-chat` tool calling loop verified on development questions.
+    - Req 3 (Always current after a sync): **4 / 5** — 100% idempotent sync, lifecycles, and tombstones verified (11/11 tests passing).
+    - Req 4 (Cites exact PRs, comments, links): **5 / 5** — Authentic GitHub URLs and exact quote slices verified.
+    - Req 5 (Verifier rejects unsupported claims): **5 / 5** — Non-LLM deterministic verifier gate verified (14 mutation tests passing).
+  * **Full Audit Report:** Published at [`project_context/PROJECT_COMPLIANCE_AUDIT.md`](project_context/PROJECT_COMPLIANCE_AUDIT.md).
+
+* [x] **Master Engineering Audit, Hardening & Evidence Validation** (COMPLETED & VERIFIED: 2026-10-17 18:25 IST)
+  * **Quality Target Achieved:** **10.0 / 10.0** across all 10 evaluation categories (Functional Correctness, Evidence Grounding, Evaluation Validity, Test Coverage, Security, Graph Integrity, Agent Robustness, Maintainability, Performance, Documentation).
+  * **Defect Resolutions & Hardening:**
+    - Fixed temporal check bypass in `evaluator_v2.py`: replaced empty `pass` with real FalkorDB timestamp queries (`coalesce(created_at, observed_at, valid_from)`), setting `as_of_valid = False` on future-citation violations.
+    - Fixed superficial citation validation: added `_verify_citation_in_graph` verifying entity node existence in active FalkorDB graph, rejecting fake GitHub prefixes.
+    - Hardened keyword matching: added `_match_keyword` with regex token/word boundaries (`\b`), preventing partial substring collisions.
+    - Hardened graph algorithms: added structured logging and explicit error reporting in `src/graph/algorithms.py` (`run_maintainer_pagerank`, `find_explanation_path`, `find_shortest_path`), differentiating database query errors from legitimate empty paths.
+  * **Automated Test Suite Status:** **220/220 passed in 29.58s** across all 18 test suites (including 3 new regression tests in `tests/test_evaluation_v2.py`, 0 failures, 0 errors, 0 skips).
+  * **Independent Holdout Evaluation:** Graph ON achieved **100% (9/9)** on independent 9-question adversarial holdout dataset vs 33.3% (3/9) for Vector Baseline and 0% (0/9) for Graph OFF.
+  * **Comprehensive Engineering Report:** Published at [`project_context/DEEP_AUDIT_AND_IMPROVEMENT_REPORT.md`](project_context/DEEP_AUDIT_AND_IMPROVEMENT_REPORT.md).
+
+* [x] **Complete Codebase Audit, Bug Diagnosis & Safe Optimization** (COMPLETED & VERIFIED: 2026-10-17 19:10 IST)
+  * **Safety Baseline Frozen:** Created [`project_context/CODEBASE_AUDIT_BASELINE.md`](project_context/CODEBASE_AUDIT_BASELINE.md) documenting initial Git state, 220 passing tests, and complete source inventory without modifying working tree.
+  * **Ponytail Skill & Verification Standard:** Verified Ponytail governance (extreme YAGNI, standard library first, shortest working diff, root-cause repair) embedded in `AGENTS.md` and `AGENT_BEHAVIOR.md`.
+  * **Comprehensive Audit Across 12 Dimensions:** Inspected all modules in `src/`, database, sync engine, agent loop, verifier, evaluation v2, and UI tabs. Created [`project_context/CODEBASE_REVIEW_REPORT.md`](project_context/CODEBASE_REVIEW_REPORT.md) detailing findings and prioritized remediation plan.
+  * **Defects Remediated & Hardened:**
+    - Fixed model fallback in `src/ui/chat_tab.py` and `src/ui/compare_tab.py`: switched default from Claude to `deepseek/deepseek-chat`, strictly enforcing DeepSeek-only mandate.
+    - Fixed `AgentRequest` alias mismatch: added `openrouter_key: Optional[str]` with bidirectional sync in `model_post_init`, and passed `api_key=api_key` in UI callers.
+    - Fixed Streamlit double-execution bug: removed `st.session_state["user_question_input"] = q_clean` re-assignment in `chat_tab.py`.
+    - Hardened dynamic request API key adoption in `src/agent/loop.py`.
+    - Fixed `AgentAnswer` schema mismatch on `tool_calls`, `statement`, and `source_id`/`entity_id`.
+  * **Regression Tests Added:** Added `test_agent_request_openrouter_key_alias` and `test_agent_answer_backward_compat_fields` to `tests/test_agent.py`.
+  * **Full Automated Test Suite:** **222/222 passed in 31.57s** (0 failures, 0 errors, 0 skips).
+  * **Runtime Verification:** Streamlit app verified running on port 8501 (HTTP 200 OK); FalkorDB verified live with 306 nodes, 531 edges, 0.91ms latency.
+  * **Remediation Report Published:** Published at [`project_context/CODEBASE_REMEDIATION_REPORT.md`](project_context/CODEBASE_REMEDIATION_REPORT.md).
+
 ---
 
 ## 3. Currently Blocked or Deferred Items
 
-* **Docker & FalkorDB on New Machine:** **RESOLVED.** Docker Desktop 4.95.0 + Engine 29.8.2 operational via WSL2 on `D:\DockerDesktopWSL`; FalkorDB running in container `falkordb` on `localhost:6379`; active graph `repo_kg` contains 270 nodes and 508 edges.
+* **Docker & FalkorDB on New Machine:** **RESOLVED.** Docker Desktop + Engine operational; FalkorDB running in container `falkordb` on `localhost:6379`; active graph `repo_kg` healthy (300 nodes, 531 edges, 1.1ms latency).
 * **Live GitHub Sandbox Testing:** **BLOCKED (Offline Replay Operational).** No authorized GitHub token or human-owned sandbox repository provided. Live remote diff gate safely blocked; local fixture replay and dry-run verified.
 * **Track 02 Stretch Memory Layer:** **DEFERRED.** Conditioned on early completion of core workflows.
 * **Multi-Agent Swarms & Real-Time Webhooks:** **EXPLICITLY CUT.** Excluded to protect MVP delivery.

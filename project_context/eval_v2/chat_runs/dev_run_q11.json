@@ -1,0 +1,117 @@
+{
+  "question_id": "Q11",
+  "question": "Which decisions affect auth/, listed by date, with sources?",
+  "timestamp": "2026-10-18T05:06:00.524900+00:00",
+  "model": "deepseek/deepseek-chat",
+  "status": "VERIFIED",
+  "tools_used": [
+    "request_sync",
+    "sync_status",
+    "trace_decision"
+  ],
+  "tool_calls_trace": [
+    {
+      "step": 0,
+      "action": "freshness_check",
+      "result": {
+        "repo": "FalkorDB/FalkorDB",
+        "last_sync_at": null,
+        "last_run_id": null,
+        "status": "idle",
+        "pr_cursor": 0,
+        "issue_cursor": 0
+      }
+    },
+    {
+      "step": 0,
+      "action": "triggered_sync",
+      "result": {
+        "run_id": "sync_1792299940",
+        "repo": "FalkorDB/FalkorDB",
+        "events_processed": 30,
+        "mutations_applied": 0,
+        "no_ops": 30,
+        "failures": 0,
+        "dry_run": true,
+        "errors": []
+      }
+    },
+    {
+      "step": 1,
+      "tool": "trace_decision",
+      "arguments": {
+        "query_or_pr": "auth/"
+      },
+      "success": true,
+      "error": null
+    }
+  ],
+  "raw_answer": "Three architectural decisions affect the auth/ module, listed chronologically:\n\n1. **Token Authentication Architecture** (ADR-0002, 2025-10-15): Established the token-based authentication framework [S1].\n2. **Rate limiting architecture decision** (PR #237, 2026-02-10): Decided on per-tenant rate limits, as stated: \"We are going with per-tenant rate limits.\" [S2].\n3. **MFA Mandate** (ADR-0008, 2026-03-01): Required multi-factor authentication for all auth/ endpoints [S3].\n\nContext: As of the latest sync (2026-03-01). These decisions are documented in ADRs and a pull request.\n\nReasoning: These decisions were identified as directly affecting the auth/ module based on their content and implementation details.\n\nSources:\n[S1] ADR-0002 Token Authentication Architecture, 2025-10-15, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0002-token-auth.md\n[S2] PR #237 Rate limiting architecture decision, 2026-02-10, https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/237\n[S3] ADR-0008 MFA Mandate, 2026-03-01, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0008-mfa-mandate.md",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "text": "Three architectural decisions affect the auth/ module, listed chronologically:\n\n1. **Token Authentication Architecture** (ADR-0002, 2025-10-15): Established the token-based authentication framework [S1].\n2. **Rate limiting architecture decision** (PR #237, 2026-02-10): Decided on per-tenant rate limits, as stated: \"We are going with per-tenant rate limits.\" [S2].\n3. **MFA Mandate** (ADR-0008, 2026-03-01): Required multi-factor authentication for all auth/ endpoints [S3].\n\nContext: As of the latest sync (2026-03-01). These decisions are documented in ADRs and a pull request.\n\nReasoning: These decisions were identified as directly affecting the auth/ module based on their content and implementation details.\n\nSources:\n[S1] ADR-0002 Token Authentication Architecture, 2025-10-15, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0002-token-auth.md\n[S2] PR #237 Rate limiting architecture decision, 2026-02-10, https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/237\n[S3] ADR-0008 MFA Mandate, 2026-03-01, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0008-mfa-mandate.md",
+      "claim_type": "GENERAL",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "verified": true,
+      "unresolved_reason": null,
+      "statement": "Three architectural decisions affect the auth/ module, listed chronologically:\n\n1. **Token Authentication Architecture** (ADR-0002, 2025-10-15): Established the token-based authentication framework [S1].\n2. **Rate limiting architecture decision** (PR #237, 2026-02-10): Decided on per-tenant rate limits, as stated: \"We are going with per-tenant rate limits.\" [S2].\n3. **MFA Mandate** (ADR-0008, 2026-03-01): Required multi-factor authentication for all auth/ endpoints [S3].\n\nContext: As of the latest sync (2026-03-01). These decisions are documented in ADRs and a pull request.\n\nReasoning: These decisions were identified as directly affecting the auth/ module based on their content and implementation details.\n\nSources:\n[S1] ADR-0002 Token Authentication Architecture, 2025-10-15, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0002-token-auth.md\n[S2] PR #237 Rate limiting architecture decision, 2026-02-10, https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/237\n[S3] ADR-0008 MFA Mandate, 2026-03-01, https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0008-mfa-mandate.md"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "ADR-0002 Token Authentication Architecture, 2025-1",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0002-token-auth.md",
+      "title_or_desc": "ADR-0002 Token Authentication Architecture, 2025-10-15",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "ADR-0002 Token Authentication Architecture, 2025-1",
+      "description": "ADR-0002 Token Authentication Architecture, 2025-10-15"
+    },
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "PR #237 Rate limiting architecture decision, 2026-",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/237",
+      "title_or_desc": "PR #237 Rate limiting architecture decision, 2026-02-10",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "PR #237 Rate limiting architecture decision, 2026-",
+      "description": "PR #237 Rate limiting architecture decision, 2026-02-10"
+    },
+    {
+      "id": "S3",
+      "entity_type": "Evidence",
+      "identifier": "ADR-0008 MFA Mandate, 2026-03-01",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/adr/0008-mfa-mandate.md",
+      "title_or_desc": "ADR-0008 MFA Mandate, 2026-03-01",
+      "snippet": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S3",
+      "entity_id": "ADR-0008 MFA Mandate, 2026-03-01",
+      "description": "ADR-0008 MFA Mandate, 2026-03-01"
+    }
+  ],
+  "unresolved": [],
+  "latency_ms": 21458.68,
+  "compliance": {
+    "passed": true,
+    "violations": [],
+    "word_count": 115,
+    "has_direct_answer": true,
+    "has_context": true,
+    "has_sources": true,
+    "status": "VERIFIED"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": 2000161,
+  "number": 161,
+  "title": "PERF: payments improvements for latency",
+  "body": "Detailed description for perf tracking in module payments/.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 28517,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-03-16T22:57:58Z",
+  "updated_at": "2026-03-16T22:57:58Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70660,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #660 on issue #161: updates from triage and reproduction steps.",
+      "created_at": "2026-03-17T12:57:58Z"
+    },
+    {
+      "id": 70661,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #661 on issue #161: updates from triage and reproduction steps.",
+      "created_at": "2026-03-17T17:57:58Z"
+    },
+    {
+      "id": 70662,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #662 on issue #161: updates from triage and reproduction steps.",
+      "created_at": "2026-03-18T10:57:58Z"
+    },
+    {
+      "id": 70663,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #663 on issue #161: updates from triage and reproduction steps.",
+      "created_at": "2026-03-18T19:57:58Z"
+    }
+  ]
+}

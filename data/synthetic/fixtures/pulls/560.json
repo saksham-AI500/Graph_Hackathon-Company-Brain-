@@ -1,0 +1,246 @@
+{
+  "id": 1000560,
+  "number": 560,
+  "state": "closed",
+  "title": "fix(infra_observability): update slo.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2026-07-10T18:12:42Z",
+  "updated_at": "2026-07-13T11:12:42Z",
+  "closed_at": "2026-07-13T11:12:42Z",
+  "merged_at": "2026-07-13T11:12:42Z",
+  "merge_commit_sha": "551996bd2a4e",
+  "head": {
+    "ref": "feature/pr-560",
+    "sha": "551996bd2a4e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/560",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 9,
+      "changes": 51
+    },
+    {
+      "filename": "infra/observability/grafana_dashboards.json",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 7,
+      "changes": 10
+    },
+    {
+      "filename": "infra/observability/metrics.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 14,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c08b70c1bd0a",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T18:12:42Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T18:12:42Z"
+        },
+        "message": "commit 1 for PR #560: fix(infra_observability): update slo.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a62db72cf81f",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T18:42:42Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T18:42:42Z"
+        },
+        "message": "commit 2 for PR #560: fix(infra_observability): update slo.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "551996bd2a4e",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T19:12:42Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-07-10T19:12:42Z"
+        },
+        "message": "commit 3 for PR #560: fix(infra_observability): update slo.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56001,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-12T06:12:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/560#pullrequestreview-56001"
+    },
+    {
+      "id": 56002,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-12T06:12:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/560#pullrequestreview-56002"
+    },
+    {
+      "id": 56003,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-12T06:12:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/560#pullrequestreview-56003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2984,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2984: verify boundary checks on line 15.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2985,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 2985: verify boundary checks on line 25.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2986,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2986: verify boundary checks on line 15.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2987,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2987: verify boundary checks on line 25.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2988,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2988: verify boundary checks on line 35.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2989,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2989: verify boundary checks on line 15.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2990,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2990: verify boundary checks on line 25.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2991,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2991: verify boundary checks on line 35.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2992,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2992: verify boundary checks on line 45.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2993,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 2993: verify boundary checks on line 55.",
+      "created_at": "2026-07-12T06:12:42Z",
+      "path": "infra/observability/__pycache__/slo.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "id": 1000490,
+  "number": 490,
+  "state": "closed",
+  "title": "docs(auth): update middleware.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "tanya-popova",
+    "id": 22022,
+    "type": "User"
+  },
+  "created_at": "2026-06-05T08:41:09Z",
+  "updated_at": "2026-06-07T01:41:09Z",
+  "closed_at": "2026-06-07T01:41:09Z",
+  "merged_at": "2026-06-07T01:41:09Z",
+  "merge_commit_sha": "90449905d100",
+  "head": {
+    "ref": "feature/pr-490",
+    "sha": "90449905d100"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/490",
+  "files": [
+    {
+      "filename": "auth/__pycache__/middleware.cpython-314.pyc",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 13,
+      "changes": 13
+    },
+    {
+      "filename": "auth/mfa/__pycache__/step_up.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 13,
+      "changes": 6
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f7e4a3d6aa6d",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T08:41:09Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T08:41:09Z"
+        },
+        "message": "commit 1 for PR #490: docs(auth): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "741cf4f97ad0",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T09:11:09Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T09:11:09Z"
+        },
+        "message": "commit 2 for PR #490: docs(auth): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d634b351d0d8",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T09:41:09Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T09:41:09Z"
+        },
+        "message": "commit 3 for PR #490: docs(auth): update middleware.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "90449905d100",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T10:11:09Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-05T10:11:09Z"
+        },
+        "message": "commit 4 for PR #490: docs(auth): update middleware.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 49001,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-06T05:41:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/490#pullrequestreview-49001"
+    },
+    {
+      "id": 49002,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-06T05:41:09Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/490#pullrequestreview-49002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2618,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2618: verify boundary checks on line 15.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2619,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2619: verify boundary checks on line 25.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2620,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2620: verify boundary checks on line 35.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2621,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2621: verify boundary checks on line 45.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2622,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 2622: verify boundary checks on line 55.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2623,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2623: verify boundary checks on line 15.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2624,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2624: verify boundary checks on line 25.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2625,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2625: verify boundary checks on line 35.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2626,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2626: verify boundary checks on line 45.",
+      "created_at": "2026-06-06T05:41:09Z",
+      "path": "auth/__pycache__/middleware.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": 2000196,
+  "number": 196,
+  "title": "FEATURE: search-indexer improvements for security",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-22T09:21:08Z",
+  "updated_at": "2026-05-07T09:21:08Z",
+  "closed_at": "2026-05-07T09:21:08Z",
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70792,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #792 on issue #196: updates from triage and reproduction steps.",
+      "created_at": "2026-04-23T00:21:08Z"
+    },
+    {
+      "id": 70793,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #793 on issue #196: updates from triage and reproduction steps.",
+      "created_at": "2026-04-23T16:21:08Z"
+    },
+    {
+      "id": 70794,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #794 on issue #196: updates from triage and reproduction steps.",
+      "created_at": "2026-04-24T08:21:08Z"
+    }
+  ]
+}

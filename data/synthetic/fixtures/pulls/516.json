@@ -1,0 +1,145 @@
+{
+  "id": 1000516,
+  "number": 516,
+  "state": "closed",
+  "title": "perf(payments): update ledger.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-06-19T00:11:35Z",
+  "updated_at": "2026-06-21T13:11:35Z",
+  "closed_at": "2026-06-21T13:11:35Z",
+  "merged_at": "2026-06-21T13:11:35Z",
+  "merge_commit_sha": "6e0427e024d5",
+  "head": {
+    "ref": "feature/pr-516",
+    "sha": "6e0427e024d5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/516",
+  "files": [
+    {
+      "filename": "payments/ledger.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 7,
+      "changes": 7
+    },
+    {
+      "filename": "payments/receipts.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 15,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "33eeca10d25c",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T00:11:35Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T00:11:35Z"
+        },
+        "message": "commit 1 for PR #516: perf(payments): update ledger.py"
+      }
+    },
+    {
+      "sha": "ab7f1f231414",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T00:41:35Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T00:41:35Z"
+        },
+        "message": "commit 2 for PR #516: perf(payments): update ledger.py"
+      }
+    },
+    {
+      "sha": "243368605c31",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T01:11:35Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T01:11:35Z"
+        },
+        "message": "commit 3 for PR #516: perf(payments): update ledger.py"
+      }
+    },
+    {
+      "sha": "6e0427e024d5",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T01:41:35Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-19T01:41:35Z"
+        },
+        "message": "commit 4 for PR #516: perf(payments): update ledger.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 51601,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-19T11:11:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/516#pullrequestreview-51601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2760,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2760: verify boundary checks on line 15.",
+      "created_at": "2026-06-19T11:11:35Z",
+      "path": "payments/ledger.py",
+      "line": 15
+    },
+    {
+      "id": 2761,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2761: verify boundary checks on line 25.",
+      "created_at": "2026-06-19T11:11:35Z",
+      "path": "payments/ledger.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "id": 1000332,
+  "number": 332,
+  "state": "closed",
+  "title": "fix(payments_refunds): update rules_engine.py",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-03-17T21:07:03Z",
+  "updated_at": "2026-03-20T17:07:03Z",
+  "closed_at": "2026-03-20T17:07:03Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-332",
+    "sha": "ed7c8c9c5476"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/332",
+  "files": [
+    {
+      "filename": "payments/refunds/rules_engine.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 12,
+      "changes": 25
+    },
+    {
+      "filename": "payments/refunds/export.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 5,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "15dfb7575e05",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T21:07:03Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T21:07:03Z"
+        },
+        "message": "commit 1 for PR #332: fix(payments_refunds): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "b7d04ba7c2f9",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T21:37:03Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T21:37:03Z"
+        },
+        "message": "commit 2 for PR #332: fix(payments_refunds): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "c3e2841ab331",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T22:07:03Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T22:07:03Z"
+        },
+        "message": "commit 3 for PR #332: fix(payments_refunds): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "073356eba49a",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T22:37:03Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T22:37:03Z"
+        },
+        "message": "commit 4 for PR #332: fix(payments_refunds): update rules_engine.py"
+      }
+    },
+    {
+      "sha": "ed7c8c9c5476",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T23:07:03Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-03-17T23:07:03Z"
+        },
+        "message": "commit 5 for PR #332: fix(payments_refunds): update rules_engine.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 33201,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-19T01:07:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/332#pullrequestreview-33201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1746,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1746: verify boundary checks on line 15.",
+      "created_at": "2026-03-19T01:07:03Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 15
+    },
+    {
+      "id": 1747,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1747: verify boundary checks on line 25.",
+      "created_at": "2026-03-19T01:07:03Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 25
+    },
+    {
+      "id": 1748,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1748: verify boundary checks on line 35.",
+      "created_at": "2026-03-19T01:07:03Z",
+      "path": "payments/refunds/rules_engine.py",
+      "line": 35
+    }
+  ]
+}

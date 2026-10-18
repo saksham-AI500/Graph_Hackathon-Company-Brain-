@@ -1,0 +1,182 @@
+{
+  "id": 1000414,
+  "number": 414,
+  "state": "closed",
+  "title": "chore(auth_mfa): update backup_codes.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-04-28T09:00:55Z",
+  "updated_at": "2026-05-01T02:00:55Z",
+  "closed_at": "2026-05-01T02:00:55Z",
+  "merged_at": "2026-05-01T02:00:55Z",
+  "merge_commit_sha": "cefd42c83539",
+  "head": {
+    "ref": "feature/pr-414",
+    "sha": "cefd42c83539"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/414",
+  "files": [
+    {
+      "filename": "auth/mfa/backup_codes.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 15,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3c71103c1a49",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T09:00:55Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T09:00:55Z"
+        },
+        "message": "commit 1 for PR #414: chore(auth_mfa): update backup_codes.py"
+      }
+    },
+    {
+      "sha": "ebed8e15243d",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T09:30:55Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T09:30:55Z"
+        },
+        "message": "commit 2 for PR #414: chore(auth_mfa): update backup_codes.py"
+      }
+    },
+    {
+      "sha": "19e050d33041",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T10:00:55Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T10:00:55Z"
+        },
+        "message": "commit 3 for PR #414: chore(auth_mfa): update backup_codes.py"
+      }
+    },
+    {
+      "sha": "cefd42c83539",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T10:30:55Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-04-28T10:30:55Z"
+        },
+        "message": "commit 4 for PR #414: chore(auth_mfa): update backup_codes.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 41401,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-29T19:00:55Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/414#pullrequestreview-41401"
+    },
+    {
+      "id": 41402,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-29T19:00:55Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/414#pullrequestreview-41402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2199,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 2199: verify boundary checks on line 15.",
+      "created_at": "2026-04-29T19:00:55Z",
+      "path": "auth/mfa/backup_codes.py",
+      "line": 15
+    },
+    {
+      "id": 2200,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 2200: verify boundary checks on line 25.",
+      "created_at": "2026-04-29T19:00:55Z",
+      "path": "auth/mfa/backup_codes.py",
+      "line": 25
+    },
+    {
+      "id": 2201,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 2201: verify boundary checks on line 35.",
+      "created_at": "2026-04-29T19:00:55Z",
+      "path": "auth/mfa/backup_codes.py",
+      "line": 35
+    },
+    {
+      "id": 2202,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2202: verify boundary checks on line 15.",
+      "created_at": "2026-04-29T19:00:55Z",
+      "path": "auth/mfa/backup_codes.py",
+      "line": 15
+    },
+    {
+      "id": 2203,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2203: verify boundary checks on line 25.",
+      "created_at": "2026-04-29T19:00:55Z",
+      "path": "auth/mfa/backup_codes.py",
+      "line": 25
+    }
+  ]
+}

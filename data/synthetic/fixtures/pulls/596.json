@@ -1,0 +1,106 @@
+{
+  "id": 1000596,
+  "number": 596,
+  "state": "closed",
+  "title": "feat(growth_experiments): update segmentation.py",
+  "body": "Implementation changes for growth_experiments module improvements.\n\nFixes #5",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-07-29T11:32:40Z",
+  "updated_at": "2026-07-31T06:32:40Z",
+  "closed_at": "2026-07-31T06:32:40Z",
+  "merged_at": "2026-07-31T06:32:40Z",
+  "merge_commit_sha": "a08ec3e827b4",
+  "head": {
+    "ref": "feature/pr-596",
+    "sha": "a08ec3e827b4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/596",
+  "files": [
+    {
+      "filename": "growth/experiments/segmentation.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 12,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7f3bd48ac88d",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-29T11:32:40Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-29T11:32:40Z"
+        },
+        "message": "commit 1 for PR #596: feat(growth_experiments): update segmentation.py"
+      }
+    },
+    {
+      "sha": "a08ec3e827b4",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-29T12:02:40Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-07-29T12:02:40Z"
+        },
+        "message": "commit 2 for PR #596: feat(growth_experiments): update segmentation.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 59601,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-30T14:32:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/596#pullrequestreview-59601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3147,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 3147: verify boundary checks on line 15.",
+      "created_at": "2026-07-30T14:32:40Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 15
+    },
+    {
+      "id": 3148,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 3148: verify boundary checks on line 25.",
+      "created_at": "2026-07-30T14:32:40Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 25
+    }
+  ]
+}

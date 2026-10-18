@@ -1,0 +1,110 @@
+{
+  "id": 1000539,
+  "number": 539,
+  "state": "closed",
+  "title": "refactor(payments): update config.yaml",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-06-30T15:40:51Z",
+  "updated_at": "2026-07-02T04:40:51Z",
+  "closed_at": "2026-07-02T04:40:51Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-539",
+    "sha": "07e194d83d16"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/539",
+  "files": [
+    {
+      "filename": "payments/config.yaml",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 14,
+      "changes": 26
+    },
+    {
+      "filename": "payments/gateway.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 5,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a0b61f0954e2",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T15:40:51Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T15:40:51Z"
+        },
+        "message": "commit 1 for PR #539: refactor(payments): update config.yaml"
+      }
+    },
+    {
+      "sha": "264da6b2057c",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T16:10:51Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T16:10:51Z"
+        },
+        "message": "commit 2 for PR #539: refactor(payments): update config.yaml"
+      }
+    },
+    {
+      "sha": "24f3bcb7c2a3",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T16:40:51Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T16:40:51Z"
+        },
+        "message": "commit 3 for PR #539: refactor(payments): update config.yaml"
+      }
+    },
+    {
+      "sha": "07e194d83d16",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T17:10:51Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-06-30T17:10:51Z"
+        },
+        "message": "commit 4 for PR #539: refactor(payments): update config.yaml"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

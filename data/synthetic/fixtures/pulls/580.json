@@ -1,0 +1,211 @@
+{
+  "id": 1000580,
+  "number": 580,
+  "state": "closed",
+  "title": "docs(search_indexer): update crawler.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2026-07-21T09:46:33Z",
+  "updated_at": "2026-07-23T20:46:33Z",
+  "closed_at": "2026-07-23T20:46:33Z",
+  "merged_at": "2026-07-23T20:46:33Z",
+  "merge_commit_sha": "e401c1e9767f",
+  "head": {
+    "ref": "feature/pr-580",
+    "sha": "e401c1e9767f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/580",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 12,
+      "changes": 51
+    },
+    {
+      "filename": "search/indexer/__pycache__/sharding.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 8,
+      "changes": 44
+    }
+  ],
+  "commits": [
+    {
+      "sha": "673282d4cf4c",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T09:46:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T09:46:33Z"
+        },
+        "message": "commit 1 for PR #580: docs(search_indexer): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "643a305219ea",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T10:16:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T10:16:33Z"
+        },
+        "message": "commit 2 for PR #580: docs(search_indexer): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "600a28e48190",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T10:46:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T10:46:33Z"
+        },
+        "message": "commit 3 for PR #580: docs(search_indexer): update crawler.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e401c1e9767f",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T11:16:33Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-07-21T11:16:33Z"
+        },
+        "message": "commit 4 for PR #580: docs(search_indexer): update crawler.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58001,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-22T08:46:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/580#pullrequestreview-58001"
+    },
+    {
+      "id": 58002,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-22T08:46:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/580#pullrequestreview-58002"
+    },
+    {
+      "id": 58003,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-22T08:46:33Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/580#pullrequestreview-58003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3102,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3102: verify boundary checks on line 15.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3103,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 3103: verify boundary checks on line 25.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3104,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3104: verify boundary checks on line 15.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3105,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3105: verify boundary checks on line 25.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3106,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3106: verify boundary checks on line 15.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3107,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 3107: verify boundary checks on line 25.",
+      "created_at": "2026-07-22T08:46:33Z",
+      "path": "search/indexer/__pycache__/crawler.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": 1000422,
+  "number": 422,
+  "state": "closed",
+  "title": "docs(shared_utils): update timezones.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-05-01T22:19:54Z",
+  "updated_at": "2026-05-04T04:19:54Z",
+  "closed_at": "2026-05-04T04:19:54Z",
+  "merged_at": "2026-05-04T04:19:54Z",
+  "merge_commit_sha": "5eec9f503712",
+  "head": {
+    "ref": "feature/pr-422",
+    "sha": "5eec9f503712"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/422",
+  "files": [
+    {
+      "filename": "shared/utils/timezones.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 15,
+      "changes": 20
+    },
+    {
+      "filename": "shared/utils/__pycache__/diff.cpython-314.pyc",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 15,
+      "changes": 37
+    },
+    {
+      "filename": "shared/utils/network.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 2,
+      "changes": 36
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5ae4edbd90b6",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T22:19:54Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T22:19:54Z"
+        },
+        "message": "commit 1 for PR #422: docs(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "fcb5bf25827b",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T22:49:54Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T22:49:54Z"
+        },
+        "message": "commit 2 for PR #422: docs(shared_utils): update timezones.py"
+      }
+    },
+    {
+      "sha": "5eec9f503712",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T23:19:54Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-05-01T23:19:54Z"
+        },
+        "message": "commit 3 for PR #422: docs(shared_utils): update timezones.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

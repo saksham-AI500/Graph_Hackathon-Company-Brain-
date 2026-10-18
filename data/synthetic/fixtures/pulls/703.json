@@ -1,0 +1,187 @@
+{
+  "id": 1000703,
+  "number": 703,
+  "state": "closed",
+  "title": "chore(auth_mfa): update sms_gateway.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 24294,
+    "type": "User"
+  },
+  "created_at": "2026-09-21T14:52:43Z",
+  "updated_at": "2026-09-24T13:52:43Z",
+  "closed_at": "2026-09-24T13:52:43Z",
+  "merged_at": "2026-09-24T13:52:43Z",
+  "merge_commit_sha": "210f31f4fd58",
+  "head": {
+    "ref": "feature/pr-703",
+    "sha": "210f31f4fd58"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/703",
+  "files": [
+    {
+      "filename": "auth/mfa/sms_gateway.py",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 4,
+      "changes": 52
+    }
+  ],
+  "commits": [
+    {
+      "sha": "30cf1815c59f",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T14:52:43Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T14:52:43Z"
+        },
+        "message": "commit 1 for PR #703: chore(auth_mfa): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "80f94b25e08b",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T15:22:43Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T15:22:43Z"
+        },
+        "message": "commit 2 for PR #703: chore(auth_mfa): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "f66f45d48d6e",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T15:52:43Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T15:52:43Z"
+        },
+        "message": "commit 3 for PR #703: chore(auth_mfa): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "ee02acb98762",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T16:22:43Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T16:22:43Z"
+        },
+        "message": "commit 4 for PR #703: chore(auth_mfa): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "210f31f4fd58",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T16:52:43Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-09-21T16:52:43Z"
+        },
+        "message": "commit 5 for PR #703: chore(auth_mfa): update sms_gateway.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 70301,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-23T12:52:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/703#pullrequestreview-70301"
+    },
+    {
+      "id": 70302,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-23T12:52:43Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/703#pullrequestreview-70302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3723,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3723: verify boundary checks on line 15.",
+      "created_at": "2026-09-23T12:52:43Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 3724,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3724: verify boundary checks on line 25.",
+      "created_at": "2026-09-23T12:52:43Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    },
+    {
+      "id": 3725,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3725: verify boundary checks on line 15.",
+      "created_at": "2026-09-23T12:52:43Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 3726,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3726: verify boundary checks on line 25.",
+      "created_at": "2026-09-23T12:52:43Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    }
+  ]
+}

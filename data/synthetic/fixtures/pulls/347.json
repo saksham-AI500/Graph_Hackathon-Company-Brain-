@@ -1,0 +1,186 @@
+{
+  "id": 1000347,
+  "number": 347,
+  "state": "closed",
+  "title": "docs(infra_observability): update synthetics.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.\n\nCloses #96",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-03-25T11:05:06Z",
+  "updated_at": "2026-03-27T23:05:06Z",
+  "closed_at": "2026-03-27T23:05:06Z",
+  "merged_at": "2026-03-27T23:05:06Z",
+  "merge_commit_sha": "0d7562807c8f",
+  "head": {
+    "ref": "feature/pr-347",
+    "sha": "0d7562807c8f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/347",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 15,
+      "changes": 25
+    },
+    {
+      "filename": "infra/observability/query_latency.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 13,
+      "changes": 7
+    },
+    {
+      "filename": "infra/observability/cost_attribution.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 13,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8c77044f3c47",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-25T11:05:06Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-25T11:05:06Z"
+        },
+        "message": "commit 1 for PR #347: docs(infra_observability): update synthetics.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0d7562807c8f",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-25T11:35:06Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-25T11:35:06Z"
+        },
+        "message": "commit 2 for PR #347: docs(infra_observability): update synthetics.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 34701,
+      "user": {
+        "login": "security-scan[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-26T05:05:06Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/347#pullrequestreview-34701"
+    },
+    {
+      "id": 34702,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-26T05:05:06Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/347#pullrequestreview-34702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1813,
+      "user": {
+        "login": "security-scan[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1813: verify boundary checks on line 15.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1814,
+      "user": {
+        "login": "security-scan[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1814: verify boundary checks on line 25.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1815,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1815: verify boundary checks on line 15.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1816,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1816: verify boundary checks on line 25.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1817,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1817: verify boundary checks on line 35.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1818,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1818: verify boundary checks on line 45.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1819,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1819: verify boundary checks on line 55.",
+      "created_at": "2026-03-26T05:05:06Z",
+      "path": "infra/observability/__pycache__/synthetics.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

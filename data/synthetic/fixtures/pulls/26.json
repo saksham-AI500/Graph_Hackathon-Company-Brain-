@@ -1,0 +1,154 @@
+{
+  "id": 1000026,
+  "number": 26,
+  "state": "closed",
+  "title": "test(payments_refunds): update batch.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2025-10-14T01:02:39Z",
+  "updated_at": "2025-10-16T12:02:39Z",
+  "closed_at": "2025-10-16T12:02:39Z",
+  "merged_at": "2025-10-16T12:02:39Z",
+  "merge_commit_sha": "73d8c01d7f70",
+  "head": {
+    "ref": "feature/pr-26",
+    "sha": "73d8c01d7f70"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/26",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 13,
+      "changes": 23
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f7937201778c",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T01:02:39Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T01:02:39Z"
+        },
+        "message": "commit 1 for PR #26: test(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f929adcc1363",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T01:32:39Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T01:32:39Z"
+        },
+        "message": "commit 2 for PR #26: test(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "33c2b8ad513f",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T02:02:39Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T02:02:39Z"
+        },
+        "message": "commit 3 for PR #26: test(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c5f5c2c07459",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T02:32:39Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T02:32:39Z"
+        },
+        "message": "commit 4 for PR #26: test(payments_refunds): update batch.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "73d8c01d7f70",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T03:02:39Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-10-14T03:02:39Z"
+        },
+        "message": "commit 5 for PR #26: test(payments_refunds): update batch.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 2601,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-15T13:02:39Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/26#pullrequestreview-2601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 150,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 150: verify boundary checks on line 15.",
+      "created_at": "2025-10-15T13:02:39Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 151,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 151: verify boundary checks on line 25.",
+      "created_at": "2025-10-15T13:02:39Z",
+      "path": "payments/refunds/__pycache__/batch.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

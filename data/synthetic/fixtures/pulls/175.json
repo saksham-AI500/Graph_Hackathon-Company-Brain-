@@ -1,0 +1,219 @@
+{
+  "id": 1000175,
+  "number": 175,
+  "state": "closed",
+  "title": "feat(auth): update mfa_policy.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24836,
+    "type": "User"
+  },
+  "created_at": "2025-12-29T10:34:26Z",
+  "updated_at": "2025-12-30T15:34:26Z",
+  "closed_at": "2025-12-30T15:34:26Z",
+  "merged_at": "2025-12-30T15:34:26Z",
+  "merge_commit_sha": "4917159d34c7",
+  "head": {
+    "ref": "feature/pr-175",
+    "sha": "4917159d34c7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/175",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 13,
+      "changes": 22
+    },
+    {
+      "filename": "auth/__pycache__/oauth_provider.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 8,
+      "changes": 25
+    },
+    {
+      "filename": "auth/jwt_handler.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 8,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "774543ef9158",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-12-29T10:34:26Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-12-29T10:34:26Z"
+        },
+        "message": "commit 1 for PR #175: feat(auth): update mfa_policy.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4917159d34c7",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-12-29T11:04:26Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2025-12-29T11:04:26Z"
+        },
+        "message": "commit 2 for PR #175: feat(auth): update mfa_policy.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 17501,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-30T12:34:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/175#pullrequestreview-17501"
+    },
+    {
+      "id": 17502,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-30T12:34:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/175#pullrequestreview-17502"
+    },
+    {
+      "id": 17503,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-30T12:34:26Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/175#pullrequestreview-17503"
+    }
+  ],
+  "comments": [
+    {
+      "id": 957,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 957: verify boundary checks on line 15.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 958,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 958: verify boundary checks on line 25.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 959,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 959: verify boundary checks on line 15.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 960,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 960: verify boundary checks on line 25.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 961,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 961: verify boundary checks on line 35.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 962,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 962: verify boundary checks on line 45.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 963,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 963: verify boundary checks on line 55.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 964,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 964: verify boundary checks on line 15.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 965,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 965: verify boundary checks on line 25.",
+      "created_at": "2025-12-30T12:34:26Z",
+      "path": "auth/mfa/__pycache__/mfa_policy.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

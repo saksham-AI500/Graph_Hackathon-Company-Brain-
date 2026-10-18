@@ -1,0 +1,169 @@
+{
+  "id": 1000169,
+  "number": 169,
+  "state": "closed",
+  "title": "feat(search): update sanitizer.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2025-12-25T09:42:25Z",
+  "updated_at": "2025-12-27T15:42:25Z",
+  "closed_at": "2025-12-27T15:42:25Z",
+  "merged_at": "2025-12-27T15:42:25Z",
+  "merge_commit_sha": "11d3c852dcc3",
+  "head": {
+    "ref": "feature/pr-169",
+    "sha": "11d3c852dcc3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/169",
+  "files": [
+    {
+      "filename": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 13,
+      "changes": 25
+    },
+    {
+      "filename": "search/indexer/deduplication.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 14,
+      "changes": 34
+    },
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 4,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "14bdbdb7647f",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T09:42:25Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T09:42:25Z"
+        },
+        "message": "commit 1 for PR #169: feat(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3cc2c74f0a3c",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T10:12:25Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T10:12:25Z"
+        },
+        "message": "commit 2 for PR #169: feat(search): update sanitizer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "11d3c852dcc3",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T10:42:25Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-12-25T10:42:25Z"
+        },
+        "message": "commit 3 for PR #169: feat(search): update sanitizer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 16901,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-26T12:42:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/169#pullrequestreview-16901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 920,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 920: verify boundary checks on line 15.",
+      "created_at": "2025-12-26T12:42:25Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 921,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 921: verify boundary checks on line 25.",
+      "created_at": "2025-12-26T12:42:25Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 922,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 922: verify boundary checks on line 35.",
+      "created_at": "2025-12-26T12:42:25Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 923,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 923: verify boundary checks on line 45.",
+      "created_at": "2025-12-26T12:42:25Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 924,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 924: verify boundary checks on line 55.",
+      "created_at": "2025-12-26T12:42:25Z",
+      "path": "search/__pycache__/sanitizer.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "id": 1000710,
+  "number": 710,
+  "state": "closed",
+  "title": "test(infra_observability): update alerts.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "leo-dupont",
+    "id": 28165,
+    "type": "User"
+  },
+  "created_at": "2026-09-25T04:22:44Z",
+  "updated_at": "2026-09-26T11:22:44Z",
+  "closed_at": "2026-09-26T11:22:44Z",
+  "merged_at": "2026-09-26T11:22:44Z",
+  "merge_commit_sha": "fdc47de24445",
+  "head": {
+    "ref": "feature/pr-710",
+    "sha": "fdc47de24445"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/710",
+  "files": [
+    {
+      "filename": "infra/observability/alerts.py",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 15,
+      "changes": 7
+    },
+    {
+      "filename": "infra/observability/__pycache__/pagerduty.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 3,
+      "changes": 6
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1d0a575fe7e3",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T04:22:44Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T04:22:44Z"
+        },
+        "message": "commit 1 for PR #710: test(infra_observability): update alerts.py"
+      }
+    },
+    {
+      "sha": "5b23e9ca72e2",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T04:52:44Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T04:52:44Z"
+        },
+        "message": "commit 2 for PR #710: test(infra_observability): update alerts.py"
+      }
+    },
+    {
+      "sha": "b0bba6c2f8a8",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T05:22:44Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T05:22:44Z"
+        },
+        "message": "commit 3 for PR #710: test(infra_observability): update alerts.py"
+      }
+    },
+    {
+      "sha": "a123578bada3",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T05:52:44Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T05:52:44Z"
+        },
+        "message": "commit 4 for PR #710: test(infra_observability): update alerts.py"
+      }
+    },
+    {
+      "sha": "fdc47de24445",
+      "commit": {
+        "author": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T06:22:44Z"
+        },
+        "committer": {
+          "name": "Leo Dupont",
+          "email": "leo-dupont@example.com",
+          "date": "2026-09-25T06:22:44Z"
+        },
+        "message": "commit 5 for PR #710: test(infra_observability): update alerts.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71001,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-26T04:22:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/710#pullrequestreview-71001"
+    },
+    {
+      "id": 71002,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-26T04:22:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/710#pullrequestreview-71002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3761,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3761: verify boundary checks on line 15.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 15
+    },
+    {
+      "id": 3762,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3762: verify boundary checks on line 25.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 25
+    },
+    {
+      "id": 3763,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 3763: verify boundary checks on line 35.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 35
+    },
+    {
+      "id": 3764,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 3764: verify boundary checks on line 15.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 15
+    },
+    {
+      "id": 3765,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 3765: verify boundary checks on line 25.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 25
+    },
+    {
+      "id": 3766,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 3766: verify boundary checks on line 35.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 35
+    },
+    {
+      "id": 3767,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 3767: verify boundary checks on line 45.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 45
+    },
+    {
+      "id": 3768,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 3768: verify boundary checks on line 55.",
+      "created_at": "2026-09-26T04:22:44Z",
+      "path": "infra/observability/alerts.py",
+      "line": 55
+    }
+  ]
+}

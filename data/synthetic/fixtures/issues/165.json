@@ -1,0 +1,40 @@
+{
+  "id": 2000165,
+  "number": 165,
+  "title": "INCIDENT: billing improvements for throughput",
+  "body": "Detailed description for incident tracking in module billing/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-03-21T02:10:26Z",
+  "updated_at": "2026-03-21T02:10:26Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70674,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #674 on issue #165: updates from triage and reproduction steps.",
+      "created_at": "2026-03-21T07:10:26Z"
+    },
+    {
+      "id": 70675,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #675 on issue #165: updates from triage and reproduction steps.",
+      "created_at": "2026-03-21T22:10:26Z"
+    }
+  ]
+}

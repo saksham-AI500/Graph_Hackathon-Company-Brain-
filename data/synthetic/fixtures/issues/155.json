@@ -1,0 +1,67 @@
+{
+  "id": 2000155,
+  "number": 155,
+  "title": "TASK: payments-refunds improvements for throughput",
+  "body": "Detailed description for task tracking in module payments/refunds/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-03-10T16:22:13Z",
+  "updated_at": "2026-03-10T16:22:13Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70637,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #637 on issue #155: updates from triage and reproduction steps.",
+      "created_at": "2026-03-10T22:22:13Z"
+    },
+    {
+      "id": 70638,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #638 on issue #155: updates from triage and reproduction steps.",
+      "created_at": "2026-03-11T18:22:13Z"
+    },
+    {
+      "id": 70639,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #639 on issue #155: updates from triage and reproduction steps.",
+      "created_at": "2026-03-12T00:22:13Z"
+    },
+    {
+      "id": 70640,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Comment #640 on issue #155: updates from triage and reproduction steps.",
+      "created_at": "2026-03-12T14:22:13Z"
+    },
+    {
+      "id": 70641,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #641 on issue #155: updates from triage and reproduction steps.",
+      "created_at": "2026-03-13T12:22:13Z"
+    }
+  ]
+}

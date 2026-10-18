@@ -1,0 +1,49 @@
+{
+  "id": 2000323,
+  "number": 323,
+  "title": "PERF: search-indexer improvements for throughput",
+  "body": "Detailed description for perf tracking in module search/indexer/.",
+  "user": {
+    "login": "ben-carter",
+    "id": 24965,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-01T14:42:21Z",
+  "updated_at": "2026-09-20T14:42:21Z",
+  "closed_at": "2026-09-20T14:42:21Z",
+  "labels": [
+    "perf",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71324,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1324 on issue #323: updates from triage and reproduction steps.",
+      "created_at": "2026-09-02T07:42:21Z"
+    },
+    {
+      "id": 71325,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #1325 on issue #323: updates from triage and reproduction steps.",
+      "created_at": "2026-09-02T22:42:21Z"
+    },
+    {
+      "id": 71326,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1326 on issue #323: updates from triage and reproduction steps.",
+      "created_at": "2026-09-03T14:42:21Z"
+    }
+  ]
+}

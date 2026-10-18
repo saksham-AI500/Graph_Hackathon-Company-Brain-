@@ -1,0 +1,133 @@
+{
+  "id": 1000712,
+  "number": 712,
+  "state": "closed",
+  "title": "docs(auth_mfa): update challenge_store.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-09-25T16:34:42Z",
+  "updated_at": "2026-09-27T06:34:42Z",
+  "closed_at": "2026-09-27T06:34:42Z",
+  "merged_at": "2026-09-27T06:34:42Z",
+  "merge_commit_sha": "8efe679aee35",
+  "head": {
+    "ref": "feature/pr-712",
+    "sha": "8efe679aee35"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/712",
+  "files": [
+    {
+      "filename": "auth/mfa/challenge_store.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 11,
+      "changes": 40
+    }
+  ],
+  "commits": [
+    {
+      "sha": "7918c6b33bd4",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T16:34:42Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T16:34:42Z"
+        },
+        "message": "commit 1 for PR #712: docs(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "04d4a0bd749e",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T17:04:42Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T17:04:42Z"
+        },
+        "message": "commit 2 for PR #712: docs(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "8efe679aee35",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T17:34:42Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-09-25T17:34:42Z"
+        },
+        "message": "commit 3 for PR #712: docs(auth_mfa): update challenge_store.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 71201,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-27T16:34:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/712#pullrequestreview-71201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3778,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 3778: verify boundary checks on line 15.",
+      "created_at": "2026-09-27T16:34:42Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 15
+    },
+    {
+      "id": 3779,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 3779: verify boundary checks on line 25.",
+      "created_at": "2026-09-27T16:34:42Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 25
+    },
+    {
+      "id": 3780,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Review comment 3780: verify boundary checks on line 35.",
+      "created_at": "2026-09-27T16:34:42Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 35
+    }
+  ]
+}

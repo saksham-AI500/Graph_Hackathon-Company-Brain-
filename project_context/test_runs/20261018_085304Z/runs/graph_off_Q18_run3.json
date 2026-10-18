@@ -1,0 +1,24 @@
+{
+  "question_id": "Q18",
+  "question": "Who approved release v3.5.0?",
+  "mode": "graph_off",
+  "run_index": 3,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer.  \n\nTo find this, you would need access to the repository's release history or approval logs for v3.5.0.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:05:39.714384+00:00",
+  "latency_ms": 2514.34,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": true,
+  "is_faithful": false,
+  "passed_facts": [
+    "Refusal with reason"
+  ],
+  "forbidden_violations": []
+}

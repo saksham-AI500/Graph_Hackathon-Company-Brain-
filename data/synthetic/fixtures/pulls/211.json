@@ -1,0 +1,138 @@
+{
+  "id": 1000211,
+  "number": 211,
+  "state": "closed",
+  "title": "feat(payments): update audit_refunds.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.\n\nCloses #48",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-01-15T15:35:52Z",
+  "updated_at": "2026-01-18T06:35:52Z",
+  "closed_at": "2026-01-18T06:35:52Z",
+  "merged_at": "2026-01-18T06:35:52Z",
+  "merge_commit_sha": "ae17ceeb490f",
+  "head": {
+    "ref": "feature/pr-211",
+    "sha": "ae17ceeb490f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/211",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 6,
+      "changes": 37
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cde22c391c70",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T15:35:52Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T15:35:52Z"
+        },
+        "message": "commit 1 for PR #211: feat(payments): update audit_refunds.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "4449478f3d2b",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T16:05:52Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T16:05:52Z"
+        },
+        "message": "commit 2 for PR #211: feat(payments): update audit_refunds.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "28b0fa93b7f4",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T16:35:52Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T16:35:52Z"
+        },
+        "message": "commit 3 for PR #211: feat(payments): update audit_refunds.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ae17ceeb490f",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T17:05:52Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-01-15T17:05:52Z"
+        },
+        "message": "commit 4 for PR #211: feat(payments): update audit_refunds.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 21101,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-16T23:35:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/211#pullrequestreview-21101"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1182,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1182: verify boundary checks on line 15.",
+      "created_at": "2026-01-16T23:35:52Z",
+      "path": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1183,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1183: verify boundary checks on line 25.",
+      "created_at": "2026-01-16T23:35:52Z",
+      "path": "payments/refunds/__pycache__/audit_refunds.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

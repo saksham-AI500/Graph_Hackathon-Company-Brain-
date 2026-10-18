@@ -400,3 +400,33 @@ def test_scripted_questions_suite(agent_loop):
                 assert claim.verified is True
             for src in ans.sources:
                 assert src.url.startswith("http://") or src.url.startswith("https://")
+
+
+# -----------------------------------------------------------------------------
+# 17. AgentRequest Aliases and Dynamic Key Adoption
+# -----------------------------------------------------------------------------
+def test_agent_request_openrouter_key_alias():
+    """Verify AgentRequest populates both api_key and openrouter_key interchangeably."""
+    req1 = AgentRequest(question="Test question", openrouter_key="test-key-123")
+    assert req1.api_key == "test-key-123"
+    assert req1.openrouter_key == "test-key-123"
+
+    req2 = AgentRequest(question="Test question", api_key="test-key-456")
+    assert req2.api_key == "test-key-456"
+    assert req2.openrouter_key == "test-key-456"
+
+
+def test_agent_answer_backward_compat_fields():
+    """Verify AgentAnswer has tool_calls, statement, and source aliases without AttributeError."""
+    ans = AgentAnswer(
+        answer="Sample answer [S1]",
+        claims=[Claim(claim_id="C1", text="Test claim", source_ids=["S1"], verified=True)],
+        sources=[SourceItem(id="S1", entity_type="File", identifier="src/test.c", url="https://github.com/test")],
+        execution_log=[{"tool": "find_entity", "arguments": {"query": "test"}}],
+    )
+    assert len(ans.tool_calls) == 1
+    assert ans.tool_calls[0]["tool"] == "find_entity"
+    assert ans.claims[0].statement == "Test claim"
+    assert ans.sources[0].source_id == "S1"
+    assert ans.sources[0].entity_id == "src/test.c"
+

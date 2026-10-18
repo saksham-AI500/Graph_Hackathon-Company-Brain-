@@ -160,4 +160,50 @@ def test_vector_baseline_anti_circularity_and_cutoff():
     for doc, _ in res:
         assert doc.number != 3339, "Target PR must not be retrieved as evidence for itself"
         if doc.timestamp:
-            assert doc.timestamp < cutoff, "Document after cutoff must not be retrieved"
+            assert doc.timestamp <= cutoff, "Document after cutoff must not be retrieved"
+
+
+def test_holdout_dataset_integrity_and_execution(client):
+    """Verify 9-question separately authored holdout dataset runs and Graph ON outperforms baselines."""
+    from src.evaluation.holdout import get_holdout_questions
+    from src.evaluation.holdout_runner import HoldoutEvaluator
+
+    questions = get_holdout_questions()
+    assert len(questions) == 9
+
+    evaluator = HoldoutEvaluator(client)
+    data = evaluator.run_holdout()
+
+    m_graph_on = data["metrics"]["Graph ON"]
+    m_vector = data["metrics"]["Vector Baseline"]
+    m_graph_off = data["metrics"]["Graph OFF"]
+
+    assert m_graph_on["overall_correct"] == 9
+    assert m_graph_on["refusal_correct"] == 5
+    assert m_graph_on["overall_correct"] > m_vector["overall_correct"]
+    assert m_graph_on["overall_correct"] > m_graph_off["overall_correct"]
+
+
+def test_co_change_and_reviewer_tie_breaking_determinism(client):
+    """Verify that co-change and reviewer rankings produce identical ordering across repeated runs."""
+    files = ["src/commands/bulk_insert.rs"]
+
+    # 1. Repeated co-change queries must produce identical order
+    runs_co = []
+    for _ in range(5):
+        res = find_related_co_changes_temporal(client, files, exclude_pr_number=3339, limit=5)
+        runs_co.append([r["co_changed_file"] for r in res])
+
+    assert all(r == runs_co[0] for r in runs_co), "Co-change ranking must be strictly deterministic across repeated runs"
+    assert "apply.rs" in runs_co[0][0]
+
+    # 2. Repeated reviewer queries must produce identical order
+    target_files = ["tests/flow/test_rdb_load.py"]
+    runs_rev = []
+    for _ in range(5):
+        res = find_historical_reviewers_temporal(client, target_files, exclude_pr_number=3339, limit=5)
+        runs_rev.append([r["login"] for r in res])
+
+    assert all(r == runs_rev[0] for r in runs_rev), "Reviewer ranking must be strictly deterministic across repeated runs"
+
+

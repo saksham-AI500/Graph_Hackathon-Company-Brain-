@@ -1,0 +1,193 @@
+{
+  "id": 1000072,
+  "number": 72,
+  "state": "closed",
+  "title": "test(auth_mfa): update README.md",
+  "body": "Implementation changes for auth_mfa module improvements.\n\nFixes #27",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 21585,
+    "type": "User"
+  },
+  "created_at": "2025-11-06T07:13:05Z",
+  "updated_at": "2025-11-09T00:13:05Z",
+  "closed_at": "2025-11-09T00:13:05Z",
+  "merged_at": "2025-11-09T00:13:05Z",
+  "merge_commit_sha": "b006c1599694",
+  "head": {
+    "ref": "feature/pr-72",
+    "sha": "b006c1599694"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/72",
+  "files": [
+    {
+      "filename": "auth/mfa/README.md",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 13,
+      "changes": 33
+    }
+  ],
+  "commits": [
+    {
+      "sha": "60f05c3633e5",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T07:13:05Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T07:13:05Z"
+        },
+        "message": "commit 1 for PR #72: test(auth_mfa): update README.md"
+      }
+    },
+    {
+      "sha": "f7abbb32656c",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T07:43:05Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T07:43:05Z"
+        },
+        "message": "commit 2 for PR #72: test(auth_mfa): update README.md"
+      }
+    },
+    {
+      "sha": "90296b0f28fc",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T08:13:05Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T08:13:05Z"
+        },
+        "message": "commit 3 for PR #72: test(auth_mfa): update README.md"
+      }
+    },
+    {
+      "sha": "b006c1599694",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T08:43:05Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-06T08:43:05Z"
+        },
+        "message": "commit 4 for PR #72: test(auth_mfa): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 7201,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-06T10:13:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/72#pullrequestreview-7201"
+    },
+    {
+      "id": 7202,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-06T10:13:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/72#pullrequestreview-7202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 393,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 393: verify boundary checks on line 15.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 15
+    },
+    {
+      "id": 394,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 394: verify boundary checks on line 25.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 25
+    },
+    {
+      "id": 395,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 395: verify boundary checks on line 15.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 15
+    },
+    {
+      "id": 396,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 396: verify boundary checks on line 25.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 25
+    },
+    {
+      "id": 397,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 397: verify boundary checks on line 35.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 35
+    },
+    {
+      "id": 398,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 398: verify boundary checks on line 45.",
+      "created_at": "2025-11-06T10:13:05Z",
+      "path": "auth/mfa/README.md",
+      "line": 45
+    }
+  ]
+}

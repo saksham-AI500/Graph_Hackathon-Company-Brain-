@@ -1,0 +1,87 @@
+{
+  "id": 1000409,
+  "number": 409,
+  "state": "closed",
+  "title": "fix(billing): update customer.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "liam-chen",
+    "id": 25032,
+    "type": "User"
+  },
+  "created_at": "2026-04-24T20:56:39Z",
+  "updated_at": "2026-04-26T09:56:39Z",
+  "closed_at": "2026-04-26T09:56:39Z",
+  "merged_at": "2026-04-26T09:56:39Z",
+  "merge_commit_sha": "096420b64ef9",
+  "head": {
+    "ref": "feature/pr-409",
+    "sha": "096420b64ef9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/409",
+  "files": [
+    {
+      "filename": "billing/customer.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 3,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a6ee033a1dbe",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T20:56:39Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T20:56:39Z"
+        },
+        "message": "commit 1 for PR #409: fix(billing): update customer.py"
+      }
+    },
+    {
+      "sha": "43aba634a76a",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T21:26:39Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T21:26:39Z"
+        },
+        "message": "commit 2 for PR #409: fix(billing): update customer.py"
+      }
+    },
+    {
+      "sha": "096420b64ef9",
+      "commit": {
+        "author": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T21:56:39Z"
+        },
+        "committer": {
+          "name": "Liam Chen",
+          "email": "liam-chen@example.com",
+          "date": "2026-04-24T21:56:39Z"
+        },
+        "message": "commit 3 for PR #409: fix(billing): update customer.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

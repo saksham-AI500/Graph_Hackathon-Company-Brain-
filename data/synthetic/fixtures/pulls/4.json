@@ -1,0 +1,129 @@
+{
+  "id": 1000004,
+  "number": 4,
+  "state": "closed",
+  "title": "test(auth_mfa): update totp.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 24294,
+    "type": "User"
+  },
+  "created_at": "2025-10-02T21:46:03Z",
+  "updated_at": "2025-10-05T16:46:03Z",
+  "closed_at": "2025-10-05T16:46:03Z",
+  "merged_at": "2025-10-05T16:46:03Z",
+  "merge_commit_sha": "d42b1b46a170",
+  "head": {
+    "ref": "feature/pr-4",
+    "sha": "d42b1b46a170"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/4",
+  "files": [
+    {
+      "filename": "auth/mfa/totp.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 7,
+      "changes": 26
+    },
+    {
+      "filename": "auth/mfa/__pycache__/audit_mfa.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 8,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5cf49b7605f6",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T21:46:03Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T21:46:03Z"
+        },
+        "message": "commit 1 for PR #4: test(auth_mfa): update totp.py"
+      }
+    },
+    {
+      "sha": "f78148f8eaa0",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T22:16:03Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T22:16:03Z"
+        },
+        "message": "commit 2 for PR #4: test(auth_mfa): update totp.py"
+      }
+    },
+    {
+      "sha": "d42b1b46a170",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T22:46:03Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2025-10-02T22:46:03Z"
+        },
+        "message": "commit 3 for PR #4: test(auth_mfa): update totp.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 401,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-03T21:46:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/4#pullrequestreview-401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 28,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 28: verify boundary checks on line 15.",
+      "created_at": "2025-10-03T21:46:03Z",
+      "path": "auth/mfa/totp.py",
+      "line": 15
+    },
+    {
+      "id": 29,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 29: verify boundary checks on line 25.",
+      "created_at": "2025-10-03T21:46:03Z",
+      "path": "auth/mfa/totp.py",
+      "line": 25
+    }
+  ]
+}

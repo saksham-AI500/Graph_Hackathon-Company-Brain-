@@ -1,0 +1,76 @@
+{
+  "id": 2000252,
+  "number": 252,
+  "title": "INCIDENT: infra-observability improvements for throughput",
+  "body": "Detailed description for incident tracking in module infra/observability/.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24081,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-19T16:45:52Z",
+  "updated_at": "2026-07-12T16:45:52Z",
+  "closed_at": "2026-07-12T16:45:52Z",
+  "labels": [
+    "incident",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71034,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #1034 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-20T01:45:52Z"
+    },
+    {
+      "id": 71035,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1035 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-20T19:45:52Z"
+    },
+    {
+      "id": 71036,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #1036 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-21T16:45:52Z"
+    },
+    {
+      "id": 71037,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1037 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-22T04:45:52Z"
+    },
+    {
+      "id": 71038,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1038 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-22T08:45:52Z"
+    },
+    {
+      "id": 71039,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #1039 on issue #252: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T04:45:52Z"
+    }
+  ]
+}

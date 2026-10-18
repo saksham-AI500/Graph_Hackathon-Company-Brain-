@@ -43,9 +43,11 @@ class GraphLoader:
             """
             MERGE (pr:PullRequest {number: $number})
             ON CREATE SET pr.title = $title, pr.url = $url, pr.state = $state,
-                          pr.created_at = $created_at, pr.merged_at = $merged_at
+                          pr.created_at = CASE WHEN $created_at = '' THEN null ELSE $created_at END,
+                          pr.merged_at = CASE WHEN $merged_at = '' THEN null ELSE $merged_at END
             ON MATCH SET pr.title = $title, pr.url = $url, pr.state = $state,
-                         pr.created_at = $created_at, pr.merged_at = $merged_at
+                         pr.created_at = CASE WHEN $created_at = '' THEN null ELSE $created_at END,
+                         pr.merged_at = CASE WHEN $merged_at = '' THEN null ELSE $merged_at END
             """,
             {
                 "number": pr.number,
@@ -78,20 +80,39 @@ class GraphLoader:
                 """,
                 {"login": rev.author_login, "url": rev.author_url},
             )
-            self.client.query(
-                """
-                MATCH (p:Person {login: $login}), (pr:PullRequest {number: $number})
-                MERGE (p)-[r:REVIEWED {state: $state}]->(pr)
-                ON CREATE SET r.submitted_at = $submitted_at
-                ON MATCH SET r.submitted_at = $submitted_at
-                """,
-                {
-                    "login": rev.author_login,
-                    "number": pr.number,
-                    "state": rev.state,
-                    "submitted_at": rev.submitted_at or "",
-                },
-            )
+            if rev.id is not None:
+                self.client.query(
+                    """
+                    MATCH (p:Person {login: $login}), (pr:PullRequest {number: $number})
+                    MERGE (p)-[r:REVIEWED {id: $review_id}]->(pr)
+                    ON CREATE SET r.state = $state,
+                                  r.submitted_at = CASE WHEN $submitted_at = '' THEN null ELSE $submitted_at END
+                    ON MATCH SET r.state = $state,
+                                 r.submitted_at = CASE WHEN $submitted_at = '' THEN null ELSE $submitted_at END
+                    """,
+                    {
+                        "login": rev.author_login,
+                        "number": pr.number,
+                        "review_id": rev.id,
+                        "state": rev.state,
+                        "submitted_at": rev.submitted_at or "",
+                    },
+                )
+            else:
+                self.client.query(
+                    """
+                    MATCH (p:Person {login: $login}), (pr:PullRequest {number: $number})
+                    MERGE (p)-[r:REVIEWED {state: $state}]->(pr)
+                    ON CREATE SET r.submitted_at = CASE WHEN $submitted_at = '' THEN null ELSE $submitted_at END
+                    ON MATCH SET r.submitted_at = CASE WHEN $submitted_at = '' THEN null ELSE $submitted_at END
+                    """,
+                    {
+                        "login": rev.author_login,
+                        "number": pr.number,
+                        "state": rev.state,
+                        "submitted_at": rev.submitted_at or "",
+                    },
+                )
             stats["reviewed_edges"] += 1
 
         # 5. Merge Files and (:PullRequest)-[:MODIFIES]->(:File)
@@ -128,9 +149,11 @@ class GraphLoader:
                 """
                 MERGE (i:Issue {number: $number})
                 ON CREATE SET i.title = $title, i.url = $url, i.state = $state,
-                              i.created_at = $created_at, i.closed_at = $closed_at
+                              i.created_at = CASE WHEN $created_at = '' THEN null ELSE $created_at END,
+                              i.closed_at = CASE WHEN $closed_at = '' THEN null ELSE $closed_at END
                 ON MATCH SET i.title = $title, i.url = $url, i.state = $state,
-                             i.created_at = $created_at, i.closed_at = $closed_at
+                             i.created_at = CASE WHEN $created_at = '' THEN null ELSE $created_at END,
+                             i.closed_at = CASE WHEN $closed_at = '' THEN null ELSE $closed_at END
                 """,
                 {
                     "number": iss.number,
@@ -172,15 +195,97 @@ class GraphLoader:
 
         return stats
 
-    def load_pull_requests(self, prs: List[PullRequestRecord]) -> Dict[str, Any]:
-        """Ingest multiple pull request records and return aggregate summary."""
-        total_processed = 0
-        for pr in prs:
-            self.load_pull_request(pr)
-            total_processed += 1
-
-        counts = self.client.get_counts()
-        return {
-            "prs_processed": total_processed,
-            "final_counts": counts,
+    def load_chats(self, chat_threads: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Ingest synthetic Slack chat threads into graph as Comment and Decision nodes."""
+        stats = {
+            "threads_processed": 0,
+            "comments_created": 0,
+            "decisions_created": 0,
         }
+        for thread in chat_threads:
+            t_id = thread.get("thread_id")
+            channel = thread.get("channel")
+            thread_url = thread.get("thread_url")
+            has_decision = thread.get("has_decision", False)
+            decision_quote = thread.get("decision_quote")
+            linked_entity = thread.get("linked_entity")
+
+            for msg in thread.get("messages", []):
+                m_id = msg.get("message_id")
+                author = msg.get("author")
+                text = msg.get("text", "")
+                ts = msg.get("timestamp")
+
+                # Ingest author and comment
+                self.client.query(
+                    """
+                    MERGE (p:Person {login: $author})
+                    ON CREATE SET p.url = $author_url
+                    MERGE (c:Comment {id: $m_id})
+                    ON CREATE SET c.channel = $channel,
+                                  c.author = $author,
+                                  c.text = $text,
+                                  c.timestamp = CASE WHEN $ts = '' THEN null ELSE $ts END,
+                                  c.url = $thread_url
+                    MERGE (p)-[:POSTED]->(c)
+                    """,
+                    {
+                        "author": author,
+                        "author_url": f"https://github.com/{author}",
+                        "m_id": m_id,
+                        "channel": channel,
+                        "text": text,
+                        "ts": ts or "",
+                        "thread_url": thread_url or "",
+                    },
+                )
+                stats["comments_created"] += 1
+
+                # If message contains the decision quote, link decision node
+                if has_decision and decision_quote and (decision_quote in text or "Decision:" in text or "Reversal:" in text):
+                    dec_id = f"dec_{t_id}"
+                    self.client.query(
+                        """
+                        MATCH (c:Comment {id: $m_id})
+                        MERGE (d:Decision {id: $dec_id})
+                        ON CREATE SET d.quote = $quote,
+                                      d.channel = $channel,
+                                      d.source_url = $source_url,
+                                      d.timestamp = CASE WHEN $ts = '' THEN null ELSE $ts END,
+                                      d.is_reversal = $is_reversal
+                        MERGE (c)-[:CONTAINS_DECISION]->(d)
+                        """,
+                        {
+                            "m_id": m_id,
+                            "dec_id": dec_id,
+                            "quote": decision_quote,
+                            "channel": channel,
+                            "source_url": thread_url or "",
+                            "ts": ts or "",
+                            "is_reversal": thread.get("is_reversal", False),
+                        },
+                    )
+                    stats["decisions_created"] += 1
+
+            stats["threads_processed"] += 1
+
+        return stats
+
+    def load_pull_requests(self, prs: List[PullRequestRecord]) -> Dict[str, Any]:
+        """Ingest a collection of pull requests into the graph."""
+        total_stats = {
+            "prs": 0,
+            "authored_edges": 0,
+            "reviews": 0,
+            "files": 0,
+            "modifies_edges": 0,
+            "issues": 0,
+            "resolves_edges": 0,
+        }
+        for pr in prs:
+            st = self.load_pull_request(pr)
+            for k in total_stats:
+                total_stats[k] += st.get(k, 0)
+        total_stats["final_counts"] = self.client.get_counts()
+        return total_stats
+

@@ -1,0 +1,196 @@
+{
+  "id": 1000051,
+  "number": 51,
+  "state": "closed",
+  "title": "refactor(growth_referrals): update payout_sync.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2025-10-27T04:37:25Z",
+  "updated_at": "2025-10-29T14:37:25Z",
+  "closed_at": "2025-10-29T14:37:25Z",
+  "merged_at": "2025-10-29T14:37:25Z",
+  "merge_commit_sha": "be274db06f83",
+  "head": {
+    "ref": "feature/pr-51",
+    "sha": "be274db06f83"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/51",
+  "files": [
+    {
+      "filename": "growth/referrals/payout_sync.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 4,
+      "changes": 28
+    },
+    {
+      "filename": "growth/referrals/__pycache__/rewards_engine.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 15,
+      "changes": 16
+    },
+    {
+      "filename": "growth/referrals/__pycache__/milestones.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 14,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "46c7a2eabd33",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T04:37:25Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T04:37:25Z"
+        },
+        "message": "commit 1 for PR #51: refactor(growth_referrals): update payout_sync.py"
+      }
+    },
+    {
+      "sha": "45a7fdf22bb2",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T05:07:25Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T05:07:25Z"
+        },
+        "message": "commit 2 for PR #51: refactor(growth_referrals): update payout_sync.py"
+      }
+    },
+    {
+      "sha": "ff344881e5dd",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T05:37:25Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T05:37:25Z"
+        },
+        "message": "commit 3 for PR #51: refactor(growth_referrals): update payout_sync.py"
+      }
+    },
+    {
+      "sha": "be274db06f83",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T06:07:25Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2025-10-27T06:07:25Z"
+        },
+        "message": "commit 4 for PR #51: refactor(growth_referrals): update payout_sync.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 5101,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-28T13:37:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/51#pullrequestreview-5101"
+    },
+    {
+      "id": 5102,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-28T13:37:25Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/51#pullrequestreview-5102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 281,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 281: verify boundary checks on line 15.",
+      "created_at": "2025-10-28T13:37:25Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 15
+    },
+    {
+      "id": 282,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 282: verify boundary checks on line 25.",
+      "created_at": "2025-10-28T13:37:25Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 25
+    },
+    {
+      "id": 283,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 283: verify boundary checks on line 15.",
+      "created_at": "2025-10-28T13:37:25Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 15
+    },
+    {
+      "id": 284,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 284: verify boundary checks on line 25.",
+      "created_at": "2025-10-28T13:37:25Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 25
+    },
+    {
+      "id": 285,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 285: verify boundary checks on line 35.",
+      "created_at": "2025-10-28T13:37:25Z",
+      "path": "growth/referrals/payout_sync.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": 2000247,
+  "number": 247,
+  "title": "FEATURE: auth-mfa improvements for latency",
+  "body": "Detailed description for feature tracking in module auth/mfa/.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 29414,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-14T11:52:26Z",
+  "updated_at": "2026-06-28T11:52:26Z",
+  "closed_at": "2026-06-28T11:52:26Z",
+  "labels": [
+    "feature",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71012,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #1012 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-14T13:52:26Z"
+    },
+    {
+      "id": 71013,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #1013 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-14T17:52:26Z"
+    },
+    {
+      "id": 71014,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1014 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-15T00:52:26Z"
+    },
+    {
+      "id": 71015,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #1015 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-15T09:52:26Z"
+    },
+    {
+      "id": 71016,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #1016 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-16T07:52:26Z"
+    },
+    {
+      "id": 71017,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #1017 on issue #247: updates from triage and reproduction steps.",
+      "created_at": "2026-06-17T04:52:26Z"
+    }
+  ]
+}

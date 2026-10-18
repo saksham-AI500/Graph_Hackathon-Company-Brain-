@@ -1,0 +1,58 @@
+{
+  "id": 2000255,
+  "number": 255,
+  "title": "BUG: growth-referrals improvements for throughput",
+  "body": "Detailed description for bug tracking in module growth/referrals/.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 21335,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-06-22T19:17:27Z",
+  "updated_at": "2026-06-22T19:17:27Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71048,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #1048 on issue #255: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T07:17:27Z"
+    },
+    {
+      "id": 71049,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #1049 on issue #255: updates from triage and reproduction steps.",
+      "created_at": "2026-06-23T19:17:27Z"
+    },
+    {
+      "id": 71050,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #1050 on issue #255: updates from triage and reproduction steps.",
+      "created_at": "2026-06-24T09:17:27Z"
+    },
+    {
+      "id": 71051,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1051 on issue #255: updates from triage and reproduction steps.",
+      "created_at": "2026-06-25T04:17:27Z"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": 1000551,
+  "number": 551,
+  "state": "closed",
+  "title": "fix(search): update synonyms.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 21807,
+    "type": "User"
+  },
+  "created_at": "2026-07-06T17:16:42Z",
+  "updated_at": "2026-07-09T03:16:42Z",
+  "closed_at": "2026-07-09T03:16:42Z",
+  "merged_at": "2026-07-09T03:16:42Z",
+  "merge_commit_sha": "329669f54eb0",
+  "head": {
+    "ref": "feature/pr-551",
+    "sha": "329669f54eb0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/551",
+  "files": [
+    {
+      "filename": "search/__pycache__/synonyms.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 5,
+      "changes": 48
+    },
+    {
+      "filename": "search/indexer/document_store.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3bf782fa9ae5",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-06T17:16:42Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-06T17:16:42Z"
+        },
+        "message": "commit 1 for PR #551: fix(search): update synonyms.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "329669f54eb0",
+      "commit": {
+        "author": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-06T17:46:42Z"
+        },
+        "committer": {
+          "name": "Fiona Gallagher",
+          "email": "fiona-gallagher@example.com",
+          "date": "2026-07-06T17:46:42Z"
+        },
+        "message": "commit 2 for PR #551: fix(search): update synonyms.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 55101,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-07T15:16:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/551#pullrequestreview-55101"
+    },
+    {
+      "id": 55102,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-07T15:16:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/551#pullrequestreview-55102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2945,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2945: verify boundary checks on line 15.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2946,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2946: verify boundary checks on line 25.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2947,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 2947: verify boundary checks on line 35.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2948,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2948: verify boundary checks on line 15.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2949,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2949: verify boundary checks on line 25.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2950,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2950: verify boundary checks on line 35.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2951,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Review comment 2951: verify boundary checks on line 45.",
+      "created_at": "2026-07-07T15:16:42Z",
+      "path": "search/__pycache__/synonyms.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": 1000510,
+  "number": 510,
+  "state": "closed",
+  "title": "chore(growth_experiments): update statistical_engine.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-06-15T23:35:07Z",
+  "updated_at": "2026-06-18T06:35:07Z",
+  "closed_at": "2026-06-18T06:35:07Z",
+  "merged_at": "2026-06-18T06:35:07Z",
+  "merge_commit_sha": "10f95ddbf07e",
+  "head": {
+    "ref": "feature/pr-510",
+    "sha": "10f95ddbf07e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/510",
+  "files": [
+    {
+      "filename": "growth/experiments/statistical_engine.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 2,
+      "changes": 41
+    },
+    {
+      "filename": "growth/experiments/__pycache__/segmentation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 6,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d16d2875d843",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-15T23:35:07Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-15T23:35:07Z"
+        },
+        "message": "commit 1 for PR #510: chore(growth_experiments): update statistical_engine.py"
+      }
+    },
+    {
+      "sha": "a47a5a5505b4",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-16T00:05:07Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-16T00:05:07Z"
+        },
+        "message": "commit 2 for PR #510: chore(growth_experiments): update statistical_engine.py"
+      }
+    },
+    {
+      "sha": "10f95ddbf07e",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-16T00:35:07Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-06-16T00:35:07Z"
+        },
+        "message": "commit 3 for PR #510: chore(growth_experiments): update statistical_engine.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 51001,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-17T21:35:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/510#pullrequestreview-51001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2726,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2726: verify boundary checks on line 15.",
+      "created_at": "2026-06-17T21:35:07Z",
+      "path": "growth/experiments/statistical_engine.py",
+      "line": 15
+    },
+    {
+      "id": 2727,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2727: verify boundary checks on line 25.",
+      "created_at": "2026-06-17T21:35:07Z",
+      "path": "growth/experiments/statistical_engine.py",
+      "line": 25
+    }
+  ]
+}

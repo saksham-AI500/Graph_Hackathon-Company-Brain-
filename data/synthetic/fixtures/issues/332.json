@@ -1,0 +1,49 @@
+{
+  "id": 2000332,
+  "number": 332,
+  "title": "BUG: billing improvements for security",
+  "body": "Detailed description for bug tracking in module billing/.",
+  "user": {
+    "login": "noah-kim",
+    "id": 24338,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-10T23:00:06Z",
+  "updated_at": "2026-10-05T23:00:06Z",
+  "closed_at": "2026-10-05T23:00:06Z",
+  "labels": [
+    "bug",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71359,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #1359 on issue #332: updates from triage and reproduction steps.",
+      "created_at": "2026-09-11T05:00:06Z"
+    },
+    {
+      "id": 71360,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #1360 on issue #332: updates from triage and reproduction steps.",
+      "created_at": "2026-09-12T04:00:06Z"
+    },
+    {
+      "id": 71361,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1361 on issue #332: updates from triage and reproduction steps.",
+      "created_at": "2026-09-13T03:00:06Z"
+    }
+  ]
+}

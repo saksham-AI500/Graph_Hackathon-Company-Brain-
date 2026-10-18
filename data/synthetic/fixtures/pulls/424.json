@@ -1,0 +1,257 @@
+{
+  "id": 1000424,
+  "number": 424,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update config_exp.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "leila-farah",
+    "id": 23219,
+    "type": "User"
+  },
+  "created_at": "2026-05-04T10:17:38Z",
+  "updated_at": "2026-05-05T14:17:38Z",
+  "closed_at": "2026-05-05T14:17:38Z",
+  "merged_at": "2026-05-05T14:17:38Z",
+  "merge_commit_sha": "94d64d88b6f6",
+  "head": {
+    "ref": "feature/pr-424",
+    "sha": "94d64d88b6f6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/424",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 14,
+      "changes": 31
+    },
+    {
+      "filename": "growth/experiments/README.md",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 15,
+      "changes": 57
+    },
+    {
+      "filename": "growth/experiments/__pycache__/overrides.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 2,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3cdd000a42a5",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T10:17:38Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T10:17:38Z"
+        },
+        "message": "commit 1 for PR #424: refactor(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "06701e2fac73",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T10:47:38Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T10:47:38Z"
+        },
+        "message": "commit 2 for PR #424: refactor(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "94d64d88b6f6",
+      "commit": {
+        "author": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T11:17:38Z"
+        },
+        "committer": {
+          "name": "Leila Farah",
+          "email": "leila-farah@example.com",
+          "date": "2026-05-04T11:17:38Z"
+        },
+        "message": "commit 3 for PR #424: refactor(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 42401,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-06T08:17:38Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/424#pullrequestreview-42401"
+    },
+    {
+      "id": 42402,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-06T08:17:38Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/424#pullrequestreview-42402"
+    },
+    {
+      "id": 42403,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-06T08:17:38Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/424#pullrequestreview-42403"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2247,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2247: verify boundary checks on line 15.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2248,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2248: verify boundary checks on line 25.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2249,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2249: verify boundary checks on line 35.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2250,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2250: verify boundary checks on line 45.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2251,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Review comment 2251: verify boundary checks on line 55.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2252,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 2252: verify boundary checks on line 15.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2253,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 2253: verify boundary checks on line 25.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2254,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2254: verify boundary checks on line 15.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2255,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2255: verify boundary checks on line 25.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2256,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2256: verify boundary checks on line 35.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2257,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2257: verify boundary checks on line 45.",
+      "created_at": "2026-05-06T08:17:38Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

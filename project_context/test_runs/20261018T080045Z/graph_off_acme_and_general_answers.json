@@ -1,0 +1,72 @@
+[
+  {
+    "question": "Which team owns the payments/ module, as far as you know?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "I don't have Acme's repository data, so I cannot answer which team owns the payments/ module. To determine this, I would need access to the repository's CODEOWNERS file or module ownership documentation.",
+    "refusal_reason": null,
+    "unresolved": []
+  },
+  {
+    "question": "Who is on call next week at Acme Platform?",
+    "mode": "graph_off",
+    "status": "REFUSED",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "I don't have Acme's repository data, so I cannot answer who is on call next week. To find this information, check the company's on-call schedule or contact the team responsible for managing it.",
+    "refusal_reason": "Question asks for private internal or ungrounded data",
+    "unresolved": []
+  },
+  {
+    "question": "What does a CODEOWNERS file do?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "A CODEOWNERS file specifies who should review changes to specific files or directories in a repository. It ensures that the right people are automatically requested as reviewers when a pull request touches those areas.\n\nContext: This is a general software engineering concept, not specific to Acme's repository data. CODEOWNERS files are commonly used in Git-based workflows to streamline code review processes.\n\nReasoning: The CODEOWNERS file maps file paths to individuals or teams, enabling automated reviewer assignment. This helps maintain code quality by involving relevant experts in reviews. It is a standard practice in many software projects to manage code ownership and review responsibilities efficiently.",
+    "refusal_reason": null,
+    "unresolved": []
+  },
+  {
+    "question": "What is a pull request review?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "A pull request review is a process where team members examine proposed changes to a codebase before they are merged, ensuring quality, correctness, and alignment with project goals.  \n\nContext: This is a general software engineering concept, not specific to Acme Platform Inc.  \n\nReasoning: Reviews typically involve checking for bugs, adherence to coding standards, and potential impacts on the system. They are a key part of collaborative development workflows like GitHub or GitLab.  \n\nNot in the data: No Acme-specific repository data is available to describe their internal review process.  \n\nSources:  \n[S1] General knowledge of software development practices.",
+    "refusal_reason": null,
+    "unresolved": []
+  },
+  {
+    "question": "What is an ADR?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "An ADR (Architectural Decision Record) is a document that captures a significant architectural decision made in a project, including the context, options considered, and the rationale for the chosen solution.  \n\nContext: ADRs are commonly used in software engineering to provide transparency and traceability for key design choices. They help teams understand why certain decisions were made and ensure consistency over time.  \n\nReasoning: ADRs are particularly useful in collaborative environments where multiple stakeholders need to align on architectural choices. They serve as a historical record that can be referenced when revisiting or evolving the architecture.  \n\nSources:  \n[S1] General software engineering knowledge on Architectural Decision Records.",
+    "refusal_reason": null,
+    "unresolved": []
+  },
+  {
+    "question": "Why use exponential backoff with jitter?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "Exponential backoff with jitter is used to prevent synchronization and reduce contention in distributed systems when retrying failed operations. It combines exponential delays with random variation to avoid thundering herd problems.\n\nContext: Exponential backoff increases the delay between retries exponentially (e.g., 1s, 2s, 4s), while jitter adds randomness to these delays. This approach is commonly applied in APIs, databases, and network protocols.\n\nReasoning: Without jitter, multiple clients retrying simultaneously could create synchronized retry waves, overwhelming the system. Jitter spreads out retries, reducing peak load and improving system stability. Exponential backoff ensures retries don\u2019t overwhelm the system, while jitter prevents synchronization.\n\nSources:  \nGeneral software engineering knowledge.",
+    "refusal_reason": null,
+    "unresolved": []
+  },
+  {
+    "question": "What does RBAC mean?",
+    "mode": "graph_off",
+    "status": "ANSWERED_UNCERTAIN",
+    "model_used": "deepseek/deepseek-chat",
+    "fabricated_citations": 0,
+    "answer": "RBAC stands for Role-Based Access Control, a method of restricting system access to authorized users based on their roles within an organization.\n\nContext: RBAC is a widely used security model in software engineering and IT systems, applicable as of today. It simplifies access management by assigning permissions to roles rather than individual users.\n\nReasoning: RBAC is a standard approach in access control systems, where users are assigned roles, and roles are granted permissions. This model enhances security and simplifies administration by reducing the complexity of managing individual user permissions.\n\nSources:\n[S1] General knowledge in software engineering and security practices.",
+    "refusal_reason": null,
+    "unresolved": []
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "id": 2000206,
+  "number": 206,
+  "title": "INCIDENT: search improvements for latency",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "devon-reed",
+    "id": 20546,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-02T19:00:16Z",
+  "updated_at": "2026-05-02T19:00:16Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70841,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #841 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-03T09:00:16Z"
+    },
+    {
+      "id": 70842,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #842 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-04T04:00:16Z"
+    },
+    {
+      "id": 70843,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #843 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-04T14:00:16Z"
+    },
+    {
+      "id": 70844,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #844 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-04T18:00:16Z"
+    },
+    {
+      "id": 70845,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #845 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-05T07:00:16Z"
+    },
+    {
+      "id": 70846,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #846 on issue #206: updates from triage and reproduction steps.",
+      "created_at": "2026-05-05T12:00:16Z"
+    }
+  ]
+}

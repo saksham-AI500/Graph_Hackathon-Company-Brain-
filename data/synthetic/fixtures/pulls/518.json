@@ -1,0 +1,234 @@
+{
+  "id": 1000518,
+  "number": 518,
+  "state": "closed",
+  "title": "docs(payments): update receipts.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-06-19T12:10:59Z",
+  "updated_at": "2026-06-21T13:10:59Z",
+  "closed_at": "2026-06-21T13:10:59Z",
+  "merged_at": "2026-06-21T13:10:59Z",
+  "merge_commit_sha": "803e6bb23aa3",
+  "head": {
+    "ref": "feature/pr-518",
+    "sha": "803e6bb23aa3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/518",
+  "files": [
+    {
+      "filename": "payments/receipts.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 35
+    },
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 3,
+      "changes": 20
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5acd4fc3592f",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-06-19T12:10:59Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-06-19T12:10:59Z"
+        },
+        "message": "commit 1 for PR #518: docs(payments): update receipts.py"
+      }
+    },
+    {
+      "sha": "803e6bb23aa3",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-06-19T12:40:59Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-06-19T12:40:59Z"
+        },
+        "message": "commit 2 for PR #518: docs(payments): update receipts.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 51801,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-21T05:10:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/518#pullrequestreview-51801"
+    },
+    {
+      "id": 51802,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-21T05:10:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/518#pullrequestreview-51802"
+    },
+    {
+      "id": 51803,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-21T05:10:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/518#pullrequestreview-51803"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2769,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2769: verify boundary checks on line 15.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 15
+    },
+    {
+      "id": 2770,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2770: verify boundary checks on line 25.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 25
+    },
+    {
+      "id": 2771,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Review comment 2771: verify boundary checks on line 35.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 35
+    },
+    {
+      "id": 2772,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2772: verify boundary checks on line 15.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 15
+    },
+    {
+      "id": 2773,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2773: verify boundary checks on line 25.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 25
+    },
+    {
+      "id": 2774,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2774: verify boundary checks on line 35.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 35
+    },
+    {
+      "id": 2775,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2775: verify boundary checks on line 45.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 45
+    },
+    {
+      "id": 2776,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2776: verify boundary checks on line 15.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 15
+    },
+    {
+      "id": 2777,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2777: verify boundary checks on line 25.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 25
+    },
+    {
+      "id": 2778,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2778: verify boundary checks on line 35.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 35
+    },
+    {
+      "id": 2779,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Review comment 2779: verify boundary checks on line 45.",
+      "created_at": "2026-06-21T05:10:59Z",
+      "path": "payments/receipts.py",
+      "line": 45
+    }
+  ]
+}

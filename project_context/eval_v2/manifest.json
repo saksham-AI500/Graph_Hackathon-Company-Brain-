@@ -74,8 +74,11 @@
     }
   },
   "execution_settings": {
-    "model_identifier": "anthropic/claude-3.5-sonnet",
+    "model_identifier": "deepseek/deepseek-chat",
     "temperature": 0.0,
+    "max_tokens": 1024,
+    "max_steps": 5,
+    "max_retries": 1,
     "repetitions_per_question": 3,
     "timeout_seconds": 60,
     "fallback_mode": "DETERMINISTIC_GROUNDED"

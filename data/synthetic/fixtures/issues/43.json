@@ -1,0 +1,78 @@
+{
+  "id": 2000043,
+  "number": 43,
+  "title": "INCIDENT: search improvements for caching",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 21433,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-11-14T02:13:49Z",
+  "updated_at": "2025-11-14T02:13:49Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [
+    162
+  ],
+  "comments": [
+    {
+      "id": 70168,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #168 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-14T13:13:49Z"
+    },
+    {
+      "id": 70169,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #169 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-15T02:13:49Z"
+    },
+    {
+      "id": 70170,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #170 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-15T13:13:49Z"
+    },
+    {
+      "id": 70171,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #171 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-16T09:13:49Z"
+    },
+    {
+      "id": 70172,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #172 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-17T09:13:49Z"
+    },
+    {
+      "id": 70173,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #173 on issue #43: updates from triage and reproduction steps.",
+      "created_at": "2025-11-17T14:13:49Z"
+    }
+  ]
+}

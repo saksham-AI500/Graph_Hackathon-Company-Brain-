@@ -1,0 +1,124 @@
+{
+  "id": 1000022,
+  "number": 22,
+  "state": "closed",
+  "title": "test(shared_utils): update collections_ext.py",
+  "body": "Implementation changes for shared_utils module improvements.\n\nFixes #118",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2025-10-12T11:47:44Z",
+  "updated_at": "2025-10-15T00:47:44Z",
+  "closed_at": "2025-10-15T00:47:44Z",
+  "merged_at": "2025-10-15T00:47:44Z",
+  "merge_commit_sha": "85f318ee0c2b",
+  "head": {
+    "ref": "feature/pr-22",
+    "sha": "85f318ee0c2b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/22",
+  "files": [
+    {
+      "filename": "shared/utils/collections_ext.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 13,
+      "changes": 12
+    },
+    {
+      "filename": "shared/utils/deep_copy.py",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 14,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "55bbc916b76f",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-10-12T11:47:44Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-10-12T11:47:44Z"
+        },
+        "message": "commit 1 for PR #22: test(shared_utils): update collections_ext.py"
+      }
+    },
+    {
+      "sha": "85f318ee0c2b",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-10-12T12:17:44Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2025-10-12T12:17:44Z"
+        },
+        "message": "commit 2 for PR #22: test(shared_utils): update collections_ext.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 2201,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-13T02:47:44Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/22#pullrequestreview-2201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 134,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 134: verify boundary checks on line 15.",
+      "created_at": "2025-10-13T02:47:44Z",
+      "path": "shared/utils/collections_ext.py",
+      "line": 15
+    },
+    {
+      "id": 135,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 135: verify boundary checks on line 25.",
+      "created_at": "2025-10-13T02:47:44Z",
+      "path": "shared/utils/collections_ext.py",
+      "line": 25
+    },
+    {
+      "id": 136,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 136: verify boundary checks on line 35.",
+      "created_at": "2025-10-13T02:47:44Z",
+      "path": "shared/utils/collections_ext.py",
+      "line": 35
+    }
+  ]
+}

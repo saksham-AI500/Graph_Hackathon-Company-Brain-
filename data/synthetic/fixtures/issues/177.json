@@ -1,0 +1,76 @@
+{
+  "id": 2000177,
+  "number": 177,
+  "title": "PERF: api-gateway improvements for throughput",
+  "body": "Detailed description for perf tracking in module api/gateway/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-04-02T14:05:48Z",
+  "updated_at": "2026-04-23T14:05:48Z",
+  "closed_at": "2026-04-23T14:05:48Z",
+  "labels": [
+    "perf",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70722,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #722 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-02T17:05:48Z"
+    },
+    {
+      "id": 70723,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #723 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-03T02:05:48Z"
+    },
+    {
+      "id": 70724,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #724 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-03T09:05:48Z"
+    },
+    {
+      "id": 70725,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #725 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-04T05:05:48Z"
+    },
+    {
+      "id": 70726,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #726 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-04T11:05:48Z"
+    },
+    {
+      "id": 70727,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #727 on issue #177: updates from triage and reproduction steps.",
+      "created_at": "2026-04-04T14:05:48Z"
+    }
+  ]
+}

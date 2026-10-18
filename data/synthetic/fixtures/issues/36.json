@@ -1,0 +1,60 @@
+{
+  "id": 2000036,
+  "number": 36,
+  "title": "FEATURE: payments-refunds improvements for security",
+  "body": "Detailed description for feature tracking in module payments/refunds/.",
+  "user": {
+    "login": "lucas-vogel",
+    "id": 29033,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-06T19:10:11Z",
+  "updated_at": "2025-11-18T19:10:11Z",
+  "closed_at": "2025-11-18T19:10:11Z",
+  "labels": [
+    "feature",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    568
+  ],
+  "comments": [
+    {
+      "id": 70145,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #145 on issue #36: updates from triage and reproduction steps.",
+      "created_at": "2025-11-07T15:10:11Z"
+    },
+    {
+      "id": 70146,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Comment #146 on issue #36: updates from triage and reproduction steps.",
+      "created_at": "2025-11-07T21:10:11Z"
+    },
+    {
+      "id": 70147,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #147 on issue #36: updates from triage and reproduction steps.",
+      "created_at": "2025-11-08T02:10:11Z"
+    },
+    {
+      "id": 70148,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #148 on issue #36: updates from triage and reproduction steps.",
+      "created_at": "2025-11-08T21:10:11Z"
+    }
+  ]
+}

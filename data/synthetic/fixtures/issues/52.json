@@ -1,0 +1,42 @@
+{
+  "id": 2000052,
+  "number": 52,
+  "title": "TASK: payments improvements for security",
+  "body": "Detailed description for task tracking in module payments/.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 25961,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-23T11:11:17Z",
+  "updated_at": "2025-11-30T11:11:17Z",
+  "closed_at": "2025-11-30T11:11:17Z",
+  "labels": [
+    "task",
+    "payments"
+  ],
+  "linked_pulls": [
+    113
+  ],
+  "comments": [
+    {
+      "id": 70210,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #210 on issue #52: updates from triage and reproduction steps.",
+      "created_at": "2025-11-23T20:11:17Z"
+    },
+    {
+      "id": 70211,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #211 on issue #52: updates from triage and reproduction steps.",
+      "created_at": "2025-11-24T17:11:17Z"
+    }
+  ]
+}

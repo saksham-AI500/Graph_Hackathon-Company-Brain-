@@ -1,0 +1,12 @@
+{
+  "question_id": "GEN-05",
+  "question": "What does RBAC mean?",
+  "mode": "graph_off",
+  "run_index": 1,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "RBAC stands for Role-Based Access Control, a method of regulating access to computer or network resources based on the roles of individual users within an enterprise.\n\nContext: RBAC is a widely used access control mechanism in software systems, where permissions are assigned to roles rather than individual users. Users are then assigned to roles, simplifying permission management and enhancing security.\n\nReasoning: This definition is based on general software engineering knowledge, as no specific Acme Platform Inc. repository data is available to provide a company-specific context.\n\nNot in the data: No specific implementation details or examples from Acme Platform Inc. are available.\n\nSources: General software engineering knowledge.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:06:26.240447+00:00",
+  "latency_ms": 7458.52,
+  "is_correct": true
+}

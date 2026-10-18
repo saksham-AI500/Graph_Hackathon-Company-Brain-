@@ -19,6 +19,9 @@ class InvestigationInput(BaseModel):
             return v
         if isinstance(v, str):
             v_clean = v.strip()
+            # Allow optional leading '#' (e.g. '#3339')
+            if v_clean.startswith("#") and v_clean[1:].strip().isdigit():
+                v_clean = v_clean[1:].strip()
             # If plain numeric string
             if v_clean.isdigit():
                 num = int(v_clean)

@@ -1,0 +1,187 @@
+{
+  "id": 1000272,
+  "number": 272,
+  "state": "closed",
+  "title": "refactor(search): update inverted_index.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-02-16T00:37:51Z",
+  "updated_at": "2026-02-17T00:37:51Z",
+  "closed_at": "2026-02-17T00:37:51Z",
+  "merged_at": "2026-02-17T00:37:51Z",
+  "merge_commit_sha": "3aafffc94ddf",
+  "head": {
+    "ref": "feature/pr-272",
+    "sha": "3aafffc94ddf"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/272",
+  "files": [
+    {
+      "filename": "api/gateway/router.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 4,
+      "changes": 29
+    }
+  ],
+  "commits": [
+    {
+      "sha": "932b12d50791",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T00:37:51Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T00:37:51Z"
+        },
+        "message": "commit 1 for PR #272: refactor(search): update inverted_index.py"
+      }
+    },
+    {
+      "sha": "9bd49424c6c7",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:07:51Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:07:51Z"
+        },
+        "message": "commit 2 for PR #272: refactor(search): update inverted_index.py"
+      }
+    },
+    {
+      "sha": "0ae5aea67cd2",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:37:51Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T01:37:51Z"
+        },
+        "message": "commit 3 for PR #272: refactor(search): update inverted_index.py"
+      }
+    },
+    {
+      "sha": "869d7769b9ab",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:07:51Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:07:51Z"
+        },
+        "message": "commit 4 for PR #272: refactor(search): update inverted_index.py"
+      }
+    },
+    {
+      "sha": "3aafffc94ddf",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:37:51Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-02-16T02:37:51Z"
+        },
+        "message": "commit 5 for PR #272: refactor(search): update inverted_index.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 27201,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-17T06:37:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/272#pullrequestreview-27201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1436,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1436: verify boundary checks on line 15.",
+      "created_at": "2026-02-17T06:37:51Z",
+      "path": "api/gateway/router.py",
+      "line": 15
+    },
+    {
+      "id": 1437,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1437: verify boundary checks on line 25.",
+      "created_at": "2026-02-17T06:37:51Z",
+      "path": "api/gateway/router.py",
+      "line": 25
+    },
+    {
+      "id": 1438,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1438: verify boundary checks on line 35.",
+      "created_at": "2026-02-17T06:37:51Z",
+      "path": "api/gateway/router.py",
+      "line": 35
+    },
+    {
+      "id": 1439,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1439: verify boundary checks on line 45.",
+      "created_at": "2026-02-17T06:37:51Z",
+      "path": "api/gateway/router.py",
+      "line": 45
+    },
+    {
+      "id": 1440,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 1440: verify boundary checks on line 55.",
+      "created_at": "2026-02-17T06:37:51Z",
+      "path": "api/gateway/router.py",
+      "line": 55
+    }
+  ]
+}

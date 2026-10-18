@@ -1,0 +1,209 @@
+{
+  "id": 1000054,
+  "number": 54,
+  "state": "closed",
+  "title": "feat(auth): update sms_gateway.py",
+  "body": "Implementation changes for auth module improvements.\n\nFixes #74",
+  "user": {
+    "login": "maya-zheng",
+    "id": 21324,
+    "type": "User"
+  },
+  "created_at": "2025-10-28T04:31:51Z",
+  "updated_at": "2025-10-31T03:31:51Z",
+  "closed_at": "2025-10-31T03:31:51Z",
+  "merged_at": "2025-10-31T03:31:51Z",
+  "merge_commit_sha": "604e7139375e",
+  "head": {
+    "ref": "feature/pr-54",
+    "sha": "604e7139375e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/54",
+  "files": [
+    {
+      "filename": "auth/mfa/sms_gateway.py",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 13,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "1b792bf10d3d",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T04:31:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T04:31:51Z"
+        },
+        "message": "commit 1 for PR #54: feat(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "8a1efb8896f2",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T05:01:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T05:01:51Z"
+        },
+        "message": "commit 2 for PR #54: feat(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "60b12f8d82c9",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T05:31:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T05:31:51Z"
+        },
+        "message": "commit 3 for PR #54: feat(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "c944b8a0448c",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T06:01:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T06:01:51Z"
+        },
+        "message": "commit 4 for PR #54: feat(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "604e7139375e",
+      "commit": {
+        "author": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T06:31:51Z"
+        },
+        "committer": {
+          "name": "Maya Zheng",
+          "email": "maya-zheng@example.com",
+          "date": "2025-10-28T06:31:51Z"
+        },
+        "message": "commit 5 for PR #54: feat(auth): update sms_gateway.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 5401,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-29T15:31:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/54#pullrequestreview-5401"
+    },
+    {
+      "id": 5402,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-29T15:31:51Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/54#pullrequestreview-5402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 298,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 298: verify boundary checks on line 15.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 299,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 299: verify boundary checks on line 25.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    },
+    {
+      "id": 300,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 300: verify boundary checks on line 15.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 301,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 301: verify boundary checks on line 25.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    },
+    {
+      "id": 302,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 302: verify boundary checks on line 35.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 35
+    },
+    {
+      "id": 303,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 303: verify boundary checks on line 45.",
+      "created_at": "2025-10-29T15:31:51Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 45
+    }
+  ]
+}

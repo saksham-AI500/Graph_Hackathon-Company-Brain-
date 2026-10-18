@@ -1,0 +1,153 @@
+{
+  "id": 1000466,
+  "number": 466,
+  "state": "open",
+  "title": "refactor(api_gateway): update router.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "felix-baum",
+    "id": 28109,
+    "type": "User"
+  },
+  "created_at": "2026-05-25T05:04:48Z",
+  "updated_at": "2026-05-25T05:04:48Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-466",
+    "sha": "f806f2021f81"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/466",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 6,
+      "changes": 12
+    },
+    {
+      "filename": "api/gateway/__pycache__/ip_blocklist.cpython-314.pyc",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 14,
+      "changes": 40
+    },
+    {
+      "filename": "api/gateway/__pycache__/request_id.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 10,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c59bb8dd1187",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-05-25T05:04:48Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-05-25T05:04:48Z"
+        },
+        "message": "commit 1 for PR #466: refactor(api_gateway): update router.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f806f2021f81",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-05-25T05:34:48Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-05-25T05:34:48Z"
+        },
+        "message": "commit 2 for PR #466: refactor(api_gateway): update router.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 46601,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-25T08:04:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/466#pullrequestreview-46601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2484,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2484: verify boundary checks on line 15.",
+      "created_at": "2026-05-25T08:04:48Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2485,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2485: verify boundary checks on line 25.",
+      "created_at": "2026-05-25T08:04:48Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2486,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2486: verify boundary checks on line 35.",
+      "created_at": "2026-05-25T08:04:48Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2487,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2487: verify boundary checks on line 45.",
+      "created_at": "2026-05-25T08:04:48Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2488,
+      "user": {
+        "login": "owen-murphy",
+        "type": "User"
+      },
+      "body": "Review comment 2488: verify boundary checks on line 55.",
+      "created_at": "2026-05-25T08:04:48Z",
+      "path": "api/gateway/__pycache__/router.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

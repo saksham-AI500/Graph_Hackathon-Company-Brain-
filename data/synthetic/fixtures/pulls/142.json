@@ -1,0 +1,244 @@
+{
+  "id": 1000142,
+  "number": 142,
+  "state": "closed",
+  "title": "fix(infra_deploy): update cert_manager.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2025-12-11T17:30:34Z",
+  "updated_at": "2025-12-13T07:30:34Z",
+  "closed_at": "2025-12-13T07:30:34Z",
+  "merged_at": "2025-12-13T07:30:34Z",
+  "merge_commit_sha": "14ea7b8f51fd",
+  "head": {
+    "ref": "feature/pr-142",
+    "sha": "14ea7b8f51fd"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/142",
+  "files": [
+    {
+      "filename": "infra/deploy/cert_manager.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 15,
+      "changes": 55
+    },
+    {
+      "filename": "infra/deploy/canary.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 1,
+      "changes": 28
+    }
+  ],
+  "commits": [
+    {
+      "sha": "45880302d8e0",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T17:30:34Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T17:30:34Z"
+        },
+        "message": "commit 1 for PR #142: fix(infra_deploy): update cert_manager.py"
+      }
+    },
+    {
+      "sha": "95620bdc92a7",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T18:00:34Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T18:00:34Z"
+        },
+        "message": "commit 2 for PR #142: fix(infra_deploy): update cert_manager.py"
+      }
+    },
+    {
+      "sha": "7516ba3e2ae7",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T18:30:34Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T18:30:34Z"
+        },
+        "message": "commit 3 for PR #142: fix(infra_deploy): update cert_manager.py"
+      }
+    },
+    {
+      "sha": "14ea7b8f51fd",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T19:00:34Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2025-12-11T19:00:34Z"
+        },
+        "message": "commit 4 for PR #142: fix(infra_deploy): update cert_manager.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 14201,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-12T14:30:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/142#pullrequestreview-14201"
+    },
+    {
+      "id": 14202,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-12T14:30:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/142#pullrequestreview-14202"
+    },
+    {
+      "id": 14203,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-12T14:30:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/142#pullrequestreview-14203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 771,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 771: verify boundary checks on line 15.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 772,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 772: verify boundary checks on line 25.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    },
+    {
+      "id": 773,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Review comment 773: verify boundary checks on line 15.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 774,
+      "user": {
+        "login": "fiona-gallagher",
+        "type": "User"
+      },
+      "body": "Review comment 774: verify boundary checks on line 25.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    },
+    {
+      "id": 775,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 775: verify boundary checks on line 15.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 15
+    },
+    {
+      "id": 776,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 776: verify boundary checks on line 25.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 25
+    },
+    {
+      "id": 777,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 777: verify boundary checks on line 35.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 35
+    },
+    {
+      "id": 778,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 778: verify boundary checks on line 45.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 45
+    },
+    {
+      "id": 779,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 779: verify boundary checks on line 55.",
+      "created_at": "2025-12-12T14:30:34Z",
+      "path": "infra/deploy/cert_manager.py",
+      "line": 55
+    }
+  ]
+}

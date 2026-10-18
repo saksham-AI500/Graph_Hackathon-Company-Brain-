@@ -1,0 +1,58 @@
+{
+  "id": 2000198,
+  "number": 198,
+  "title": "BUG: billing improvements for latency",
+  "body": "Detailed description for bug tracking in module billing/.",
+  "user": {
+    "login": "tariq-aziz",
+    "id": 20702,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-24T10:46:51Z",
+  "updated_at": "2026-04-24T10:46:51Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70799,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #799 on issue #198: updates from triage and reproduction steps.",
+      "created_at": "2026-04-24T12:46:51Z"
+    },
+    {
+      "id": 70800,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #800 on issue #198: updates from triage and reproduction steps.",
+      "created_at": "2026-04-25T08:46:51Z"
+    },
+    {
+      "id": 70801,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #801 on issue #198: updates from triage and reproduction steps.",
+      "created_at": "2026-04-26T05:46:51Z"
+    },
+    {
+      "id": 70802,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #802 on issue #198: updates from triage and reproduction steps.",
+      "created_at": "2026-04-26T11:46:51Z"
+    }
+  ]
+}

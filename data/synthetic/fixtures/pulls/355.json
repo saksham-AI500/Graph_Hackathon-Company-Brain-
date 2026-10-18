@@ -1,0 +1,187 @@
+{
+  "id": 1000355,
+  "number": 355,
+  "state": "closed",
+  "title": "fix(search_indexer): update backpressure.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-03-30T00:22:05Z",
+  "updated_at": "2026-03-31T11:22:05Z",
+  "closed_at": "2026-03-31T11:22:05Z",
+  "merged_at": "2026-03-31T11:22:05Z",
+  "merge_commit_sha": "e68b08e0c7ae",
+  "head": {
+    "ref": "feature/pr-355",
+    "sha": "e68b08e0c7ae"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/355",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 7,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6c0fa5822330",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T00:22:05Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T00:22:05Z"
+        },
+        "message": "commit 1 for PR #355: fix(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a8d84c412564",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T00:52:05Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T00:52:05Z"
+        },
+        "message": "commit 2 for PR #355: fix(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "cf8a4d1a0eaf",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T01:22:05Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T01:22:05Z"
+        },
+        "message": "commit 3 for PR #355: fix(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1cc991228abb",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T01:52:05Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T01:52:05Z"
+        },
+        "message": "commit 4 for PR #355: fix(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e68b08e0c7ae",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T02:22:05Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-30T02:22:05Z"
+        },
+        "message": "commit 5 for PR #355: fix(search_indexer): update backpressure.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 35501,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-31T09:22:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/355#pullrequestreview-35501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1855,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1855: verify boundary checks on line 15.",
+      "created_at": "2026-03-31T09:22:05Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1856,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1856: verify boundary checks on line 25.",
+      "created_at": "2026-03-31T09:22:05Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1857,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1857: verify boundary checks on line 35.",
+      "created_at": "2026-03-31T09:22:05Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1858,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1858: verify boundary checks on line 45.",
+      "created_at": "2026-03-31T09:22:05Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1859,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1859: verify boundary checks on line 55.",
+      "created_at": "2026-03-31T09:22:05Z",
+      "path": "search/indexer/__pycache__/backpressure.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

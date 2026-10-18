@@ -1,0 +1,175 @@
+{
+  "id": 1000136,
+  "number": 136,
+  "state": "closed",
+  "title": "chore(auth): update middleware.py",
+  "body": "Implementation changes for auth module improvements.\n\nFixes #69",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2025-12-08T17:10:23Z",
+  "updated_at": "2025-12-11T17:10:23Z",
+  "closed_at": "2025-12-11T17:10:23Z",
+  "merged_at": "2025-12-11T17:10:23Z",
+  "merge_commit_sha": "ba6c91cfdd2d",
+  "head": {
+    "ref": "feature/pr-136",
+    "sha": "ba6c91cfdd2d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/136",
+  "files": [
+    {
+      "filename": "auth/middleware.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 2,
+      "changes": 9
+    },
+    {
+      "filename": "auth/mfa/__pycache__/sms_gateway.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 8,
+      "changes": 38
+    },
+    {
+      "filename": "auth/__pycache__/oauth_provider.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 6,
+      "changes": 24
+    }
+  ],
+  "commits": [
+    {
+      "sha": "600e6c355934",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-12-08T17:10:23Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-12-08T17:10:23Z"
+        },
+        "message": "commit 1 for PR #136: chore(auth): update middleware.py"
+      }
+    },
+    {
+      "sha": "ba6c91cfdd2d",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-12-08T17:40:23Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-12-08T17:40:23Z"
+        },
+        "message": "commit 2 for PR #136: chore(auth): update middleware.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13601,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-08T22:10:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/136#pullrequestreview-13601"
+    },
+    {
+      "id": 13602,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-08T22:10:23Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/136#pullrequestreview-13602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 742,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 742: verify boundary checks on line 15.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 15
+    },
+    {
+      "id": 743,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 743: verify boundary checks on line 25.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 25
+    },
+    {
+      "id": 744,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 744: verify boundary checks on line 35.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 35
+    },
+    {
+      "id": 745,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 745: verify boundary checks on line 15.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 15
+    },
+    {
+      "id": 746,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 746: verify boundary checks on line 25.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 25
+    },
+    {
+      "id": 747,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 747: verify boundary checks on line 35.",
+      "created_at": "2025-12-08T22:10:23Z",
+      "path": "auth/middleware.py",
+      "line": 35
+    }
+  ]
+}

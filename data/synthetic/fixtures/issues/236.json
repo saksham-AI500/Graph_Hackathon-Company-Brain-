@@ -1,0 +1,58 @@
+{
+  "id": 2000236,
+  "number": 236,
+  "title": "FEATURE: search-indexer improvements for latency",
+  "body": "Detailed description for feature tracking in module search/indexer/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-03T00:29:24Z",
+  "updated_at": "2026-06-22T00:29:24Z",
+  "closed_at": "2026-06-22T00:29:24Z",
+  "labels": [
+    "feature",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70967,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #967 on issue #236: updates from triage and reproduction steps.",
+      "created_at": "2026-06-03T20:29:24Z"
+    },
+    {
+      "id": 70968,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #968 on issue #236: updates from triage and reproduction steps.",
+      "created_at": "2026-06-04T00:29:24Z"
+    },
+    {
+      "id": 70969,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #969 on issue #236: updates from triage and reproduction steps.",
+      "created_at": "2026-06-04T02:29:24Z"
+    },
+    {
+      "id": 70970,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #970 on issue #236: updates from triage and reproduction steps.",
+      "created_at": "2026-06-04T11:29:24Z"
+    }
+  ]
+}

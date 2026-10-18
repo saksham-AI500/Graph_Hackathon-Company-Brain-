@@ -156,6 +156,7 @@ class GitHubClient:
                 continue
             reviews.append(
                 ReviewRecord(
+                    id=item.get("id"),
                     author_login=user["login"],
                     author_url=user.get("html_url") or f"https://github.com/{user['login']}",
                     state=item.get("state", "COMMENTED"),

@@ -1,0 +1,251 @@
+{
+  "id": 1000437,
+  "number": 437,
+  "state": "closed",
+  "title": "test(notifications): update delivery_status.py",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-05-11T00:38:16Z",
+  "updated_at": "2026-05-12T12:38:16Z",
+  "closed_at": "2026-05-12T12:38:16Z",
+  "merged_at": "2026-05-12T12:38:16Z",
+  "merge_commit_sha": "2b94b7ef475a",
+  "head": {
+    "ref": "feature/pr-437",
+    "sha": "2b94b7ef475a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/437",
+  "files": [
+    {
+      "filename": "notifications/delivery_status.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 1,
+      "changes": 35
+    },
+    {
+      "filename": "notifications/__pycache__/templates.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 2,
+      "changes": 22
+    },
+    {
+      "filename": "notifications/__pycache__/metrics_notif.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 13,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "58e9ee6d3377",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T00:38:16Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T00:38:16Z"
+        },
+        "message": "commit 1 for PR #437: test(notifications): update delivery_status.py"
+      }
+    },
+    {
+      "sha": "9262b5f7a6bf",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T01:08:16Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T01:08:16Z"
+        },
+        "message": "commit 2 for PR #437: test(notifications): update delivery_status.py"
+      }
+    },
+    {
+      "sha": "dee8b6240b75",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T01:38:16Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T01:38:16Z"
+        },
+        "message": "commit 3 for PR #437: test(notifications): update delivery_status.py"
+      }
+    },
+    {
+      "sha": "2b94b7ef475a",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T02:08:16Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-05-11T02:08:16Z"
+        },
+        "message": "commit 4 for PR #437: test(notifications): update delivery_status.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 43701,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-11T03:38:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/437#pullrequestreview-43701"
+    },
+    {
+      "id": 43702,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-11T03:38:16Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/437#pullrequestreview-43702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2331,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2331: verify boundary checks on line 15.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 15
+    },
+    {
+      "id": 2332,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2332: verify boundary checks on line 25.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 25
+    },
+    {
+      "id": 2333,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2333: verify boundary checks on line 35.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 35
+    },
+    {
+      "id": 2334,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2334: verify boundary checks on line 45.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 45
+    },
+    {
+      "id": 2335,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2335: verify boundary checks on line 55.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 55
+    },
+    {
+      "id": 2336,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2336: verify boundary checks on line 15.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 15
+    },
+    {
+      "id": 2337,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2337: verify boundary checks on line 25.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 25
+    },
+    {
+      "id": 2338,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2338: verify boundary checks on line 35.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 35
+    },
+    {
+      "id": 2339,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2339: verify boundary checks on line 45.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 45
+    },
+    {
+      "id": 2340,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2340: verify boundary checks on line 55.",
+      "created_at": "2026-05-11T03:38:16Z",
+      "path": "notifications/delivery_status.py",
+      "line": 55
+    }
+  ]
+}

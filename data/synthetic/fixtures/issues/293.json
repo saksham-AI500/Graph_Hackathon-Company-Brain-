@@ -1,0 +1,40 @@
+{
+  "id": 2000293,
+  "number": 293,
+  "title": "INCIDENT: notifications improvements for throughput",
+  "body": "Detailed description for incident tracking in module notifications/.",
+  "user": {
+    "login": "liam-chen",
+    "id": 24218,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-01T09:12:13Z",
+  "updated_at": "2026-08-01T09:12:13Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "notifications"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71202,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #1202 on issue #293: updates from triage and reproduction steps.",
+      "created_at": "2026-08-02T01:12:13Z"
+    },
+    {
+      "id": 71203,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1203 on issue #293: updates from triage and reproduction steps.",
+      "created_at": "2026-08-02T18:12:13Z"
+    }
+  ]
+}

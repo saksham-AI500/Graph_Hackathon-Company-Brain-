@@ -1,0 +1,189 @@
+{
+  "id": 1000205,
+  "number": 205,
+  "state": "closed",
+  "title": "feat(gateway): add weighted round-robin upstream load balancing",
+  "body": "Implement upstream target weighting algorithm in api/gateway/load_balancer.py.",
+  "user": {
+    "login": "maya-lin",
+    "id": 25395,
+    "type": "User"
+  },
+  "created_at": "2026-01-12T15:07:29Z",
+  "updated_at": "2026-01-14T23:07:29Z",
+  "closed_at": "2026-01-14T23:07:29Z",
+  "merged_at": "2026-01-14T23:07:29Z",
+  "merge_commit_sha": "3f397dc6e1cb",
+  "head": {
+    "ref": "feature/pr-205",
+    "sha": "3f397dc6e1cb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/205",
+  "files": [
+    {
+      "filename": "api/gateway/load_balancer.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 3,
+      "changes": 57
+    },
+    {
+      "filename": "tests/test_api_gateway_router.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 8,
+      "changes": 43
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f002970386fa",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T15:07:29Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T15:07:29Z"
+        },
+        "message": "commit 1 for PR #205: feat(gateway): add weighted round-robin upstream load balancing"
+      }
+    },
+    {
+      "sha": "66b49a36a6d7",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T15:37:29Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T15:37:29Z"
+        },
+        "message": "commit 2 for PR #205: feat(gateway): add weighted round-robin upstream load balancing"
+      }
+    },
+    {
+      "sha": "96df95316b3f",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T16:07:29Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T16:07:29Z"
+        },
+        "message": "commit 3 for PR #205: feat(gateway): add weighted round-robin upstream load balancing"
+      }
+    },
+    {
+      "sha": "3f397dc6e1cb",
+      "commit": {
+        "author": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T16:37:29Z"
+        },
+        "committer": {
+          "name": "Maya Lin",
+          "email": "maya-lin@example.com",
+          "date": "2026-01-12T16:37:29Z"
+        },
+        "message": "commit 4 for PR #205: feat(gateway): add weighted round-robin upstream load balancing"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 20501,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-13T01:07:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/205#pullrequestreview-20501"
+    },
+    {
+      "id": 20502,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-13T01:07:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/205#pullrequestreview-20502"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1148,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1148: verify boundary checks on line 15.",
+      "created_at": "2026-01-13T01:07:29Z",
+      "path": "api/gateway/load_balancer.py",
+      "line": 15
+    },
+    {
+      "id": 1149,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1149: verify boundary checks on line 25.",
+      "created_at": "2026-01-13T01:07:29Z",
+      "path": "api/gateway/load_balancer.py",
+      "line": 25
+    },
+    {
+      "id": 1150,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1150: verify boundary checks on line 35.",
+      "created_at": "2026-01-13T01:07:29Z",
+      "path": "api/gateway/load_balancer.py",
+      "line": 35
+    },
+    {
+      "id": 1151,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1151: verify boundary checks on line 15.",
+      "created_at": "2026-01-13T01:07:29Z",
+      "path": "api/gateway/load_balancer.py",
+      "line": 15
+    },
+    {
+      "id": 1152,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 1152: verify boundary checks on line 25.",
+      "created_at": "2026-01-13T01:07:29Z",
+      "path": "api/gateway/load_balancer.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "id": 1000416,
+  "number": 416,
+  "state": "closed",
+  "title": "refactor(search): update ranking.py",
+  "body": "Implementation changes for search module improvements.\n\nFixes #19",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-04-29T09:44:03Z",
+  "updated_at": "2026-05-01T23:44:03Z",
+  "closed_at": "2026-05-01T23:44:03Z",
+  "merged_at": "2026-05-01T23:44:03Z",
+  "merge_commit_sha": "1488e2307eb4",
+  "head": {
+    "ref": "feature/pr-416",
+    "sha": "1488e2307eb4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/416",
+  "files": [
+    {
+      "filename": "search/ranking.py",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 11,
+      "changes": 31
+    },
+    {
+      "filename": "search/indexer/__pycache__/index_stats.cpython-314.pyc",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 7,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "01b7887700c2",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T09:44:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T09:44:03Z"
+        },
+        "message": "commit 1 for PR #416: refactor(search): update ranking.py"
+      }
+    },
+    {
+      "sha": "741bb934c51b",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T10:14:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T10:14:03Z"
+        },
+        "message": "commit 2 for PR #416: refactor(search): update ranking.py"
+      }
+    },
+    {
+      "sha": "fcf4ebf35e4d",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T10:44:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T10:44:03Z"
+        },
+        "message": "commit 3 for PR #416: refactor(search): update ranking.py"
+      }
+    },
+    {
+      "sha": "66684ec055bd",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T11:14:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T11:14:03Z"
+        },
+        "message": "commit 4 for PR #416: refactor(search): update ranking.py"
+      }
+    },
+    {
+      "sha": "1488e2307eb4",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T11:44:03Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-04-29T11:44:03Z"
+        },
+        "message": "commit 5 for PR #416: refactor(search): update ranking.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 41601,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-29T22:44:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/416#pullrequestreview-41601"
+    },
+    {
+      "id": 41602,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-29T22:44:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/416#pullrequestreview-41602"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2210,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2210: verify boundary checks on line 15.",
+      "created_at": "2026-04-29T22:44:03Z",
+      "path": "search/ranking.py",
+      "line": 15
+    },
+    {
+      "id": 2211,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2211: verify boundary checks on line 25.",
+      "created_at": "2026-04-29T22:44:03Z",
+      "path": "search/ranking.py",
+      "line": 25
+    },
+    {
+      "id": 2212,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2212: verify boundary checks on line 35.",
+      "created_at": "2026-04-29T22:44:03Z",
+      "path": "search/ranking.py",
+      "line": 35
+    },
+    {
+      "id": 2213,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2213: verify boundary checks on line 15.",
+      "created_at": "2026-04-29T22:44:03Z",
+      "path": "search/ranking.py",
+      "line": 15
+    },
+    {
+      "id": 2214,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2214: verify boundary checks on line 25.",
+      "created_at": "2026-04-29T22:44:03Z",
+      "path": "search/ranking.py",
+      "line": 25
+    }
+  ]
+}

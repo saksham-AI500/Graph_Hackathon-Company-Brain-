@@ -1,0 +1,172 @@
+{
+  "id": 1000283,
+  "number": 283,
+  "state": "closed",
+  "title": "feat(search): update stopwords.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2026-02-20T13:32:35Z",
+  "updated_at": "2026-02-22T03:32:35Z",
+  "closed_at": "2026-02-22T03:32:35Z",
+  "merged_at": "2026-02-22T03:32:35Z",
+  "merge_commit_sha": "380a6dc03c3f",
+  "head": {
+    "ref": "feature/pr-283",
+    "sha": "380a6dc03c3f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/283",
+  "files": [
+    {
+      "filename": "search/stopwords.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 15,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "f94897f76193",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-20T13:32:35Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-20T13:32:35Z"
+        },
+        "message": "commit 1 for PR #283: feat(search): update stopwords.py"
+      }
+    },
+    {
+      "sha": "380a6dc03c3f",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-20T14:02:35Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-20T14:02:35Z"
+        },
+        "message": "commit 2 for PR #283: feat(search): update stopwords.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 28301,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-22T03:32:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/283#pullrequestreview-28301"
+    },
+    {
+      "id": 28302,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-22T03:32:35Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/283#pullrequestreview-28302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1501,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1501: verify boundary checks on line 15.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 15
+    },
+    {
+      "id": 1502,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1502: verify boundary checks on line 25.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 25
+    },
+    {
+      "id": 1503,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1503: verify boundary checks on line 35.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 35
+    },
+    {
+      "id": 1504,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1504: verify boundary checks on line 45.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 45
+    },
+    {
+      "id": 1505,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1505: verify boundary checks on line 15.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 15
+    },
+    {
+      "id": 1506,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1506: verify boundary checks on line 25.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 25
+    },
+    {
+      "id": 1507,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1507: verify boundary checks on line 35.",
+      "created_at": "2026-02-22T03:32:35Z",
+      "path": "search/stopwords.py",
+      "line": 35
+    }
+  ]
+}

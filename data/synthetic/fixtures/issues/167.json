@@ -1,0 +1,58 @@
+{
+  "id": 2000167,
+  "number": 167,
+  "title": "TASK: notifications improvements for reliability",
+  "body": "Detailed description for task tracking in module notifications/.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 25435,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-23T04:32:50Z",
+  "updated_at": "2026-04-12T04:32:50Z",
+  "closed_at": "2026-04-12T04:32:50Z",
+  "labels": [
+    "task",
+    "notifications"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70680,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #680 on issue #167: updates from triage and reproduction steps.",
+      "created_at": "2026-03-23T17:32:50Z"
+    },
+    {
+      "id": 70681,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #681 on issue #167: updates from triage and reproduction steps.",
+      "created_at": "2026-03-24T13:32:50Z"
+    },
+    {
+      "id": 70682,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #682 on issue #167: updates from triage and reproduction steps.",
+      "created_at": "2026-03-24T22:32:50Z"
+    },
+    {
+      "id": 70683,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #683 on issue #167: updates from triage and reproduction steps.",
+      "created_at": "2026-03-25T08:32:50Z"
+    }
+  ]
+}

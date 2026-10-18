@@ -1,0 +1,49 @@
+{
+  "id": 2000266,
+  "number": 266,
+  "title": "TASK: infra-observability improvements for reliability",
+  "body": "Detailed description for task tracking in module infra/observability/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-07-04T06:36:10Z",
+  "updated_at": "2026-07-04T06:36:10Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71101,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1101 on issue #266: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T04:36:10Z"
+    },
+    {
+      "id": 71102,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1102 on issue #266: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T15:36:10Z"
+    },
+    {
+      "id": 71103,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #1103 on issue #266: updates from triage and reproduction steps.",
+      "created_at": "2026-07-06T05:36:10Z"
+    }
+  ]
+}

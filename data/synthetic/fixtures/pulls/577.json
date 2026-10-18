@@ -1,0 +1,169 @@
+{
+  "id": 1000577,
+  "number": 577,
+  "state": "closed",
+  "title": "feat(search): update highlight.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-07-20T08:59:34Z",
+  "updated_at": "2026-07-21T16:59:34Z",
+  "closed_at": "2026-07-21T16:59:34Z",
+  "merged_at": "2026-07-21T16:59:34Z",
+  "merge_commit_sha": "5b1354581382",
+  "head": {
+    "ref": "feature/pr-577",
+    "sha": "5b1354581382"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/577",
+  "files": [
+    {
+      "filename": "search/highlight.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 10,
+      "changes": 60
+    },
+    {
+      "filename": "search/metrics_search.py",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 8,
+      "changes": 24
+    },
+    {
+      "filename": "search/ab_search.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 1,
+      "changes": 13
+    }
+  ],
+  "commits": [
+    {
+      "sha": "3b6d7b6aac37",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T08:59:34Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T08:59:34Z"
+        },
+        "message": "commit 1 for PR #577: feat(search): update highlight.py"
+      }
+    },
+    {
+      "sha": "120ee551fc67",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T09:29:34Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T09:29:34Z"
+        },
+        "message": "commit 2 for PR #577: feat(search): update highlight.py"
+      }
+    },
+    {
+      "sha": "5b1354581382",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T09:59:34Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-07-20T09:59:34Z"
+        },
+        "message": "commit 3 for PR #577: feat(search): update highlight.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 57701,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-20T17:59:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/577#pullrequestreview-57701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3093,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3093: verify boundary checks on line 15.",
+      "created_at": "2026-07-20T17:59:34Z",
+      "path": "search/highlight.py",
+      "line": 15
+    },
+    {
+      "id": 3094,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3094: verify boundary checks on line 25.",
+      "created_at": "2026-07-20T17:59:34Z",
+      "path": "search/highlight.py",
+      "line": 25
+    },
+    {
+      "id": 3095,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3095: verify boundary checks on line 35.",
+      "created_at": "2026-07-20T17:59:34Z",
+      "path": "search/highlight.py",
+      "line": 35
+    },
+    {
+      "id": 3096,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3096: verify boundary checks on line 45.",
+      "created_at": "2026-07-20T17:59:34Z",
+      "path": "search/highlight.py",
+      "line": 45
+    },
+    {
+      "id": 3097,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 3097: verify boundary checks on line 55.",
+      "created_at": "2026-07-20T17:59:34Z",
+      "path": "search/highlight.py",
+      "line": 55
+    }
+  ]
+}

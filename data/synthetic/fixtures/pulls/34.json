@@ -1,0 +1,135 @@
+{
+  "id": 1000034,
+  "number": 34,
+  "state": "closed",
+  "title": "docs(infra_deploy): update secrets_loader.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2025-10-17T13:10:28Z",
+  "updated_at": "2025-10-19T12:10:28Z",
+  "closed_at": "2025-10-19T12:10:28Z",
+  "merged_at": "2025-10-19T12:10:28Z",
+  "merge_commit_sha": "b2375c300552",
+  "head": {
+    "ref": "feature/pr-34",
+    "sha": "b2375c300552"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/34",
+  "files": [
+    {
+      "filename": "infra/deploy/secrets_loader.py",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 11,
+      "changes": 28
+    },
+    {
+      "filename": "infra/deploy/__pycache__/cron_jobs.cpython-314.pyc",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 11,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4e7b56b30e78",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-17T13:10:28Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-17T13:10:28Z"
+        },
+        "message": "commit 1 for PR #34: docs(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "b2375c300552",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-17T13:40:28Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2025-10-17T13:40:28Z"
+        },
+        "message": "commit 2 for PR #34: docs(infra_deploy): update secrets_loader.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3401,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-18T19:10:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/34#pullrequestreview-3401"
+    }
+  ],
+  "comments": [
+    {
+      "id": 182,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 182: verify boundary checks on line 15.",
+      "created_at": "2025-10-18T19:10:28Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 15
+    },
+    {
+      "id": 183,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 183: verify boundary checks on line 25.",
+      "created_at": "2025-10-18T19:10:28Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 25
+    },
+    {
+      "id": 184,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 184: verify boundary checks on line 35.",
+      "created_at": "2025-10-18T19:10:28Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 35
+    },
+    {
+      "id": 185,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 185: verify boundary checks on line 45.",
+      "created_at": "2025-10-18T19:10:28Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 45
+    }
+  ]
+}

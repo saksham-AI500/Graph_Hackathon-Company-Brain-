@@ -1,0 +1,233 @@
+{
+  "id": 1000681,
+  "number": 681,
+  "state": "closed",
+  "title": "refactor(infra_deploy): update canary.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "tanya-popova",
+    "id": 22022,
+    "type": "User"
+  },
+  "created_at": "2026-09-10T12:33:21Z",
+  "updated_at": "2026-09-13T02:33:21Z",
+  "closed_at": "2026-09-13T02:33:21Z",
+  "merged_at": "2026-09-13T02:33:21Z",
+  "merge_commit_sha": "9e099eea9b4e",
+  "head": {
+    "ref": "feature/pr-681",
+    "sha": "9e099eea9b4e"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/681",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 10,
+      "changes": 12
+    },
+    {
+      "filename": "infra/deploy/cron_jobs.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 9,
+      "changes": 10
+    }
+  ],
+  "commits": [
+    {
+      "sha": "478ad85c28cb",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T12:33:21Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T12:33:21Z"
+        },
+        "message": "commit 1 for PR #681: refactor(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "aaf1e5338b43",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T13:03:21Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T13:03:21Z"
+        },
+        "message": "commit 2 for PR #681: refactor(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "309c092360f8",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T13:33:21Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T13:33:21Z"
+        },
+        "message": "commit 3 for PR #681: refactor(infra_deploy): update canary.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9e099eea9b4e",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T14:03:21Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-09-10T14:03:21Z"
+        },
+        "message": "commit 4 for PR #681: refactor(infra_deploy): update canary.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 68101,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-11T15:33:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/681#pullrequestreview-68101"
+    },
+    {
+      "id": 68102,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-11T15:33:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/681#pullrequestreview-68102"
+    },
+    {
+      "id": 68103,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-11T15:33:21Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/681#pullrequestreview-68103"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3588,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 3588: verify boundary checks on line 15.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3589,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 3589: verify boundary checks on line 25.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3590,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 3590: verify boundary checks on line 35.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3591,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 3591: verify boundary checks on line 15.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3592,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 3592: verify boundary checks on line 25.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3593,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 3593: verify boundary checks on line 35.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3594,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3594: verify boundary checks on line 15.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3595,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Review comment 3595: verify boundary checks on line 25.",
+      "created_at": "2026-09-11T15:33:21Z",
+      "path": "infra/deploy/__pycache__/canary.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

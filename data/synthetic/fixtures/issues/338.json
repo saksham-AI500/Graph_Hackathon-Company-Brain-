@@ -1,0 +1,49 @@
+{
+  "id": 2000338,
+  "number": 338,
+  "title": "TASK: search-indexer improvements for latency",
+  "body": "Detailed description for task tracking in module search/indexer/.",
+  "user": {
+    "login": "felix-baum",
+    "id": 21505,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-17T05:15:17Z",
+  "updated_at": "2026-10-12T05:15:17Z",
+  "closed_at": "2026-10-12T05:15:17Z",
+  "labels": [
+    "task",
+    "search-indexer"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71384,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #1384 on issue #338: updates from triage and reproduction steps.",
+      "created_at": "2026-09-17T12:15:17Z"
+    },
+    {
+      "id": 71385,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #1385 on issue #338: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T10:15:17Z"
+    },
+    {
+      "id": 71386,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1386 on issue #338: updates from triage and reproduction steps.",
+      "created_at": "2026-09-19T04:15:17Z"
+    }
+  ]
+}

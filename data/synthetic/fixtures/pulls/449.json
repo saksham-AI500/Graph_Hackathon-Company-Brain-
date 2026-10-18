@@ -1,0 +1,259 @@
+{
+  "id": 1000449,
+  "number": 449,
+  "state": "closed",
+  "title": "perf(notifications): update sms_service.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-05-15T14:18:50Z",
+  "updated_at": "2026-05-16T21:18:50Z",
+  "closed_at": "2026-05-16T21:18:50Z",
+  "merged_at": "2026-05-16T21:18:50Z",
+  "merge_commit_sha": "12f36fb84bea",
+  "head": {
+    "ref": "feature/pr-449",
+    "sha": "12f36fb84bea"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/449",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 12,
+      "changes": 59
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d5af36abe878",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T14:18:50Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T14:18:50Z"
+        },
+        "message": "commit 1 for PR #449: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ebe645e295a4",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T14:48:50Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T14:48:50Z"
+        },
+        "message": "commit 2 for PR #449: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e5f2d2073202",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T15:18:50Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T15:18:50Z"
+        },
+        "message": "commit 3 for PR #449: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "12f36fb84bea",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T15:48:50Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-05-15T15:48:50Z"
+        },
+        "message": "commit 4 for PR #449: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 44901,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-15T18:18:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/449#pullrequestreview-44901"
+    },
+    {
+      "id": 44902,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-15T18:18:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/449#pullrequestreview-44902"
+    },
+    {
+      "id": 44903,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-15T18:18:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/449#pullrequestreview-44903"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2406,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 2406: verify boundary checks on line 15.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2407,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 2407: verify boundary checks on line 25.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2408,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 2408: verify boundary checks on line 35.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2409,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2409: verify boundary checks on line 15.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2410,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2410: verify boundary checks on line 25.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2411,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2411: verify boundary checks on line 35.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2412,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2412: verify boundary checks on line 45.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2413,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2413: verify boundary checks on line 55.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2414,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2414: verify boundary checks on line 15.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2415,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2415: verify boundary checks on line 25.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2416,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 2416: verify boundary checks on line 35.",
+      "created_at": "2026-05-15T18:18:50Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

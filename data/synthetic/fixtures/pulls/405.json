@@ -1,0 +1,140 @@
+{
+  "id": 1000405,
+  "number": 405,
+  "state": "closed",
+  "title": "chore(growth_experiments): update audit_experiments.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "devon-reed",
+    "id": 24698,
+    "type": "User"
+  },
+  "created_at": "2026-04-23T19:32:20Z",
+  "updated_at": "2026-04-24T19:32:20Z",
+  "closed_at": "2026-04-24T19:32:20Z",
+  "merged_at": "2026-04-24T19:32:20Z",
+  "merge_commit_sha": "1a4a2425f4a0",
+  "head": {
+    "ref": "feature/pr-405",
+    "sha": "1a4a2425f4a0"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/405",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/audit_experiments.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 8,
+      "changes": 57
+    },
+    {
+      "filename": "growth/experiments/__pycache__/cuped.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 10,
+      "changes": 43
+    }
+  ],
+  "commits": [
+    {
+      "sha": "50a53aeb0bb8",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T19:32:20Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T19:32:20Z"
+        },
+        "message": "commit 1 for PR #405: chore(growth_experiments): update audit_experiments.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "971f1a85583f",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T20:02:20Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T20:02:20Z"
+        },
+        "message": "commit 2 for PR #405: chore(growth_experiments): update audit_experiments.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1a4a2425f4a0",
+      "commit": {
+        "author": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T20:32:20Z"
+        },
+        "committer": {
+          "name": "Devon Reed",
+          "email": "devon-reed@example.com",
+          "date": "2026-04-23T20:32:20Z"
+        },
+        "message": "commit 3 for PR #405: chore(growth_experiments): update audit_experiments.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 40501,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-25T06:32:20Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/405#pullrequestreview-40501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2143,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2143: verify boundary checks on line 15.",
+      "created_at": "2026-04-25T06:32:20Z",
+      "path": "growth/experiments/__pycache__/audit_experiments.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2144,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2144: verify boundary checks on line 25.",
+      "created_at": "2026-04-25T06:32:20Z",
+      "path": "growth/experiments/__pycache__/audit_experiments.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2145,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Review comment 2145: verify boundary checks on line 35.",
+      "created_at": "2026-04-25T06:32:20Z",
+      "path": "growth/experiments/__pycache__/audit_experiments.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

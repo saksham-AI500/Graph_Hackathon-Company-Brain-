@@ -1,0 +1,227 @@
+{
+  "id": 1000294,
+  "number": 294,
+  "state": "closed",
+  "title": "refactor(auth): update identity_store.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-02-26T15:47:01Z",
+  "updated_at": "2026-03-01T13:47:01Z",
+  "closed_at": "2026-03-01T13:47:01Z",
+  "merged_at": "2026-03-01T13:47:01Z",
+  "merge_commit_sha": "e03f6880524b",
+  "head": {
+    "ref": "feature/pr-294",
+    "sha": "e03f6880524b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/294",
+  "files": [
+    {
+      "filename": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 10,
+      "changes": 6
+    },
+    {
+      "filename": "auth/__pycache__/revocation_list.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 2,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "498e8622315d",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T15:47:01Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T15:47:01Z"
+        },
+        "message": "commit 1 for PR #294: refactor(auth): update identity_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "04bce16f2aae",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T16:17:01Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T16:17:01Z"
+        },
+        "message": "commit 2 for PR #294: refactor(auth): update identity_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3ae35cb9da33",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T16:47:01Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T16:47:01Z"
+        },
+        "message": "commit 3 for PR #294: refactor(auth): update identity_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e1c487d73123",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T17:17:01Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T17:17:01Z"
+        },
+        "message": "commit 4 for PR #294: refactor(auth): update identity_store.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e03f6880524b",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T17:47:01Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-02-26T17:47:01Z"
+        },
+        "message": "commit 5 for PR #294: refactor(auth): update identity_store.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 29401,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-28T07:47:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/294#pullrequestreview-29401"
+    },
+    {
+      "id": 29402,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-28T07:47:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/294#pullrequestreview-29402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1567,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1567: verify boundary checks on line 15.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1568,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1568: verify boundary checks on line 25.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1569,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1569: verify boundary checks on line 15.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1570,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1570: verify boundary checks on line 25.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1571,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1571: verify boundary checks on line 35.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1572,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1572: verify boundary checks on line 45.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 1573,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1573: verify boundary checks on line 55.",
+      "created_at": "2026-02-28T07:47:01Z",
+      "path": "auth/__pycache__/identity_store.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

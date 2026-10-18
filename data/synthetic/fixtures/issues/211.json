@@ -1,0 +1,40 @@
+{
+  "id": 2000211,
+  "number": 211,
+  "title": "BUG: infra-deploy improvements for security",
+  "body": "Detailed description for bug tracking in module infra/deploy/.",
+  "user": {
+    "login": "liam-chen",
+    "id": 24218,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-08T00:27:59Z",
+  "updated_at": "2026-05-08T00:27:59Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "infra-deploy"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70861,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #861 on issue #211: updates from triage and reproduction steps.",
+      "created_at": "2026-05-08T06:27:59Z"
+    },
+    {
+      "id": 70862,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #862 on issue #211: updates from triage and reproduction steps.",
+      "created_at": "2026-05-08T18:27:59Z"
+    }
+  ]
+}

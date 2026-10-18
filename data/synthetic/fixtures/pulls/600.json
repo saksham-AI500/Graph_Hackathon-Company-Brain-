@@ -1,0 +1,140 @@
+{
+  "id": 1000600,
+  "number": 600,
+  "state": "closed",
+  "title": "fix(search_indexer): update cdc_listener.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-07-31T00:38:28Z",
+  "updated_at": "2026-08-01T06:38:28Z",
+  "closed_at": "2026-08-01T06:38:28Z",
+  "merged_at": "2026-08-01T06:38:28Z",
+  "merge_commit_sha": "8d183850e6a7",
+  "head": {
+    "ref": "feature/pr-600",
+    "sha": "8d183850e6a7"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/600",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/cdc_listener.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 9,
+      "changes": 50
+    },
+    {
+      "filename": "search/indexer/__pycache__/deduplication.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 8,
+      "changes": 20
+    }
+  ],
+  "commits": [
+    {
+      "sha": "100656464f82",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T00:38:28Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T00:38:28Z"
+        },
+        "message": "commit 1 for PR #600: fix(search_indexer): update cdc_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0d96cb087ad4",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T01:08:28Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T01:08:28Z"
+        },
+        "message": "commit 2 for PR #600: fix(search_indexer): update cdc_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "8d183850e6a7",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T01:38:28Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-07-31T01:38:28Z"
+        },
+        "message": "commit 3 for PR #600: fix(search_indexer): update cdc_listener.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 60001,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-01T11:38:28Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/600#pullrequestreview-60001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3165,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3165: verify boundary checks on line 15.",
+      "created_at": "2026-08-01T11:38:28Z",
+      "path": "search/indexer/__pycache__/cdc_listener.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3166,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3166: verify boundary checks on line 25.",
+      "created_at": "2026-08-01T11:38:28Z",
+      "path": "search/indexer/__pycache__/cdc_listener.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3167,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 3167: verify boundary checks on line 35.",
+      "created_at": "2026-08-01T11:38:28Z",
+      "path": "search/indexer/__pycache__/cdc_listener.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

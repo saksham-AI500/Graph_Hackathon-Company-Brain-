@@ -1,0 +1,40 @@
+{
+  "id": 2000217,
+  "number": 217,
+  "title": "BUG: auth improvements for security",
+  "body": "Detailed description for bug tracking in module auth/.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 27786,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-14T05:40:43Z",
+  "updated_at": "2026-06-06T05:40:43Z",
+  "closed_at": "2026-06-06T05:40:43Z",
+  "labels": [
+    "bug",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70882,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #882 on issue #217: updates from triage and reproduction steps.",
+      "created_at": "2026-05-15T02:40:43Z"
+    },
+    {
+      "id": 70883,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #883 on issue #217: updates from triage and reproduction steps.",
+      "created_at": "2026-05-15T14:40:43Z"
+    }
+  ]
+}

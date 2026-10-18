@@ -1,0 +1,69 @@
+{
+  "id": 2000029,
+  "number": 29,
+  "title": "INCIDENT: infra-deploy improvements for latency",
+  "body": "Detailed description for incident tracking in module infra/deploy/.",
+  "user": {
+    "login": "hannah-schmidt",
+    "id": 23486,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-10-30T12:45:51Z",
+  "updated_at": "2025-11-17T12:45:51Z",
+  "closed_at": "2025-11-17T12:45:51Z",
+  "labels": [
+    "incident",
+    "infra-deploy"
+  ],
+  "linked_pulls": [
+    260
+  ],
+  "comments": [
+    {
+      "id": 70110,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #110 on issue #29: updates from triage and reproduction steps.",
+      "created_at": "2025-10-30T22:45:51Z"
+    },
+    {
+      "id": 70111,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #111 on issue #29: updates from triage and reproduction steps.",
+      "created_at": "2025-10-31T19:45:51Z"
+    },
+    {
+      "id": 70112,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #112 on issue #29: updates from triage and reproduction steps.",
+      "created_at": "2025-11-01T00:45:51Z"
+    },
+    {
+      "id": 70113,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Comment #113 on issue #29: updates from triage and reproduction steps.",
+      "created_at": "2025-11-02T00:45:51Z"
+    },
+    {
+      "id": 70114,
+      "user": {
+        "login": "carlos-mendez",
+        "type": "User"
+      },
+      "body": "Comment #114 on issue #29: updates from triage and reproduction steps.",
+      "created_at": "2025-11-02T11:45:51Z"
+    }
+  ]
+}

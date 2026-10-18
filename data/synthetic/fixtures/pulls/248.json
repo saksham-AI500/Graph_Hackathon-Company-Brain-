@@ -1,0 +1,144 @@
+{
+  "id": 1000248,
+  "number": 248,
+  "state": "closed",
+  "title": "feat(billing): update revenue_recognition.py",
+  "body": "Implementation changes for billing module improvements.",
+  "user": {
+    "login": "ananya-rao",
+    "id": 22649,
+    "type": "User"
+  },
+  "created_at": "2026-02-03T08:53:05Z",
+  "updated_at": "2026-02-05T01:53:05Z",
+  "closed_at": "2026-02-05T01:53:05Z",
+  "merged_at": "2026-02-05T01:53:05Z",
+  "merge_commit_sha": "46b11ca02313",
+  "head": {
+    "ref": "feature/pr-248",
+    "sha": "46b11ca02313"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/248",
+  "files": [
+    {
+      "filename": "billing/revenue_recognition.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 8,
+      "changes": 56
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e24829f25a22",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T08:53:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T08:53:05Z"
+        },
+        "message": "commit 1 for PR #248: feat(billing): update revenue_recognition.py"
+      }
+    },
+    {
+      "sha": "23a65f7d7a92",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T09:23:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T09:23:05Z"
+        },
+        "message": "commit 2 for PR #248: feat(billing): update revenue_recognition.py"
+      }
+    },
+    {
+      "sha": "46b11ca02313",
+      "commit": {
+        "author": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T09:53:05Z"
+        },
+        "committer": {
+          "name": "Ananya Rao",
+          "email": "ananya-rao@example.com",
+          "date": "2026-02-03T09:53:05Z"
+        },
+        "message": "commit 3 for PR #248: feat(billing): update revenue_recognition.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 24801,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-04T21:53:05Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/248#pullrequestreview-24801"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1333,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1333: verify boundary checks on line 15.",
+      "created_at": "2026-02-04T21:53:05Z",
+      "path": "billing/revenue_recognition.py",
+      "line": 15
+    },
+    {
+      "id": 1334,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1334: verify boundary checks on line 25.",
+      "created_at": "2026-02-04T21:53:05Z",
+      "path": "billing/revenue_recognition.py",
+      "line": 25
+    },
+    {
+      "id": 1335,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1335: verify boundary checks on line 35.",
+      "created_at": "2026-02-04T21:53:05Z",
+      "path": "billing/revenue_recognition.py",
+      "line": 35
+    },
+    {
+      "id": 1336,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 1336: verify boundary checks on line 45.",
+      "created_at": "2026-02-04T21:53:05Z",
+      "path": "billing/revenue_recognition.py",
+      "line": 45
+    }
+  ]
+}

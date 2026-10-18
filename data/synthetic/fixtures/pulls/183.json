@@ -1,0 +1,126 @@
+{
+  "id": 1000183,
+  "number": 183,
+  "state": "open",
+  "title": "feat(search_indexer): update README.md",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-01-01T11:48:04Z",
+  "updated_at": "2026-01-01T11:48:04Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-183",
+    "sha": "883f092e0d7a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/183",
+  "files": [
+    {
+      "filename": "search/indexer/README.md",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 2,
+      "changes": 38
+    },
+    {
+      "filename": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 1,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ea39b1ebdd40",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T11:48:04Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T11:48:04Z"
+        },
+        "message": "commit 1 for PR #183: feat(search_indexer): update README.md"
+      }
+    },
+    {
+      "sha": "c22e4a672cdd",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T12:18:04Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T12:18:04Z"
+        },
+        "message": "commit 2 for PR #183: feat(search_indexer): update README.md"
+      }
+    },
+    {
+      "sha": "9298cf52b879",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T12:48:04Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T12:48:04Z"
+        },
+        "message": "commit 3 for PR #183: feat(search_indexer): update README.md"
+      }
+    },
+    {
+      "sha": "4655f98b0a1d",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T13:18:04Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T13:18:04Z"
+        },
+        "message": "commit 4 for PR #183: feat(search_indexer): update README.md"
+      }
+    },
+    {
+      "sha": "883f092e0d7a",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T13:48:04Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-01-01T13:48:04Z"
+        },
+        "message": "commit 5 for PR #183: feat(search_indexer): update README.md"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

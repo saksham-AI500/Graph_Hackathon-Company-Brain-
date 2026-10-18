@@ -1,0 +1,120 @@
+{
+  "id": 1000322,
+  "number": 322,
+  "state": "open",
+  "title": "feat(auth): update backup_codes.cpython-314.pyc",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2026-03-12T20:02:52Z",
+  "updated_at": "2026-03-12T20:02:52Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-322",
+    "sha": "88b64fa89aa4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/322",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/backup_codes.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 7,
+      "changes": 35
+    },
+    {
+      "filename": "auth/mfa/audit_mfa.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 14,
+      "changes": 56
+    },
+    {
+      "filename": "auth/audit_auth.py",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 8,
+      "changes": 20
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5da47cd1afbe",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-12T20:02:52Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-12T20:02:52Z"
+        },
+        "message": "commit 1 for PR #322: feat(auth): update backup_codes.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "88b64fa89aa4",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-12T20:32:52Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2026-03-12T20:32:52Z"
+        },
+        "message": "commit 2 for PR #322: feat(auth): update backup_codes.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 32201,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "COMMENTED",
+      "submitted_at": "2026-03-13T11:02:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/322#pullrequestreview-32201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1703,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1703: verify boundary checks on line 15.",
+      "created_at": "2026-03-13T11:02:52Z",
+      "path": "auth/mfa/__pycache__/backup_codes.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1704,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Review comment 1704: verify boundary checks on line 25.",
+      "created_at": "2026-03-13T11:02:52Z",
+      "path": "auth/mfa/__pycache__/backup_codes.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

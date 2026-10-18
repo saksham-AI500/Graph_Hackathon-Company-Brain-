@@ -1,0 +1,147 @@
+{
+  "id": 1000442,
+  "number": 442,
+  "state": "closed",
+  "title": "perf(auth_mfa): update fido_attestation.cpython-314.pyc",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-05-12T13:44:59Z",
+  "updated_at": "2026-05-14T12:44:59Z",
+  "closed_at": "2026-05-14T12:44:59Z",
+  "merged_at": "2026-05-14T12:44:59Z",
+  "merge_commit_sha": "a7fb3fc60da9",
+  "head": {
+    "ref": "feature/pr-442",
+    "sha": "a7fb3fc60da9"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/442",
+  "files": [
+    {
+      "filename": "auth/mfa/__pycache__/fido_attestation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 9,
+      "changes": 24
+    },
+    {
+      "filename": "auth/mfa/__pycache__/totp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 11,
+      "changes": 53
+    },
+    {
+      "filename": "auth/mfa/recovery_vault.py",
+      "status": "modified",
+      "additions": 21,
+      "deletions": 4,
+      "changes": 35
+    }
+  ],
+  "commits": [
+    {
+      "sha": "a11d8c8eec40",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T13:44:59Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T13:44:59Z"
+        },
+        "message": "commit 1 for PR #442: perf(auth_mfa): update fido_attestation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "bd418cfaa22c",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T14:14:59Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T14:14:59Z"
+        },
+        "message": "commit 2 for PR #442: perf(auth_mfa): update fido_attestation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a7fb3fc60da9",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T14:44:59Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-05-12T14:44:59Z"
+        },
+        "message": "commit 3 for PR #442: perf(auth_mfa): update fido_attestation.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 44201,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-13T04:44:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/442#pullrequestreview-44201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2364,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2364: verify boundary checks on line 15.",
+      "created_at": "2026-05-13T04:44:59Z",
+      "path": "auth/mfa/__pycache__/fido_attestation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2365,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2365: verify boundary checks on line 25.",
+      "created_at": "2026-05-13T04:44:59Z",
+      "path": "auth/mfa/__pycache__/fido_attestation.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2366,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 2366: verify boundary checks on line 35.",
+      "created_at": "2026-05-13T04:44:59Z",
+      "path": "auth/mfa/__pycache__/fido_attestation.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

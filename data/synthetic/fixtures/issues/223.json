@@ -1,0 +1,76 @@
+{
+  "id": 2000223,
+  "number": 223,
+  "title": "INCIDENT: payments-refunds improvements for security",
+  "body": "Detailed description for incident tracking in module payments/refunds/.",
+  "user": {
+    "login": "caleb-rivers",
+    "id": 27786,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-20T11:50:10Z",
+  "updated_at": "2026-05-20T11:50:10Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "payments-refunds"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70906,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #906 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-20T22:50:10Z"
+    },
+    {
+      "id": 70907,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #907 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-21T14:50:10Z"
+    },
+    {
+      "id": 70908,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #908 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-22T10:50:10Z"
+    },
+    {
+      "id": 70909,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #909 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-22T23:50:10Z"
+    },
+    {
+      "id": 70910,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #910 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-23T03:50:10Z"
+    },
+    {
+      "id": 70911,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #911 on issue #223: updates from triage and reproduction steps.",
+      "created_at": "2026-05-23T05:50:10Z"
+    }
+  ]
+}

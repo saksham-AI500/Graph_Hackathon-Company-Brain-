@@ -1,0 +1,202 @@
+{
+  "id": 1000118,
+  "number": 118,
+  "state": "closed",
+  "title": "fix(infra_deploy): update secrets_loader.py",
+  "body": "Implementation changes for infra_deploy module improvements.\n\nFixes #115",
+  "user": {
+    "login": "samir-patel",
+    "id": 26341,
+    "type": "User"
+  },
+  "created_at": "2025-11-28T13:41:32Z",
+  "updated_at": "2025-11-30T23:41:32Z",
+  "closed_at": "2025-11-30T23:41:32Z",
+  "merged_at": "2025-11-30T23:41:32Z",
+  "merge_commit_sha": "0fda175c3f88",
+  "head": {
+    "ref": "feature/pr-118",
+    "sha": "0fda175c3f88"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/118",
+  "files": [
+    {
+      "filename": "infra/deploy/secrets_loader.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 22
+    },
+    {
+      "filename": "infra/deploy/cert_manager.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 14,
+      "changes": 56
+    },
+    {
+      "filename": "infra/deploy/gitops.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 15,
+      "changes": 56
+    }
+  ],
+  "commits": [
+    {
+      "sha": "02e6b7ddeda5",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T13:41:32Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T13:41:32Z"
+        },
+        "message": "commit 1 for PR #118: fix(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "dcaedeff82c1",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T14:11:32Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T14:11:32Z"
+        },
+        "message": "commit 2 for PR #118: fix(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "0fda175c3f88",
+      "commit": {
+        "author": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T14:41:32Z"
+        },
+        "committer": {
+          "name": "Samir Patel",
+          "email": "samir-patel@example.com",
+          "date": "2025-11-28T14:41:32Z"
+        },
+        "message": "commit 3 for PR #118: fix(infra_deploy): update secrets_loader.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 11801,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-30T13:41:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/118#pullrequestreview-11801"
+    },
+    {
+      "id": 11802,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-30T13:41:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/118#pullrequestreview-11802"
+    }
+  ],
+  "comments": [
+    {
+      "id": 654,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 654: verify boundary checks on line 15.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 15
+    },
+    {
+      "id": 655,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 655: verify boundary checks on line 25.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 25
+    },
+    {
+      "id": 656,
+      "user": {
+        "login": "devon-reed",
+        "type": "User"
+      },
+      "body": "Review comment 656: verify boundary checks on line 35.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 35
+    },
+    {
+      "id": 657,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 657: verify boundary checks on line 15.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 15
+    },
+    {
+      "id": 658,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 658: verify boundary checks on line 25.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 25
+    },
+    {
+      "id": 659,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 659: verify boundary checks on line 35.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 35
+    },
+    {
+      "id": 660,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 660: verify boundary checks on line 45.",
+      "created_at": "2025-11-30T13:41:32Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 45
+    }
+  ]
+}

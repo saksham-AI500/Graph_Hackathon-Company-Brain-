@@ -1,0 +1,262 @@
+{
+  "id": 1000412,
+  "number": 412,
+  "state": "closed",
+  "title": "perf(payments): update approval_flow.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 26814,
+    "type": "User"
+  },
+  "created_at": "2026-04-27T09:05:50Z",
+  "updated_at": "2026-04-28T16:05:50Z",
+  "closed_at": "2026-04-28T16:05:50Z",
+  "merged_at": "2026-04-28T16:05:50Z",
+  "merge_commit_sha": "9b7d7792c8db",
+  "head": {
+    "ref": "feature/pr-412",
+    "sha": "9b7d7792c8db"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/412",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 14,
+      "changes": 25
+    },
+    {
+      "filename": "payments/refunds/__pycache__/queue.cpython-314.pyc",
+      "status": "modified",
+      "additions": 26,
+      "deletions": 4,
+      "changes": 28
+    },
+    {
+      "filename": "payments/transactions.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 9,
+      "changes": 47
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b5a1bea74e77",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T09:05:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T09:05:50Z"
+        },
+        "message": "commit 1 for PR #412: perf(payments): update approval_flow.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "83badba5e943",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T09:35:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T09:35:50Z"
+        },
+        "message": "commit 2 for PR #412: perf(payments): update approval_flow.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6903cbc959f3",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T10:05:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T10:05:50Z"
+        },
+        "message": "commit 3 for PR #412: perf(payments): update approval_flow.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9b7d7792c8db",
+      "commit": {
+        "author": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T10:35:50Z"
+        },
+        "committer": {
+          "name": "Olivia Taylor",
+          "email": "olivia-taylor@example.com",
+          "date": "2026-04-27T10:35:50Z"
+        },
+        "message": "commit 4 for PR #412: perf(payments): update approval_flow.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 41201,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-28T10:05:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/412#pullrequestreview-41201"
+    },
+    {
+      "id": 41202,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-28T10:05:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/412#pullrequestreview-41202"
+    },
+    {
+      "id": 41203,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-28T10:05:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/412#pullrequestreview-41203"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2179,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2179: verify boundary checks on line 15.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2180,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2180: verify boundary checks on line 25.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2181,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2181: verify boundary checks on line 15.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2182,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2182: verify boundary checks on line 25.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2183,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2183: verify boundary checks on line 35.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2184,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2184: verify boundary checks on line 45.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2185,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2185: verify boundary checks on line 55.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2186,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2186: verify boundary checks on line 15.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2187,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2187: verify boundary checks on line 25.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2188,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Review comment 2188: verify boundary checks on line 35.",
+      "created_at": "2026-04-28T10:05:50Z",
+      "path": "payments/refunds/__pycache__/approval_flow.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

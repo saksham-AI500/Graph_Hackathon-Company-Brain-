@@ -1,0 +1,69 @@
+{
+  "id": 2000130,
+  "number": 130,
+  "title": "INCIDENT: search-indexer improvements for latency",
+  "body": "Detailed description for incident tracking in module search/indexer/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-12T16:21:01Z",
+  "updated_at": "2026-02-28T16:21:01Z",
+  "closed_at": "2026-02-28T16:21:01Z",
+  "labels": [
+    "incident",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    628
+  ],
+  "comments": [
+    {
+      "id": 70534,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #534 on issue #130: updates from triage and reproduction steps.",
+      "created_at": "2026-02-12T21:21:01Z"
+    },
+    {
+      "id": 70535,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #535 on issue #130: updates from triage and reproduction steps.",
+      "created_at": "2026-02-13T18:21:01Z"
+    },
+    {
+      "id": 70536,
+      "user": {
+        "login": "kevin-malone",
+        "type": "User"
+      },
+      "body": "Comment #536 on issue #130: updates from triage and reproduction steps.",
+      "created_at": "2026-02-13T20:21:01Z"
+    },
+    {
+      "id": 70537,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #537 on issue #130: updates from triage and reproduction steps.",
+      "created_at": "2026-02-14T16:21:01Z"
+    },
+    {
+      "id": 70538,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #538 on issue #130: updates from triage and reproduction steps.",
+      "created_at": "2026-02-15T10:21:01Z"
+    }
+  ]
+}

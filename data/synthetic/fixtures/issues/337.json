@@ -1,0 +1,67 @@
+{
+  "id": 2000337,
+  "number": 337,
+  "title": "FEATURE: growth-referrals improvements for security",
+  "body": "Detailed description for feature tracking in module growth/referrals/.",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 20476,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-09-16T04:06:39Z",
+  "updated_at": "2026-10-15T04:06:39Z",
+  "closed_at": "2026-10-15T04:06:39Z",
+  "labels": [
+    "feature",
+    "growth-referrals"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71379,
+      "user": {
+        "login": "mateo-silva",
+        "type": "User"
+      },
+      "body": "Comment #1379 on issue #337: updates from triage and reproduction steps.",
+      "created_at": "2026-09-16T18:06:39Z"
+    },
+    {
+      "id": 71380,
+      "user": {
+        "login": "clara-oswald",
+        "type": "User"
+      },
+      "body": "Comment #1380 on issue #337: updates from triage and reproduction steps.",
+      "created_at": "2026-09-17T10:06:39Z"
+    },
+    {
+      "id": 71381,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #1381 on issue #337: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T02:06:39Z"
+    },
+    {
+      "id": 71382,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1382 on issue #337: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T07:06:39Z"
+    },
+    {
+      "id": 71383,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1383 on issue #337: updates from triage and reproduction steps.",
+      "created_at": "2026-09-18T16:06:39Z"
+    }
+  ]
+}

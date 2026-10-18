@@ -1,0 +1,204 @@
+{
+  "id": 1000304,
+  "number": 304,
+  "state": "closed",
+  "title": "chore(payments): update checkout.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "zane-malik",
+    "id": 26937,
+    "type": "User"
+  },
+  "created_at": "2026-03-03T17:05:29Z",
+  "updated_at": "2026-03-06T11:05:29Z",
+  "closed_at": "2026-03-06T11:05:29Z",
+  "merged_at": "2026-03-06T11:05:29Z",
+  "merge_commit_sha": "3633fe17ffa1",
+  "head": {
+    "ref": "feature/pr-304",
+    "sha": "3633fe17ffa1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/304",
+  "files": [
+    {
+      "filename": "payments/checkout.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 15,
+      "changes": 27
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9faae2d01696",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T17:05:29Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T17:05:29Z"
+        },
+        "message": "commit 1 for PR #304: chore(payments): update checkout.py"
+      }
+    },
+    {
+      "sha": "e12c8d741bb9",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T17:35:29Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T17:35:29Z"
+        },
+        "message": "commit 2 for PR #304: chore(payments): update checkout.py"
+      }
+    },
+    {
+      "sha": "f5a06e090cf7",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T18:05:29Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T18:05:29Z"
+        },
+        "message": "commit 3 for PR #304: chore(payments): update checkout.py"
+      }
+    },
+    {
+      "sha": "3633fe17ffa1",
+      "commit": {
+        "author": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T18:35:29Z"
+        },
+        "committer": {
+          "name": "Zane Malik",
+          "email": "zane-malik@example.com",
+          "date": "2026-03-03T18:35:29Z"
+        },
+        "message": "commit 4 for PR #304: chore(payments): update checkout.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30401,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-04T05:05:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/304#pullrequestreview-30401"
+    },
+    {
+      "id": 30402,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-04T05:05:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/304#pullrequestreview-30402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1617,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 1617: verify boundary checks on line 15.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 15
+    },
+    {
+      "id": 1618,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 1618: verify boundary checks on line 25.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 25
+    },
+    {
+      "id": 1619,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 1619: verify boundary checks on line 35.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 35
+    },
+    {
+      "id": 1620,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 1620: verify boundary checks on line 45.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 45
+    },
+    {
+      "id": 1621,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Review comment 1621: verify boundary checks on line 55.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 55
+    },
+    {
+      "id": 1622,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1622: verify boundary checks on line 15.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 15
+    },
+    {
+      "id": 1623,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1623: verify boundary checks on line 25.",
+      "created_at": "2026-03-04T05:05:29Z",
+      "path": "payments/checkout.py",
+      "line": 25
+    }
+  ]
+}

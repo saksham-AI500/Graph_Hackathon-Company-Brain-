@@ -1,0 +1,40 @@
+{
+  "id": 2000173,
+  "number": 173,
+  "title": "TASK: notifications improvements for latency",
+  "body": "Detailed description for task tracking in module notifications/.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 24905,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-29T10:44:18Z",
+  "updated_at": "2026-04-20T10:44:18Z",
+  "closed_at": "2026-04-20T10:44:18Z",
+  "labels": [
+    "task",
+    "notifications"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70708,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #708 on issue #173: updates from triage and reproduction steps.",
+      "created_at": "2026-03-30T02:44:18Z"
+    },
+    {
+      "id": 70709,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #709 on issue #173: updates from triage and reproduction steps.",
+      "created_at": "2026-03-30T20:44:18Z"
+    }
+  ]
+}

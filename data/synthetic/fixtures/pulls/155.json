@@ -1,0 +1,264 @@
+{
+  "id": 1000155,
+  "number": 155,
+  "state": "closed",
+  "title": "feat(search): update checkpoint.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "priya-sharma",
+    "id": 25922,
+    "type": "User"
+  },
+  "created_at": "2025-12-18T07:35:40Z",
+  "updated_at": "2025-12-20T07:35:40Z",
+  "closed_at": "2025-12-20T07:35:40Z",
+  "merged_at": "2025-12-20T07:35:40Z",
+  "merge_commit_sha": "3097ae3f84c5",
+  "head": {
+    "ref": "feature/pr-155",
+    "sha": "3097ae3f84c5"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/155",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 13,
+      "changes": 14
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4ddc2faafbf5",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T07:35:40Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T07:35:40Z"
+        },
+        "message": "commit 1 for PR #155: feat(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "5caa9aadfa48",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T08:05:40Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T08:05:40Z"
+        },
+        "message": "commit 2 for PR #155: feat(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "49009f76cc28",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T08:35:40Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T08:35:40Z"
+        },
+        "message": "commit 3 for PR #155: feat(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "6eeffa38a61c",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T09:05:40Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T09:05:40Z"
+        },
+        "message": "commit 4 for PR #155: feat(search): update checkpoint.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3097ae3f84c5",
+      "commit": {
+        "author": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T09:35:40Z"
+        },
+        "committer": {
+          "name": "Priya Sharma",
+          "email": "priya-sharma@example.com",
+          "date": "2025-12-18T09:35:40Z"
+        },
+        "message": "commit 5 for PR #155: feat(search): update checkpoint.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 15501,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T00:35:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/155#pullrequestreview-15501"
+    },
+    {
+      "id": 15502,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T00:35:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/155#pullrequestreview-15502"
+    },
+    {
+      "id": 15503,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-19T00:35:40Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/155#pullrequestreview-15503"
+    }
+  ],
+  "comments": [
+    {
+      "id": 836,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 836: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 837,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 837: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 838,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 838: verify boundary checks on line 35.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 839,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 839: verify boundary checks on line 45.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 840,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 840: verify boundary checks on line 55.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 841,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 841: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 842,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 842: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 843,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 843: verify boundary checks on line 15.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 844,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 844: verify boundary checks on line 25.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 845,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Review comment 845: verify boundary checks on line 35.",
+      "created_at": "2025-12-19T00:35:40Z",
+      "path": "search/indexer/__pycache__/checkpoint.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

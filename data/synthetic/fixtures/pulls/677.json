@@ -1,0 +1,163 @@
+{
+  "id": 1000677,
+  "number": 677,
+  "state": "closed",
+  "title": "refactor(infra_deploy): update secrets_loader.py",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "felix-baum",
+    "id": 28109,
+    "type": "User"
+  },
+  "created_at": "2026-09-08T11:07:14Z",
+  "updated_at": "2026-09-10T00:07:14Z",
+  "closed_at": "2026-09-10T00:07:14Z",
+  "merged_at": "2026-09-10T00:07:14Z",
+  "merge_commit_sha": "7b590f4b3c4a",
+  "head": {
+    "ref": "feature/pr-677",
+    "sha": "7b590f4b3c4a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/677",
+  "files": [
+    {
+      "filename": "infra/deploy/secrets_loader.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 7,
+      "changes": 24
+    },
+    {
+      "filename": "infra/deploy/audit_deploy.py",
+      "status": "modified",
+      "additions": 32,
+      "deletions": 11,
+      "changes": 6
+    },
+    {
+      "filename": "infra/deploy/__pycache__/gitops.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 11,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "cc6e5cf47bcd",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T11:07:14Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T11:07:14Z"
+        },
+        "message": "commit 1 for PR #677: refactor(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "548e18861490",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T11:37:14Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T11:37:14Z"
+        },
+        "message": "commit 2 for PR #677: refactor(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "a6eec1042fec",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T12:07:14Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T12:07:14Z"
+        },
+        "message": "commit 3 for PR #677: refactor(infra_deploy): update secrets_loader.py"
+      }
+    },
+    {
+      "sha": "7b590f4b3c4a",
+      "commit": {
+        "author": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T12:37:14Z"
+        },
+        "committer": {
+          "name": "Felix Baum",
+          "email": "felix-baum@example.com",
+          "date": "2026-09-08T12:37:14Z"
+        },
+        "message": "commit 4 for PR #677: refactor(infra_deploy): update secrets_loader.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 67701,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-09-08T20:07:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/677#pullrequestreview-67701"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3565,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3565: verify boundary checks on line 15.",
+      "created_at": "2026-09-08T20:07:14Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 15
+    },
+    {
+      "id": 3566,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3566: verify boundary checks on line 25.",
+      "created_at": "2026-09-08T20:07:14Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 25
+    },
+    {
+      "id": 3567,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3567: verify boundary checks on line 35.",
+      "created_at": "2026-09-08T20:07:14Z",
+      "path": "infra/deploy/secrets_loader.py",
+      "line": 35
+    }
+  ]
+}

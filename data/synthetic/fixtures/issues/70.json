@@ -1,0 +1,78 @@
+{
+  "id": 2000070,
+  "number": 70,
+  "title": "BUG: shared-utils improvements for security",
+  "body": "Detailed description for bug tracking in module shared/utils/.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 29278,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-12-12T04:34:00Z",
+  "updated_at": "2025-12-12T04:34:00Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "shared-utils"
+  ],
+  "linked_pulls": [
+    637
+  ],
+  "comments": [
+    {
+      "id": 70286,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #286 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-13T02:34:00Z"
+    },
+    {
+      "id": 70287,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #287 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-13T16:34:00Z"
+    },
+    {
+      "id": 70288,
+      "user": {
+        "login": "chloe-bennett",
+        "type": "User"
+      },
+      "body": "Comment #288 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T03:34:00Z"
+    },
+    {
+      "id": 70289,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Comment #289 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T10:34:00Z"
+    },
+    {
+      "id": 70290,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #290 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-14T19:34:00Z"
+    },
+    {
+      "id": 70291,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #291 on issue #70: updates from triage and reproduction steps.",
+      "created_at": "2025-12-15T11:34:00Z"
+    }
+  ]
+}

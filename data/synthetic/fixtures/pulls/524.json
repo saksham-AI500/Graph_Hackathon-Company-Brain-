@@ -1,0 +1,157 @@
+{
+  "id": 1000524,
+  "number": 524,
+  "state": "closed",
+  "title": "fix(growth_experiments): update __init__.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "noah-kim",
+    "id": 22560,
+    "type": "User"
+  },
+  "created_at": "2026-06-23T01:29:59Z",
+  "updated_at": "2026-06-25T03:29:59Z",
+  "closed_at": "2026-06-25T03:29:59Z",
+  "merged_at": "2026-06-25T03:29:59Z",
+  "merge_commit_sha": "9fc692ac1fcc",
+  "head": {
+    "ref": "feature/pr-524",
+    "sha": "9fc692ac1fcc"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/524",
+  "files": [
+    {
+      "filename": "growth/experiments/__init__.py",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 2,
+      "changes": 33
+    },
+    {
+      "filename": "growth/experiments/config_exp.py",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 48
+    }
+  ],
+  "commits": [
+    {
+      "sha": "5502083e7172",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-06-23T01:29:59Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-06-23T01:29:59Z"
+        },
+        "message": "commit 1 for PR #524: fix(growth_experiments): update __init__.py"
+      }
+    },
+    {
+      "sha": "9fc692ac1fcc",
+      "commit": {
+        "author": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-06-23T01:59:59Z"
+        },
+        "committer": {
+          "name": "Noah Kim",
+          "email": "noah-kim@example.com",
+          "date": "2026-06-23T01:59:59Z"
+        },
+        "message": "commit 2 for PR #524: fix(growth_experiments): update __init__.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 52401,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T04:29:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/524#pullrequestreview-52401"
+    },
+    {
+      "id": 52402,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-23T04:29:59Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/524#pullrequestreview-52402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2813,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2813: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T04:29:59Z",
+      "path": "growth/experiments/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2814,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2814: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T04:29:59Z",
+      "path": "growth/experiments/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 2815,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2815: verify boundary checks on line 15.",
+      "created_at": "2026-06-23T04:29:59Z",
+      "path": "growth/experiments/__init__.py",
+      "line": 15
+    },
+    {
+      "id": 2816,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2816: verify boundary checks on line 25.",
+      "created_at": "2026-06-23T04:29:59Z",
+      "path": "growth/experiments/__init__.py",
+      "line": 25
+    },
+    {
+      "id": 2817,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2817: verify boundary checks on line 35.",
+      "created_at": "2026-06-23T04:29:59Z",
+      "path": "growth/experiments/__init__.py",
+      "line": 35
+    }
+  ]
+}

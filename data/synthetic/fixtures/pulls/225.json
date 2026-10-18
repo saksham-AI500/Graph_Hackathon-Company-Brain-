@@ -1,0 +1,154 @@
+{
+  "id": 1000225,
+  "number": 225,
+  "state": "closed",
+  "title": "perf(shared_utils): update crypto_utils.py",
+  "body": "Implementation changes for shared_utils module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-01-22T18:01:07Z",
+  "updated_at": "2026-01-24T21:01:07Z",
+  "closed_at": "2026-01-24T21:01:07Z",
+  "merged_at": "2026-01-24T21:01:07Z",
+  "merge_commit_sha": "70420eb531bd",
+  "head": {
+    "ref": "feature/pr-225",
+    "sha": "70420eb531bd"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/225",
+  "files": [
+    {
+      "filename": "shared/utils/crypto_utils.py",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 14,
+      "changes": 6
+    }
+  ],
+  "commits": [
+    {
+      "sha": "2bd472c3cff1",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T18:01:07Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T18:01:07Z"
+        },
+        "message": "commit 1 for PR #225: perf(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "a999d4de9cbf",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T18:31:07Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T18:31:07Z"
+        },
+        "message": "commit 2 for PR #225: perf(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "439d2a391379",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T19:01:07Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T19:01:07Z"
+        },
+        "message": "commit 3 for PR #225: perf(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "0217ae4e4c3e",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T19:31:07Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T19:31:07Z"
+        },
+        "message": "commit 4 for PR #225: perf(shared_utils): update crypto_utils.py"
+      }
+    },
+    {
+      "sha": "70420eb531bd",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T20:01:07Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-22T20:01:07Z"
+        },
+        "message": "commit 5 for PR #225: perf(shared_utils): update crypto_utils.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 22501,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-23T06:01:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/225#pullrequestreview-22501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1230,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1230: verify boundary checks on line 15.",
+      "created_at": "2026-01-23T06:01:07Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 15
+    },
+    {
+      "id": 1231,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 1231: verify boundary checks on line 25.",
+      "created_at": "2026-01-23T06:01:07Z",
+      "path": "shared/utils/crypto_utils.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": 1000653,
+  "number": 653,
+  "state": "closed",
+  "title": "feat(growth_experiments): update metrics_collector.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2026-08-27T07:38:08Z",
+  "updated_at": "2026-08-29T20:38:08Z",
+  "closed_at": "2026-08-29T20:38:08Z",
+  "merged_at": "2026-08-29T20:38:08Z",
+  "merge_commit_sha": "1d5846093b22",
+  "head": {
+    "ref": "feature/pr-653",
+    "sha": "1d5846093b22"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/653",
+  "files": [
+    {
+      "filename": "growth/experiments/metrics_collector.py",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 7,
+      "changes": 36
+    },
+    {
+      "filename": "growth/experiments/__init__.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 4,
+      "changes": 34
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c9d788a8567a",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T07:38:08Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T07:38:08Z"
+        },
+        "message": "commit 1 for PR #653: feat(growth_experiments): update metrics_collector.py"
+      }
+    },
+    {
+      "sha": "8768926cf2a4",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T08:08:08Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T08:08:08Z"
+        },
+        "message": "commit 2 for PR #653: feat(growth_experiments): update metrics_collector.py"
+      }
+    },
+    {
+      "sha": "9fb8aa481755",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T08:38:08Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T08:38:08Z"
+        },
+        "message": "commit 3 for PR #653: feat(growth_experiments): update metrics_collector.py"
+      }
+    },
+    {
+      "sha": "1d5846093b22",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T09:08:08Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-08-27T09:08:08Z"
+        },
+        "message": "commit 4 for PR #653: feat(growth_experiments): update metrics_collector.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 65301,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-28T15:38:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/653#pullrequestreview-65301"
+    },
+    {
+      "id": 65302,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-28T15:38:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/653#pullrequestreview-65302"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3443,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3443: verify boundary checks on line 15.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 15
+    },
+    {
+      "id": 3444,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3444: verify boundary checks on line 25.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 25
+    },
+    {
+      "id": 3445,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3445: verify boundary checks on line 35.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 35
+    },
+    {
+      "id": 3446,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3446: verify boundary checks on line 45.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 45
+    },
+    {
+      "id": 3447,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 3447: verify boundary checks on line 55.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 55
+    },
+    {
+      "id": 3448,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 3448: verify boundary checks on line 15.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 15
+    },
+    {
+      "id": 3449,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 3449: verify boundary checks on line 25.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 25
+    },
+    {
+      "id": 3450,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Review comment 3450: verify boundary checks on line 35.",
+      "created_at": "2026-08-28T15:38:08Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": 1000488,
+  "number": 488,
+  "state": "closed",
+  "title": "hotfix(billing): update currency conversion rate table",
+  "body": "Emergency update to EUR and GBP fallback rates.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 25566,
+    "type": "User"
+  },
+  "created_at": "2026-06-04T19:59:00Z",
+  "updated_at": "2026-06-06T19:59:00Z",
+  "closed_at": "2026-06-06T19:59:00Z",
+  "merged_at": "2026-06-06T19:59:00Z",
+  "merge_commit_sha": "61a9889fca09",
+  "head": {
+    "ref": "feature/pr-488",
+    "sha": "61a9889fca09"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/488",
+  "files": [
+    {
+      "filename": "billing/currency.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 14,
+      "changes": 43
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0b06f67ae30c",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T19:59:00Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T19:59:00Z"
+        },
+        "message": "commit 1 for PR #488: hotfix(billing): update currency conversion rate table"
+      }
+    },
+    {
+      "sha": "3beb2f9c0076",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T20:29:00Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T20:29:00Z"
+        },
+        "message": "commit 2 for PR #488: hotfix(billing): update currency conversion rate table"
+      }
+    },
+    {
+      "sha": "2e190e0ad582",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T20:59:00Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T20:59:00Z"
+        },
+        "message": "commit 3 for PR #488: hotfix(billing): update currency conversion rate table"
+      }
+    },
+    {
+      "sha": "6024475a13f5",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T21:29:00Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T21:29:00Z"
+        },
+        "message": "commit 4 for PR #488: hotfix(billing): update currency conversion rate table"
+      }
+    },
+    {
+      "sha": "61a9889fca09",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T21:59:00Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-06-04T21:59:00Z"
+        },
+        "message": "commit 5 for PR #488: hotfix(billing): update currency conversion rate table"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": 2000045,
+  "number": 45,
+  "title": "INCIDENT: payments improvements for latency",
+  "body": "Detailed description for incident tracking in module payments/.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 21029,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-16T04:48:49Z",
+  "updated_at": "2025-11-29T04:48:49Z",
+  "closed_at": "2025-11-29T04:48:49Z",
+  "labels": [
+    "incident",
+    "payments"
+  ],
+  "linked_pulls": [
+    581
+  ],
+  "comments": [
+    {
+      "id": 70180,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #180 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-16T07:48:49Z"
+    },
+    {
+      "id": 70181,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #181 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-16T12:48:49Z"
+    },
+    {
+      "id": 70182,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #182 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-16T21:48:49Z"
+    },
+    {
+      "id": 70183,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #183 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-17T17:48:49Z"
+    },
+    {
+      "id": 70184,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #184 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-18T13:48:49Z"
+    },
+    {
+      "id": 70185,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #185 on issue #45: updates from triage and reproduction steps.",
+      "created_at": "2025-11-18T19:48:49Z"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": 1000629,
+  "number": 629,
+  "state": "closed",
+  "title": "fix(growth_referrals): update attribution.py",
+  "body": "Implementation changes for growth_referrals module improvements.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 25566,
+    "type": "User"
+  },
+  "created_at": "2026-08-14T16:14:52Z",
+  "updated_at": "2026-08-17T06:14:52Z",
+  "closed_at": "2026-08-17T06:14:52Z",
+  "merged_at": "2026-08-17T06:14:52Z",
+  "merge_commit_sha": "ae1c0d1a1073",
+  "head": {
+    "ref": "feature/pr-629",
+    "sha": "ae1c0d1a1073"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/629",
+  "files": [
+    {
+      "filename": "growth/referrals/attribution.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 14,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "ca80f027e102",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-14T16:14:52Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-14T16:14:52Z"
+        },
+        "message": "commit 1 for PR #629: fix(growth_referrals): update attribution.py"
+      }
+    },
+    {
+      "sha": "ae1c0d1a1073",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-14T16:44:52Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-14T16:44:52Z"
+        },
+        "message": "commit 2 for PR #629: fix(growth_referrals): update attribution.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 62901,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-15T23:14:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/629#pullrequestreview-62901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3317,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 3317: verify boundary checks on line 15.",
+      "created_at": "2026-08-15T23:14:52Z",
+      "path": "growth/referrals/attribution.py",
+      "line": 15
+    },
+    {
+      "id": 3318,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 3318: verify boundary checks on line 25.",
+      "created_at": "2026-08-15T23:14:52Z",
+      "path": "growth/referrals/attribution.py",
+      "line": 25
+    },
+    {
+      "id": 3319,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 3319: verify boundary checks on line 35.",
+      "created_at": "2026-08-15T23:14:52Z",
+      "path": "growth/referrals/attribution.py",
+      "line": 35
+    }
+  ]
+}

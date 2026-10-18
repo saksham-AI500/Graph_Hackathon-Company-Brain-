@@ -1,0 +1,205 @@
+{
+  "id": 1000407,
+  "number": 407,
+  "state": "closed",
+  "title": "chore(auth): update step_up.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "mila-jovanovic",
+    "id": 20363,
+    "type": "User"
+  },
+  "created_at": "2026-04-24T08:38:48Z",
+  "updated_at": "2026-04-26T02:38:48Z",
+  "closed_at": "2026-04-26T02:38:48Z",
+  "merged_at": "2026-04-26T02:38:48Z",
+  "merge_commit_sha": "105fe2025ccd",
+  "head": {
+    "ref": "feature/pr-407",
+    "sha": "105fe2025ccd"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/407",
+  "files": [
+    {
+      "filename": "auth/mfa/step_up.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 6,
+      "changes": 30
+    },
+    {
+      "filename": "auth/__pycache__/__init__.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 13,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4d4493b17758",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T08:38:48Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T08:38:48Z"
+        },
+        "message": "commit 1 for PR #407: chore(auth): update step_up.py"
+      }
+    },
+    {
+      "sha": "689d7eb2836d",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T09:08:48Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T09:08:48Z"
+        },
+        "message": "commit 2 for PR #407: chore(auth): update step_up.py"
+      }
+    },
+    {
+      "sha": "e15e17363eb6",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T09:38:48Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T09:38:48Z"
+        },
+        "message": "commit 3 for PR #407: chore(auth): update step_up.py"
+      }
+    },
+    {
+      "sha": "2e4c2b684635",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T10:08:48Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T10:08:48Z"
+        },
+        "message": "commit 4 for PR #407: chore(auth): update step_up.py"
+      }
+    },
+    {
+      "sha": "105fe2025ccd",
+      "commit": {
+        "author": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T10:38:48Z"
+        },
+        "committer": {
+          "name": "Mila Jovanovic",
+          "email": "mila-jovanovic@example.com",
+          "date": "2026-04-24T10:38:48Z"
+        },
+        "message": "commit 5 for PR #407: chore(auth): update step_up.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 40701,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-25T08:38:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/407#pullrequestreview-40701"
+    },
+    {
+      "id": 40702,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-25T08:38:48Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/407#pullrequestreview-40702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2154,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2154: verify boundary checks on line 15.",
+      "created_at": "2026-04-25T08:38:48Z",
+      "path": "auth/mfa/step_up.py",
+      "line": 15
+    },
+    {
+      "id": 2155,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 2155: verify boundary checks on line 25.",
+      "created_at": "2026-04-25T08:38:48Z",
+      "path": "auth/mfa/step_up.py",
+      "line": 25
+    },
+    {
+      "id": 2156,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2156: verify boundary checks on line 15.",
+      "created_at": "2026-04-25T08:38:48Z",
+      "path": "auth/mfa/step_up.py",
+      "line": 15
+    },
+    {
+      "id": 2157,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2157: verify boundary checks on line 25.",
+      "created_at": "2026-04-25T08:38:48Z",
+      "path": "auth/mfa/step_up.py",
+      "line": 25
+    },
+    {
+      "id": 2158,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2158: verify boundary checks on line 35.",
+      "created_at": "2026-04-25T08:38:48Z",
+      "path": "auth/mfa/step_up.py",
+      "line": 35
+    }
+  ]
+}

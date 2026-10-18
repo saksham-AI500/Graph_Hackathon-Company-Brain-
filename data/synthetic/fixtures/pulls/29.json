@@ -1,0 +1,71 @@
+{
+  "id": 1000029,
+  "number": 29,
+  "state": "closed",
+  "title": "refactor(growth_experiments): update README.md",
+  "body": "Implementation changes for growth_experiments module improvements.\n\nCloses #76",
+  "user": {
+    "login": "elena-rostova",
+    "id": 20495,
+    "type": "User"
+  },
+  "created_at": "2025-10-15T13:28:25Z",
+  "updated_at": "2025-10-18T13:28:25Z",
+  "closed_at": "2025-10-18T13:28:25Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-29",
+    "sha": "ff0befebef85"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/29",
+  "files": [
+    {
+      "filename": "growth/experiments/README.md",
+      "status": "modified",
+      "additions": 41,
+      "deletions": 9,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8b92d9a28b95",
+      "commit": {
+        "author": {
+          "name": "Elena Rostova",
+          "email": "elena-rostova@example.com",
+          "date": "2025-10-15T13:28:25Z"
+        },
+        "committer": {
+          "name": "Elena Rostova",
+          "email": "elena-rostova@example.com",
+          "date": "2025-10-15T13:28:25Z"
+        },
+        "message": "commit 1 for PR #29: refactor(growth_experiments): update README.md"
+      }
+    },
+    {
+      "sha": "ff0befebef85",
+      "commit": {
+        "author": {
+          "name": "Elena Rostova",
+          "email": "elena-rostova@example.com",
+          "date": "2025-10-15T13:58:25Z"
+        },
+        "committer": {
+          "name": "Elena Rostova",
+          "email": "elena-rostova@example.com",
+          "date": "2025-10-15T13:58:25Z"
+        },
+        "message": "commit 2 for PR #29: refactor(growth_experiments): update README.md"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

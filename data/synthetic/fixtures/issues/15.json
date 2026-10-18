@@ -1,0 +1,60 @@
+{
+  "id": 2000015,
+  "number": 15,
+  "title": "FEATURE: payments improvements for reliability",
+  "body": "Detailed description for feature tracking in module payments/.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 24038,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2025-10-15T22:49:59Z",
+  "updated_at": "2025-10-15T22:49:59Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "payments"
+  ],
+  "linked_pulls": [
+    372
+  ],
+  "comments": [
+    {
+      "id": 70057,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #57 on issue #15: updates from triage and reproduction steps.",
+      "created_at": "2025-10-16T06:49:59Z"
+    },
+    {
+      "id": 70058,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #58 on issue #15: updates from triage and reproduction steps.",
+      "created_at": "2025-10-16T13:49:59Z"
+    },
+    {
+      "id": 70059,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #59 on issue #15: updates from triage and reproduction steps.",
+      "created_at": "2025-10-16T18:49:59Z"
+    },
+    {
+      "id": 70060,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #60 on issue #15: updates from triage and reproduction steps.",
+      "created_at": "2025-10-17T16:49:59Z"
+    }
+  ]
+}

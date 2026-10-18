@@ -1,0 +1,183 @@
+{
+  "id": 1000485,
+  "number": 485,
+  "state": "closed",
+  "title": "docs(notifications): update README.md",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "tanya-popova",
+    "id": 22022,
+    "type": "User"
+  },
+  "created_at": "2026-06-03T07:50:14Z",
+  "updated_at": "2026-06-05T16:50:14Z",
+  "closed_at": "2026-06-05T16:50:14Z",
+  "merged_at": "2026-06-05T16:50:14Z",
+  "merge_commit_sha": "5cd309c23258",
+  "head": {
+    "ref": "feature/pr-485",
+    "sha": "5cd309c23258"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/485",
+  "files": [
+    {
+      "filename": "notifications/README.md",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 10,
+      "changes": 29
+    },
+    {
+      "filename": "notifications/priority_queue.py",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 13,
+      "changes": 32
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4732d33c830a",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T07:50:14Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T07:50:14Z"
+        },
+        "message": "commit 1 for PR #485: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "437d52442077",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T08:20:14Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T08:20:14Z"
+        },
+        "message": "commit 2 for PR #485: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "498f80c2dc54",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T08:50:14Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T08:50:14Z"
+        },
+        "message": "commit 3 for PR #485: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "925d3eaecf5e",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T09:20:14Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T09:20:14Z"
+        },
+        "message": "commit 4 for PR #485: docs(notifications): update README.md"
+      }
+    },
+    {
+      "sha": "5cd309c23258",
+      "commit": {
+        "author": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T09:50:14Z"
+        },
+        "committer": {
+          "name": "Tanya Popova",
+          "email": "tanya-popova@example.com",
+          "date": "2026-06-03T09:50:14Z"
+        },
+        "message": "commit 5 for PR #485: docs(notifications): update README.md"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 48501,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-04T01:50:14Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/485#pullrequestreview-48501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2590,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2590: verify boundary checks on line 15.",
+      "created_at": "2026-06-04T01:50:14Z",
+      "path": "notifications/README.md",
+      "line": 15
+    },
+    {
+      "id": 2591,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2591: verify boundary checks on line 25.",
+      "created_at": "2026-06-04T01:50:14Z",
+      "path": "notifications/README.md",
+      "line": 25
+    },
+    {
+      "id": 2592,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2592: verify boundary checks on line 35.",
+      "created_at": "2026-06-04T01:50:14Z",
+      "path": "notifications/README.md",
+      "line": 35
+    },
+    {
+      "id": 2593,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 2593: verify boundary checks on line 45.",
+      "created_at": "2026-06-04T01:50:14Z",
+      "path": "notifications/README.md",
+      "line": 45
+    }
+  ]
+}

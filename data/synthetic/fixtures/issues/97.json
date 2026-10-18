@@ -1,0 +1,69 @@
+{
+  "id": 2000097,
+  "number": 97,
+  "title": "FEATURE: search improvements for security",
+  "body": "Detailed description for feature tracking in module search/.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28163,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-01-09T07:57:19Z",
+  "updated_at": "2026-01-09T07:57:19Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "search"
+  ],
+  "linked_pulls": [
+    418
+  ],
+  "comments": [
+    {
+      "id": 70395,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #395 on issue #97: updates from triage and reproduction steps.",
+      "created_at": "2026-01-10T04:57:19Z"
+    },
+    {
+      "id": 70396,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #396 on issue #97: updates from triage and reproduction steps.",
+      "created_at": "2026-01-10T23:57:19Z"
+    },
+    {
+      "id": 70397,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #397 on issue #97: updates from triage and reproduction steps.",
+      "created_at": "2026-01-11T09:57:19Z"
+    },
+    {
+      "id": 70398,
+      "user": {
+        "login": "lucas-vogel",
+        "type": "User"
+      },
+      "body": "Comment #398 on issue #97: updates from triage and reproduction steps.",
+      "created_at": "2026-01-12T04:57:19Z"
+    },
+    {
+      "id": 70399,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #399 on issue #97: updates from triage and reproduction steps.",
+      "created_at": "2026-01-12T08:57:19Z"
+    }
+  ]
+}

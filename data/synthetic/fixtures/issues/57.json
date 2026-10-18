@@ -1,0 +1,42 @@
+{
+  "id": 2000057,
+  "number": 57,
+  "title": "BUG: infra-observability improvements for throughput",
+  "body": "Detailed description for bug tracking in module infra/observability/.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 23702,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-28T16:17:48Z",
+  "updated_at": "2025-12-28T16:17:48Z",
+  "closed_at": "2025-12-28T16:17:48Z",
+  "labels": [
+    "bug",
+    "infra-observability"
+  ],
+  "linked_pulls": [
+    427
+  ],
+  "comments": [
+    {
+      "id": 70232,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #232 on issue #57: updates from triage and reproduction steps.",
+      "created_at": "2025-11-29T02:17:48Z"
+    },
+    {
+      "id": 70233,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #233 on issue #57: updates from triage and reproduction steps.",
+      "created_at": "2025-11-29T12:17:48Z"
+    }
+  ]
+}

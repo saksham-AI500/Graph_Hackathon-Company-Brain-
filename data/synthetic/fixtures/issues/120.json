@@ -1,0 +1,42 @@
+{
+  "id": 2000120,
+  "number": 120,
+  "title": "INCIDENT: payments improvements for security",
+  "body": "Detailed description for incident tracking in module payments/.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 29249,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-02-02T06:28:32Z",
+  "updated_at": "2026-02-24T06:28:32Z",
+  "closed_at": "2026-02-24T06:28:32Z",
+  "labels": [
+    "incident",
+    "payments"
+  ],
+  "linked_pulls": [
+    471
+  ],
+  "comments": [
+    {
+      "id": 70496,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #496 on issue #120: updates from triage and reproduction steps.",
+      "created_at": "2026-02-02T18:28:32Z"
+    },
+    {
+      "id": 70497,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #497 on issue #120: updates from triage and reproduction steps.",
+      "created_at": "2026-02-03T18:28:32Z"
+    }
+  ]
+}

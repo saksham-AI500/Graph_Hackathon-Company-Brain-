@@ -1,0 +1,7 @@
+{
+  "GATE_2R_AUDIT_REPORT.md": "23ea87aed39a15b9a721c98df9030eb153528739774c25eee2cd1e0bc8ce169b",
+  "builder_calibration_run.log": "87b7ad4266a227d32f17787b4f39b8e48166a2c87954ee1e4fdb65624b2e560e",
+  "graph_off_acme_and_general_answers.json": "bd68c886ad4db900c922cccf132a3f3998a663db75440fd806834228c03ba05c",
+  "openrouter_model_route_audit.json": "d1f0259babf669797dd870a8f6c7afa1e0bf796469472900c71b99ed075ecf8d",
+  "pytest_adversarial_and_leakage.log": "91299b00faf94d2bedaf94c1e788d74fa28732e32f2a370bf60f851993e39922"
+}

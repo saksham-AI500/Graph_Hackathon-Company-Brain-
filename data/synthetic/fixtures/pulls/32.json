@@ -1,0 +1,183 @@
+{
+  "id": 1000032,
+  "number": 32,
+  "state": "closed",
+  "title": "chore(search_indexer): update inverted_index.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.\n\nFixes #72",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2025-10-17T01:17:50Z",
+  "updated_at": "2025-10-18T18:17:50Z",
+  "closed_at": "2025-10-18T18:17:50Z",
+  "merged_at": "2025-10-18T18:17:50Z",
+  "merge_commit_sha": "12da6bd564e2",
+  "head": {
+    "ref": "feature/pr-32",
+    "sha": "12da6bd564e2"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/32",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 15,
+      "changes": 34
+    },
+    {
+      "filename": "search/indexer/backpressure.py",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 3,
+      "changes": 55
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d2307579d02e",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T01:17:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T01:17:50Z"
+        },
+        "message": "commit 1 for PR #32: chore(search_indexer): update inverted_index.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "f851a4cf35c9",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T01:47:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T01:47:50Z"
+        },
+        "message": "commit 2 for PR #32: chore(search_indexer): update inverted_index.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9c5dc0ac85be",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T02:17:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T02:17:50Z"
+        },
+        "message": "commit 3 for PR #32: chore(search_indexer): update inverted_index.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "74e9433f2e60",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T02:47:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T02:47:50Z"
+        },
+        "message": "commit 4 for PR #32: chore(search_indexer): update inverted_index.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "12da6bd564e2",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T03:17:50Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2025-10-17T03:17:50Z"
+        },
+        "message": "commit 5 for PR #32: chore(search_indexer): update inverted_index.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 3201,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-17T22:17:50Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/32#pullrequestreview-3201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 174,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 174: verify boundary checks on line 15.",
+      "created_at": "2025-10-17T22:17:50Z",
+      "path": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 175,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 175: verify boundary checks on line 25.",
+      "created_at": "2025-10-17T22:17:50Z",
+      "path": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 176,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 176: verify boundary checks on line 35.",
+      "created_at": "2025-10-17T22:17:50Z",
+      "path": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 177,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Review comment 177: verify boundary checks on line 45.",
+      "created_at": "2025-10-17T22:17:50Z",
+      "path": "search/indexer/__pycache__/inverted_index.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

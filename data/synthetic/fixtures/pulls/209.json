@@ -1,0 +1,140 @@
+{
+  "id": 1000209,
+  "number": 209,
+  "state": "closed",
+  "title": "feat(search_indexer): update compaction.py",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2026-01-14T14:53:46Z",
+  "updated_at": "2026-01-17T01:53:46Z",
+  "closed_at": "2026-01-17T01:53:46Z",
+  "merged_at": "2026-01-17T01:53:46Z",
+  "merge_commit_sha": "e1d780d2ef64",
+  "head": {
+    "ref": "feature/pr-209",
+    "sha": "e1d780d2ef64"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/209",
+  "files": [
+    {
+      "filename": "search/indexer/compaction.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 9,
+      "changes": 55
+    },
+    {
+      "filename": "search/indexer/__pycache__/tokenizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 14,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "e0cb9436de1d",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T14:53:46Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T14:53:46Z"
+        },
+        "message": "commit 1 for PR #209: feat(search_indexer): update compaction.py"
+      }
+    },
+    {
+      "sha": "ae4338e8f4a2",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T15:23:46Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T15:23:46Z"
+        },
+        "message": "commit 2 for PR #209: feat(search_indexer): update compaction.py"
+      }
+    },
+    {
+      "sha": "e1d780d2ef64",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T15:53:46Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2026-01-14T15:53:46Z"
+        },
+        "message": "commit 3 for PR #209: feat(search_indexer): update compaction.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 20901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-16T08:53:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/209#pullrequestreview-20901"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1173,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1173: verify boundary checks on line 15.",
+      "created_at": "2026-01-16T08:53:46Z",
+      "path": "search/indexer/compaction.py",
+      "line": 15
+    },
+    {
+      "id": 1174,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1174: verify boundary checks on line 25.",
+      "created_at": "2026-01-16T08:53:46Z",
+      "path": "search/indexer/compaction.py",
+      "line": 25
+    },
+    {
+      "id": 1175,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 1175: verify boundary checks on line 35.",
+      "created_at": "2026-01-16T08:53:46Z",
+      "path": "search/indexer/compaction.py",
+      "line": 35
+    }
+  ]
+}

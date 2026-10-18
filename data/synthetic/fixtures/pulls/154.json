@@ -1,0 +1,94 @@
+{
+  "id": 1000154,
+  "number": 154,
+  "state": "closed",
+  "title": "fix(infra_observability): update tracer.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "clara-oswald",
+    "id": 20590,
+    "type": "User"
+  },
+  "created_at": "2025-12-17T19:03:14Z",
+  "updated_at": "2025-12-19T14:03:14Z",
+  "closed_at": "2025-12-19T14:03:14Z",
+  "merged_at": "2025-12-19T14:03:14Z",
+  "merge_commit_sha": "4a00f145a92b",
+  "head": {
+    "ref": "feature/pr-154",
+    "sha": "4a00f145a92b"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/154",
+  "files": [
+    {
+      "filename": "infra/observability/tracer.py",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 14,
+      "changes": 36
+    },
+    {
+      "filename": "infra/observability/__pycache__/audit_obs.cpython-314.pyc",
+      "status": "modified",
+      "additions": 36,
+      "deletions": 10,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "498cae21cfc0",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T19:03:14Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T19:03:14Z"
+        },
+        "message": "commit 1 for PR #154: fix(infra_observability): update tracer.py"
+      }
+    },
+    {
+      "sha": "22403a3cdcca",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T19:33:14Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T19:33:14Z"
+        },
+        "message": "commit 2 for PR #154: fix(infra_observability): update tracer.py"
+      }
+    },
+    {
+      "sha": "4a00f145a92b",
+      "commit": {
+        "author": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T20:03:14Z"
+        },
+        "committer": {
+          "name": "Clara Oswald",
+          "email": "clara-oswald@example.com",
+          "date": "2025-12-17T20:03:14Z"
+        },
+        "message": "commit 3 for PR #154: fix(infra_observability): update tracer.py"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

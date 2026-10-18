@@ -1,0 +1,152 @@
+{
+  "id": 1000582,
+  "number": 582,
+  "state": "closed",
+  "title": "perf(notifications): update sms_service.cpython-314.pyc",
+  "body": "Implementation changes for notifications module improvements.",
+  "user": {
+    "login": "sophia-rossi",
+    "id": 24294,
+    "type": "User"
+  },
+  "created_at": "2026-07-22T09:34:08Z",
+  "updated_at": "2026-07-24T04:34:08Z",
+  "closed_at": "2026-07-24T04:34:08Z",
+  "merged_at": "2026-07-24T04:34:08Z",
+  "merge_commit_sha": "3eac84fb9bd8",
+  "head": {
+    "ref": "feature/pr-582",
+    "sha": "3eac84fb9bd8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/582",
+  "files": [
+    {
+      "filename": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 8,
+      "changes": 38
+    },
+    {
+      "filename": "notifications/preferences.py",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 1,
+      "changes": 29
+    },
+    {
+      "filename": "notifications/rate_limiter.py",
+      "status": "modified",
+      "additions": 28,
+      "deletions": 6,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4db09be21583",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T09:34:08Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T09:34:08Z"
+        },
+        "message": "commit 1 for PR #582: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "e2b7cefaa99d",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T10:04:08Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T10:04:08Z"
+        },
+        "message": "commit 2 for PR #582: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d505eddebb11",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T10:34:08Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T10:34:08Z"
+        },
+        "message": "commit 3 for PR #582: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3eac84fb9bd8",
+      "commit": {
+        "author": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T11:04:08Z"
+        },
+        "committer": {
+          "name": "Sophia Rossi",
+          "email": "sophia-rossi@example.com",
+          "date": "2026-07-22T11:04:08Z"
+        },
+        "message": "commit 4 for PR #582: perf(notifications): update sms_service.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58201,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-22T20:34:08Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/582#pullrequestreview-58201"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3113,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3113: verify boundary checks on line 15.",
+      "created_at": "2026-07-22T20:34:08Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3114,
+      "user": {
+        "login": "ingrid-berg",
+        "type": "User"
+      },
+      "body": "Review comment 3114: verify boundary checks on line 25.",
+      "created_at": "2026-07-22T20:34:08Z",
+      "path": "notifications/__pycache__/sms_service.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

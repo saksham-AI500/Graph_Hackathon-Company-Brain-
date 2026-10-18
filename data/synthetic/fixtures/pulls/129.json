@@ -1,0 +1,254 @@
+{
+  "id": 1000129,
+  "number": 129,
+  "state": "closed",
+  "title": "fix(payments): update partial_refund.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 25801,
+    "type": "User"
+  },
+  "created_at": "2025-12-05T04:09:32Z",
+  "updated_at": "2025-12-06T20:09:32Z",
+  "closed_at": "2025-12-06T20:09:32Z",
+  "merged_at": "2025-12-06T20:09:32Z",
+  "merge_commit_sha": "41fb6e98b9b6",
+  "head": {
+    "ref": "feature/pr-129",
+    "sha": "41fb6e98b9b6"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/129",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 5,
+      "changes": 8
+    }
+  ],
+  "commits": [
+    {
+      "sha": "665a310f86b4",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T04:09:32Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T04:09:32Z"
+        },
+        "message": "commit 1 for PR #129: fix(payments): update partial_refund.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "a4134cca49dd",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T04:39:32Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T04:39:32Z"
+        },
+        "message": "commit 2 for PR #129: fix(payments): update partial_refund.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "41fb6e98b9b6",
+      "commit": {
+        "author": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T05:09:32Z"
+        },
+        "committer": {
+          "name": "Yuki Tanaka",
+          "email": "yuki-tanaka@example.com",
+          "date": "2025-12-05T05:09:32Z"
+        },
+        "message": "commit 3 for PR #129: fix(payments): update partial_refund.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 12901,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T08:09:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/129#pullrequestreview-12901"
+    },
+    {
+      "id": 12902,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T08:09:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/129#pullrequestreview-12902"
+    },
+    {
+      "id": 12903,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-06T08:09:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/129#pullrequestreview-12903"
+    }
+  ],
+  "comments": [
+    {
+      "id": 706,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 706: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 707,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 707: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 708,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 708: verify boundary checks on line 35.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 709,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 709: verify boundary checks on line 45.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 710,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 710: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 711,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 711: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 712,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 712: verify boundary checks on line 35.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 713,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 713: verify boundary checks on line 45.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 714,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 714: verify boundary checks on line 55.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 715,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 715: verify boundary checks on line 15.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 716,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 716: verify boundary checks on line 25.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 717,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Review comment 717: verify boundary checks on line 35.",
+      "created_at": "2025-12-06T08:09:32Z",
+      "path": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

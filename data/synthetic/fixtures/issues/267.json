@@ -1,0 +1,49 @@
+{
+  "id": 2000267,
+  "number": 267,
+  "title": "FEATURE: infra-deploy improvements for security",
+  "body": "Detailed description for feature tracking in module infra/deploy/.",
+  "user": {
+    "login": "rachel-green-fictional",
+    "id": 28517,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-05T06:49:01Z",
+  "updated_at": "2026-07-29T06:49:01Z",
+  "closed_at": "2026-07-29T06:49:01Z",
+  "labels": [
+    "feature",
+    "infra-deploy"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71104,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #1104 on issue #267: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T08:49:01Z"
+    },
+    {
+      "id": 71105,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1105 on issue #267: updates from triage and reproduction steps.",
+      "created_at": "2026-07-05T18:49:01Z"
+    },
+    {
+      "id": 71106,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #1106 on issue #267: updates from triage and reproduction steps.",
+      "created_at": "2026-07-06T06:49:01Z"
+    }
+  ]
+}

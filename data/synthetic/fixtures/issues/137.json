@@ -1,0 +1,60 @@
+{
+  "id": 2000137,
+  "number": 137,
+  "title": "BUG: search-indexer improvements for throughput",
+  "body": "Detailed description for bug tracking in module search/indexer/.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 26692,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-02-19T23:25:20Z",
+  "updated_at": "2026-02-19T23:25:20Z",
+  "closed_at": null,
+  "labels": [
+    "bug",
+    "search-indexer"
+  ],
+  "linked_pulls": [
+    68
+  ],
+  "comments": [
+    {
+      "id": 70557,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Comment #557 on issue #137: updates from triage and reproduction steps.",
+      "created_at": "2026-02-20T04:25:20Z"
+    },
+    {
+      "id": 70558,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #558 on issue #137: updates from triage and reproduction steps.",
+      "created_at": "2026-02-20T20:25:20Z"
+    },
+    {
+      "id": 70559,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #559 on issue #137: updates from triage and reproduction steps.",
+      "created_at": "2026-02-21T15:25:20Z"
+    },
+    {
+      "id": 70560,
+      "user": {
+        "login": "nora-al-mansoor",
+        "type": "User"
+      },
+      "body": "Comment #560 on issue #137: updates from triage and reproduction steps.",
+      "created_at": "2026-02-21T23:25:20Z"
+    }
+  ]
+}

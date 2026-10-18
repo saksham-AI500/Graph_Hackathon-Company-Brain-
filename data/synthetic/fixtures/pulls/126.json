@@ -1,0 +1,162 @@
+{
+  "id": 1000126,
+  "number": 126,
+  "state": "closed",
+  "title": "docs(payments_refunds): update reconciliation.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 24627,
+    "type": "User"
+  },
+  "created_at": "2025-12-03T15:35:32Z",
+  "updated_at": "2025-12-05T02:35:32Z",
+  "closed_at": "2025-12-05T02:35:32Z",
+  "merged_at": "2025-12-05T02:35:32Z",
+  "merge_commit_sha": "fa7c0ebbd4c1",
+  "head": {
+    "ref": "feature/pr-126",
+    "sha": "fa7c0ebbd4c1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/126",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 44,
+      "deletions": 2,
+      "changes": 47
+    },
+    {
+      "filename": "payments/refunds/audit_refunds.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 8,
+      "changes": 30
+    }
+  ],
+  "commits": [
+    {
+      "sha": "dfdfe30f5c7e",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T15:35:32Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T15:35:32Z"
+        },
+        "message": "commit 1 for PR #126: docs(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "7565851161f2",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T16:05:32Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T16:05:32Z"
+        },
+        "message": "commit 2 for PR #126: docs(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "fa7c0ebbd4c1",
+      "commit": {
+        "author": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T16:35:32Z"
+        },
+        "committer": {
+          "name": "Kevin Malone",
+          "email": "kevin-malone@example.com",
+          "date": "2025-12-03T16:35:32Z"
+        },
+        "message": "commit 3 for PR #126: docs(payments_refunds): update reconciliation.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 12601,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-04T23:35:32Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/126#pullrequestreview-12601"
+    }
+  ],
+  "comments": [
+    {
+      "id": 695,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 695: verify boundary checks on line 15.",
+      "created_at": "2025-12-04T23:35:32Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 696,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 696: verify boundary checks on line 25.",
+      "created_at": "2025-12-04T23:35:32Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 697,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 697: verify boundary checks on line 35.",
+      "created_at": "2025-12-04T23:35:32Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 698,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 698: verify boundary checks on line 45.",
+      "created_at": "2025-12-04T23:35:32Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 699,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 699: verify boundary checks on line 55.",
+      "created_at": "2025-12-04T23:35:32Z",
+      "path": "payments/refunds/__pycache__/reconciliation.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": 2000160,
+  "number": 160,
+  "title": "PERF: auth-mfa improvements for reliability",
+  "body": "Detailed description for perf tracking in module auth/mfa/.",
+  "user": {
+    "login": "carlos-mendez",
+    "id": 26354,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-15T21:18:22Z",
+  "updated_at": "2026-03-26T21:18:22Z",
+  "closed_at": "2026-03-26T21:18:22Z",
+  "labels": [
+    "perf",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70658,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #658 on issue #160: updates from triage and reproduction steps.",
+      "created_at": "2026-03-16T04:18:22Z"
+    },
+    {
+      "id": 70659,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #659 on issue #160: updates from triage and reproduction steps.",
+      "created_at": "2026-03-16T16:18:22Z"
+    }
+  ]
+}

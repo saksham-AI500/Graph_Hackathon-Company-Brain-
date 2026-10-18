@@ -1,0 +1,240 @@
+{
+  "id": 1000381,
+  "number": 381,
+  "state": "closed",
+  "title": "docs(growth_experiments): update config_exp.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "hassan-el-sayed",
+    "id": 29279,
+    "type": "User"
+  },
+  "created_at": "2026-04-10T16:42:42Z",
+  "updated_at": "2026-04-13T14:42:42Z",
+  "closed_at": "2026-04-13T14:42:42Z",
+  "merged_at": "2026-04-13T14:42:42Z",
+  "merge_commit_sha": "aeed6e79bd7c",
+  "head": {
+    "ref": "feature/pr-381",
+    "sha": "aeed6e79bd7c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/381",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 7,
+      "changes": 46
+    },
+    {
+      "filename": "growth/experiments/metrics_collector.py",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 4,
+      "changes": 7
+    },
+    {
+      "filename": "growth/experiments/__pycache__/cuped.cpython-314.pyc",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 13,
+      "changes": 41
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9fc93c640189",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T16:42:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T16:42:42Z"
+        },
+        "message": "commit 1 for PR #381: docs(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "175d39eeec76",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T17:12:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T17:12:42Z"
+        },
+        "message": "commit 2 for PR #381: docs(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "32611b2f2ef7",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T17:42:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T17:42:42Z"
+        },
+        "message": "commit 3 for PR #381: docs(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "aeed6e79bd7c",
+      "commit": {
+        "author": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T18:12:42Z"
+        },
+        "committer": {
+          "name": "Hassan El-Sayed",
+          "email": "hassan-el-sayed@example.com",
+          "date": "2026-04-10T18:12:42Z"
+        },
+        "message": "commit 4 for PR #381: docs(growth_experiments): update config_exp.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 38101,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T10:42:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/381#pullrequestreview-38101"
+    },
+    {
+      "id": 38102,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-11T10:42:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/381#pullrequestreview-38102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1997,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1997: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1998,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1998: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1999,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1999: verify boundary checks on line 35.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2000,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2000: verify boundary checks on line 45.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2001,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 2001: verify boundary checks on line 55.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 2002,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2002: verify boundary checks on line 15.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2003,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2003: verify boundary checks on line 25.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2004,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2004: verify boundary checks on line 35.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2005,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 2005: verify boundary checks on line 45.",
+      "created_at": "2026-04-11T10:42:42Z",
+      "path": "growth/experiments/__pycache__/config_exp.cpython-314.pyc",
+      "line": 45
+    }
+  ]
+}

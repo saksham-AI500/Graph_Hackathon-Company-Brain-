@@ -1,0 +1,191 @@
+{
+  "id": 1000309,
+  "number": 309,
+  "state": "closed",
+  "title": "feat(infra_observability): update alerts.cpython-314.pyc",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-03-06T05:55:18Z",
+  "updated_at": "2026-03-08T02:55:18Z",
+  "closed_at": "2026-03-08T02:55:18Z",
+  "merged_at": "2026-03-08T02:55:18Z",
+  "merge_commit_sha": "3e0679f2ec54",
+  "head": {
+    "ref": "feature/pr-309",
+    "sha": "3e0679f2ec54"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/309",
+  "files": [
+    {
+      "filename": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 5,
+      "changes": 41
+    },
+    {
+      "filename": "infra/observability/__pycache__/log_sanitizer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 12,
+      "changes": 10
+    },
+    {
+      "filename": "infra/observability/collector.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 6,
+      "changes": 60
+    }
+  ],
+  "commits": [
+    {
+      "sha": "656c9505168b",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T05:55:18Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T05:55:18Z"
+        },
+        "message": "commit 1 for PR #309: feat(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "76706b3783e7",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T06:25:18Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T06:25:18Z"
+        },
+        "message": "commit 2 for PR #309: feat(infra_observability): update alerts.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "3e0679f2ec54",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T06:55:18Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-03-06T06:55:18Z"
+        },
+        "message": "commit 3 for PR #309: feat(infra_observability): update alerts.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30901,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-07T14:55:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/309#pullrequestreview-30901"
+    },
+    {
+      "id": 30902,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-07T14:55:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/309#pullrequestreview-30902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1636,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1636: verify boundary checks on line 15.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1637,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1637: verify boundary checks on line 25.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1638,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Review comment 1638: verify boundary checks on line 35.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 1639,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 1639: verify boundary checks on line 15.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1640,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 1640: verify boundary checks on line 25.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1641,
+      "user": {
+        "login": "samir-patel",
+        "type": "User"
+      },
+      "body": "Review comment 1641: verify boundary checks on line 35.",
+      "created_at": "2026-03-07T14:55:18Z",
+      "path": "infra/observability/__pycache__/alerts.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C01",
+    "name": "team-platform",
+    "team": "@acme/platform",
+    "purpose": "Platform and infrastructure discussions"
+  },
+  {
+    "id": "C02",
+    "name": "team-payments",
+    "team": "@acme/payments",
+    "purpose": "Payments and transactions core discussions"
+  },
+  {
+    "id": "C03",
+    "name": "team-identity",
+    "team": "@acme/identity",
+    "purpose": "Authentication and authorization architecture"
+  },
+  {
+    "id": "C04",
+    "name": "team-growth",
+    "team": "@acme/growth",
+    "purpose": "User acquisition, onboarding, and experimentation"
+  }
+]

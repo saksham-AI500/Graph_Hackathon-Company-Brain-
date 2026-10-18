@@ -1,0 +1,173 @@
+{
+  "id": 1000187,
+  "number": 187,
+  "state": "closed",
+  "title": "perf(search): update query_parser.cpython-314.pyc",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "raj-kulkarni",
+    "id": 28645,
+    "type": "User"
+  },
+  "created_at": "2026-01-03T00:21:36Z",
+  "updated_at": "2026-01-05T12:21:36Z",
+  "closed_at": "2026-01-05T12:21:36Z",
+  "merged_at": "2026-01-05T12:21:36Z",
+  "merge_commit_sha": "d18aaf0da81c",
+  "head": {
+    "ref": "feature/pr-187",
+    "sha": "d18aaf0da81c"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/187",
+  "files": [
+    {
+      "filename": "search/__pycache__/query_parser.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 13,
+      "changes": 15
+    },
+    {
+      "filename": "search/indexer/__init__.py",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "82d759da5fbb",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T00:21:36Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T00:21:36Z"
+        },
+        "message": "commit 1 for PR #187: perf(search): update query_parser.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c2b8f34ec2d1",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T00:51:36Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T00:51:36Z"
+        },
+        "message": "commit 2 for PR #187: perf(search): update query_parser.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "d18aaf0da81c",
+      "commit": {
+        "author": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T01:21:36Z"
+        },
+        "committer": {
+          "name": "Raj Kulkarni",
+          "email": "raj-kulkarni@example.com",
+          "date": "2026-01-03T01:21:36Z"
+        },
+        "message": "commit 3 for PR #187: perf(search): update query_parser.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 18701,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-04T23:21:36Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/187#pullrequestreview-18701"
+    },
+    {
+      "id": 18702,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-04T23:21:36Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/187#pullrequestreview-18702"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1031,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1031: verify boundary checks on line 15.",
+      "created_at": "2026-01-04T23:21:36Z",
+      "path": "search/__pycache__/query_parser.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1032,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 1032: verify boundary checks on line 25.",
+      "created_at": "2026-01-04T23:21:36Z",
+      "path": "search/__pycache__/query_parser.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1033,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1033: verify boundary checks on line 15.",
+      "created_at": "2026-01-04T23:21:36Z",
+      "path": "search/__pycache__/query_parser.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1034,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1034: verify boundary checks on line 25.",
+      "created_at": "2026-01-04T23:21:36Z",
+      "path": "search/__pycache__/query_parser.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1035,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1035: verify boundary checks on line 35.",
+      "created_at": "2026-01-04T23:21:36Z",
+      "path": "search/__pycache__/query_parser.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

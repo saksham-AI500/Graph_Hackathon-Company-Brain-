@@ -1,0 +1,40 @@
+{
+  "id": 2000272,
+  "number": 272,
+  "title": "INCIDENT: search improvements for caching",
+  "body": "Detailed description for incident tracking in module search/.",
+  "user": {
+    "login": "aiden-cross",
+    "id": 22495,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-10T11:44:47Z",
+  "updated_at": "2026-07-14T11:44:47Z",
+  "closed_at": "2026-07-14T11:44:47Z",
+  "labels": [
+    "incident",
+    "search"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71119,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #1119 on issue #272: updates from triage and reproduction steps.",
+      "created_at": "2026-07-11T03:44:47Z"
+    },
+    {
+      "id": 71120,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #1120 on issue #272: updates from triage and reproduction steps.",
+      "created_at": "2026-07-11T10:44:47Z"
+    }
+  ]
+}

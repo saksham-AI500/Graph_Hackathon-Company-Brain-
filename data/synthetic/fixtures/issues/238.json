@@ -1,0 +1,67 @@
+{
+  "id": 2000238,
+  "number": 238,
+  "title": "TASK: payments improvements for latency",
+  "body": "Detailed description for task tracking in module payments/.",
+  "user": {
+    "login": "hannah-schmidt",
+    "id": 23486,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-06-05T02:50:44Z",
+  "updated_at": "2026-06-05T02:50:44Z",
+  "closed_at": null,
+  "labels": [
+    "task",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70973,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #973 on issue #238: updates from triage and reproduction steps.",
+      "created_at": "2026-06-06T00:50:44Z"
+    },
+    {
+      "id": 70974,
+      "user": {
+        "login": "raj-kulkarni",
+        "type": "User"
+      },
+      "body": "Comment #974 on issue #238: updates from triage and reproduction steps.",
+      "created_at": "2026-06-06T14:50:44Z"
+    },
+    {
+      "id": 70975,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #975 on issue #238: updates from triage and reproduction steps.",
+      "created_at": "2026-06-07T10:50:44Z"
+    },
+    {
+      "id": 70976,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #976 on issue #238: updates from triage and reproduction steps.",
+      "created_at": "2026-06-07T15:50:44Z"
+    },
+    {
+      "id": 70977,
+      "user": {
+        "login": "zoe-kravitz",
+        "type": "User"
+      },
+      "body": "Comment #977 on issue #238: updates from triage and reproduction steps.",
+      "created_at": "2026-06-08T01:50:44Z"
+    }
+  ]
+}

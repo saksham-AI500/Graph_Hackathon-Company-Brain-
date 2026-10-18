@@ -1,0 +1,58 @@
+{
+  "id": 2000228,
+  "number": 228,
+  "title": "INCIDENT: infra-observability improvements for security",
+  "body": "Detailed description for incident tracking in module infra/observability/.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 26692,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-05-25T17:10:58Z",
+  "updated_at": "2026-06-16T17:10:58Z",
+  "closed_at": "2026-06-16T17:10:58Z",
+  "labels": [
+    "incident",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70933,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #933 on issue #228: updates from triage and reproduction steps.",
+      "created_at": "2026-05-25T23:10:58Z"
+    },
+    {
+      "id": 70934,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #934 on issue #228: updates from triage and reproduction steps.",
+      "created_at": "2026-05-26T05:10:58Z"
+    },
+    {
+      "id": 70935,
+      "user": {
+        "login": "jordan-hayes",
+        "type": "User"
+      },
+      "body": "Comment #935 on issue #228: updates from triage and reproduction steps.",
+      "created_at": "2026-05-26T16:10:58Z"
+    },
+    {
+      "id": 70936,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #936 on issue #228: updates from triage and reproduction steps.",
+      "created_at": "2026-05-27T15:10:58Z"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "question_id": "Q1",
+  "question": "Summarize everything known about the checkout timeout bug: the issue, linked PR, review discussion, and any doc that mentions it.",
+  "mode": "graph_on",
+  "run_index": 4,
+  "status": "REFUSED",
+  "final_answer_text": "Evidence verification refused the response: The primary claim could not be supported by active graph records, valid span citations, or local NLI verification.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T08:56:24.633793+00:00",
+  "latency_ms": 20183.69,
+  "claims_count": 0,
+  "sources_count": 4,
+  "claims": [],
+  "sources": [
+    {
+      "id": "S2",
+      "entity_type": "Evidence",
+      "identifier": "PR #326: docs: update checkout documentation",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/326",
+      "title_or_desc": "PR #326: docs: update checkout documentation",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S2",
+      "entity_id": "PR #326: docs: update checkout documentation",
+      "description": "PR #326: docs: update checkout documentation"
+    },
+    {
+      "id": "S4",
+      "entity_type": "Evidence",
+      "identifier": "Doc: payments_checkout-README.md",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/blob/main/docs/modules/payments_checkout-README.md",
+      "title_or_desc": "Doc: payments_checkout-README.md",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S4",
+      "entity_id": "Doc: payments_checkout-README.md",
+      "description": "Doc: payments_checkout-README.md"
+    },
+    {
+      "id": "S3",
+      "entity_type": "Evidence",
+      "identifier": "PR #236: fix(payments): optimize database connecti",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/236",
+      "title_or_desc": "PR #236: fix(payments): optimize database connection timeouts",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S3",
+      "entity_id": "PR #236: fix(payments): optimize database connecti",
+      "description": "PR #236: fix(payments): optimize database connection timeouts"
+    },
+    {
+      "id": "S1",
+      "entity_type": "Evidence",
+      "identifier": "Issue #44: Checkout timeout during peak load",
+      "url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/issues/44",
+      "title_or_desc": "Issue #44: Checkout timeout during peak load",
+      "snippet": null,
+      "start_offset": null,
+      "end_offset": null,
+      "span_text": null,
+      "valid_from": null,
+      "valid_to": null,
+      "source_id": "S1",
+      "entity_id": "Issue #44: Checkout timeout during peak load",
+      "description": "Issue #44: Checkout timeout during peak load"
+    }
+  ],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [
+    {
+      "sentence": "The checkout timeout bug was resolved by optimizing database connection timeouts in PR #236, not by the falsely claimed fix in PR #326.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "The issue was documented in Issue #44 and the solution is explained in the checkout flow documentation.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "The bug was closed after PR #236 was approved and merged.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "PR #326 was a docs-only PR and did not fix the issue.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "This PR was reviewed and approved by Elena Rostova after Marcus Vance addressed her concerns about boundary checks.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    },
+    {
+      "sentence": "PR #326 falsely claimed to fix the issue but only updated documentation.",
+      "claim_ids": [],
+      "cited_sources": [],
+      "verification_path": "sentence_check",
+      "score": null,
+      "passed": false,
+      "reason": "Factual sentence missing mapped verified claim or bracketed source citation."
+    }
+  ],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

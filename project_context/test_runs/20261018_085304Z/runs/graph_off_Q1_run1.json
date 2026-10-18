@@ -1,0 +1,22 @@
+{
+  "question_id": "Q1",
+  "question": "Summarize everything known about the checkout timeout bug: the issue, linked PR, review discussion, and any doc that mentions it.",
+  "mode": "graph_off",
+  "run_index": 1,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot summarize details about the checkout timeout bug, its linked PR, review discussion, or related documents. To answer this, I would need access to the repository's issues, pull requests, and documentation.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:02:17.847707+00:00",
+  "latency_ms": 3980.55,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

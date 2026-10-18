@@ -1,0 +1,152 @@
+{
+  "id": 1000135,
+  "number": 135,
+  "state": "closed",
+  "title": "feat(api_gateway): update circuit_breaker.cpython-314.pyc",
+  "body": "Implementation changes for api_gateway module improvements.",
+  "user": {
+    "login": "fatima-zahra",
+    "id": 21622,
+    "type": "User"
+  },
+  "created_at": "2025-12-08T16:00:11Z",
+  "updated_at": "2025-12-10T14:00:11Z",
+  "closed_at": "2025-12-10T14:00:11Z",
+  "merged_at": "2025-12-10T14:00:11Z",
+  "merge_commit_sha": "c9dd37925eff",
+  "head": {
+    "ref": "feature/pr-135",
+    "sha": "c9dd37925eff"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/135",
+  "files": [
+    {
+      "filename": "api/gateway/__pycache__/circuit_breaker.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 7,
+      "changes": 30
+    },
+    {
+      "filename": "api/gateway/__pycache__/audit_gateway.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 5,
+      "changes": 38
+    },
+    {
+      "filename": "api/gateway/__pycache__/canary_router.cpython-314.pyc",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 39
+    }
+  ],
+  "commits": [
+    {
+      "sha": "97412d5bbc83",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T16:00:11Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T16:00:11Z"
+        },
+        "message": "commit 1 for PR #135: feat(api_gateway): update circuit_breaker.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "26d1be46d260",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T16:30:11Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T16:30:11Z"
+        },
+        "message": "commit 2 for PR #135: feat(api_gateway): update circuit_breaker.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "19bcd19c1a5a",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T17:00:11Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T17:00:11Z"
+        },
+        "message": "commit 3 for PR #135: feat(api_gateway): update circuit_breaker.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "c9dd37925eff",
+      "commit": {
+        "author": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T17:30:11Z"
+        },
+        "committer": {
+          "name": "Fatima Zahra",
+          "email": "fatima-zahra@example.com",
+          "date": "2025-12-08T17:30:11Z"
+        },
+        "message": "commit 4 for PR #135: feat(api_gateway): update circuit_breaker.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 13501,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-09T09:00:11Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/135#pullrequestreview-13501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 740,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 740: verify boundary checks on line 15.",
+      "created_at": "2025-12-09T09:00:11Z",
+      "path": "api/gateway/__pycache__/circuit_breaker.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 741,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Review comment 741: verify boundary checks on line 25.",
+      "created_at": "2025-12-09T09:00:11Z",
+      "path": "api/gateway/__pycache__/circuit_breaker.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

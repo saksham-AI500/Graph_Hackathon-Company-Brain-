@@ -1,0 +1,278 @@
+{
+  "id": 1000318,
+  "number": 318,
+  "state": "closed",
+  "title": "chore(payments): update notification.py",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2026-03-10T19:43:04Z",
+  "updated_at": "2026-03-12T23:43:04Z",
+  "closed_at": "2026-03-12T23:43:04Z",
+  "merged_at": "2026-03-12T23:43:04Z",
+  "merge_commit_sha": "7c1e6426c81d",
+  "head": {
+    "ref": "feature/pr-318",
+    "sha": "7c1e6426c81d"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/318",
+  "files": [
+    {
+      "filename": "payments/refunds/notification.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 4,
+      "changes": 15
+    },
+    {
+      "filename": "payments/webhook_listener.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 9,
+      "changes": 47
+    },
+    {
+      "filename": "payments/__pycache__/payment_router.cpython-314.pyc",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 11,
+      "changes": 25
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d4dd2974422f",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T19:43:04Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T19:43:04Z"
+        },
+        "message": "commit 1 for PR #318: chore(payments): update notification.py"
+      }
+    },
+    {
+      "sha": "f699d3215f41",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T20:13:04Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T20:13:04Z"
+        },
+        "message": "commit 2 for PR #318: chore(payments): update notification.py"
+      }
+    },
+    {
+      "sha": "40fec72a36a2",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T20:43:04Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T20:43:04Z"
+        },
+        "message": "commit 3 for PR #318: chore(payments): update notification.py"
+      }
+    },
+    {
+      "sha": "de7f658ee41b",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T21:13:04Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T21:13:04Z"
+        },
+        "message": "commit 4 for PR #318: chore(payments): update notification.py"
+      }
+    },
+    {
+      "sha": "7c1e6426c81d",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T21:43:04Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2026-03-10T21:43:04Z"
+        },
+        "message": "commit 5 for PR #318: chore(payments): update notification.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 31801,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-12T06:43:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/318#pullrequestreview-31801"
+    },
+    {
+      "id": 31802,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-12T06:43:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/318#pullrequestreview-31802"
+    },
+    {
+      "id": 31803,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-12T06:43:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/318#pullrequestreview-31803"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1687,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1687: verify boundary checks on line 15.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 15
+    },
+    {
+      "id": 1688,
+      "user": {
+        "login": "dependency-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 1688: verify boundary checks on line 25.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 25
+    },
+    {
+      "id": 1689,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1689: verify boundary checks on line 15.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 15
+    },
+    {
+      "id": 1690,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1690: verify boundary checks on line 25.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 25
+    },
+    {
+      "id": 1691,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1691: verify boundary checks on line 35.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 35
+    },
+    {
+      "id": 1692,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 1692: verify boundary checks on line 45.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 45
+    },
+    {
+      "id": 1693,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1693: verify boundary checks on line 15.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 15
+    },
+    {
+      "id": 1694,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1694: verify boundary checks on line 25.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 25
+    },
+    {
+      "id": 1695,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1695: verify boundary checks on line 35.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 35
+    },
+    {
+      "id": 1696,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 1696: verify boundary checks on line 45.",
+      "created_at": "2026-03-12T06:43:04Z",
+      "path": "payments/refunds/notification.py",
+      "line": 45
+    }
+  ]
+}

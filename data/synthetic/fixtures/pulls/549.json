@@ -1,0 +1,210 @@
+{
+  "id": 1000549,
+  "number": 549,
+  "state": "closed",
+  "title": "perf(infra_deploy): update service_mesh.cpython-314.pyc",
+  "body": "Implementation changes for infra_deploy module improvements.",
+  "user": {
+    "login": "ingrid-berg",
+    "id": 28152,
+    "type": "User"
+  },
+  "created_at": "2026-07-06T04:42:22Z",
+  "updated_at": "2026-07-08T11:42:22Z",
+  "closed_at": "2026-07-08T11:42:22Z",
+  "merged_at": "2026-07-08T11:42:22Z",
+  "merge_commit_sha": "ad5ade931c09",
+  "head": {
+    "ref": "feature/pr-549",
+    "sha": "ad5ade931c09"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/549",
+  "files": [
+    {
+      "filename": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 8,
+      "changes": 57
+    }
+  ],
+  "commits": [
+    {
+      "sha": "814f1a8686a4",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T04:42:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T04:42:22Z"
+        },
+        "message": "commit 1 for PR #549: perf(infra_deploy): update service_mesh.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "34093f74bb11",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T05:12:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T05:12:22Z"
+        },
+        "message": "commit 2 for PR #549: perf(infra_deploy): update service_mesh.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ad5ade931c09",
+      "commit": {
+        "author": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T05:42:22Z"
+        },
+        "committer": {
+          "name": "Ingrid Berg",
+          "email": "ingrid-berg@example.com",
+          "date": "2026-07-06T05:42:22Z"
+        },
+        "message": "commit 3 for PR #549: perf(infra_deploy): update service_mesh.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 54901,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-07T21:42:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/549#pullrequestreview-54901"
+    },
+    {
+      "id": 54902,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-07T21:42:22Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/549#pullrequestreview-54902"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2936,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2936: verify boundary checks on line 15.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2937,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2937: verify boundary checks on line 25.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2938,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2938: verify boundary checks on line 35.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2939,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2939: verify boundary checks on line 45.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2940,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2940: verify boundary checks on line 15.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2941,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2941: verify boundary checks on line 25.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 2942,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2942: verify boundary checks on line 35.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 2943,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2943: verify boundary checks on line 45.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 2944,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Review comment 2944: verify boundary checks on line 55.",
+      "created_at": "2026-07-07T21:42:22Z",
+      "path": "infra/deploy/__pycache__/service_mesh.cpython-314.pyc",
+      "line": 55
+    }
+  ]
+}

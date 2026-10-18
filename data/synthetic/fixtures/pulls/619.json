@@ -1,0 +1,252 @@
+{
+  "id": 1000619,
+  "number": 619,
+  "state": "closed",
+  "title": "perf(search_indexer): update schema_indexer.cpython-314.pyc",
+  "body": "Implementation changes for search_indexer module improvements.",
+  "user": {
+    "login": "amara-okafor",
+    "id": 25566,
+    "type": "User"
+  },
+  "created_at": "2026-08-10T15:02:42Z",
+  "updated_at": "2026-08-11T16:02:42Z",
+  "closed_at": "2026-08-11T16:02:42Z",
+  "merged_at": "2026-08-11T16:02:42Z",
+  "merge_commit_sha": "20e58c76f7f1",
+  "head": {
+    "ref": "feature/pr-619",
+    "sha": "20e58c76f7f1"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/619",
+  "files": [
+    {
+      "filename": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 6,
+      "changes": 23
+    },
+    {
+      "filename": "search/indexer/embeddings.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 5,
+      "changes": 41
+    },
+    {
+      "filename": "search/indexer/__pycache__/dead_letter.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 11,
+      "changes": 19
+    }
+  ],
+  "commits": [
+    {
+      "sha": "9b02f38d6a65",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-10T15:02:42Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-10T15:02:42Z"
+        },
+        "message": "commit 1 for PR #619: perf(search_indexer): update schema_indexer.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "20e58c76f7f1",
+      "commit": {
+        "author": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-10T15:32:42Z"
+        },
+        "committer": {
+          "name": "Amara Okafor",
+          "email": "amara-okafor@example.com",
+          "date": "2026-08-10T15:32:42Z"
+        },
+        "message": "commit 2 for PR #619: perf(search_indexer): update schema_indexer.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 61901,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-11T18:02:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/619#pullrequestreview-61901"
+    },
+    {
+      "id": 61902,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-11T18:02:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/619#pullrequestreview-61902"
+    },
+    {
+      "id": 61903,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-11T18:02:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/619#pullrequestreview-61903"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3265,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3265: verify boundary checks on line 15.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3266,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3266: verify boundary checks on line 25.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3267,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3267: verify boundary checks on line 35.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3268,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3268: verify boundary checks on line 45.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3269,
+      "user": {
+        "login": "gabriel-santos",
+        "type": "User"
+      },
+      "body": "Review comment 3269: verify boundary checks on line 55.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3270,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3270: verify boundary checks on line 15.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3271,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3271: verify boundary checks on line 25.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 3272,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3272: verify boundary checks on line 35.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 35
+    },
+    {
+      "id": 3273,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3273: verify boundary checks on line 45.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 45
+    },
+    {
+      "id": 3274,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 3274: verify boundary checks on line 55.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 55
+    },
+    {
+      "id": 3275,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 3275: verify boundary checks on line 15.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 3276,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Review comment 3276: verify boundary checks on line 25.",
+      "created_at": "2026-08-11T18:02:42Z",
+      "path": "search/indexer/__pycache__/schema_indexer.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

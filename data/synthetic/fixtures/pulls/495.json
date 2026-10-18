@@ -1,0 +1,113 @@
+{
+  "id": 1000495,
+  "number": 495,
+  "state": "closed",
+  "title": "docs(growth_experiments): update segmentation.cpython-314.pyc",
+  "body": "Implementation changes for growth_experiments module improvements.\n\nCloses #50",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-06-08T20:52:34Z",
+  "updated_at": "2026-06-10T20:52:34Z",
+  "closed_at": "2026-06-10T20:52:34Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-495",
+    "sha": "b64b03535a78"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/495",
+  "files": [
+    {
+      "filename": "growth/experiments/__pycache__/segmentation.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 9,
+      "changes": 10
+    },
+    {
+      "filename": "growth/experiments/__pycache__/overrides.cpython-314.pyc",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 14,
+      "changes": 18
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b029f586e78b",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-08T20:52:34Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-08T20:52:34Z"
+        },
+        "message": "commit 1 for PR #495: docs(growth_experiments): update segmentation.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "b64b03535a78",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-08T21:22:34Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-06-08T21:22:34Z"
+        },
+        "message": "commit 2 for PR #495: docs(growth_experiments): update segmentation.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 49501,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-06-09T16:52:34Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/495#pullrequestreview-49501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2651,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2651: verify boundary checks on line 15.",
+      "created_at": "2026-06-09T16:52:34Z",
+      "path": "growth/experiments/__pycache__/segmentation.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 2652,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 2652: verify boundary checks on line 25.",
+      "created_at": "2026-06-09T16:52:34Z",
+      "path": "growth/experiments/__pycache__/segmentation.cpython-314.pyc",
+      "line": 25
+    }
+  ]
+}

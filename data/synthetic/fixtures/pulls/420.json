@@ -1,0 +1,124 @@
+{
+  "id": 1000420,
+  "number": 420,
+  "state": "closed",
+  "title": "perf(auth): optimize token verification cache",
+  "body": "Introduce LRU cache for decoded JWT signatures to reduce CPU load.\n\nFixes #53",
+  "user": {
+    "login": "gabriel-santos",
+    "id": 29760,
+    "type": "User"
+  },
+  "created_at": "2026-05-01T10:29:03Z",
+  "updated_at": "2026-05-03T16:29:03Z",
+  "closed_at": "2026-05-03T16:29:03Z",
+  "merged_at": "2026-05-03T16:29:03Z",
+  "merge_commit_sha": "ff08a3c9fa44",
+  "head": {
+    "ref": "feature/pr-420",
+    "sha": "ff08a3c9fa44"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/420",
+  "files": [
+    {
+      "filename": "auth/jwt_handler.py",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 10,
+      "changes": 46
+    },
+    {
+      "filename": "auth/tokens.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 6,
+      "changes": 12
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8556b2b89254",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-05-01T10:29:03Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-05-01T10:29:03Z"
+        },
+        "message": "commit 1 for PR #420: perf(auth): optimize token verification cache"
+      }
+    },
+    {
+      "sha": "ff08a3c9fa44",
+      "commit": {
+        "author": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-05-01T10:59:03Z"
+        },
+        "committer": {
+          "name": "Gabriel Santos",
+          "email": "gabriel-santos@example.com",
+          "date": "2026-05-01T10:59:03Z"
+        },
+        "message": "commit 2 for PR #420: perf(auth): optimize token verification cache"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 42001,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Verified performance improvement in token caching. Approved.",
+      "state": "APPROVED",
+      "submitted_at": "2026-05-02T23:29:03Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/420#pullrequestreview-42001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2228,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2228: verify boundary checks on line 15.",
+      "created_at": "2026-05-02T23:29:03Z",
+      "path": "auth/jwt_handler.py",
+      "line": 15
+    },
+    {
+      "id": 2229,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2229: verify boundary checks on line 25.",
+      "created_at": "2026-05-02T23:29:03Z",
+      "path": "auth/jwt_handler.py",
+      "line": 25
+    },
+    {
+      "id": 2230,
+      "user": {
+        "login": "priya-sharma",
+        "type": "User"
+      },
+      "body": "Review comment 2230: verify boundary checks on line 35.",
+      "created_at": "2026-05-02T23:29:03Z",
+      "path": "auth/jwt_handler.py",
+      "line": 35
+    }
+  ]
+}

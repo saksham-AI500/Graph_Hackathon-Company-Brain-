@@ -1,0 +1,78 @@
+{
+  "id": 2000060,
+  "number": 60,
+  "title": "INCIDENT: payments improvements for throughput",
+  "body": "Detailed description for incident tracking in module payments/.",
+  "user": {
+    "login": "kevin-malone",
+    "id": 26692,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-12-01T19:11:08Z",
+  "updated_at": "2025-12-16T19:11:08Z",
+  "closed_at": "2025-12-16T19:11:08Z",
+  "labels": [
+    "incident",
+    "payments"
+  ],
+  "linked_pulls": [
+    460
+  ],
+  "comments": [
+    {
+      "id": 70242,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #242 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-02T04:11:08Z"
+    },
+    {
+      "id": 70243,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #243 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-03T04:11:08Z"
+    },
+    {
+      "id": 70244,
+      "user": {
+        "login": "tariq-aziz",
+        "type": "User"
+      },
+      "body": "Comment #244 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-03T12:11:08Z"
+    },
+    {
+      "id": 70245,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #245 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-04T08:11:08Z"
+    },
+    {
+      "id": 70246,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Comment #246 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-05T02:11:08Z"
+    },
+    {
+      "id": 70247,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #247 on issue #60: updates from triage and reproduction steps.",
+      "created_at": "2025-12-05T14:11:08Z"
+    }
+  ]
+}

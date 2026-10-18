@@ -1,0 +1,177 @@
+{
+  "id": 1000361,
+  "number": 361,
+  "state": "closed",
+  "title": "fix(search): update cdc_listener.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "zoe-kravitz",
+    "id": 22925,
+    "type": "User"
+  },
+  "created_at": "2026-04-01T13:03:07Z",
+  "updated_at": "2026-04-02T21:03:07Z",
+  "closed_at": "2026-04-02T21:03:07Z",
+  "merged_at": "2026-04-02T21:03:07Z",
+  "merge_commit_sha": "b34b31953516",
+  "head": {
+    "ref": "feature/pr-361",
+    "sha": "b34b31953516"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/361",
+  "files": [
+    {
+      "filename": "search/indexer/cdc_listener.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 13,
+      "changes": 22
+    }
+  ],
+  "commits": [
+    {
+      "sha": "4af738f52f3c",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T13:03:07Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T13:03:07Z"
+        },
+        "message": "commit 1 for PR #361: fix(search): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "7c56dd379ce7",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T13:33:07Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T13:33:07Z"
+        },
+        "message": "commit 2 for PR #361: fix(search): update cdc_listener.py"
+      }
+    },
+    {
+      "sha": "b34b31953516",
+      "commit": {
+        "author": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T14:03:07Z"
+        },
+        "committer": {
+          "name": "Zoe Kravitz",
+          "email": "zoe-kravitz@example.com",
+          "date": "2026-04-01T14:03:07Z"
+        },
+        "message": "commit 3 for PR #361: fix(search): update cdc_listener.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 36101,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-03T13:03:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/361#pullrequestreview-36101"
+    },
+    {
+      "id": 36102,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-03T13:03:07Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/361#pullrequestreview-36102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1891,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1891: verify boundary checks on line 15.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 15
+    },
+    {
+      "id": 1892,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1892: verify boundary checks on line 25.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 25
+    },
+    {
+      "id": 1893,
+      "user": {
+        "login": "noah-kim",
+        "type": "User"
+      },
+      "body": "Review comment 1893: verify boundary checks on line 35.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 35
+    },
+    {
+      "id": 1894,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1894: verify boundary checks on line 15.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 15
+    },
+    {
+      "id": 1895,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1895: verify boundary checks on line 25.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 25
+    },
+    {
+      "id": 1896,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Review comment 1896: verify boundary checks on line 35.",
+      "created_at": "2026-04-03T13:03:07Z",
+      "path": "search/indexer/cdc_listener.py",
+      "line": 35
+    }
+  ]
+}

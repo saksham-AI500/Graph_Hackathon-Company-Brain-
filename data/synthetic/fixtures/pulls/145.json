@@ -1,0 +1,156 @@
+{
+  "id": 1000145,
+  "number": 145,
+  "state": "closed",
+  "title": "fix(payments): resolve checkout database deadlock under high concurrency",
+  "body": "Adjust connection timeout to 5000ms and acquire checkout row lock in predictable order. Fixes #42.",
+  "user": {
+    "login": "marcus-vance",
+    "id": 24572,
+    "type": "User"
+  },
+  "created_at": "2025-12-12T17:41:01Z",
+  "updated_at": "2025-12-14T06:41:01Z",
+  "closed_at": "2025-12-14T06:41:01Z",
+  "merged_at": "2025-12-14T06:41:01Z",
+  "merge_commit_sha": "ae89e7e05ccb",
+  "head": {
+    "ref": "feature/pr-145",
+    "sha": "ae89e7e05ccb"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/145",
+  "files": [
+    {
+      "filename": "payments/checkout.py",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 1,
+      "changes": 27
+    },
+    {
+      "filename": "tests/test_payments_checkout.py",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 3,
+      "changes": 45
+    }
+  ],
+  "commits": [
+    {
+      "sha": "d9d00a2f1303",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T17:41:01Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T17:41:01Z"
+        },
+        "message": "commit 1 for PR #145: fix(payments): resolve checkout database deadlock under high concurrency"
+      }
+    },
+    {
+      "sha": "2965525e7856",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T18:11:01Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T18:11:01Z"
+        },
+        "message": "commit 2 for PR #145: fix(payments): resolve checkout database deadlock under high concurrency"
+      }
+    },
+    {
+      "sha": "5f018fdec325",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T18:41:01Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T18:41:01Z"
+        },
+        "message": "commit 3 for PR #145: fix(payments): resolve checkout database deadlock under high concurrency"
+      }
+    },
+    {
+      "sha": "ae89e7e05ccb",
+      "commit": {
+        "author": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T19:11:01Z"
+        },
+        "committer": {
+          "name": "Marcus Vance",
+          "email": "marcus-vance@example.com",
+          "date": "2025-12-12T19:11:01Z"
+        },
+        "message": "commit 4 for PR #145: fix(payments): resolve checkout database deadlock under high concurrency"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 14501,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-12-13T02:41:01Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/145#pullrequestreview-14501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 789,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 789: verify boundary checks on line 15.",
+      "created_at": "2025-12-13T02:41:01Z",
+      "path": "payments/checkout.py",
+      "line": 15
+    },
+    {
+      "id": 790,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 790: verify boundary checks on line 25.",
+      "created_at": "2025-12-13T02:41:01Z",
+      "path": "payments/checkout.py",
+      "line": 25
+    },
+    {
+      "id": 791,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Review comment 791: verify boundary checks on line 35.",
+      "created_at": "2025-12-13T02:41:01Z",
+      "path": "payments/checkout.py",
+      "line": 35
+    }
+  ]
+}

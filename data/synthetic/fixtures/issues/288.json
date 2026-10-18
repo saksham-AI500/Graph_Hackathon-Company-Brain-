@@ -1,0 +1,67 @@
+{
+  "id": 2000288,
+  "number": 288,
+  "title": "BUG: billing improvements for caching",
+  "body": "Detailed description for bug tracking in module billing/.",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 25012,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-07-27T03:37:38Z",
+  "updated_at": "2026-08-07T03:37:38Z",
+  "closed_at": "2026-08-07T03:37:38Z",
+  "labels": [
+    "bug",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71178,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #1178 on issue #288: updates from triage and reproduction steps.",
+      "created_at": "2026-07-27T05:37:38Z"
+    },
+    {
+      "id": 71179,
+      "user": {
+        "login": "mila-jovanovic",
+        "type": "User"
+      },
+      "body": "Comment #1179 on issue #288: updates from triage and reproduction steps.",
+      "created_at": "2026-07-27T16:37:38Z"
+    },
+    {
+      "id": 71180,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Comment #1180 on issue #288: updates from triage and reproduction steps.",
+      "created_at": "2026-07-28T00:37:38Z"
+    },
+    {
+      "id": 71181,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #1181 on issue #288: updates from triage and reproduction steps.",
+      "created_at": "2026-07-28T06:37:38Z"
+    },
+    {
+      "id": 71182,
+      "user": {
+        "login": "olivia-taylor",
+        "type": "User"
+      },
+      "body": "Comment #1182 on issue #288: updates from triage and reproduction steps.",
+      "created_at": "2026-07-28T16:37:38Z"
+    }
+  ]
+}

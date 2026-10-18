@@ -1,0 +1,179 @@
+{
+  "id": 1000280,
+  "number": 280,
+  "state": "closed",
+  "title": "chore(payments): update webhook_listener.cpython-314.pyc",
+  "body": "Implementation changes for payments module improvements.",
+  "user": {
+    "login": "lina-kostas",
+    "id": 26656,
+    "type": "User"
+  },
+  "created_at": "2026-02-19T13:52:56Z",
+  "updated_at": "2026-02-20T22:52:56Z",
+  "closed_at": "2026-02-20T22:52:56Z",
+  "merged_at": "2026-02-20T22:52:56Z",
+  "merge_commit_sha": "ea7fac52a54a",
+  "head": {
+    "ref": "feature/pr-280",
+    "sha": "ea7fac52a54a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/280",
+  "files": [
+    {
+      "filename": "payments/__pycache__/webhook_listener.cpython-314.pyc",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 7,
+      "changes": 30
+    },
+    {
+      "filename": "payments/refunds/__pycache__/partial_refund.cpython-314.pyc",
+      "status": "modified",
+      "additions": 29,
+      "deletions": 4,
+      "changes": 42
+    },
+    {
+      "filename": "payments/transactions.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 2,
+      "changes": 46
+    }
+  ],
+  "commits": [
+    {
+      "sha": "6ccd84593113",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T13:52:56Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T13:52:56Z"
+        },
+        "message": "commit 1 for PR #280: chore(payments): update webhook_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "1f6823acca06",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T14:22:56Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T14:22:56Z"
+        },
+        "message": "commit 2 for PR #280: chore(payments): update webhook_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "9942e721d663",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T14:52:56Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T14:52:56Z"
+        },
+        "message": "commit 3 for PR #280: chore(payments): update webhook_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "48b22caace6a",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T15:22:56Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T15:22:56Z"
+        },
+        "message": "commit 4 for PR #280: chore(payments): update webhook_listener.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "ea7fac52a54a",
+      "commit": {
+        "author": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T15:52:56Z"
+        },
+        "committer": {
+          "name": "Lina Kostas",
+          "email": "lina-kostas@example.com",
+          "date": "2026-02-19T15:52:56Z"
+        },
+        "message": "commit 5 for PR #280: chore(payments): update webhook_listener.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 28001,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-19T19:52:56Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/280#pullrequestreview-28001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1481,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1481: verify boundary checks on line 15.",
+      "created_at": "2026-02-19T19:52:56Z",
+      "path": "payments/__pycache__/webhook_listener.cpython-314.pyc",
+      "line": 15
+    },
+    {
+      "id": 1482,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1482: verify boundary checks on line 25.",
+      "created_at": "2026-02-19T19:52:56Z",
+      "path": "payments/__pycache__/webhook_listener.cpython-314.pyc",
+      "line": 25
+    },
+    {
+      "id": 1483,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Review comment 1483: verify boundary checks on line 35.",
+      "created_at": "2026-02-19T19:52:56Z",
+      "path": "payments/__pycache__/webhook_listener.cpython-314.pyc",
+      "line": 35
+    }
+  ]
+}

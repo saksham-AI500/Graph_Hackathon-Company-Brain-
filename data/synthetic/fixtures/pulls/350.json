@@ -1,0 +1,135 @@
+{
+  "id": 1000350,
+  "number": 350,
+  "state": "closed",
+  "title": "feat(payments/auth): tokenized authorization for recurring subscriptions",
+  "body": "Cross-service validation between auth scopes and recurring payment profiles.\n\nFixes #84",
+  "user": {
+    "login": "nora-al-mansoor",
+    "id": 22304,
+    "type": "User"
+  },
+  "created_at": "2026-03-27T00:22:18Z",
+  "updated_at": "2026-03-28T00:22:18Z",
+  "closed_at": "2026-03-28T00:22:18Z",
+  "merged_at": "2026-03-28T00:22:18Z",
+  "merge_commit_sha": "c8a44375cc5a",
+  "head": {
+    "ref": "feature/pr-350",
+    "sha": "c8a44375cc5a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/350",
+  "files": [
+    {
+      "filename": "auth/tokens.py",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 8,
+      "changes": 40
+    },
+    {
+      "filename": "payments/gateway.py",
+      "status": "modified",
+      "additions": 12,
+      "deletions": 9,
+      "changes": 31
+    }
+  ],
+  "commits": [
+    {
+      "sha": "c485774579ec",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-27T00:22:18Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-27T00:22:18Z"
+        },
+        "message": "commit 1 for PR #350: feat(payments/auth): tokenized authorization for recurring subscriptions"
+      }
+    },
+    {
+      "sha": "c8a44375cc5a",
+      "commit": {
+        "author": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-27T00:52:18Z"
+        },
+        "committer": {
+          "name": "Nora Al-Mansoor",
+          "email": "nora-al-mansoor@example.com",
+          "date": "2026-03-27T00:52:18Z"
+        },
+        "message": "commit 2 for PR #350: feat(payments/auth): tokenized authorization for recurring subscriptions"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 35001,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-28T18:22:18Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/350#pullrequestreview-35001"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1824,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1824: verify boundary checks on line 15.",
+      "created_at": "2026-03-28T18:22:18Z",
+      "path": "auth/tokens.py",
+      "line": 15
+    },
+    {
+      "id": 1825,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1825: verify boundary checks on line 25.",
+      "created_at": "2026-03-28T18:22:18Z",
+      "path": "auth/tokens.py",
+      "line": 25
+    },
+    {
+      "id": 1826,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1826: verify boundary checks on line 35.",
+      "created_at": "2026-03-28T18:22:18Z",
+      "path": "auth/tokens.py",
+      "line": 35
+    },
+    {
+      "id": 1827,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Review comment 1827: verify boundary checks on line 45.",
+      "created_at": "2026-03-28T18:22:18Z",
+      "path": "auth/tokens.py",
+      "line": 45
+    }
+  ]
+}

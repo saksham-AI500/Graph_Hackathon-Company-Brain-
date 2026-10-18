@@ -1,0 +1,195 @@
+{
+  "id": 1000400,
+  "number": 400,
+  "state": "closed",
+  "title": "feat(auth): update exceptions.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "mateo-silva",
+    "id": 23467,
+    "type": "User"
+  },
+  "created_at": "2026-04-21T07:31:00Z",
+  "updated_at": "2026-04-22T18:31:00Z",
+  "closed_at": "2026-04-22T18:31:00Z",
+  "merged_at": "2026-04-22T18:31:00Z",
+  "merge_commit_sha": "81145611f8a4",
+  "head": {
+    "ref": "feature/pr-400",
+    "sha": "81145611f8a4"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/400",
+  "files": [
+    {
+      "filename": "auth/exceptions.py",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 6,
+      "changes": 26
+    },
+    {
+      "filename": "auth/revocation_list.py",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 3,
+      "changes": 7
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0b052abbe90a",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T07:31:00Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T07:31:00Z"
+        },
+        "message": "commit 1 for PR #400: feat(auth): update exceptions.py"
+      }
+    },
+    {
+      "sha": "700d6bbb7006",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T08:01:00Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T08:01:00Z"
+        },
+        "message": "commit 2 for PR #400: feat(auth): update exceptions.py"
+      }
+    },
+    {
+      "sha": "81145611f8a4",
+      "commit": {
+        "author": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T08:31:00Z"
+        },
+        "committer": {
+          "name": "Mateo Silva",
+          "email": "mateo-silva@example.com",
+          "date": "2026-04-21T08:31:00Z"
+        },
+        "message": "commit 3 for PR #400: feat(auth): update exceptions.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 40001,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-21T16:31:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/400#pullrequestreview-40001"
+    },
+    {
+      "id": 40002,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-21T16:31:00Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/400#pullrequestreview-40002"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2112,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2112: verify boundary checks on line 15.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 15
+    },
+    {
+      "id": 2113,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2113: verify boundary checks on line 25.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 25
+    },
+    {
+      "id": 2114,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2114: verify boundary checks on line 35.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 35
+    },
+    {
+      "id": 2115,
+      "user": {
+        "login": "ci-review-bot[bot]",
+        "type": "Bot"
+      },
+      "body": "Review comment 2115: verify boundary checks on line 45.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 45
+    },
+    {
+      "id": 2116,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2116: verify boundary checks on line 15.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 15
+    },
+    {
+      "id": 2117,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2117: verify boundary checks on line 25.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 25
+    },
+    {
+      "id": 2118,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 2118: verify boundary checks on line 35.",
+      "created_at": "2026-04-21T16:31:00Z",
+      "path": "auth/exceptions.py",
+      "line": 35
+    }
+  ]
+}

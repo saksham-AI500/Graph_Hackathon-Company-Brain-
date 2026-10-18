@@ -1,0 +1,152 @@
+{
+  "id": 1000303,
+  "number": 303,
+  "state": "closed",
+  "title": "feat(auth_mfa): update challenge_store.py",
+  "body": "Implementation changes for auth_mfa module improvements.",
+  "user": {
+    "login": "hugo-leclerc",
+    "id": 22778,
+    "type": "User"
+  },
+  "created_at": "2026-03-03T05:04:52Z",
+  "updated_at": "2026-03-05T03:04:52Z",
+  "closed_at": "2026-03-05T03:04:52Z",
+  "merged_at": "2026-03-05T03:04:52Z",
+  "merge_commit_sha": "33cf1e6c5cdf",
+  "head": {
+    "ref": "feature/pr-303",
+    "sha": "33cf1e6c5cdf"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/303",
+  "files": [
+    {
+      "filename": "auth/mfa/challenge_store.py",
+      "status": "modified",
+      "additions": 30,
+      "deletions": 13,
+      "changes": 27
+    },
+    {
+      "filename": "auth/mfa/device_fingerprint.py",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 13,
+      "changes": 29
+    },
+    {
+      "filename": "auth/mfa/mfa_policy.py",
+      "status": "modified",
+      "additions": 25,
+      "deletions": 4,
+      "changes": 50
+    }
+  ],
+  "commits": [
+    {
+      "sha": "612a8753ba0f",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T05:04:52Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T05:04:52Z"
+        },
+        "message": "commit 1 for PR #303: feat(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "b2d3a208e05e",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T05:34:52Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T05:34:52Z"
+        },
+        "message": "commit 2 for PR #303: feat(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "a842b2e7ce81",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T06:04:52Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T06:04:52Z"
+        },
+        "message": "commit 3 for PR #303: feat(auth_mfa): update challenge_store.py"
+      }
+    },
+    {
+      "sha": "33cf1e6c5cdf",
+      "commit": {
+        "author": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T06:34:52Z"
+        },
+        "committer": {
+          "name": "Hugo Leclerc",
+          "email": "hugo-leclerc@example.com",
+          "date": "2026-03-03T06:34:52Z"
+        },
+        "message": "commit 4 for PR #303: feat(auth_mfa): update challenge_store.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 30301,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-03-03T21:04:52Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/303#pullrequestreview-30301"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1615,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 1615: verify boundary checks on line 15.",
+      "created_at": "2026-03-03T21:04:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 15
+    },
+    {
+      "id": 1616,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 1616: verify boundary checks on line 25.",
+      "created_at": "2026-03-03T21:04:52Z",
+      "path": "auth/mfa/challenge_store.py",
+      "line": 25
+    }
+  ]
+}

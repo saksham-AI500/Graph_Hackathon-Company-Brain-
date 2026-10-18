@@ -1,0 +1,67 @@
+{
+  "id": 2000150,
+  "number": 150,
+  "title": "PERF: payments improvements for throughput",
+  "body": "Detailed description for perf tracking in module payments/.",
+  "user": {
+    "login": "zane-malik",
+    "id": 29743,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-03-05T11:47:35Z",
+  "updated_at": "2026-04-04T11:47:35Z",
+  "closed_at": "2026-04-04T11:47:35Z",
+  "labels": [
+    "perf",
+    "payments"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70615,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #615 on issue #150: updates from triage and reproduction steps.",
+      "created_at": "2026-03-05T19:47:35Z"
+    },
+    {
+      "id": 70616,
+      "user": {
+        "login": "maya-zheng",
+        "type": "User"
+      },
+      "body": "Comment #616 on issue #150: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T03:47:35Z"
+    },
+    {
+      "id": 70617,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #617 on issue #150: updates from triage and reproduction steps.",
+      "created_at": "2026-03-06T12:47:35Z"
+    },
+    {
+      "id": 70618,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #618 on issue #150: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T07:47:35Z"
+    },
+    {
+      "id": 70619,
+      "user": {
+        "login": "amara-okafor",
+        "type": "User"
+      },
+      "body": "Comment #619 on issue #150: updates from triage and reproduction steps.",
+      "created_at": "2026-03-07T10:47:35Z"
+    }
+  ]
+}

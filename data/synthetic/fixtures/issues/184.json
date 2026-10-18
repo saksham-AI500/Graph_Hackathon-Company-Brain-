@@ -1,0 +1,40 @@
+{
+  "id": 2000184,
+  "number": 184,
+  "title": "INCIDENT: infra-observability improvements for caching",
+  "body": "Detailed description for incident tracking in module infra/observability/.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24081,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-09T21:00:21Z",
+  "updated_at": "2026-04-09T21:00:21Z",
+  "closed_at": null,
+  "labels": [
+    "incident",
+    "infra-observability"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70751,
+      "user": {
+        "login": "elena-rostova",
+        "type": "User"
+      },
+      "body": "Comment #751 on issue #184: updates from triage and reproduction steps.",
+      "created_at": "2026-04-10T14:00:21Z"
+    },
+    {
+      "id": 70752,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #752 on issue #184: updates from triage and reproduction steps.",
+      "created_at": "2026-04-10T17:00:21Z"
+    }
+  ]
+}

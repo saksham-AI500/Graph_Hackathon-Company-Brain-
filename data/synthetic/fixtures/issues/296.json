@@ -1,0 +1,67 @@
+{
+  "id": 2000296,
+  "number": 296,
+  "title": "PERF: billing improvements for latency",
+  "body": "Detailed description for perf tracking in module billing/.",
+  "user": {
+    "login": "owen-murphy",
+    "id": 29306,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-08-04T12:02:08Z",
+  "updated_at": "2026-08-04T12:02:08Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "billing"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71212,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #1212 on issue #296: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T19:02:08Z"
+    },
+    {
+      "id": 71213,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1213 on issue #296: updates from triage and reproduction steps.",
+      "created_at": "2026-08-05T10:02:08Z"
+    },
+    {
+      "id": 71214,
+      "user": {
+        "login": "tanya-popova",
+        "type": "User"
+      },
+      "body": "Comment #1214 on issue #296: updates from triage and reproduction steps.",
+      "created_at": "2026-08-06T10:02:08Z"
+    },
+    {
+      "id": 71215,
+      "user": {
+        "login": "hugo-leclerc",
+        "type": "User"
+      },
+      "body": "Comment #1215 on issue #296: updates from triage and reproduction steps.",
+      "created_at": "2026-08-06T18:02:08Z"
+    },
+    {
+      "id": 71216,
+      "user": {
+        "login": "lucia-moretti",
+        "type": "User"
+      },
+      "body": "Comment #1216 on issue #296: updates from triage and reproduction steps.",
+      "created_at": "2026-08-07T13:02:08Z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "question_id": "Q7",
+  "question": "Who should review a new PR touching both auth/ and payments/? Rank with evidence.",
+  "mode": "graph_off",
+  "run_index": 2,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "I don't have Acme's repository data, so I cannot answer.  \n\nTo provide a ranked list, I would need access to the repository's CODEOWNERS file, recent review history, and team activity data for the auth/ and payments/ modules. Without this, I cannot determine who is most qualified to review such a PR.  \n\nIf you can provide specific CODEOWNERS entries or recent PR review data, I can assist further.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:02:44.963595+00:00",
+  "latency_ms": 4072.67,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [],
+  "forbidden_violations": []
+}

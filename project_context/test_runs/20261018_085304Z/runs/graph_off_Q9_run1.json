@@ -1,0 +1,24 @@
+{
+  "question_id": "Q9",
+  "question": "Why did we choose the retry policy? Quote the source.",
+  "mode": "graph_off",
+  "run_index": 1,
+  "status": "ANSWERED_UNCERTAIN",
+  "final_answer_text": "The retry policy was chosen to \"handle transient failures gracefully and improve system resilience by automatically retrying failed operations with exponential backoff.\" [S1]\n\nContext: This decision was documented in the engineering design document for the retry mechanism, dated 2023-10-15.\n\nSources:  \n[S1] Engineering Design Document: Retry Mechanism, 2023-10-15, [URL not available in the repository data]  \n\nNot in the data: The specific URL for the document is not available in the repository data.",
+  "model_string_returned": "deepseek/deepseek-chat",
+  "timestamp": "2026-10-18T09:03:11.485137+00:00",
+  "latency_ms": 4641.83,
+  "claims_count": 0,
+  "sources_count": 0,
+  "claims": [],
+  "sources": [],
+  "verifier_path_per_claim": [],
+  "sentence_level_results": [],
+  "fabricated_citation_count": 0,
+  "is_correct": false,
+  "is_faithful": false,
+  "passed_facts": [
+    "exponential backoff with jitter"
+  ],
+  "forbidden_violations": []
+}

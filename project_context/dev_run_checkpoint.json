@@ -1,0 +1,40 @@
+{
+  "records": {
+    "graph_on::Q1::1::nvidia/nemotron-3.5-lightning:free": {
+      "mode": "graph_on",
+      "question_id": "Q1",
+      "question": "Summarize everything known about the checkout timeout bug: the issue, linked PR, review discussion, and any doc that mentions it.",
+      "run_index": 1,
+      "model_slug": "nvidia/nemotron-3.5-lightning:free",
+      "model_returned": "nvidia/nemotron-3.5-lightning:free",
+      "status": "ERROR",
+      "answer": "Execution failed: model loop completed without assistant response.",
+      "sha256": "54dcca9645e61f7c3b92eba48ecc1e7ed8a77f837d319a15e17c4ef091916ab7",
+      "raw_path": "project_context/test_runs/20261018_124932Z/raw/54dcca9645e61f7c3b92eba48ecc1e7ed8a77f837d319a15e17c4ef091916ab7.json",
+      "timestamp": "2026-10-18T12:58:10.279146+00:00",
+      "latency_ms": 517581.28,
+      "is_correct": false,
+      "passed_facts": [],
+      "forbidden_violations": [],
+      "fabricated_citations": [],
+      "is_model": true,
+      "refusal_reason": "Model loop completed without assistant response.",
+      "claims_count": 0,
+      "sources_count": 0,
+      "verifier": {
+        "claims_total": 0,
+        "claims_passed": 0,
+        "claims_fully_supported": 0,
+        "sources_valid": 0,
+        "sources_total": 0,
+        "sentences_total": 0,
+        "sentences_passed": 0,
+        "post_hoc_citations": 0,
+        "sentence_logs": []
+      }
+    }
+  },
+  "run_dir": "D:\\grraph Hackathon\\grraph Hackathon\\RepoBrain\\project_context\\test_runs\\20261018_124932Z",
+  "model_slug": "nvidia/nemotron-3.5-lightning:free",
+  "planned_calls": 125
+}

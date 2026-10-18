@@ -1,0 +1,67 @@
+{
+  "id": 2000200,
+  "number": 200,
+  "title": "FEATURE: api-gateway improvements for latency",
+  "body": "Detailed description for feature tracking in module api/gateway/.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 29414,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-04-26T13:03:33Z",
+  "updated_at": "2026-04-26T13:03:33Z",
+  "closed_at": null,
+  "labels": [
+    "feature",
+    "api-gateway"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70807,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #807 on issue #200: updates from triage and reproduction steps.",
+      "created_at": "2026-04-27T06:03:33Z"
+    },
+    {
+      "id": 70808,
+      "user": {
+        "login": "dmitri-volkov",
+        "type": "User"
+      },
+      "body": "Comment #808 on issue #200: updates from triage and reproduction steps.",
+      "created_at": "2026-04-28T06:03:33Z"
+    },
+    {
+      "id": 70809,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #809 on issue #200: updates from triage and reproduction steps.",
+      "created_at": "2026-04-28T08:03:33Z"
+    },
+    {
+      "id": 70810,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #810 on issue #200: updates from triage and reproduction steps.",
+      "created_at": "2026-04-28T10:03:33Z"
+    },
+    {
+      "id": 70811,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Comment #811 on issue #200: updates from triage and reproduction steps.",
+      "created_at": "2026-04-28T21:03:33Z"
+    }
+  ]
+}

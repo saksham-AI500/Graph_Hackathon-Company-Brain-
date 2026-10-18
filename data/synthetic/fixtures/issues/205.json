@@ -1,0 +1,76 @@
+{
+  "id": 2000205,
+  "number": 205,
+  "title": "PERF: shared-utils improvements for latency",
+  "body": "Detailed description for perf tracking in module shared/utils/.",
+  "user": {
+    "login": "fiona-gallagher",
+    "id": 29414,
+    "type": "User"
+  },
+  "state": "open",
+  "created_at": "2026-05-01T18:15:26Z",
+  "updated_at": "2026-05-01T18:15:26Z",
+  "closed_at": null,
+  "labels": [
+    "perf",
+    "shared-utils"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70835,
+      "user": {
+        "login": "hassan-el-sayed",
+        "type": "User"
+      },
+      "body": "Comment #835 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-02T12:15:26Z"
+    },
+    {
+      "id": 70836,
+      "user": {
+        "login": "felix-baum",
+        "type": "User"
+      },
+      "body": "Comment #836 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-02T23:15:26Z"
+    },
+    {
+      "id": 70837,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #837 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-03T10:15:26Z"
+    },
+    {
+      "id": 70838,
+      "user": {
+        "login": "rachel-green-fictional",
+        "type": "User"
+      },
+      "body": "Comment #838 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-04T06:15:26Z"
+    },
+    {
+      "id": 70839,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #839 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-05T06:15:26Z"
+    },
+    {
+      "id": 70840,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #840 on issue #205: updates from triage and reproduction steps.",
+      "created_at": "2026-05-06T03:15:26Z"
+    }
+  ]
+}

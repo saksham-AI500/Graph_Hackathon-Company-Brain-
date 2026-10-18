@@ -1,0 +1,248 @@
+{
+  "id": 1000290,
+  "number": 290,
+  "state": "closed",
+  "title": "chore(growth_experiments): update segmentation.py",
+  "body": "Implementation changes for growth_experiments module improvements.\n\nFixes #2",
+  "user": {
+    "login": "lucia-moretti",
+    "id": 24125,
+    "type": "User"
+  },
+  "created_at": "2026-02-24T15:34:29Z",
+  "updated_at": "2026-02-26T03:34:29Z",
+  "closed_at": "2026-02-26T03:34:29Z",
+  "merged_at": "2026-02-26T03:34:29Z",
+  "merge_commit_sha": "4088ea43edc8",
+  "head": {
+    "ref": "feature/pr-290",
+    "sha": "4088ea43edc8"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/290",
+  "files": [
+    {
+      "filename": "growth/experiments/segmentation.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 13,
+      "changes": 38
+    }
+  ],
+  "commits": [
+    {
+      "sha": "26500249c22b",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T15:34:29Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T15:34:29Z"
+        },
+        "message": "commit 1 for PR #290: chore(growth_experiments): update segmentation.py"
+      }
+    },
+    {
+      "sha": "c78bffc4989d",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T16:04:29Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T16:04:29Z"
+        },
+        "message": "commit 2 for PR #290: chore(growth_experiments): update segmentation.py"
+      }
+    },
+    {
+      "sha": "a9e2a6f851a7",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T16:34:29Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T16:34:29Z"
+        },
+        "message": "commit 3 for PR #290: chore(growth_experiments): update segmentation.py"
+      }
+    },
+    {
+      "sha": "4088ea43edc8",
+      "commit": {
+        "author": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T17:04:29Z"
+        },
+        "committer": {
+          "name": "Lucia Moretti",
+          "email": "lucia-moretti@example.com",
+          "date": "2026-02-24T17:04:29Z"
+        },
+        "message": "commit 4 for PR #290: chore(growth_experiments): update segmentation.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 29001,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-26T06:34:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/290#pullrequestreview-29001"
+    },
+    {
+      "id": 29002,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-26T06:34:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/290#pullrequestreview-29002"
+    },
+    {
+      "id": 29003,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-02-26T06:34:29Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/290#pullrequestreview-29003"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1529,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 1529: verify boundary checks on line 15.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 15
+    },
+    {
+      "id": 1530,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 1530: verify boundary checks on line 25.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 25
+    },
+    {
+      "id": 1531,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 1531: verify boundary checks on line 35.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 35
+    },
+    {
+      "id": 1532,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Review comment 1532: verify boundary checks on line 45.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 45
+    },
+    {
+      "id": 1533,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1533: verify boundary checks on line 15.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 15
+    },
+    {
+      "id": 1534,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Review comment 1534: verify boundary checks on line 25.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 25
+    },
+    {
+      "id": 1535,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1535: verify boundary checks on line 15.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 15
+    },
+    {
+      "id": 1536,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1536: verify boundary checks on line 25.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 25
+    },
+    {
+      "id": 1537,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1537: verify boundary checks on line 35.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 35
+    },
+    {
+      "id": 1538,
+      "user": {
+        "login": "arjun-mehta",
+        "type": "User"
+      },
+      "body": "Review comment 1538: verify boundary checks on line 45.",
+      "created_at": "2026-02-26T06:34:29Z",
+      "path": "growth/experiments/segmentation.py",
+      "line": 45
+    }
+  ]
+}

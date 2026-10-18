@@ -1,0 +1,78 @@
+{
+  "id": 1000015,
+  "number": 15,
+  "state": "closed",
+  "title": "test(payments_refunds): update rules_engine.cpython-314.pyc",
+  "body": "Implementation changes for payments_refunds module improvements.",
+  "user": {
+    "login": "lucas-vogel",
+    "id": 23996,
+    "type": "User"
+  },
+  "created_at": "2025-10-08T11:31:45Z",
+  "updated_at": "2025-10-09T22:31:45Z",
+  "closed_at": "2025-10-09T22:31:45Z",
+  "merged_at": null,
+  "merge_commit_sha": null,
+  "head": {
+    "ref": "feature/pr-15",
+    "sha": "0a101a9e497a"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/15",
+  "files": [
+    {
+      "filename": "payments/refunds/__pycache__/rules_engine.cpython-314.pyc",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 7,
+      "changes": 48
+    },
+    {
+      "filename": "payments/refunds/batch.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "20ba77d79867",
+      "commit": {
+        "author": {
+          "name": "Lucas Vogel",
+          "email": "lucas-vogel@example.com",
+          "date": "2025-10-08T11:31:45Z"
+        },
+        "committer": {
+          "name": "Lucas Vogel",
+          "email": "lucas-vogel@example.com",
+          "date": "2025-10-08T11:31:45Z"
+        },
+        "message": "commit 1 for PR #15: test(payments_refunds): update rules_engine.cpython-314.pyc"
+      }
+    },
+    {
+      "sha": "0a101a9e497a",
+      "commit": {
+        "author": {
+          "name": "Lucas Vogel",
+          "email": "lucas-vogel@example.com",
+          "date": "2025-10-08T12:01:45Z"
+        },
+        "committer": {
+          "name": "Lucas Vogel",
+          "email": "lucas-vogel@example.com",
+          "date": "2025-10-08T12:01:45Z"
+        },
+        "message": "commit 2 for PR #15: test(payments_refunds): update rules_engine.cpython-314.pyc"
+      }
+    }
+  ],
+  "reviews": [],
+  "comments": []
+}

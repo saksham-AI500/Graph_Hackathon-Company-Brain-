@@ -1,0 +1,78 @@
+{
+  "id": 2000032,
+  "number": 32,
+  "title": "INCIDENT: payments-refunds improvements for throughput",
+  "body": "Detailed description for incident tracking in module payments/refunds/.",
+  "user": {
+    "login": "olivia-taylor",
+    "id": 24136,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2025-11-02T15:47:36Z",
+  "updated_at": "2025-11-29T15:47:36Z",
+  "closed_at": "2025-11-29T15:47:36Z",
+  "labels": [
+    "incident",
+    "payments-refunds"
+  ],
+  "linked_pulls": [
+    386
+  ],
+  "comments": [
+    {
+      "id": 70122,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Comment #122 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-02T19:47:36Z"
+    },
+    {
+      "id": 70123,
+      "user": {
+        "login": "isabella-martinez",
+        "type": "User"
+      },
+      "body": "Comment #123 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-03T01:47:36Z"
+    },
+    {
+      "id": 70124,
+      "user": {
+        "login": "maya-lin",
+        "type": "User"
+      },
+      "body": "Comment #124 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-03T17:47:36Z"
+    },
+    {
+      "id": 70125,
+      "user": {
+        "login": "ethan-hunt",
+        "type": "User"
+      },
+      "body": "Comment #125 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-03T22:47:36Z"
+    },
+    {
+      "id": 70126,
+      "user": {
+        "login": "marcus-vance",
+        "type": "User"
+      },
+      "body": "Comment #126 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-04T07:47:36Z"
+    },
+    {
+      "id": 70127,
+      "user": {
+        "login": "diego-ramirez",
+        "type": "User"
+      },
+      "body": "Comment #127 on issue #32: updates from triage and reproduction steps.",
+      "created_at": "2025-11-04T18:47:36Z"
+    }
+  ]
+}

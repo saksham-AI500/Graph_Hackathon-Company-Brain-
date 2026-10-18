@@ -1,0 +1,185 @@
+{
+  "id": 1000562,
+  "number": 562,
+  "state": "closed",
+  "title": "test(auth): update sms_gateway.py",
+  "body": "Implementation changes for auth module improvements.",
+  "user": {
+    "login": "ethan-hunt",
+    "id": 29870,
+    "type": "User"
+  },
+  "created_at": "2026-07-13T06:50:45Z",
+  "updated_at": "2026-07-15T20:50:45Z",
+  "closed_at": "2026-07-15T20:50:45Z",
+  "merged_at": "2026-07-15T20:50:45Z",
+  "merge_commit_sha": "232968876f4f",
+  "head": {
+    "ref": "feature/pr-562",
+    "sha": "232968876f4f"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/562",
+  "files": [
+    {
+      "filename": "auth/mfa/sms_gateway.py",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 15,
+      "changes": 7
+    },
+    {
+      "filename": "auth/mfa/__init__.py",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 9,
+      "changes": 46
+    },
+    {
+      "filename": "auth/mfa/__pycache__/device_fingerprint.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 7,
+      "changes": 21
+    }
+  ],
+  "commits": [
+    {
+      "sha": "90240717761f",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T06:50:45Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T06:50:45Z"
+        },
+        "message": "commit 1 for PR #562: test(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "693b6edfa214",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T07:20:45Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T07:20:45Z"
+        },
+        "message": "commit 2 for PR #562: test(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "0fed93897305",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T07:50:45Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T07:50:45Z"
+        },
+        "message": "commit 3 for PR #562: test(auth): update sms_gateway.py"
+      }
+    },
+    {
+      "sha": "232968876f4f",
+      "commit": {
+        "author": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T08:20:45Z"
+        },
+        "committer": {
+          "name": "Ethan Hunt",
+          "email": "ethan-hunt@example.com",
+          "date": "2026-07-13T08:20:45Z"
+        },
+        "message": "commit 4 for PR #562: test(auth): update sms_gateway.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 56201,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-13T11:50:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/562#pullrequestreview-56201"
+    },
+    {
+      "id": 56202,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-07-13T11:50:45Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/562#pullrequestreview-56202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3002,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3002: verify boundary checks on line 15.",
+      "created_at": "2026-07-13T11:50:45Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 3003,
+      "user": {
+        "login": "kai-nielsen",
+        "type": "User"
+      },
+      "body": "Review comment 3003: verify boundary checks on line 25.",
+      "created_at": "2026-07-13T11:50:45Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    },
+    {
+      "id": 3004,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3004: verify boundary checks on line 15.",
+      "created_at": "2026-07-13T11:50:45Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 15
+    },
+    {
+      "id": 3005,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Review comment 3005: verify boundary checks on line 25.",
+      "created_at": "2026-07-13T11:50:45Z",
+      "path": "auth/mfa/sms_gateway.py",
+      "line": 25
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": 2000294,
+  "number": 294,
+  "title": "FEATURE: auth improvements for throughput",
+  "body": "Detailed description for feature tracking in module auth/.",
+  "user": {
+    "login": "isabella-martinez",
+    "id": 23911,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-08-02T10:03:45Z",
+  "updated_at": "2026-08-19T10:03:45Z",
+  "closed_at": "2026-08-19T10:03:45Z",
+  "labels": [
+    "feature",
+    "auth"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 71204,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Comment #1204 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-03T05:03:45Z"
+    },
+    {
+      "id": 71205,
+      "user": {
+        "login": "zane-malik",
+        "type": "User"
+      },
+      "body": "Comment #1205 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-03T20:03:45Z"
+    },
+    {
+      "id": 71206,
+      "user": {
+        "login": "liam-chen",
+        "type": "User"
+      },
+      "body": "Comment #1206 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T03:03:45Z"
+    },
+    {
+      "id": 71207,
+      "user": {
+        "login": "leila-farah",
+        "type": "User"
+      },
+      "body": "Comment #1207 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T05:03:45Z"
+    },
+    {
+      "id": 71208,
+      "user": {
+        "login": "ben-carter",
+        "type": "User"
+      },
+      "body": "Comment #1208 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-04T17:03:45Z"
+    },
+    {
+      "id": 71209,
+      "user": {
+        "login": "fatima-zahra",
+        "type": "User"
+      },
+      "body": "Comment #1209 on issue #294: updates from triage and reproduction steps.",
+      "created_at": "2026-08-05T04:03:45Z"
+    }
+  ]
+}

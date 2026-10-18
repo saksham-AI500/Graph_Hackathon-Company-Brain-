@@ -13,7 +13,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import os
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -283,6 +285,109 @@ class EvaluatorV2:
             error=err_msg,
         )
 
+    @staticmethod
+    def _match_keyword(kw: str, text: str) -> bool:
+        """Match keyword in text respecting token/word boundaries to avoid spurious partial matches."""
+        clean_kw = kw.strip().lower()
+        if not clean_kw:
+            return False
+        if clean_kw.isalnum():
+            pattern = r"\b" + re.escape(clean_kw) + r"\b"
+            return bool(re.search(pattern, text.lower()))
+        else:
+            return clean_kw in text.lower()
+
+    def _verify_citation_in_graph(self, url: str, ground_truth_urls: List[str]) -> bool:
+        """Verify that a citation is grounded either in ground truth or active FalkorDB graph."""
+        if not url:
+            return False
+        # Known ground truth URL
+        if any(url.rstrip("/") == gt.rstrip("/") or url.startswith(gt) or gt.startswith(url) for gt in ground_truth_urls):
+            return True
+
+        if not url.startswith("https://github.com/"):
+            return False
+
+        if not self.client:
+            return url.startswith("https://github.com/FalkorDB/FalkorDB/")
+
+        try:
+            # 1. Match Pull Request
+            pr_match = re.search(r"/pull/(\d+)", url)
+            if pr_match:
+                pr_num = int(pr_match.group(1))
+                res = self.client.ro_query("MATCH (p:PullRequest {number: $num}) RETURN count(p)", {"num": pr_num})
+                if res and res.result_set and res.result_set[0][0] > 0:
+                    return True
+
+            # 2. Match Issue
+            issue_match = re.search(r"/issues/(\d+)", url)
+            if issue_match:
+                issue_num = int(issue_match.group(1))
+                res = self.client.ro_query("MATCH (i:Issue {number: $num}) RETURN count(i)", {"num": issue_num})
+                if res and res.result_set and res.result_set[0][0] > 0:
+                    return True
+
+            # 3. Match Person / user profile
+            person_match = re.search(r"https://github\.com/([a-zA-Z0-9_\-]+)/?$", url)
+            if person_match:
+                login = person_match.group(1)
+                res = self.client.ro_query("MATCH (p:Person {login: $login}) RETURN count(p)", {"login": login})
+                if res and res.result_set and res.result_set[0][0] > 0:
+                    return True
+
+            # 4. Match File
+            file_match = re.search(r"/blob/[^/]+/(.+)", url)
+            if file_match:
+                fpath = file_match.group(1)
+                res = self.client.ro_query("MATCH (f:File {path: $path}) RETURN count(f)", {"path": fpath})
+                if res and res.result_set and res.result_set[0][0] > 0:
+                    return True
+
+            # 5. Generic URL node lookup
+            res = self.client.ro_query("MATCH (n) WHERE n.url = $url RETURN count(n)", {"url": url})
+            if res and res.result_set and res.result_set[0][0] > 0:
+                return True
+        except Exception:
+            return url.startswith("https://github.com/FalkorDB/FalkorDB/")
+
+        return False
+
+    def _get_citation_timestamp(self, url: str) -> Optional[str]:
+        """Query active graph for the creation or observation timestamp of a cited entity."""
+        if not self.client or not url:
+            return None
+        try:
+            pr_match = re.search(r"/pull/(\d+)", url)
+            if pr_match:
+                pr_num = int(pr_match.group(1))
+                res = self.client.ro_query(
+                    "MATCH (p:PullRequest {number: $num}) RETURN coalesce(p.created_at, p.observed_at)",
+                    {"num": pr_num},
+                )
+                if res and res.result_set and res.result_set[0] and res.result_set[0][0]:
+                    return str(res.result_set[0][0])
+
+            issue_match = re.search(r"/issues/(\d+)", url)
+            if issue_match:
+                issue_num = int(issue_match.group(1))
+                res = self.client.ro_query(
+                    "MATCH (i:Issue {number: $num}) RETURN coalesce(i.created_at, i.observed_at)",
+                    {"num": issue_num},
+                )
+                if res and res.result_set and res.result_set[0] and res.result_set[0][0]:
+                    return str(res.result_set[0][0])
+
+            res = self.client.ro_query(
+                "MATCH (n) WHERE n.url = $url RETURN coalesce(n.created_at, n.observed_at, n.valid_from)",
+                {"url": url},
+            )
+            if res and res.result_set and res.result_set[0] and res.result_set[0][0]:
+                return str(res.result_set[0][0])
+        except Exception:
+            return None
+        return None
+
     def _score_outcome(
         self,
         q: BenchmarkQuestion,
@@ -324,15 +429,15 @@ class EvaluatorV2:
         unsupported_count = 0
         as_of_valid = True
 
-        # Check citation support against active graph
+        # Check citation support against active graph and ground truth
         valid_citations = 0
         citation_support = True
         for u in citations:
-            # Check basic reachability and format
-            if u.startswith("https://github.com/FalkorDB/FalkorDB/"):
+            if self._verify_citation_in_graph(u, q.ground_truth_urls):
                 valid_citations += 1
             else:
                 citation_support = False
+                unsupported_count += 1
 
         if q.should_refuse:
             # Expected refusal
@@ -352,28 +457,43 @@ class EvaluatorV2:
                 correct = False
                 refusal_correct = False
             else:
-                # Check keywords and semantics
+                # Check keywords and semantics with token/word boundary matching
                 if q.category == "DECISION_TRACING":
-                    has_num = any(kw.isdigit() and kw in raw_response for kw in q.expected_answer_keywords)
-                    has_kw = any(not kw.isdigit() and kw.lower() in resp_lower for kw in q.expected_answer_keywords)
+                    has_num = any(kw.isdigit() and self._match_keyword(kw, raw_response) for kw in q.expected_answer_keywords)
+                    has_kw = any(not kw.isdigit() and self._match_keyword(kw, resp_lower) for kw in q.expected_answer_keywords)
                     correct = has_num and has_kw
                 elif q.category == "REVIEWER_ROUTING":
-                    correct = any(kw.lower() in resp_lower for kw in q.expected_answer_keywords)
+                    correct = any(self._match_keyword(kw, resp_lower) for kw in q.expected_answer_keywords)
                 elif q.category == "CO_CHANGE":
-                    correct = any(kw.lower() in resp_lower for kw in q.expected_answer_keywords)
+                    correct = any(self._match_keyword(kw, resp_lower) for kw in q.expected_answer_keywords)
                 elif q.category == "OWNERSHIP_DISCREPANCY":
-                    correct = any(kw.lower() in resp_lower for kw in q.expected_answer_keywords)
+                    correct = any(self._match_keyword(kw, resp_lower) for kw in q.expected_answer_keywords)
                 else:
-                    correct = any(kw.lower() in resp_lower for kw in q.expected_answer_keywords)
+                    correct = any(self._match_keyword(kw, resp_lower) for kw in q.expected_answer_keywords)
 
                 refusal_correct = False
                 if not correct and not citations:
                     unsupported_count += 1
 
-        # Check as_of compliance
+        # Check as_of compliance against entity timestamps in active graph
         if q.historical_cutoff:
-            # Ensure no cited URLs point to entities strictly after cutoff
-            pass
+            for u in citations:
+                ts = self._get_citation_timestamp(u)
+                if ts:
+                    try:
+                        dt_entity = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+                        dt_cutoff = datetime.fromisoformat(q.historical_cutoff.replace("Z", "+00:00"))
+                        if dt_entity > dt_cutoff:
+                            as_of_valid = False
+                            correct = False
+                            unsupported_count += 1
+                            break
+                    except Exception:
+                        if ts > q.historical_cutoff:
+                            as_of_valid = False
+                            correct = False
+                            unsupported_count += 1
+                            break
 
         verdict = "PASS" if correct else "FAIL"
 

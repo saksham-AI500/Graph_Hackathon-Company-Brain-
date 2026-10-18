@@ -1,0 +1,76 @@
+{
+  "id": 2000241,
+  "number": 241,
+  "title": "FEATURE: auth-mfa improvements for throughput",
+  "body": "Detailed description for feature tracking in module auth/mfa/.",
+  "user": {
+    "login": "yuki-tanaka",
+    "id": 21029,
+    "type": "User"
+  },
+  "state": "closed",
+  "created_at": "2026-06-08T05:40:13Z",
+  "updated_at": "2026-07-03T05:40:13Z",
+  "closed_at": "2026-07-03T05:40:13Z",
+  "labels": [
+    "feature",
+    "auth-mfa"
+  ],
+  "linked_pulls": [],
+  "comments": [
+    {
+      "id": 70985,
+      "user": {
+        "login": "ananya-rao",
+        "type": "User"
+      },
+      "body": "Comment #985 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-08T07:40:13Z"
+    },
+    {
+      "id": 70986,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Comment #986 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-08T10:40:13Z"
+    },
+    {
+      "id": 70987,
+      "user": {
+        "login": "sophia-rossi",
+        "type": "User"
+      },
+      "body": "Comment #987 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-08T16:40:13Z"
+    },
+    {
+      "id": 70988,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Comment #988 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-09T09:40:13Z"
+    },
+    {
+      "id": 70989,
+      "user": {
+        "login": "yuki-tanaka",
+        "type": "User"
+      },
+      "body": "Comment #989 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-09T18:40:13Z"
+    },
+    {
+      "id": 70990,
+      "user": {
+        "login": "hannah-schmidt",
+        "type": "User"
+      },
+      "body": "Comment #990 on issue #241: updates from triage and reproduction steps.",
+      "created_at": "2026-06-10T07:40:13Z"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": 1000392,
+  "number": 392,
+  "state": "closed",
+  "title": "refactor(search): update pipeline.py",
+  "body": "Implementation changes for search module improvements.",
+  "user": {
+    "login": "arjun-mehta",
+    "id": 24836,
+    "type": "User"
+  },
+  "created_at": "2026-04-17T05:40:42Z",
+  "updated_at": "2026-04-18T05:40:42Z",
+  "closed_at": "2026-04-18T05:40:42Z",
+  "merged_at": "2026-04-18T05:40:42Z",
+  "merge_commit_sha": "ee7c1666f3bf",
+  "head": {
+    "ref": "feature/pr-392",
+    "sha": "ee7c1666f3bf"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/392",
+  "files": [
+    {
+      "filename": "search/indexer/pipeline.py",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 14,
+      "changes": 26
+    }
+  ],
+  "commits": [
+    {
+      "sha": "829b94ce2b6d",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T05:40:42Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T05:40:42Z"
+        },
+        "message": "commit 1 for PR #392: refactor(search): update pipeline.py"
+      }
+    },
+    {
+      "sha": "d4d6ce561467",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T06:10:42Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T06:10:42Z"
+        },
+        "message": "commit 2 for PR #392: refactor(search): update pipeline.py"
+      }
+    },
+    {
+      "sha": "ee7c1666f3bf",
+      "commit": {
+        "author": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T06:40:42Z"
+        },
+        "committer": {
+          "name": "Arjun Mehta",
+          "email": "arjun-mehta@example.com",
+          "date": "2026-04-17T06:40:42Z"
+        },
+        "message": "commit 3 for PR #392: refactor(search): update pipeline.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 39201,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-17T14:40:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/392#pullrequestreview-39201"
+    },
+    {
+      "id": 39202,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-04-17T14:40:42Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/392#pullrequestreview-39202"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2059,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2059: verify boundary checks on line 15.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 15
+    },
+    {
+      "id": 2060,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2060: verify boundary checks on line 25.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 25
+    },
+    {
+      "id": 2061,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2061: verify boundary checks on line 35.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 35
+    },
+    {
+      "id": 2062,
+      "user": {
+        "login": "emma-lindqvist",
+        "type": "User"
+      },
+      "body": "Review comment 2062: verify boundary checks on line 45.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 45
+    },
+    {
+      "id": 2063,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2063: verify boundary checks on line 15.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 15
+    },
+    {
+      "id": 2064,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2064: verify boundary checks on line 25.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 25
+    },
+    {
+      "id": 2065,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2065: verify boundary checks on line 35.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 35
+    },
+    {
+      "id": 2066,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2066: verify boundary checks on line 45.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 45
+    },
+    {
+      "id": 2067,
+      "user": {
+        "login": "lina-kostas",
+        "type": "User"
+      },
+      "body": "Review comment 2067: verify boundary checks on line 55.",
+      "created_at": "2026-04-17T14:40:42Z",
+      "path": "search/indexer/pipeline.py",
+      "line": 55
+    }
+  ]
+}

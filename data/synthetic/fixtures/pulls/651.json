@@ -1,0 +1,223 @@
+{
+  "id": 1000651,
+  "number": 651,
+  "state": "closed",
+  "title": "fix(infra_observability): update query_latency.py",
+  "body": "Implementation changes for infra_observability module improvements.",
+  "user": {
+    "login": "emma-lindqvist",
+    "id": 26354,
+    "type": "User"
+  },
+  "created_at": "2026-08-26T07:54:46Z",
+  "updated_at": "2026-08-29T00:54:46Z",
+  "closed_at": "2026-08-29T00:54:46Z",
+  "merged_at": "2026-08-29T00:54:46Z",
+  "merge_commit_sha": "07f0ff7ac804",
+  "head": {
+    "ref": "feature/pr-651",
+    "sha": "07f0ff7ac804"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/651",
+  "files": [
+    {
+      "filename": "infra/observability/query_latency.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 5,
+      "changes": 38
+    },
+    {
+      "filename": "infra/observability/__pycache__/audit_obs.cpython-314.pyc",
+      "status": "modified",
+      "additions": 17,
+      "deletions": 12,
+      "changes": 29
+    },
+    {
+      "filename": "infra/observability/dashboard_generator.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 1,
+      "changes": 56
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8b41c811af0b",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T07:54:46Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T07:54:46Z"
+        },
+        "message": "commit 1 for PR #651: fix(infra_observability): update query_latency.py"
+      }
+    },
+    {
+      "sha": "5dfbc92048a0",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T08:24:46Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T08:24:46Z"
+        },
+        "message": "commit 2 for PR #651: fix(infra_observability): update query_latency.py"
+      }
+    },
+    {
+      "sha": "799cbef32059",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T08:54:46Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T08:54:46Z"
+        },
+        "message": "commit 3 for PR #651: fix(infra_observability): update query_latency.py"
+      }
+    },
+    {
+      "sha": "93da08174e7a",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T09:24:46Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T09:24:46Z"
+        },
+        "message": "commit 4 for PR #651: fix(infra_observability): update query_latency.py"
+      }
+    },
+    {
+      "sha": "07f0ff7ac804",
+      "commit": {
+        "author": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T09:54:46Z"
+        },
+        "committer": {
+          "name": "Emma Lindqvist",
+          "email": "emma-lindqvist@example.com",
+          "date": "2026-08-26T09:54:46Z"
+        },
+        "message": "commit 5 for PR #651: fix(infra_observability): update query_latency.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 65101,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-26T20:54:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/651#pullrequestreview-65101"
+    },
+    {
+      "id": 65102,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2026-08-26T20:54:46Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/651#pullrequestreview-65102"
+    }
+  ],
+  "comments": [
+    {
+      "id": 3430,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3430: verify boundary checks on line 15.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 15
+    },
+    {
+      "id": 3431,
+      "user": {
+        "login": "aiden-cross",
+        "type": "User"
+      },
+      "body": "Review comment 3431: verify boundary checks on line 25.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 25
+    },
+    {
+      "id": 3432,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3432: verify boundary checks on line 15.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 15
+    },
+    {
+      "id": 3433,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3433: verify boundary checks on line 25.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 25
+    },
+    {
+      "id": 3434,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3434: verify boundary checks on line 35.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 35
+    },
+    {
+      "id": 3435,
+      "user": {
+        "login": "caleb-rivers",
+        "type": "User"
+      },
+      "body": "Review comment 3435: verify boundary checks on line 45.",
+      "created_at": "2026-08-26T20:54:46Z",
+      "path": "infra/observability/query_latency.py",
+      "line": 45
+    }
+  ]
+}

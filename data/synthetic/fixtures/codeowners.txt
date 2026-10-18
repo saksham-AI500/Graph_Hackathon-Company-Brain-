@@ -1,0 +1,31 @@
+# CODEOWNERS for Acme Platform Inc.
+# Lines starting with '#' are comments.
+# Syntax: pattern [owners...]
+
+* @acme/platform
+auth/ @acme/identity
+auth/mfa/ @acme/payments
+auth/tokens/ @acme/identity
+auth/session.py @acme/identity ananya-rao
+payments/ @acme/payments
+payments/refunds/ @acme/legacy-settlements
+payments/gateways/ @acme/payments marcus-vance
+payments/checkout.py @acme/payments
+billing/ @acme/payments
+billing/invoices/ @acme/payments
+search/ @acme/platform
+search/indexer/ @acme/growth dmitri-volkov
+notifications/ @acme/growth
+notifications/templates/ @acme/growth
+growth/experiments/ @acme/growth
+infra/ @acme/platform
+infra/deploy/ @acme/platform
+infra/deploy/k8s/ @acme/platform clara-oswald
+infra/observability/ @acme/platform
+infra/observability/dashboards/ @acme/deprecated-infra
+api/gateway/ @acme/platform
+api/gateway/routes.py @acme/platform caleb-rivers
+shared/experimental/ @acme/ghost-squad
+docs/adr/ @acme/platform @acme/payments
+docs/runbooks/ @acme/platform
+.github/workflows/ @acme/platform caleb-rivers

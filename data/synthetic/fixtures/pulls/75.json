@@ -1,0 +1,136 @@
+{
+  "id": 1000075,
+  "number": 75,
+  "state": "closed",
+  "title": "perf(growth_experiments): update metrics_collector.py",
+  "body": "Implementation changes for growth_experiments module improvements.",
+  "user": {
+    "login": "dmitri-volkov",
+    "id": 21585,
+    "type": "User"
+  },
+  "created_at": "2025-11-07T08:26:04Z",
+  "updated_at": "2025-11-10T06:26:04Z",
+  "closed_at": "2025-11-10T06:26:04Z",
+  "merged_at": "2025-11-10T06:26:04Z",
+  "merge_commit_sha": "8c9d1ddd5ae3",
+  "head": {
+    "ref": "feature/pr-75",
+    "sha": "8c9d1ddd5ae3"
+  },
+  "base": {
+    "ref": "main",
+    "sha": "base_sha_main_001"
+  },
+  "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/75",
+  "files": [
+    {
+      "filename": "growth/experiments/metrics_collector.py",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 1,
+      "changes": 43
+    },
+    {
+      "filename": "growth/experiments/__pycache__/statistical_engine.cpython-314.pyc",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 4,
+      "changes": 45
+    },
+    {
+      "filename": "growth/experiments/__pycache__/experiment_store.cpython-314.pyc",
+      "status": "modified",
+      "additions": 45,
+      "deletions": 11,
+      "changes": 15
+    }
+  ],
+  "commits": [
+    {
+      "sha": "8f852f25b3cb",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T08:26:04Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T08:26:04Z"
+        },
+        "message": "commit 1 for PR #75: perf(growth_experiments): update metrics_collector.py"
+      }
+    },
+    {
+      "sha": "c5fdc25107df",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T08:56:04Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T08:56:04Z"
+        },
+        "message": "commit 2 for PR #75: perf(growth_experiments): update metrics_collector.py"
+      }
+    },
+    {
+      "sha": "8c9d1ddd5ae3",
+      "commit": {
+        "author": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T09:26:04Z"
+        },
+        "committer": {
+          "name": "Dmitri Volkov",
+          "email": "dmitri-volkov@example.com",
+          "date": "2025-11-07T09:26:04Z"
+        },
+        "message": "commit 3 for PR #75: perf(growth_experiments): update metrics_collector.py"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": 7501,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "LGTM. Changes look clean and well-structured.",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-08T10:26:04Z",
+      "html_url": "https://github.com/saksham-AI500/company-brain-synthetic-testbed/pull/75#pullrequestreview-7501"
+    }
+  ],
+  "comments": [
+    {
+      "id": 408,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 408: verify boundary checks on line 15.",
+      "created_at": "2025-11-08T10:26:04Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 15
+    },
+    {
+      "id": 409,
+      "user": {
+        "login": "leo-dupont",
+        "type": "User"
+      },
+      "body": "Review comment 409: verify boundary checks on line 25.",
+      "created_at": "2025-11-08T10:26:04Z",
+      "path": "growth/experiments/metrics_collector.py",
+      "line": 25
+    }
+  ]
+}
