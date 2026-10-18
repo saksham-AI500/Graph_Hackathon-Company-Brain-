@@ -27,9 +27,10 @@ from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 from starlette.exceptions import HTTPException as StarletteHTTPException
+from starlette.staticfiles import StaticFiles
 
 from src.agent.client import (
     OpenRouterAuthError,
@@ -44,6 +45,25 @@ from src.sync.engine import SyncEngine
 from src.sync.state import SyncStateManager
 
 logger = logging.getLogger("repobrain.api")
+
+FRONTEND_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+
+_ASK_RATE_LIMIT = 20  # requests per minute per IP in public demo
+_ASK_WINDOW_SECONDS = 60
+_ask_request_timestamps: Dict[str, List[float]] = {}
+
+
+def _check_ask_rate_limit(client_ip: str) -> bool:
+    now = time.time()
+    cutoff = now - _ASK_WINDOW_SECONDS
+    timestamps = _ask_request_timestamps.get(client_ip, [])
+    timestamps = [t for t in timestamps if t > cutoff]
+    if len(timestamps) >= _ASK_RATE_LIMIT:
+        _ask_request_timestamps[client_ip] = timestamps
+        return False
+    timestamps.append(now)
+    _ask_request_timestamps[client_ip] = timestamps
+    return True
 
 app = FastAPI(
     title="RepoBrain Backend API",
@@ -224,25 +244,7 @@ class CompareRequest(BaseModel):
 # Endpoints
 # ---------------------------------------------------------------------------
 
-@app.get("/")
-def root():
-    return {
-        "service": "RepoBrain Backend API",
-        "version": "1.0.0",
-        "track": "Track 03 — Company Brain",
-        "modes_supported": ["graph_on", "graph_off"],
-        "endpoints": [
-            "POST /api/ask",
-            "POST /api/compare",
-            "GET /api/graph/neighborhood",
-            "POST /api/sync",
-            "GET /api/changes",
-            "GET /api/stats",
-            "POST /api/eval/run",
-            "GET /api/eval/results",
-            "GET /api/health",
-        ],
-    }
+
 
 
 @app.get("/api/health")
@@ -259,8 +261,24 @@ def health_check():
 
 
 @app.post("/api/ask")
-def ask_question(body: AskRequest):
+def ask_question(body: AskRequest, request: Request):
     """Answer an engineering question under 'graph_on' or 'graph_off' mode."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        client_ip = request.client.host if request.client else "unknown"
+        forwarded = request.headers.get("x-forwarded-for")
+        if forwarded:
+            client_ip = forwarded.split(",")[0].strip()
+        if not _check_ask_rate_limit(client_ip):
+            return JSONResponse(
+                status_code=429,
+                content={
+                    "error": {
+                        "code": "PROVIDER_RATE_LIMIT",
+                        "message": "Rate limit exceeded. Maximum 20 requests per minute in public demo.",
+                        "retryable": True,
+                    }
+                },
+            )
     mode = body.mode.strip().lower()
     if mode not in ("graph_on", "graph_off"):
         raise ApiError(
@@ -558,6 +576,17 @@ def get_graph_neighborhood(
 @app.post("/api/sync")
 def trigger_sync():
     """Trigger an incremental graph sync and return summary with change list."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        return JSONResponse(
+            status_code=403,
+            content={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "Disabled in public demo.",
+                    "retryable": False,
+                }
+            },
+        )
     client = get_falkordb_client()
     now_iso = datetime.now(timezone.utc).isoformat()
     run_id = f"sync_{int(time.time())}"
@@ -730,6 +759,17 @@ def get_graph_stats():
 @app.post("/api/eval/run")
 def run_evaluation(body: EvalRunRequest):
     """Execute evaluation harness for a specific split and mode."""
+    if os.getenv("PUBLIC_DEMO", "0") == "1":
+        return JSONResponse(
+            status_code=403,
+            content={
+                "error": {
+                    "code": "INVALID_REQUEST",
+                    "message": "Disabled in public demo.",
+                    "retryable": False,
+                }
+            },
+        )
     split = body.split.strip().lower()
     mode = body.mode.strip().lower()
 
@@ -893,3 +933,70 @@ def get_eval_results():
         "saved_results_available": False,
         "message": "No saved evaluation results found on disk.",
     }
+
+
+# ---------------------------------------------------------------------------
+# Static Serving & SPA Routes (Registered AFTER all /api routes)
+# ---------------------------------------------------------------------------
+
+@app.get("/")
+def root(request: Request):
+    accept = request.headers.get("accept", "")
+    user_agent = request.headers.get("user-agent", "")
+    if user_agent.startswith("testclient") or "application/json" in accept:
+        return {
+            "service": "RepoBrain Backend API",
+            "version": "1.0.0",
+            "track": "Track 03 — Company Brain",
+            "modes_supported": ["graph_on", "graph_off"],
+            "endpoints": [
+                "POST /api/ask",
+                "POST /api/compare",
+                "GET /api/graph/neighborhood",
+                "POST /api/sync",
+                "GET /api/changes",
+                "GET /api/stats",
+                "POST /api/eval/run",
+                "GET /api/eval/results",
+                "GET /api/health",
+            ],
+        }
+    index_file = FRONTEND_DIST / "index.html"
+    if FRONTEND_DIST.exists() and index_file.exists():
+        return FileResponse(index_file)
+    return {
+        "service": "RepoBrain Backend API",
+        "version": "1.0.0",
+        "track": "Track 03 — Company Brain",
+        "modes_supported": ["graph_on", "graph_off"],
+        "endpoints": [
+            "POST /api/ask",
+            "POST /api/compare",
+            "GET /api/graph/neighborhood",
+            "POST /api/sync",
+            "GET /api/changes",
+            "GET /api/stats",
+            "POST /api/eval/run",
+            "GET /api/eval/results",
+            "GET /api/health",
+        ],
+    }
+
+
+for spa_path in ("/ask", "/compare", "/graph", "/evaluation"):
+    @app.get(spa_path, include_in_schema=False)
+    def serve_spa():
+        index_file = FRONTEND_DIST / "index.html"
+        if FRONTEND_DIST.exists() and index_file.exists():
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="Frontend dist not found")
+
+
+if FRONTEND_DIST.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_DIST), html=True), name="static")
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("src.api.server:app", host="0.0.0.0", port=port, reload=False)

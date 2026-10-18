@@ -53,7 +53,10 @@ async function request<T>(
   options: RequestInit = {},
   schema: { safeParse: (val: unknown) => { success: true; data: T } | { success: false; error: { errors: Array<{ path: (string | number)[]; message: string }> } } },
 ): Promise<T> {
-  const url = `${API_BASE_URL}${endpoint}`;
+  const cleanEndpoint = endpoint.startsWith('/api') && API_BASE_URL.endsWith('/api')
+    ? endpoint.slice(4)
+    : endpoint;
+  const url = `${API_BASE_URL}${cleanEndpoint}`;
   let response: Response;
 
   try {

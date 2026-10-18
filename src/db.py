@@ -18,6 +18,8 @@ class FalkorDBClient:
         self.host = host or os.getenv("FALKORDB_HOST", "localhost")
         self.port = port or int(os.getenv("FALKORDB_PORT", "6379"))
         self.graph_name = graph_name or os.getenv("FALKORDB_GRAPH", "repo_kg")
+        self.password = os.getenv("FALKORDB_PASSWORD") or None
+        self.tls = os.getenv("FALKORDB_TLS", "0") in ("1", "true", "True")
 
         self._driver: Optional[falkordb.FalkorDB] = None
         self._graph: Optional[falkordb.Graph] = None
@@ -28,12 +30,17 @@ class FalkorDBClient:
 
     def _connect(self) -> None:
         """Initialize connection to FalkorDB and select the target graph."""
-        self._driver = falkordb.FalkorDB(
-            host=self.host,
-            port=self.port,
-            socket_connect_timeout=0.2,
-            socket_timeout=0.2,
-        )
+        kwargs = {
+            "host": self.host,
+            "port": self.port,
+            "socket_connect_timeout": 0.2,
+            "socket_timeout": 0.2,
+        }
+        if self.password:
+            kwargs["password"] = self.password
+        if self.tls:
+            kwargs["ssl"] = True
+        self._driver = falkordb.FalkorDB(**kwargs)
         self._graph = self._driver.select_graph(self.graph_name)
 
     @property
