@@ -21,13 +21,32 @@ Every factual assertion presented to the user must be grounded in authentic grap
 
 ---
 
-## 2. Thresholds & Operational Parameters
+## 2. Thresholds, Provenance & Unit Equivalence
+
+### 2.1 Threshold Provenance
+- **Dev Threshold**: `0.50 (TUNED)`. This threshold was empirically tuned on outputs from 17 October 2026. The 18 October commit (`abbc7923`) labeled it as TUNED; it is not a pre-registration.
+- **Role**: `0.50` is retained strictly as the development threshold for intermediate gating.
+- **Final Threshold**: The final operational threshold is determined from the hard calibration set (FIX 3) and committed before evaluation runs.
+
+### 2.2 Unit Equivalence Rule
+1. **Time Units**:
+   - Milliseconds to seconds: $X\text{ ms} \equiv (X / 1000)\text{ s}$ (e.g. `5000 ms` $\equiv$ `5 s`, `1000 ms` $\equiv$ `1 s`, `250 ms` $\equiv$ `0.25 s`).
+   - Seconds to minutes: $X\text{ s} \equiv (X / 60)\text{ min}$.
+   - Minutes to hours: $X\text{ min} \equiv (X / 60)\text{ hr}$.
+2. **Digital Storage Units**:
+   - $1024\text{ KB} \equiv 1\text{ MB}$, $1024\text{ MB} \equiv 1\text{ GB}$.
+3. **Equivalence Principle**:
+   - When a source span specifies a numerical quantity with standard physical or computational units, and a claim restates that quantity in mathematically equivalent canonical units, the claim is evaluated under canonicalized units.
+   - If the canonicalized value and unit match, the claim is accepted as factually entailed.
+   - Non-equivalent unit modifications (e.g. source `5000 ms` vs claim `5000 s` or `50 s`) represent numerical errors and are strictly rejected.
 
 | Parameter | Value | Rationale |
 | :--- | :---: | :--- |
-| **`ENTAILMENT_THRESHOLD`** | **0.50 (TUNED)** | Calibrated probability threshold $P(\text{Entailment} \mid \text{Span}, \text{Claim})$. Labeled TUNED (established after prior evaluation outputs). Final threshold to be pinned against independent 40-pair hard calibration set. |
-| **NLI Model Checkpoint** | `cross-encoder/nli-MiniLM2-L6-H768` | Pre-trained 6-layer NLI cross-encoder optimized for factual entailment scoring. |
-| **NLI Inference Engine** | `onnxruntime` (sequential, intra_op=2) | Deterministic, offline-capable CPU inference in <15ms without GPU or PyTorch overhead. |
+| **`DEV_ENTAILMENT_THRESHOLD`** | **0.50 (TUNED)** | Dev threshold tuned on 17 Oct outputs. Pinned for dev suites. |
+| **`FINAL_THRESHOLD`** | *To be selected from FIX 3 calibration* | Committed alongside calibration SHA-256 before evaluation. |
+| **NLI Model Checkpoint** | `cross-encoder/nli-MiniLM2-L6-H768` | Pre-trained 6-layer NLI cross-encoder for factual entailment scoring. |
+| **NLI Inference Engine** | `onnxruntime` (sequential, intra_op=2) | Deterministic, offline-capable CPU inference in <15ms. |
+| **Unit Equivalence** | Canonical SI / Binary Scaling | Canonicalizes equivalent units (e.g., 5000 ms $\equiv$ 5 s). |
 | **Quote Matching Rule** | Exact Case-Insensitive Substring | Decision and ADR citations must match stored quotes verbatim. |
 | **Temporal Check Rule** | $T_{\text{observed}} \le T_{\text{as\_of}} < T_{\text{tombstoned}}$ | Ensures historical cutoffs isolate future data leakage. |
 
@@ -58,14 +77,21 @@ For each sentence:
 
 ---
 
-## 4. Counterfactual Faithfulness Algorithm
+## 4. Counterfactual Faithfulness & Visible Citation Correction
 
-For any claim $C$ citing sources $S = \{s_1, s_2, \dots, s_k\}$ where $k > 1$:
-1. For each $s_i \in S$:
-   - Construct reduced source set $S' = S \setminus \{s_i\}$.
-   - Re-evaluate verification of claim $C$ using only $S'$.
-   - If $C$ is still fully supported by $S'$, then $s_i$ is non-essential (decorative citation).
-   - Flag $s_i$ as `post_hoc = True` and increment `answer.verifier["post_hoc_citations"]`.
+1. **Detection of Post-Hoc / Misattributed Citations**:
+   - Single-source case: If a claim cites $S_1$, and $S_1$ does not support the claim, but a different span $S_2$ elsewhere in the source set supports it:
+     - The verifier emits a `citation_correction`: `{"original_source_ids": ["S1"], "corrected_source_id": "S2", "supporting_span": "..."}`.
+     - The answer text visibly reflects the correction: `[S1]` is rewritten to `[S1 corrected to S2]`. Citations are never silently altered.
+     - The claim is marked `post_hoc = True` and kept `VERIFIED` under the corrected citation.
+     - `answer.verifier["post_hoc_citations"]` is incremented. Post-hoc citations are recorded in a separate count and are **not** counted as fully supported.
+   - Multi-source case: For claim $C$ citing sources $S = \{s_1, \dots, s_k\}$ ($k > 1$), if removing $s_i$ leaves $C$ supported, $s_i$ is flagged `post_hoc = True`.
+2. **Refusal on Unsupported Claims**:
+   - If no span in the source set supports the claim, the claim is rejected and the answer is `REFUSED`.
+3. **Citation Acceptance**:
+   - If removing the only cited source leaves the claim unsupported, the citation is essential and accepted (`post_hoc = False`, `verified = True`).
+4. **Evaluation Scope**:
+   - The three counterfactual demonstration cases are explicitly designated as **dev fixtures**, not validation.
 
 ---
 
